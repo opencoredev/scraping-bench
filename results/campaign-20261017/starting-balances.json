@@ -1,0 +1,84 @@
+[
+  {
+    "provider": "firecrawl",
+    "at": "2026-10-17T04:52:38.716Z",
+    "data": {
+      "data": {
+        "remainingCredits": 1357,
+        "planCredits": 1000
+      }
+    }
+  },
+  {
+    "provider": "linkup",
+    "at": "2026-10-17T04:52:38.975Z",
+    "data": {
+      "balance": 19.994
+    }
+  },
+  {
+    "provider": "tinyfish",
+    "at": "2026-10-17T04:52:39.448Z",
+    "data": {
+      "available_balance": "10",
+      "rates": {
+        "meters": [
+          {
+            "label": "TinyFish Agent",
+            "unit_amount": "0.016",
+            "per": "step"
+          },
+          {
+            "label": "TinyFish Browser",
+            "unit_amount": "0.002",
+            "per": "minute"
+          },
+          {
+            "label": "TinyFish Fetch",
+            "unit_amount": "0",
+            "per": "url"
+          },
+          {
+            "label": "TinyFish Monitor",
+            "unit_amount": "0.005",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Research",
+            "unit_amount": "0",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Search",
+            "unit_amount": "0",
+            "per": "query"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "provider": "spider",
+    "at": "2026-10-17T04:52:39.947Z",
+    "data": {
+      "data": {
+        "credits": 2480
+      }
+    }
+  },
+  {
+    "provider": "scrapfly",
+    "at": "2026-10-17T04:52:40.930Z",
+    "data": {
+      "subscription": {
+        "usage": {
+          "scrape": {
+            "current": 11,
+            "limit": 1000,
+            "remaining": 989
+          }
+        }
+      }
+    }
+  }
+]

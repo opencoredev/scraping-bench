@@ -1,0 +1,23 @@
+[
+  {
+    "taskId": "fixture-test-20261017-fresh-c-scrape-cookie-boilerplate-109",
+    "responseHash": "094c0878b794ea3ac2962adb240f355467b165dd82fb4a5bb48102c804a727c1",
+    "nativeStatus": 429,
+    "nativeMessage": "Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 24s, resets at Sat Oct 17 2026 05:57:02 GMT+0000 (Coordinated Universal Time)",
+    "finding": "Native free-plan ten-request/minute quota exceeded; no upgrade or purchase made. Conservative unknown-bill reservation retained."
+  },
+  {
+    "taskId": "fixture-test-20261017-fresh-c-scrape-lazy-loaded-field-103",
+    "responseHash": "ab4f589cb7dadb890181c9d897847fc88da50094ecd67c9a0ec054f8988afe42",
+    "nativeStatus": 429,
+    "nativeMessage": "Rate limit exceeded. Consumed (req/min): 12, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 22s, resets at Sat Oct 17 2026 05:57:02 GMT+0000 (Coordinated Universal Time)",
+    "finding": "Native free-plan ten-request/minute quota exceeded; no upgrade or purchase made. Conservative unknown-bill reservation retained."
+  },
+  {
+    "taskId": "fixture-test-20261017-fresh-c-scrape-not-found-116",
+    "responseHash": "b1b390f226a7b566d51f537194210d119c4b584c9b579bcd833db669a9f91421",
+    "nativeStatus": 429,
+    "nativeMessage": "Rate limit exceeded. Consumed (req/min): 13, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 18s, resets at Sat Oct 17 2026 05:57:02 GMT+0000 (Coordinated Universal Time)",
+    "finding": "Native free-plan ten-request/minute quota exceeded; no upgrade or purchase made. Conservative unknown-bill reservation retained."
+  }
+]

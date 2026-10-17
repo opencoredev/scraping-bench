@@ -1,0 +1,5492 @@
+[
+  {
+    "id": "search-crates-anyhow",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package anyhow. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "anyhow crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.0.104"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add anyhow"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/anyhow",
+      "checkedAt": "2026-10-17T03:35:53.242Z"
+    }
+  },
+  {
+    "id": "search-crates-axum",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package axum. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "axum crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.8.9"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add axum"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/axum",
+      "checkedAt": "2026-10-17T03:35:47.739Z"
+    }
+  },
+  {
+    "id": "search-crates-bytes",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package bytes. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "bytes crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.12.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add bytes"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/bytes",
+      "checkedAt": "2026-10-17T03:35:59.839Z"
+    }
+  },
+  {
+    "id": "search-crates-chrono",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package chrono. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "chrono crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.4.45"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add chrono"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/chrono",
+      "checkedAt": "2026-10-17T03:36:07.459Z"
+    }
+  },
+  {
+    "id": "search-crates-clap",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package clap. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "clap crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.6.7"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add clap"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/clap",
+      "checkedAt": "2026-10-17T03:35:49.950Z"
+    }
+  },
+  {
+    "id": "search-crates-crossbeam",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package crossbeam. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "crossbeam crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.8.5"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add crossbeam"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/crossbeam",
+      "checkedAt": "2026-10-17T03:35:56.446Z"
+    }
+  },
+  {
+    "id": "search-crates-dashmap",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package dashmap. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "dashmap crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "6.2.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add dashmap"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/dashmap",
+      "checkedAt": "2026-10-17T03:35:58.741Z"
+    }
+  },
+  {
+    "id": "search-crates-futures",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package futures. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "futures crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.3.34"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add futures"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/futures",
+      "checkedAt": "2026-10-17T03:36:00.945Z"
+    }
+  },
+  {
+    "id": "search-crates-hyper",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package hyper. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "hyper crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.12.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add hyper"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/hyper",
+      "checkedAt": "2026-10-17T03:36:02.052Z"
+    }
+  },
+  {
+    "id": "search-crates-parking-lot",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package parking_lot. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "parking_lot crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.12.5"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add parking_lot"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/parking_lot",
+      "checkedAt": "2026-10-17T03:35:57.638Z"
+    }
+  },
+  {
+    "id": "search-crates-rayon",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package rayon. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "rayon crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.12.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add rayon"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/rayon",
+      "checkedAt": "2026-10-17T03:35:55.443Z"
+    }
+  },
+  {
+    "id": "search-crates-reqwest",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package reqwest. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "reqwest crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.13.5"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add reqwest"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/reqwest",
+      "checkedAt": "2026-10-17T03:35:48.843Z"
+    }
+  },
+  {
+    "id": "search-crates-rusqlite",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package rusqlite. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "rusqlite crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.40.2"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add rusqlite"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/rusqlite",
+      "checkedAt": "2026-10-17T03:36:04.150Z"
+    }
+  },
+  {
+    "id": "search-crates-serde",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package serde. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "serde crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.0.229"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add serde"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/serde",
+      "checkedAt": "2026-10-17T03:35:51.048Z"
+    }
+  },
+  {
+    "id": "search-crates-sqlx",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package sqlx. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "sqlx crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.9.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add sqlx"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/sqlx",
+      "checkedAt": "2026-10-17T03:36:05.357Z"
+    }
+  },
+  {
+    "id": "search-crates-thiserror",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package thiserror. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "thiserror crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.0.21"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add thiserror"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/thiserror",
+      "checkedAt": "2026-10-17T03:35:54.339Z"
+    }
+  },
+  {
+    "id": "search-crates-tokio",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package tokio. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "tokio crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.53.3"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add tokio"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/tokio",
+      "checkedAt": "2026-10-17T03:35:46.718Z"
+    }
+  },
+  {
+    "id": "search-crates-tower",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package tower. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "tower crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.5.3"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add tower"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/tower",
+      "checkedAt": "2026-10-17T03:36:03.138Z"
+    }
+  },
+  {
+    "id": "search-crates-tracing",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package tracing. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "tracing crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.1.44"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add tracing"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/tracing",
+      "checkedAt": "2026-10-17T03:35:52.047Z"
+    }
+  },
+  {
+    "id": "search-crates-uuid",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the crates package uuid. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned cargo add command for this package, without extra flags.",
+    "site": "crates.io",
+    "input": {
+      "track": "search",
+      "query": "uuid crates latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.28.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "cargo add uuid"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://crates.io/api/v1/crates/uuid",
+      "checkedAt": "2026-10-17T03:36:06.448Z"
+    }
+  },
+  {
+    "id": "search-founding-Q11407",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of VMware (Wikidata Q11407). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "VMware Q11407 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1998,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ11407%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q11407; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:48.490Z"
+    }
+  },
+  {
+    "id": "search-founding-Q11463",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Adobe (Wikidata Q11463). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Adobe Q11463 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1982,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ11463%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q11463; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:48.796Z"
+    }
+  },
+  {
+    "id": "search-founding-Q13977",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Bloomberg L.P. (Wikidata Q13977). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Bloomberg L.P. Q13977 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1981,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ13977%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q13977; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:49.949Z"
+    }
+  },
+  {
+    "id": "search-founding-Q14647",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Sun Microsystems (Wikidata Q14647). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Sun Microsystems Q14647 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1982,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ14647%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q14647; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:51.338Z"
+    }
+  },
+  {
+    "id": "search-founding-Q14772",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Baidu (Wikidata Q14772). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Baidu Q14772 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 2000,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ14772%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q14772; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:52.131Z"
+    }
+  },
+  {
+    "id": "search-founding-Q14799",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Lenovo (Wikidata Q14799). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Lenovo Q14799 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1984,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ14799%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q14799; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:54.391Z"
+    }
+  },
+  {
+    "id": "search-founding-Q15330",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Q15330 (Wikidata Q15330). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Q15330 Q15330 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 2016,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ15330%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q15330; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:59.408Z"
+    }
+  },
+  {
+    "id": "search-founding-Q17957",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Lonely Planet (Wikidata Q17957). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Lonely Planet Q17957 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1972,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ17957%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q17957; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:59.482Z"
+    }
+  },
+  {
+    "id": "search-founding-Q18224",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Maersk (Wikidata Q18224). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Maersk Q18224 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1904,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ18224%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q18224; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:43:06.732Z"
+    }
+  },
+  {
+    "id": "search-founding-Q19900",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Oracle Corporation (Wikidata Q19900). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Oracle Corporation Q19900 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1977,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ19900%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q19900; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:43:08.128Z"
+    }
+  },
+  {
+    "id": "search-founding-Q2309",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of AvtoVAZ (Wikidata Q2309). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "AvtoVAZ Q2309 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1966,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ2309%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q2309; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:29.109Z"
+    }
+  },
+  {
+    "id": "search-founding-Q2311",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Airbus (Wikidata Q2311). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Airbus Q2311 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1998,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ2311%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q2311; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:31.804Z"
+    }
+  },
+  {
+    "id": "search-founding-Q29803",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Isuzu (Wikidata Q29803). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Isuzu Q29803 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1934,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ29803%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q29803; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:40:55.221Z"
+    }
+  },
+  {
+    "id": "search-founding-Q30113",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Jeep (Wikidata Q30113). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Jeep Q30113 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1941,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ30113%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q30113; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:40:59.082Z"
+    }
+  },
+  {
+    "id": "search-founding-Q30378",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Kamaz (Wikidata Q30378). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Kamaz Q30378 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1969,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ30378%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q30378; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:40:59.283Z"
+    }
+  },
+  {
+    "id": "search-founding-Q32277",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Virgin Atlantic (Wikidata Q32277). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Virgin Atlantic Q32277 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1984,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ32277%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q32277; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:01.421Z"
+    }
+  },
+  {
+    "id": "search-founding-Q35339",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of WWE (Wikidata Q35339). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "WWE Q35339 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1952,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ35339%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q35339; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:02.495Z"
+    }
+  },
+  {
+    "id": "search-founding-Q35349",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Kia (Wikidata Q35349). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Kia Q35349 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1944,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ35349%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q35349; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:10.081Z"
+    }
+  },
+  {
+    "id": "search-founding-Q35594",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Koenigsegg (Wikidata Q35594). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Koenigsegg Q35594 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1994,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ35594%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q35594; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:12.066Z"
+    }
+  },
+  {
+    "id": "search-founding-Q35886",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Lamborghini (Wikidata Q35886). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Lamborghini Q35886 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1948,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ35886%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q35886; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:26.418Z"
+    }
+  },
+  {
+    "id": "search-founding-Q35896",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Lancia (Wikidata Q35896). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Lancia Q35896 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1906,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ35896%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q35896; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:27.797Z"
+    }
+  },
+  {
+    "id": "search-founding-Q35907",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Land Rover (Wikidata Q35907). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Land Rover Q35907 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1978,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ35907%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q35907; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:32.791Z"
+    }
+  },
+  {
+    "id": "search-founding-Q35962",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Maserati (Wikidata Q35962). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Maserati Q35962 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1914,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ35962%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q35962; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:33.323Z"
+    }
+  },
+  {
+    "id": "search-founding-Q380",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Meta Platforms (Wikidata Q380). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Meta Platforms Q380 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 2004,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ380%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q380; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:01.258Z"
+    }
+  },
+  {
+    "id": "search-founding-Q39064",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Canonical Ltd. (Wikidata Q39064). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Canonical Ltd. Q39064 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 2004,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ39064%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q39064; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:40.597Z"
+    }
+  },
+  {
+    "id": "search-founding-Q44504",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Inditex (Wikidata Q44504). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Inditex Q44504 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1985,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ44504%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q44504; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:40.791Z"
+    }
+  },
+  {
+    "id": "search-founding-Q45568",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of UniCredit (Wikidata Q45568). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "UniCredit Q45568 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1998,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ45568%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q45568; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:41.868Z"
+    }
+  },
+  {
+    "id": "search-founding-Q4585",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of CouchSurfing (Wikidata Q4585). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "CouchSurfing Q4585 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 2003,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ4585%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q4585; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:31.918Z"
+    }
+  },
+  {
+    "id": "search-founding-Q46974",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Canadian Pacific Railway (Wikidata Q46974). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Canadian Pacific Railway Q46974 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1881,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ46974%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q46974; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:57.703Z"
+    }
+  },
+  {
+    "id": "search-founding-Q49125",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Toshiba (Wikidata Q49125). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Toshiba Q49125 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1875,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ49125%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q49125; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:57.890Z"
+    }
+  },
+  {
+    "id": "search-founding-Q49203",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Sanyo (Wikidata Q49203). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Sanyo Q49203 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1947,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ49203%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q49203; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:41:59.003Z"
+    }
+  },
+  {
+    "id": "search-founding-Q51756",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of China Airlines (Wikidata Q51756). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "China Airlines Q51756 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1959,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ51756%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q51756; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:00.109Z"
+    }
+  },
+  {
+    "id": "search-founding-Q52618",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Ericsson (Wikidata Q52618). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Ericsson Q52618 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1876,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ52618%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q52618; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:40:47.041Z"
+    }
+  },
+  {
+    "id": "search-founding-Q52825",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of ABB Group (Wikidata Q52825). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "ABB Group Q52825 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1988,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ52825%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q52825; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:40:51.959Z"
+    }
+  },
+  {
+    "id": "search-founding-Q53227",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Sharp Corporation (Wikidata Q53227). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Sharp Corporation Q53227 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1912,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ53227%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q53227; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:40:52.045Z"
+    }
+  },
+  {
+    "id": "search-founding-Q53238",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Hitachi (Wikidata Q53238). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Hitachi Q53238 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1910,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ53238%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q53238; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:40:55.094Z"
+    }
+  },
+  {
+    "id": "search-founding-Q8681",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Pan Am (Wikidata Q8681). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Pan Am Q8681 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1927,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ8681%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q8681; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:34.391Z"
+    }
+  },
+  {
+    "id": "search-founding-Q8787",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Oneworld (Wikidata Q8787). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Oneworld Q8787 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1999,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ8787%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q8787; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:35.482Z"
+    }
+  },
+  {
+    "id": "search-founding-Q9396",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Deutsche Telekom (Wikidata Q9396). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "Deutsche Telekom Q9396 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1995,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ9396%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q9396; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:45.017Z"
+    }
+  },
+  {
+    "id": "search-founding-Q9401",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of BASF (Wikidata Q9401). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "site": "query.wikidata.org",
+    "input": {
+      "track": "search",
+      "query": "BASF Q9401 founded inception year"
+    },
+    "expected": [
+      {
+        "name": "foundingYear",
+        "kind": "number",
+        "value": 1865,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ9401%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q9401; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:45.218Z"
+    }
+  },
+  {
+    "id": "search-fresh-angular-angular",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of angular/angular. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "angular/angular latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v22.2.3"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-14"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/angular/angular/releases/latest release-page=https://github.com/angular/angular/releases/tag/v22.2.3; published_at=2026-10-14T23:38:58Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:50.043Z"
+    }
+  },
+  {
+    "id": "search-fresh-astral-sh-ruff",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of astral-sh/ruff. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "astral-sh/ruff latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-15"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/astral-sh/ruff/releases/latest release-page=https://github.com/astral-sh/ruff/releases/tag/0.17.1; published_at=2026-10-15T15:24:28Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:09.344Z"
+    }
+  },
+  {
+    "id": "search-fresh-astral-sh-ty",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of astral-sh/ty. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "astral-sh/ty latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "0.0.89"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-16"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/astral-sh/ty/releases/latest release-page=https://github.com/astral-sh/ty/releases/tag/0.0.89; published_at=2026-10-16T10:36:02Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:14.907Z"
+    }
+  },
+  {
+    "id": "search-fresh-astral-sh-uv",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of astral-sh/uv. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "astral-sh/uv latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "0.13.1"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-14"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/astral-sh/uv/releases/latest release-page=https://github.com/astral-sh/uv/releases/tag/0.13.1; published_at=2026-10-14T05:15:30Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:08.322Z"
+    }
+  },
+  {
+    "id": "search-fresh-caddyserver-caddy",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of caddyserver/caddy. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "caddyserver/caddy latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v2.11.7"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-03"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/caddyserver/caddy/releases/latest release-page=https://github.com/caddyserver/caddy/releases/tag/v2.11.7; published_at=2026-10-03T05:58:33Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:33.665Z"
+    }
+  },
+  {
+    "id": "search-fresh-encode-starlette",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of encode/starlette. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "encode/starlette latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "1.8.0"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-13"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/encode/starlette/releases/latest release-page=https://github.com/Kludex/starlette/releases/tag/1.8.0; published_at=2026-10-13T07:53:59Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:13.898Z"
+    }
+  },
+  {
+    "id": "search-fresh-fastapi-fastapi",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of fastapi/fastapi. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "fastapi/fastapi latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "0.143.3"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-16"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/fastapi/fastapi/releases/latest release-page=https://github.com/fastapi/fastapi/releases/tag/0.143.3; published_at=2026-10-16T14:13:36Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:11.469Z"
+    }
+  },
+  {
+    "id": "search-fresh-grafana-grafana",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of grafana/grafana. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "grafana/grafana latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v13.2.4"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-13"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/grafana/grafana/releases/latest release-page=https://github.com/grafana/grafana/releases/tag/v13.2.4; published_at=2026-10-13T11:41:03Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:40.147Z"
+    }
+  },
+  {
+    "id": "search-fresh-helm-helm",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of helm/helm. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "helm/helm latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v4.3.1"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-15"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/helm/helm/releases/latest release-page=https://github.com/helm/helm/releases/tag/v4.3.1; published_at=2026-10-15T01:08:37Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:37.955Z"
+    }
+  },
+  {
+    "id": "search-fresh-junegunn-fzf",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of junegunn/fzf. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "junegunn/fzf latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v0.74.5"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-11"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/junegunn/fzf/releases/latest release-page=https://github.com/junegunn/fzf/releases/tag/v0.74.5; published_at=2026-10-11T02:39:32Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:32.614Z"
+    }
+  },
+  {
+    "id": "search-fresh-microsoft-playwright",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of microsoft/playwright. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "microsoft/playwright latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v1.64.1"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-14"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/microsoft/playwright/releases/latest release-page=https://github.com/microsoft/playwright/releases/tag/v1.64.1; published_at=2026-10-14T11:51:33Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:45.620Z"
+    }
+  },
+  {
+    "id": "search-fresh-neovim-neovim",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of neovim/neovim. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "neovim/neovim latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v0.12.6"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-09"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/neovim/neovim/releases/latest release-page=https://github.com/neovim/neovim/releases/tag/v0.12.6; published_at=2026-10-09T15:43:25Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:25.890Z"
+    }
+  },
+  {
+    "id": "search-fresh-nodejs-node",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of nodejs/node. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "nodejs/node latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v26.12.0"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-14"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/nodejs/node/releases/latest release-page=https://github.com/nodejs/node/releases/tag/v26.12.0; published_at=2026-10-14T15:22:04Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:20.321Z"
+    }
+  },
+  {
+    "id": "search-fresh-oven-sh-bun",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of oven-sh/bun. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "oven-sh/bun latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "bun-v1.4.3"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-10"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/oven-sh/bun/releases/latest release-page=https://github.com/oven-sh/bun/releases/tag/bun-v1.4.3; published_at=2026-10-10T05:24:54Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:23.696Z"
+    }
+  },
+  {
+    "id": "search-fresh-pola-rs-polars",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of pola-rs/polars. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "pola-rs/polars latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "py-2.0.0"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-06"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/pola-rs/polars/releases/latest release-page=https://github.com/pola-rs/polars/releases/tag/py-2.0.0; published_at=2026-10-06T11:52:15Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:44.594Z"
+    }
+  },
+  {
+    "id": "search-fresh-pydantic-pydantic",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of pydantic/pydantic. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "pydantic/pydantic latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v2.14.1"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-11"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/pydantic/pydantic/releases/latest release-page=https://github.com/pydantic/pydantic/releases/tag/v2.14.1; published_at=2026-10-11T18:39:44Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:10.419Z"
+    }
+  },
+  {
+    "id": "search-fresh-rust-lang-rust",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of rust-lang/rust. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "rust-lang/rust latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "1.99.1"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-16"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/rust-lang/rust/releases/latest release-page=https://github.com/rust-lang/rust/releases/tag/1.99.1; published_at=2026-10-16T04:47:44Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:21.417Z"
+    }
+  },
+  {
+    "id": "search-fresh-sveltejs-svelte",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of sveltejs/svelte. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "sveltejs/svelte latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "svelte@5.57.2"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-06"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/sveltejs/svelte/releases/latest release-page=https://github.com/sveltejs/svelte/releases/tag/svelte%405.57.2; published_at=2026-10-06T14:20:22Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:48.930Z"
+    }
+  },
+  {
+    "id": "search-fresh-traefik-traefik",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of traefik/traefik. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "traefik/traefik latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v3.7.15"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-15"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/traefik/traefik/releases/latest release-page=https://github.com/traefik/traefik/releases/tag/v3.7.15; published_at=2026-10-15T14:41:49Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:34.678Z"
+    }
+  },
+  {
+    "id": "search-fresh-vercel-next-js",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of vercel/next.js. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "vercel/next.js latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v16.4.2"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-15"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/vercel/next.js/releases/latest release-page=https://github.com/vercel/next.js/releases/tag/v16.4.2; published_at=2026-10-15T20:44:37Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:51.116Z"
+    }
+  },
+  {
+    "id": "search-fresh-vitejs-vite",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of vitejs/vite. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "vitejs/vite latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v8.3.4"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-08"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/vitejs/vite/releases/latest release-page=https://github.com/vitejs/vite/releases/tag/v8.3.4; published_at=2026-10-08T12:03:54Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:46.762Z"
+    }
+  },
+  {
+    "id": "search-fresh-vitest-dev-vitest",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of vitest-dev/vitest. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "site": "api.github.com",
+    "input": {
+      "track": "search",
+      "query": "vitest-dev/vitest latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "name": "tag",
+        "kind": "text",
+        "accept": [
+          "v5.0.5"
+        ]
+      },
+      {
+        "name": "publishedDate",
+        "kind": "date",
+        "value": "2026-10-15"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/vitest-dev/vitest/releases/latest release-page=https://github.com/vitest-dev/vitest/releases/tag/v5.0.5; published_at=2026-10-15T14:22:50Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:47.881Z"
+    }
+  },
+  {
+    "id": "search-none-drizzle-orm",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for drizzle-orm@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "drizzle-orm npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/drizzle-orm versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:43:53.510Z"
+    }
+  },
+  {
+    "id": "search-none-elysia",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for elysia@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "elysia npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/elysia versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:44:00.164Z"
+    }
+  },
+  {
+    "id": "search-none-esbuild",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for esbuild@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "esbuild npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/esbuild versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:44:04.482Z"
+    }
+  },
+  {
+    "id": "search-none-hono",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for hono@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "hono npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/hono versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:43:52.283Z"
+    }
+  },
+  {
+    "id": "search-none-kysely",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for kysely@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "kysely npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/kysely versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:43:58.955Z"
+    }
+  },
+  {
+    "id": "search-none-ofetch",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for ofetch@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "ofetch npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/ofetch versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:44:01.147Z"
+    }
+  },
+  {
+    "id": "search-none-tsup",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for tsup@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "tsup npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/tsup versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:44:03.452Z"
+    }
+  },
+  {
+    "id": "search-none-unplugin",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for unplugin@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "unplugin npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/unplugin versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:44:02.256Z"
+    }
+  },
+  {
+    "id": "search-none-vite",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for vite@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "vite npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/vite versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:44:05.768Z"
+    }
+  },
+  {
+    "id": "search-none-zod",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for zod@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "zod npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "name": "integrity",
+        "kind": "none"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/zod versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:43:51.209Z"
+    }
+  },
+  {
+    "id": "search-npm-cheerio",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package cheerio. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "cheerio npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.2.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install cheerio",
+          "npm i cheerio"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/cheerio/latest",
+      "checkedAt": "2026-10-17T03:34:58.027Z"
+    }
+  },
+  {
+    "id": "search-npm-commander",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package commander. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "commander npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "15.0.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install commander",
+          "npm i commander"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/commander/latest",
+      "checkedAt": "2026-10-17T03:35:03.540Z"
+    }
+  },
+  {
+    "id": "search-npm-date-fns",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package date-fns. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "date-fns npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.4.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install date-fns",
+          "npm i date-fns"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/date-fns/latest",
+      "checkedAt": "2026-10-17T03:35:11.236Z"
+    }
+  },
+  {
+    "id": "search-npm-drizzle-orm",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package drizzle-orm. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "drizzle-orm npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.45.4"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install drizzle-orm",
+          "npm i drizzle-orm"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/drizzle-orm/latest",
+      "checkedAt": "2026-10-17T03:34:44.712Z"
+    }
+  },
+  {
+    "id": "search-npm-elysia",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package elysia. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "elysia npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.4.30"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install elysia",
+          "npm i elysia"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/elysia/latest",
+      "checkedAt": "2026-10-17T03:34:47.018Z"
+    }
+  },
+  {
+    "id": "search-npm-esbuild",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package esbuild. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "esbuild npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.28.2"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install esbuild",
+          "npm i esbuild"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/esbuild/latest",
+      "checkedAt": "2026-10-17T03:34:51.413Z"
+    }
+  },
+  {
+    "id": "search-npm-execa",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package execa. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "execa npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "10.1.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install execa",
+          "npm i execa"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/execa/latest",
+      "checkedAt": "2026-10-17T03:35:05.726Z"
+    }
+  },
+  {
+    "id": "search-npm-fastify",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package fastify. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "fastify npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "5.12.7"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install fastify",
+          "npm i fastify"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/fastify/latest",
+      "checkedAt": "2026-10-17T03:35:00.250Z"
+    }
+  },
+  {
+    "id": "search-npm-got",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package got. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "got npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "16.1.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install got",
+          "npm i got"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/got/latest",
+      "checkedAt": "2026-10-17T03:35:06.847Z"
+    }
+  },
+  {
+    "id": "search-npm-hono",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package hono. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "hono npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.13.13"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install hono",
+          "npm i hono"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/hono/latest",
+      "checkedAt": "2026-10-17T03:34:43.780Z"
+    }
+  },
+  {
+    "id": "search-npm-immer",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package immer. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "immer npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "11.1.21"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install immer",
+          "npm i immer"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/immer/latest",
+      "checkedAt": "2026-10-17T03:35:13.426Z"
+    }
+  },
+  {
+    "id": "search-npm-ky",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package ky. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "ky npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.2.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install ky",
+          "npm i ky"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/ky/latest",
+      "checkedAt": "2026-10-17T03:35:07.942Z"
+    }
+  },
+  {
+    "id": "search-npm-kysely",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package kysely. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "kysely npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.29.6"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install kysely",
+          "npm i kysely"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/kysely/latest",
+      "checkedAt": "2026-10-17T03:34:45.924Z"
+    }
+  },
+  {
+    "id": "search-npm-luxon",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package luxon. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "luxon npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.7.2"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install luxon",
+          "npm i luxon"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/luxon/latest",
+      "checkedAt": "2026-10-17T03:35:12.317Z"
+    }
+  },
+  {
+    "id": "search-npm-nanoid",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package nanoid. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "nanoid npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "6.0.2"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install nanoid",
+          "npm i nanoid"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/nanoid/latest",
+      "checkedAt": "2026-10-17T03:35:09.041Z"
+    }
+  },
+  {
+    "id": "search-npm-ofetch",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package ofetch. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "ofetch npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.5.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install ofetch",
+          "npm i ofetch"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/ofetch/latest",
+      "checkedAt": "2026-10-17T03:34:48.113Z"
+    }
+  },
+  {
+    "id": "search-npm-pino",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package pino. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "pino npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "10.4.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install pino",
+          "npm i pino"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/pino/latest",
+      "checkedAt": "2026-10-17T03:35:01.317Z"
+    }
+  },
+  {
+    "id": "search-npm-playwright",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package playwright. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "playwright npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.64.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install playwright",
+          "npm i playwright"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/playwright/latest",
+      "checkedAt": "2026-10-17T03:34:54.728Z"
+    }
+  },
+  {
+    "id": "search-npm-puppeteer",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package puppeteer. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "puppeteer npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "25.14.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install puppeteer",
+          "npm i puppeteer"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/puppeteer/latest",
+      "checkedAt": "2026-10-17T03:34:55.818Z"
+    }
+  },
+  {
+    "id": "search-npm-sharp",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package sharp. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "sharp npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.35.5"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install sharp",
+          "npm i sharp"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/sharp/latest",
+      "checkedAt": "2026-10-17T03:34:56.917Z"
+    }
+  },
+  {
+    "id": "search-npm-tsup",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package tsup. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "tsup npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "9.0.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install tsup",
+          "npm i tsup"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/tsup/latest",
+      "checkedAt": "2026-10-17T03:34:50.317Z"
+    }
+  },
+  {
+    "id": "search-npm-ulid",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package ulid. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "ulid npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.0.2"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install ulid",
+          "npm i ulid"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/ulid/latest",
+      "checkedAt": "2026-10-17T03:35:10.117Z"
+    }
+  },
+  {
+    "id": "search-npm-undici",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package undici. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "undici npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "8.12.2"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install undici",
+          "npm i undici"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/undici/latest",
+      "checkedAt": "2026-10-17T03:34:59.115Z"
+    }
+  },
+  {
+    "id": "search-npm-unplugin",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package unplugin. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "unplugin npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.4.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install unplugin",
+          "npm i unplugin"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/unplugin/latest",
+      "checkedAt": "2026-10-17T03:34:49.219Z"
+    }
+  },
+  {
+    "id": "search-npm-vite",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package vite. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "vite npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "8.3.4"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install vite",
+          "npm i vite"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/vite/latest",
+      "checkedAt": "2026-10-17T03:34:52.515Z"
+    }
+  },
+  {
+    "id": "search-npm-vitest",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package vitest. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "vitest npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "5.0.5"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install vitest",
+          "npm i vitest"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/vitest/latest",
+      "checkedAt": "2026-10-17T03:34:53.620Z"
+    }
+  },
+  {
+    "id": "search-npm-winston",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package winston. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "winston npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.19.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install winston",
+          "npm i winston"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/winston/latest",
+      "checkedAt": "2026-10-17T03:35:02.423Z"
+    }
+  },
+  {
+    "id": "search-npm-yargs",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package yargs. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "yargs npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "18.2.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install yargs",
+          "npm i yargs"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/yargs/latest",
+      "checkedAt": "2026-10-17T03:35:04.628Z"
+    }
+  },
+  {
+    "id": "search-npm-zod",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package zod. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "zod npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.6.7"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install zod",
+          "npm i zod"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/zod/latest",
+      "checkedAt": "2026-10-17T03:34:42.680Z"
+    }
+  },
+  {
+    "id": "search-npm-zustand",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the npm package zustand. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned npm install command for this package, without extra flags.",
+    "site": "registry.npmjs.org",
+    "input": {
+      "track": "search",
+      "query": "zustand npm latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "5.0.15"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "npm install zustand",
+          "npm i zustand"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/zustand/latest",
+      "checkedAt": "2026-10-17T03:35:14.541Z"
+    }
+  },
+  {
+    "id": "search-pypi-alembic",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package alembic. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "alembic pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.20.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install alembic",
+          "python -m pip install alembic",
+          "python3 -m pip install alembic"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/alembic/json",
+      "checkedAt": "2026-10-17T03:35:43.184Z"
+    }
+  },
+  {
+    "id": "search-pypi-anyio",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package anyio. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "anyio pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.15.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install anyio",
+          "python -m pip install anyio",
+          "python3 -m pip install anyio"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/anyio/json",
+      "checkedAt": "2026-10-17T03:35:15.659Z"
+    }
+  },
+  {
+    "id": "search-pypi-asyncpg",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package asyncpg. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "asyncpg pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.32.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install asyncpg",
+          "python -m pip install asyncpg",
+          "python3 -m pip install asyncpg"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/asyncpg/json",
+      "checkedAt": "2026-10-17T03:35:46.484Z"
+    }
+  },
+  {
+    "id": "search-pypi-attrs",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package attrs. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "attrs pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.1.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install attrs",
+          "python -m pip install attrs",
+          "python3 -m pip install attrs"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/attrs/json",
+      "checkedAt": "2026-10-17T03:35:29.981Z"
+    }
+  },
+  {
+    "id": "search-pypi-cattrs",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package cattrs. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "cattrs pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.2.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install cattrs",
+          "python -m pip install cattrs",
+          "python3 -m pip install cattrs"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/cattrs/json",
+      "checkedAt": "2026-10-17T03:35:31.085Z"
+    }
+  },
+  {
+    "id": "search-pypi-click",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package click. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "click pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "8.5.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install click",
+          "python -m pip install click",
+          "python3 -m pip install click"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/click/json",
+      "checkedAt": "2026-10-17T03:35:28.887Z"
+    }
+  },
+  {
+    "id": "search-pypi-duckdb",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package duckdb. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "duckdb pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.5.6"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install duckdb",
+          "python -m pip install duckdb",
+          "python3 -m pip install duckdb"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/duckdb/json",
+      "checkedAt": "2026-10-17T03:35:37.690Z"
+    }
+  },
+  {
+    "id": "search-pypi-fastapi",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package fastapi. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "fastapi pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.143.3"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install fastapi",
+          "python -m pip install fastapi",
+          "python3 -m pip install fastapi"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/fastapi/json",
+      "checkedAt": "2026-10-17T03:35:21.159Z"
+    }
+  },
+  {
+    "id": "search-pypi-gunicorn",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package gunicorn. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "gunicorn pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.2.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install gunicorn",
+          "python -m pip install gunicorn",
+          "python3 -m pip install gunicorn"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/gunicorn/json",
+      "checkedAt": "2026-10-17T03:35:24.459Z"
+    }
+  },
+  {
+    "id": "search-pypi-httpx",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package httpx. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "httpx pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.28.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install httpx",
+          "python -m pip install httpx",
+          "python3 -m pip install httpx"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/httpx/json",
+      "checkedAt": "2026-10-17T03:35:14.601Z"
+    }
+  },
+  {
+    "id": "search-pypi-ibis-framework",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package ibis-framework. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "ibis-framework pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "12.0.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install ibis-framework",
+          "python -m pip install ibis-framework",
+          "python3 -m pip install ibis-framework"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/ibis-framework/json",
+      "checkedAt": "2026-10-17T03:35:39.887Z"
+    }
+  },
+  {
+    "id": "search-pypi-loguru",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package loguru. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "loguru pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.7.3"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install loguru",
+          "python -m pip install loguru",
+          "python3 -m pip install loguru"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/loguru/json",
+      "checkedAt": "2026-10-17T03:35:33.282Z"
+    }
+  },
+  {
+    "id": "search-pypi-msgspec",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package msgspec. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "msgspec pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.22.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install msgspec",
+          "python -m pip install msgspec",
+          "python3 -m pip install msgspec"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/msgspec/json",
+      "checkedAt": "2026-10-17T03:35:35.478Z"
+    }
+  },
+  {
+    "id": "search-pypi-orjson",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package orjson. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "orjson pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.13.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install orjson",
+          "python -m pip install orjson",
+          "python3 -m pip install orjson"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/orjson/json",
+      "checkedAt": "2026-10-17T03:35:34.381Z"
+    }
+  },
+  {
+    "id": "search-pypi-peewee",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package peewee. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "peewee pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.5.3"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install peewee",
+          "python -m pip install peewee",
+          "python3 -m pip install peewee"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/peewee/json",
+      "checkedAt": "2026-10-17T03:35:45.390Z"
+    }
+  },
+  {
+    "id": "search-pypi-polars",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package polars. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "polars pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.0.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install polars",
+          "python -m pip install polars",
+          "python3 -m pip install polars"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/polars/json",
+      "checkedAt": "2026-10-17T03:35:36.586Z"
+    }
+  },
+  {
+    "id": "search-pypi-pyarrow",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package pyarrow. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "pyarrow pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.0.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install pyarrow",
+          "python -m pip install pyarrow",
+          "python3 -m pip install pyarrow"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pyarrow/json",
+      "checkedAt": "2026-10-17T03:35:38.784Z"
+    }
+  },
+  {
+    "id": "search-pypi-pydantic",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package pydantic. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "pydantic pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.14.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install pydantic",
+          "python -m pip install pydantic",
+          "python3 -m pip install pydantic"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pydantic/json",
+      "checkedAt": "2026-10-17T03:35:18.959Z"
+    }
+  },
+  {
+    "id": "search-pypi-pydantic-settings",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package pydantic-settings. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "pydantic-settings pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.16.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install pydantic-settings",
+          "python -m pip install pydantic-settings",
+          "python3 -m pip install pydantic-settings"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pydantic-settings/json",
+      "checkedAt": "2026-10-17T03:35:20.078Z"
+    }
+  },
+  {
+    "id": "search-pypi-rich",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package rich. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "rich pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "15.0.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install rich",
+          "python -m pip install rich",
+          "python3 -m pip install rich"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/rich/json",
+      "checkedAt": "2026-10-17T03:35:25.560Z"
+    }
+  },
+  {
+    "id": "search-pypi-sqlalchemy",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package sqlalchemy. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "sqlalchemy pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.1.5"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install sqlalchemy",
+          "python -m pip install sqlalchemy",
+          "python3 -m pip install sqlalchemy"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/sqlalchemy/json",
+      "checkedAt": "2026-10-17T03:35:42.068Z"
+    }
+  },
+  {
+    "id": "search-pypi-sqlglot",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package sqlglot. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "sqlglot pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "30.23.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install sqlglot",
+          "python -m pip install sqlglot",
+          "python3 -m pip install sqlglot"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/sqlglot/json",
+      "checkedAt": "2026-10-17T03:35:40.990Z"
+    }
+  },
+  {
+    "id": "search-pypi-sqlmodel",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package sqlmodel. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "sqlmodel pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.0.48"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install sqlmodel",
+          "python -m pip install sqlmodel",
+          "python3 -m pip install sqlmodel"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/sqlmodel/json",
+      "checkedAt": "2026-10-17T03:35:44.288Z"
+    }
+  },
+  {
+    "id": "search-pypi-starlette",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package starlette. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "starlette pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.8.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install starlette",
+          "python -m pip install starlette",
+          "python3 -m pip install starlette"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/starlette/json",
+      "checkedAt": "2026-10-17T03:35:22.286Z"
+    }
+  },
+  {
+    "id": "search-pypi-structlog",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package structlog. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "structlog pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.1.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install structlog",
+          "python -m pip install structlog",
+          "python3 -m pip install structlog"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/structlog/json",
+      "checkedAt": "2026-10-17T03:35:32.162Z"
+    }
+  },
+  {
+    "id": "search-pypi-tenacity",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package tenacity. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "tenacity pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "9.2.1"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install tenacity",
+          "python -m pip install tenacity",
+          "python3 -m pip install tenacity"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/tenacity/json",
+      "checkedAt": "2026-10-17T03:35:17.877Z"
+    }
+  },
+  {
+    "id": "search-pypi-textual",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package textual. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "textual pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "8.2.8"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install textual",
+          "python -m pip install textual",
+          "python3 -m pip install textual"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/textual/json",
+      "checkedAt": "2026-10-17T03:35:26.680Z"
+    }
+  },
+  {
+    "id": "search-pypi-trio",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package trio. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "trio pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.34.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install trio",
+          "python -m pip install trio",
+          "python3 -m pip install trio"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/trio/json",
+      "checkedAt": "2026-10-17T03:35:16.781Z"
+    }
+  },
+  {
+    "id": "search-pypi-typer",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package typer. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "typer pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.27.3"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install typer",
+          "python -m pip install typer",
+          "python3 -m pip install typer"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/typer/json",
+      "checkedAt": "2026-10-17T03:35:27.784Z"
+    }
+  },
+  {
+    "id": "search-pypi-uvicorn",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package uvicorn. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "site": "pypi.org",
+    "input": {
+      "track": "search",
+      "query": "uvicorn pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.54.0"
+      },
+      {
+        "name": "installCommand",
+        "kind": "text",
+        "accept": [
+          "pip install uvicorn",
+          "python -m pip install uvicorn",
+          "python3 -m pip install uvicorn"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/uvicorn/json",
+      "checkedAt": "2026-10-17T03:35:23.362Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000004962",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find American Express's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "American Express latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 41304000000,
+        "tolerance": 413040000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004962.json issuer=AMERICAN EXPRESS CO; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0000004962-26-000080; filed 2026-02-06",
+      "checkedAt": "2026-10-17T03:36:28.440Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000019617",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find JPMorgan Chase's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "JPMorgan Chase latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 182447000000,
+        "tolerance": 1824470000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000019617.json issuer=JPMORGAN CHASE & CO; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0001628280-26-008131; filed 2026-02-13",
+      "checkedAt": "2026-10-17T03:36:21.866Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000021344",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Coca-Cola's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Coca-Cola latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 47941000000,
+        "tolerance": 479410000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021344.json issuer=COCA COLA CO; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0001628280-26-010047; filed 2026-02-20",
+      "checkedAt": "2026-10-17T03:36:18.553Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000027419",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Target's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Target latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 104780000000,
+        "tolerance": 1047800000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-01-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000027419.json issuer=Target Corporation; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-02-02/2026-01-31; accession 0000027419-26-000016; filed 2026-03-11",
+      "checkedAt": "2026-10-17T03:36:26.430Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000034088",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Exxon Mobil's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Exxon Mobil latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 332238000000,
+        "tolerance": 3322380000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000034088.json issuer=Exxon Mobil Corporation; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000034088-26-000045; filed 2026-02-18",
+      "checkedAt": "2026-10-17T03:36:34.973Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000051143",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find IBM's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "IBM latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 67535000000,
+        "tolerance": 675350000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051143.json issuer=INTERNATIONAL BUSINESS MACHINES CORP; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000051143-26-000010; filed 2026-02-24",
+      "checkedAt": "2026-10-17T03:36:15.242Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000059478",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Eli Lilly's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Eli Lilly latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 65179000000,
+        "tolerance": 651790000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json issuer=ELI LILLY AND COMPANY; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000059478-26-000013; filed 2026-02-12",
+      "checkedAt": "2026-10-17T03:55:02.121Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000066740",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find 3M's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "3M latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 24948000000,
+        "tolerance": 249480000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000066740.json issuer=3M CO; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000066740-26-000014; filed 2026-02-03",
+      "checkedAt": "2026-10-17T03:36:27.339Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000077476",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find PepsiCo's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "PepsiCo latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 93925000000,
+        "tolerance": 939250000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-27"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000077476.json issuer=PEPSICO INC; XBRL us-gaap:Revenues; period 2024-12-29/2025-12-27; accession 0000077476-26-000007; filed 2026-02-03",
+      "checkedAt": "2026-10-17T03:36:17.556Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000078003",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Pfizer's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Pfizer latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 62579000000,
+        "tolerance": 625790000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000078003.json issuer=PFIZER INC; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000078003-26-000026; filed 2026-02-26",
+      "checkedAt": "2026-10-17T03:36:36.027Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000080424",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Procter & Gamble's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Procter & Gamble latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 87032000000,
+        "tolerance": 870320000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-06-30"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000080424.json issuer=PROCTER & GAMBLE Co; XBRL us-gaap:Revenues; period 2025-07-01/2026-06-30; accession 0000080424-26-000103; filed 2026-08-04",
+      "checkedAt": "2026-10-17T03:36:19.810Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000080661",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Progressive's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Progressive latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 87671000000,
+        "tolerance": 876710000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000080661.json issuer=PROGRESSIVE CORP/OH/; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000080661-26-000086; filed 2026-03-02",
+      "checkedAt": "2026-10-17T03:36:32.064Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000092380",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Southwest Airlines's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Southwest Airlines latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 28063000000,
+        "tolerance": 280630000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092380.json issuer=SOUTHWEST AIRLINES CO.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0000092380-26-000004; filed 2026-02-05",
+      "checkedAt": "2026-10-17T03:36:54.724Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000093751",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find State Street's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "State Street latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 13944000000,
+        "tolerance": 139440000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093751.json issuer=STATE STREET CORP; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000093751-26-000124; filed 2026-02-19",
+      "checkedAt": "2026-10-17T03:36:55.951Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000100493",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Tyson Foods's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Tyson Foods latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 54441000000,
+        "tolerance": 544410000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-09-27"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000100493.json issuer=TYSON FOODS, INC.; XBRL us-gaap:Revenues; period 2024-09-29/2025-09-27; accession 0000100493-25-000095; filed 2025-11-10",
+      "checkedAt": "2026-10-17T03:36:56.986Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000100885",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Union Pacific's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Union Pacific latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 24510000000,
+        "tolerance": 245100000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000100885.json issuer=UNION PACIFIC CORP; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0000100885-26-000037; filed 2026-02-06",
+      "checkedAt": "2026-10-17T03:36:51.435Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000200406",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Johnson & Johnson's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Johnson & Johnson latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 94193000000,
+        "tolerance": 941930000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-28"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000200406.json issuer=Johnson & Johnson; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2024-12-30/2025-12-28; accession 0000200406-26-000016; filed 2026-02-11",
+      "checkedAt": "2026-10-17T03:36:20.730Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000310158",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Merck's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Merck latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 65011000000,
+        "tolerance": 650110000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000310158.json issuer=Merck & Co., Inc.; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000310158-26-000063; filed 2026-02-24",
+      "checkedAt": "2026-10-17T03:36:38.100Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000320193",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Apple's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Apple latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 416161000000,
+        "tolerance": 4161610000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-09-27"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json issuer=Apple Inc.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2024-09-29/2025-09-27; accession 0000320193-25-000079; filed 2025-10-31",
+      "checkedAt": "2026-10-17T03:36:07.766Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000711404",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Cooper Companies's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Cooper Companies latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 4092400000,
+        "tolerance": 40924000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-10-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000711404.json issuer=The Cooper Companies, Inc.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2024-11-01/2025-10-31; accession 0001628280-25-055615; filed 2025-12-05",
+      "checkedAt": "2026-10-17T03:36:50.299Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000723254",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Cintas's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Cintas latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 11264761000,
+        "tolerance": 112647610
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-05-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723254.json issuer=Cintas Corporation; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-06-01/2026-05-31; accession 0000723254-26-000028; filed 2026-07-29",
+      "checkedAt": "2026-10-17T03:36:42.669Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000764478",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Best Buy's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Best Buy latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 41691000000,
+        "tolerance": 416910000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-01-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000764478.json issuer=Best Buy Co., Inc.; XBRL us-gaap:Revenues; period 2025-02-02/2026-01-31; accession 0000764478-26-000009; filed 2026-03-18",
+      "checkedAt": "2026-10-17T03:36:52.511Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000789019",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Microsoft's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Microsoft latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 331839000000,
+        "tolerance": 3318390000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-06-30"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json issuer=MICROSOFT CORPORATION; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-07-01/2026-06-30; accession 0001193125-26-323660; filed 2026-07-29",
+      "checkedAt": "2026-10-17T03:36:08.758Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000796343",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Adobe's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Adobe latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 23769000000,
+        "tolerance": 237690000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-11-28"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json issuer=ADOBE INC.; XBRL us-gaap:Revenues; period 2024-11-30/2025-11-28; accession 0000796343-26-000003; filed 2026-01-15",
+      "checkedAt": "2026-10-17T03:36:41.665Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000864749",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Trimble's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Trimble latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 3587300000,
+        "tolerance": 35873000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-01-02"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000864749.json issuer=TRIMBLE INC.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-04/2026-01-02; accession 0000864749-26-000015; filed 2026-02-25",
+      "checkedAt": "2026-10-17T03:36:43.791Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000875045",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Biogen's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Biogen latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 9890600000,
+        "tolerance": 98906000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000875045.json issuer=BIOGEN INC.; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0000875045-26-000013; filed 2026-02-06",
+      "checkedAt": "2026-10-17T03:36:46.009Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000882095",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Gilead Sciences's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Gilead Sciences latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 29443000000,
+        "tolerance": 294430000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000882095.json issuer=GILEAD SCIENCES, INC.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0000882095-26-000006; filed 2026-02-24",
+      "checkedAt": "2026-10-17T03:36:44.879Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000909832",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Costco's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Costco latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 303154000000,
+        "tolerance": 3031540000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-08-30"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json issuer=COSTCO WHOLESALE CORP /NEW; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-09-01/2026-08-30; accession 0000909832-26-000093; filed 2026-10-07",
+      "checkedAt": "2026-10-17T03:36:25.266Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001018724",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Amazon's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Amazon latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 716924000000,
+        "tolerance": 7169240000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json issuer=AMAZON COM INC; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0001018724-26-000004; filed 2026-02-06",
+      "checkedAt": "2026-10-17T03:36:10.965Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001035002",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Valero Energy's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Valero Energy latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 122687000000,
+        "tolerance": 1226870000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001035002.json issuer=VALERO ENERGY CORP/TX; XBRL us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax; period 2025-01-01/2025-12-31; accession 0001628280-26-011499; filed 2026-02-25",
+      "checkedAt": "2026-10-17T03:36:49.227Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001045609",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Prologis's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Prologis latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 8790127000,
+        "tolerance": 87901270
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045609.json issuer=Prologis, Inc.; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0001193125-26-051453; filed 2026-02-13",
+      "checkedAt": "2026-10-17T03:36:48.132Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001045810",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find NVIDIA's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "NVIDIA latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 215938000000,
+        "tolerance": 2159380000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-01-25"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json issuer=NVIDIA CORP; XBRL us-gaap:Revenues; period 2025-01-27/2026-01-25; accession 0001045810-26-000021; filed 2026-02-25",
+      "checkedAt": "2026-10-17T03:36:13.148Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001108524",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Salesforce's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Salesforce latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 41525000000,
+        "tolerance": 415250000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-01-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json issuer=Salesforce, Inc.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-02-01/2026-01-31; accession 0001108524-26-000060; filed 2026-03-02",
+      "checkedAt": "2026-10-17T03:36:40.492Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001124198",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Fluor's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Fluor latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 15503000000,
+        "tolerance": 155030000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001124198.json issuer=FLUOR CORPORATION; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0001124198-26-000007; filed 2026-02-17",
+      "checkedAt": "2026-10-17T03:40:42.560Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001141391",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Mastercard's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Mastercard latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 32791000000,
+        "tolerance": 327910000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001141391.json issuer=Mastercard Incorporated; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0001141391-26-000013; filed 2026-02-11",
+      "checkedAt": "2026-10-17T03:36:30.628Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001318605",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Tesla's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Tesla latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 94827000000,
+        "tolerance": 948270000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json issuer=Tesla, Inc.; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0001628280-26-003952; filed 2026-01-29",
+      "checkedAt": "2026-10-17T03:36:14.247Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001326801",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Meta Platforms's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Meta Platforms latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 200966000000,
+        "tolerance": 2009660000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json issuer=Meta Platforms, Inc.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0001628280-26-003942; filed 2026-01-29",
+      "checkedAt": "2026-10-17T03:36:11.930Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001341439",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Oracle's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Oracle latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 67357000000,
+        "tolerance": 673570000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2026-05-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json issuer=Oracle Corporation; XBRL us-gaap:Revenues; period 2025-06-01/2026-05-31; accession 0001193125-26-277521; filed 2026-06-22",
+      "checkedAt": "2026-10-17T03:36:16.449Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001403161",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Visa's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Visa latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 40000000000,
+        "tolerance": 400000000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-09-30"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001403161.json issuer=VISA INC.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2024-10-01/2025-09-30; accession 0001403161-25-000089; filed 2025-11-06",
+      "checkedAt": "2026-10-17T03:36:29.656Z"
+    }
+  },
+  {
+    "id": "search-revenue-0001652044",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Alphabet's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "site": "data.sec.gov",
+    "input": {
+      "track": "search",
+      "query": "Alphabet latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "name": "revenueUSD",
+        "kind": "number",
+        "value": 402836000000,
+        "tolerance": 4028360000
+      },
+      {
+        "name": "fiscalYearEnd",
+        "kind": "date",
+        "value": "2025-12-31"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json issuer=Alphabet Inc.; XBRL us-gaap:Revenues; period 2025-01-01/2025-12-31; accession 0001652044-26-000018; filed 2026-02-05",
+      "checkedAt": "2026-10-17T03:36:09.860Z"
+    }
+  }
+]

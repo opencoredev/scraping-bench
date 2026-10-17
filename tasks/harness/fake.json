@@ -1,0 +1,98 @@
+[
+  {
+    "id": "fake-search",
+    "track": "search",
+    "family": "fake-evidence",
+    "instruction": "Find the current price of the Orbit Widget. Return price as a number.",
+    "input": {
+      "track": "search",
+      "query": "Orbit Widget current price"
+    },
+    "expected": [
+      {
+        "kind": "number",
+        "name": "price",
+        "value": 42,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "fixture",
+      "page": "https://fixture.invalid/products/orbit"
+    },
+    "site": "fixture.invalid"
+  },
+  {
+    "id": "fake-scrape",
+    "track": "scrape",
+    "family": "fake-evidence",
+    "instruction": "Find the current price of the Orbit Widget. Return price as a number.",
+    "input": {
+      "track": "scrape",
+      "url": "https://fixture.invalid/products/orbit"
+    },
+    "expected": [
+      {
+        "kind": "number",
+        "name": "price",
+        "value": 42,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "fixture",
+      "page": "https://fixture.invalid/products/orbit"
+    },
+    "site": "fixture.invalid"
+  },
+  {
+    "id": "fake-map",
+    "track": "map",
+    "family": "fake-evidence",
+    "instruction": "Find all product URLs.",
+    "input": {
+      "track": "map",
+      "site": "https://fixture.invalid",
+      "scope": "/products"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": ["https://fixture.invalid/products/orbit"],
+        "minRecall": 1,
+        "minPrecision": 1
+      }
+    ],
+    "source": {
+      "kind": "fixture",
+      "page": "https://fixture.invalid/products/orbit"
+    },
+    "site": "fixture.invalid"
+  },
+  {
+    "id": "fake-crawl",
+    "track": "crawl",
+    "family": "fake-evidence",
+    "instruction": "Find the current price of the Orbit Widget. Return price as a number.",
+    "input": {
+      "track": "crawl",
+      "site": "https://fixture.invalid",
+      "scope": "/products",
+      "maxPages": 2
+    },
+    "expected": [
+      {
+        "kind": "number",
+        "name": "price",
+        "value": 42,
+        "tolerance": 0
+      }
+    ],
+    "source": {
+      "kind": "fixture",
+      "page": "https://fixture.invalid/products/orbit"
+    },
+    "site": "fixture.invalid"
+  }
+]

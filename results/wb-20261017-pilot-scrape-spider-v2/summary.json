@@ -1,0 +1,166 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "spider",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 0,
+      "successRate": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.014361000000000002,
+      "costPerSuccessUsd": null,
+      "errors": {
+        "other": 10
+      },
+      "families": {
+        "install-command": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "price-stock": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-date-author": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "pdf-number": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "specs-table-cell": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "spider",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 0,
+      "successRate": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0,
+      "costPerSuccessUsd": null,
+      "errors": {
+        "other": 10
+      },
+      "families": {
+        "install-command": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "price-stock": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-date-author": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "pdf-number": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "specs-table-cell": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "spider",
+      "reference": "spider",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "spider",
+      "reference": "spider",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "spider": {
+      "usd": 0.014360999999999999,
+      "apiUsd": 0,
+      "modelUsd": 0.014360999999999999,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "track": "search",
+    "provider": "browserbase",
+    "successes": 4,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "search-npm-immer",
+        "responseHash": "22ca19829974cb2d06d178d9bf1d8b38a14d21bf09d94d7abb3330f8fa7ef09b",
+        "kind": "ok",
+        "error": null,
+        "bytes": 1434
+      },
+      {
+        "taskId": "search-fresh-nodejs-node",
+        "responseHash": "1cd9f238ab8dc09a960195f041a1ecfccc1cd12f9294fb68bce90d618fe59da4",
+        "kind": "ok",
+        "error": null,
+        "bytes": 1714
+      },
+      {
+        "taskId": "search-revenue-0001124198",
+        "responseHash": "99efd19f124ade76e91c6e151cc102e0b89c22bca4ec84a64c8c50b7b588f74c",
+        "kind": "ok",
+        "error": null,
+        "bytes": 2152
+      }
+    ],
+    "verdict": "Native HTTP Search returns useful titles and URLs but blank snippet/content fields. Inspected normalized and saved native bodies; adapter did not discard factual content."
+  },
+  {
+    "track": "scrape",
+    "provider": "spider",
+    "successes": 3,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "fixture-dev-20261017-b-scrape-install-command-69",
+        "responseHash": "37600ad7b29ee75b1b6d15ada58337db42ce9c8a042f7856b5ac4bb4e8b94711",
+        "kind": "error",
+        "error": "blocked",
+        "bytes": 154
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-scrape-pdf-number-111",
+        "responseHash": "ef7bdc9e3a710174723436e4e025930fc4ae81f9f7081e19f509183322d83467",
+        "kind": "error",
+        "error": "blocked",
+        "bytes": 154
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-scrape-cookie-boilerplate-109",
+        "responseHash": "265f7e7112c42d1bd0c7cc1badbd1018c3e80f7a2c861937b63d9733fa1bb9de",
+        "kind": "error",
+        "error": "blocked",
+        "bytes": 154
+      }
+    ],
+    "verdict": "Native embedded403 explicitly rejects the workers.dev fixture URL as malicious. Exact wallet deltas settle these rejections at zero. Three public PyPI pages succeeded. This is a provider-domain compatibility finding."
+  },
+  {
+    "track": "map",
+    "provider": "firecrawl",
+    "successes": 3,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "fixture-dev-20261017-b-map-products-category-127",
+        "responseHash": "4a09a476ec70587875d23d8deeffdfdee50df93fa33f9a8f9fe0ee117c503ca0",
+        "kind": "ok",
+        "error": null,
+        "bytes": 232
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-blog-tag-133",
+        "responseHash": "67db5c106277716af57d8224d219440971949e4f080a50f80cd57e0d79a60d43",
+        "kind": "ok",
+        "error": null,
+        "bytes": 195
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-docs-section-129",
+        "responseHash": "e1ff0390e586d209823824e4f5996e97134f1200af2544fb38d256d91ebebbe1",
+        "kind": "ok",
+        "error": null,
+        "bytes": 118
+      }
+    ],
+    "verdict": "Native map inventory is sparse on fresh seeded fixtures, often returning only the requested root and a sitemap URL. Requested descendant gold URLs are absent."
+  },
+  {
+    "track": "map",
+    "provider": "contextdev",
+    "successes": 3,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "fixture-dev-20261017-b-map-products-category-127",
+        "responseHash": "5e8e05280029685bdfbcdcccbd612d5ef80e5d1b034e48c38403666160fc40f7",
+        "kind": "error",
+        "error": "empty",
+        "bytes": 31
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-docs-api-139",
+        "responseHash": "80efc952a5d87e40ca142f105373fc2d5603bd97e911a2a01f022166044d8377",
+        "kind": "error",
+        "error": "empty",
+        "bytes": 31
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-blog-tag-133",
+        "responseHash": "6e7bc68db770c702bde082edfc4392f823933c66dbc7a1a2eb934f3c0b744ff8",
+        "kind": "error",
+        "error": "empty",
+        "bytes": 31
+      }
+    ],
+    "verdict": "After fixing the API domain argument to a bare hostname, native responses still return an empty URL inventory on seeded fixtures. This is distinct from the superseded adapter error."
+  }
+]

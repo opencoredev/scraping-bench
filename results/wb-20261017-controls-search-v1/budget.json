@@ -1,0 +1,9 @@
+{
+  "none": {
+    "usd": 0.01654699999999998,
+    "apiUsd": 0,
+    "modelUsd": 0.01654699999999998,
+    "maxUsd": 10,
+    "reached": false
+  }
+}

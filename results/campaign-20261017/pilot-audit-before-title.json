@@ -1,0 +1,182 @@
+[
+  {
+    "track": "search",
+    "provider": "browserbase",
+    "successes": 4,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "search-npm-immer",
+        "responseHash": "22ca19829974cb2d06d178d9bf1d8b38a14d21bf09d94d7abb3330f8fa7ef09b",
+        "kind": "ok",
+        "error": null,
+        "bytes": 1434
+      },
+      {
+        "taskId": "search-fresh-nodejs-node",
+        "responseHash": "1cd9f238ab8dc09a960195f041a1ecfccc1cd12f9294fb68bce90d618fe59da4",
+        "kind": "ok",
+        "error": null,
+        "bytes": 1714
+      },
+      {
+        "taskId": "search-revenue-0001124198",
+        "responseHash": "99efd19f124ade76e91c6e151cc102e0b89c22bca4ec84a64c8c50b7b588f74c",
+        "kind": "ok",
+        "error": null,
+        "bytes": 2152
+      }
+    ],
+    "verdict": "Native HTTP Search returns useful titles and URLs but blank snippet/content fields. Inspected normalized and saved native bodies; adapter did not discard factual content."
+  },
+  {
+    "track": "scrape",
+    "provider": "spider",
+    "successes": 3,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "fixture-dev-20261017-b-scrape-install-command-69",
+        "responseHash": "37600ad7b29ee75b1b6d15ada58337db42ce9c8a042f7856b5ac4bb4e8b94711",
+        "kind": "error",
+        "error": "blocked",
+        "bytes": 154
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-scrape-pdf-number-111",
+        "responseHash": "ef7bdc9e3a710174723436e4e025930fc4ae81f9f7081e19f509183322d83467",
+        "kind": "error",
+        "error": "blocked",
+        "bytes": 154
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-scrape-cookie-boilerplate-109",
+        "responseHash": "265f7e7112c42d1bd0c7cc1badbd1018c3e80f7a2c861937b63d9733fa1bb9de",
+        "kind": "error",
+        "error": "blocked",
+        "bytes": 154
+      }
+    ],
+    "verdict": "Native embedded403 explicitly rejects the workers.dev fixture URL as malicious. Exact wallet deltas settle these rejections at zero. Three public PyPI pages succeeded. This is a provider-domain compatibility finding."
+  },
+  {
+    "track": "map",
+    "provider": "firecrawl",
+    "successes": 3,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "fixture-dev-20261017-b-map-products-category-127",
+        "responseHash": "4a09a476ec70587875d23d8deeffdfdee50df93fa33f9a8f9fe0ee117c503ca0",
+        "kind": "ok",
+        "error": null,
+        "bytes": 232
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-blog-tag-133",
+        "responseHash": "67db5c106277716af57d8224d219440971949e4f080a50f80cd57e0d79a60d43",
+        "kind": "ok",
+        "error": null,
+        "bytes": 195
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-docs-section-129",
+        "responseHash": "e1ff0390e586d209823824e4f5996e97134f1200af2544fb38d256d91ebebbe1",
+        "kind": "ok",
+        "error": null,
+        "bytes": 118
+      }
+    ],
+    "verdict": "Native map inventory is sparse on fresh seeded fixtures, often returning only the requested root and a sitemap URL. Requested descendant gold URLs are absent."
+  },
+  {
+    "track": "map",
+    "provider": "contextdev",
+    "successes": 3,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "fixture-dev-20261017-b-map-products-category-127",
+        "responseHash": "5e8e05280029685bdfbcdcccbd612d5ef80e5d1b034e48c38403666160fc40f7",
+        "kind": "error",
+        "error": "empty",
+        "bytes": 31
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-docs-api-139",
+        "responseHash": "80efc952a5d87e40ca142f105373fc2d5603bd97e911a2a01f022166044d8377",
+        "kind": "error",
+        "error": "empty",
+        "bytes": 31
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-map-blog-tag-133",
+        "responseHash": "6e7bc68db770c702bde082edfc4392f823933c66dbc7a1a2eb934f3c0b744ff8",
+        "kind": "error",
+        "error": "empty",
+        "bytes": 31
+      }
+    ],
+    "verdict": "After fixing the API domain argument to a bare hostname, native responses still return an empty URL inventory on seeded fixtures. This is distinct from the superseded adapter error."
+  },
+  {
+    "track": "crawl",
+    "provider": "firecrawl",
+    "successes": 4,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "crawl-docs-astral-sh-uv-guides-integration",
+        "responseHash": "32bdb04f75e7f060eaebc9723937cfd96f43cf6da25a7e7c70b8496099e5b2bd",
+        "kind": "ok",
+        "error": null,
+        "bytes": 139794
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-crawl-section-commands-147",
+        "responseHash": "5f0c5c4bf2da8b232622462c97a953305ac9c6b8c5b369e46e7c11f5e5fea8b0",
+        "kind": "error",
+        "error": "rate-limited",
+        "bytes": 244
+      },
+      {
+        "taskId": "crawl-docs-astral-sh-uv-concepts-authentication",
+        "responseHash": "b14253a039b9fb8700c156385a774554fb7cc20f1c4fc1cd9b676adc1ed37793",
+        "kind": "error",
+        "error": "rate-limited",
+        "bytes": 244
+      }
+    ],
+    "verdict": "Corrected21-second pilot still receives native429 free-plan limits on some tasks. One inspected docs response contains19 pages/139794 bytes, beyond the48000-byte agent evidence cap. Full run slows dispatches to65 seconds."
+  },
+  {
+    "track": "crawl",
+    "provider": "contextdev",
+    "successes": 3,
+    "tasks": 10,
+    "inspections": [
+      {
+        "taskId": "fixture-dev-20261017-b-crawl-section-commands-145",
+        "responseHash": "08cb8540bc4ba15dfa5edf4ec7ddc2d5c3428cc230a9c0a79f5a1e0204050f22",
+        "kind": "ok",
+        "error": null,
+        "bytes": 17738
+      },
+      {
+        "taskId": "fixture-dev-20261017-b-crawl-migration-steps-155",
+        "responseHash": "2c46435a0a1dc6754f449b94f967da1355c2448a5c86b64be7f60fb595f4beee",
+        "kind": "ok",
+        "error": null,
+        "bytes": 17692
+      },
+      {
+        "taskId": "crawl-docs-astral-sh-ruff-editors",
+        "responseHash": "e6d424809c272ecac5a5a37f7e7c2199580e52f84a907ac69c69a8b84658602a",
+        "kind": "ok",
+        "error": null,
+        "bytes": 70944
+      }
+    ],
+    "verdict": "Responses include complete11-page fixture sections and large real docs. Failures involve shared-model malformed/empty JSON and evidence truncation; not uniformly missing retrieval."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "query": "pydantic-settings pypi latest stable version install",
+    "sha256": "1735fbcc08d366ff552bfe454a5836205835a480b5de944b8b000803a4857f7e",
+    "hits": 10,
+    "nativeKeys": [
+      "id",
+      "publishedDate",
+      "title",
+      "url"
+    ],
+    "finding": "Native results contain URL/title/date metadata, no snippet or content fields; normalized output does not discard factual body text."
+  },
+  {
+    "query": "pydantic-settings 2.15.0 release pypi",
+    "sha256": "099d77ead40f6581171b62dff54ba87cde711b2570d1a446287f3f1d22ad53d4",
+    "hits": 10,
+    "nativeKeys": [
+      "id",
+      "publishedDate",
+      "title",
+      "url"
+    ],
+    "finding": "Native results contain URL/title/date metadata, no snippet or content fields; normalized output does not discard factual body text."
+  },
+  {
+    "query": "fastapi pypi latest stable version install",
+    "sha256": "4a16dd2b115dc54ecd640f89393169d75239b8f877467e807d998ab2a0c122d5",
+    "hits": 10,
+    "nativeKeys": [
+      "id",
+      "publishedDate",
+      "title",
+      "url"
+    ],
+    "finding": "Native results contain URL/title/date metadata, no snippet or content fields; normalized output does not discard factual body text."
+  }
+]

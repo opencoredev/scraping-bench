@@ -1,0 +1,58 @@
+{
+  "firecrawl": {
+    "usd": 0.6563679999999995,
+    "apiUsd": 0.41500000000000026,
+    "modelUsd": 0.24136799999999925,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "contextdev": {
+    "usd": 0.39782299999999954,
+    "apiUsd": 0.13419999999999987,
+    "modelUsd": 0.26362299999999966,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "tinyfish": {
+    "usd": 0.23417500000000008,
+    "apiUsd": 0,
+    "modelUsd": 0.23417500000000008,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "jina": {
+    "usd": 0.29626230000000026,
+    "apiUsd": 0.021050300000000043,
+    "modelUsd": 0.27521200000000023,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "spider": {
+    "usd": 0.2970192870000001,
+    "apiUsd": 0.004204286999999977,
+    "modelUsd": 0.2928150000000001,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "linkup": {
+    "usd": 0.3218420000000004,
+    "apiUsd": 0.06400000000000006,
+    "modelUsd": 0.25784200000000035,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "scrapfly": {
+    "usd": 0.3216220000000001,
+    "apiUsd": 0.009750000000000036,
+    "modelUsd": 0.31187200000000004,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "browserbase": {
+    "usd": 0.5486990000000003,
+    "apiUsd": 0.2680000000000002,
+    "modelUsd": 0.2806990000000001,
+    "maxUsd": 10,
+    "reached": false
+  }
+}

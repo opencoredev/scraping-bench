@@ -1,0 +1,58 @@
+{
+  "firecrawl": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 6.445,
+    "maxCallUsd": 0.005
+  },
+  "contextdev": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 28.8508,
+    "maxCallUsd": 0.0022
+  },
+  "tinyfish": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 1,
+    "maxCallUsd": 0
+  },
+  "jina": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 0.472183055,
+    "maxCallUsd": 0.005
+  },
+  "spider": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 0.15,
+    "maxCallUsd": 0
+  },
+  "linkup": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 18.9943,
+    "maxCallUsd": 0.005
+  },
+  "scrapfly": {
+    "concurrency": 5,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 0.14085,
+    "maxCallUsd": 0.005
+  },
+  "browserbase": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 1,
+    "maxCallUsd": 0.004
+  }
+}

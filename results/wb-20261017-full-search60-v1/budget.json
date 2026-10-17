@@ -1,0 +1,37 @@
+{
+  "contextdev": {
+    "usd": 0.8554400000000002,
+    "apiUsd": 0.26179999999999987,
+    "modelUsd": 0.5936400000000004,
+    "maxUsd": 20,
+    "reached": false
+  },
+  "firecrawl": {
+    "usd": 1.7409950000000005,
+    "apiUsd": 1.1400000000000008,
+    "modelUsd": 0.6009949999999997,
+    "maxUsd": 20,
+    "reached": false
+  },
+  "tinyfish": {
+    "usd": 0.5772190000000004,
+    "apiUsd": 0,
+    "modelUsd": 0.5772190000000004,
+    "maxUsd": 20,
+    "reached": false
+  },
+  "linkup": {
+    "usd": 1.3607679999999969,
+    "apiUsd": 0.5300000000000004,
+    "modelUsd": 0.8307679999999965,
+    "maxUsd": 20,
+    "reached": false
+  },
+  "browserbase": {
+    "usd": 1.4482199999999947,
+    "apiUsd": 0.7850000000000006,
+    "modelUsd": 0.6632199999999941,
+    "maxUsd": 20,
+    "reached": false
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+.env
+*.env
+results/raw-private
+tmp
+.wrangler
+.env.*
+
+tasks/fixture-*.json
+# Local harness verification artifacts
+results/harness-*
+
+# Runtime benchmark locks are not result artifacts
+results/**/.lock
+results/**/.campaign.lock
+!.env.example

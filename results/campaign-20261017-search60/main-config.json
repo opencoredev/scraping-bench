@@ -1,0 +1,42 @@
+{
+  "contextdev": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 20,
+    "apiMaxUsd": 5.28,
+    "maxCallUsd": 0.022
+  },
+  "firecrawl": {
+    "concurrency": 2,
+    "perSecond": 0.14285714285714285,
+    "burst": 1,
+    "maxUsd": 20,
+    "apiMaxUsd": 3.115,
+    "maxCallUsd": 0.01
+  },
+  "tinyfish": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 20,
+    "apiMaxUsd": 0,
+    "maxCallUsd": 0
+  },
+  "linkup": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 20,
+    "apiMaxUsd": 1.2,
+    "maxCallUsd": 0.005
+  },
+  "browserbase": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 20,
+    "apiMaxUsd": 1.2,
+    "maxCallUsd": 0.005
+  }
+}

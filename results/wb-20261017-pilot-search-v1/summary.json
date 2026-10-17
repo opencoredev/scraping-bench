@@ -1,0 +1,729 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 9,
+      "successRate": 0.9,
+      "ci95": [
+        0.625,
+        1
+      ],
+      "successfulMedianMs": 3820.9439030000067,
+      "successfulP90Ms": 6769.345884800005,
+      "totalUsd": 0.251411,
+      "costPerSuccessUsd": 0.027934555555555556,
+      "errors": {},
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "linkup",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 8,
+      "successRate": 0.8,
+      "ci95": [
+        0.25,
+        1
+      ],
+      "successfulMedianMs": 4890.308485500001,
+      "successfulP90Ms": 10692.985077899995,
+      "totalUsd": 0.242548,
+      "costPerSuccessUsd": 0.0303185,
+      "errors": {},
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 8,
+      "na": 2,
+      "successes": 5,
+      "successRate": 0.625,
+      "ci95": [
+        0.5,
+        0.875
+      ],
+      "successfulMedianMs": 974.8427359999914,
+      "successfulP90Ms": 1426.7917495999977,
+      "totalUsd": 0.09999999999999999,
+      "costPerSuccessUsd": 0.019999999999999997,
+      "errors": {},
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 0.5
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "linkup",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 8,
+      "na": 2,
+      "successes": 6,
+      "successRate": 0.75,
+      "ci95": [
+        0.25,
+        1
+      ],
+      "successfulMedianMs": 1572.8518269999913,
+      "successfulP90Ms": 1809.0347660000043,
+      "totalUsd": 0.049999999999999996,
+      "costPerSuccessUsd": 0.008333333333333333,
+      "errors": {},
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "browserbase",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "browser-infra",
+      "tasks": 10,
+      "na": 0,
+      "successes": 4,
+      "successRate": 0.4,
+      "ci95": [
+        0,
+        0.75
+      ],
+      "successfulMedianMs": 7756.9072000000015,
+      "successfulP90Ms": 14409.1245997,
+      "totalUsd": 0.19630600000000004,
+      "costPerSuccessUsd": 0.04907650000000001,
+      "errors": {
+        "other": 1
+      },
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "not-found": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "browserbase",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "browser-infra",
+      "tasks": 8,
+      "na": 2,
+      "successes": 1,
+      "successRate": 0.125,
+      "ci95": [
+        0,
+        0.375
+      ],
+      "successfulMedianMs": 3949.738083,
+      "successfulP90Ms": 3949.738083,
+      "totalUsd": 0.049999999999999996,
+      "costPerSuccessUsd": 0.049999999999999996,
+      "errors": {},
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "tinyfish",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 8,
+      "successRate": 0.8,
+      "ci95": [
+        0.5,
+        1
+      ],
+      "successfulMedianMs": 5088.477734499995,
+      "successfulP90Ms": 8881.749812899996,
+      "totalUsd": 0.08790800000000001,
+      "costPerSuccessUsd": 0.010988500000000002,
+      "errors": {
+        "other": 1,
+        "empty": 1
+      },
+      "families": {
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "not-found": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "tinyfish",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 8,
+      "na": 2,
+      "successes": 4,
+      "successRate": 0.5,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 532.2230355000065,
+      "successfulP90Ms": 810.5252242000039,
+      "totalUsd": 0,
+      "costPerSuccessUsd": 0,
+      "errors": {},
+      "families": {
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 9,
+      "successRate": 0.9,
+      "ci95": [
+        0.625,
+        1
+      ],
+      "successfulMedianMs": 4621.989074,
+      "successfulP90Ms": 8963.8109774,
+      "totalUsd": 0.10757900000000001,
+      "costPerSuccessUsd": 0.011953222222222223,
+      "errors": {},
+      "families": {
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 8,
+      "na": 2,
+      "successes": 6,
+      "successRate": 0.75,
+      "ci95": [
+        0.25,
+        1
+      ],
+      "successfulMedianMs": 758.0333789999931,
+      "successfulP90Ms": 1788.8544149999943,
+      "totalUsd": 0.022000000000000006,
+      "costPerSuccessUsd": 0.0036666666666666675,
+      "errors": {},
+      "families": {
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "jina",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 8,
+      "successRate": 0.8,
+      "ci95": [
+        0.5,
+        1
+      ],
+      "successfulMedianMs": 23133.1082255,
+      "successfulP90Ms": 36864.8476361,
+      "totalUsd": 0.30702094999999996,
+      "costPerSuccessUsd": 0.038377618749999995,
+      "errors": {
+        "timeout": 2
+      },
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "not-found": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "jina",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 8,
+      "na": 2,
+      "successes": 7,
+      "successRate": 0.875,
+      "ci95": [
+        0.625,
+        1
+      ],
+      "successfulMedianMs": 9026.837371999998,
+      "successfulP90Ms": 14019.151864800006,
+      "totalUsd": 0.11359569999999997,
+      "costPerSuccessUsd": 0.016227957142857137,
+      "errors": {},
+      "families": {
+        "entity-facts": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 2,
+          "successRate": 0.5
+        },
+        "latest-version": {
+          "tasks": 2,
+          "successRate": 1
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "linkup",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": -0.1,
+      "ci95": [
+        -0.375,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "jina",
+      "pairedTasks": 8,
+      "difference": -0.25,
+      "ci95": [
+        -0.5,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "linkup",
+      "reference": "jina",
+      "pairedTasks": 8,
+      "difference": -0.125,
+      "ci95": [
+        -0.375,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "browser-infra",
+      "provider": "browserbase",
+      "reference": "browserbase",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "browser-infra",
+      "provider": "browserbase",
+      "reference": "browserbase",
+      "pairedTasks": 8,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "tinyfish",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": -0.1,
+      "ci95": [
+        -0.375,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "tinyfish",
+      "reference": "jina",
+      "pairedTasks": 8,
+      "difference": -0.375,
+      "ci95": [
+        -0.75,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "jina",
+      "pairedTasks": 8,
+      "difference": -0.125,
+      "ci95": [
+        -0.375,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "jina",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": -0.1,
+      "ci95": [
+        -0.375,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "jina",
+      "reference": "jina",
+      "pairedTasks": 8,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "firecrawl": {
+      "usd": 0.2714110000000001,
+      "apiUsd": 0.17,
+      "modelUsd": 0.10141100000000011,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "contextdev": {
+      "usd": 0.11637900000000005,
+      "apiUsd": 0.04180000000000001,
+      "modelUsd": 0.07457900000000003,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "tinyfish": {
+      "usd": 0.08790800000000004,
+      "apiUsd": 0,
+      "modelUsd": 0.08790800000000004,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "jina": {
+      "usd": 0.3680730000000002,
+      "apiUsd": 0.22594200000000011,
+      "modelUsd": 0.1421310000000001,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "linkup": {
+      "usd": 0.257548,
+      "apiUsd": 0.10000000000000002,
+      "modelUsd": 0.15754799999999997,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "browserbase": {
+      "usd": 0.20130600000000012,
+      "apiUsd": 0.11000000000000003,
+      "modelUsd": 0.0913060000000001,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "empty": 1,
+    "timeout": 1
+  }
+}

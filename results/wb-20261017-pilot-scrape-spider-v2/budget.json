@@ -1,0 +1,9 @@
+{
+  "spider": {
+    "usd": 0.014360999999999999,
+    "apiUsd": 0,
+    "modelUsd": 0.014360999999999999,
+    "maxUsd": 10,
+    "reached": false
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "spider",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 3,
+      "successRate": 0.3,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 4963.566755,
+      "successfulP90Ms": 5553.3818261999995,
+      "totalUsd": 0.054009180500000004,
+      "costPerSuccessUsd": 0.018003060166666668,
+      "errors": {
+        "blocked": 7,
+        "other": 1
+      },
+      "families": {
+        "install-command": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "specs-table-cell": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-date-author": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "price-stock": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "spider",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 3,
+      "successRate": 0.3,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 1912.3619479999998,
+      "successfulP90Ms": 2056.521287200002,
+      "totalUsd": 0.0009051805000000058,
+      "costPerSuccessUsd": 0.00030172683333333527,
+      "errors": {
+        "blocked": 7
+      },
+      "families": {
+        "install-command": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "specs-table-cell": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-date-author": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "price-stock": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "spider",
+      "reference": "spider",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "spider",
+      "reference": "spider",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "spider": {
+      "usd": 0.054009180500000004,
+      "apiUsd": 0.0009051805000000052,
+      "modelUsd": 0.053104,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "blocked": 7
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "firecrawl": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 4.420000000000004,
+    "maxCallUsd": 0.06
+  },
+  "contextdev": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 28.485599999999998,
+    "maxCallUsd": 0.0022
+  },
+  "tinyfish": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 1,
+    "maxCallUsd": 0
+  },
+  "jina": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 0.0778897549999999,
+    "maxCallUsd": 0.005
+  },
+  "spider": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 0.23469481949999998,
+    "maxCallUsd": 0.02
+  },
+  "linkup": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 18.813299999999998,
+    "maxCallUsd": 0.005
+  },
+  "scrapfly": {
+    "concurrency": 5,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 0.12344999999999998,
+    "maxCallUsd": 0.005
+  },
+  "browserbase": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 0.7409999999999999,
+    "maxCallUsd": 0.004
+  }
+}

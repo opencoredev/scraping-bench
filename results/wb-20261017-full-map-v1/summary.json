@@ -1,0 +1,335 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "map",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 15,
+      "na": 0,
+      "successes": 7,
+      "successRate": 0.4666666666666667,
+      "ci95": [
+        0.1111111111111111,
+        1
+      ],
+      "successfulMedianMs": 6050.7148959999995,
+      "successfulP90Ms": 10225.777274799999,
+      "totalUsd": 0.12892199999999998,
+      "costPerSuccessUsd": 0.018417428571428567,
+      "errors": {
+        "empty": 16
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "blog-2026": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 15,
+      "na": 0,
+      "successes": 3,
+      "successRate": 0.2,
+      "ci95": [
+        0.034482758620689655,
+        0.7142857142857143
+      ],
+      "successfulMedianMs": 1550.3851510000004,
+      "successfulP90Ms": 5853.7675886000025,
+      "totalUsd": 0.033,
+      "costPerSuccessUsd": 0.011000000000000001,
+      "errors": {
+        "empty": 8
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 7,
+          "successRate": 0.42857142857142855
+        },
+        "blog-2026": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 15,
+      "na": 0,
+      "successes": 6,
+      "successRate": 0.4,
+      "ci95": [
+        0.10714285714285714,
+        1
+      ],
+      "successfulMedianMs": 10922.552734999997,
+      "successfulP90Ms": 14710.759733000003,
+      "totalUsd": 0.20077300000000003,
+      "costPerSuccessUsd": 0.033462166666666675,
+      "errors": {
+        "other": 1,
+        "rate-limited": 4
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 7,
+          "successRate": 0.8571428571428571
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2026": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 15,
+      "na": 0,
+      "successes": 3,
+      "successRate": 0.2,
+      "ci95": [
+        0.03571428571428571,
+        0.8333333333333334
+      ],
+      "successfulMedianMs": 7519.943307000001,
+      "successfulP90Ms": 12173.185496600003,
+      "totalUsd": 0.075,
+      "costPerSuccessUsd": 0.024999999999999998,
+      "errors": {
+        "rate-limited": 2
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 7,
+          "successRate": 0.42857142857142855
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2026": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 15,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 15,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 15,
+      "difference": -0.06666666666666667,
+      "ci95": [
+        -0.25,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 15,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "firecrawl": {
+      "usd": 0.20577300000000012,
+      "apiUsd": 0.11500000000000003,
+      "modelUsd": 0.09077300000000009,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "contextdev": {
+      "usd": 0.131122,
+      "apiUsd": 0.05280000000000001,
+      "modelUsd": 0.07832199999999997,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "empty": 17,
+    "rate-limited": 4
+  }
+}

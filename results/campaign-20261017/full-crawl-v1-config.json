@@ -1,0 +1,26 @@
+{
+  "firecrawl": {
+    "concurrency": 2,
+    "perSecond": 0.015384615384615385,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 3.4050000000000096,
+    "maxCallUsd": 0.15
+  },
+  "contextdev": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 28.087400000000002,
+    "maxCallUsd": 0.066
+  },
+  "scrapfly": {
+    "concurrency": 5,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 0.11369999999999997,
+    "maxCallUsd": 0.045
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "authorization": "User follow-up:60 paired search tasks; Parallel dashboard grant accepted with $4 cap. No purchases/upgrades.",
+  "budgetEpoch": "Fresh measured Firecrawl wallet reconciles old uncertain reservations; all new search60 run IDs share these allowances. Historical ledger remains intact and separately reported.",
+  "epochCapsUsd": {
+    "firecrawl": 3.115,
+    "contextdev": 5.28,
+    "tinyfish": 0,
+    "linkup": 1.2,
+    "browserbase": 1.2,
+    "none": 0
+  },
+  "firecrawl": {
+    "startingCredits": 691,
+    "retainedCredits": 68,
+    "basis": "Fresh credit-usage API; original 1357-credit floor rounded up to68 is stricter than5% of691. Search2credits/call; up to240calls costs480credits."
+  },
+  "browserbase": {
+    "basis": "Native remaining quota unavailable. Product free grant1000 Search requests; guard total campaign dispatched calls plus240 worst-case new calls <=900. Prior $1 list-dollar cap was an artificial campaign subcap, replaced by request guard and $1.20 epoch cap."
+  },
+  "jina": {
+    "newTasks": 0,
+    "priorConservativeTokens": 8608910,
+    "priorCapTokens": 9443661.1,
+    "remainingGuardTokens": 834751.1,
+    "lastRootTokens": 1724828,
+    "knownPriorCallTokens": 618754,
+    "knownPriorCallUsd": 0.0309377,
+    "reason": "Old .03/call bound disproven; no documented enforceable upstream token ceiling. Unchanged policy permits3agent calls plus1raw miss. Largest guaranteed affordable new full-task subset is zero. Retain cached historical seven only as a separate time-qualified paired subset; no new Jina charges."
+  }
+}

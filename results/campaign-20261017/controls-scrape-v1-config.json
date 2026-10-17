@@ -1,0 +1,18 @@
+{
+  "none": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 10,
+    "maxCallUsd": 0
+  },
+  "oracle": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 10,
+    "apiMaxUsd": 10,
+    "maxCallUsd": 0
+  }
+}

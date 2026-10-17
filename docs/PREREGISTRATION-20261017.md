@@ -1,0 +1,37 @@
+# Free-credit campaign, 17 October 2026
+
+The held-out run uses the frozen samples and hashes in `results/campaign-20261017/sample-provenance.json`: 7 search tasks, 60 scrape tasks, 15 map tasks and 10 crawl tasks. Every provider supporting a track gets the same task IDs. The runner shuffles with seed 17017, interleaves providers, and uses at most four workers from client `ms-a2`.
+
+The fixture content seed is `test-20261017-fresh-c`, separate from pilot seed `dev-20261017-b`. Real-web keys were refreshed before sampling: 287/288 passed; the drifted `scrape-pypi-tenacity` task is excluded. Freshness tasks are excluded because origin-version matching is not integrated. Crawl scopes are capped at 30 pages and selected to fit the free grants. This replaces the larger aspirational sample and six-region design in PLAN.md for this campaign.
+
+The answer model is `claude-haiku-5-5`, temperature 0, up to 4096 output tokens. Tool evidence is capped at 12,000 UTF-8 bytes, or 48,000 for crawl. Source and settings hashes are frozen in each run manifest. Agent and raw lanes share only an identical normalized first tool call. Raw results retain standalone cost and latency attribution; the campaign ledger records that physical API charge once. Relationship text sets requiring pipe serialization are raw n/a.
+
+Default lanes run on all included providers. Tuned runs are restricted to scrape and remaining free allowances. No-tool controls use every held-out sample; scrape also has an oracle supplied independently fetched and checked evidence. Oracle source/evidence hashes are public; page bodies remain private. Browser spot checks confirmed the fresh JS, shadow, lazy and iframe values.
+
+Retain at least 5% of starting balances. The campaign serializes runs and counts signed dispatch reservations and settlements from all campaign run IDs, including interrupted and superseded pilots. Reserve maximum call cost before dispatch; stop when the next call cannot fit. Context.dev concurrency 1; Scrapfly 5; others 2 except serialized Spider wallet metering. Firecrawl crawl dispatches are conservatively spaced 65 seconds after a 21-second pilot pace still encountered native throttling. No credits are bought and no plan is upgraded.
+
+Jina has the tightest search allowance: the pilot cost about $0.02259/task. The seven-task search sample reserves estimated scrape costs and one additional $0.03 call. Scrape 60, map 15 and crawl 10 fit pilot-based estimates; actual budget stops remain visible failures. Spider is restricted to single-page scrape, with wallet checks before/after and a 124-credit floor. Its fixture-domain malicious-URL rejections are findings. Browserbase uses its HTTP Fetch/Search products, with conservative request counts below the documented free allocation.
+
+Exa, Tavily, Perplexity and Bright Data are not tested — no key. Parallel has a key but no verified remaining grant or recharge status; an API-key balance request requires OAuth, so it is stopped. The supplied keyed-provider list contains nine names despite saying ten.
+
+Publish task success, paired site-clustered percentile bootstrap 95% intervals, total API plus estimated model cost per success, successful-task median/p90, all-task latency, error/limit counts and family rates. Use 10,000 bootstrap draws in the aggregate report. Report paired differences within product cohorts; cross-cohort score ordering is descriptive. Comparisons are exploratory and unadjusted. Only two scrape site clusters and seven search tasks prevent broad winner claims. Boundary success rates can give degenerate bootstrap intervals; those do not establish certainty.
+
+Known pilot corrections: fixture crawl scopes contained prose; Context.dev map expected a hostname; Spider's timeout argument had an invalid native type. Those quality rows are superseded. Native costs from every attempt remain in campaign totals. Complete response bodies from three failed tasks are inspected for each pilot provider/track below 50%; verdicts and hashes are published without third-party page bodies.
+
+## Disclosed crawl corrections before the held-out crawl
+
+After search, scrape and map were frozen, a response audit found native document titles discarded by Firecrawl and Context.dev crawl adapters. A regression failed before the fix and passed afterward; independent review found no remaining issue. The affected dev crawl sample is rerun with native titles before the held-out crawl. Earlier native costs remain counted. Each track manifest records its actual source hash.
+
+A separate regression showed concurrent upper-bound reservations could report an exhausted API allowance while an inexpensive pending call was about to settle. The runner now waits for settlement when the next call fits settled spend. Both the overspend guard and the settlement regression pass; independent review found no issue. Completed search, scrape and map runs recorded no provider-budget stops, so this correction does not change their scores.
+
+## Search extension, before the 60-task run
+
+The seven-task search comparison is superseded by `wb-20261017-full-search60-v1` and its sixty-task no-tool control. Search task counts are 14 latest-version, 13 company-financials, 13 entity-facts, 13 fresh and 7 not-found; only seven not-found tasks exist in the held-out split. Every selected key passed a fresh authoritative check. The original seven IDs are retained for a zero-credit historical Jina comparison; selection uses IDs and families, not outcomes.
+
+Context.dev, Firecrawl, TinyFish, Linkup, Browserbase and Parallel receive all sixty tasks. The client remains `ms-a2`, default lane, answer policy unchanged, raw first-call reuse unchanged, at most four workers, Context.dev concurrency one, others two. Firecrawl search dispatches are spaced seven seconds apart. Each run command has a 30-minute timeout.
+
+A fresh Firecrawl wallet snapshot reports 691 credits. The extension's new budget epoch permits $3.115 of native calls, retaining 68 credits (the original campaign's stricter 5% floor). This reconciles old uncertain reservations against the current measured wallet; all historical dispatch estimates remain in campaign totals. Browserbase uses the documented free Search request allocation: prior dispatches plus 240 worst-case new calls must stay below 900. The old artificial $1 list-equivalent campaign cap is replaced by this request guard and a $1.20 extension cap. TinyFish retains its request guard and zero contract rate. Parallel uses the user-authorized $5 dashboard observation from 2026-10-16, with a $4 extension cap: **balance from dashboard, not API**. Its native result count is capped at ten, bounding default calls at $0.005.
+
+Jina's old $0.03 call bound was disproven by a 618,754-token settlement ($0.0309377). Its conservative remaining allowance is only 834,751.1 tokens, and no enforceable native token ceiling was found. An unchanged search task permits three agent calls and a separate raw cache miss. No new full task can be guaranteed affordable; Jina gets zero new calls. Its seven cached historical results are reported only against the matching seven new main-run results, with time and source-version caveats, never ranked against the full sixty.
+
+The replacement summary explicitly excludes old search quality and control rows, retains their costs, and preserves scrape/map/crawl results. Search-extension budget snapshots and sample hashes live in `results/campaign-20261017-search60`.

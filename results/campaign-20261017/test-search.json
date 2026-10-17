@@ -1,0 +1,193 @@
+[
+  {
+    "id": "search-founding-Q17957",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Lonely Planet (Wikidata Q17957). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "input": {
+      "track": "search",
+      "query": "Lonely Planet Q17957 founded inception year"
+    },
+    "expected": [
+      {
+        "kind": "number",
+        "name": "foundingYear",
+        "value": 1972,
+        "tolerance": 0
+      }
+    ],
+    "site": "query.wikidata.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ17957%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q17957; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:59.482Z"
+    }
+  },
+  {
+    "id": "search-fresh-rust-lang-rust",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of rust-lang/rust. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "input": {
+      "track": "search",
+      "query": "rust-lang/rust latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "kind": "text",
+        "name": "tag",
+        "accept": [
+          "1.99.1"
+        ]
+      },
+      {
+        "kind": "date",
+        "name": "publishedDate",
+        "value": "2026-10-16"
+      }
+    ],
+    "site": "api.github.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/rust-lang/rust/releases/latest release-page=https://github.com/rust-lang/rust/releases/tag/1.99.1; published_at=2026-10-16T04:47:44Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:21.417Z"
+    }
+  },
+  {
+    "id": "search-pypi-fastapi",
+    "track": "search",
+    "family": "latest-version",
+    "instruction": "Find the latest stable release of the pypi package fastapi. Return JSON with the string field \"version\". Also return \"installCommand\", the unpinned pip install command for this package, without extra flags.",
+    "input": {
+      "track": "search",
+      "query": "fastapi pypi latest stable version install"
+    },
+    "expected": [
+      {
+        "kind": "version",
+        "name": "version",
+        "value": "0.143.3"
+      },
+      {
+        "kind": "text",
+        "name": "installCommand",
+        "accept": [
+          "pip install fastapi",
+          "python -m pip install fastapi",
+          "python3 -m pip install fastapi"
+        ]
+      }
+    ],
+    "site": "pypi.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/fastapi/json",
+      "checkedAt": "2026-10-17T03:35:21.159Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000092380",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Southwest Airlines's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "input": {
+      "track": "search",
+      "query": "Southwest Airlines latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "kind": "number",
+        "name": "revenueUSD",
+        "value": 28063000000,
+        "tolerance": 280630000
+      },
+      {
+        "kind": "date",
+        "name": "fiscalYearEnd",
+        "value": "2025-12-31"
+      }
+    ],
+    "site": "data.sec.gov",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092380.json issuer=SOUTHWEST AIRLINES CO.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0000092380-26-000004; filed 2026-02-05",
+      "checkedAt": "2026-10-17T03:36:54.724Z"
+    }
+  },
+  {
+    "id": "search-none-drizzle-orm",
+    "track": "search",
+    "family": "not-found",
+    "instruction": "Find the published npm integrity checksum for drizzle-orm@99.99.99. Return JSON with \"integrity\" as the checksum, or null if that version has never been published. Do not substitute another version.",
+    "input": {
+      "track": "search",
+      "query": "drizzle-orm npm version 99.99.99 release integrity checksum"
+    },
+    "expected": [
+      {
+        "kind": "none",
+        "name": "integrity"
+      }
+    ],
+    "site": "registry.npmjs.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://registry.npmjs.org/drizzle-orm versions[99.99.99] absent (package exists)",
+      "checkedAt": "2026-10-17T03:43:53.510Z"
+    }
+  },
+  {
+    "id": "search-founding-Q13977",
+    "track": "search",
+    "family": "entity-facts",
+    "instruction": "Find the founding year of Bloomberg L.P. (Wikidata Q13977). Return JSON with numeric field \"foundingYear\". Use the organization's inception, not a predecessor's founding.",
+    "input": {
+      "track": "search",
+      "query": "Bloomberg L.P. Q13977 founded inception year"
+    },
+    "expected": [
+      {
+        "kind": "number",
+        "name": "foundingYear",
+        "value": 1981,
+        "tolerance": 0
+      }
+    ],
+    "site": "query.wikidata.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://query.wikidata.org/sparql?query=SELECT%20(MIN(%3Fdate)%20AS%20%3Ffounded)%20WHERE%20%7B%20wd%3AQ13977%20p%3AP571%20%3Fstatement%20.%20%3Fstatement%20ps%3AP571%20%3Fdate%3B%20wikibase%3Arank%20%3Frank%20.%20FILTER(%3Frank%20!%3D%20wikibase%3ADeprecatedRank)%20%7D%20HAVING(COUNT(DISTINCT%20%3Fdate)%20%3D%201)&format=json QID=Q13977; property=P571; single non-deprecated date",
+      "checkedAt": "2026-10-17T03:42:49.949Z"
+    }
+  },
+  {
+    "id": "search-fresh-astral-sh-ty",
+    "track": "search",
+    "family": "fresh",
+    "instruction": "Find the latest stable GitHub release of astral-sh/ty. Return JSON fields \"tag\" (exact release tag, including any v prefix) and \"publishedDate\" (UTC YYYY-MM-DD). Exclude prereleases.",
+    "input": {
+      "track": "search",
+      "query": "astral-sh/ty latest stable GitHub release tag publication date"
+    },
+    "expected": [
+      {
+        "kind": "text",
+        "name": "tag",
+        "accept": [
+          "0.0.89"
+        ]
+      },
+      {
+        "kind": "date",
+        "name": "publishedDate",
+        "value": "2026-10-16"
+      }
+    ],
+    "site": "api.github.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://api.github.com/repos/astral-sh/ty/releases/latest release-page=https://github.com/astral-sh/ty/releases/tag/0.0.89; published_at=2026-10-16T10:36:02Z; maximum-age=14-days",
+      "checkedAt": "2026-10-17T03:43:14.907Z"
+    }
+  }
+]

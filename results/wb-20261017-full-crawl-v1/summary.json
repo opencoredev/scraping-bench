@@ -1,0 +1,311 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "crawl",
+      "provider": "scrapfly",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "tasks": 10,
+      "na": 0,
+      "successes": 7,
+      "successRate": 0.7,
+      "ci95": [
+        0,
+        0.9545454545454546
+      ],
+      "successfulMedianMs": 14468.681247,
+      "successfulP90Ms": 19804.937280999995,
+      "totalUsd": 0.20177599999999998,
+      "costPerSuccessUsd": 0.028825142857142855,
+      "errors": {
+        "other": 3
+      },
+      "families": {
+        "section-commands": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "docs-page-records": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "migration-steps": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "crawl",
+      "provider": "scrapfly",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "tasks": 0,
+      "na": 10,
+      "successes": 0,
+      "successRate": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.018299999999999997,
+      "costPerSuccessUsd": null,
+      "errors": {},
+      "families": {}
+    },
+    {
+      "track": "crawl",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 5,
+      "successRate": 0.5,
+      "ci95": [
+        0,
+        0.6818181818181818
+      ],
+      "successfulMedianMs": 60400.72814899997,
+      "successfulP90Ms": 179901.03082940003,
+      "totalUsd": 0.7107620000000001,
+      "costPerSuccessUsd": 0.1421524,
+      "errors": {
+        "other": 5
+      },
+      "families": {
+        "section-commands": {
+          "tasks": 5,
+          "successRate": 0.8
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "docs-page-records": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "migration-steps": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "crawl",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 0,
+      "na": 10,
+      "successes": 0,
+      "successRate": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.525,
+      "costPerSuccessUsd": null,
+      "errors": {},
+      "families": {}
+    },
+    {
+      "track": "crawl",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 6,
+      "successRate": 0.6,
+      "ci95": [
+        0,
+        0.8181818181818182
+      ],
+      "successfulMedianMs": 18317.32935949999,
+      "successfulP90Ms": 19073.733188,
+      "totalUsd": 0.455056,
+      "costPerSuccessUsd": 0.07584266666666667,
+      "errors": {
+        "other": 4
+      },
+      "families": {
+        "section-commands": {
+          "tasks": 5,
+          "successRate": 0.8
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "docs-page-records": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "migration-steps": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "crawl",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 0,
+      "na": 10,
+      "successes": 0,
+      "successRate": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.2288,
+      "costPerSuccessUsd": null,
+      "errors": {},
+      "families": {}
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 0,
+      "difference": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "interpretation": "insufficient data"
+    },
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": -0.1,
+      "ci95": [
+        -0.13636363636363635,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 0,
+      "difference": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "interpretation": "insufficient data"
+    },
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 0,
+      "difference": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "interpretation": "insufficient data"
+    }
+  ],
+  "providerSpend": {
+    "firecrawl": {
+      "usd": 0.710762,
+      "apiUsd": 0.5250000000000002,
+      "modelUsd": 0.18576199999999976,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "contextdev": {
+      "usd": 0.45505600000000007,
+      "apiUsd": 0.2288,
+      "modelUsd": 0.22625600000000007,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "scrapfly": {
+      "usd": 0.20177600000000007,
+      "apiUsd": 0.018300000000000018,
+      "modelUsd": 0.18347600000000006,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

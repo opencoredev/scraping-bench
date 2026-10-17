@@ -1,0 +1,83 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "map",
+      "provider": "none",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "control",
+      "tasks": 15,
+      "na": 0,
+      "successes": 0,
+      "successRate": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.028868999999999995,
+      "costPerSuccessUsd": null,
+      "errors": {
+        "other": 1
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 7,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2026": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [],
+  "providerSpend": {
+    "none": {
+      "usd": 0.028868999999999985,
+      "apiUsd": 0,
+      "modelUsd": 0.028868999999999985,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

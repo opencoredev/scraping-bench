@@ -1,0 +1,30 @@
+{
+  "name": "web-bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Search, scrape, map and crawl APIs for AI agents, graded by whether the job got done.",
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "node --experimental-strip-types --test --test-concurrency=4 src/**/*.test.ts",
+    "tasks:generate": "node --experimental-strip-types src/tasks/search/generate.ts",
+    "tasks:verify": "node --experimental-strip-types src/tasks/verify.ts --refresh",
+    "fixtures:tasks": "node --experimental-strip-types src/tasks/fixture-cli.ts",
+    "smoke": "node --experimental-strip-types src/adapters/smoke.ts",
+    "bench": "node --experimental-strip-types src/run/cli.ts"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "entities": "7.0.0",
+    "parse5": "8.0.0",
+    "robots-parser": "3.0.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "typescript": "7.0.2",
+    "@cloudflare/workers-types": "5.20261016.1"
+  }
+}

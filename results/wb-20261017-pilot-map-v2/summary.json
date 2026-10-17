@@ -1,0 +1,313 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "map",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 3,
+      "successRate": 0.3,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 8532.485587000003,
+      "successfulP90Ms": 12665.132063800003,
+      "totalUsd": 0.13317099999999998,
+      "costPerSuccessUsd": 0.04439033333333333,
+      "errors": {},
+      "families": {
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 1,
+      "successRate": 0.1,
+      "ci95": [
+        0,
+        0.3333333333333333
+      ],
+      "successfulMedianMs": 421.4084600000001,
+      "successfulP90Ms": 421.4084600000001,
+      "totalUsd": 0.049999999999999996,
+      "costPerSuccessUsd": 0.049999999999999996,
+      "errors": {},
+      "families": {
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        },
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 3,
+      "successRate": 0.3,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 9320.24012300001,
+      "successfulP90Ms": 12595.511380600004,
+      "totalUsd": 0.09039799999999998,
+      "costPerSuccessUsd": 0.03013266666666666,
+      "errors": {
+        "empty": 14
+      },
+      "families": {
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 10,
+      "na": 0,
+      "successes": 1,
+      "successRate": 0.1,
+      "ci95": [
+        0,
+        0.3333333333333333
+      ],
+      "successfulMedianMs": 4989.784732000015,
+      "successfulP90Ms": 4989.784732000015,
+      "totalUsd": 0.022000000000000002,
+      "costPerSuccessUsd": 0.022000000000000002,
+      "errors": {
+        "empty": 7
+      },
+      "families": {
+        "products-category": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        },
+        "docs-api": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-tag": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-section": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-all": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "sitemap-only-orphans": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-2025": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 10,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "firecrawl": {
+      "usd": 0.13817100000000004,
+      "apiUsd": 0.08,
+      "modelUsd": 0.05817100000000004,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "contextdev": {
+      "usd": 0.09259799999999999,
+      "apiUsd": 0.0396,
+      "modelUsd": 0.05299799999999998,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "empty": 15
+  }
+}

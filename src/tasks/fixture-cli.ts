@@ -1,0 +1,12 @@
+import { mkdir, writeFile } from 'node:fs/promises';
+import { parseArgs } from 'node:util';
+import { generateFixtureTasks } from './fixture-tasks.ts';
+import { checkFixtureTasks } from './fixture-self-check.ts';
+const {values} = parseArgs({options:{seed:{type:'string'},base:{type:'string'},check:{type:'boolean',default:false}}});
+if (!values.seed || !values.base) throw new Error('Usage: npm run fixtures:tasks -- --seed X --base https://origin [--check]');
+const tasks = generateFixtureTasks({seed:values.seed,baseUrl:values.base});
+await mkdir('tasks',{recursive:true});
+const path = `tasks/fixture-${values.seed}.json`;
+await writeFile(path,JSON.stringify(tasks,null,2)+'\n');
+process.stdout.write(JSON.stringify({path,total:tasks.length,counts:tasks.reduce<Record<string,number>>((counts,t)=>{const key=`${t.track}/${t.family}`;counts[key]=(counts[key]??0)+1;return counts;},{})},null,2)+'\n');
+if (values.check) await checkFixtureTasks(tasks);

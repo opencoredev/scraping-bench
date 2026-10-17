@@ -1,0 +1,61 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "crawl",
+      "provider": "none",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "control",
+      "tasks": 10,
+      "na": 0,
+      "successes": 0,
+      "successRate": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.016677,
+      "costPerSuccessUsd": null,
+      "errors": {},
+      "families": {
+        "section-commands": {
+          "tasks": 5,
+          "successRate": 0
+        },
+        "docs-page-records": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "migration-steps": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [],
+  "providerSpend": {
+    "none": {
+      "usd": 0.016676999999999987,
+      "apiUsd": 0,
+      "modelUsd": 0.016676999999999987,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

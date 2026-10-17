@@ -1,0 +1,10 @@
+{
+  "none": {
+    "concurrency": 2,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 20,
+    "apiMaxUsd": 0,
+    "maxCallUsd": 0
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "split": "test",
+  "client": "ms-a2",
+  "runnerSeed": 17018,
+  "tasks": 60,
+  "siteClusters": 6,
+  "families": {
+    "latest-version": 14,
+    "company-financials": 13,
+    "entity-facts": 13,
+    "fresh": 13,
+    "not-found": 7
+  },
+  "sha256": "627043f34fcf58787853e94cd1ed8c143d1f33ca35c66a34ae8fb3c29ba35b5d",
+  "historicalJinaIds": [
+    "search-founding-Q17957",
+    "search-fresh-rust-lang-rust",
+    "search-pypi-fastapi",
+    "search-revenue-0000092380",
+    "search-none-drizzle-orm",
+    "search-founding-Q13977",
+    "search-fresh-astral-sh-ty"
+  ],
+  "selection": "Original seven task IDs retained without consulting outcomes, then deterministic family-balanced filling. Only seven negative tasks exist in held-out split; no dev tasks borrowed.",
+  "checked": [
+    {
+      "taskId": "search-founding-Q17957",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-rust-lang-rust",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-pypi-fastapi",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000092380",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-none-drizzle-orm",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q13977",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-astral-sh-ty",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-npm-kysely",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0001108524",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-none-esbuild",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-npm-fastify",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000875045",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q49203",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-angular-angular",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-none-hono",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-npm-winston",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0001341439",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q44504",
+      "checkedAt": "2026-10-17T06:10:30.004Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-traefik-traefik",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-none-tsup",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-pypi-pydantic-settings",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000019617",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q9396",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-vercel-next-js",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-none-vite",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-npm-sharp",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000100885",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q11407",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-astral-sh-ruff",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-none-kysely",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-crates-axum",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0001318605",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q32277",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-junegunn-fzf",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-none-unplugin",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-pypi-tenacity",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000310158",
+      "checkedAt": "2026-10-17T06:10:30.005Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q53238",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "resolve --refresh"
+    },
+    {
+      "taskId": "search-fresh-vitejs-vite",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-pypi-anyio",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000864749",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q35339",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-encode-starlette",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-crates-rusqlite",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000027419",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q39064",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-grafana-grafana",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-npm-ofetch",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0001326801",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q11463",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-astral-sh-uv",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-crates-tracing",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000078003",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q8787",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-fastapi-fastapi",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-pypi-duckdb",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-revenue-0000909832",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-founding-Q2311",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-fresh-pydantic-pydantic",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    },
+    {
+      "taskId": "search-npm-zustand",
+      "checkedAt": "2026-10-17T06:10:30.182Z",
+      "source": "tasks:verify --refresh"
+    }
+  ],
+  "rejected": []
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "runId": "wb-20261017-pilot-map-v1",
+    "scope": "all quality rows",
+    "reason": "Context.dev map domain argument used a full URL; superseded by map-v2. Interrupted dispatch costs retained."
+  },
+  {
+    "runId": "wb-20261017-pilot-scrape-v1",
+    "scope": "Spider quality rows",
+    "reason": "Invalid native request_timeout parameter and keyless connectivity lane; superseded by keyed metered spider-v3."
+  },
+  {
+    "runId": "wb-20261017-pilot-scrape-spider-v2",
+    "scope": "all quality rows",
+    "reason": "Whole-wallet call reservation exceeded task allowance; no API calls dispatched. Superseded by spider-v3; model spend retained."
+  },
+  {
+    "runId": "wb-20261017-pilot-crawl-v1",
+    "scope": "Firecrawl quality rows",
+    "reason": "Native free-plan crawl throttling; disclosed 21-second correction pilot fire-v2. All API charges and uncertain reservations retained."
+  },
+  {
+    "runId": "wb-20261017-pilot-crawl-v1",
+    "scope": "Context.dev quality rows",
+    "reason": "Native HTML document titles were discarded; superseded by title-v3. Native charges retained."
+  },
+  {
+    "runId": "wb-20261017-pilot-crawl-fire-v2",
+    "scope": "Firecrawl quality rows",
+    "reason": "Native HTML document titles were discarded; superseded by title-v3 with 65-second spacing. Native charges retained."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "firecrawl": {
+    "usd": 0.6572469999999999,
+    "apiUsd": 0.4850000000000001,
+    "modelUsd": 0.17224699999999982,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "contextdev": {
+    "usd": 0.4317229999999999,
+    "apiUsd": 0.2112,
+    "modelUsd": 0.2205229999999999,
+    "maxUsd": 10,
+    "reached": false
+  }
+}

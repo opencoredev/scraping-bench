@@ -1,0 +1,1750 @@
+[
+  {
+    "id": "scrape-pypi-alembic",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/alembic/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.20.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/alembic/json",
+      "checkedAt": "2026-10-17T03:35:43.184Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-anyio",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/anyio/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.15.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/anyio/json",
+      "checkedAt": "2026-10-17T03:35:15.659Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-apscheduler",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/apscheduler/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.11.3"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/apscheduler/json",
+      "checkedAt": "2026-10-17T03:44:52.892Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-arrow",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/arrow/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.4.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/arrow/json",
+      "checkedAt": "2026-10-17T03:46:05.482Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-asyncpg",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/asyncpg/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.32.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/asyncpg/json",
+      "checkedAt": "2026-10-17T03:35:46.484Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-attrs",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/attrs/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.1.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/attrs/json",
+      "checkedAt": "2026-10-17T03:35:29.981Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-bidict",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/bidict/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.24.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/bidict/json",
+      "checkedAt": "2026-10-17T03:45:54.483Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-boltons",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/boltons/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.2.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/boltons/json",
+      "checkedAt": "2026-10-17T03:45:43.505Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-build",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/build/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.6.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/build/json",
+      "checkedAt": "2026-10-17T03:46:18.710Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-cachetools",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/cachetools/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "7.2.2"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/cachetools/json",
+      "checkedAt": "2026-10-17T03:45:41.300Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-cattrs",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/cattrs/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.2.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/cattrs/json",
+      "checkedAt": "2026-10-17T03:35:31.085Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-celery",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/celery/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "5.6.3"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/celery/json",
+      "checkedAt": "2026-10-17T03:44:46.269Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-cloudpickle",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/cloudpickle/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.1.2"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/cloudpickle/json",
+      "checkedAt": "2026-10-17T03:45:14.875Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-cytoolz",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/cytoolz/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.2.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/cytoolz/json",
+      "checkedAt": "2026-10-17T03:45:50.108Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-dagster",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/dagster/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.13.26"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/dagster/json",
+      "checkedAt": "2026-10-17T03:44:57.289Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-dask",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/dask/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2026.8.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/dask/json",
+      "checkedAt": "2026-10-17T03:45:03.893Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-distributed",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/distributed/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2026.8.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/distributed/json",
+      "checkedAt": "2026-10-17T03:45:06.101Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-fastapi",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/fastapi/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.143.3"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/fastapi/json",
+      "checkedAt": "2026-10-17T03:35:21.159Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-filelock",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/filelock/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.2.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/filelock/json",
+      "checkedAt": "2026-10-17T03:45:34.699Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-flit-core",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/flit-core/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.1.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/flit-core/json",
+      "checkedAt": "2026-10-17T03:46:23.116Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-frozendict",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/frozendict/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.4.7"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/frozendict/json",
+      "checkedAt": "2026-10-17T03:46:01.101Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-fsspec",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/fsspec/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2026.9.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/fsspec/json",
+      "checkedAt": "2026-10-17T03:45:19.296Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-gcsfs",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/gcsfs/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2026.10.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/gcsfs/json",
+      "checkedAt": "2026-10-17T03:45:23.700Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-gunicorn",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/gunicorn/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.2.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/gunicorn/json",
+      "checkedAt": "2026-10-17T03:35:24.459Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-hatchling",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/hatchling/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.32.4"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/hatchling/json",
+      "checkedAt": "2026-10-17T03:46:20.906Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-httpx",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/httpx/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.28.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/httpx/json",
+      "checkedAt": "2026-10-17T03:35:14.601Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-humanize",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/humanize/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.16.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/humanize/json",
+      "checkedAt": "2026-10-17T03:46:12.109Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-ibis-framework",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/ibis-framework/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "12.0.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/ibis-framework/json",
+      "checkedAt": "2026-10-17T03:35:39.887Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-immutables",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/immutables/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.21"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/immutables/json",
+      "checkedAt": "2026-10-17T03:45:56.706Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-inflection",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/inflection/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.5.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/inflection/json",
+      "checkedAt": "2026-10-17T03:46:14.285Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-joblib",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/joblib/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.6.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/joblib/json",
+      "checkedAt": "2026-10-17T03:45:10.481Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-kedro",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/kedro/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.7.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/kedro/json",
+      "checkedAt": "2026-10-17T03:45:01.692Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-llvmlite",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/llvmlite/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.50.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/llvmlite/json",
+      "checkedAt": "2026-10-17T03:49:06.629Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-matplotlib",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/matplotlib/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.11.2"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/matplotlib/json",
+      "checkedAt": "2026-10-17T03:48:40.221Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-maturin",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/maturin/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.15.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/maturin/json",
+      "checkedAt": "2026-10-17T03:46:27.510Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-meson-python",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/meson-python/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.22.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/meson-python/json",
+      "checkedAt": "2026-10-17T03:46:29.710Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-mpmath",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/mpmath/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.4.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/mpmath/json",
+      "checkedAt": "2026-10-17T03:48:53.423Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-networkx",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/networkx/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.7"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/networkx/json",
+      "checkedAt": "2026-10-17T03:48:55.630Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-numba",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/numba/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.68.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/numba/json",
+      "checkedAt": "2026-10-17T03:49:04.431Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-numpy",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/numpy/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.5.4"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/numpy/json",
+      "checkedAt": "2026-10-17T03:48:33.621Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-packaging",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/packaging/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.3"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/packaging/json",
+      "checkedAt": "2026-10-17T03:46:16.498Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-pandas",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/pandas/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.0.6"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pandas/json",
+      "checkedAt": "2026-10-17T03:48:38.024Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-platformdirs",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/platformdirs/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.13.3"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/platformdirs/json",
+      "checkedAt": "2026-10-17T03:45:32.480Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-plotly",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/plotly/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "7.1.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/plotly/json",
+      "checkedAt": "2026-10-17T03:48:44.625Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-poetry-core",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/poetry-core/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.5.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/poetry-core/json",
+      "checkedAt": "2026-10-17T03:46:25.306Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-pooch",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/pooch/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.9.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pooch/json",
+      "checkedAt": "2026-10-17T03:45:30.300Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-portalocker",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/portalocker/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "4.4.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/portalocker/json",
+      "checkedAt": "2026-10-17T03:45:36.882Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-prefect",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/prefect/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.8.8"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/prefect/json",
+      "checkedAt": "2026-10-17T03:44:55.096Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-psycopg",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/psycopg/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "3.3.6"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/psycopg/json",
+      "checkedAt": "2026-10-17T03:44:41.870Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-pyarrow",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/pyarrow/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.0.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pyarrow/json",
+      "checkedAt": "2026-10-17T03:35:38.784Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-pydantic",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/pydantic/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.14.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pydantic/json",
+      "checkedAt": "2026-10-17T03:35:18.959Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-pyrsistent",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/pyrsistent/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.20.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/pyrsistent/json",
+      "checkedAt": "2026-10-17T03:45:58.911Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-python-dateutil",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/python-dateutil/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.9.0.post0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/python-dateutil/json",
+      "checkedAt": "2026-10-17T03:46:07.707Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-ray",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/ray/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.59.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/ray/json",
+      "checkedAt": "2026-10-17T03:45:08.295Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-redis",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/redis/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "8.1.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/redis/json",
+      "checkedAt": "2026-10-17T03:44:44.092Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-rich",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/rich/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "15.0.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/rich/json",
+      "checkedAt": "2026-10-17T03:35:25.560Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-rq",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/rq/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.12.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/rq/json",
+      "checkedAt": "2026-10-17T03:44:50.694Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-s3fs",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/s3fs/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2026.9.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/s3fs/json",
+      "checkedAt": "2026-10-17T03:45:21.505Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-scikit-image",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/scikit-image/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.26.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/scikit-image/json",
+      "checkedAt": "2026-10-17T03:49:00.027Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-scikit-learn",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/scikit-learn/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.9.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/scikit-learn/json",
+      "checkedAt": "2026-10-17T03:48:57.826Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-scipy",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/scipy/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.18.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/scipy/json",
+      "checkedAt": "2026-10-17T03:48:35.802Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-seaborn",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/seaborn/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.13.2"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/seaborn/json",
+      "checkedAt": "2026-10-17T03:48:42.420Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-smart-open",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/smart-open/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "8.0.3"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/smart-open/json",
+      "checkedAt": "2026-10-17T03:45:28.095Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-sortedcontainers",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/sortedcontainers/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "2.4.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/sortedcontainers/json",
+      "checkedAt": "2026-10-17T03:45:52.305Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-sqlmodel",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/sqlmodel/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.0.48"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/sqlmodel/json",
+      "checkedAt": "2026-10-17T03:35:44.288Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-starlette",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/starlette/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.8.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/starlette/json",
+      "checkedAt": "2026-10-17T03:35:22.286Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-statsmodels",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/statsmodels/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.15.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/statsmodels/json",
+      "checkedAt": "2026-10-17T03:49:02.207Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-structlog",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/structlog/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "26.1.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/structlog/json",
+      "checkedAt": "2026-10-17T03:35:32.162Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-sympy",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/sympy/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.14.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/sympy/json",
+      "checkedAt": "2026-10-17T03:48:51.222Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-tenacity",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/tenacity/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "9.2.1"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/tenacity/json",
+      "checkedAt": "2026-10-17T03:35:17.877Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-textual",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/textual/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "8.2.8"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/textual/json",
+      "checkedAt": "2026-10-17T03:35:26.680Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-toolz",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/toolz/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "1.2.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/toolz/json",
+      "checkedAt": "2026-10-17T03:45:47.881Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-trio",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/trio/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.34.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/trio/json",
+      "checkedAt": "2026-10-17T03:35:16.781Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-typer",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/typer/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.27.3"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/typer/json",
+      "checkedAt": "2026-10-17T03:35:27.784Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-uvicorn",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "site": "pypi.org",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/uvicorn/"
+    },
+    "expected": [
+      {
+        "name": "version",
+        "kind": "version",
+        "value": "0.54.0"
+      }
+    ],
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/uvicorn/json",
+      "checkedAt": "2026-10-17T03:35:23.362Z"
+    }
+  },
+  {
+    "id": "scrape-pypi-xarray",
+    "track": "scrape",
+    "family": "package-version",
+    "instruction": "Read this project page. Return JSON with the latest stable release as string field \"version\".",
+    "input": {
+      "track": "scrape",
+      "url": "https://pypi.org/project/xarray/"
+    },
+    "expected": [
+      {
+        "kind": "version",
+        "name": "version",
+        "value": "2026.9.0"
+      }
+    ],
+    "site": "pypi.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://pypi.org/pypi/xarray/json",
+      "checkedAt": "2026-10-17T03:49:08.831Z"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "none": {
+    "usd": 0.12598200000000007,
+    "apiUsd": 0,
+    "modelUsd": 0.12598200000000007,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "oracle": {
+    "usd": 0.23056999999999983,
+    "apiUsd": 0,
+    "modelUsd": 0.23056999999999983,
+    "maxUsd": 10,
+    "reached": false
+  }
+}

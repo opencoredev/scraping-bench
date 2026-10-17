@@ -1,0 +1,44 @@
+{
+  "firecrawl": {
+    "usd": 0.17458800000000002,
+    "apiUsd": 0.10999999999999999,
+    "modelUsd": 0.06458800000000003,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "contextdev": {
+    "usd": 0.10241299999999998,
+    "apiUsd": 0.030800000000000008,
+    "modelUsd": 0.07161299999999997,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "tinyfish": {
+    "usd": 0.059900999999999996,
+    "apiUsd": 0,
+    "modelUsd": 0.059900999999999996,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "jina": {
+    "usd": 0.28413139999999987,
+    "apiUsd": 0.1608654,
+    "modelUsd": 0.12326599999999988,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "linkup": {
+    "usd": 0.171533,
+    "apiUsd": 0.06999999999999999,
+    "modelUsd": 0.101533,
+    "maxUsd": 10,
+    "reached": false
+  },
+  "browserbase": {
+    "usd": 0.18827600000000008,
+    "apiUsd": 0.10500000000000002,
+    "modelUsd": 0.08327600000000006,
+    "maxUsd": 10,
+    "reached": false
+  }
+}

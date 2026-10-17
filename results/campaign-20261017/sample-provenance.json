@@ -1,0 +1,61 @@
+{
+  "fixtureSeed": "test-20261017-fresh-c",
+  "split": "test",
+  "runnerSeed": 17017,
+  "client": "ms-a2",
+  "sizes": {
+    "search": 7,
+    "scrape": 60,
+    "map": 15,
+    "crawl": 10
+  },
+  "pilotApiSpend": {
+    "firecrawl": 1.2149999999999992,
+    "contextdev": 0.3344000000000004,
+    "scrapfly": 0.01740000000000002,
+    "spider": 0.0003959918999999895,
+    "linkup": 0.11100000000000004,
+    "jina": 0.23342790000000016,
+    "tinyfish": 0,
+    "browserbase": 0.15400000000000008
+  },
+  "budgetCaps": {
+    "firecrawl": 6.445,
+    "contextdev": 28.8508,
+    "jina": 0.472183055,
+    "scrapfly": 0.14085
+  },
+  "sizing": {
+    "jinaSearchPerTask": 0.022594200000000012,
+    "jinaScrapePerTask": 0.0007485899999999999,
+    "reservedJinaNextCallUsd": 0.03,
+    "reason": "Jina is the tightest search budget after the pilot; reserve estimated scrape cost and one maximum search call. All providers use the same frozen task IDs per track."
+  },
+  "excluded": [
+    {
+      "taskId": "scrape-pypi-tenacity",
+      "reason": "Live verification: current page does not expose the keyed version"
+    },
+    {
+      "family": "freshness-version",
+      "reason": "No unique origin-version integration; never grade a stale clock snapshot"
+    },
+    {
+      "families": [
+        "category-inventory",
+        "blog-all",
+        "blog-2026",
+        "install-commands",
+        "sitemap-only-orphans"
+      ],
+      "track": "crawl",
+      "reason": "Thirty-page crawl budget and bounded output; use smaller independently checkable scopes in this run"
+    }
+  ],
+  "hashes": {
+    "search": "4413025586a9fa8f122c0e3024da82ff53caee181d0c0ef425b8d8044b04f333",
+    "scrape": "2b5ab0da2aaea327f0a7cd7c0936e58179faa7c709d5c14168a522fb02cdb5ee",
+    "map": "9f55d73aa7b3497dde917d3ef73e3e5e391bc144b6ea7415d5f08493e0c83e00",
+    "crawl": "79b73c56fe2c373606622df1d944941afd20333c1338a4f246efa55b48eeb169"
+  }
+}

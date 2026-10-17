@@ -1,0 +1,102 @@
+[
+  {
+    "provider": "firecrawl",
+    "at": "2026-10-17T06:30:34.708Z",
+    "data": {
+      "data": {
+        "remainingCredits": 463,
+        "planCredits": 1000
+      }
+    }
+  },
+  {
+    "provider": "linkup",
+    "at": "2026-10-17T06:30:35.000Z",
+    "data": {
+      "balance": 18.904
+    }
+  },
+  {
+    "provider": "tinyfish",
+    "at": "2026-10-17T06:30:35.981Z",
+    "data": {
+      "available_balance": "10",
+      "rates": {
+        "meters": [
+          {
+            "label": "TinyFish Agent",
+            "unit_amount": "0.016",
+            "per": "step"
+          },
+          {
+            "label": "TinyFish Browser",
+            "unit_amount": "0.002",
+            "per": "minute"
+          },
+          {
+            "label": "TinyFish Fetch",
+            "unit_amount": "0",
+            "per": "url"
+          },
+          {
+            "label": "TinyFish Monitor",
+            "unit_amount": "0.005",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Research",
+            "unit_amount": "0",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Search",
+            "unit_amount": "0",
+            "per": "query"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "provider": "spider",
+    "at": "2026-10-17T06:30:36.171Z",
+    "data": {
+      "data": {
+        "credits": 2428.905325
+      }
+    }
+  },
+  {
+    "provider": "scrapfly",
+    "at": "2026-10-17T06:30:36.616Z",
+    "data": {
+      "subscription": {
+        "usage": {
+          "scrape": {
+            "current": 691,
+            "limit": 1000,
+            "remaining": 309
+          }
+        }
+      }
+    }
+  },
+  {
+    "provider": "jina",
+    "field": ".data.balanceLeft",
+    "value": 1495119
+  },
+  {
+    "provider": "jina",
+    "status": 200,
+    "remainingTokens": 1495119,
+    "at": "2026-10-17T06:30:37.250Z",
+    "note": "Root balance may be stale; campaign caps rely on conservative signed usage ledger."
+  },
+  {
+    "provider": "contextdev",
+    "remainingCredits": 13172,
+    "at": "2026-10-17T06:30:01.557Z",
+    "source": "Latest native key_metadata.credits_remaining"
+  }
+]

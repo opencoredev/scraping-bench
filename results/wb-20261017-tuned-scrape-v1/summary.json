@@ -1,0 +1,1091 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 17017,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "contextdev",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 60,
+      "na": 0,
+      "successes": 55,
+      "successRate": 0.9166666666666666,
+      "ci95": [
+        0.9,
+        1
+      ],
+      "successfulMedianMs": 3523.7049189999816,
+      "successfulP90Ms": 5664.140501600001,
+      "totalUsd": 0.37809699999999963,
+      "costPerSuccessUsd": 0.006874490909090902,
+      "errors": {},
+      "families": {
+        "package-version": {
+          "tasks": 10,
+          "successRate": 1
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "soft-404": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "contextdev",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 55,
+      "na": 5,
+      "successes": 51,
+      "successRate": 0.9272727272727272,
+      "ci95": [
+        0.9111111111111111,
+        1
+      ],
+      "successfulMedianMs": 948.5503969999991,
+      "successfulP90Ms": 1300.841459999996,
+      "totalUsd": 0.13199999999999987,
+      "costPerSuccessUsd": 0.0025882352941176447,
+      "errors": {},
+      "families": {
+        "package-version": {
+          "tasks": 10,
+          "successRate": 1
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "firecrawl",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 60,
+      "na": 0,
+      "successes": 49,
+      "successRate": 0.8166666666666667,
+      "ci95": [
+        0.8,
+        0.9
+      ],
+      "successfulMedianMs": 3555.816853999997,
+      "successfulP90Ms": 7300.496781999967,
+      "totalUsd": 1.0974679999999986,
+      "costPerSuccessUsd": 0.02239730612244895,
+      "errors": {
+        "rate-limited": 10,
+        "other": 10
+      },
+      "families": {
+        "package-version": {
+          "tasks": 10,
+          "successRate": 0.9
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 0.8571428571428571
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 0.75
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 0.8
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 0.6666666666666666
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 0.875
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "soft-404": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "firecrawl",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 55,
+      "na": 5,
+      "successes": 46,
+      "successRate": 0.8363636363636363,
+      "ci95": [
+        0.8222222222222222,
+        0.9
+      ],
+      "successfulMedianMs": 761.6292424999992,
+      "successfulP90Ms": 4690.873189999984,
+      "totalUsd": 0.8500000000000002,
+      "costPerSuccessUsd": 0.018478260869565222,
+      "errors": {
+        "rate-limited": 10
+      },
+      "families": {
+        "package-version": {
+          "tasks": 10,
+          "successRate": 0.9
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 0.8571428571428571
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 0.75
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 0.8
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 0.875
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "linkup",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 60,
+      "na": 0,
+      "successes": 54,
+      "successRate": 0.9,
+      "ci95": [
+        0.9,
+        0.9
+      ],
+      "successfulMedianMs": 3484.2660974999962,
+      "successfulP90Ms": 4806.04336299999,
+      "totalUsd": 0.5611980000000004,
+      "costPerSuccessUsd": 0.010392555555555563,
+      "errors": {
+        "other": 1
+      },
+      "families": {
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "package-version": {
+          "tasks": 10,
+          "successRate": 0.9
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "soft-404": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "linkup",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 55,
+      "na": 5,
+      "successes": 50,
+      "successRate": 0.9090909090909091,
+      "ci95": [
+        0.9,
+        0.9111111111111111
+      ],
+      "successfulMedianMs": 751.6265095000053,
+      "successfulP90Ms": 1151.6865870000127,
+      "totalUsd": 0.30000000000000016,
+      "costPerSuccessUsd": 0.006000000000000003,
+      "errors": {},
+      "families": {
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "package-version": {
+          "tasks": 10,
+          "successRate": 0.9
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "jina",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 60,
+      "na": 0,
+      "successes": 52,
+      "successRate": 0.8666666666666667,
+      "ci95": [
+        0.6,
+        0.92
+      ],
+      "successfulMedianMs": 3882.248972500005,
+      "successfulP90Ms": 5345.647939800035,
+      "totalUsd": 0.3048549000000001,
+      "costPerSuccessUsd": 0.005862594230769232,
+      "errors": {},
+      "families": {
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "package-version": {
+          "tasks": 10,
+          "successRate": 0.6
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "soft-404": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "jina",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 55,
+      "na": 5,
+      "successes": 52,
+      "successRate": 0.9454545454545454,
+      "ci95": [
+        0.9333333333333333,
+        1
+      ],
+      "successfulMedianMs": 974.7191774999956,
+      "successfulP90Ms": 2204.025177399998,
+      "totalUsd": 0.0060664000000000004,
+      "costPerSuccessUsd": 0.00011666153846153847,
+      "errors": {},
+      "families": {
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "package-version": {
+          "tasks": 10,
+          "successRate": 1
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "scrapfly",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "tasks": 60,
+      "na": 0,
+      "successes": 55,
+      "successRate": 0.9166666666666666,
+      "ci95": [
+        0.9,
+        1
+      ],
+      "successfulMedianMs": 8726.472016,
+      "successfulP90Ms": 12638.671070999999,
+      "totalUsd": 0.34132800000000024,
+      "costPerSuccessUsd": 0.006205963636363641,
+      "errors": {},
+      "families": {
+        "package-version": {
+          "tasks": 10,
+          "successRate": 1
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "soft-404": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "pricing-tiers": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 1
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "scrapfly",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "tasks": 55,
+      "na": 5,
+      "successes": 43,
+      "successRate": 0.7818181818181819,
+      "ci95": [
+        0.7,
+        0.8
+      ],
+      "successfulMedianMs": 6216.118339999986,
+      "successfulP90Ms": 9711.8749046,
+      "totalUsd": 0.050249999999999975,
+      "costPerSuccessUsd": 0.00116860465116279,
+      "errors": {},
+      "families": {
+        "package-version": {
+          "tasks": 10,
+          "successRate": 0.7
+        },
+        "install-command": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "price-stock": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "iframe-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "blog-date-author": {
+          "tasks": 7,
+          "successRate": 1
+        },
+        "lazy-loaded-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "long-page-deep-fact": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "pdf-number": {
+          "tasks": 5,
+          "successRate": 0
+        },
+        "redirect": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "shadow-dom-field": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "specs-table-cell": {
+          "tasks": 8,
+          "successRate": 1
+        },
+        "cookie-boilerplate": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "tabs-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "non-english-field": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 60,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "jina",
+      "pairedTasks": 55,
+      "difference": -0.01818181818181818,
+      "ci95": [
+        -0.022222222222222223,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "contextdev",
+      "pairedTasks": 60,
+      "difference": -0.1,
+      "ci95": [
+        -0.1,
+        -0.1
+      ],
+      "interpretation": "difference detected"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "jina",
+      "pairedTasks": 55,
+      "difference": -0.10909090909090909,
+      "ci95": [
+        -0.1111111111111111,
+        -0.1
+      ],
+      "interpretation": "difference detected"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "linkup",
+      "reference": "contextdev",
+      "pairedTasks": 60,
+      "difference": -0.016666666666666666,
+      "ci95": [
+        -0.1,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "linkup",
+      "reference": "jina",
+      "pairedTasks": 55,
+      "difference": -0.03636363636363636,
+      "ci95": [
+        -0.1,
+        -0.022222222222222223
+      ],
+      "interpretation": "difference detected"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "jina",
+      "reference": "contextdev",
+      "pairedTasks": 60,
+      "difference": -0.05,
+      "ci95": [
+        -0.4,
+        0.02
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "jina",
+      "reference": "jina",
+      "pairedTasks": 55,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 60,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "tuned",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 55,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "firecrawl": {
+      "usd": 1.0974679999999997,
+      "apiUsd": 0.8549999999999978,
+      "modelUsd": 0.2424680000000019,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "contextdev": {
+      "usd": 0.37809699999999985,
+      "apiUsd": 0.1385999999999999,
+      "modelUsd": 0.23949699999999996,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "jina": {
+      "usd": 0.30485490000000015,
+      "apiUsd": 0.015101900000000015,
+      "modelUsd": 0.28975300000000015,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "linkup": {
+      "usd": 0.5611980000000005,
+      "apiUsd": 0.31500000000000017,
+      "modelUsd": 0.24619800000000036,
+      "maxUsd": 10,
+      "reached": false
+    },
+    "scrapfly": {
+      "usd": 0.3413280000000005,
+      "apiUsd": 0.05654999999999996,
+      "modelUsd": 0.28477800000000053,
+      "maxUsd": 10,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "rate-limited": 10
+  }
+}

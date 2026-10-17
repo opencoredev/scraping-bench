@@ -1,0 +1,194 @@
+[
+  {
+    "id": "search-revenue-0000070858",
+    "reason": "SEC issuer name mismatch: Bank of America / BofA Finance LLC"
+  },
+  {
+    "id": "search-revenue-0000104169",
+    "reason": "Conflicting annual revenue concepts: Walmart"
+  },
+  {
+    "id": "search-revenue-0000093410",
+    "reason": "Conflicting annual revenue concepts: Chevron"
+  },
+  {
+    "id": "search-revenue-0000007084",
+    "reason": "Conflicting annual revenue concepts: Archer-Daniels-Midland"
+  },
+  {
+    "id": "search-revenue-0001067983",
+    "reason": "Conflicting annual revenue concepts: Berkshire Hathaway"
+  },
+  {
+    "id": "search-founding-Q30873",
+    "reason": "Ambiguous founding date for Q30873"
+  },
+  {
+    "id": "search-founding-Q35476",
+    "reason": "Ambiguous founding date for Q35476"
+  },
+  {
+    "id": "search-founding-Q5281",
+    "reason": "Ambiguous founding date for Q5281"
+  },
+  {
+    "id": "search-founding-Q18543",
+    "reason": "Ambiguous founding date for Q18543"
+  },
+  {
+    "id": "search-fresh-encode-httpx",
+    "reason": "No stable release in last 14 days: encode/httpx"
+  },
+  {
+    "id": "search-fresh-pallets-flask",
+    "reason": "No stable release in last 14 days: pallets/flask"
+  },
+  {
+    "id": "search-fresh-pallets-click",
+    "reason": "No stable release in last 14 days: pallets/click"
+  },
+  {
+    "id": "search-fresh-pallets-werkzeug",
+    "reason": "No stable release in last 14 days: pallets/werkzeug"
+  },
+  {
+    "id": "search-fresh-python-cpython",
+    "reason": "[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [],\n    \"message\": \"Invalid input: expected object, received null\"\n  }\n]"
+  },
+  {
+    "id": "search-fresh-denoland-deno",
+    "reason": "No stable release in last 14 days: denoland/deno"
+  },
+  {
+    "id": "search-fresh-golang-go",
+    "reason": "[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [],\n    \"message\": \"Invalid input: expected object, received null\"\n  }\n]"
+  },
+  {
+    "id": "search-fresh-cli-cli",
+    "reason": "No stable release in last 14 days: cli/cli"
+  },
+  {
+    "id": "search-fresh-jqlang-jq",
+    "reason": "No stable release in last 14 days: jqlang/jq"
+  },
+  {
+    "id": "search-fresh-burntsushi-ripgrep",
+    "reason": "No stable release in last 14 days: BurntSushi/ripgrep"
+  },
+  {
+    "id": "search-fresh-sharkdp-fd",
+    "reason": "No stable release in last 14 days: sharkdp/fd"
+  },
+  {
+    "id": "search-fresh-sharkdp-bat",
+    "reason": "No stable release in last 14 days: sharkdp/bat"
+  },
+  {
+    "id": "search-fresh-docker-compose",
+    "reason": "No stable release in last 14 days: docker/compose"
+  },
+  {
+    "id": "search-fresh-kubernetes-kubernetes",
+    "reason": "No stable release in last 14 days: kubernetes/kubernetes"
+  },
+  {
+    "id": "search-fresh-prometheus-prometheus",
+    "reason": "No stable release in last 14 days: prometheus/prometheus"
+  },
+  {
+    "id": "search-fresh-redis-redis",
+    "reason": "No stable release in last 14 days: redis/redis"
+  },
+  {
+    "id": "search-fresh-valkey-io-valkey",
+    "reason": "No stable release in last 14 days: valkey-io/valkey"
+  },
+  {
+    "id": "search-fresh-duckdb-duckdb",
+    "reason": "No stable release in last 14 days: duckdb/duckdb"
+  },
+  {
+    "id": "scrape-pypi-click",
+    "reason": "Project page does not expose version 8.5.0: https://pypi.org/project/click/"
+  },
+  {
+    "id": "scrape-pypi-loguru",
+    "reason": "Project page does not expose version 0.7.3: https://pypi.org/project/loguru/"
+  },
+  {
+    "id": "scrape-pypi-msgspec",
+    "reason": "Project page does not expose version 0.22.0: https://pypi.org/project/msgspec/"
+  },
+  {
+    "id": "scrape-pypi-sqlglot",
+    "reason": "Project page does not expose version 30.23.0: https://pypi.org/project/sqlglot/"
+  },
+  {
+    "id": "scrape-pypi-sqlalchemy",
+    "reason": "Project page does not expose version 2.1.5: https://pypi.org/project/sqlalchemy/"
+  },
+  {
+    "id": "scrape-pypi-peewee",
+    "reason": "Project page does not expose version 4.5.3: https://pypi.org/project/peewee/"
+  },
+  {
+    "id": "scrape-pypi-dramatiq",
+    "reason": "Project page does not expose version 2.2.1: https://pypi.org/project/dramatiq/"
+  },
+  {
+    "id": "scrape-pypi-luigi",
+    "reason": "Project page does not expose version 3.8.1: https://pypi.org/project/luigi/"
+  },
+  {
+    "id": "scrape-pypi-loky",
+    "reason": "Project page does not expose version 3.7.0: https://pypi.org/project/loky/"
+  },
+  {
+    "id": "scrape-pypi-dill",
+    "reason": "Project page does not expose version 0.4.1: https://pypi.org/project/dill/"
+  },
+  {
+    "id": "scrape-pypi-adlfs",
+    "reason": "Project page does not expose version 2026.8.0: https://pypi.org/project/adlfs/"
+  },
+  {
+    "id": "scrape-pypi-diskcache",
+    "reason": "Project page does not expose version 5.6.3: https://pypi.org/project/diskcache/"
+  },
+  {
+    "id": "scrape-pypi-more-itertools",
+    "reason": "Project page does not expose version 11.2.1: https://pypi.org/project/more-itertools/"
+  },
+  {
+    "id": "scrape-pypi-pendulum",
+    "reason": "Project page does not expose version 3.3.0: https://pypi.org/project/pendulum/"
+  },
+  {
+    "id": "scrape-pypi-bokeh",
+    "reason": "Project page does not expose version 3.10.1: https://pypi.org/project/bokeh/"
+  },
+  {
+    "id": "scrape-pypi-altair",
+    "reason": "Project page does not expose version 6.3.0: https://pypi.org/project/altair/"
+  },
+  {
+    "id": "scrape-pypi-duckdb",
+    "reason": "Excluded at final live verification: repeated HTTP 200 challenge response omits project heading; replaced with xarray."
+  },
+  {
+    "id": "scrape-pypi-babel",
+    "reason": "Excluded after final verification and direct retry: HTTP 200 target page repeatedly omitted its project heading; authoritative API value itself did not drift."
+  },
+  {
+    "id": "scrape-pypi-orjson",
+    "reason": "Excluded after final verification and direct retry: HTTP 200 target page repeatedly omitted its project heading; authoritative API value itself did not drift."
+  },
+  {
+    "id": "scrape-pypi-polars",
+    "reason": "Excluded after final verification and direct retry: HTTP 200 target page repeatedly omitted its project heading; authoritative API value itself did not drift."
+  },
+  {
+    "id": "scrape-pypi-pydantic-settings",
+    "reason": "Excluded after final verification and direct retry: HTTP 200 target page repeatedly omitted its project heading; authoritative API value itself did not drift."
+  }
+]

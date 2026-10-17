@@ -1,0 +1,378 @@
+[
+  {
+    "id": "map-docs-astral-sh-ruff-editors",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://docs.astral.sh/ruff/editors/",
+      "scope": "/ruff/editors/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/ruff/editors/",
+          "https://docs.astral.sh/ruff/editors/features/",
+          "https://docs.astral.sh/ruff/editors/migration/",
+          "https://docs.astral.sh/ruff/editors/settings/",
+          "https://docs.astral.sh/ruff/editors/setup/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/ruff/sitemap.xml scope=https://docs.astral.sh/ruff/editors/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 5 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:01:10.268Z"
+    }
+  },
+  {
+    "id": "map-docs-astral-sh-uv-concepts-authentication",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://docs.astral.sh/uv/concepts/authentication/",
+      "scope": "/uv/concepts/authentication/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/",
+          "https://docs.astral.sh/uv/concepts/authentication/git/",
+          "https://docs.astral.sh/uv/concepts/authentication/http/",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/concepts/authentication/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 6 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:00:33.953Z"
+    }
+  },
+  {
+    "id": "map-docs-astral-sh-uv-concepts-projects",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://docs.astral.sh/uv/concepts/projects/",
+      "scope": "/uv/concepts/projects/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/concepts/projects/",
+          "https://docs.astral.sh/uv/concepts/projects/build/",
+          "https://docs.astral.sh/uv/concepts/projects/config/",
+          "https://docs.astral.sh/uv/concepts/projects/dependencies/",
+          "https://docs.astral.sh/uv/concepts/projects/export/",
+          "https://docs.astral.sh/uv/concepts/projects/init/",
+          "https://docs.astral.sh/uv/concepts/projects/layout/",
+          "https://docs.astral.sh/uv/concepts/projects/run/",
+          "https://docs.astral.sh/uv/concepts/projects/sync/",
+          "https://docs.astral.sh/uv/concepts/projects/workspaces/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/concepts/projects/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 10 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:00:44.938Z"
+    }
+  },
+  {
+    "id": "map-docs-astral-sh-uv-getting-started",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://docs.astral.sh/uv/getting-started/",
+      "scope": "/uv/getting-started/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/getting-started/",
+          "https://docs.astral.sh/uv/getting-started/features/",
+          "https://docs.astral.sh/uv/getting-started/first-steps/",
+          "https://docs.astral.sh/uv/getting-started/help/",
+          "https://docs.astral.sh/uv/getting-started/installation/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/getting-started/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 5 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:00:27.340Z"
+    }
+  },
+  {
+    "id": "map-docs-astral-sh-uv-guides-integration",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://docs.astral.sh/uv/guides/integration/",
+      "scope": "/uv/guides/integration/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/guides/integration/",
+          "https://docs.astral.sh/uv/guides/integration/aws-lambda/",
+          "https://docs.astral.sh/uv/guides/integration/aws/",
+          "https://docs.astral.sh/uv/guides/integration/azure/",
+          "https://docs.astral.sh/uv/guides/integration/bazel/",
+          "https://docs.astral.sh/uv/guides/integration/coiled/",
+          "https://docs.astral.sh/uv/guides/integration/dependabot/",
+          "https://docs.astral.sh/uv/guides/integration/docker/",
+          "https://docs.astral.sh/uv/guides/integration/fastapi/",
+          "https://docs.astral.sh/uv/guides/integration/github/",
+          "https://docs.astral.sh/uv/guides/integration/gitlab/",
+          "https://docs.astral.sh/uv/guides/integration/google/",
+          "https://docs.astral.sh/uv/guides/integration/jfrog/",
+          "https://docs.astral.sh/uv/guides/integration/jupyter/",
+          "https://docs.astral.sh/uv/guides/integration/marimo/",
+          "https://docs.astral.sh/uv/guides/integration/pre-commit/",
+          "https://docs.astral.sh/uv/guides/integration/pytorch/",
+          "https://docs.astral.sh/uv/guides/integration/renovate/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/guides/integration/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 18 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:01:04.755Z"
+    }
+  },
+  {
+    "id": "map-typer-tiangolo-com-reference",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://typer.tiangolo.com/reference/",
+      "scope": "/reference/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://typer.tiangolo.com/reference/",
+          "https://typer.tiangolo.com/reference/context/",
+          "https://typer.tiangolo.com/reference/file_objects/",
+          "https://typer.tiangolo.com/reference/parameters/",
+          "https://typer.tiangolo.com/reference/run_launch/",
+          "https://typer.tiangolo.com/reference/typer/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "typer.tiangolo.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://typer.tiangolo.com/sitemap.xml scope=https://typer.tiangolo.com/reference/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 6 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:06.511Z"
+    }
+  },
+  {
+    "id": "map-typer-tiangolo-com-tutorial-arguments",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://typer.tiangolo.com/tutorial/arguments/",
+      "scope": "/tutorial/arguments/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://typer.tiangolo.com/tutorial/arguments/",
+          "https://typer.tiangolo.com/tutorial/arguments/default/",
+          "https://typer.tiangolo.com/tutorial/arguments/envvar/",
+          "https://typer.tiangolo.com/tutorial/arguments/help/",
+          "https://typer.tiangolo.com/tutorial/arguments/optional/",
+          "https://typer.tiangolo.com/tutorial/arguments/other-uses/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "typer.tiangolo.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://typer.tiangolo.com/sitemap.xml scope=https://typer.tiangolo.com/tutorial/arguments/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 6 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:21.883Z"
+    }
+  },
+  {
+    "id": "map-typer-tiangolo-com-tutorial-commands",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://typer.tiangolo.com/tutorial/commands/",
+      "scope": "/tutorial/commands/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://typer.tiangolo.com/tutorial/commands/",
+          "https://typer.tiangolo.com/tutorial/commands/arguments/",
+          "https://typer.tiangolo.com/tutorial/commands/callback/",
+          "https://typer.tiangolo.com/tutorial/commands/context/",
+          "https://typer.tiangolo.com/tutorial/commands/help/",
+          "https://typer.tiangolo.com/tutorial/commands/name/",
+          "https://typer.tiangolo.com/tutorial/commands/one-or-multiple/",
+          "https://typer.tiangolo.com/tutorial/commands/options/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "typer.tiangolo.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://typer.tiangolo.com/sitemap.xml scope=https://typer.tiangolo.com/tutorial/commands/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 8 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:15.290Z"
+    }
+  },
+  {
+    "id": "map-www-mkdocs-org",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://www.mkdocs.org/",
+      "scope": "/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://www.mkdocs.org/",
+          "https://www.mkdocs.org/about/contributing/",
+          "https://www.mkdocs.org/about/license/",
+          "https://www.mkdocs.org/about/release-notes/",
+          "https://www.mkdocs.org/dev-guide/",
+          "https://www.mkdocs.org/dev-guide/api/",
+          "https://www.mkdocs.org/dev-guide/plugins/",
+          "https://www.mkdocs.org/dev-guide/themes/",
+          "https://www.mkdocs.org/dev-guide/translations/",
+          "https://www.mkdocs.org/getting-started/",
+          "https://www.mkdocs.org/user-guide/",
+          "https://www.mkdocs.org/user-guide/choosing-your-theme/",
+          "https://www.mkdocs.org/user-guide/cli/",
+          "https://www.mkdocs.org/user-guide/configuration/",
+          "https://www.mkdocs.org/user-guide/customizing-your-theme/",
+          "https://www.mkdocs.org/user-guide/deploying-your-docs/",
+          "https://www.mkdocs.org/user-guide/installation/",
+          "https://www.mkdocs.org/user-guide/localizing-your-theme/",
+          "https://www.mkdocs.org/user-guide/writing-your-docs/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "www.mkdocs.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://www.mkdocs.org/sitemap.xml scope=https://www.mkdocs.org/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 19 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:00.940Z"
+    }
+  },
+  {
+    "id": "map-www-python-httpx-org",
+    "track": "map",
+    "family": "docs-url-set",
+    "instruction": "Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with \"urls\" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.",
+    "input": {
+      "track": "map",
+      "site": "https://www.python-httpx.org/",
+      "scope": "/"
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://www.python-httpx.org/",
+          "https://www.python-httpx.org/advanced/authentication/",
+          "https://www.python-httpx.org/advanced/clients/",
+          "https://www.python-httpx.org/advanced/event-hooks/",
+          "https://www.python-httpx.org/advanced/extensions/",
+          "https://www.python-httpx.org/advanced/proxies/",
+          "https://www.python-httpx.org/advanced/resource-limits/",
+          "https://www.python-httpx.org/advanced/ssl/",
+          "https://www.python-httpx.org/advanced/text-encodings/",
+          "https://www.python-httpx.org/advanced/timeouts/",
+          "https://www.python-httpx.org/advanced/transports/",
+          "https://www.python-httpx.org/api/",
+          "https://www.python-httpx.org/async/",
+          "https://www.python-httpx.org/code_of_conduct/",
+          "https://www.python-httpx.org/compatibility/",
+          "https://www.python-httpx.org/contributing/",
+          "https://www.python-httpx.org/environment_variables/",
+          "https://www.python-httpx.org/exceptions/",
+          "https://www.python-httpx.org/http2/",
+          "https://www.python-httpx.org/logging/",
+          "https://www.python-httpx.org/quickstart/",
+          "https://www.python-httpx.org/third_party_packages/",
+          "https://www.python-httpx.org/troubleshooting/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      }
+    ],
+    "site": "www.python-httpx.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://www.python-httpx.org/sitemap.xml scope=https://www.python-httpx.org/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 23 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:01:38.909Z"
+    }
+  }
+]
