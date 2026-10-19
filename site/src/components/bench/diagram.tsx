@@ -197,7 +197,8 @@ function Lines({ box: b, lines, code = false, top = 62, color = INK }: { box: Bo
   );
 }
 
-export function TaskDiagram({ track, layout, className }: { track: Track; layout: "wide" | "tall"; className?: string }) {
+/** `linked` makes each provider name a link to its homepage; static images turn it off, since a PNG can't be clicked. */
+export function TaskDiagram({ track, layout, className, linked = true }: { track: Track; layout: "wide" | "tall"; className?: string; linked?: boolean }) {
   const base = layout === "wide" ? WIDE : TALL;
   const c = CONTENT[track.id];
   const { limits } = track;
@@ -269,7 +270,7 @@ export function TaskDiagram({ track, layout, className }: { track: Track; layout
             {line.map((n, k) => (
               <tspan key={n.id} style={{ fill: colorOf(n.id) }}>
                 {k > 0 ? "  " : ""}
-                {linkOf(n.id) ? (
+                {linked && linkOf(n.id) ? (
                   <a href={linkOf(n.id)} target="_blank" rel="noopener" style={{ textDecoration: "underline" }}>
                     {n.label}
                   </a>

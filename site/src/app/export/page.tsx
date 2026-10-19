@@ -104,7 +104,7 @@ export default function Export() {
       <Overview />
       {results.tracks.map((t) => (
         <Card key={t.id} id={`export-${t.id}`} title={`How a ${t.label.toLowerCase()} task runs`} footer="Same model, same prompt, same limits for every provider. Only the API behind the tool changes.">
-          <TaskDiagram track={t} layout="wide" className="w-full" />
+          <TaskDiagram track={t} layout="wide" className="w-full" linked={false} />
         </Card>
       ))}
       {results.tracks.map((t) => (
