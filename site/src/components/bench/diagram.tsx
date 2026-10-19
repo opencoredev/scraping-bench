@@ -91,16 +91,16 @@ const CONTENT: Record<Track["id"], { task: readonly string[]; tool: string; answ
     check: ["Same as the page", "we generated?"],
   },
   map: {
-    task: ["Every docs page under", "/ruff/editors/?"],
+    task: ["Every docs page under", "typer.tiangolo.com", "/tutorial/commands/?"],
     tool: "map(site)",
-    answer: ["{", '  "urls": [', '    ".../editors/",', '    ".../features/", …', "  ]", "}"],
+    answer: ["{", '  "urls": [', '    ".../commands/",', '    ".../arguments/", …', "  ]", "}"],
     check: ["Enough of the full", "list, little junk?"],
   },
   crawl: {
-    task: ["URL and title of every", "page under", "/ruff/editors/?"],
+    task: ["Every install command", "under", "/docs/guides/deployment?"],
     tool: "crawl(site, scope)",
-    answer: ["{", '  "records": [', '    { "url": …,', '      "title": … }, …', "  ]", "}"],
-    check: ["Every page there,", "every title right?"],
+    answer: ["{", '  "records": [', '    "…/topic-2 | Linux |', '     pip install …", …', "  ]", "}"],
+    check: ["All commands,", "nothing extra?"],
   },
 };
 
