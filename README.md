@@ -2,7 +2,7 @@
   <a href="https://x.com/leodev"><img alt="Follow @leodev on X" src="https://shieldcn.dev/x/follow/leodev.svg?variant=branded&mode=dark" /></a>
 </p>
 
-scraping-bench grades eight web data APIs on whether an AI agent actually got the job done with them: Context.dev, Firecrawl, TinyFish, Linkup, Jina, Spider, Scrapfly and Browserbase. There are four tracks: scrape, search, map and crawl. Every provider gets the same tasks, the same model (Claude Haiku 5.5), the same prompt and the same limits. Only the API behind the tool changes. A task counts only when a script confirms every field of the answer against a key we can show is correct.
+scraping-bench grades eight web data APIs on whether an AI agent actually got the job done with them: [Context.dev](https://context.dev/?utm_source=scrapingbench&utm_medium=referral&utm_campaign=benchmark), Firecrawl, TinyFish, Linkup, Jina, Spider, Scrapfly and Browserbase. There are four tracks: scrape, search, map and crawl. Every provider gets the same tasks, the same model (Claude Haiku 5.5), the same prompt and the same limits. Only the API behind the tool changes. A task counts only when a script confirms every field of the answer against a key we can show is correct.
 
 [See the results](https://www.scrapingbench.com) · [How it was graded](docs/METHODOLOGY.md) · [Every number](results/wb-20261017-final/RESULTS.md)
 

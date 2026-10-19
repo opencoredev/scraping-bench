@@ -1,6 +1,7 @@
 import rough from "roughjs";
 import type { Options } from "roughjs/bin/core";
 import { colorOf } from "@/lib/colors";
+import { linkOf } from "@/lib/links";
 import type { Track } from "@/lib/results";
 
 /*
@@ -255,7 +256,13 @@ export function TaskDiagram({ track, layout, className }: { track: Track; layout
             {line.map((n, k) => (
               <tspan key={n.id} style={{ fill: colorOf(n.id) }}>
                 {k > 0 ? "  " : ""}
-                {n.label}
+                {linkOf(n.id) ? (
+                  <a href={linkOf(n.id)} target="_blank" rel="noopener" style={{ textDecoration: "underline" }}>
+                    {n.label}
+                  </a>
+                ) : (
+                  n.label
+                )}
               </tspan>
             ))}
           </tspan>

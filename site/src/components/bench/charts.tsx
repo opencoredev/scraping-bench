@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { colorOf } from "@/lib/colors";
 import { fillStyle } from "@/lib/dither";
+import { linkOf } from "@/lib/links";
 import { cn } from "@/lib/utils";
 
 export type BarRow = {
@@ -50,7 +51,13 @@ export function Bars({ rows, empty, scaleMax }: { rows: readonly BarRow[]; empty
             >
               <span className="whitespace-nowrap">
                 <span className="text-[15px] font-medium" style={{ color: colorOf(row.id) }}>
-                  {row.label}
+                  {linkOf(row.id) ? (
+                    <a href={linkOf(row.id)} target="_blank" rel="noopener" className="underline decoration-current/40 underline-offset-4 hover:decoration-current">
+                      {row.label}
+                    </a>
+                  ) : (
+                    row.label
+                  )}
                 </span>
                 {row.sub ? <span className="ml-1.5 hidden text-xs text-muted-foreground sm:inline">{row.sub}</span> : null}
               </span>
