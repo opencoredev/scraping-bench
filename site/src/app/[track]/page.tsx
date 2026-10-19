@@ -67,7 +67,7 @@ export default async function TrackPage({ params }: PageProps<"/[track]">) {
         <ScoreTable runs={runs} caption={`${track.label} results for every provider`} />
         {TRACK_NOTES[track.id] ? <p className="mt-6 max-w-prose text-xs text-pretty text-muted-foreground">{TRACK_NOTES[track.id]}</p> : null}
         <p className="mt-3 max-w-prose text-xs text-pretty text-muted-foreground">
-          {fast ? `${listText(runs.filter((r) => timeText(r.agent) === timeText(fast.agent)).map((r) => r.entry.label))} had the shortest median time per finished task, ${timeText(fast.agent)}. ` : null}Not tested: {NOT_TESTED}.
+          {fast ? `${listText(runs.filter((r) => r.agent.medianMs === fast.agent.medianMs).map((r) => r.entry.label))} had the shortest median time per finished task, ${timeText(fast.agent)}. ` : null}Not tested: {NOT_TESTED}.
         </p>
       </Section>
 
