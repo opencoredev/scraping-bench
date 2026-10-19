@@ -7,7 +7,7 @@ import { ScoreTable } from "@/components/site/score-table";
 import { comparisonBySlug, comparisons, comparisonsWith, costText, listText, pairVerdict, runOn, tracks } from "@/lib/catalog";
 import type { Comparison, Provider, Run } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
-import { PROVIDER_NOTES, TESTED_AS } from "@/lib/notes";
+import { PROVIDER_NOTES, TESTED_AS, searchedName } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
 import type { Track } from "@/lib/results";
 import { trackRows } from "@/lib/rows";
@@ -41,8 +41,8 @@ export async function generateMetadata({ params }: PageProps<"/compare/[pair]">)
     return runs ? [`${t.label.toLowerCase()} ${formatPct(runs[0].agent.rate)} vs ${formatPct(runs[1].agent.rate)}`] : [];
   });
   return pageMetadata({
-    title: `${c.a.label} vs ${c.b.label} for AI agents`,
-    description: `${c.a.label} and ${c.b.label} on the same ${sharedNames(c)} tasks, same model and limits: ${figures.join(", ")}. Cost per task, time, intervals, and whether the gap is real.`,
+    title: `${searchedName(c.a)} vs ${searchedName(c.b)} for AI agents`,
+    description: `${searchedName(c.a)} and ${searchedName(c.b)} on the same ${sharedNames(c)} tasks, same model and limits: ${figures.join(", ")}. Cost per task, time, intervals, and whether the gap is real.`,
     path: `/compare/${c.slug}`,
     image: c.shared.length === 1 ? c.shared[0].id : "overview",
   });
@@ -76,7 +76,7 @@ function PairTrack({ c, track }: { c: Comparison; track: Track }) {
 
 const ProviderName = ({ p }: { p: Provider }) => (
   <Link href={`/providers/${p.slug}`} className="font-medium hover:underline" style={{ color: colorOf(p.id) }}>
-    {p.label}
+    {searchedName(p)}
   </Link>
 );
 
@@ -99,8 +99,8 @@ export default async function ComparePage({ params }: PageProps<"/compare/[pair]
 
   return (
     <PageShell>
-      <Breadcrumbs trail={[{ name: "Compare", path: "/compare" }, { name: `${c.a.label} vs ${c.b.label}`, path: `/compare/${c.slug}` }]} />
-      <PageIntro title={`${c.a.label} vs ${c.b.label} for AI agents`}>
+      <Breadcrumbs trail={[{ name: "Compare", path: "/compare" }, { name: `${searchedName(c.a)} vs ${searchedName(c.b)}`, path: `/compare/${c.slug}` }]} />
+      <PageIntro title={`${searchedName(c.a)} vs ${searchedName(c.b)} for AI agents`}>
         <p>
           <ProviderName p={c.a} /> and <ProviderName p={c.b} /> both ran {sharedNames(c)}, with the same tasks, the same model ({MODEL}), the same prompt and the same limits. A task counts only when a
           script confirms every answer.{onlyOne.length > 0 ? ` Beyond that, ${listText(onlyOne)}.` : ""}

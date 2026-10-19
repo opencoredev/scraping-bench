@@ -5,9 +5,16 @@ import type { TrackId } from "@/lib/catalog";
 /** What was actually tested, when the product name alone could mislead. */
 export const TESTED_AS: Partial<Record<string, string>> = {
   browserbase: "Browserbase here means its HTTP Fetch and Search APIs, not its browser sessions.",
+  tinyfish: "TinyFish here means its Fetch API for scrape and its Search API for search.",
   spider: "Spider was tested on scrape only, because its free wallet was small.",
-  jina: "Jina is scored on scrape only. An earlier 7-task search run is kept as historical evidence and isn't part of these scores.",
+  jina: "Jina here means Jina Reader (r.jina.ai), scored on scrape only. An earlier 7-task Jina Search run is kept as historical evidence and isn't part of these scores.",
 };
+
+/** The product name people search for, when it differs from the provider's label in the results. Used in titles and headings. */
+export const SEARCHED_NAMES: Partial<Record<string, string>> = {
+  jina: "Jina Reader",
+};
+export const searchedName = (p: { id: string; label: string }): string => SEARCHED_NAMES[p.id] ?? p.label;
 
 /** A caveat that changes how a provider's numbers should be read, tagged with the track it's about when it's about one track. */
 export type Note = { text: string; track?: TrackId };

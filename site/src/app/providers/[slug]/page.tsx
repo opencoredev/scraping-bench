@@ -22,7 +22,8 @@ import {
 import type { Provider, Run } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
 import { linkOf } from "@/lib/links";
-import { PROVIDER_NOTES, TESTED_AS } from "@/lib/notes";
+import { PROVIDER_NOTES, TESTED_AS, searchedName } from "@/lib/notes";
+import { PROVIDER_TITLES, providerAnswer } from "@/lib/answers";
 import { formatPct } from "@/lib/results";
 import { MODEL, pageMetadata } from "@/lib/site";
 
@@ -42,9 +43,12 @@ const trackNames = (p: Provider) => listText(p.runs.map((r) => r.track.label.toL
 
 export async function generateMetadata({ params }: PageProps<"/providers/[slug]">): Promise<Metadata> {
   const p = await providerOf(params);
+  const answer = providerAnswer(p);
   return pageMetadata({
-    title: `${p.label} benchmark results for AI agents`,
-    description: `How ${p.label} did as an AI agent's ${trackNames(p)} tool: ${p.runs
+    title: PROVIDER_TITLES[p.id] ?? `${searchedName(p)} benchmark results for AI agents`,
+    description: answer
+      ? `${answer.sentences[0]} Intervals, cost and caveats.`
+      : `How ${searchedName(p)} did as an AI agent's ${trackNames(p)} tool: ${p.runs
       .map((r) => `${formatPct(r.agent.rate)} of ${r.track.tasks} ${r.track.label.toLowerCase()} tasks at ${costText(r.agent)} each`)
       .join(", ")}. With 95% intervals and caveats.`,
     path: `/providers/${p.slug}`,
@@ -103,11 +107,26 @@ export default async function ProviderPage({ params }: PageProps<"/providers/[sl
   const notes = PROVIDER_NOTES[p.id] ?? [];
   const pairs = comparisonsWith(p);
   const untested = tracks.filter((t) => !p.runs.some((r) => r.track.id === t.id));
+  const answer = providerAnswer(p);
 
   return (
     <PageShell>
-      <Breadcrumbs trail={[{ name: "Providers", path: "/providers" }, { name: p.label, path: `/providers/${p.slug}` }]} />
-      <PageIntro title={`${p.label} for AI agents: benchmark results`}>
+      <Breadcrumbs trail={[{ name: "Providers", path: "/providers" }, { name: searchedName(p), path: `/providers/${p.slug}` }]} />
+      <PageIntro title={`${searchedName(p)} for AI agents: benchmark results`}>
+        {answer ? (
+          <p className="text-foreground">
+            {answer.sentences.join(" ")}
+            {answer.comparison ? (
+              <>
+                {" "}
+                <TextLink href={`/compare/${answer.comparison.slug}`}>
+                  {answer.comparison.a.label} vs {answer.comparison.b.label}, track by track
+                </TextLink>
+                .
+              </>
+            ) : null}
+          </p>
+        ) : null}
         <p>
           <span className="font-medium" style={{ color: colorOf(p.id) }}>
             {p.label}
