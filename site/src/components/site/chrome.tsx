@@ -67,7 +67,7 @@ export function SiteFooter() {
         <FooterColumn title="Tracks">
           {tracks.map((t) => (
             <FooterLink key={t.id} href={`/${t.id}`}>
-              {t.label} <span className="text-muted-foreground/70">· {t.tasks} tasks</span>
+              {t.label} <span className="text-muted-foreground">· {t.tasks} tasks</span>
             </FooterLink>
           ))}
         </FooterColumn>
