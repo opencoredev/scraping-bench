@@ -61,4 +61,8 @@ npm run bench -- --tasks tasks/search.json --providers firecrawl,linkup --client
 
 `npm run tasks:verify` fetches every real-web answer key again and fails on any drift, so run it right before a benchmark. [HARNESS.md](docs/HARNESS.md) covers every flag, budgets and resuming.
 
+## License
+
+[MIT](LICENSE). Tasks, grader, harness and every result row are free to reuse.
+
 <p align="center"><sub>Built by <a href="https://x.com/leodev">@leodev</a></sub></p>
