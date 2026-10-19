@@ -21,12 +21,10 @@ export const PROVIDER_TITLES: Partial<Record<string, string>> = {
 
 const lower = (t: Track) => t.label.toLowerCase();
 
-/** True when every runner-up's gap to this sole leader cleared chance. */
+/** True when every other provider's gap to this sole leader cleared chance. Significance needn't follow score order, so all are checked. */
 function leadIsReal(run: Run): boolean {
   const rest = rankedRuns(run.track).filter((r) => r.entry.id !== run.entry.id);
-  const second = rest[0];
-  if (!second) return false;
-  return rest.filter((r) => r.agent.rate === second.agent.rate).every((r) => detectedGap(run.track, r.entry.label));
+  return rest.length > 0 && rest.every((r) => detectedGap(run.track, r.entry.label));
 }
 
 function leadSentence(p: Provider): string | null {
@@ -61,13 +59,19 @@ function costSentences(p: Provider, subject: string): string[] {
   return out;
 }
 
-/** A gap between two providers is only a result when one of them led the track alone and the other's gap to it cleared chance. */
-function gapIsReal(track: Track, a: Run, b: Run): boolean {
+/**
+ * The benchmark only tests each provider's gap to its track's sole leader. A pair is tested when one of the two led alone;
+ * the gap is real when the other's gap to it cleared chance.
+ */
+type PairGap = { kind: "tied" } | { kind: "untested" } | { kind: "tested"; real: boolean };
+
+function pairGap(track: Track, a: Run, b: Run): PairGap {
+  if (a.agent.successes === b.agent.successes && a.agent.tasks === b.agent.tasks) return { kind: "tied" };
   const top = leaders(track);
-  if (top.length !== 1) return false;
-  const leaderId = top[0]?.entry.id;
+  const leaderId = top.length === 1 ? top[0]?.entry.id : undefined;
   const other = a.entry.id === leaderId ? b : b.entry.id === leaderId ? a : undefined;
-  return other !== undefined && detectedGap(track, other.entry.label) !== undefined;
+  if (!other) return { kind: "untested" };
+  return { kind: "tested", real: detectedGap(track, other.entry.label) !== undefined };
 }
 
 function referenceSentences(p: Provider): { text: string[]; comparison: Comparison | undefined } {
@@ -81,11 +85,19 @@ function referenceSentences(p: Provider): { text: string[]; comparison: Comparis
   const figures = pairs.map(
     ({ own, other }) => `${lower(own.track)} ${formatPct(own.agent.rate)} vs ${formatPct(other.agent.rate)} of tasks done, at ${costText(own.agent)} vs ${costText(other.agent)} per finished task`,
   );
-  const real = pairs.filter(({ own, other }) => gapIsReal(own.track, own, other)).map(({ own }) => lower(own.track));
-  const verdict =
-    real.length === 0
-      ? "None of those gaps in tasks done is a result either provider can claim: none cleared chance."
-      : `Only the ${listText(real)} gap in tasks done cleared chance.`;
+  const gaps = pairs.map(({ own, other }) => ({ track: lower(own.track), gap: pairGap(own.track, own, other) }));
+  const real = gaps.flatMap((g) => (g.gap.kind === "tested" && g.gap.real ? [g.track] : []));
+  const noise = gaps.flatMap((g) => (g.gap.kind === "tested" && !g.gap.real ? [g.track] : []));
+  const tied = gaps.flatMap((g) => (g.gap.kind === "tied" ? [g.track] : []));
+  const untested = gaps.flatMap((g) => (g.gap.kind === "untested" ? [g.track] : []));
+  const verdict = [
+    tied.length > 0 ? `They finished the same number of ${listText(tied)} tasks.` : null,
+    real.length > 0 ? `The ${listText(real)} gap in tasks done cleared chance.` : null,
+    noise.length > 0 ? `The ${listText(noise)} ${noise.length === 1 ? "gap" : "gaps"} in tasks done ${noise.length === 1 ? "is" : "are"} too small to rule out chance.` : null,
+    untested.length > 0 ? `On ${listText(untested)}, neither led, so the benchmark didn't test the two against each other.` : null,
+  ]
+    .filter((s): s is string => s !== null)
+    .join(" ");
   return {
     text: [`Against ${ref.label}, on the same tasks: ${figures.join("; ")}. ${verdict}`],
     comparison: comparisonsWith(p).find((c) => c.a.id === ref.id || c.b.id === ref.id),
