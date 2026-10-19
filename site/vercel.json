@@ -3,15 +3,31 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "web-data-bench.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "web-data-bench.vercel.app"
+        }
+      ],
       "destination": "https://www.scrapingbench.com/:path*",
       "statusCode": 301
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "web-bench-zeta.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "web-bench-zeta.vercel.app"
+        }
+      ],
       "destination": "https://www.scrapingbench.com/:path*",
       "statusCode": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/google45d7e7f46d32a97f.html",
+      "destination": "/google45d7e7f46d32a97f"
     }
   ]
 }
