@@ -133,7 +133,7 @@ function TrackView({ track }: { track: Track }) {
 
 export function BenchPage({ results }: { results: Results }) {
   const { tracks } = results;
-  const [trackId, setTrackId] = useState<string>(tracks[0]?.id ?? "search");
+  const [trackId, setTrackId] = useState<string>(tracks[0]?.id ?? "scrape");
   const track = tracks.find((t) => t.id === trackId) ?? tracks[0];
   if (!track) return null;
   const providerCount = new Set(tracks.flatMap((t) => t.providers.map((p) => p.id))).size;

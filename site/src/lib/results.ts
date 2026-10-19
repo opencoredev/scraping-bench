@@ -40,7 +40,11 @@ export type Results = z.infer<typeof resultsSchema>;
 export type Track = Results["tracks"][number];
 export type Score = z.infer<typeof score>;
 
-export const results: Results = resultsSchema.parse(raw);
+/** Scrape leads: this is a scraping benchmark. The data file's own order is ignored. */
+const TRACK_ORDER: readonly Track["id"][] = ["scrape", "search", "map", "crawl"];
+
+const parsed = resultsSchema.parse(raw);
+export const results: Results = { ...parsed, tracks: [...parsed.tracks].sort((a, b) => TRACK_ORDER.indexOf(a.id) - TRACK_ORDER.indexOf(b.id)) };
 
 export const formatPct = (rate: number): string => `${Math.round(rate * 100)}%`;
 

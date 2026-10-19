@@ -20,7 +20,7 @@ const excalifont = localFont({ src: "./fonts/Excalifont-Latin.woff2", variable: 
 const cascadia = localFont({ src: "./fonts/CascadiaCode-Regular.woff2", variable: "--font-cascadia", display: "block" });
 
 export const metadata: Metadata = {
-  title: "Web data API benchmark for agents: search, scrape, map and crawl",
+  title: "Web data API benchmark for agents: scrape, search, map and crawl",
   description:
     "Nine web data APIs graded on whether an agent got the right answer: task success, cost per finished task and time, with confidence intervals.",
 };
