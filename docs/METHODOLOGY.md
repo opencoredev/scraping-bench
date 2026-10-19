@@ -1,4 +1,4 @@
-# How web-bench grades
+# How scraping-bench grades
 
 Every task is pass or fail, and a script decides it. Claude Haiku 5.5 only does the task; no model grades anything.
 

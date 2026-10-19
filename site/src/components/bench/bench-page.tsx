@@ -14,7 +14,7 @@ import type { Results, Track } from "@/lib/results";
 import { cn } from "@/lib/utils";
 
 const NOT_TESTED = "Exa, Tavily, Bright Data and Perplexity";
-const REPO = "https://github.com/opencoredev/web-bench";
+const REPO = "https://github.com/opencoredev/scraping-bench";
 
 /** Caveats that belong next to one track's charts. */
 const NOTES: Partial<Record<Track["id"], string>> = {
@@ -143,7 +143,7 @@ export function BenchPage({ results }: { results: Results }) {
     <div className="mx-auto max-w-5xl px-5 md:px-8">
       <header className="flex items-center justify-between py-6">
         <span className="text-lg font-medium tracking-[-0.03em]">
-          web<span className="text-muted-foreground">bench</span>
+          scraping<span className="text-muted-foreground">bench</span>
         </span>
         <a className="text-sm text-muted-foreground hover:text-foreground" href={REPO}>
           GitHub

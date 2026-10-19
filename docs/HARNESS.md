@@ -71,7 +71,7 @@ The shared types remain unchanged. Follow-up contract changes should add control
 
 ## October 2026 campaign
 
-Run `node --experimental-strip-types scripts/campaign.mjs <pilot|full|controls|tuned> <search|scrape|map|crawl>` inside a shell with provider credentials and model-proxy authentication. Wrap each invocation in a timeout. The campaign uses frozen task/config files, a campaign lock and an API-only allowance separate from model cost. `WEB_BENCH_ONLY` selects providers; `WEB_BENCH_REV` identifies a disclosed correction run. See [the preregistration](PREREGISTRATION-20261017.md) for scope, budgets and exclusions.
+Run `node --experimental-strip-types scripts/campaign.mjs <pilot|full|controls|tuned> <search|scrape|map|crawl>` inside a shell with provider credentials and model-proxy authentication. Wrap each invocation in a timeout. The campaign uses frozen task/config files, a campaign lock and an API-only allowance separate from model cost. `SCRAPING_BENCH_ONLY` selects providers; `SCRAPING_BENCH_REV` identifies a disclosed correction run. See [the preregistration](PREREGISTRATION-20261017.md) for scope, budgets and exclusions.
 
 In `both` mode raw waits for the agent, reusing only its first dispatched call when normalized arguments match. A mismatch triggers a separately budgeted request. Persisted outcomes are hash-checked, and interrupted first calls cannot be replaced by later calls on resume. `provider-reuse` has zero incremental physical charge, while the raw result retains standalone attribution. Sum signed dispatch/settlement events for campaign spend, rather than adding agent and raw row costs.
 

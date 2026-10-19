@@ -11,9 +11,9 @@ import type { Score } from "@/lib/results";
 
 /** 1200×675 cards (X's 16:9 image size) for posts: each track's diagram and its results, screenshotted into exports/. */
 
-export const metadata: Metadata = { title: "webbench cards for export", robots: { index: false } };
+export const metadata: Metadata = { title: "scrapingbench cards for export", robots: { index: false } };
 
-const URL = "web-data-bench.vercel.app";
+const URL = "scrapingbench.com";
 
 function Card({ id, title, footer, children }: { id: string; title: string; footer: string; children: React.ReactNode }) {
   return (
@@ -21,7 +21,7 @@ function Card({ id, title, footer, children }: { id: string; title: string; foot
       <div className="flex items-baseline justify-between">
         <h1 className="text-3xl font-medium tracking-[-0.02em]">{title}</h1>
         <span className="text-lg font-medium tracking-[-0.03em]">
-          web<span className="text-muted-foreground">bench</span>
+          scraping<span className="text-muted-foreground">bench</span>
         </span>
       </div>
       {children}

@@ -17,7 +17,7 @@ function parseRobots(url: string, body: string): z.infer<typeof robotMethods> {
   return robotMethods.parse({ isAllowed: instance.isAllowed.bind(instance), getCrawlDelay: instance.getCrawlDelay.bind(instance) });
 }
 
-export const agent = 'web-bench research leodoesdev@gmail.com';
+export const agent = 'scraping-bench research leodoesdev@gmail.com';
 const envelope = z.object({ url: z.string().url(), checkedAt: z.string().datetime(), status: z.number(), body: z.string(), finalUrl: z.string().url().optional() });
 export type Response = z.infer<typeof envelope>;
 const memory = new Map<string, Promise<Response>>();

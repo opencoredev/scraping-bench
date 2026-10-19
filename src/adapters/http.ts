@@ -101,7 +101,7 @@ export class Session {
     this.headers = response.headers;
     const headers: Record<string, string> = {};
     for (const name of safeHeaders) { const value = response.headers.get(name); if (value !== null) headers[name] = value; }
-    if (process.env.WEB_BENCH_SMOKE === '1') { const u = new URL(url); responseEvents.push({ origin: u.origin, path: u.pathname, status: response.status, headers }); }
+    if (process.env.SCRAPING_BENCH_SMOKE === '1') { const u = new URL(url); responseEvents.push({ origin: u.origin, path: u.pathname, status: response.status, headers }); }
     const used = response.headers.get('x-credits-used');
     if (new URL(url).origin === 'https://api.context.dev' && used !== null && Number.isFinite(Number(used))) this.reported(Number(used), pricing.contextdev.credit);
     const scrapfly = response.headers.get('x-scrapfly-api-cost');
@@ -115,7 +115,7 @@ export class Session {
   async json<T>(url: string, schema: z.ZodType<T>, options: Parameters<Session['response']>[1] = {}): Promise<T> {
     const response = await this.response(url, options);
     const raw: unknown = await response.json();
-    if (process.env.WEB_BENCH_SMOKE === '1') {
+    if (process.env.SCRAPING_BENCH_SMOKE === '1') {
       await mkdir(new URL('../../tmp/responses/', import.meta.url), { recursive: true });
       const name = `${Date.now()}-${new URL(url).hostname}-${new URL(url).pathname.replace(/[^a-zA-Z0-9]/g, '_')}.json`;
       await writeFile(new URL(`../../tmp/responses/${name}`, import.meta.url), redact(JSON.stringify(raw)), { mode: 0o600 });

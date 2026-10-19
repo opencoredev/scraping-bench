@@ -69,7 +69,7 @@ for (const reuse of [true, false]) test(`pipeline with actual local HTTP model p
   await once(server, "listening");
   const address = server.address();
   if (!address || typeof address === "string") throw new Error("No address");
-  const root = await mkdtemp(join(tmpdir(), "web-bench-test-"));
+  const root = await mkdtemp(join(tmpdir(), "scraping-bench-test-"));
   const options = {
     tasks: [first],
     providers: ["fake"],
@@ -258,7 +258,7 @@ test("tool output cap is identical and valid Unicode; deterministic shuffle", ()
   );
 });
 test("provider budget stops calls and n/a is excluded from statistics", async () => {
-  const root = await mkdtemp(join(tmpdir(), "web-bench-budget-"));
+  const root = await mkdtemp(join(tmpdir(), "scraping-bench-budget-"));
   try {
     const result = await runBenchmark({
       tasks: [first],
@@ -295,7 +295,7 @@ test("provider budget stops calls and n/a is excluded from statistics", async ()
   }
 });
 test("paired site bootstrap retains pairs and shared site outcomes", async () => {
-  const root = await mkdtemp(join(tmpdir(), "web-bench-stats-"));
+  const root = await mkdtemp(join(tmpdir(), "scraping-bench-stats-"));
   try {
     const result = await runBenchmark({
       tasks,
@@ -379,7 +379,7 @@ test("strict answer JSON rejects extra fields and empty paired samples are unres
   }
 });
 test("preflight cost reservation prevents a second provider call and raw n/a is provider-independent", async () => {
-  const root = await mkdtemp(join(tmpdir(), "web-bench-cost-"));
+  const root = await mkdtemp(join(tmpdir(), "scraping-bench-cost-"));
   let calls = 0;
   const adapter = {
     ...fakeAdapter,
@@ -602,7 +602,7 @@ test("plain-fetch oracle retrieves local evidence and stale PID lock resumes", a
   await once(server, "listening");
   const a = server.address();
   if (!a || typeof a === "string") throw new Error("address");
-  const root = await mkdtemp(join(tmpdir(), "web-bench-lock-"));
+  const root = await mkdtemp(join(tmpdir(), "scraping-bench-lock-"));
   try {
     const outcome = await invoke(
       oracleAdapter(null),
@@ -667,7 +667,7 @@ test("malformed successful proxy JSON terminates without a retry", async () => {
   }
 });
 test("resume includes prior tuple spend in task dispatch cap", async () => {
-  const root = await mkdtemp(join(tmpdir(), "web-bench-task-cap-"));
+  const root = await mkdtemp(join(tmpdir(), "scraping-bench-task-cap-"));
   let calls = 0;
   const adapter = {
     ...fakeAdapter,
@@ -730,7 +730,7 @@ test("resume includes prior tuple spend in task dispatch cap", async () => {
 });
 
 test('concurrent provider dispatches preserve a native API credit reserve independently of model budget', async () => {
-  const root = await mkdtemp(join(tmpdir(), 'web-bench-api-reserve-'));
+  const root = await mkdtemp(join(tmpdir(), 'scraping-bench-api-reserve-'));
   let dispatched = 0;
   const search = fakeAdapter.search;
   if (!search) throw new Error('Missing fake search');
@@ -749,7 +749,7 @@ test('concurrent provider dispatches preserve a native API credit reserve indepe
   } finally { await rm(root, { recursive: true, force: true }); }
 });
 test('concurrent calls wait for unsettled native reservations before declaring budget exhaustion', async () => {
-  const root = await mkdtemp(join(tmpdir(), 'web-bench-api-settlement-'));
+  const root = await mkdtemp(join(tmpdir(), 'scraping-bench-api-settlement-'));
   let dispatched = 0;
   const search = fakeAdapter.search;
   if (!search) throw new Error('Missing fake search');
