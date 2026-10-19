@@ -21,6 +21,7 @@ import {
 } from "@/lib/catalog";
 import type { Provider, Run } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
+import { linkOf } from "@/lib/links";
 import { PROVIDER_NOTES, TESTED_AS } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
 import { MODEL, pageMetadata } from "@/lib/site";
@@ -115,6 +116,13 @@ export default async function ProviderPage({ params }: PageProps<"/providers/[sl
           {untested.length > 0 ? `, not on ${listText(untested.map((t) => t.label.toLowerCase()))}` : ""}. It got the same tasks, the same model ({MODEL}), the same prompt and the same limits as
           every other provider, and a script checked every answer. {TESTED_AS[p.id] ?? ""}
         </p>
+        {linkOf(p.id) ? (
+          <p>
+            <a href={linkOf(p.id)} target="_blank" rel="noopener" className="text-foreground underline decoration-foreground/30 underline-offset-[3px] hover:decoration-foreground">
+              {p.label} website
+            </a>
+          </p>
+        ) : null}
       </PageIntro>
 
       {p.runs.map((run) => (
