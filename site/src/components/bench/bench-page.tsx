@@ -6,15 +6,14 @@
  * correct page handed over) sit in grey among the providers so the floor and ceiling are read in place.
  */
 
+import Link from "next/link";
 import { useState } from "react";
 import { Bars } from "@/components/bench/charts";
 import { TaskDiagram } from "@/components/bench/diagram";
+import { TRACK_SOURCES } from "@/lib/notes";
 import { trackRows } from "@/lib/rows";
 import type { Results, Track } from "@/lib/results";
 import { cn } from "@/lib/utils";
-
-const NOT_TESTED = "Exa, Tavily, Bright Data and Perplexity";
-const REPO = "https://github.com/opencoredev/scraping-bench";
 
 /** Caveats that belong next to one track's charts. */
 const NOTES: Partial<Record<Track["id"], string>> = {
@@ -25,14 +24,6 @@ const NOTES: Partial<Record<Track["id"], string>> = {
   crawl: "Only 10 tasks. Firecrawl's time includes waiting out its free-plan rate limit.",
 };
 
-/** Where each track's tasks come from, printed under the diagram. */
-const SOURCES: Record<Track["id"], string> = {
-  search: "Answer keys come from npm, PyPI, crates.io, GitHub releases, Wikidata and SEC filings.",
-  scrape: "50 pages on our own test site, including JavaScript, PDFs, tabs and missing answers, plus 10 project pages on PyPI.",
-  map: "8 sections of our test site, built fresh for this run so nobody could have indexed it, plus 7 sections of real docs for Typer, Ruff, MkDocs and HTTPX.",
-  crawl: "7 sections of our test site plus 3 real docs sites.",
-};
-
 function HowItRuns({ track }: { track: Track }) {
   return (
     <section className="pt-6 pb-10">
@@ -41,7 +32,7 @@ function HowItRuns({ track }: { track: Track }) {
         <TaskDiagram track={track} layout="wide" className="hidden w-full md:block" />
         <TaskDiagram track={track} layout="tall" className="mx-auto w-full max-w-sm md:hidden" />
         <figcaption className="mt-6 max-w-prose text-sm text-pretty text-muted-foreground">
-          {track.tasks} tasks. {SOURCES[track.id]}
+          {track.tasks} tasks. {TRACK_SOURCES[track.id]}
         </figcaption>
       </figure>
     </section>
@@ -84,7 +75,8 @@ function Chart({ title, note, children }: { title: string; note: string; childre
 }
 
 
-function TrackView({ track }: { track: Track }) {
+/** One track's diagram, charts and notes. `withLink` adds a link to the track's own page, for the home page tabs. */
+export function TrackView({ track, withLink = false }: { track: Track; withLink?: boolean }) {
   const { success, cost, time, raw, tuned } = trackRows(track);
 
   return (
@@ -127,6 +119,14 @@ function TrackView({ track }: { track: Track }) {
           <p className="max-w-prose text-xs text-pretty text-muted-foreground">{NOTES[track.id]}</p>
         </div>
       ) : null}
+
+      {withLink ? (
+        <div className="border-t border-border py-8 text-sm">
+          <Link href={`/${track.id}`} className="text-foreground underline decoration-foreground/30 underline-offset-[3px] hover:decoration-foreground">
+            {track.label} results by provider, with caveats and head-to-head comparisons
+          </Link>
+        </div>
+      ) : null}
     </>
   );
 }
@@ -137,19 +137,9 @@ export function BenchPage({ results }: { results: Results }) {
   const track = tracks.find((t) => t.id === trackId) ?? tracks[0];
   if (!track) return null;
   const providerCount = new Set(tracks.flatMap((t) => t.providers.map((p) => p.id))).size;
-  const ranOn = new Date(results.generatedAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
   return (
-    <div className="mx-auto max-w-5xl px-5 md:px-8">
-      <header className="flex items-center justify-between py-6">
-        <span className="text-lg font-medium tracking-[-0.03em]">
-          scraping<span className="text-muted-foreground">bench</span>
-        </span>
-        <a className="text-sm text-muted-foreground hover:text-foreground" href={REPO}>
-          GitHub
-        </a>
-      </header>
-
+    <>
       <h1 className="pt-8 pb-3 text-2xl font-medium tracking-[-0.02em] text-balance md:text-3xl">
         {providerCount} web data APIs for agents, graded on whether the job got done
       </h1>
@@ -162,18 +152,8 @@ export function BenchPage({ results }: { results: Results }) {
       </div>
 
       <main>
-        <TrackView key={track.id} track={track} />
+        <TrackView key={track.id} track={track} withLink />
       </main>
-
-      <footer className="flex flex-wrap justify-between gap-2 border-t border-border py-6 text-xs text-muted-foreground">
-        <span>
-          Run {results.runId}, {ranOn}, all from one server
-        </span>
-        <span>Not tested: {NOT_TESTED}. Parallel was tested, but its terms need written consent to publish results.</span>
-        <a className="hover:text-foreground" href={`${REPO}/blob/main/docs/METHODOLOGY.md`}>
-          How it was graded
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import localFont from "next/font/local";
+import { AUTHOR, HOME_TITLE, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -20,9 +21,14 @@ const excalifont = localFont({ src: "./fonts/Excalifont-Latin.woff2", variable: 
 const cascadia = localFont({ src: "./fonts/CascadiaCode-Regular.woff2", variable: "--font-cascadia", display: "block" });
 
 export const metadata: Metadata = {
-  title: "Web data API benchmark for agents: scrape, search, map and crawl",
+  metadataBase: new URL(SITE_URL),
+  title: { default: HOME_TITLE, template: `%s · ${SITE_NAME}` },
   description:
-    "Nine web data APIs graded on whether an agent got the right answer: task success, cost per finished task and time, with confidence intervals.",
+    "Web data APIs graded on whether an agent got the right answer: task success, cost per finished task and time, with confidence intervals.",
+  applicationName: SITE_NAME,
+  authors: [{ name: AUTHOR.name, url: AUTHOR.url }],
+  // Bing Webmaster Tools ownership. Google's is the HTML file in public/.
+  verification: { other: { "msvalidate.01": "1E50C0153B0B411BB1AF8CDFBEB1DCD9" } },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

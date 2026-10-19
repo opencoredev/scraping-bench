@@ -43,8 +43,20 @@ export type Score = z.infer<typeof score>;
 /** Scrape leads: this is a scraping benchmark. The data file's own order is ignored. */
 const TRACK_ORDER: readonly Track["id"][] = ["scrape", "search", "map", "crawl"];
 
+/** Providers whose terms forbid publishing results. Dropped here, so no page can show them even if a run includes them. */
+const WITHHELD: readonly string[] = ["parallel"];
+
 const parsed = resultsSchema.parse(raw);
-export const results: Results = { ...parsed, tracks: [...parsed.tracks].sort((a, b) => TRACK_ORDER.indexOf(a.id) - TRACK_ORDER.indexOf(b.id)) };
+export const results: Results = {
+  ...parsed,
+  tracks: [...parsed.tracks]
+    .sort((a, b) => TRACK_ORDER.indexOf(a.id) - TRACK_ORDER.indexOf(b.id))
+    .map((t) => ({
+      ...t,
+      providers: t.providers.filter((p) => !WITHHELD.includes(p.id)),
+      detected: t.detected.filter((d) => !WITHHELD.some((w) => [d.provider, d.reference].some((name) => name.toLowerCase() === w))),
+    })),
+};
 
 export const formatPct = (rate: number): string => `${Math.round(rate * 100)}%`;
 
