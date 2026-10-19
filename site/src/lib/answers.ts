@@ -92,13 +92,14 @@ function referenceSentences(p: Provider): { text: string[]; comparison: Comparis
   };
 }
 
-export type ProviderAnswer = { sentences: [string, ...string[]]; comparison: Comparison | undefined };
+/** `summary` is what the provider did; `versus` sets it against the reference provider, when both ran a track. */
+export type ProviderAnswer = { summary: [string, ...string[]]; versus: string[]; comparison: Comparison | undefined };
 
 /** The opening answer for a provider page, or null for pages that keep the default intro. */
 export function providerAnswer(p: Provider): ProviderAnswer | null {
   if (!ANSWER_FIRST.has(p.id)) return null;
-  const ref = referenceSentences(p);
   const lead = leadSentence(p);
-  const [first, ...rest] = [lead, ...costSentences(p, lead ? "It" : p.label), ...ref.text].filter((s): s is string => s !== null);
-  return first ? { sentences: [first, ...rest], comparison: ref.comparison } : null;
+  const [first, ...rest] = [lead, ...costSentences(p, lead ? "It" : p.label)].filter((s): s is string => s !== null);
+  const ref = referenceSentences(p);
+  return first ? { summary: [first, ...rest], versus: ref.text, comparison: ref.comparison } : null;
 }

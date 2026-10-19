@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: PageProps<"/providers/[slug]"
   return pageMetadata({
     title: PROVIDER_TITLES[p.id] ?? `${searchedName(p)} benchmark results for AI agents`,
     description: answer
-      ? `${answer.sentences[0]} Intervals, cost and caveats.`
+      ? `${answer.summary[0]} Intervals, cost and caveats.`
       : `How ${searchedName(p)} did as an AI agent's ${trackNames(p)} tool: ${p.runs
       .map((r) => `${formatPct(r.agent.rate)} of ${r.track.tasks} ${r.track.label.toLowerCase()} tasks at ${costText(r.agent)} each`)
       .join(", ")}. With 95% intervals and caveats.`,
@@ -113,9 +113,10 @@ export default async function ProviderPage({ params }: PageProps<"/providers/[sl
     <PageShell>
       <Breadcrumbs trail={[{ name: "Providers", path: "/providers" }, { name: searchedName(p), path: `/providers/${p.slug}` }]} />
       <PageIntro title={`${searchedName(p)} for AI agents: benchmark results`}>
-        {answer ? (
-          <p className="text-foreground">
-            {answer.sentences.join(" ")}
+        {answer ? <p className="text-foreground">{answer.summary.join(" ")}</p> : null}
+        {answer && answer.versus.length > 0 ? (
+          <p>
+            {answer.versus.join(" ")}
             {answer.comparison ? (
               <>
                 {" "}
