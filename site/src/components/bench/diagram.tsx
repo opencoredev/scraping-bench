@@ -198,12 +198,25 @@ function Lines({ box: b, lines, code = false, top = 62, color = INK }: { box: Bo
 }
 
 export function TaskDiagram({ track, layout, className }: { track: Track; layout: "wide" | "tall"; className?: string }) {
-  const L = layout === "wide" ? WIDE : TALL;
+  const base = layout === "wide" ? WIDE : TALL;
   const c = CONTENT[track.id];
-  const { boxes: b } = L;
   const { limits } = track;
   const names = track.providers.map((p) => ({ id: p.id, label: p.label })).sort((x, y) => x.label.localeCompare(y.label));
-  const apiLines = wrapNames(names, L.apiChars);
+  const apiLines = wrapNames(names, base.apiChars);
+  const extra = Math.max(0, 62 + (apiLines.length - 1) * 20 + 22 - base.boxes.api.h);
+  const below = (point: Point): Point => [point[0], point[1] + (layout === "tall" && point[1] > base.boxes.api.y + base.boxes.api.h ? extra : 0)];
+  const L: Layout = {
+    ...base,
+    h: base.h + extra,
+    boxes: {
+      ...base.boxes,
+      api: { ...base.boxes.api, h: base.boxes.api.h + extra },
+      answer: { ...base.boxes.answer, y: base.boxes.answer.y + (layout === "tall" ? extra : 0) },
+      check: { ...base.boxes.check, y: base.boxes.check.y + (layout === "tall" ? extra : 0) },
+    },
+    arrows: base.arrows.map(a => ({ ...a, from: below(a.from), to: below(a.to) })),
+  };
+  const { boxes: b } = L;
   const shift = (d: number): Box => ({ ...b.task, x: b.task.x + d, y: b.task.y + d });
   const checkLines = layout === "wide" ? c.check : [c.check.join(" ")];
   const tickAt: Point = [b.check.x + 16, b.check.y + 62 + checkLines.length * 20 + 6];
