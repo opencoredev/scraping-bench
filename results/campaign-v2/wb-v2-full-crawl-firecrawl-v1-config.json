@@ -1,0 +1,10 @@
+{
+  "firecrawl": {
+    "concurrency": 1,
+    "perSecond": 0.015384615384615385,
+    "burst": 1,
+    "maxUsd": 30,
+    "apiMaxUsd": 1.1642499999999998,
+    "maxCallUsd": 0.15
+  }
+}

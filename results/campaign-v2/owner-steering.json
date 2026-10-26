@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-19T19:49:33.266287+00:00",
+  "provider": "you",
+  "instruction": "No further You.com API calls of any kind; preserve collected rows.",
+  "completedBeforeCancellation": [
+    "wb-v2-full-search-you-v1",
+    "wb-v2-full-scrape-you-v1"
+  ],
+  "finalBalance": "NOT CHECKED: owner cancelled further calls",
+  "execution": "Postrun balance runner replaced before execution; original frozen balance script unchanged."
+}

@@ -2,6 +2,9 @@ import { z } from 'zod';
 import type { Task } from '../core/types.ts';
 
 export const recipeSchema = z.discriminatedUnion('kind', [
+  z.object({ kind: z.literal('fixture'), seed: z.string(), id: z.string() }),
+  z.object({ kind: z.literal('page'), url: z.string().url(), track: z.enum(['search', 'scrape']) }),
+  z.object({ kind: z.literal('registry'), ecosystem: z.enum(['rubygems', 'go', 'hex', 'pub', 'packagist', 'nuget', 'homebrew', 'metacpan']), name: z.string() }),
   z.object({ kind: z.literal('package'), ecosystem: z.enum(['npm', 'pypi', 'crates']), name: z.string(), track: z.enum(['search', 'scrape']) }),
   z.object({ kind: z.literal('finance'), cik: z.string(), company: z.string() }),
   z.object({ kind: z.literal('entity'), qid: z.string().regex(/^Q\d+$/), label: z.string() }),

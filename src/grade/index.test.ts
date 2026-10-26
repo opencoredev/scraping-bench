@@ -254,3 +254,12 @@ test("raw search finds gold URL among other retrieved hits", () => {
   });
   assert.equal(raw.fields[0]?.pass, true);
 });
+
+test("text grading ignores private-use and format characters on either side", () => {
+  assert.equal(normalizeText("In\u200btro\u00adduction\ue000 A\u200dPI\u2060"), "introduction api");
+  assert.equal(normalizeText("Cafe\u200b\u0301"), "café");
+  for (const [expected, answer] of [["Introduction API", "In\u200btroduction\ue000 API"], ["Introduction\ue000 A\u200dPI", "Introduction API"]] satisfies [string, string][]) {
+    assert.equal(gradeField({ kind: "text", name: "heading", accept: [expected] }, answer).pass, true);
+    assert.equal(gradeField({ kind: "text-set", name: "headings", items: [expected] }, [answer]).pass, true);
+  }
+});

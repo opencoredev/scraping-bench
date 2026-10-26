@@ -1,0 +1,122 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "you",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "search-index",
+      "tasks": 3,
+      "na": 0,
+      "successes": 2,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 7622.798213499999,
+      "successfulP90Ms": 7646.051979499999,
+      "totalUsd": 0.082127,
+      "costPerSuccessUsd": 0.0410635,
+      "errors": {},
+      "families": {
+        "company-financials": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "docs-heading": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "registry-version": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "you",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "search-index",
+      "tasks": 3,
+      "na": 0,
+      "successes": 2,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 633.6462500000001,
+      "successfulP90Ms": 648.4130540000002,
+      "totalUsd": 0.015,
+      "costPerSuccessUsd": 0.0075,
+      "errors": {},
+      "families": {
+        "company-financials": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "docs-heading": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "registry-version": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "search-index",
+      "provider": "you",
+      "reference": "you",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "search-index",
+      "provider": "you",
+      "reference": "you",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "you": {
+      "usd": 0.08212699999999999,
+      "apiUsd": 0.030000000000000002,
+      "modelUsd": 0.05212699999999999,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

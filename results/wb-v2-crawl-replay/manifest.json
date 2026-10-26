@@ -1,0 +1,31 @@
+{
+  "lane": "post-run-model-answer-replay",
+  "sourceRuns": {
+    "wb-v2-full-crawl-firecrawl-v1": {
+      "manifestHash": "fed7d28cca73b7d67309da8bb2831feb92920486e934abfa085535c6caf37620",
+      "callsHash": "009373b4a60e12e4ac924fa2419ae1787fb1a886c02461a652fa5cf03cf05911",
+      "tasks": 12,
+      "providerDispatches": 12
+    },
+    "wb-v2-full-crawl-contextdev-v1": {
+      "manifestHash": "e0fa9435bc6fe6fcfc0bdd3d0d599a70e4bf2f17dbc9d9e6db8a4e5ecd1ad44f",
+      "callsHash": "308935d6e2f4a89e94a6499918df59f3924340d38d380a5bbb1993527c31c0ed",
+      "tasks": 40,
+      "providerDispatches": 40
+    },
+    "wb-v2-full-crawl-scrapfly-v1": {
+      "manifestHash": "ae5e5255dcfc95f37d058db4e2d4f6027edb04df7ce052024797dc6b4c95c15a",
+      "callsHash": "88a4e6b9b9226268c2ec0791801e43611b3dbeae788215114965e3f571d920cc",
+      "tasks": 12,
+      "providerDispatches": 12
+    }
+  },
+  "taskCount": 64,
+  "model": "claude-haiku-5-5",
+  "temperature": 0,
+  "maxAnswerTokens": 4096,
+  "evidenceCapBytes": 48000,
+  "providerCallsAllowed": 0,
+  "providerNetwork": "blocked; only POST http://127.0.0.1:8317/v1/chat/completions permitted, redirects refused",
+  "planning": "Original model planning turn and provider tool response reused; only final answer turn rerun with corrected packaging. Original prompt, tools, limits and strict parser retained."
+}

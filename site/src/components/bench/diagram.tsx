@@ -159,6 +159,14 @@ const tick = (x: number, y: number, seed: number) => [
   gen.line(x + 7, y + 8, x + 21, y - 9, { seed: seed + 1, roughness: 0.6, stroke: PASS, strokeWidth: 2.4 }),
 ];
 
+// Illustrative real-web v2 tasks; exact frozen samples are linked in the report.
+const V2_CONTENT: typeof CONTENT = {
+  search: { task: ["Latest stable release", "of a registry package?"], tool: "search(query)", answer: ["{", '  "version": "1.2.3"', "}"], check: ["Same as the", "official registry?"] },
+  scrape: { task: ["First main heading", "on this docs page?"], tool: "scrape(url)", answer: ["{", '  "heading": "Overview"', "}"], check: ["Same as the", "page's first H1?"] },
+  map: { task: ["Every docs URL", "under this scope?"], tool: "map(site)", answer: ["{", '  "urls": ["https://…"]', "}"], check: ["Same URLs as", "sitemap + BFS?"] },
+  crawl: { task: ["Every scoped docs URL", "and HTML title?"], tool: "crawl(site, scope)", answer: ["{", '  "urls": ["https://…"],', '  "records": [', '    "URL | title"]', "}"], check: ["URL set and", "every title match?"] },
+};
+
 /** Wraps provider names into lines of at most `chars` characters, keeping each name whole. */
 function wrapNames(names: readonly { id: string; label: string }[], chars: number) {
   const lines: { id: string; label: string }[][] = [[]];
@@ -200,7 +208,7 @@ function Lines({ box: b, lines, code = false, top = 62, color = INK }: { box: Bo
 /** `linked` makes each provider name a link to its homepage; static images turn it off, since a PNG can't be clicked. */
 export function TaskDiagram({ track, layout, className, linked = true }: { track: Track; layout: "wide" | "tall"; className?: string; linked?: boolean }) {
   const base = layout === "wide" ? WIDE : TALL;
-  const c = CONTENT[track.id];
+  const c = (track.population ? V2_CONTENT : CONTENT)[track.id];
   const { limits } = track;
   const names = track.providers.map((p) => ({ id: p.id, label: p.label })).sort((x, y) => x.label.localeCompare(y.label));
   const apiLines = wrapNames(names, base.apiChars);

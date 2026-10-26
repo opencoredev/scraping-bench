@@ -11,5 +11,5 @@
     "types": ["node"],
     "erasableSyntaxOnly": true
   },
-  "include": ["src", "fixtures/site/src"]
+  "include": ["src", "fixtures/site/src", "measure"]
 }

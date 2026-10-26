@@ -1,0 +1,152 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "string",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "tasks": 30,
+      "na": 0,
+      "successes": 20,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0.4375,
+        0.875
+      ],
+      "successfulMedianMs": 5433.9980810000125,
+      "successfulP90Ms": 9495.615140200014,
+      "totalUsd": 0.2821510000000001,
+      "costPerSuccessUsd": 0.014107550000000005,
+      "errors": {
+        "other": 3
+      },
+      "families": {
+        "fresh": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "docs-heading": {
+          "tasks": 6,
+          "successRate": 0.3333333333333333
+        },
+        "latest-version": {
+          "tasks": 6,
+          "successRate": 0.5
+        },
+        "registry-version": {
+          "tasks": 6,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "entity-facts": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 3,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "string",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "tasks": 27,
+      "na": 3,
+      "successes": 16,
+      "successRate": 0.5925925925925926,
+      "ci95": [
+        0.3939393939393939,
+        0.8260869565217391
+      ],
+      "successfulMedianMs": 1056.1630755000078,
+      "successfulP90Ms": 1389.1960834999954,
+      "totalUsd": 0.045000000000000026,
+      "costPerSuccessUsd": 0.0028125000000000016,
+      "errors": {},
+      "families": {
+        "fresh": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "docs-heading": {
+          "tasks": 6,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 6,
+          "successRate": 0.3333333333333333
+        },
+        "registry-version": {
+          "tasks": 6,
+          "successRate": 0.6666666666666666
+        },
+        "entity-facts": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "provider": "string",
+      "reference": "string",
+      "pairedTasks": 30,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "provider": "string",
+      "reference": "string",
+      "pairedTasks": 27,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "string": {
+      "usd": 0.29715100000000005,
+      "apiUsd": 0.08400000000000007,
+      "modelUsd": 0.21315099999999998,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

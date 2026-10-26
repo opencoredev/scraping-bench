@@ -1,0 +1,450 @@
+[
+  {
+    "taskId": "crawl-mkdocstrings-github-io-mkdocstrings-usage",
+    "provider": "firecrawl",
+    "priorElapsedMs": 16845.313459,
+    "replayElapsedMs": 2273.177963,
+    "combinedMs": 19118.491422
+  },
+  {
+    "taskId": "crawl-docs-astral-sh-uv-getting-started",
+    "provider": "firecrawl",
+    "priorElapsedMs": 53832.49195100003,
+    "replayElapsedMs": 3294.89712,
+    "combinedMs": 57127.389071000034
+  },
+  {
+    "taskId": "crawl-docs-astro-build-it-guides-backend",
+    "provider": "firecrawl",
+    "priorElapsedMs": 24608.249260999975,
+    "replayElapsedMs": 4470.07744,
+    "combinedMs": 29078.326700999976
+  },
+  {
+    "taskId": "crawl-squidfunk-github-io-mkdocs-material-contributing",
+    "provider": "firecrawl",
+    "priorElapsedMs": 70700.75287400003,
+    "replayElapsedMs": 4494.168698,
+    "combinedMs": 75194.92157200002
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-configuration",
+    "provider": "firecrawl",
+    "priorElapsedMs": 69810.99768199999,
+    "replayElapsedMs": 3640.763393,
+    "combinedMs": 73451.76107499999
+  },
+  {
+    "taskId": "crawl-docs-deno-com-sandbox",
+    "provider": "firecrawl",
+    "priorElapsedMs": 55695.03095100005,
+    "replayElapsedMs": 5461.909307,
+    "combinedMs": 61156.94025800005
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-tutorial-commands",
+    "provider": "firecrawl",
+    "priorElapsedMs": 38263.720932000026,
+    "replayElapsedMs": 4878.372216,
+    "combinedMs": 43142.09314800003
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-logfire-api",
+    "provider": "firecrawl",
+    "priorElapsedMs": 101407.837946,
+    "replayElapsedMs": 5067.974351999999,
+    "combinedMs": 106475.812298
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-transformations",
+    "provider": "firecrawl",
+    "priorElapsedMs": 68341.82105299999,
+    "replayElapsedMs": 3684.613859000001,
+    "combinedMs": 72026.434912
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-reference-openapi",
+    "provider": "firecrawl",
+    "priorElapsedMs": 54923.89038400003,
+    "replayElapsedMs": 3894.928466999999,
+    "combinedMs": 58818.818851000025
+  },
+  {
+    "taskId": "crawl-textual-textualize-io-styles-grid",
+    "provider": "firecrawl",
+    "priorElapsedMs": 51618.065013999934,
+    "replayElapsedMs": 2504.11823,
+    "combinedMs": 54122.183243999934
+  },
+  {
+    "taskId": "crawl-docs-docker-com-dhi-migration",
+    "provider": "firecrawl",
+    "priorElapsedMs": 68102.16685499996,
+    "replayElapsedMs": 5329.259389999999,
+    "combinedMs": 73431.42624499995
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-ai-graph",
+    "provider": "contextdev",
+    "priorElapsedMs": 13424.975407000049,
+    "replayElapsedMs": 3832.5233179999996,
+    "combinedMs": 17257.49872500005
+  },
+  {
+    "taskId": "crawl-squidfunk-github-io-mkdocs-material-setup-extensions",
+    "provider": "contextdev",
+    "priorElapsedMs": 18765.959633000002,
+    "replayElapsedMs": 5219.1654849999995,
+    "combinedMs": 23985.125118000004
+  },
+  {
+    "taskId": "crawl-docs-astral-sh-uv-concepts-projects",
+    "provider": "contextdev",
+    "priorElapsedMs": 11844.632882000005,
+    "replayElapsedMs": 4946.736664,
+    "combinedMs": 16791.369546000005
+  },
+  {
+    "taskId": "crawl-mkdocstrings-github-io-mkdocstrings-usage",
+    "provider": "contextdev",
+    "priorElapsedMs": 12376.57839400007,
+    "replayElapsedMs": 3857.9035810000023,
+    "combinedMs": 16234.481975000072
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-reference",
+    "provider": "contextdev",
+    "priorElapsedMs": 15118.271957000019,
+    "replayElapsedMs": 4190.191942000001,
+    "combinedMs": 19308.46389900002
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-tutorial-arguments",
+    "provider": "contextdev",
+    "priorElapsedMs": 12143.85334599996,
+    "replayElapsedMs": 4471.9380089999995,
+    "combinedMs": 16615.791354999958
+  },
+  {
+    "taskId": "crawl-www-mkdocs-org-user-guide",
+    "provider": "contextdev",
+    "priorElapsedMs": 12934.236351,
+    "replayElapsedMs": 5577.330613000002,
+    "combinedMs": 18511.566964
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-ai-project",
+    "provider": "contextdev",
+    "priorElapsedMs": 14306.359020000004,
+    "replayElapsedMs": 4533.615980999999,
+    "combinedMs": 18839.975001000003
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-tutorial-security",
+    "provider": "contextdev",
+    "priorElapsedMs": 14073.86376200011,
+    "replayElapsedMs": 5380.046654999998,
+    "combinedMs": 19453.91041700011
+  },
+  {
+    "taskId": "crawl-sqlmodel-tiangolo-com-tutorial-relationship-attributes",
+    "provider": "contextdev",
+    "priorElapsedMs": 14271.773170000059,
+    "replayElapsedMs": 6092.579989000002,
+    "combinedMs": 20364.35315900006
+  },
+  {
+    "taskId": "crawl-sqlmodel-tiangolo-com-tutorial-many-to-many",
+    "provider": "contextdev",
+    "priorElapsedMs": 13877.672726000019,
+    "replayElapsedMs": 4320.038101999999,
+    "combinedMs": 18197.710828000018
+  },
+  {
+    "taskId": "crawl-docs-astral-sh-uv-pip",
+    "provider": "contextdev",
+    "priorElapsedMs": 12859.083416000009,
+    "replayElapsedMs": 5441.056108999997,
+    "combinedMs": 18300.139525000006
+  },
+  {
+    "taskId": "crawl-sqlmodel-tiangolo-com-advanced",
+    "provider": "contextdev",
+    "priorElapsedMs": 13251.40547300002,
+    "replayElapsedMs": 3948.4468989999987,
+    "combinedMs": 17199.85237200002
+  },
+  {
+    "taskId": "crawl-docs-astro-build-it-guides-backend",
+    "provider": "contextdev",
+    "priorElapsedMs": 18228.28317499999,
+    "replayElapsedMs": 3062.492757,
+    "combinedMs": 21290.77593199999
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-tutorial-dependencies",
+    "provider": "contextdev",
+    "priorElapsedMs": 13040.994588999994,
+    "replayElapsedMs": 4819.808410999998,
+    "combinedMs": 17860.802999999993
+  },
+  {
+    "taskId": "crawl-docs-astral-sh-uv-getting-started",
+    "provider": "contextdev",
+    "priorElapsedMs": 12806.308249000052,
+    "replayElapsedMs": 4633.200866999996,
+    "combinedMs": 17439.50911600005
+  },
+  {
+    "taskId": "crawl-www-mkdocs-org-dev-guide",
+    "provider": "contextdev",
+    "priorElapsedMs": 13662.401434,
+    "replayElapsedMs": 4177.395929999999,
+    "combinedMs": 17839.797364
+  },
+  {
+    "taskId": "crawl-docs-docker-com-faqs",
+    "provider": "contextdev",
+    "priorElapsedMs": 21629.232388000004,
+    "replayElapsedMs": 3528.1816970000036,
+    "combinedMs": 25157.414085000008
+  },
+  {
+    "taskId": "crawl-docs-docker-com-dhi-tools",
+    "provider": "contextdev",
+    "priorElapsedMs": 23101.341371999937,
+    "replayElapsedMs": 3149.3172510000004,
+    "combinedMs": 26250.658622999938
+  },
+  {
+    "taskId": "crawl-squidfunk-github-io-mkdocs-material-contributing",
+    "provider": "contextdev",
+    "priorElapsedMs": 25583.93954000005,
+    "replayElapsedMs": 6260.036746999998,
+    "combinedMs": 31843.97628700005
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-lazy",
+    "provider": "contextdev",
+    "priorElapsedMs": 14647.696492000134,
+    "replayElapsedMs": 4677.151823,
+    "combinedMs": 19324.848315000134
+  },
+  {
+    "taskId": "crawl-docs-deno-com-sandbox",
+    "provider": "contextdev",
+    "priorElapsedMs": 22746.586764000007,
+    "replayElapsedMs": 5585.974922000001,
+    "combinedMs": 28332.56168600001
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-configuration",
+    "provider": "contextdev",
+    "priorElapsedMs": 18237.560093000066,
+    "replayElapsedMs": 4269.637155000004,
+    "combinedMs": 22507.19724800007
+  },
+  {
+    "taskId": "crawl-textual-textualize-io-styles-scrollbar-colors",
+    "provider": "contextdev",
+    "priorElapsedMs": 19667.23804700002,
+    "replayElapsedMs": 4136.309674999997,
+    "combinedMs": 23803.547722000018
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-logfire-api",
+    "provider": "contextdev",
+    "priorElapsedMs": 15256.316282,
+    "replayElapsedMs": 4828.8198919999995,
+    "combinedMs": 20085.136174
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-ai-integrations",
+    "provider": "contextdev",
+    "priorElapsedMs": 14814.147765000002,
+    "replayElapsedMs": 5003.796538000002,
+    "combinedMs": 19817.944303000004
+  },
+  {
+    "taskId": "crawl-docs-docker-com-offload",
+    "provider": "contextdev",
+    "priorElapsedMs": 26459.676946,
+    "replayElapsedMs": 4690.246384999999,
+    "combinedMs": 31149.923330999998
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-transformations",
+    "provider": "contextdev",
+    "priorElapsedMs": 14051.606584000052,
+    "replayElapsedMs": 4706.420148999998,
+    "combinedMs": 18758.02673300005
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-tutorial-commands",
+    "provider": "contextdev",
+    "priorElapsedMs": 12105.556083999953,
+    "replayElapsedMs": 5837.360851000005,
+    "combinedMs": 17942.916934999957
+  },
+  {
+    "taskId": "crawl-docs-deno-com-runtime-packages",
+    "provider": "contextdev",
+    "priorElapsedMs": 18708.24453299999,
+    "replayElapsedMs": 4477.537110999998,
+    "combinedMs": 23185.781643999988
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-working-with-data",
+    "provider": "contextdev",
+    "priorElapsedMs": 19851.106810999976,
+    "replayElapsedMs": 4580.0654859999995,
+    "combinedMs": 24431.172296999976
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-integrating-with-marimo",
+    "provider": "contextdev",
+    "priorElapsedMs": 20385.501876000082,
+    "replayElapsedMs": 4534.603016999994,
+    "combinedMs": 24920.104893000076
+  },
+  {
+    "taskId": "crawl-vite-dev-changes",
+    "provider": "contextdev",
+    "priorElapsedMs": 12941.988249999995,
+    "replayElapsedMs": 5939.856391999994,
+    "combinedMs": 18881.84464199999
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-concepts",
+    "provider": "contextdev",
+    "priorElapsedMs": 13377.869065000094,
+    "replayElapsedMs": 4273.059261000002,
+    "combinedMs": 17650.928326000096
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-reference-openapi",
+    "provider": "contextdev",
+    "priorElapsedMs": 13680.026416999986,
+    "replayElapsedMs": 4627.7217699999965,
+    "combinedMs": 18307.748186999983
+  },
+  {
+    "taskId": "crawl-docs-docker-com-dhi-migration",
+    "provider": "contextdev",
+    "priorElapsedMs": 21891.99172000005,
+    "replayElapsedMs": 4121.448429000004,
+    "combinedMs": 26013.440149000053
+  },
+  {
+    "taskId": "crawl-docs-astro-build-pl-guides-backend",
+    "provider": "contextdev",
+    "priorElapsedMs": 16874.60447500006,
+    "replayElapsedMs": 4856.907066,
+    "combinedMs": 21731.511541000058
+  },
+  {
+    "taskId": "crawl-textual-textualize-io-styles-grid",
+    "provider": "contextdev",
+    "priorElapsedMs": 12495.858392000024,
+    "replayElapsedMs": 4917.484968999997,
+    "combinedMs": 17413.34336100002
+  },
+  {
+    "taskId": "crawl-docs-deno-com-deploy-classic-api",
+    "provider": "contextdev",
+    "priorElapsedMs": 19405.561708999972,
+    "replayElapsedMs": 6926.460784999996,
+    "combinedMs": 26332.022493999968
+  },
+  {
+    "taskId": "crawl-docs-astro-build-pt-br-guides-media",
+    "provider": "contextdev",
+    "priorElapsedMs": 16899.894877999905,
+    "replayElapsedMs": 3814.688970000003,
+    "combinedMs": 20714.583847999907
+  },
+  {
+    "taskId": "crawl-docs-astral-sh-uv-getting-started",
+    "provider": "scrapfly",
+    "priorElapsedMs": 9478.223158999994,
+    "replayElapsedMs": 2682.718571000005,
+    "combinedMs": 12160.941729999999
+  },
+  {
+    "taskId": "crawl-mkdocstrings-github-io-mkdocstrings-usage",
+    "provider": "scrapfly",
+    "priorElapsedMs": 8888.382058000001,
+    "replayElapsedMs": 3064.7782060000027,
+    "combinedMs": 11953.160264000004
+  },
+  {
+    "taskId": "crawl-docs-astro-build-it-guides-backend",
+    "provider": "scrapfly",
+    "priorElapsedMs": 11344.969240999999,
+    "replayElapsedMs": 2981.191332999995,
+    "combinedMs": 14326.160573999994
+  },
+  {
+    "taskId": "crawl-squidfunk-github-io-mkdocs-material-contributing",
+    "provider": "scrapfly",
+    "priorElapsedMs": 9568.045705999997,
+    "replayElapsedMs": 3467.4516779999976,
+    "combinedMs": 13035.497383999995
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-configuration",
+    "provider": "scrapfly",
+    "priorElapsedMs": 8082.863897000003,
+    "replayElapsedMs": 4168.939414,
+    "combinedMs": 12251.803311000003
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-logfire-api",
+    "provider": "scrapfly",
+    "priorElapsedMs": 11482.462994000001,
+    "replayElapsedMs": 5150.679245999992,
+    "combinedMs": 16633.142239999994
+  },
+  {
+    "taskId": "crawl-docs-deno-com-sandbox",
+    "provider": "scrapfly",
+    "priorElapsedMs": 12758.644092999995,
+    "replayElapsedMs": 5462.621114000001,
+    "combinedMs": 18221.265206999997
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-transformations",
+    "provider": "scrapfly",
+    "priorElapsedMs": 8849.451284999988,
+    "replayElapsedMs": 3640.8859419999935,
+    "combinedMs": 12490.337226999982
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-reference-openapi",
+    "provider": "scrapfly",
+    "priorElapsedMs": 9405.984378000023,
+    "replayElapsedMs": 3226.5548810000037,
+    "combinedMs": 12632.539259000027
+  },
+  {
+    "taskId": "crawl-docs-docker-com-dhi-migration",
+    "provider": "scrapfly",
+    "priorElapsedMs": 11673.972377999977,
+    "replayElapsedMs": 3966.4127039999876,
+    "combinedMs": 15640.385081999964
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-tutorial-commands",
+    "provider": "scrapfly",
+    "priorElapsedMs": 8295.038316000006,
+    "replayElapsedMs": 6301.514841000004,
+    "combinedMs": 14596.55315700001
+  },
+  {
+    "taskId": "crawl-textual-textualize-io-styles-grid",
+    "provider": "scrapfly",
+    "priorElapsedMs": 9001.37633900001,
+    "replayElapsedMs": 2653.0099469999986,
+    "combinedMs": 11654.386286000008
+  }
+]

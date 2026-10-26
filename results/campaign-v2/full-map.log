@@ -1,0 +1,4 @@
+{"runId":"wb-v2-full-map-contextdev-v1","provider":"contextdev","phase":"full","track":"map","tasks":60,"allowance":129.64699000000005,"bound":0.0022}
+{"runId":"wb-v2-full-map-firecrawl-v1","provider":"firecrawl","phase":"full","track":"map","tasks":15,"allowance":1.2592499999999998,"bound":0.005}
+{"directory":"results/wb-v2-full-map-firecrawl-v1","completed":30,"skipped":0}
+{"directory":"results/wb-v2-full-map-contextdev-v1","completed":120,"skipped":0}

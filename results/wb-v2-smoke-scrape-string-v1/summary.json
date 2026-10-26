@@ -1,0 +1,108 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "string",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "tasks": 1,
+      "na": 0,
+      "successes": 0,
+      "successRate": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.007658000000000005,
+      "costPerSuccessUsd": null,
+      "errors": {
+        "other": 1
+      },
+      "families": {
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "string",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "tasks": 1,
+      "na": 0,
+      "successes": 0,
+      "successRate": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.0003,
+      "costPerSuccessUsd": null,
+      "errors": {},
+      "families": {
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "provider": "string",
+      "reference": "string",
+      "pairedTasks": 1,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "provider": "string",
+      "reference": "string",
+      "pairedTasks": 1,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "string": {
+      "usd": 0.007658000000000002,
+      "apiUsd": 0.0005999999999999998,
+      "modelUsd": 0.007058000000000002,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

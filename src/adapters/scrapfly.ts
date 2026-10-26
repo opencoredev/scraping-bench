@@ -1,9 +1,10 @@
+import { decodeHTML } from 'entities';
 import { z } from 'zod';
 import type { Adapter, ToolData } from '../core/types.ts';
 import { ApiError, assertPageStatus, operation, queryUrl, secret, text, type Session } from './http.ts';
 import { pricing } from './pricing.ts';
 const base = 'https://api.scrapfly.io';
-const contentPage = z.object({ links: z.object({ next: z.string().nullable() }), contents: z.record(z.string(), z.object({ markdown: text })) });
+const contentPage = z.object({ links: z.object({ next: z.string().nullable() }), contents: z.record(z.string(), z.object({ markdown: text, html: text })) });
 export const scrapfly: Adapter = {
   id: 'scrapfly', displayName: 'Scrapfly', cohort: 'scraping-infra', apiVersion: 'Web Scraping/Crawler HTTP; docs 2026-10-17',
   scrape: ({ url }, ctx) => operation(ctx, async s => {
@@ -15,7 +16,7 @@ export const scrapfly: Adapter = {
   }),
   crawl: ({ site, scope, maxPages }, ctx) => operation(ctx, async s => {
     const key = secret('SCRAPFLY_API_KEY');
-    const d = await s.json(queryUrl(`${base}/crawl`, { key }), z.union([z.object({ crawler_uuid: z.string() }).transform(d => ({ id: d.crawler_uuid })), z.object({ uuid: z.string() }).transform(d => ({ id: d.uuid }))]), { body: { url: site, page_limit: maxPages, include_only_paths: [`${new URL(scope, site).pathname}*`], content_formats: ['markdown'], max_duration: Math.max(15, Math.min(10800, Math.floor(ctx.timeoutMs / 1000))), ...(ctx.lane === 'tuned' ? { rendering_delay: 2000 } : {}) } });
+    const d = await s.json(queryUrl(`${base}/crawl`, { key }), z.union([z.object({ crawler_uuid: z.string() }).transform(d => ({ id: d.crawler_uuid })), z.object({ uuid: z.string() }).transform(d => ({ id: d.uuid }))]), { body: { url: site, page_limit: maxPages, max_api_credit: 28, include_only_paths: [`${new URL(scope, site).pathname}*`], content_formats: ['markdown', 'html'], max_duration: Math.max(15, Math.min(10800, Math.floor(ctx.timeoutMs / 1000))), ...(ctx.lane === 'tuned' ? { rendering_delay: 2000 } : {}) } });
     return collectScrapflyCrawl(s, d.id, key, maxPages);
   }),
 };
@@ -30,14 +31,18 @@ export async function collectScrapflyCrawl(s: Session, id: string, key: string, 
       if (!status.is_success) throw new ApiError('other', `Crawl stopped: ${status.state.stop_reason ?? 'unknown'}`, s.status);
       break;
     }
-    let next: string | null = queryUrl(`${job}/contents`, { key, formats: 'markdown', limit: 50 });
+    let next: string | null = queryUrl(`${job}/contents`, { key, formats: 'markdown,html', limit: 50 });
     const pages: { url: string; markdown: string }[] = [];
     const seen = new Set<string>();
     while (next) {
       if (seen.has(next)) throw new ApiError('other', 'Repeated pagination cursor'); seen.add(next);
       const d = await s.json(next, contentPage);
-      for (const [url, p] of Object.entries(d.contents)) pages.push({ url, markdown: p.markdown });
-      if (d.links.next) { const u = new URL(s.next(d.links.next, base)); u.searchParams.set('key', key); u.searchParams.set('formats', 'markdown'); next = u.href; } else next = null;
+      for (const [url, p] of Object.entries(d.contents)) {
+        const nativeTitle = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(p.html)?.[1];
+        const title = nativeTitle ? decodeHTML(nativeTitle).replace(/\s+/g, ' ').trim() : '';
+        pages.push({ url, markdown: title ? `HTML document title: ${title}\n\n${p.markdown}` : p.markdown });
+      }
+      if (d.links.next) { const u = new URL(s.next(d.links.next, base)); u.searchParams.set('key', key); u.searchParams.set('formats', 'markdown,html'); next = u.href; } else next = null;
     }
     return { track: 'crawl', pages: pages.slice(0, maxPages) };
 }

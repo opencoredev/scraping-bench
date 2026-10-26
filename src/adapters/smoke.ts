@@ -23,7 +23,7 @@ const attemptSchema = z.object({ kind: z.literal('attempt'), provider: z.string(
 let prior: unknown[] = [];
 try { prior = (await readFile(ledgerPath, 'utf8')).trim().split('\n').filter(Boolean).map(line => JSON.parse(line)); }
 catch (error) { if (!(error instanceof Error && 'code' in error && error.code === 'ENOENT')) throw error; }
-process.env.SCRAPING_BENCH_SMOKE = '1';
+process.env.WEB_BENCH_SMOKE = '1';
 await mkdir(new URL('../../providers/', import.meta.url), { recursive: true });
 const counts = new Map<string, number>();
 for (const raw of prior) { const parsed = attemptSchema.safeParse(raw); if (parsed.success) { const k = `${parsed.data.provider}:${parsed.data.track}`; counts.set(k, (counts.get(k) ?? 0) + 1); } }

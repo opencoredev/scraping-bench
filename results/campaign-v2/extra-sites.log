@@ -1,0 +1,284 @@
+SITE EXCLUDED https://www.encode.io/databases/sitemap.xml Invalid URL
+ADDED search-page-https-starlette-dev
+ADDED scrape-page-https-starlette-dev
+ADDED search-page-https-docs-marimo-io
+ADDED scrape-page-https-docs-marimo-io
+ADDED search-page-https-uvicorn-dev
+ADDED scrape-page-https-uvicorn-dev
+ADDED search-page-https-uvicorn-dev-installation
+ADDED scrape-page-https-uvicorn-dev-installation
+ADDED search-page-https-starlette-dev-applications
+ADDED scrape-page-https-starlette-dev-applications
+ADDED search-page-https-python-markdown-github-io
+ADDED scrape-page-https-python-markdown-github-io
+ADDED search-page-https-docs-marimo-io-404
+ADDED scrape-page-https-docs-marimo-io-404
+ADDED search-page-https-uvicorn-dev-settings
+ADDED scrape-page-https-uvicorn-dev-settings
+ADDED search-page-https-starlette-dev-requests
+ADDED scrape-page-https-starlette-dev-requests
+ADDED search-page-https-docs-marimo-io-cli
+ADDED scrape-page-https-docs-marimo-io-cli
+ADDED search-page-https-python-markdown-github-io-install
+ADDED scrape-page-https-python-markdown-github-io-install
+ADDED search-page-https-starlette-dev-responses
+ADDED scrape-page-https-starlette-dev-responses
+ADDED search-page-https-uvicorn-dev-server-behavior
+ADDED scrape-page-https-uvicorn-dev-server-behavior
+ADDED search-page-https-docs-marimo-io-community
+ADDED scrape-page-https-docs-marimo-io-community
+ADDED search-page-https-python-markdown-github-io-library
+ADDED scrape-page-https-python-markdown-github-io-library
+ADDED search-page-https-uvicorn-dev-concepts-asgi
+ADDED scrape-page-https-uvicorn-dev-concepts-asgi
+ADDED search-page-https-docs-marimo-io-faq
+ADDED scrape-page-https-docs-marimo-io-faq
+ADDED search-page-https-starlette-dev-websockets
+ADDED scrape-page-https-starlette-dev-websockets
+ADDED search-page-https-python-markdown-github-io-cli
+ADDED scrape-page-https-python-markdown-github-io-cli
+ADDED search-page-https-uvicorn-dev-concepts-lifespan
+ADDED scrape-page-https-uvicorn-dev-concepts-lifespan
+ADDED search-page-https-starlette-dev-routing
+ADDED scrape-page-https-starlette-dev-routing
+ADDED search-page-https-docs-marimo-io-reading
+ADDED scrape-page-https-docs-marimo-io-reading
+ADDED search-page-https-python-markdown-github-io-sanitization
+ADDED scrape-page-https-python-markdown-github-io-sanitization
+ADDED search-page-https-starlette-dev-endpoints
+ADDED scrape-page-https-starlette-dev-endpoints
+ADDED search-page-https-docs-marimo-io-recipes
+ADDED scrape-page-https-docs-marimo-io-recipes
+ADDED search-page-https-uvicorn-dev-concepts-http2
+ADDED scrape-page-https-uvicorn-dev-concepts-http2
+ADDED search-page-https-python-markdown-github-io-extensions
+ADDED scrape-page-https-python-markdown-github-io-extensions
+ADDED search-page-https-starlette-dev-middleware
+ADDED scrape-page-https-starlette-dev-middleware
+ADDED search-page-https-uvicorn-dev-concepts-logging
+ADDED scrape-page-https-uvicorn-dev-concepts-logging
+ADDED search-page-https-python-markdown-github-io-extensions-abbreviations
+ADDED scrape-page-https-python-markdown-github-io-extensions-abbreviations
+ADDED search-page-https-docs-marimo-io-security
+ADDED scrape-page-https-docs-marimo-io-security
+ADDED search-page-https-starlette-dev-staticfiles
+ADDED scrape-page-https-starlette-dev-staticfiles
+ADDED search-page-https-uvicorn-dev-concepts-http-protocols
+ADDED scrape-page-https-uvicorn-dev-concepts-http-protocols
+ADDED search-page-https-docs-marimo-io-static-claude
+ADDED scrape-page-https-docs-marimo-io-static-claude
+ADDED search-page-https-python-markdown-github-io-extensions-admonition
+ADDED scrape-page-https-python-markdown-github-io-extensions-admonition
+ADDED search-page-https-starlette-dev-templates
+ADDED scrape-page-https-starlette-dev-templates
+ADDED search-page-https-uvicorn-dev-concepts-websockets
+ADDED scrape-page-https-uvicorn-dev-concepts-websockets
+ADDED search-page-https-docs-marimo-io-api
+ADDED scrape-page-https-docs-marimo-io-api
+ADDED search-page-https-python-markdown-github-io-extensions-attr-list
+ADDED scrape-page-https-python-markdown-github-io-extensions-attr-list
+ADDED search-page-https-starlette-dev-database
+ADDED scrape-page-https-starlette-dev-database
+ADDED search-page-https-uvicorn-dev-concepts-event-loop
+ADDED scrape-page-https-uvicorn-dev-concepts-event-loop
+ADDED search-page-https-docs-marimo-io-api-app
+ADDED scrape-page-https-docs-marimo-io-api-app
+ADDED search-page-https-python-markdown-github-io-extensions-code-hilite
+ADDED scrape-page-https-python-markdown-github-io-extensions-code-hilite
+ADDED search-page-https-uvicorn-dev-deployment
+ADDED scrape-page-https-uvicorn-dev-deployment
+ADDED search-page-https-starlette-dev-graphql
+ADDED scrape-page-https-starlette-dev-graphql
+ADDED search-page-https-python-markdown-github-io-extensions-definition-lists
+ADDED scrape-page-https-python-markdown-github-io-extensions-definition-lists
+ADDED search-page-https-docs-marimo-io-api-caching
+ADDED scrape-page-https-docs-marimo-io-api-caching
+ADDED search-page-https-starlette-dev-authentication
+ADDED scrape-page-https-starlette-dev-authentication
+ADDED search-page-https-uvicorn-dev-deployment-docker
+ADDED scrape-page-https-uvicorn-dev-deployment-docker
+ADDED search-page-https-python-markdown-github-io-extensions-extra
+ADDED scrape-page-https-python-markdown-github-io-extensions-extra
+ADDED search-page-https-docs-marimo-io-api-cell
+ADDED scrape-page-https-docs-marimo-io-api-cell
+ADDED search-page-https-uvicorn-dev-release-notes
+ADDED scrape-page-https-uvicorn-dev-release-notes
+ADDED search-page-https-starlette-dev-schemas
+ADDED scrape-page-https-starlette-dev-schemas
+ADDED search-page-https-docs-marimo-io-api-cli-args
+ADDED scrape-page-https-docs-marimo-io-api-cli-args
+ADDED search-page-https-python-markdown-github-io-extensions-fenced-code-blocks
+ADDED scrape-page-https-python-markdown-github-io-extensions-fenced-code-blocks
+ADDED search-page-https-starlette-dev-lifespan
+ADDED scrape-page-https-starlette-dev-lifespan
+ADDED search-page-https-docs-marimo-io-api-control-flow
+ADDED scrape-page-https-docs-marimo-io-api-control-flow
+ADDED search-page-https-uvicorn-dev-contributing
+ADDED scrape-page-https-uvicorn-dev-contributing
+ADDED search-page-https-python-markdown-github-io-extensions-footnotes
+ADDED scrape-page-https-python-markdown-github-io-extensions-footnotes
+ADDED search-page-https-starlette-dev-background
+ADDED scrape-page-https-starlette-dev-background
+EXCLUDED map-uvicorn-dev-concepts Sitemap/crawl disagreement: https://uvicorn.dev/concepts/; sitemap=7, crawl=0; extra=; missing=https://uvicorn.dev/concepts/asgi/,https://uvicorn.dev/concepts/event-loop/,https://uvicorn.dev/concepts/http-protocols/,https://uvicorn.dev/concepts/http2/,https://uvicorn.dev/concepts/lifespan/,https://uvicorn.dev/concepts/logging/,https://uvicorn.dev/concepts/websockets/
+EXCLUDED crawl-uvicorn-dev-concepts Sitemap/crawl disagreement: https://uvicorn.dev/concepts/; sitemap=7, crawl=0; extra=; missing=https://uvicorn.dev/concepts/asgi/,https://uvicorn.dev/concepts/event-loop/,https://uvicorn.dev/concepts/http-protocols/,https://uvicorn.dev/concepts/http2/,https://uvicorn.dev/concepts/lifespan/,https://uvicorn.dev/concepts/logging/,https://uvicorn.dev/concepts/websockets/
+ADDED search-page-https-python-markdown-github-io-extensions-legacy-attrs
+ADDED scrape-page-https-python-markdown-github-io-extensions-legacy-attrs
+ADDED search-page-https-docs-marimo-io-api-diagrams
+ADDED scrape-page-https-docs-marimo-io-api-diagrams
+ADDED search-page-https-starlette-dev-server-push
+ADDED scrape-page-https-starlette-dev-server-push
+SITE EXCLUDED https://griffe.github.io/sitemap.xml No leaf urlset
+ADDED search-page-https-docs-marimo-io-api-html
+ADDED scrape-page-https-docs-marimo-io-api-html
+ADDED search-page-https-python-markdown-github-io-extensions-legacy-em
+ADDED scrape-page-https-python-markdown-github-io-extensions-legacy-em
+ADDED search-page-https-starlette-dev-early-hints
+ADDED scrape-page-https-starlette-dev-early-hints
+ADDED search-page-https-docs-marimo-io-api-markdown
+ADDED scrape-page-https-docs-marimo-io-api-markdown
+ADDED search-page-https-python-markdown-github-io-extensions-meta-data
+ADDED scrape-page-https-python-markdown-github-io-extensions-meta-data
+ADDED search-page-https-starlette-dev-exceptions
+ADDED scrape-page-https-starlette-dev-exceptions
+ADDED search-page-https-python-markdown-github-io-extensions-nl2br
+ADDED scrape-page-https-python-markdown-github-io-extensions-nl2br
+ADDED search-page-https-docs-marimo-io-api-miscellaneous
+ADDED scrape-page-https-docs-marimo-io-api-miscellaneous
+SITE EXCLUDED https://lukasgeiter.github.io/mkdocs-awesome-pages-plugin/sitemap.xml No leaf urlset
+ADDED search-page-https-starlette-dev-config
+ADDED scrape-page-https-starlette-dev-config
+ADDED search-page-https-docs-marimo-io-api-outputs
+ADDED scrape-page-https-docs-marimo-io-api-outputs
+ADDED search-page-https-python-markdown-github-io-extensions-md-in-html
+ADDED scrape-page-https-python-markdown-github-io-extensions-md-in-html
+ADDED search-page-https-starlette-dev-threadpool
+ADDED scrape-page-https-starlette-dev-threadpool
+ADDED search-page-https-python-markdown-github-io-extensions-sane-lists
+ADDED scrape-page-https-python-markdown-github-io-extensions-sane-lists
+ADDED search-page-https-docs-marimo-io-api-plotting
+ADDED scrape-page-https-docs-marimo-io-api-plotting
+EXCLUDED search-page-https-docs-getdbt-com-blog No unambiguous bounded H1
+EXCLUDED scrape-page-https-docs-getdbt-com-blog No unambiguous bounded H1
+ADDED search-page-https-starlette-dev-testclient
+ADDED scrape-page-https-starlette-dev-testclient
+ADDED search-page-https-docs-marimo-io-api-query-params
+ADDED scrape-page-https-docs-marimo-io-api-query-params
+ADDED search-page-https-python-markdown-github-io-extensions-smarty
+ADDED scrape-page-https-python-markdown-github-io-extensions-smarty
+ADDED search-page-https-docs-getdbt-com-blog-aggregating-test-failures-with-dbt
+ADDED scrape-page-https-docs-getdbt-com-blog-aggregating-test-failures-with-dbt
+ADDED search-page-https-starlette-dev-release-notes
+ADDED scrape-page-https-starlette-dev-release-notes
+ADDED search-page-https-docs-marimo-io-api-state
+ADDED scrape-page-https-docs-marimo-io-api-state
+ADDED search-page-https-python-markdown-github-io-extensions-toc
+ADDED scrape-page-https-python-markdown-github-io-extensions-toc
+ADDED search-page-https-docs-getdbt-com-blog-ai-eval-in-dbt
+ADDED scrape-page-https-docs-getdbt-com-blog-ai-eval-in-dbt
+ADDED search-page-https-starlette-dev-third-party-packages
+ADDED scrape-page-https-starlette-dev-third-party-packages
+ADDED search-page-https-python-markdown-github-io-extensions-tables
+ADDED scrape-page-https-python-markdown-github-io-extensions-tables
+ADDED search-page-https-docs-marimo-io-api-status
+ADDED scrape-page-https-docs-marimo-io-api-status
+ADDED search-page-https-docs-getdbt-com-blog-align-with-dbt-project-evaluator
+ADDED scrape-page-https-docs-getdbt-com-blog-align-with-dbt-project-evaluator
+ADDED search-page-https-python-markdown-github-io-extensions-wikilinks
+ADDED scrape-page-https-python-markdown-github-io-extensions-wikilinks
+ADDED search-page-https-docs-getdbt-com-blog-analysts-make-the-best-aes
+ADDED scrape-page-https-docs-getdbt-com-blog-analysts-make-the-best-aes
+ADDED search-page-https-docs-getdbt-com-blog-analytics-pull-request-template
+ADDED scrape-page-https-docs-getdbt-com-blog-analytics-pull-request-template
+ADDED search-page-https-docs-getdbt-com-blog-announcing-materialized-views
+ADDED scrape-page-https-docs-getdbt-com-blog-announcing-materialized-views
+ADDED search-page-https-docs-getdbt-com-blog-announcing-unit-testing
+ADDED scrape-page-https-docs-getdbt-com-blog-announcing-unit-testing
+ADDED search-page-https-docs-getdbt-com-blog-archive
+ADDED scrape-page-https-docs-getdbt-com-blog-archive
+ADDED search-page-https-docs-getdbt-com-blog-audit-helper-for-migration
+ADDED scrape-page-https-docs-getdbt-com-blog-audit-helper-for-migration
+ADDED search-page-https-docs-getdbt-com-blog-authors
+ADDED scrape-page-https-docs-getdbt-com-blog-authors
+ADDED map-docs-marimo-io-api-media
+ADDED crawl-docs-marimo-io-api-media
+ADDED search-page-https-docs-getdbt-com-blog-authors-adedamola-onabanjo
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-adedamola-onabanjo
+ADDED search-page-https-docs-getdbt-com-blog-authors-alex-noonan
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-alex-noonan
+ADDED search-page-https-docs-getdbt-com-blog-authors-amy-chen
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-amy-chen
+ADDED search-page-https-docs-getdbt-com-blog-authors-anders-swanson
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-anders-swanson
+ADDED search-page-https-docs-getdbt-com-blog-authors-andrew-escay
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-andrew-escay
+ADDED map-docs-marimo-io-integrations
+ADDED crawl-docs-marimo-io-integrations
+ADDED search-page-https-docs-getdbt-com-blog-authors-anna-lee
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-anna-lee
+ADDED search-page-https-docs-getdbt-com-blog-authors-arthur-marcon
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-arthur-marcon
+ADDED search-page-https-docs-getdbt-com-blog-authors-barr-yaron
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-barr-yaron
+ADDED map-docs-marimo-io-guides-testing
+ADDED crawl-docs-marimo-io-guides-testing
+ADDED search-page-https-docs-getdbt-com-blog-authors-benn-stancil
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-benn-stancil
+ADDED search-page-https-docs-getdbt-com-blog-authors-bennie-regenold
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-bennie-regenold
+ADDED search-page-https-docs-getdbt-com-blog-authors-benoit-perigaud
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-benoit-perigaud
+ADDED search-page-https-docs-getdbt-com-blog-authors-brian-jan
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-brian-jan
+ADDED map-docs-marimo-io-getting-started
+ADDED crawl-docs-marimo-io-getting-started
+ADDED search-page-https-docs-getdbt-com-blog-authors-brittany-krauth
+ADDED scrape-page-https-docs-getdbt-com-blog-authors-brittany-krauth
+EXCLUDED map-docs-marimo-io-examples-markdown Sitemap/crawl disagreement: https://docs.marimo.io/examples/markdown/; sitemap=5, crawl=0; extra=; missing=https://docs.marimo.io/examples/markdown/admonitions/,https://docs.marimo.io/examples/markdown/details/,https://docs.marimo.io/examples/markdown/dynamic_markdown/,https://docs.marimo.io/examples/markdown/emoji/,https://docs.marimo.io/examples/markdown/mermaid/
+EXCLUDED crawl-docs-marimo-io-examples-markdown Sitemap/crawl disagreement: https://docs.marimo.io/examples/markdown/; sitemap=5, crawl=0; extra=; missing=https://docs.marimo.io/examples/markdown/admonitions/,https://docs.marimo.io/examples/markdown/details/,https://docs.marimo.io/examples/markdown/dynamic_markdown/,https://docs.marimo.io/examples/markdown/emoji/,https://docs.marimo.io/examples/markdown/mermaid/
+EXCLUDED map-docs-getdbt-com-docs-dbt Sitemap/crawl disagreement: https://docs.getdbt.com/docs/dbt/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/dbt/about-dbt-install,https://docs.getdbt.com/docs/dbt/adbc,https://docs.getdbt.com/docs/dbt/dbt-availability,https://docs.getdbt.com/docs/dbt/dbt-readiness,https://docs.getdbt.com/docs/dbt/dbt-releases,https://docs.getdbt.com/docs/dbt/get-started-dbt,https://docs.getdbt.com/docs/dbt/supported-features,https://docs.getdbt.com/docs/dbt/vs-compare-changes
+EXCLUDED crawl-docs-getdbt-com-docs-dbt Sitemap/crawl disagreement: https://docs.getdbt.com/docs/dbt/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/dbt/about-dbt-install,https://docs.getdbt.com/docs/dbt/adbc,https://docs.getdbt.com/docs/dbt/dbt-availability,https://docs.getdbt.com/docs/dbt/dbt-readiness,https://docs.getdbt.com/docs/dbt/dbt-releases,https://docs.getdbt.com/docs/dbt/get-started-dbt,https://docs.getdbt.com/docs/dbt/supported-features,https://docs.getdbt.com/docs/dbt/vs-compare-changes
+EXCLUDED map-docs-getdbt-com-blog-page Sitemap/crawl disagreement: https://docs.getdbt.com/blog/page/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/blog/page/2,https://docs.getdbt.com/blog/page/3,https://docs.getdbt.com/blog/page/4,https://docs.getdbt.com/blog/page/5,https://docs.getdbt.com/blog/page/6,https://docs.getdbt.com/blog/page/7
+EXCLUDED crawl-docs-getdbt-com-blog-page Sitemap/crawl disagreement: https://docs.getdbt.com/blog/page/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/blog/page/2,https://docs.getdbt.com/blog/page/3,https://docs.getdbt.com/blog/page/4,https://docs.getdbt.com/blog/page/5,https://docs.getdbt.com/blog/page/6,https://docs.getdbt.com/blog/page/7
+ADDED map-docs-marimo-io-guides-coming-from
+ADDED crawl-docs-marimo-io-guides-coming-from
+EXCLUDED map-docs-getdbt-com-docs-mesh Sitemap/crawl disagreement: https://docs.getdbt.com/docs/mesh/; sitemap=7, crawl=0; extra=; missing=https://docs.getdbt.com/docs/mesh/about-mesh,https://docs.getdbt.com/docs/mesh/cross-platform-mesh,https://docs.getdbt.com/docs/mesh/govern/about-model-governance,https://docs.getdbt.com/docs/mesh/govern/model-access,https://docs.getdbt.com/docs/mesh/govern/model-contracts,https://docs.getdbt.com/docs/mesh/govern/model-versions,https://docs.getdbt.com/docs/mesh/govern/project-dependencies
+EXCLUDED crawl-docs-getdbt-com-docs-mesh Sitemap/crawl disagreement: https://docs.getdbt.com/docs/mesh/; sitemap=7, crawl=0; extra=; missing=https://docs.getdbt.com/docs/mesh/about-mesh,https://docs.getdbt.com/docs/mesh/cross-platform-mesh,https://docs.getdbt.com/docs/mesh/govern/about-model-governance,https://docs.getdbt.com/docs/mesh/govern/model-access,https://docs.getdbt.com/docs/mesh/govern/model-contracts,https://docs.getdbt.com/docs/mesh/govern/model-versions,https://docs.getdbt.com/docs/mesh/govern/project-dependencies
+EXCLUDED map-docs-getdbt-com-faqs-core Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Core/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Core/install-pip-best-practices.md,https://docs.getdbt.com/faqs/Core/install-pip-os-prereqs.md,https://docs.getdbt.com/faqs/Core/install-python-compatibility
+EXCLUDED crawl-docs-getdbt-com-faqs-core Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Core/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Core/install-pip-best-practices.md,https://docs.getdbt.com/faqs/Core/install-pip-os-prereqs.md,https://docs.getdbt.com/faqs/Core/install-python-compatibility
+EXCLUDED map-docs-getdbt-com-faqs-docs Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Docs/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Docs/document-all-columns,https://docs.getdbt.com/faqs/Docs/document-other-resources,https://docs.getdbt.com/faqs/Docs/documenting-macros,https://docs.getdbt.com/faqs/Docs/long-descriptions,https://docs.getdbt.com/faqs/Docs/modify-owner-column,https://docs.getdbt.com/faqs/Docs/sharing-documentation
+EXCLUDED crawl-docs-getdbt-com-faqs-docs Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Docs/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Docs/document-all-columns,https://docs.getdbt.com/faqs/Docs/document-other-resources,https://docs.getdbt.com/faqs/Docs/documenting-macros,https://docs.getdbt.com/faqs/Docs/long-descriptions,https://docs.getdbt.com/faqs/Docs/modify-owner-column,https://docs.getdbt.com/faqs/Docs/sharing-documentation
+ADDED map-docs-marimo-io-guides-configuration
+ADDED crawl-docs-marimo-io-guides-configuration
+EXCLUDED map-docs-marimo-io-examples-running-cells Sitemap/crawl disagreement: https://docs.marimo.io/examples/running_cells/; sitemap=9, crawl=0; extra=; missing=https://docs.marimo.io/examples/running_cells/async_await/,https://docs.marimo.io/examples/running_cells/basics/,https://docs.marimo.io/examples/running_cells/debugging/,https://docs.marimo.io/examples/running_cells/memory_cache/,https://docs.marimo.io/examples/running_cells/multiple_definitions/,https://docs.marimo.io/examples/running_cells/persistent_cache/,https://docs.marimo.io/examples/running_cells/refresh/,https://docs.marimo.io/examples/running_cells/run_button/,https://docs.marimo.io/examples/running_cells/stop/
+EXCLUDED crawl-docs-marimo-io-examples-running-cells Sitemap/crawl disagreement: https://docs.marimo.io/examples/running_cells/; sitemap=9, crawl=0; extra=; missing=https://docs.marimo.io/examples/running_cells/async_await/,https://docs.marimo.io/examples/running_cells/basics/,https://docs.marimo.io/examples/running_cells/debugging/,https://docs.marimo.io/examples/running_cells/memory_cache/,https://docs.marimo.io/examples/running_cells/multiple_definitions/,https://docs.marimo.io/examples/running_cells/persistent_cache/,https://docs.marimo.io/examples/running_cells/refresh/,https://docs.marimo.io/examples/running_cells/run_button/,https://docs.marimo.io/examples/running_cells/stop/
+EXCLUDED map-docs-getdbt-com-faqs-runs Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Runs/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Runs/checking-logs,https://docs.getdbt.com/faqs/Runs/failed-prod-run,https://docs.getdbt.com/faqs/Runs/failed-tests,https://docs.getdbt.com/faqs/Runs/run-downstream-of-seed,https://docs.getdbt.com/faqs/Runs/run-one-model,https://docs.getdbt.com/faqs/Runs/run-one-snapshot,https://docs.getdbt.com/faqs/Runs/running-model-downstream-of-source,https://docs.getdbt.com/faqs/Runs/snapshot-frequency,https://docs.getdbt.com/faqs/Runs/what-happened-to-sao
+EXCLUDED crawl-docs-getdbt-com-faqs-runs Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Runs/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Runs/checking-logs,https://docs.getdbt.com/faqs/Runs/failed-prod-run,https://docs.getdbt.com/faqs/Runs/failed-tests,https://docs.getdbt.com/faqs/Runs/run-downstream-of-seed,https://docs.getdbt.com/faqs/Runs/run-one-model,https://docs.getdbt.com/faqs/Runs/run-one-snapshot,https://docs.getdbt.com/faqs/Runs/running-model-downstream-of-source,https://docs.getdbt.com/faqs/Runs/snapshot-frequency,https://docs.getdbt.com/faqs/Runs/what-happened-to-sao
+ADDED map-docs-marimo-io-guides-generate-with-ai
+ADDED crawl-docs-marimo-io-guides-generate-with-ai
+EXCLUDED map-docs-getdbt-com-faqs-jinja Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Jinja/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Jinja/jinja-whitespace,https://docs.getdbt.com/faqs/Jinja/quoting-column-names,https://docs.getdbt.com/faqs/Jinja/which-jinja-docs
+EXCLUDED crawl-docs-getdbt-com-faqs-jinja Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Jinja/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Jinja/jinja-whitespace,https://docs.getdbt.com/faqs/Jinja/quoting-column-names,https://docs.getdbt.com/faqs/Jinja/which-jinja-docs
+EXCLUDED map-docs-getdbt-com-faqs-seeds Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Seeds/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Seeds/build-one-seed,https://docs.getdbt.com/faqs/Seeds/configurable-data-path,https://docs.getdbt.com/faqs/Seeds/full-refresh-seed,https://docs.getdbt.com/faqs/Seeds/leading-zeros-in-seed,https://docs.getdbt.com/faqs/Seeds/load-raw-data-with-seed,https://docs.getdbt.com/faqs/Seeds/seed-custom-schemas,https://docs.getdbt.com/faqs/Seeds/seed-datatypes,https://docs.getdbt.com/faqs/Seeds/seed-hooks
+EXCLUDED crawl-docs-getdbt-com-faqs-seeds Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Seeds/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Seeds/build-one-seed,https://docs.getdbt.com/faqs/Seeds/configurable-data-path,https://docs.getdbt.com/faqs/Seeds/full-refresh-seed,https://docs.getdbt.com/faqs/Seeds/leading-zeros-in-seed,https://docs.getdbt.com/faqs/Seeds/load-raw-data-with-seed,https://docs.getdbt.com/faqs/Seeds/seed-custom-schemas,https://docs.getdbt.com/faqs/Seeds/seed-datatypes,https://docs.getdbt.com/faqs/Seeds/seed-hooks
+ADDED map-docs-marimo-io-guides-working-with-data
+ADDED crawl-docs-marimo-io-guides-working-with-data
+EXCLUDED map-docs-getdbt-com-faqs-state Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/State/; sitemap=10, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/State/data-storage,https://docs.getdbt.com/faqs/State/incremental-models,https://docs.getdbt.com/faqs/State/last-updated-timestamp,https://docs.getdbt.com/faqs/State/model-change-calculation,https://docs.getdbt.com/faqs/State/multiple-projects,https://docs.getdbt.com/faqs/State/non-prod-environment,https://docs.getdbt.com/faqs/State/python-models,https://docs.getdbt.com/faqs/State/server-failure,https://docs.getdbt.com/faqs/State/state-modified-difference,https://docs.getdbt.com/faqs/State/views-rebuilt
+EXCLUDED crawl-docs-getdbt-com-faqs-state Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/State/; sitemap=10, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/State/data-storage,https://docs.getdbt.com/faqs/State/incremental-models,https://docs.getdbt.com/faqs/State/last-updated-timestamp,https://docs.getdbt.com/faqs/State/model-change-calculation,https://docs.getdbt.com/faqs/State/multiple-projects,https://docs.getdbt.com/faqs/State/non-prod-environment,https://docs.getdbt.com/faqs/State/python-models,https://docs.getdbt.com/faqs/State/server-failure,https://docs.getdbt.com/faqs/State/state-modified-difference,https://docs.getdbt.com/faqs/State/views-rebuilt
+EXCLUDED map-docs-getdbt-com-faqs-tests Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Tests/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Tests/available-tests,https://docs.getdbt.com/faqs/Tests/configurable-data-test-path,https://docs.getdbt.com/faqs/Tests/custom-test-thresholds,https://docs.getdbt.com/faqs/Tests/recommended-tests,https://docs.getdbt.com/faqs/Tests/test-one-model,https://docs.getdbt.com/faqs/Tests/testing-seeds,https://docs.getdbt.com/faqs/Tests/testing-sources,https://docs.getdbt.com/faqs/Tests/uniqueness-two-columns,https://docs.getdbt.com/faqs/Tests/when-to-test
+EXCLUDED crawl-docs-getdbt-com-faqs-tests Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Tests/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Tests/available-tests,https://docs.getdbt.com/faqs/Tests/configurable-data-test-path,https://docs.getdbt.com/faqs/Tests/custom-test-thresholds,https://docs.getdbt.com/faqs/Tests/recommended-tests,https://docs.getdbt.com/faqs/Tests/test-one-model,https://docs.getdbt.com/faqs/Tests/testing-seeds,https://docs.getdbt.com/faqs/Tests/testing-sources,https://docs.getdbt.com/faqs/Tests/uniqueness-two-columns,https://docs.getdbt.com/faqs/Tests/when-to-test
+ADDED map-docs-marimo-io-guides-package-management
+ADDED crawl-docs-marimo-io-guides-package-management
+EXCLUDED map-docs-getdbt-com-faqs-snapshots Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Snapshots/; sitemap=4, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Snapshots/snapshot-hooks,https://docs.getdbt.com/faqs/Snapshots/snapshot-schema-changes,https://docs.getdbt.com/faqs/Snapshots/snapshot-target-is-not-a-snapshot-table,https://docs.getdbt.com/faqs/Snapshots/snapshotting-freshness-for-one-source
+EXCLUDED crawl-docs-getdbt-com-faqs-snapshots Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Snapshots/; sitemap=4, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Snapshots/snapshot-hooks,https://docs.getdbt.com/faqs/Snapshots/snapshot-schema-changes,https://docs.getdbt.com/faqs/Snapshots/snapshot-target-is-not-a-snapshot-table,https://docs.getdbt.com/faqs/Snapshots/snapshotting-freshness-for-one-source
+ADDED map-docs-marimo-io-guides-understanding-errors
+ADDED crawl-docs-marimo-io-guides-understanding-errors
+EXCLUDED map-docs-getdbt-com-faqs-warehouse Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Warehouse/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-setup,https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-why,https://docs.getdbt.com/faqs/Warehouse/bq-oauth-drive-scope,https://docs.getdbt.com/faqs/Warehouse/connecting-to-two-dbs-not-allowed,https://docs.getdbt.com/faqs/Warehouse/database-privileges,https://docs.getdbt.com/faqs/Warehouse/db-connection-dbt-compile,https://docs.getdbt.com/faqs/Warehouse/loading-data,https://docs.getdbt.com/faqs/Warehouse/sample-profiles
+EXCLUDED crawl-docs-getdbt-com-faqs-warehouse Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Warehouse/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-setup,https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-why,https://docs.getdbt.com/faqs/Warehouse/bq-oauth-drive-scope,https://docs.getdbt.com/faqs/Warehouse/connecting-to-two-dbs-not-allowed,https://docs.getdbt.com/faqs/Warehouse/database-privileges,https://docs.getdbt.com/faqs/Warehouse/db-connection-dbt-compile,https://docs.getdbt.com/faqs/Warehouse/loading-data,https://docs.getdbt.com/faqs/Warehouse/sample-profiles
+ADDED map-docs-marimo-io-guides-integrating-with-marimo
+ADDED crawl-docs-marimo-io-guides-integrating-with-marimo
+EXCLUDED map-docs-getdbt-com-faqs-environments Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Environments/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Environments/custom-branch-settings,https://docs.getdbt.com/faqs/Environments/delete-environment-job,https://docs.getdbt.com/faqs/Environments/diff-database-environment,https://docs.getdbt.com/faqs/Environments/profile-env-vars,https://docs.getdbt.com/faqs/Environments/profile-name,https://docs.getdbt.com/faqs/Environments/target-names
+EXCLUDED crawl-docs-getdbt-com-faqs-environments Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Environments/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Environments/custom-branch-settings,https://docs.getdbt.com/faqs/Environments/delete-environment-job,https://docs.getdbt.com/faqs/Environments/diff-database-environment,https://docs.getdbt.com/faqs/Environments/profile-env-vars,https://docs.getdbt.com/faqs/Environments/profile-name,https://docs.getdbt.com/faqs/Environments/target-names
+EXCLUDED map-docs-getdbt-com-docs-build-iceberg Sitemap/crawl disagreement: https://docs.getdbt.com/docs/build/iceberg/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/build/iceberg/about-catalogs,https://docs.getdbt.com/docs/build/iceberg/adapters/aws-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/bigquery-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/databricks-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/duckdb-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/snowflake-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/apache-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/catalogs-yml
+EXCLUDED crawl-docs-getdbt-com-docs-build-iceberg Sitemap/crawl disagreement: https://docs.getdbt.com/docs/build/iceberg/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/build/iceberg/about-catalogs,https://docs.getdbt.com/docs/build/iceberg/adapters/aws-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/bigquery-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/databricks-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/duckdb-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/snowflake-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/apache-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/catalogs-yml
+EXCLUDED map-docs-getdbt-com-reference-artifacts Sitemap/crawl disagreement: https://docs.getdbt.com/reference/artifacts/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/reference/artifacts/catalog-json,https://docs.getdbt.com/reference/artifacts/dbt-artifacts,https://docs.getdbt.com/reference/artifacts/freshness-json,https://docs.getdbt.com/reference/artifacts/manifest-json,https://docs.getdbt.com/reference/artifacts/other-artifacts,https://docs.getdbt.com/reference/artifacts/run-results-json,https://docs.getdbt.com/reference/artifacts/sl-manifest,https://docs.getdbt.com/reference/artifacts/sources-json
+EXCLUDED crawl-docs-getdbt-com-reference-artifacts Sitemap/crawl disagreement: https://docs.getdbt.com/reference/artifacts/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/reference/artifacts/catalog-json,https://docs.getdbt.com/reference/artifacts/dbt-artifacts,https://docs.getdbt.com/reference/artifacts/freshness-json,https://docs.getdbt.com/reference/artifacts/manifest-json,https://docs.getdbt.com/reference/artifacts/other-artifacts,https://docs.getdbt.com/reference/artifacts/run-results-json,https://docs.getdbt.com/reference/artifacts/sl-manifest,https://docs.getdbt.com/reference/artifacts/sources-json
+{"search":{"all":1096,"sites":50},"scrape":{"all":795,"sites":36},"map":{"all":81,"sites":14},"crawl":{"all":81,"sites":14}}

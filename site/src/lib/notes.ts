@@ -1,9 +1,17 @@
 import type { TrackId } from "@/lib/catalog";
+import { results } from "@/lib/results";
+
+/**
+ * Hand-written caveats below describe the v1 run (wb-20261017-final) and are wrong for v2, where tasks, sites and
+ * providers changed. They only show when the headline data is v1; v2 pages use the notes and sources in results.json.
+ * Port each one to v2 only after checking it against docs/FINDINGS.md for the v2 run.
+ */
+const V1 = results.campaignVersion === 1;
 
 /** Hand-written context that the numbers alone don't carry. Sources: README.md and docs/FINDINGS.md. */
 
 /** What was actually tested, when the product name alone could mislead. */
-export const TESTED_AS: Partial<Record<string, string>> = {
+const V1_TESTED_AS: Partial<Record<string, string>> = {
   browserbase: "Browserbase here means its HTTP Fetch and Search APIs, not its browser sessions.",
   tinyfish: "TinyFish here means its Fetch API for scrape and its Search API for search.",
   spider: "Spider was tested on scrape only, because its free wallet was small.",
@@ -19,7 +27,7 @@ export const searchedName = (p: { id: string; label: string }): string => SEARCH
 /** A caveat that changes how a provider's numbers should be read, tagged with the track it's about when it's about one track. */
 export type Note = { text: string; track?: TrackId };
 
-export const PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
+const V1_PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
   spider: [
     { text: "Spider refused our test site because its malicious-URL filter flags the workers.dev domain. Three inspected responses carry that explicit 403.", track: "scrape" },
     { text: "It scraped all 10 PyPI pages correctly. Two of its other passes are tasks where the right answer was empty, which it returned because the page was blocked.", track: "scrape" },
@@ -36,20 +44,17 @@ export const PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
 };
 
 /** Caveats that belong to a whole track, beyond the ones printed under its charts. */
-export const TRACK_NOTES: Partial<Record<TrackId, string>> = {
+const V1_TRACK_NOTES: Partial<Record<TrackId, string>> = {
   scrape:
     "Scrape has only two site clusters: 50 pages on our own test site and 10 project pages on PyPI. With so few clusters, the narrow intervals here shouldn't be read as certainty.",
   map: "The test site was built fresh for this run, so no provider could have indexed it. Map services returned sparse or empty lists on those new paths. That says something about cold sites, not about mature, indexed ones.",
   crawl: "Only 10 tasks, from 4 site clusters. Crawl asks for every record in a section, so it tests extraction as well as retrieval.",
 };
 
-/** Where each track's tasks come from. */
-export const TRACK_SOURCES: Record<TrackId, string> = {
-  search: "Answer keys come from npm, PyPI, crates.io, GitHub releases, Wikidata and SEC filings.",
-  scrape: "50 pages on our own test site, including JavaScript, PDFs, tabs and missing answers, plus 10 project pages on PyPI.",
-  map: "8 sections of our test site, built fresh for this run so nobody could have indexed it, plus 7 sections of real docs for Typer, Ruff, MkDocs and HTTPX.",
-  crawl: "7 sections of our test site plus 3 real docs sites.",
-};
+
+export const TESTED_AS: Partial<Record<string, string>> = V1 ? V1_TESTED_AS : {};
+export const PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = V1 ? V1_PROVIDER_NOTES : {};
+export const TRACK_NOTES: Partial<Record<TrackId, string>> = V1 ? V1_TRACK_NOTES : {};
 
 /** The phrase people search for, used in titles and headings. */
 export const TRACK_TOPIC: Record<TrackId, string> = {

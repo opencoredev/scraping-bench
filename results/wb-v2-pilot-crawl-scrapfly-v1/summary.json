@@ -1,0 +1,103 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "crawl",
+      "provider": "scrapfly",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "tasks": 2,
+      "na": 0,
+      "successes": 1,
+      "successRate": 0.5,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 12412.538256,
+      "successfulP90Ms": 12412.538256,
+      "totalUsd": 0.047790000000000006,
+      "costPerSuccessUsd": 0.047790000000000006,
+      "errors": {
+        "other": 1
+      },
+      "families": {
+        "docs-page-records": {
+          "tasks": 2,
+          "successRate": 0.5
+        }
+      }
+    },
+    {
+      "track": "crawl",
+      "provider": "scrapfly",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "tasks": 0,
+      "na": 2,
+      "successes": 0,
+      "successRate": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "successfulMedianMs": null,
+      "successfulP90Ms": null,
+      "totalUsd": 0.003,
+      "costPerSuccessUsd": null,
+      "errors": {},
+      "families": {}
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 2,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "crawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 0,
+      "difference": null,
+      "ci95": [
+        null,
+        null
+      ],
+      "interpretation": "insufficient data"
+    }
+  ],
+  "providerSpend": {
+    "scrapfly": {
+      "usd": 0.047790000000000006,
+      "apiUsd": 0.002999999999999999,
+      "modelUsd": 0.04479000000000001,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

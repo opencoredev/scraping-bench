@@ -1,0 +1,1599 @@
+{
+  "formatVersion": 1,
+  "recipes": {
+    "search-crates-anyhow": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "anyhow",
+      "track": "search"
+    },
+    "search-crates-axum": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "axum",
+      "track": "search"
+    },
+    "search-crates-bytes": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "bytes",
+      "track": "search"
+    },
+    "search-crates-chrono": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "chrono",
+      "track": "search"
+    },
+    "search-crates-clap": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "clap",
+      "track": "search"
+    },
+    "search-crates-crossbeam": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "crossbeam",
+      "track": "search"
+    },
+    "search-crates-dashmap": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "dashmap",
+      "track": "search"
+    },
+    "search-crates-futures": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "futures",
+      "track": "search"
+    },
+    "search-crates-hyper": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "hyper",
+      "track": "search"
+    },
+    "search-crates-parking-lot": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "parking_lot",
+      "track": "search"
+    },
+    "search-crates-rayon": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "rayon",
+      "track": "search"
+    },
+    "search-crates-reqwest": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "reqwest",
+      "track": "search"
+    },
+    "search-crates-rusqlite": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "rusqlite",
+      "track": "search"
+    },
+    "search-crates-serde": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "serde",
+      "track": "search"
+    },
+    "search-crates-sqlx": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "sqlx",
+      "track": "search"
+    },
+    "search-crates-thiserror": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "thiserror",
+      "track": "search"
+    },
+    "search-crates-tokio": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "tokio",
+      "track": "search"
+    },
+    "search-crates-tower": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "tower",
+      "track": "search"
+    },
+    "search-crates-tracing": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "tracing",
+      "track": "search"
+    },
+    "search-crates-uuid": {
+      "kind": "package",
+      "ecosystem": "crates",
+      "name": "uuid",
+      "track": "search"
+    },
+    "search-founding-Q11407": {
+      "kind": "entity",
+      "qid": "Q11407",
+      "label": "VMware"
+    },
+    "search-founding-Q11463": {
+      "kind": "entity",
+      "qid": "Q11463",
+      "label": "Adobe"
+    },
+    "search-founding-Q13977": {
+      "kind": "entity",
+      "qid": "Q13977",
+      "label": "Bloomberg L.P."
+    },
+    "search-founding-Q14647": {
+      "kind": "entity",
+      "qid": "Q14647",
+      "label": "Sun Microsystems"
+    },
+    "search-founding-Q14772": {
+      "kind": "entity",
+      "qid": "Q14772",
+      "label": "Baidu"
+    },
+    "search-founding-Q14799": {
+      "kind": "entity",
+      "qid": "Q14799",
+      "label": "Lenovo"
+    },
+    "search-founding-Q15330": {
+      "kind": "entity",
+      "qid": "Q15330",
+      "label": "Q15330"
+    },
+    "search-founding-Q17957": {
+      "kind": "entity",
+      "qid": "Q17957",
+      "label": "Lonely Planet"
+    },
+    "search-founding-Q18224": {
+      "kind": "entity",
+      "qid": "Q18224",
+      "label": "Maersk"
+    },
+    "search-founding-Q19900": {
+      "kind": "entity",
+      "qid": "Q19900",
+      "label": "Oracle Corporation"
+    },
+    "search-founding-Q2309": {
+      "kind": "entity",
+      "qid": "Q2309",
+      "label": "AvtoVAZ"
+    },
+    "search-founding-Q2311": {
+      "kind": "entity",
+      "qid": "Q2311",
+      "label": "Airbus"
+    },
+    "search-founding-Q29803": {
+      "kind": "entity",
+      "qid": "Q29803",
+      "label": "Isuzu"
+    },
+    "search-founding-Q30113": {
+      "kind": "entity",
+      "qid": "Q30113",
+      "label": "Jeep"
+    },
+    "search-founding-Q30378": {
+      "kind": "entity",
+      "qid": "Q30378",
+      "label": "Kamaz"
+    },
+    "search-founding-Q32277": {
+      "kind": "entity",
+      "qid": "Q32277",
+      "label": "Virgin Atlantic"
+    },
+    "search-founding-Q35339": {
+      "kind": "entity",
+      "qid": "Q35339",
+      "label": "WWE"
+    },
+    "search-founding-Q35349": {
+      "kind": "entity",
+      "qid": "Q35349",
+      "label": "Kia"
+    },
+    "search-founding-Q35594": {
+      "kind": "entity",
+      "qid": "Q35594",
+      "label": "Koenigsegg"
+    },
+    "search-founding-Q35886": {
+      "kind": "entity",
+      "qid": "Q35886",
+      "label": "Lamborghini"
+    },
+    "search-founding-Q35896": {
+      "kind": "entity",
+      "qid": "Q35896",
+      "label": "Lancia"
+    },
+    "search-founding-Q35907": {
+      "kind": "entity",
+      "qid": "Q35907",
+      "label": "Land Rover"
+    },
+    "search-founding-Q35962": {
+      "kind": "entity",
+      "qid": "Q35962",
+      "label": "Maserati"
+    },
+    "search-founding-Q380": {
+      "kind": "entity",
+      "qid": "Q380",
+      "label": "Meta Platforms"
+    },
+    "search-founding-Q39064": {
+      "kind": "entity",
+      "qid": "Q39064",
+      "label": "Canonical Ltd."
+    },
+    "search-founding-Q44504": {
+      "kind": "entity",
+      "qid": "Q44504",
+      "label": "Inditex"
+    },
+    "search-founding-Q45568": {
+      "kind": "entity",
+      "qid": "Q45568",
+      "label": "UniCredit"
+    },
+    "search-founding-Q4585": {
+      "kind": "entity",
+      "qid": "Q4585",
+      "label": "CouchSurfing"
+    },
+    "search-founding-Q46974": {
+      "kind": "entity",
+      "qid": "Q46974",
+      "label": "Canadian Pacific Railway"
+    },
+    "search-founding-Q49125": {
+      "kind": "entity",
+      "qid": "Q49125",
+      "label": "Toshiba"
+    },
+    "search-founding-Q49203": {
+      "kind": "entity",
+      "qid": "Q49203",
+      "label": "Sanyo"
+    },
+    "search-founding-Q51756": {
+      "kind": "entity",
+      "qid": "Q51756",
+      "label": "China Airlines"
+    },
+    "search-founding-Q52618": {
+      "kind": "entity",
+      "qid": "Q52618",
+      "label": "Ericsson"
+    },
+    "search-founding-Q52825": {
+      "kind": "entity",
+      "qid": "Q52825",
+      "label": "ABB Group"
+    },
+    "search-founding-Q53227": {
+      "kind": "entity",
+      "qid": "Q53227",
+      "label": "Sharp Corporation"
+    },
+    "search-founding-Q53238": {
+      "kind": "entity",
+      "qid": "Q53238",
+      "label": "Hitachi"
+    },
+    "search-founding-Q8681": {
+      "kind": "entity",
+      "qid": "Q8681",
+      "label": "Pan Am"
+    },
+    "search-founding-Q8787": {
+      "kind": "entity",
+      "qid": "Q8787",
+      "label": "Oneworld"
+    },
+    "search-founding-Q9396": {
+      "kind": "entity",
+      "qid": "Q9396",
+      "label": "Deutsche Telekom"
+    },
+    "search-founding-Q9401": {
+      "kind": "entity",
+      "qid": "Q9401",
+      "label": "BASF"
+    },
+    "search-fresh-angular-angular": {
+      "kind": "release",
+      "repo": "angular/angular"
+    },
+    "search-fresh-astral-sh-ruff": {
+      "kind": "release",
+      "repo": "astral-sh/ruff"
+    },
+    "search-fresh-astral-sh-ty": {
+      "kind": "release",
+      "repo": "astral-sh/ty"
+    },
+    "search-fresh-astral-sh-uv": {
+      "kind": "release",
+      "repo": "astral-sh/uv"
+    },
+    "search-fresh-caddyserver-caddy": {
+      "kind": "release",
+      "repo": "caddyserver/caddy"
+    },
+    "search-fresh-encode-starlette": {
+      "kind": "release",
+      "repo": "encode/starlette"
+    },
+    "search-fresh-fastapi-fastapi": {
+      "kind": "release",
+      "repo": "fastapi/fastapi"
+    },
+    "search-fresh-grafana-grafana": {
+      "kind": "release",
+      "repo": "grafana/grafana"
+    },
+    "search-fresh-helm-helm": {
+      "kind": "release",
+      "repo": "helm/helm"
+    },
+    "search-fresh-junegunn-fzf": {
+      "kind": "release",
+      "repo": "junegunn/fzf"
+    },
+    "search-fresh-microsoft-playwright": {
+      "kind": "release",
+      "repo": "microsoft/playwright"
+    },
+    "search-fresh-neovim-neovim": {
+      "kind": "release",
+      "repo": "neovim/neovim"
+    },
+    "search-fresh-nodejs-node": {
+      "kind": "release",
+      "repo": "nodejs/node"
+    },
+    "search-fresh-oven-sh-bun": {
+      "kind": "release",
+      "repo": "oven-sh/bun"
+    },
+    "search-fresh-pola-rs-polars": {
+      "kind": "release",
+      "repo": "pola-rs/polars"
+    },
+    "search-fresh-pydantic-pydantic": {
+      "kind": "release",
+      "repo": "pydantic/pydantic"
+    },
+    "search-fresh-rust-lang-rust": {
+      "kind": "release",
+      "repo": "rust-lang/rust"
+    },
+    "search-fresh-sveltejs-svelte": {
+      "kind": "release",
+      "repo": "sveltejs/svelte"
+    },
+    "search-fresh-traefik-traefik": {
+      "kind": "release",
+      "repo": "traefik/traefik"
+    },
+    "search-fresh-vercel-next-js": {
+      "kind": "release",
+      "repo": "vercel/next.js"
+    },
+    "search-fresh-vitejs-vite": {
+      "kind": "release",
+      "repo": "vitejs/vite"
+    },
+    "search-fresh-vitest-dev-vitest": {
+      "kind": "release",
+      "repo": "vitest-dev/vitest"
+    },
+    "search-none-drizzle-orm": {
+      "kind": "none",
+      "name": "drizzle-orm",
+      "version": "99.99.99"
+    },
+    "search-none-elysia": {
+      "kind": "none",
+      "name": "elysia",
+      "version": "99.99.99"
+    },
+    "search-none-esbuild": {
+      "kind": "none",
+      "name": "esbuild",
+      "version": "99.99.99"
+    },
+    "search-none-hono": {
+      "kind": "none",
+      "name": "hono",
+      "version": "99.99.99"
+    },
+    "search-none-kysely": {
+      "kind": "none",
+      "name": "kysely",
+      "version": "99.99.99"
+    },
+    "search-none-ofetch": {
+      "kind": "none",
+      "name": "ofetch",
+      "version": "99.99.99"
+    },
+    "search-none-tsup": {
+      "kind": "none",
+      "name": "tsup",
+      "version": "99.99.99"
+    },
+    "search-none-unplugin": {
+      "kind": "none",
+      "name": "unplugin",
+      "version": "99.99.99"
+    },
+    "search-none-vite": {
+      "kind": "none",
+      "name": "vite",
+      "version": "99.99.99"
+    },
+    "search-none-zod": {
+      "kind": "none",
+      "name": "zod",
+      "version": "99.99.99"
+    },
+    "search-npm-cheerio": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "cheerio",
+      "track": "search"
+    },
+    "search-npm-commander": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "commander",
+      "track": "search"
+    },
+    "search-npm-date-fns": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "date-fns",
+      "track": "search"
+    },
+    "search-npm-drizzle-orm": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "drizzle-orm",
+      "track": "search"
+    },
+    "search-npm-elysia": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "elysia",
+      "track": "search"
+    },
+    "search-npm-esbuild": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "esbuild",
+      "track": "search"
+    },
+    "search-npm-execa": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "execa",
+      "track": "search"
+    },
+    "search-npm-fastify": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "fastify",
+      "track": "search"
+    },
+    "search-npm-got": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "got",
+      "track": "search"
+    },
+    "search-npm-hono": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "hono",
+      "track": "search"
+    },
+    "search-npm-immer": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "immer",
+      "track": "search"
+    },
+    "search-npm-ky": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "ky",
+      "track": "search"
+    },
+    "search-npm-kysely": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "kysely",
+      "track": "search"
+    },
+    "search-npm-luxon": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "luxon",
+      "track": "search"
+    },
+    "search-npm-nanoid": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "nanoid",
+      "track": "search"
+    },
+    "search-npm-ofetch": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "ofetch",
+      "track": "search"
+    },
+    "search-npm-pino": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "pino",
+      "track": "search"
+    },
+    "search-npm-playwright": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "playwright",
+      "track": "search"
+    },
+    "search-npm-puppeteer": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "puppeteer",
+      "track": "search"
+    },
+    "search-npm-sharp": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "sharp",
+      "track": "search"
+    },
+    "search-npm-tsup": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "tsup",
+      "track": "search"
+    },
+    "search-npm-ulid": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "ulid",
+      "track": "search"
+    },
+    "search-npm-undici": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "undici",
+      "track": "search"
+    },
+    "search-npm-unplugin": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "unplugin",
+      "track": "search"
+    },
+    "search-npm-vite": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "vite",
+      "track": "search"
+    },
+    "search-npm-vitest": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "vitest",
+      "track": "search"
+    },
+    "search-npm-winston": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "winston",
+      "track": "search"
+    },
+    "search-npm-yargs": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "yargs",
+      "track": "search"
+    },
+    "search-npm-zod": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "zod",
+      "track": "search"
+    },
+    "search-npm-zustand": {
+      "kind": "package",
+      "ecosystem": "npm",
+      "name": "zustand",
+      "track": "search"
+    },
+    "search-pypi-alembic": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "alembic",
+      "track": "search"
+    },
+    "search-pypi-anyio": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "anyio",
+      "track": "search"
+    },
+    "search-pypi-asyncpg": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "asyncpg",
+      "track": "search"
+    },
+    "search-pypi-attrs": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "attrs",
+      "track": "search"
+    },
+    "search-pypi-cattrs": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "cattrs",
+      "track": "search"
+    },
+    "search-pypi-click": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "click",
+      "track": "search"
+    },
+    "search-pypi-duckdb": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "duckdb",
+      "track": "search"
+    },
+    "search-pypi-fastapi": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "fastapi",
+      "track": "search"
+    },
+    "search-pypi-gunicorn": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "gunicorn",
+      "track": "search"
+    },
+    "search-pypi-httpx": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "httpx",
+      "track": "search"
+    },
+    "search-pypi-ibis-framework": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "ibis-framework",
+      "track": "search"
+    },
+    "search-pypi-loguru": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "loguru",
+      "track": "search"
+    },
+    "search-pypi-msgspec": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "msgspec",
+      "track": "search"
+    },
+    "search-pypi-orjson": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "orjson",
+      "track": "search"
+    },
+    "search-pypi-peewee": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "peewee",
+      "track": "search"
+    },
+    "search-pypi-polars": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "polars",
+      "track": "search"
+    },
+    "search-pypi-pyarrow": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pyarrow",
+      "track": "search"
+    },
+    "search-pypi-pydantic": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pydantic",
+      "track": "search"
+    },
+    "search-pypi-pydantic-settings": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pydantic-settings",
+      "track": "search"
+    },
+    "search-pypi-rich": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "rich",
+      "track": "search"
+    },
+    "search-pypi-sqlalchemy": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "sqlalchemy",
+      "track": "search"
+    },
+    "search-pypi-sqlglot": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "sqlglot",
+      "track": "search"
+    },
+    "search-pypi-sqlmodel": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "sqlmodel",
+      "track": "search"
+    },
+    "search-pypi-starlette": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "starlette",
+      "track": "search"
+    },
+    "search-pypi-structlog": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "structlog",
+      "track": "search"
+    },
+    "search-pypi-tenacity": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "tenacity",
+      "track": "search"
+    },
+    "search-pypi-textual": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "textual",
+      "track": "search"
+    },
+    "search-pypi-trio": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "trio",
+      "track": "search"
+    },
+    "search-pypi-typer": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "typer",
+      "track": "search"
+    },
+    "search-pypi-uvicorn": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "uvicorn",
+      "track": "search"
+    },
+    "search-revenue-0000004962": {
+      "kind": "finance",
+      "cik": "0000004962",
+      "company": "American Express"
+    },
+    "search-revenue-0000019617": {
+      "kind": "finance",
+      "cik": "0000019617",
+      "company": "JPMorgan Chase"
+    },
+    "search-revenue-0000021344": {
+      "kind": "finance",
+      "cik": "0000021344",
+      "company": "Coca-Cola"
+    },
+    "search-revenue-0000027419": {
+      "kind": "finance",
+      "cik": "0000027419",
+      "company": "Target"
+    },
+    "search-revenue-0000034088": {
+      "kind": "finance",
+      "cik": "0000034088",
+      "company": "Exxon Mobil"
+    },
+    "search-revenue-0000051143": {
+      "kind": "finance",
+      "cik": "0000051143",
+      "company": "IBM"
+    },
+    "search-revenue-0000059478": {
+      "kind": "finance",
+      "cik": "0000059478",
+      "company": "Eli Lilly"
+    },
+    "search-revenue-0000066740": {
+      "kind": "finance",
+      "cik": "0000066740",
+      "company": "3M"
+    },
+    "search-revenue-0000077476": {
+      "kind": "finance",
+      "cik": "0000077476",
+      "company": "PepsiCo"
+    },
+    "search-revenue-0000078003": {
+      "kind": "finance",
+      "cik": "0000078003",
+      "company": "Pfizer"
+    },
+    "search-revenue-0000080424": {
+      "kind": "finance",
+      "cik": "0000080424",
+      "company": "Procter & Gamble"
+    },
+    "search-revenue-0000080661": {
+      "kind": "finance",
+      "cik": "0000080661",
+      "company": "Progressive"
+    },
+    "search-revenue-0000092380": {
+      "kind": "finance",
+      "cik": "0000092380",
+      "company": "Southwest Airlines"
+    },
+    "search-revenue-0000093751": {
+      "kind": "finance",
+      "cik": "0000093751",
+      "company": "State Street"
+    },
+    "search-revenue-0000100493": {
+      "kind": "finance",
+      "cik": "0000100493",
+      "company": "Tyson Foods"
+    },
+    "search-revenue-0000100885": {
+      "kind": "finance",
+      "cik": "0000100885",
+      "company": "Union Pacific"
+    },
+    "search-revenue-0000200406": {
+      "kind": "finance",
+      "cik": "0000200406",
+      "company": "Johnson & Johnson"
+    },
+    "search-revenue-0000310158": {
+      "kind": "finance",
+      "cik": "0000310158",
+      "company": "Merck"
+    },
+    "search-revenue-0000320193": {
+      "kind": "finance",
+      "cik": "0000320193",
+      "company": "Apple"
+    },
+    "search-revenue-0000711404": {
+      "kind": "finance",
+      "cik": "0000711404",
+      "company": "Cooper Companies"
+    },
+    "search-revenue-0000723254": {
+      "kind": "finance",
+      "cik": "0000723254",
+      "company": "Cintas"
+    },
+    "search-revenue-0000764478": {
+      "kind": "finance",
+      "cik": "0000764478",
+      "company": "Best Buy"
+    },
+    "search-revenue-0000789019": {
+      "kind": "finance",
+      "cik": "0000789019",
+      "company": "Microsoft"
+    },
+    "search-revenue-0000796343": {
+      "kind": "finance",
+      "cik": "0000796343",
+      "company": "Adobe"
+    },
+    "search-revenue-0000864749": {
+      "kind": "finance",
+      "cik": "0000864749",
+      "company": "Trimble"
+    },
+    "search-revenue-0000875045": {
+      "kind": "finance",
+      "cik": "0000875045",
+      "company": "Biogen"
+    },
+    "search-revenue-0000882095": {
+      "kind": "finance",
+      "cik": "0000882095",
+      "company": "Gilead Sciences"
+    },
+    "search-revenue-0000909832": {
+      "kind": "finance",
+      "cik": "0000909832",
+      "company": "Costco"
+    },
+    "search-revenue-0001018724": {
+      "kind": "finance",
+      "cik": "0001018724",
+      "company": "Amazon"
+    },
+    "search-revenue-0001035002": {
+      "kind": "finance",
+      "cik": "0001035002",
+      "company": "Valero Energy"
+    },
+    "search-revenue-0001045609": {
+      "kind": "finance",
+      "cik": "0001045609",
+      "company": "Prologis"
+    },
+    "search-revenue-0001045810": {
+      "kind": "finance",
+      "cik": "0001045810",
+      "company": "NVIDIA"
+    },
+    "search-revenue-0001108524": {
+      "kind": "finance",
+      "cik": "0001108524",
+      "company": "Salesforce"
+    },
+    "search-revenue-0001124198": {
+      "kind": "finance",
+      "cik": "0001124198",
+      "company": "Fluor"
+    },
+    "search-revenue-0001141391": {
+      "kind": "finance",
+      "cik": "0001141391",
+      "company": "Mastercard"
+    },
+    "search-revenue-0001318605": {
+      "kind": "finance",
+      "cik": "0001318605",
+      "company": "Tesla"
+    },
+    "search-revenue-0001326801": {
+      "kind": "finance",
+      "cik": "0001326801",
+      "company": "Meta Platforms"
+    },
+    "search-revenue-0001341439": {
+      "kind": "finance",
+      "cik": "0001341439",
+      "company": "Oracle"
+    },
+    "search-revenue-0001403161": {
+      "kind": "finance",
+      "cik": "0001403161",
+      "company": "Visa"
+    },
+    "search-revenue-0001652044": {
+      "kind": "finance",
+      "cik": "0001652044",
+      "company": "Alphabet"
+    },
+    "scrape-pypi-alembic": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "alembic",
+      "track": "scrape"
+    },
+    "scrape-pypi-anyio": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "anyio",
+      "track": "scrape"
+    },
+    "scrape-pypi-apscheduler": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "apscheduler",
+      "track": "scrape"
+    },
+    "scrape-pypi-arrow": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "arrow",
+      "track": "scrape"
+    },
+    "scrape-pypi-asyncpg": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "asyncpg",
+      "track": "scrape"
+    },
+    "scrape-pypi-attrs": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "attrs",
+      "track": "scrape"
+    },
+    "scrape-pypi-bidict": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "bidict",
+      "track": "scrape"
+    },
+    "scrape-pypi-boltons": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "boltons",
+      "track": "scrape"
+    },
+    "scrape-pypi-build": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "build",
+      "track": "scrape"
+    },
+    "scrape-pypi-cachetools": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "cachetools",
+      "track": "scrape"
+    },
+    "scrape-pypi-cattrs": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "cattrs",
+      "track": "scrape"
+    },
+    "scrape-pypi-celery": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "celery",
+      "track": "scrape"
+    },
+    "scrape-pypi-cloudpickle": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "cloudpickle",
+      "track": "scrape"
+    },
+    "scrape-pypi-cytoolz": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "cytoolz",
+      "track": "scrape"
+    },
+    "scrape-pypi-dagster": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "dagster",
+      "track": "scrape"
+    },
+    "scrape-pypi-dask": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "dask",
+      "track": "scrape"
+    },
+    "scrape-pypi-distributed": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "distributed",
+      "track": "scrape"
+    },
+    "scrape-pypi-fastapi": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "fastapi",
+      "track": "scrape"
+    },
+    "scrape-pypi-filelock": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "filelock",
+      "track": "scrape"
+    },
+    "scrape-pypi-flit-core": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "flit-core",
+      "track": "scrape"
+    },
+    "scrape-pypi-frozendict": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "frozendict",
+      "track": "scrape"
+    },
+    "scrape-pypi-fsspec": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "fsspec",
+      "track": "scrape"
+    },
+    "scrape-pypi-gcsfs": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "gcsfs",
+      "track": "scrape"
+    },
+    "scrape-pypi-gunicorn": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "gunicorn",
+      "track": "scrape"
+    },
+    "scrape-pypi-hatchling": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "hatchling",
+      "track": "scrape"
+    },
+    "scrape-pypi-httpx": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "httpx",
+      "track": "scrape"
+    },
+    "scrape-pypi-humanize": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "humanize",
+      "track": "scrape"
+    },
+    "scrape-pypi-ibis-framework": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "ibis-framework",
+      "track": "scrape"
+    },
+    "scrape-pypi-immutables": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "immutables",
+      "track": "scrape"
+    },
+    "scrape-pypi-inflection": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "inflection",
+      "track": "scrape"
+    },
+    "scrape-pypi-joblib": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "joblib",
+      "track": "scrape"
+    },
+    "scrape-pypi-kedro": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "kedro",
+      "track": "scrape"
+    },
+    "scrape-pypi-llvmlite": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "llvmlite",
+      "track": "scrape"
+    },
+    "scrape-pypi-matplotlib": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "matplotlib",
+      "track": "scrape"
+    },
+    "scrape-pypi-maturin": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "maturin",
+      "track": "scrape"
+    },
+    "scrape-pypi-meson-python": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "meson-python",
+      "track": "scrape"
+    },
+    "scrape-pypi-mpmath": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "mpmath",
+      "track": "scrape"
+    },
+    "scrape-pypi-networkx": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "networkx",
+      "track": "scrape"
+    },
+    "scrape-pypi-numba": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "numba",
+      "track": "scrape"
+    },
+    "scrape-pypi-numpy": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "numpy",
+      "track": "scrape"
+    },
+    "scrape-pypi-packaging": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "packaging",
+      "track": "scrape"
+    },
+    "scrape-pypi-pandas": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pandas",
+      "track": "scrape"
+    },
+    "scrape-pypi-platformdirs": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "platformdirs",
+      "track": "scrape"
+    },
+    "scrape-pypi-plotly": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "plotly",
+      "track": "scrape"
+    },
+    "scrape-pypi-poetry-core": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "poetry-core",
+      "track": "scrape"
+    },
+    "scrape-pypi-pooch": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pooch",
+      "track": "scrape"
+    },
+    "scrape-pypi-portalocker": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "portalocker",
+      "track": "scrape"
+    },
+    "scrape-pypi-prefect": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "prefect",
+      "track": "scrape"
+    },
+    "scrape-pypi-psycopg": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "psycopg",
+      "track": "scrape"
+    },
+    "scrape-pypi-pyarrow": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pyarrow",
+      "track": "scrape"
+    },
+    "scrape-pypi-pydantic": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pydantic",
+      "track": "scrape"
+    },
+    "scrape-pypi-pyrsistent": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "pyrsistent",
+      "track": "scrape"
+    },
+    "scrape-pypi-python-dateutil": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "python-dateutil",
+      "track": "scrape"
+    },
+    "scrape-pypi-ray": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "ray",
+      "track": "scrape"
+    },
+    "scrape-pypi-redis": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "redis",
+      "track": "scrape"
+    },
+    "scrape-pypi-rich": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "rich",
+      "track": "scrape"
+    },
+    "scrape-pypi-rq": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "rq",
+      "track": "scrape"
+    },
+    "scrape-pypi-s3fs": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "s3fs",
+      "track": "scrape"
+    },
+    "scrape-pypi-scikit-image": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "scikit-image",
+      "track": "scrape"
+    },
+    "scrape-pypi-scikit-learn": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "scikit-learn",
+      "track": "scrape"
+    },
+    "scrape-pypi-scipy": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "scipy",
+      "track": "scrape"
+    },
+    "scrape-pypi-seaborn": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "seaborn",
+      "track": "scrape"
+    },
+    "scrape-pypi-smart-open": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "smart-open",
+      "track": "scrape"
+    },
+    "scrape-pypi-sortedcontainers": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "sortedcontainers",
+      "track": "scrape"
+    },
+    "scrape-pypi-sqlmodel": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "sqlmodel",
+      "track": "scrape"
+    },
+    "scrape-pypi-starlette": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "starlette",
+      "track": "scrape"
+    },
+    "scrape-pypi-statsmodels": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "statsmodels",
+      "track": "scrape"
+    },
+    "scrape-pypi-structlog": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "structlog",
+      "track": "scrape"
+    },
+    "scrape-pypi-sympy": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "sympy",
+      "track": "scrape"
+    },
+    "scrape-pypi-tenacity": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "tenacity",
+      "track": "scrape"
+    },
+    "scrape-pypi-textual": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "textual",
+      "track": "scrape"
+    },
+    "scrape-pypi-toolz": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "toolz",
+      "track": "scrape"
+    },
+    "scrape-pypi-trio": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "trio",
+      "track": "scrape"
+    },
+    "scrape-pypi-typer": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "typer",
+      "track": "scrape"
+    },
+    "scrape-pypi-uvicorn": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "uvicorn",
+      "track": "scrape"
+    },
+    "map-docs-astral-sh-uv-getting-started": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/getting-started/",
+      "track": "map"
+    },
+    "crawl-docs-astral-sh-uv-getting-started": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/getting-started/",
+      "track": "crawl"
+    },
+    "map-docs-astral-sh-uv-concepts-authentication": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/concepts/authentication/",
+      "track": "map"
+    },
+    "crawl-docs-astral-sh-uv-concepts-authentication": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/concepts/authentication/",
+      "track": "crawl"
+    },
+    "map-docs-astral-sh-uv-concepts-projects": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/concepts/projects/",
+      "track": "map"
+    },
+    "crawl-docs-astral-sh-uv-concepts-projects": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/concepts/projects/",
+      "track": "crawl"
+    },
+    "map-docs-astral-sh-uv-guides-integration": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/guides/integration/",
+      "track": "map"
+    },
+    "crawl-docs-astral-sh-uv-guides-integration": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/uv/sitemap.xml",
+      "scope": "https://docs.astral.sh/uv/guides/integration/",
+      "track": "crawl"
+    },
+    "map-docs-astral-sh-ruff-editors": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/ruff/sitemap.xml",
+      "scope": "https://docs.astral.sh/ruff/editors/",
+      "track": "map"
+    },
+    "crawl-docs-astral-sh-ruff-editors": {
+      "kind": "site",
+      "sitemap": "https://docs.astral.sh/ruff/sitemap.xml",
+      "scope": "https://docs.astral.sh/ruff/editors/",
+      "track": "crawl"
+    },
+    "map-www-python-httpx-org": {
+      "kind": "site",
+      "sitemap": "https://www.python-httpx.org/sitemap.xml",
+      "scope": "https://www.python-httpx.org/",
+      "track": "map"
+    },
+    "crawl-www-python-httpx-org": {
+      "kind": "site",
+      "sitemap": "https://www.python-httpx.org/sitemap.xml",
+      "scope": "https://www.python-httpx.org/",
+      "track": "crawl"
+    },
+    "map-www-mkdocs-org": {
+      "kind": "site",
+      "sitemap": "https://www.mkdocs.org/sitemap.xml",
+      "scope": "https://www.mkdocs.org/",
+      "track": "map"
+    },
+    "crawl-www-mkdocs-org": {
+      "kind": "site",
+      "sitemap": "https://www.mkdocs.org/sitemap.xml",
+      "scope": "https://www.mkdocs.org/",
+      "track": "crawl"
+    },
+    "map-typer-tiangolo-com-reference": {
+      "kind": "site",
+      "sitemap": "https://typer.tiangolo.com/sitemap.xml",
+      "scope": "https://typer.tiangolo.com/reference/",
+      "track": "map"
+    },
+    "crawl-typer-tiangolo-com-reference": {
+      "kind": "site",
+      "sitemap": "https://typer.tiangolo.com/sitemap.xml",
+      "scope": "https://typer.tiangolo.com/reference/",
+      "track": "crawl"
+    },
+    "map-typer-tiangolo-com-tutorial-commands": {
+      "kind": "site",
+      "sitemap": "https://typer.tiangolo.com/sitemap.xml",
+      "scope": "https://typer.tiangolo.com/tutorial/commands/",
+      "track": "map"
+    },
+    "crawl-typer-tiangolo-com-tutorial-commands": {
+      "kind": "site",
+      "sitemap": "https://typer.tiangolo.com/sitemap.xml",
+      "scope": "https://typer.tiangolo.com/tutorial/commands/",
+      "track": "crawl"
+    },
+    "map-typer-tiangolo-com-tutorial-arguments": {
+      "kind": "site",
+      "sitemap": "https://typer.tiangolo.com/sitemap.xml",
+      "scope": "https://typer.tiangolo.com/tutorial/arguments/",
+      "track": "map"
+    },
+    "crawl-typer-tiangolo-com-tutorial-arguments": {
+      "kind": "site",
+      "sitemap": "https://typer.tiangolo.com/sitemap.xml",
+      "scope": "https://typer.tiangolo.com/tutorial/arguments/",
+      "track": "crawl"
+    },
+    "scrape-pypi-xarray": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "xarray",
+      "track": "scrape"
+    }
+  }
+}

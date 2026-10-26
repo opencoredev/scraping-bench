@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-24",
+  "source": "https://portal.usestring.ai/web-access/analytics, Overview, past 7 days",
+  "portal": { "requests": 959, "searches": 122, "successRate": "100.0%", "spendUsd": 0.4341 },
+  "ledger": {
+    "runProviderCalls": { "scrape": 128, "search": 121, "map": 77 },
+    "runSpendUsd": 0.4311,
+    "manual": [
+      { "what": "key check fetch of example.com", "usd": 0.0003, "fetches": 1 },
+      { "what": "10-page sitemap probe on typer.tiangolo.com/tutorial/commands/", "usd": 0.0012, "jobs": 1 },
+      { "what": "two unapproved sitemap quotes, cancelled", "usd": 0 }
+    ],
+    "unsettled": [{ "run": "wb-v2-full-search-string-v1", "what": "one search in flight when the run was stopped", "usd": 0.0015 }]
+  },
+  "match": {
+    "spendUsd": "0.4311 + 0.0003 + 0.0012 + 0.0015 = 0.4341",
+    "searches": "121 + 1 unsettled = 122",
+    "fetchRequests": "959 - 122 = 837 = 129 direct fetches + 708 pages crawled by sitemap jobs (0.2124 USD / 0.0003 per page)"
+  }
+}

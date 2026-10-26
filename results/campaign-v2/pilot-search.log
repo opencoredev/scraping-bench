@@ -1,0 +1,12 @@
+{"runId":"wb-v2-pilot-search-firecrawl-v1","provider":"firecrawl","phase":"pilot","track":"search","tasks":3,"allowance":2.19925,"bound":0.01}
+{"directory":"results/wb-v2-pilot-search-firecrawl-v1","completed":6,"skipped":0}
+{"runId":"wb-v2-pilot-search-contextdev-v1","provider":"contextdev","phase":"pilot","track":"search","tasks":3,"allowance":132.02739,"bound":0.022}
+{"directory":"results/wb-v2-pilot-search-contextdev-v1","completed":6,"skipped":0}
+{"runId":"wb-v2-pilot-search-tinyfish-v1","provider":"tinyfish","phase":"pilot","track":"search","tasks":3,"allowance":0,"bound":0}
+{"directory":"results/wb-v2-pilot-search-tinyfish-v1","completed":6,"skipped":0}
+{"runId":"wb-v2-pilot-search-linkup-v1","provider":"linkup","phase":"pilot","track":"search","tasks":3,"allowance":17.9588,"bound":0.005}
+{"directory":"results/wb-v2-pilot-search-linkup-v1","completed":6,"skipped":0}
+{"runId":"wb-v2-pilot-search-browserbase-v1","provider":"browserbase","phase":"pilot","track":"search","tasks":3,"allowance":3,"bound":0.005}
+{"directory":"results/wb-v2-pilot-search-browserbase-v1","completed":6,"skipped":0}
+{"runId":"wb-v2-pilot-search-you-v1","provider":"you","phase":"pilot","track":"search","tasks":3,"allowance":95,"bound":0.005}
+{"directory":"results/wb-v2-pilot-search-you-v1","completed":6,"skipped":0}

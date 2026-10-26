@@ -1,0 +1,3072 @@
+[
+  {
+    "runId": "wb-v2-pilot-crawl-contextdev-v1",
+    "id": "crawl-fastapi-tiangolo-com-how-to",
+    "provider": "contextdev",
+    "track": "crawl",
+    "success": false,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "records",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "07bbf019f9b365ada8880a64e2cbb5d2475eb4b9cc7fd75aed6f1ebc6d281a62",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 306681,
+        "credits": 12,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://fastapi.tiangolo.com/how-to",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/general",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/testing-database",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/graphql",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/conditional-openapi",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/configure-swagger-ui",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-request-and-route",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/authentication-error-status-code",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/extending-openapi",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets",
+            "hasNativeTitle": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-crawl-contextdev-v1",
+    "id": "crawl-docs-astral-sh-uv-concepts-authentication",
+    "provider": "contextdev",
+    "track": "crawl",
+    "success": false,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "records",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "e6fe251a83a3e3301e7c128339251be6449eb8a2332ee9293b67b93fa2f809cb",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 68642,
+        "credits": 6,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/third-party",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/git",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/cli",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/http",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/certificates",
+            "hasNativeTitle": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-crawl-firecrawl-v1",
+    "id": "crawl-fastapi-tiangolo-com-how-to",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "success": false,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "records",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "051720c97259e5af37b3ab2366ab83a1b817c17bc2794532d33939b42ccf1364",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 128226,
+        "credits": 12,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/extending-openapi/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/authentication-error-status-code/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/testing-database/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/general/#openapi-docs-urls",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/graphql/#learn-more",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-request-and-route/#custom-apiroute-class-in-a-router",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/conditional-openapi/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/configure-swagger-ui/",
+            "hasNativeTitle": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-crawl-firecrawl-v1",
+    "id": "crawl-docs-astral-sh-uv-concepts-authentication",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "success": true,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/",
+          "https://docs.astral.sh/uv/concepts/authentication/http/",
+          "https://docs.astral.sh/uv/concepts/authentication/git/",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/"
+        ],
+        "note": "recall=1; precision=1"
+      },
+      {
+        "name": "records",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/ | Authentication | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/ | TLS certificates | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/ | The auth CLI | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/http/ | HTTP credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/git/ | Git credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/ | Third-party services | uv"
+        ],
+        "note": "recall=1; precision=1"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "ebd5c2cfca847e59e9ad2b21fc525c43dc8f16ef96eed8f58d10595c2afa51f2",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 19965,
+        "credits": 6,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/cli/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/http/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/git/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/third-party/",
+            "hasNativeTitle": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-crawl-scrapfly-title",
+    "id": "crawl-fastapi-tiangolo-com-how-to",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "success": false,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "records",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "2f5e0eb8f861ba435989df3033656e2f69952008abb9b8a7846f8c78000850a6",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 88945,
+        "credits": 13,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/authentication-error-status-code/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/conditional-openapi/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/configure-swagger-ui/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-request-and-route/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/extending-openapi/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/general/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/graphql/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/testing-database/",
+            "hasNativeTitle": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-crawl-scrapfly-title",
+    "id": "crawl-docs-astral-sh-uv-concepts-authentication",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "success": true,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/",
+          "https://docs.astral.sh/uv/concepts/authentication/git/",
+          "https://docs.astral.sh/uv/concepts/authentication/http/",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/"
+        ],
+        "note": "recall=1; precision=1"
+      },
+      {
+        "name": "records",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/ | Authentication | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/ | TLS certificates | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/ | The auth CLI | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/git/ | Git credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/http/ | HTTP credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/ | Third-party services | uv"
+        ],
+        "note": "recall=1; precision=1"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "9ae6c9615b1b4d8b1c23f68b96c06a1a2ce87e352c1714ebbc056ad97b6f73d2",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 19650,
+        "credits": 7,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/cli/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/git/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/http/",
+            "hasNativeTitle": true
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/third-party/",
+            "hasNativeTitle": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-crawl-scrapfly-v1",
+    "id": "crawl-fastapi-tiangolo-com-how-to",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "success": false,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "records",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "892e59fb84224348c07561f608e40a945bddaa90126af6b4ae8e5cfc78e0077e",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 88195,
+        "credits": 13,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/authentication-error-status-code/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/conditional-openapi/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/configure-swagger-ui/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/custom-request-and-route/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/extending-openapi/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/general/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/graphql/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://fastapi.tiangolo.com/how-to/testing-database/",
+            "hasNativeTitle": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-crawl-scrapfly-v1",
+    "id": "crawl-docs-astral-sh-uv-concepts-authentication",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "success": true,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/",
+          "https://docs.astral.sh/uv/concepts/authentication/git/",
+          "https://docs.astral.sh/uv/concepts/authentication/http/",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/"
+        ],
+        "note": "recall=1; precision=1"
+      },
+      {
+        "name": "records",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/ | Authentication | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/ | TLS certificates | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/ | The auth CLI | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/git/ | Git credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/http/ | HTTP credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/ | Third-party services | uv"
+        ],
+        "note": "recall=1; precision=1"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "2b05935dd546c698c767ce918ef4dc1f9fbe4cacd9318af252f0a1f91aabdd93",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 19376,
+        "credits": 7,
+        "evidenceTitleMarker": [
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/cli/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/git/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/http/",
+            "hasNativeTitle": false
+          },
+          {
+            "url": "https://docs.astral.sh/uv/concepts/authentication/third-party/",
+            "hasNativeTitle": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-map-contextdev-v1",
+    "id": "map-docs-deno-com-api-node-stream",
+    "provider": "contextdev",
+    "track": "map",
+    "success": false,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "empty",
+      "empty"
+    ],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "4dd08f11366191055cf503d3ce9bb334a3e52501cdd2a8e35aa35ec045cfaf82",
+        "kind": "error",
+        "error": "empty",
+        "status": 200,
+        "message": "Provider returned blank content",
+        "bytes": 168,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "e20ce6f70db30462917299fa3e86a47df3197a574b4aead9a8f11d654042f5fa",
+        "kind": "error",
+        "error": "empty",
+        "status": 200,
+        "message": "Provider returned blank content",
+        "bytes": 168,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-map-contextdev-v1",
+    "id": "map-fastapi-tiangolo-com-how-to",
+    "provider": "contextdev",
+    "track": "map",
+    "success": true,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": true,
+        "got": [
+          "https://fastapi.tiangolo.com/how-to/",
+          "https://fastapi.tiangolo.com/how-to/general",
+          "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2",
+          "https://fastapi.tiangolo.com/how-to/graphql",
+          "https://fastapi.tiangolo.com/how-to/custom-request-and-route",
+          "https://fastapi.tiangolo.com/how-to/conditional-openapi",
+          "https://fastapi.tiangolo.com/how-to/extending-openapi",
+          "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas",
+          "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets",
+          "https://fastapi.tiangolo.com/how-to/configure-swagger-ui",
+          "https://fastapi.tiangolo.com/how-to/testing-database",
+          "https://fastapi.tiangolo.com/how-to/authentication-error-status-code"
+        ],
+        "note": "recall=1; precision=1"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "4adb0c65b16909c353b1aaf2f67af18a141fc18a3e59da719213906a09250448",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 780,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-map-contextdev-v1",
+    "id": "map-docs-astral-sh-uv-concepts-authentication",
+    "provider": "contextdev",
+    "track": "map",
+    "success": true,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates",
+          "https://docs.astral.sh/uv/concepts/authentication/cli",
+          "https://docs.astral.sh/uv/concepts/authentication/git",
+          "https://docs.astral.sh/uv/concepts/authentication/http",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party"
+        ],
+        "note": "recall=1; precision=1"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "59c36484e85739a463cc8664f7d84192c1dc9d5c15b95ff9fc33cf84e0f63ef0",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 422,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-map-firecrawl-v1",
+    "id": "map-docs-deno-com-api-node-stream",
+    "provider": "firecrawl",
+    "track": "map",
+    "success": false,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "61048b1a9a1ddf82b1a9cb6483a82ad480eab45faf758c517ba992d0b21cf6d9",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 549,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-map-firecrawl-v1",
+    "id": "map-docs-astral-sh-uv-concepts-authentication",
+    "provider": "firecrawl",
+    "track": "map",
+    "success": true,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": true,
+        "got": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/cli",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates",
+          "https://docs.astral.sh/uv/concepts/authentication/http",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party",
+          "https://docs.astral.sh/uv/concepts/authentication/git"
+        ],
+        "note": "recall=1; precision=1"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "53acf418bb60f684544dfdb575e4f3c81b28e21bb4855cd06f1d621989a5fd60",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 495,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-map-firecrawl-v1",
+    "id": "map-fastapi-tiangolo-com-how-to",
+    "provider": "firecrawl",
+    "track": "map",
+    "success": true,
+    "fields": [
+      {
+        "name": "urls",
+        "pass": true,
+        "got": [
+          "https://fastapi.tiangolo.com/how-to/",
+          "https://fastapi.tiangolo.com/how-to/configure-swagger-ui",
+          "https://fastapi.tiangolo.com/how-to/extending-openapi",
+          "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas",
+          "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets",
+          "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2",
+          "https://fastapi.tiangolo.com/how-to/general",
+          "https://fastapi.tiangolo.com/how-to/graphql",
+          "https://fastapi.tiangolo.com/how-to/conditional-openapi",
+          "https://fastapi.tiangolo.com/how-to/custom-request-and-route",
+          "https://fastapi.tiangolo.com/how-to/authentication-error-status-code",
+          "https://fastapi.tiangolo.com/how-to/testing-database"
+        ],
+        "note": "recall=1; precision=1"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "e125908e0817706e318f0a06690f334b317e8298de5f6ba95a886687400fd92d",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1094,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-browserbase-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "browserbase",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "46c502e45ea5c60890724993c336cad4585b704a96a5e88a86a3b7746b4ab99e",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 16193,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-browserbase-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "browserbase",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Get Batch Scrape Errors",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "7ddff0124e39f68d37ac2118c14e46af506b2623bf0e439f0b596845806954a4",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 16187,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-browserbase-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "browserbase",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "835282cc26afa17296f0e096ba5e878aad1c110b92018cec7cf8c13f12a87df0",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1090,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-contextdev-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "contextdev",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "ccd3ba6ad394e281587c84a9ad6489925e7bca3b9b9f296ea8f8037cc1e3e24a",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 15736,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-contextdev-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "contextdev",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Get Batch Scrape Errors",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "eae988d97385ada1d4f63b223bd13bb4e334f795f4213ad1e71405eba19c78a0",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 15520,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-contextdev-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "contextdev",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "d1f080f8b9e8aaf26e6f732ade714842e982b2f4a0010c90c9cad62aa04f5184",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1171,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "71c37fe0c90186b4cf8c96ca4a53d32a05c2d00103a4c4e042397a48107bffd4",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1171,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-firecrawl-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "firecrawl",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "260fe49a27ab525d1ba19a68a2b91156a40312eae98fcb065c5396eaad41037b",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 12004,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-firecrawl-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "firecrawl",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": "Get the errors of a batch scrape job",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "d7929b5201b8c950693135bdf339f99434ce4d3327cc5a208a1b55ff4b6208ec",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 7549,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-firecrawl-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "firecrawl",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "155f80cb9ba16431aa07322f18f7eaa0cb4124b430be678bdb9ca9be9ba343a7",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 296,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "e1aea9681421284be45836c0f1f09a92d9db9b2916b9852eca6c3988464da4fc",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 295,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-jina-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "jina",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "5d62de51e98588882c13382f307c84ac23783583ccbfe1c83270ba98ff55f446",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 16015,
+        "credits": 4215,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-jina-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "jina",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Get Batch Scrape Errors",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "cd63fc22d2f600a78ae00bb0998ae5c1006eeecd710db41203bbccfde768d471",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 15868,
+        "credits": 3936,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-jina-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "jina",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "935eb4ec046cdf96538168a8df630c8eb533835722d28d7a95e733a43eb706b1",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1164,
+        "credits": 269,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-linkup-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "linkup",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "bf11e06a913a1ffc192557e21bbef5605f201af5d8fa50e294ff8c998d82acab",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 13792,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-linkup-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "linkup",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "bba648a70b5804f2efa8af0bffbaf025af96583ce45907ef304f721a36796a6e",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 13277,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-linkup-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "linkup",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "80e858f48a2da8898203fbf32d33718b4637e670ee887482ccfb2bca1333bad6",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 471,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "f0a8ec40d6fb15427f3935cb5054641f8ab4c6cb4d1d37313651b06ad679acc2",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 472,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-scrapfly-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "scrapfly",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "415ef1cdf5e6dd806deec42d04142325e6b6ad17c750d1a29e0a61123780a2c0",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 15219,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-scrapfly-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "scrapfly",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Get Batch Scrape Errors",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "e0f93d8609fdea85044773595c19a514f96a36ae887d61bb6bbd4f68e7baa930",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 15313,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-scrapfly-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "scrapfly",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "24b4157f6b8268d347544e9eaa9ac3f48cf7b72c72503f93e49f2e985c446c69",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1217,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-spider-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "spider",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "ced8381cde31b62991f3e60cfee8662bf0963f3545d521da87b995e0fda175ee",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 10693,
+        "credits": 8.184257000000343,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-spider-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "spider",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "blocked"
+    ],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "1089505193af9c22293ef2a248e9341d152516dfd4cd23518579382770fb8131",
+        "kind": "error",
+        "error": "blocked",
+        "status": 403,
+        "message": "URL Error: Malicious URL not allowed. [Caution] You will get banned for attempting to crawl bad websites. If you think this is an error, please reach out.",
+        "bytes": 289,
+        "credits": 0,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-spider-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "spider",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Get Batch Scrape Errors",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "b5fb4f2c191168e2dcce576d8e77a0eff556de104d1fbccc094ad2c26fe29c2c",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 6749,
+        "credits": 6.983867999999802,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-tinyfish-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "tinyfish",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "3c6c6eefdf1288fd2f476a9b052e3646cb9370eebe3bc3f934233e2f1df80e61",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 10422,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-tinyfish-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "tinyfish",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": "Get the errors of a batch scrape job",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "43c7cf9615c1db48a7d954ce56d09d740191cb43f34de4dea2104b18dd8ed5a0",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 6288,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-tinyfish-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "tinyfish",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "65237a0f6d85f0aaf003478e30eef83d5d2c0712693e42d6bf06ab5585ade587",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 342,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "4370d3b058cc8aacd9aea8ddb085382077acedaffe11c5cc6b2376ef04ede249",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 341,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-you-v1",
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "provider": "you",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "List browser profiles",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "f561f07ac9f6d4efa5f461048d9af0a82517c077fb3b6126c73b08bde4325f42",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 12003,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-you-v1",
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "provider": "you",
+    "track": "scrape",
+    "success": false,
+    "fields": [
+      {
+        "name": "reference",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "1f2d098fc4ca348374f35ebfd34a11d2ff662467c8b1faafd40080792b5e4651",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 296,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "9ff6ea7f8e20c82f83777bdfe2547eee793c7bc55de968bcb514f27c3891b059",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 296,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-scrape-you-v1",
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "provider": "you",
+    "track": "scrape",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Get Batch Scrape Errors",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "a244522211add9374f44b85e9df7f4a244b95193bece0f7027339a8263419702",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 690,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-browserbase-parallel",
+    "id": "search-revenue-0000882095",
+    "provider": "browserbase",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-31",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "f61137a646d555f845bf9044429a9a2506d26ee1f9133609ab95d5a6b7f9ae6e",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 2790,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "19f0aa35d97fcdc6b7e4632b37bad552190b8888d092c2561d43d10041a0eb5e",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1502,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-browserbase-parallel",
+    "id": "search-page-https-docs-getdbt-com-blog-ai-eval-in-dbt",
+    "provider": "browserbase",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "794372a174eafb7586027dd2e4fc2820c3073e8eebe05f3f03b0aa7eb5585154",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1778,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "8557c2be01e82a72c260339d153ee2e7bbc14bdf62ea8433312315beb70ec2de",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1093,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-browserbase-parallel",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "browserbase",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "version",
+        "pass": false,
+        "got": "8.2.1",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "17872b81c26b3030425ec66a6d1b4d664828efa5f0971f4a89b1d051f20c8ef5",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1807,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "bca628d737072b4e4f3994f44946b2e9fbf4b0e375ecc58ce627516c3f40fca3",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1768,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-browserbase-v1",
+    "id": "search-revenue-0000200406",
+    "provider": "browserbase",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      false,
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "89e200efbb7a269124bc2137197cb84ed093e65f60949bedc2b7cb9b1d23fc35",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 2322,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "95406b51fb13fb1b69e429f846ddf8fad67d10bed242c16d46ba9f26aa4a709c",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1316,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "d5f698a15950459407399bdd83196176dec4db80e4ebf5ac460c4837c1a467d7",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1401,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-browserbase-v1",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "browserbase",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "version",
+        "pass": false,
+        "got": "8.2.1",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "12834454ccc4f7f98cc92a51ace6812cf2bcc8cdc78eb9ae9ff927909a572f94",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1832,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "1ac90d11bb9adc289cdf25f78a75963cd8350077c0d7cebd374d68ef495fa915",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 931,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-browserbase-v1",
+    "id": "search-page-https-docs-marimo-io-api-miscellaneous",
+    "provider": "browserbase",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "8dea20e6eb3a0ab51e28eba8b93b12540ac782cafa27b4564c12b54f72633820",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 785,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "6747515b13e28db5fec0c68ba78c5ccb7275c0e8dcaa9fb907670c42aebbcf42",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 809,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "7832c026f105410bc753bc55c6da0e4ed0927a1235f85aced406172c62501d98",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1522,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-contextdev-v1",
+    "id": "search-revenue-0000200406",
+    "provider": "contextdev",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": true,
+        "got": 94200000000,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-28",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "779b9c3cfc409851d68281e9eecda4e0e63ddac7e47ec39387f033fc1f400dcd",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3578,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "0ea86ca1d25048290848953c46ec0fdc964baa96d55d6ab4ff8f46550ae34046",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1990,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-contextdev-v1",
+    "id": "search-page-https-docs-marimo-io-api-miscellaneous",
+    "provider": "contextdev",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "846f863857c05b5ee98e02fe0975be5fdfd839512a09d35af34877d904cf955a",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1570,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "4f82b5501e6e6df1aca00efb4ea0066c5f691cd0e6c92918179a87b23860bca7",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1650,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "6f6208e243b75371c87a9949d96472fd2a2495a1da598bd8d71a6a8b5e736a7f",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1549,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "d98bf3e291434c104e6eb09e355bcbdad3ad0e333e04c48ac457b0be25da0dda",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 2998,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-contextdev-v1",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "contextdev",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "version",
+        "pass": true,
+        "got": "8.3.0",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "7617c65637bc54479f37fb562947b0e1d098bbacdca0deb659abdfe5f8989f44",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3408,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "6cbe65045c558e8cd458d7e151f6ad6f1d35f383b523c15dc29c56ae91b1effe",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1685,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "55a49a371c7e31a82b5e9cf6f702881726ad11f236635db1507c2ecdbf01e52c",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1631,
+        "credits": 1,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-firecrawl-v1",
+    "id": "search-revenue-0000200406",
+    "provider": "firecrawl",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": true,
+        "got": 94193000000,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-28",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "cc7f8179d93952588800b702fde15ec5f34822553c46f361d2945f6d42c398bb",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3587,
+        "credits": 2,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "1a5a61e55303ed4d3ba0d4a1ce1c7830161aa48f38896cda4d14e8272bcf845e",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 6892,
+        "credits": 2,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "a43ad9b1cddc82719212fb83f4210b3657dd0f52c6151152ba93758d12569a72",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 4921,
+        "credits": 2,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-firecrawl-v1",
+    "id": "search-page-https-docs-marimo-io-api-miscellaneous",
+    "provider": "firecrawl",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Miscellaneous",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "586a28569fda3e078464b0f724505e803a582a1d9541fd5687de409b26a0a94f",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3019,
+        "credits": 2,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "9208ff0c000cb60ab2dc02d024c56f9bf9a4d67ebe47313c026805a91ea16ec3",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 6024,
+        "credits": 2,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-firecrawl-v1",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "firecrawl",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "version",
+        "pass": false,
+        "got": "8.2.0",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "694228daee9eff83cc0f837dad5c12df5e794c39e25d832a464b7b93fa156361",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 21582,
+        "credits": 2,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-linkup-v1",
+    "id": "search-revenue-0000200406",
+    "provider": "linkup",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": true,
+        "got": 94193000000,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-28",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "4fcbf3e2dd7bc501a928a8237a3036dea1a8d07e9001120d8d08ec3286afda11",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 20131,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-linkup-v1",
+    "id": "search-page-https-docs-marimo-io-api-miscellaneous",
+    "provider": "linkup",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "Miscellaneous",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "f98442516ea5c134fb5517a7de65821ffee3cb6d0dd7331392c671b31f8aff77",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 25528,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "ac3fd7a509fb3ba2abd9980340d1ff6b5bb26bea05a5f14d1efbe10288e241d0",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 7337,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "5cf26e9a32a3f813284a64e8fcbf66f0a178afd5bbccf82f9abdf5d3955103ef",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 25527,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-linkup-v1",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "linkup",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "version",
+        "pass": false,
+        "got": "8.2.0",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true,
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "8db70470cb5fdec8598e68e4e573085a76b9f8daafb2c30c5e8b96f38e606317",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 14650,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "1639588ee8f0e28e4c2a9a18811dea3e08e58b471cad18e442c7cfc896753a1c",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 6769,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "575b50e0a8c734d4b92892ca9348bd96c03ee64e4da323f4f135ebef01699950",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 7340,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-tinyfish-parallel",
+    "id": "search-revenue-0000882095",
+    "provider": "tinyfish",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": true,
+        "got": 29400000000,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-31",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "39c885d393e7e0ffb98a6caea3e9bcefd33ff2463fce9a0663be9affec256be5",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3583,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-tinyfish-parallel",
+    "id": "search-page-https-docs-getdbt-com-blog-ai-eval-in-dbt",
+    "provider": "tinyfish",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [
+      "other"
+    ],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "d64be0e496ced697a7c7866dd8307260207e546691f67d1ceb06db140a6179b5",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1583,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "0688489b58399cab64364ef17b1c73b4e865e190b2ea0ed9eeb46025e1b6d7ff",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1781,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "c3f3d11c5ffa5da0c7fe69c060263983c3653e9b3adde980ea129b3561132021",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3150,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-tinyfish-parallel",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "tinyfish",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "version",
+        "pass": true,
+        "got": "8.3.0",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "dcc590171415766692fd633f8b268591ed13ab275d7ace7a5df47436358f2a9b",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3303,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "9b8ffb6eea8aafc05188217959fd628a4be65b958ddaedc6d8934b5c31566372",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1588,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-tinyfish-v1",
+    "id": "search-revenue-0000200406",
+    "provider": "tinyfish",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": true,
+        "got": 94190000000,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-28",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "1f52ad1a60c5c61e91aaf8f7b6d3552eafcc387245512a9dfac4f0df32804f74",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3590,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "7d91c4d4ec5df9a7adfe044e3250e673f409f49214de5fa1115eeecbcd9deb89",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1944,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "132b86184d55a4a4ebc39fe1ab5b481da7ce934df4b5b4907e5b5456e16572c4",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1805,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-tinyfish-v1",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "tinyfish",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "version",
+        "pass": true,
+        "got": "8.3.0",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "f8715aab3271ba7039e2bba4a21ba80860deeefd7ebaad2c696170f264656168",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3302,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "42e2978e32ced7361efe562bffaf8a7315044aabdea57dcc53af0ae386eb36e4",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3082,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-tinyfish-v1",
+    "id": "search-page-https-docs-marimo-io-api-miscellaneous",
+    "provider": "tinyfish",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "78a9adc1d5cd62e157ecf9473cdd61c78e6728c13c5fe873361e669587442bdb",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1496,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "832f0e58534ec31a24ad10ae9f5e580af4025679a330319ddba3631ac992ef6f",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1568,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "c90cbb370d36a3990e6c423e12202b3ea16c71cd17dd10683928c3713e6e9370",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1506,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "2dfc48c5f53a0c4b2f57566b1d9b71b7efc5960214bf794ef9e8bb09852d323d",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 2392,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-you-parallel",
+    "id": "search-revenue-0000882095",
+    "provider": "you",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": true,
+        "got": 29400000000,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-31",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true,
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "1b215fd1ae2d877fe1a1684dad133e0e6e8a458add4f278908a7681f51ca1cd5",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 12500,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "d1627b4147066eb4b05f65622585332f1af55b2377d6d09746395c74381861dd",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 17816,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-you-parallel",
+    "id": "search-page-https-docs-getdbt-com-blog-ai-eval-in-dbt",
+    "provider": "you",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": true,
+        "got": "AI Evaluation in dbt",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "7bd04c8b5b6bb0d5c0d905f809e1cac0fa647ff34a8de4842686a5168f4aeb2a",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 15017,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "1b726b1b7f6b5b513bd64bf4765bb830fbd7c134ccb2c851b6199545587cabed",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 1910,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-you-parallel",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "you",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "version",
+        "pass": false,
+        "got": "8.2.0",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "bfc438c764326a38ac87b28398418db2640987a6ceddf2bf3224447853929846",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 7617,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "70c2cbacaf9101def81aaa625813b553bd6bebf57902e20a8b1d565477ec67c8",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 10391,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-you-v1",
+    "id": "search-revenue-0000200406",
+    "provider": "you",
+    "track": "search",
+    "success": true,
+    "fields": [
+      {
+        "name": "revenueUSD",
+        "pass": true,
+        "got": 94190000000,
+        "note": "normalized comparison"
+      },
+      {
+        "name": "fiscalYearEnd",
+        "pass": true,
+        "got": "2025-12-28",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      true
+    ],
+    "summaries": [
+      {
+        "hash": "901046b7f274af056b8e3aec387b0a45af01c026b79f4479f544b527c5668939",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 12270,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-you-v1",
+    "id": "search-page-https-docs-marimo-io-api-miscellaneous",
+    "provider": "you",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "heading",
+        "pass": false,
+        "got": null,
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "6b7df57c7a4c4bace9c771c1af14d3f40f7a18e1261b80bcfb6859dbe1159d26",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 3317,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "83df824c45eba260dfaca69b4afd4c2dd8f8fd4cc204bdd7dad88b50ba609a0d",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 5172,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "c9cd84df181d62194792a038b5ddb2f5120f205ee6a1653212d75f26ff3f646b",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 7755,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  },
+  {
+    "runId": "wb-v2-pilot-search-you-v1",
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "provider": "you",
+    "track": "search",
+    "success": false,
+    "fields": [
+      {
+        "name": "version",
+        "pass": false,
+        "got": "8.2.0",
+        "note": "normalized comparison"
+      }
+    ],
+    "errors": [],
+    "truncations": [
+      false,
+      false
+    ],
+    "summaries": [
+      {
+        "hash": "7c43a063029abd27d0c77776aba7420cb7de6f653a14632b6ec9de7cf69d332d",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 7618,
+        "credits": null,
+        "evidenceTitleMarker": null
+      },
+      {
+        "hash": "0e2d8e2000a3bd47f301530ae51ad84c39a625c5b449d07653b98bc953cc7c19",
+        "kind": "ok",
+        "error": null,
+        "status": null,
+        "message": null,
+        "bytes": 9527,
+        "credits": null,
+        "evidenceTitleMarker": null
+      }
+    ]
+  }
+]

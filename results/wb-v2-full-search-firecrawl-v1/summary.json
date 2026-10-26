@@ -1,0 +1,154 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 30,
+      "na": 0,
+      "successes": 26,
+      "successRate": 0.8666666666666667,
+      "ci95": [
+        0.7271464646464647,
+        0.9687959558823527
+      ],
+      "successfulMedianMs": 8461.368872000006,
+      "successfulP90Ms": 14644.975961500008,
+      "totalUsd": 0.7084450000000002,
+      "costPerSuccessUsd": 0.027247884615384625,
+      "errors": {
+        "empty": 1
+      },
+      "families": {
+        "fresh": {
+          "tasks": 3,
+          "successRate": 0.6666666666666666
+        },
+        "registry-version": {
+          "tasks": 6,
+          "successRate": 1
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 6,
+          "successRate": 1
+        },
+        "company-financials": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "docs-heading": {
+          "tasks": 6,
+          "successRate": 0.5
+        },
+        "entity-facts": {
+          "tasks": 3,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 27,
+      "na": 3,
+      "successes": 18,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0.4482758620689655,
+        0.9130434782608695
+      ],
+      "successfulMedianMs": 1736.914711999998,
+      "successfulP90Ms": 3003.7667841999883,
+      "totalUsd": 0.3000000000000001,
+      "costPerSuccessUsd": 0.016666666666666673,
+      "errors": {},
+      "families": {
+        "fresh": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "registry-version": {
+          "tasks": 6,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 6,
+          "successRate": 0.5
+        },
+        "company-financials": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "docs-heading": {
+          "tasks": 6,
+          "successRate": 1
+        },
+        "entity-facts": {
+          "tasks": 3,
+          "successRate": 1
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "firecrawl",
+      "pairedTasks": 30,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "firecrawl",
+      "pairedTasks": 27,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "firecrawl": {
+      "usd": 0.8284450000000004,
+      "apiUsd": 0.5500000000000003,
+      "modelUsd": 0.27844500000000016,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "empty": 1
+  }
+}

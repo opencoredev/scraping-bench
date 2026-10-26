@@ -11,6 +11,7 @@ const HOMEPAGES: Record<string, string> = {
   scrapfly: "https://scrapfly.io/",
   browserbase: "https://www.browserbase.com/",
   you: "https://you.com/",
+  string: "https://usestring.ai/",
 };
 export const linkOf = (providerId: string): string | undefined => {
   const home = HOMEPAGES[providerId];

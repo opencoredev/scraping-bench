@@ -1,0 +1,157 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "tinyfish",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 300,
+      "na": 0,
+      "successes": 210,
+      "successRate": 0.7,
+      "ci95": [
+        0.5714285714285714,
+        0.7866332476435304
+      ],
+      "successfulMedianMs": 6430.928414499998,
+      "successfulP90Ms": 11196.686733499937,
+      "totalUsd": 2.3535059999999977,
+      "costPerSuccessUsd": 0.011207171428571418,
+      "errors": {
+        "other": 18,
+        "empty": 2,
+        "network": 1
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 78,
+          "successRate": 0.3717948717948718
+        },
+        "latest-version": {
+          "tasks": 55,
+          "successRate": 0.8909090909090909
+        },
+        "not-found": {
+          "tasks": 21,
+          "successRate": 1
+        },
+        "entity-facts": {
+          "tasks": 28,
+          "successRate": 0.8214285714285714
+        },
+        "fresh": {
+          "tasks": 13,
+          "successRate": 0.23076923076923078
+        },
+        "registry-version": {
+          "tasks": 77,
+          "successRate": 0.7922077922077922
+        },
+        "company-financials": {
+          "tasks": 28,
+          "successRate": 0.8571428571428571
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "tinyfish",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 279,
+      "na": 21,
+      "successes": 184,
+      "successRate": 0.6594982078853047,
+      "ci95": [
+        0.5480102468260617,
+        0.7798507462686567
+      ],
+      "successfulMedianMs": 1142.3817140000065,
+      "successfulP90Ms": 1945.856886000096,
+      "totalUsd": 0,
+      "costPerSuccessUsd": 0,
+      "errors": {},
+      "families": {
+        "docs-heading": {
+          "tasks": 78,
+          "successRate": 0.782051282051282
+        },
+        "latest-version": {
+          "tasks": 55,
+          "successRate": 0.5818181818181818
+        },
+        "entity-facts": {
+          "tasks": 28,
+          "successRate": 0.9285714285714286
+        },
+        "fresh": {
+          "tasks": 13,
+          "successRate": 0.23076923076923078
+        },
+        "registry-version": {
+          "tasks": 77,
+          "successRate": 0.7142857142857143
+        },
+        "company-financials": {
+          "tasks": 28,
+          "successRate": 0.25
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "tinyfish",
+      "reference": "tinyfish",
+      "pairedTasks": 300,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "tinyfish",
+      "reference": "tinyfish",
+      "pairedTasks": 279,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "tinyfish": {
+      "usd": 2.3535060000000008,
+      "apiUsd": 0,
+      "modelUsd": 2.3535060000000008,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "empty": 2,
+    "network": 1
+  }
+}

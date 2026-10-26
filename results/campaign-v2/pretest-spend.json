@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-19T17:54:16.178Z",
+  "spend": {
+    "firecrawl": {
+      "apiUsd": 0.18500000000000008,
+      "physicalCalls": 15
+    },
+    "contextdev": {
+      "apiUsd": 0.07700000000000008,
+      "physicalCalls": 19
+    },
+    "tinyfish": {
+      "apiUsd": 0,
+      "physicalCalls": 19
+    },
+    "linkup": {
+      "apiUsd": 0.039,
+      "physicalCalls": 11
+    },
+    "browserbase": {
+      "apiUsd": 0.082,
+      "physicalCalls": 17
+    },
+    "you": {
+      "apiUsd": 0.06399999999999999,
+      "physicalCalls": 16
+    },
+    "spider": {
+      "apiUsd": 0.0015168125000000164,
+      "physicalCalls": 3
+    },
+    "scrapfly": {
+      "apiUsd": 0.006450000000000001,
+      "physicalCalls": 7
+    },
+    "jina": {
+      "apiUsd": 0.00042100000000000004,
+      "physicalCalls": 3
+    }
+  }
+}

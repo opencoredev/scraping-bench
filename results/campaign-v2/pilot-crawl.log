@@ -1,0 +1,6 @@
+{"runId":"wb-v2-pilot-crawl-firecrawl-v1","provider":"firecrawl","phase":"pilot","track":"crawl","tasks":2,"allowance":2.11925,"bound":0.15}
+{"directory":"results/wb-v2-pilot-crawl-firecrawl-v1","completed":4,"skipped":0}
+{"runId":"wb-v2-pilot-crawl-contextdev-v1","provider":"contextdev","phase":"pilot","track":"crawl","tasks":2,"allowance":131.99878999999999,"bound":0.066}
+{"directory":"results/wb-v2-pilot-crawl-contextdev-v1","completed":4,"skipped":0}
+{"runId":"wb-v2-pilot-crawl-scrapfly-v1","provider":"scrapfly","phase":"pilot","track":"crawl","tasks":2,"allowance":0.0435825,"bound":0.0042}
+{"directory":"results/wb-v2-pilot-crawl-scrapfly-v1","completed":4,"skipped":0}

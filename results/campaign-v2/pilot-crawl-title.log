@@ -1,0 +1,2 @@
+{"runId":"wb-v2-pilot-crawl-scrapfly-title","provider":"scrapfly","phase":"pilot","track":"crawl","tasks":2,"allowance":0.0405825,"bound":0.0042}
+{"directory":"results/wb-v2-pilot-crawl-scrapfly-title","completed":4,"skipped":0}

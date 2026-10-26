@@ -1,0 +1,1676 @@
+[
+  {
+    "id": "search-fresh-caddyserver-caddy",
+    "recipe": {
+      "kind": "release",
+      "repo": "caddyserver/caddy"
+    },
+    "reason": "No stable release in last 14 days: caddyserver/caddy"
+  },
+  {
+    "id": "search-pub-provider",
+    "recipe": {
+      "kind": "registry",
+      "ecosystem": "pub",
+      "name": "provider"
+    },
+    "reason": "Non-numeric stable release 6.1.5+1"
+  },
+  {
+    "id": "search-homebrew-delta",
+    "recipe": {
+      "kind": "registry",
+      "ecosystem": "homebrew",
+      "name": "delta"
+    },
+    "reason": "[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [],\n    \"message\": \"Invalid input: expected object, received null\"\n  }\n]"
+  },
+  {
+    "id": "https://www.starlette.io/sitemap.xml",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "search-page-https-typer-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://typer.tiangolo.com/",
+      "track": "search"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "scrape-page-https-typer-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://typer.tiangolo.com/",
+      "track": "scrape"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "search-page-https-sqlmodel-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://sqlmodel.tiangolo.com/",
+      "track": "search"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "scrape-page-https-sqlmodel-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://sqlmodel.tiangolo.com/",
+      "track": "scrape"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "https://docs.pytest.org/en/stable/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://click.palletsprojects.com/en/stable/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://flask.palletsprojects.com/en/stable/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://werkzeug.palletsprojects.com/en/stable/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://jinja.palletsprojects.com/en/stable/sitemap.xml",
+    "reason": "Invalid redirect chain: https://jinja.palletsprojects.com/en/stable/sitemap.xml"
+  },
+  {
+    "id": "https://docs.celeryq.dev/en/stable/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://docs.python-requests.org/en/latest/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://rich.readthedocs.io/en/stable/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://docs.aiohttp.org/en/stable/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://www.sphinx-doc.org/en/master/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "search-page-https-docs-deno-com-api-deno-about",
+    "recipe": {
+      "kind": "page",
+      "url": "https://docs.deno.com/api/deno/about/",
+      "track": "search"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "scrape-page-https-docs-deno-com-api-deno-about",
+    "recipe": {
+      "kind": "page",
+      "url": "https://docs.deno.com/api/deno/about/",
+      "track": "scrape"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "search-page-https-docs-deno-com-api-node-about",
+    "recipe": {
+      "kind": "page",
+      "url": "https://docs.deno.com/api/node/about/",
+      "track": "search"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "scrape-page-https-docs-deno-com-api-node-about",
+    "recipe": {
+      "kind": "page",
+      "url": "https://docs.deno.com/api/node/about/",
+      "track": "scrape"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "https://vitest.dev/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "https://docs.railway.com/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "map-docs-deno-com-styleguide",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.deno.com/sitemap.xml",
+      "scope": "https://docs.deno.com/styleguide/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.deno.com/styleguide/; sitemap=12, crawl=11; extra=; missing=https://docs.deno.com/styleguide/writing/"
+  },
+  {
+    "id": "crawl-docs-deno-com-styleguide",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.deno.com/sitemap.xml",
+      "scope": "https://docs.deno.com/styleguide/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.deno.com/styleguide/; sitemap=12, crawl=11; extra=; missing=https://docs.deno.com/styleguide/writing/"
+  },
+  {
+    "id": "map-docs-deno-com-subhosting",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.deno.com/sitemap.xml",
+      "scope": "https://docs.deno.com/subhosting/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.deno.com/subhosting/; sitemap=10, crawl=8; extra=; missing=https://docs.deno.com/subhosting/,https://docs.deno.com/subhosting/manual/acceptable_use_policy/"
+  },
+  {
+    "id": "crawl-docs-deno-com-subhosting",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.deno.com/sitemap.xml",
+      "scope": "https://docs.deno.com/subhosting/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.deno.com/subhosting/; sitemap=10, crawl=8; extra=; missing=https://docs.deno.com/subhosting/,https://docs.deno.com/subhosting/manual/acceptable_use_policy/"
+  },
+  {
+    "id": "map-docs-docker-com-build-buildkit",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.docker.com/sitemap.xml",
+      "scope": "https://docs.docker.com/build/buildkit/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.docker.com/build/buildkit/; sitemap=5, crawl=4; extra=; missing=https://docs.docker.com/build/buildkit/dockerfile-release-notes/"
+  },
+  {
+    "id": "crawl-docs-docker-com-build-buildkit",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.docker.com/sitemap.xml",
+      "scope": "https://docs.docker.com/build/buildkit/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.docker.com/build/buildkit/; sitemap=5, crawl=4; extra=; missing=https://docs.docker.com/build/buildkit/dockerfile-release-notes/"
+  },
+  {
+    "id": "https://www.uvicorn.org/sitemap.xml",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "https://docs.litestar.dev/2/sitemap.xml",
+    "reason": "Not a leaf sitemap"
+  },
+  {
+    "id": "map-docs-deno-com-runtime-contributing",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.deno.com/sitemap.xml",
+      "scope": "https://docs.deno.com/runtime/contributing/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.deno.com/runtime/contributing/; sitemap=4, crawl=3; extra=; missing=https://docs.deno.com/runtime/contributing/release_schedule/"
+  },
+  {
+    "id": "crawl-docs-deno-com-runtime-contributing",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.deno.com/sitemap.xml",
+      "scope": "https://docs.deno.com/runtime/contributing/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.deno.com/runtime/contributing/; sitemap=4, crawl=3; extra=; missing=https://docs.deno.com/runtime/contributing/release_schedule/"
+  },
+  {
+    "id": "map-docs-scrapy-org-en-latest-intro",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/intro/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/intro/; sitemap=4, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/intro/examples.html,https://docs.scrapy.org/en/latest/intro/install.html,https://docs.scrapy.org/en/latest/intro/overview.html,https://docs.scrapy.org/en/latest/intro/tutorial.html"
+  },
+  {
+    "id": "crawl-docs-scrapy-org-en-latest-intro",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/intro/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/intro/; sitemap=4, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/intro/examples.html,https://docs.scrapy.org/en/latest/intro/install.html,https://docs.scrapy.org/en/latest/intro/overview.html,https://docs.scrapy.org/en/latest/intro/tutorial.html"
+  },
+  {
+    "id": "map-docs-scrapy-org-en-latest-modules-scrapy-http",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/http/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/http/; sitemap=8, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/http/request.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/request/form.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/request/json_request.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/html.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/json.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/text.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/xml.html"
+  },
+  {
+    "id": "crawl-docs-scrapy-org-en-latest-modules-scrapy-http",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/http/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/http/; sitemap=8, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/http/request.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/request/form.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/request/json_request.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/html.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/json.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/text.html,https://docs.scrapy.org/en/latest/_modules/scrapy/http/response/xml.html"
+  },
+  {
+    "id": "map-docs-scrapy-org-en-latest-modules-scrapy-spiders",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/; sitemap=3, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/crawl.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/feed.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/sitemap.html"
+  },
+  {
+    "id": "crawl-docs-scrapy-org-en-latest-modules-scrapy-spiders",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/; sitemap=3, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/crawl.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/feed.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spiders/sitemap.html"
+  },
+  {
+    "id": "map-facelessuser-github-io-pymdown-extensions-about",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://facelessuser.github.io/pymdown-extensions/sitemap.xml",
+      "scope": "https://facelessuser.github.io/pymdown-extensions/about/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://facelessuser.github.io/pymdown-extensions/about/; sitemap=9, crawl=0; extra=; missing=https://facelessuser.github.io/pymdown-extensions/about/changelog/,https://facelessuser.github.io/pymdown-extensions/about/contributing/,https://facelessuser.github.io/pymdown-extensions/about/development/,https://facelessuser.github.io/pymdown-extensions/about/license/,https://facelessuser.github.io/pymdown-extensions/about/releases/6.0/,https://facelessuser.github.io/pymdown-extensions/about/releases/7.0/,https://facelessuser.github.io/pymdown-extensions/about/releases/8.0/,https://facelessuser.github.io/pymdown-extensions/about/releases/9.0/,https://facelessuser.github.io/pymdown-extensions/about/security/"
+  },
+  {
+    "id": "crawl-facelessuser-github-io-pymdown-extensions-about",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://facelessuser.github.io/pymdown-extensions/sitemap.xml",
+      "scope": "https://facelessuser.github.io/pymdown-extensions/about/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://facelessuser.github.io/pymdown-extensions/about/; sitemap=9, crawl=0; extra=; missing=https://facelessuser.github.io/pymdown-extensions/about/changelog/,https://facelessuser.github.io/pymdown-extensions/about/contributing/,https://facelessuser.github.io/pymdown-extensions/about/development/,https://facelessuser.github.io/pymdown-extensions/about/license/,https://facelessuser.github.io/pymdown-extensions/about/releases/6.0/,https://facelessuser.github.io/pymdown-extensions/about/releases/7.0/,https://facelessuser.github.io/pymdown-extensions/about/releases/8.0/,https://facelessuser.github.io/pymdown-extensions/about/releases/9.0/,https://facelessuser.github.io/pymdown-extensions/about/security/"
+  },
+  {
+    "id": "map-squidfunk-github-io-mkdocs-material-blog-2021",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/2021/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/2021/; sitemap=3, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/2021/09/13/search-better-faster-smaller/,https://squidfunk.github.io/mkdocs-material/blog/2021/09/26/excluding-content-from-search/,https://squidfunk.github.io/mkdocs-material/blog/2021/12/27/the-past-present-and-future/"
+  },
+  {
+    "id": "crawl-squidfunk-github-io-mkdocs-material-blog-2021",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/2021/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/2021/; sitemap=3, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/2021/09/13/search-better-faster-smaller/,https://squidfunk.github.io/mkdocs-material/blog/2021/09/26/excluding-content-from-search/,https://squidfunk.github.io/mkdocs-material/blog/2021/12/27/the-past-present-and-future/"
+  },
+  {
+    "id": "map-docs-scrapy-org-en-latest-modules-scrapy-core-downloader",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/; sitemap=10, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/_aiohttp.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/_httpx.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/base.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/datauri.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/file.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/ftp.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/http11.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/http2.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/s3.html"
+  },
+  {
+    "id": "crawl-docs-scrapy-org-en-latest-modules-scrapy-core-downloader",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/; sitemap=10, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/_aiohttp.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/_httpx.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/base.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/datauri.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/file.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/ftp.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/http11.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/http2.html,https://docs.scrapy.org/en/latest/_modules/scrapy/core/downloader/handlers/s3.html"
+  },
+  {
+    "id": "map-docs-scrapy-org-en-latest-modules-scrapy-spidermiddlewares",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/; sitemap=7, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/base.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/depth.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/httperror.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/metacopy.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/referer.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/start.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/urllength.html"
+  },
+  {
+    "id": "crawl-docs-scrapy-org-en-latest-modules-scrapy-spidermiddlewares",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.scrapy.org/sitemap.xml",
+      "scope": "https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/; sitemap=7, crawl=0; extra=; missing=https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/base.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/depth.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/httperror.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/metacopy.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/referer.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/start.html,https://docs.scrapy.org/en/latest/_modules/scrapy/spidermiddlewares/urllength.html"
+  },
+  {
+    "id": "map-squidfunk-github-io-mkdocs-material-blog-2023",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/2023/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/2023/; sitemap=3, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/2023/09/22/using-git-sparse-checkout-for-faster-documentation-builds/,https://squidfunk.github.io/mkdocs-material/blog/2023/10/02/sunsetting-gitter-towards-efficient-community-engagement/,https://squidfunk.github.io/mkdocs-material/blog/2023/11/30/adding-a-badge-to-your-project/"
+  },
+  {
+    "id": "crawl-squidfunk-github-io-mkdocs-material-blog-2023",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/2023/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/2023/; sitemap=3, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/2023/09/22/using-git-sparse-checkout-for-faster-documentation-builds/,https://squidfunk.github.io/mkdocs-material/blog/2023/10/02/sunsetting-gitter-towards-efficient-community-engagement/,https://squidfunk.github.io/mkdocs-material/blog/2023/11/30/adding-a-badge-to-your-project/"
+  },
+  {
+    "id": "map-squidfunk-github-io-mkdocs-material-blog-2025",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/2025/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/2025/; sitemap=3, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/2025/11/05/zensical/,https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/,https://squidfunk.github.io/mkdocs-material/blog/2025/11/18/goodbye-github-discussions/"
+  },
+  {
+    "id": "crawl-squidfunk-github-io-mkdocs-material-blog-2025",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/2025/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/2025/; sitemap=3, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/2025/11/05/zensical/,https://squidfunk.github.io/mkdocs-material/blog/2025/11/11/insiders-now-free-for-everyone/,https://squidfunk.github.io/mkdocs-material/blog/2025/11/18/goodbye-github-discussions/"
+  },
+  {
+    "id": "map-squidfunk-github-io-mkdocs-material-blog-archive",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/archive/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/archive/; sitemap=6, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/archive/2021/,https://squidfunk.github.io/mkdocs-material/blog/archive/2022/,https://squidfunk.github.io/mkdocs-material/blog/archive/2023/,https://squidfunk.github.io/mkdocs-material/blog/archive/2024/,https://squidfunk.github.io/mkdocs-material/blog/archive/2025/,https://squidfunk.github.io/mkdocs-material/blog/archive/2026/"
+  },
+  {
+    "id": "crawl-squidfunk-github-io-mkdocs-material-blog-archive",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/archive/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/archive/; sitemap=6, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/archive/2021/,https://squidfunk.github.io/mkdocs-material/blog/archive/2022/,https://squidfunk.github.io/mkdocs-material/blog/archive/2023/,https://squidfunk.github.io/mkdocs-material/blog/archive/2024/,https://squidfunk.github.io/mkdocs-material/blog/archive/2025/,https://squidfunk.github.io/mkdocs-material/blog/archive/2026/"
+  },
+  {
+    "id": "map-squidfunk-github-io-mkdocs-material-blog-category",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/category/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/category/; sitemap=5, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/category/blog/,https://squidfunk.github.io/mkdocs-material/blog/category/build/,https://squidfunk.github.io/mkdocs-material/blog/category/general/,https://squidfunk.github.io/mkdocs-material/blog/category/performance/,https://squidfunk.github.io/mkdocs-material/blog/category/search/"
+  },
+  {
+    "id": "crawl-squidfunk-github-io-mkdocs-material-blog-category",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://squidfunk.github.io/mkdocs-material/sitemap.xml",
+      "scope": "https://squidfunk.github.io/mkdocs-material/blog/category/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://squidfunk.github.io/mkdocs-material/blog/category/; sitemap=5, crawl=0; extra=; missing=https://squidfunk.github.io/mkdocs-material/blog/category/blog/,https://squidfunk.github.io/mkdocs-material/blog/category/build/,https://squidfunk.github.io/mkdocs-material/blog/category/general/,https://squidfunk.github.io/mkdocs-material/blog/category/performance/,https://squidfunk.github.io/mkdocs-material/blog/category/search/"
+  },
+  {
+    "id": "https://www.uvicorn.org/sitemap.xml",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "https://docs.sqlalchemy.org/sitemap.xml",
+    "reason": "Invalid redirect chain: https://docs.sqlalchemy.org/robots.txt"
+  },
+  {
+    "id": "https://alembic.sqlalchemy.org/sitemap.xml",
+    "reason": "No leaf urlset"
+  },
+  {
+    "id": "map-docs-pola-rs-releases",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/releases/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/releases/; sitemap=6, crawl=0; extra=; missing=https://docs.pola.rs/releases/changelog/,https://docs.pola.rs/releases/upgrade/,https://docs.pola.rs/releases/upgrade/0.19/,https://docs.pola.rs/releases/upgrade/0.20/,https://docs.pola.rs/releases/upgrade/1/,https://docs.pola.rs/releases/upgrade/2/"
+  },
+  {
+    "id": "crawl-docs-pola-rs-releases",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/releases/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/releases/; sitemap=6, crawl=0; extra=; missing=https://docs.pola.rs/releases/changelog/,https://docs.pola.rs/releases/upgrade/,https://docs.pola.rs/releases/upgrade/0.19/,https://docs.pola.rs/releases/upgrade/0.20/,https://docs.pola.rs/releases/upgrade/1/,https://docs.pola.rs/releases/upgrade/2/"
+  },
+  {
+    "id": "https://docs.litestar.dev/sitemap.xml",
+    "reason": "No leaf urlset"
+  },
+  {
+    "id": "map-docs-pola-rs-development",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/development/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/development/; sitemap=6, crawl=0; extra=; missing=https://docs.pola.rs/development/contributing/,https://docs.pola.rs/development/contributing/ci/,https://docs.pola.rs/development/contributing/code-style/,https://docs.pola.rs/development/contributing/ide/,https://docs.pola.rs/development/contributing/test/,https://docs.pola.rs/development/versioning/"
+  },
+  {
+    "id": "crawl-docs-pola-rs-development",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/development/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/development/; sitemap=6, crawl=0; extra=; missing=https://docs.pola.rs/development/contributing/,https://docs.pola.rs/development/contributing/ci/,https://docs.pola.rs/development/contributing/code-style/,https://docs.pola.rs/development/contributing/ide/,https://docs.pola.rs/development/contributing/test/,https://docs.pola.rs/development/versioning/"
+  },
+  {
+    "id": "map-docs-pola-rs-user-guide-sql",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/user-guide/sql/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/user-guide/sql/; sitemap=5, crawl=0; extra=; missing=https://docs.pola.rs/user-guide/sql/create/,https://docs.pola.rs/user-guide/sql/cte/,https://docs.pola.rs/user-guide/sql/intro/,https://docs.pola.rs/user-guide/sql/select/,https://docs.pola.rs/user-guide/sql/show/"
+  },
+  {
+    "id": "crawl-docs-pola-rs-user-guide-sql",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/user-guide/sql/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/user-guide/sql/; sitemap=5, crawl=0; extra=; missing=https://docs.pola.rs/user-guide/sql/create/,https://docs.pola.rs/user-guide/sql/cte/,https://docs.pola.rs/user-guide/sql/intro/,https://docs.pola.rs/user-guide/sql/select/,https://docs.pola.rs/user-guide/sql/show/"
+  },
+  {
+    "id": "map-docs-pola-rs-user-guide-misc",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/user-guide/misc/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/user-guide/misc/; sitemap=7, crawl=0; extra=; missing=https://docs.pola.rs/user-guide/misc/arrow/,https://docs.pola.rs/user-guide/misc/comparison/,https://docs.pola.rs/user-guide/misc/monitoring/,https://docs.pola.rs/user-guide/misc/multiprocessing/,https://docs.pola.rs/user-guide/misc/polars_llms/,https://docs.pola.rs/user-guide/misc/styling/,https://docs.pola.rs/user-guide/misc/visualization/"
+  },
+  {
+    "id": "crawl-docs-pola-rs-user-guide-misc",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.pola.rs/sitemap.xml",
+      "scope": "https://docs.pola.rs/user-guide/misc/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.pola.rs/user-guide/misc/; sitemap=7, crawl=0; extra=; missing=https://docs.pola.rs/user-guide/misc/arrow/,https://docs.pola.rs/user-guide/misc/comparison/,https://docs.pola.rs/user-guide/misc/monitoring/,https://docs.pola.rs/user-guide/misc/multiprocessing/,https://docs.pola.rs/user-guide/misc/polars_llms/,https://docs.pola.rs/user-guide/misc/styling/,https://docs.pola.rs/user-guide/misc/visualization/"
+  },
+  {
+    "id": "search-page-https-typer-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://typer.tiangolo.com/",
+      "track": "search"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "scrape-page-https-typer-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://typer.tiangolo.com/",
+      "track": "scrape"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "search-page-https-sqlmodel-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://sqlmodel.tiangolo.com/",
+      "track": "search"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "scrape-page-https-sqlmodel-tiangolo-com",
+    "recipe": {
+      "kind": "page",
+      "url": "https://sqlmodel.tiangolo.com/",
+      "track": "scrape"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "https://www.starlette.io/sitemap.xml",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "map-www-mkdocs-org-about",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://www.mkdocs.org/sitemap.xml",
+      "scope": "https://www.mkdocs.org/about/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://www.mkdocs.org/about/; sitemap=3, crawl=0; extra=; missing=https://www.mkdocs.org/about/contributing/,https://www.mkdocs.org/about/license/,https://www.mkdocs.org/about/release-notes/"
+  },
+  {
+    "id": "crawl-www-mkdocs-org-about",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://www.mkdocs.org/sitemap.xml",
+      "scope": "https://www.mkdocs.org/about/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://www.mkdocs.org/about/; sitemap=3, crawl=0; extra=; missing=https://www.mkdocs.org/about/contributing/,https://www.mkdocs.org/about/license/,https://www.mkdocs.org/about/release-notes/"
+  },
+  {
+    "id": "map-www-python-httpx-org-advanced",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://www.python-httpx.org/sitemap.xml",
+      "scope": "https://www.python-httpx.org/advanced/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://www.python-httpx.org/advanced/; sitemap=10, crawl=0; extra=; missing=https://www.python-httpx.org/advanced/authentication/,https://www.python-httpx.org/advanced/clients/,https://www.python-httpx.org/advanced/event-hooks/,https://www.python-httpx.org/advanced/extensions/,https://www.python-httpx.org/advanced/proxies/,https://www.python-httpx.org/advanced/resource-limits/,https://www.python-httpx.org/advanced/ssl/,https://www.python-httpx.org/advanced/text-encodings/,https://www.python-httpx.org/advanced/timeouts/,https://www.python-httpx.org/advanced/transports/"
+  },
+  {
+    "id": "crawl-www-python-httpx-org-advanced",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://www.python-httpx.org/sitemap.xml",
+      "scope": "https://www.python-httpx.org/advanced/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://www.python-httpx.org/advanced/; sitemap=10, crawl=0; extra=; missing=https://www.python-httpx.org/advanced/authentication/,https://www.python-httpx.org/advanced/clients/,https://www.python-httpx.org/advanced/event-hooks/,https://www.python-httpx.org/advanced/extensions/,https://www.python-httpx.org/advanced/proxies/,https://www.python-httpx.org/advanced/resource-limits/,https://www.python-httpx.org/advanced/ssl/,https://www.python-httpx.org/advanced/text-encodings/,https://www.python-httpx.org/advanced/timeouts/,https://www.python-httpx.org/advanced/transports/"
+  },
+  {
+    "id": "https://www.encode.io/databases/sitemap.xml",
+    "reason": "Invalid URL"
+  },
+  {
+    "id": "map-uvicorn-dev-concepts",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://uvicorn.dev/sitemap.xml",
+      "scope": "https://uvicorn.dev/concepts/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://uvicorn.dev/concepts/; sitemap=7, crawl=0; extra=; missing=https://uvicorn.dev/concepts/asgi/,https://uvicorn.dev/concepts/event-loop/,https://uvicorn.dev/concepts/http-protocols/,https://uvicorn.dev/concepts/http2/,https://uvicorn.dev/concepts/lifespan/,https://uvicorn.dev/concepts/logging/,https://uvicorn.dev/concepts/websockets/"
+  },
+  {
+    "id": "crawl-uvicorn-dev-concepts",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://uvicorn.dev/sitemap.xml",
+      "scope": "https://uvicorn.dev/concepts/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://uvicorn.dev/concepts/; sitemap=7, crawl=0; extra=; missing=https://uvicorn.dev/concepts/asgi/,https://uvicorn.dev/concepts/event-loop/,https://uvicorn.dev/concepts/http-protocols/,https://uvicorn.dev/concepts/http2/,https://uvicorn.dev/concepts/lifespan/,https://uvicorn.dev/concepts/logging/,https://uvicorn.dev/concepts/websockets/"
+  },
+  {
+    "id": "https://griffe.github.io/sitemap.xml",
+    "reason": "No leaf urlset"
+  },
+  {
+    "id": "https://lukasgeiter.github.io/mkdocs-awesome-pages-plugin/sitemap.xml",
+    "reason": "No leaf urlset"
+  },
+  {
+    "id": "search-page-https-docs-getdbt-com-blog",
+    "recipe": {
+      "kind": "page",
+      "url": "https://docs.getdbt.com/blog",
+      "track": "search"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "scrape-page-https-docs-getdbt-com-blog",
+    "recipe": {
+      "kind": "page",
+      "url": "https://docs.getdbt.com/blog",
+      "track": "scrape"
+    },
+    "reason": "No unambiguous bounded H1"
+  },
+  {
+    "id": "map-docs-marimo-io-examples-markdown",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.marimo.io/sitemap.xml",
+      "scope": "https://docs.marimo.io/examples/markdown/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.marimo.io/examples/markdown/; sitemap=5, crawl=0; extra=; missing=https://docs.marimo.io/examples/markdown/admonitions/,https://docs.marimo.io/examples/markdown/details/,https://docs.marimo.io/examples/markdown/dynamic_markdown/,https://docs.marimo.io/examples/markdown/emoji/,https://docs.marimo.io/examples/markdown/mermaid/"
+  },
+  {
+    "id": "crawl-docs-marimo-io-examples-markdown",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.marimo.io/sitemap.xml",
+      "scope": "https://docs.marimo.io/examples/markdown/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.marimo.io/examples/markdown/; sitemap=5, crawl=0; extra=; missing=https://docs.marimo.io/examples/markdown/admonitions/,https://docs.marimo.io/examples/markdown/details/,https://docs.marimo.io/examples/markdown/dynamic_markdown/,https://docs.marimo.io/examples/markdown/emoji/,https://docs.marimo.io/examples/markdown/mermaid/"
+  },
+  {
+    "id": "map-docs-getdbt-com-docs-dbt",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/docs/dbt/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/docs/dbt/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/dbt/about-dbt-install,https://docs.getdbt.com/docs/dbt/adbc,https://docs.getdbt.com/docs/dbt/dbt-availability,https://docs.getdbt.com/docs/dbt/dbt-readiness,https://docs.getdbt.com/docs/dbt/dbt-releases,https://docs.getdbt.com/docs/dbt/get-started-dbt,https://docs.getdbt.com/docs/dbt/supported-features,https://docs.getdbt.com/docs/dbt/vs-compare-changes"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-docs-dbt",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/docs/dbt/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/docs/dbt/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/dbt/about-dbt-install,https://docs.getdbt.com/docs/dbt/adbc,https://docs.getdbt.com/docs/dbt/dbt-availability,https://docs.getdbt.com/docs/dbt/dbt-readiness,https://docs.getdbt.com/docs/dbt/dbt-releases,https://docs.getdbt.com/docs/dbt/get-started-dbt,https://docs.getdbt.com/docs/dbt/supported-features,https://docs.getdbt.com/docs/dbt/vs-compare-changes"
+  },
+  {
+    "id": "map-docs-getdbt-com-blog-page",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/blog/page/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/blog/page/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/blog/page/2,https://docs.getdbt.com/blog/page/3,https://docs.getdbt.com/blog/page/4,https://docs.getdbt.com/blog/page/5,https://docs.getdbt.com/blog/page/6,https://docs.getdbt.com/blog/page/7"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-blog-page",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/blog/page/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/blog/page/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/blog/page/2,https://docs.getdbt.com/blog/page/3,https://docs.getdbt.com/blog/page/4,https://docs.getdbt.com/blog/page/5,https://docs.getdbt.com/blog/page/6,https://docs.getdbt.com/blog/page/7"
+  },
+  {
+    "id": "map-docs-getdbt-com-docs-mesh",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/docs/mesh/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/docs/mesh/; sitemap=7, crawl=0; extra=; missing=https://docs.getdbt.com/docs/mesh/about-mesh,https://docs.getdbt.com/docs/mesh/cross-platform-mesh,https://docs.getdbt.com/docs/mesh/govern/about-model-governance,https://docs.getdbt.com/docs/mesh/govern/model-access,https://docs.getdbt.com/docs/mesh/govern/model-contracts,https://docs.getdbt.com/docs/mesh/govern/model-versions,https://docs.getdbt.com/docs/mesh/govern/project-dependencies"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-docs-mesh",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/docs/mesh/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/docs/mesh/; sitemap=7, crawl=0; extra=; missing=https://docs.getdbt.com/docs/mesh/about-mesh,https://docs.getdbt.com/docs/mesh/cross-platform-mesh,https://docs.getdbt.com/docs/mesh/govern/about-model-governance,https://docs.getdbt.com/docs/mesh/govern/model-access,https://docs.getdbt.com/docs/mesh/govern/model-contracts,https://docs.getdbt.com/docs/mesh/govern/model-versions,https://docs.getdbt.com/docs/mesh/govern/project-dependencies"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-core",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Core/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Core/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Core/install-pip-best-practices.md,https://docs.getdbt.com/faqs/Core/install-pip-os-prereqs.md,https://docs.getdbt.com/faqs/Core/install-python-compatibility"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-core",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Core/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Core/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Core/install-pip-best-practices.md,https://docs.getdbt.com/faqs/Core/install-pip-os-prereqs.md,https://docs.getdbt.com/faqs/Core/install-python-compatibility"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-docs",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Docs/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Docs/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Docs/document-all-columns,https://docs.getdbt.com/faqs/Docs/document-other-resources,https://docs.getdbt.com/faqs/Docs/documenting-macros,https://docs.getdbt.com/faqs/Docs/long-descriptions,https://docs.getdbt.com/faqs/Docs/modify-owner-column,https://docs.getdbt.com/faqs/Docs/sharing-documentation"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-docs",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Docs/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Docs/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Docs/document-all-columns,https://docs.getdbt.com/faqs/Docs/document-other-resources,https://docs.getdbt.com/faqs/Docs/documenting-macros,https://docs.getdbt.com/faqs/Docs/long-descriptions,https://docs.getdbt.com/faqs/Docs/modify-owner-column,https://docs.getdbt.com/faqs/Docs/sharing-documentation"
+  },
+  {
+    "id": "map-docs-marimo-io-examples-running-cells",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.marimo.io/sitemap.xml",
+      "scope": "https://docs.marimo.io/examples/running_cells/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.marimo.io/examples/running_cells/; sitemap=9, crawl=0; extra=; missing=https://docs.marimo.io/examples/running_cells/async_await/,https://docs.marimo.io/examples/running_cells/basics/,https://docs.marimo.io/examples/running_cells/debugging/,https://docs.marimo.io/examples/running_cells/memory_cache/,https://docs.marimo.io/examples/running_cells/multiple_definitions/,https://docs.marimo.io/examples/running_cells/persistent_cache/,https://docs.marimo.io/examples/running_cells/refresh/,https://docs.marimo.io/examples/running_cells/run_button/,https://docs.marimo.io/examples/running_cells/stop/"
+  },
+  {
+    "id": "crawl-docs-marimo-io-examples-running-cells",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.marimo.io/sitemap.xml",
+      "scope": "https://docs.marimo.io/examples/running_cells/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.marimo.io/examples/running_cells/; sitemap=9, crawl=0; extra=; missing=https://docs.marimo.io/examples/running_cells/async_await/,https://docs.marimo.io/examples/running_cells/basics/,https://docs.marimo.io/examples/running_cells/debugging/,https://docs.marimo.io/examples/running_cells/memory_cache/,https://docs.marimo.io/examples/running_cells/multiple_definitions/,https://docs.marimo.io/examples/running_cells/persistent_cache/,https://docs.marimo.io/examples/running_cells/refresh/,https://docs.marimo.io/examples/running_cells/run_button/,https://docs.marimo.io/examples/running_cells/stop/"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-runs",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Runs/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Runs/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Runs/checking-logs,https://docs.getdbt.com/faqs/Runs/failed-prod-run,https://docs.getdbt.com/faqs/Runs/failed-tests,https://docs.getdbt.com/faqs/Runs/run-downstream-of-seed,https://docs.getdbt.com/faqs/Runs/run-one-model,https://docs.getdbt.com/faqs/Runs/run-one-snapshot,https://docs.getdbt.com/faqs/Runs/running-model-downstream-of-source,https://docs.getdbt.com/faqs/Runs/snapshot-frequency,https://docs.getdbt.com/faqs/Runs/what-happened-to-sao"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-runs",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Runs/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Runs/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Runs/checking-logs,https://docs.getdbt.com/faqs/Runs/failed-prod-run,https://docs.getdbt.com/faqs/Runs/failed-tests,https://docs.getdbt.com/faqs/Runs/run-downstream-of-seed,https://docs.getdbt.com/faqs/Runs/run-one-model,https://docs.getdbt.com/faqs/Runs/run-one-snapshot,https://docs.getdbt.com/faqs/Runs/running-model-downstream-of-source,https://docs.getdbt.com/faqs/Runs/snapshot-frequency,https://docs.getdbt.com/faqs/Runs/what-happened-to-sao"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-jinja",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Jinja/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Jinja/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Jinja/jinja-whitespace,https://docs.getdbt.com/faqs/Jinja/quoting-column-names,https://docs.getdbt.com/faqs/Jinja/which-jinja-docs"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-jinja",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Jinja/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Jinja/; sitemap=3, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Jinja/jinja-whitespace,https://docs.getdbt.com/faqs/Jinja/quoting-column-names,https://docs.getdbt.com/faqs/Jinja/which-jinja-docs"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-seeds",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Seeds/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Seeds/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Seeds/build-one-seed,https://docs.getdbt.com/faqs/Seeds/configurable-data-path,https://docs.getdbt.com/faqs/Seeds/full-refresh-seed,https://docs.getdbt.com/faqs/Seeds/leading-zeros-in-seed,https://docs.getdbt.com/faqs/Seeds/load-raw-data-with-seed,https://docs.getdbt.com/faqs/Seeds/seed-custom-schemas,https://docs.getdbt.com/faqs/Seeds/seed-datatypes,https://docs.getdbt.com/faqs/Seeds/seed-hooks"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-seeds",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Seeds/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Seeds/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Seeds/build-one-seed,https://docs.getdbt.com/faqs/Seeds/configurable-data-path,https://docs.getdbt.com/faqs/Seeds/full-refresh-seed,https://docs.getdbt.com/faqs/Seeds/leading-zeros-in-seed,https://docs.getdbt.com/faqs/Seeds/load-raw-data-with-seed,https://docs.getdbt.com/faqs/Seeds/seed-custom-schemas,https://docs.getdbt.com/faqs/Seeds/seed-datatypes,https://docs.getdbt.com/faqs/Seeds/seed-hooks"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-state",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/State/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/State/; sitemap=10, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/State/data-storage,https://docs.getdbt.com/faqs/State/incremental-models,https://docs.getdbt.com/faqs/State/last-updated-timestamp,https://docs.getdbt.com/faqs/State/model-change-calculation,https://docs.getdbt.com/faqs/State/multiple-projects,https://docs.getdbt.com/faqs/State/non-prod-environment,https://docs.getdbt.com/faqs/State/python-models,https://docs.getdbt.com/faqs/State/server-failure,https://docs.getdbt.com/faqs/State/state-modified-difference,https://docs.getdbt.com/faqs/State/views-rebuilt"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-state",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/State/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/State/; sitemap=10, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/State/data-storage,https://docs.getdbt.com/faqs/State/incremental-models,https://docs.getdbt.com/faqs/State/last-updated-timestamp,https://docs.getdbt.com/faqs/State/model-change-calculation,https://docs.getdbt.com/faqs/State/multiple-projects,https://docs.getdbt.com/faqs/State/non-prod-environment,https://docs.getdbt.com/faqs/State/python-models,https://docs.getdbt.com/faqs/State/server-failure,https://docs.getdbt.com/faqs/State/state-modified-difference,https://docs.getdbt.com/faqs/State/views-rebuilt"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-tests",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Tests/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Tests/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Tests/available-tests,https://docs.getdbt.com/faqs/Tests/configurable-data-test-path,https://docs.getdbt.com/faqs/Tests/custom-test-thresholds,https://docs.getdbt.com/faqs/Tests/recommended-tests,https://docs.getdbt.com/faqs/Tests/test-one-model,https://docs.getdbt.com/faqs/Tests/testing-seeds,https://docs.getdbt.com/faqs/Tests/testing-sources,https://docs.getdbt.com/faqs/Tests/uniqueness-two-columns,https://docs.getdbt.com/faqs/Tests/when-to-test"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-tests",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Tests/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Tests/; sitemap=9, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Tests/available-tests,https://docs.getdbt.com/faqs/Tests/configurable-data-test-path,https://docs.getdbt.com/faqs/Tests/custom-test-thresholds,https://docs.getdbt.com/faqs/Tests/recommended-tests,https://docs.getdbt.com/faqs/Tests/test-one-model,https://docs.getdbt.com/faqs/Tests/testing-seeds,https://docs.getdbt.com/faqs/Tests/testing-sources,https://docs.getdbt.com/faqs/Tests/uniqueness-two-columns,https://docs.getdbt.com/faqs/Tests/when-to-test"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-snapshots",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Snapshots/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Snapshots/; sitemap=4, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Snapshots/snapshot-hooks,https://docs.getdbt.com/faqs/Snapshots/snapshot-schema-changes,https://docs.getdbt.com/faqs/Snapshots/snapshot-target-is-not-a-snapshot-table,https://docs.getdbt.com/faqs/Snapshots/snapshotting-freshness-for-one-source"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-snapshots",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Snapshots/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Snapshots/; sitemap=4, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Snapshots/snapshot-hooks,https://docs.getdbt.com/faqs/Snapshots/snapshot-schema-changes,https://docs.getdbt.com/faqs/Snapshots/snapshot-target-is-not-a-snapshot-table,https://docs.getdbt.com/faqs/Snapshots/snapshotting-freshness-for-one-source"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-warehouse",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Warehouse/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Warehouse/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-setup,https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-why,https://docs.getdbt.com/faqs/Warehouse/bq-oauth-drive-scope,https://docs.getdbt.com/faqs/Warehouse/connecting-to-two-dbs-not-allowed,https://docs.getdbt.com/faqs/Warehouse/database-privileges,https://docs.getdbt.com/faqs/Warehouse/db-connection-dbt-compile,https://docs.getdbt.com/faqs/Warehouse/loading-data,https://docs.getdbt.com/faqs/Warehouse/sample-profiles"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-warehouse",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Warehouse/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Warehouse/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-setup,https://docs.getdbt.com/faqs/Warehouse/bq-impersonate-service-account-why,https://docs.getdbt.com/faqs/Warehouse/bq-oauth-drive-scope,https://docs.getdbt.com/faqs/Warehouse/connecting-to-two-dbs-not-allowed,https://docs.getdbt.com/faqs/Warehouse/database-privileges,https://docs.getdbt.com/faqs/Warehouse/db-connection-dbt-compile,https://docs.getdbt.com/faqs/Warehouse/loading-data,https://docs.getdbt.com/faqs/Warehouse/sample-profiles"
+  },
+  {
+    "id": "map-docs-getdbt-com-faqs-environments",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Environments/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Environments/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Environments/custom-branch-settings,https://docs.getdbt.com/faqs/Environments/delete-environment-job,https://docs.getdbt.com/faqs/Environments/diff-database-environment,https://docs.getdbt.com/faqs/Environments/profile-env-vars,https://docs.getdbt.com/faqs/Environments/profile-name,https://docs.getdbt.com/faqs/Environments/target-names"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-faqs-environments",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/faqs/Environments/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/faqs/Environments/; sitemap=6, crawl=0; extra=; missing=https://docs.getdbt.com/faqs/Environments/custom-branch-settings,https://docs.getdbt.com/faqs/Environments/delete-environment-job,https://docs.getdbt.com/faqs/Environments/diff-database-environment,https://docs.getdbt.com/faqs/Environments/profile-env-vars,https://docs.getdbt.com/faqs/Environments/profile-name,https://docs.getdbt.com/faqs/Environments/target-names"
+  },
+  {
+    "id": "map-docs-getdbt-com-docs-build-iceberg",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/docs/build/iceberg/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/docs/build/iceberg/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/build/iceberg/about-catalogs,https://docs.getdbt.com/docs/build/iceberg/adapters/aws-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/bigquery-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/databricks-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/duckdb-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/snowflake-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/apache-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/catalogs-yml"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-docs-build-iceberg",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/docs/build/iceberg/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/docs/build/iceberg/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/docs/build/iceberg/about-catalogs,https://docs.getdbt.com/docs/build/iceberg/adapters/aws-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/bigquery-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/databricks-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/duckdb-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/adapters/snowflake-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/apache-iceberg-support,https://docs.getdbt.com/docs/build/iceberg/catalogs-yml"
+  },
+  {
+    "id": "map-docs-getdbt-com-reference-artifacts",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/reference/artifacts/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/reference/artifacts/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/reference/artifacts/catalog-json,https://docs.getdbt.com/reference/artifacts/dbt-artifacts,https://docs.getdbt.com/reference/artifacts/freshness-json,https://docs.getdbt.com/reference/artifacts/manifest-json,https://docs.getdbt.com/reference/artifacts/other-artifacts,https://docs.getdbt.com/reference/artifacts/run-results-json,https://docs.getdbt.com/reference/artifacts/sl-manifest,https://docs.getdbt.com/reference/artifacts/sources-json"
+  },
+  {
+    "id": "crawl-docs-getdbt-com-reference-artifacts",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.getdbt.com/sitemap.xml",
+      "scope": "https://docs.getdbt.com/reference/artifacts/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.getdbt.com/reference/artifacts/; sitemap=8, crawl=0; extra=; missing=https://docs.getdbt.com/reference/artifacts/catalog-json,https://docs.getdbt.com/reference/artifacts/dbt-artifacts,https://docs.getdbt.com/reference/artifacts/freshness-json,https://docs.getdbt.com/reference/artifacts/manifest-json,https://docs.getdbt.com/reference/artifacts/other-artifacts,https://docs.getdbt.com/reference/artifacts/run-results-json,https://docs.getdbt.com/reference/artifacts/sl-manifest,https://docs.getdbt.com/reference/artifacts/sources-json"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-2024",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2024/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2024/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/2024/02/11/file-magic-with-the-python-standard-library/,https://textual.textualize.io/blog/2024/02/20/remote-memory-profiling-with-memray/,https://textual.textualize.io/blog/2024/04/20/behind-the-curtain-of-inline-terminal-applications/,https://textual.textualize.io/blog/2024/09/08/towards-textual-web-applications/,https://textual.textualize.io/blog/2024/09/15/anatomy-of-a-textual-user-interface/,https://textual.textualize.io/blog/2024/12/12/algorithms-for-high-performance-terminal-apps/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-2024",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2024/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2024/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/2024/02/11/file-magic-with-the-python-standard-library/,https://textual.textualize.io/blog/2024/02/20/remote-memory-profiling-with-memray/,https://textual.textualize.io/blog/2024/04/20/behind-the-curtain-of-inline-terminal-applications/,https://textual.textualize.io/blog/2024/09/08/towards-textual-web-applications/,https://textual.textualize.io/blog/2024/09/15/anatomy-of-a-textual-user-interface/,https://textual.textualize.io/blog/2024/12/12/algorithms-for-high-performance-terminal-apps/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-page",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/page/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/page/; sitemap=4, crawl=0; extra=; missing=https://textual.textualize.io/blog/page/2/,https://textual.textualize.io/blog/page/3/,https://textual.textualize.io/blog/page/4/,https://textual.textualize.io/blog/page/5/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-page",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/page/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/page/; sitemap=4, crawl=0; extra=; missing=https://textual.textualize.io/blog/page/2/,https://textual.textualize.io/blog/page/3/,https://textual.textualize.io/blog/page/4/,https://textual.textualize.io/blog/page/5/"
+  },
+  {
+    "id": "map-pydantic-dev-docs-ai-api-ui",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/api/ui/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/ai/api/ui/; sitemap=3, crawl=0; extra=; missing=https://pydantic.dev/docs/ai/api/ui/ag_ui/,https://pydantic.dev/docs/ai/api/ui/base/,https://pydantic.dev/docs/ai/api/ui/vercel_ai/"
+  },
+  {
+    "id": "crawl-pydantic-dev-docs-ai-api-ui",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/api/ui/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/ai/api/ui/; sitemap=3, crawl=0; extra=; missing=https://pydantic.dev/docs/ai/api/ui/ag_ui/,https://pydantic.dev/docs/ai/api/ui/base/,https://pydantic.dev/docs/ai/api/ui/vercel_ai/"
+  },
+  {
+    "id": "map-pydantic-dev-docs-ai-guides",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/guides/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/ai/guides/; sitemap=6, crawl=0; extra=; missing=https://pydantic.dev/docs/ai/guides/embeddings/,https://pydantic.dev/docs/ai/guides/extensibility/,https://pydantic.dev/docs/ai/guides/image-generation/,https://pydantic.dev/docs/ai/guides/multi-agent-applications/,https://pydantic.dev/docs/ai/guides/testing/,https://pydantic.dev/docs/ai/guides/web/"
+  },
+  {
+    "id": "crawl-pydantic-dev-docs-ai-guides",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/guides/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/ai/guides/; sitemap=6, crawl=0; extra=; missing=https://pydantic.dev/docs/ai/guides/embeddings/,https://pydantic.dev/docs/ai/guides/extensibility/,https://pydantic.dev/docs/ai/guides/image-generation/,https://pydantic.dev/docs/ai/guides/multi-agent-applications/,https://pydantic.dev/docs/ai/guides/testing/,https://pydantic.dev/docs/ai/guides/web/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-2022-11",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2022/11/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2022/11/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/2022/11/06/new-blog/,https://textual.textualize.io/blog/2022/11/08/version-040/,https://textual.textualize.io/blog/2022/11/20/stealing-open-source-code-from-textual/,https://textual.textualize.io/blog/2022/11/22/what-i-learned-from-my-first-non-trivial-pr/,https://textual.textualize.io/blog/2022/11/24/spinners-and-progress-bars-in-textual/,https://textual.textualize.io/blog/2022/11/26/on-dog-food-the-original-metaverse-and-not-being-bored/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-2022-11",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2022/11/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2022/11/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/2022/11/06/new-blog/,https://textual.textualize.io/blog/2022/11/08/version-040/,https://textual.textualize.io/blog/2022/11/20/stealing-open-source-code-from-textual/,https://textual.textualize.io/blog/2022/11/22/what-i-learned-from-my-first-non-trivial-pr/,https://textual.textualize.io/blog/2022/11/24/spinners-and-progress-bars-in-textual/,https://textual.textualize.io/blog/2022/11/26/on-dog-food-the-original-metaverse-and-not-being-bored/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-2022-12",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2022/12/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2022/12/; sitemap=5, crawl=0; extra=; missing=https://textual.textualize.io/blog/2022/12/07/letting-your-cook-multitask-while-bringing-water-to-a-boil/,https://textual.textualize.io/blog/2022/12/08/be-the-keymaster/,https://textual.textualize.io/blog/2022/12/11/version-060/,https://textual.textualize.io/blog/2022/12/20/a-year-of-building-for-the-terminal/,https://textual.textualize.io/blog/2022/12/30/a-better-asyncio-sleep-for-windows-to-fix-animation/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-2022-12",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2022/12/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2022/12/; sitemap=5, crawl=0; extra=; missing=https://textual.textualize.io/blog/2022/12/07/letting-your-cook-multitask-while-bringing-water-to-a-boil/,https://textual.textualize.io/blog/2022/12/08/be-the-keymaster/,https://textual.textualize.io/blog/2022/12/11/version-060/,https://textual.textualize.io/blog/2022/12/20/a-year-of-building-for-the-terminal/,https://textual.textualize.io/blog/2022/12/30/a-better-asyncio-sleep-for-windows-to-fix-animation/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-2023-02",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/02/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/02/; sitemap=3, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/02/11/the-heisenbug-lurking-in-your-async-code/,https://textual.textualize.io/blog/2023/02/15/textual-0110-adds-a-beautiful-markdown-widget/,https://textual.textualize.io/blog/2023/02/24/textual-0120-adds-syntactical-sugar-and-batch-updates/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-2023-02",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/02/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/02/; sitemap=3, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/02/11/the-heisenbug-lurking-in-your-async-code/,https://textual.textualize.io/blog/2023/02/15/textual-0110-adds-a-beautiful-markdown-widget/,https://textual.textualize.io/blog/2023/02/24/textual-0120-adds-syntactical-sugar-and-batch-updates/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-2023-03",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/03/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/03/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/03/08/overhead-of-python-asyncio-tasks/,https://textual.textualize.io/blog/2023/03/09/textual-0140-shakes-up-posting-messages/,https://textual.textualize.io/blog/2023/03/13/textual-0150-adds-a-tabs-widget/,https://textual.textualize.io/blog/2023/03/15/no-async-async-with-python/,https://textual.textualize.io/blog/2023/03/22/textual-0160-adds-tabbedcontent-and-border-titles/,https://textual.textualize.io/blog/2023/03/29/textual-0170-adds-translucent-screens-and-option-list/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-2023-03",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/03/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/03/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/03/08/overhead-of-python-asyncio-tasks/,https://textual.textualize.io/blog/2023/03/09/textual-0140-shakes-up-posting-messages/,https://textual.textualize.io/blog/2023/03/13/textual-0150-adds-a-tabs-widget/,https://textual.textualize.io/blog/2023/03/15/no-async-async-with-python/,https://textual.textualize.io/blog/2023/03/22/textual-0160-adds-tabbedcontent-and-border-titles/,https://textual.textualize.io/blog/2023/03/29/textual-0170-adds-translucent-screens-and-option-list/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-2023-07",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/07/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/07/; sitemap=4, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/07/03/textual-0290-refactors-dev-tools/,https://textual.textualize.io/blog/2023/07/17/textual-0300-adds-desktop-style-notifications/,https://textual.textualize.io/blog/2023/07/27/using-rich-inspect-to-interrogate-python-objects/,https://textual.textualize.io/blog/2023/07/29/pull-requests-are-cake-or-puppies/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-2023-07",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/07/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/07/; sitemap=4, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/07/03/textual-0290-refactors-dev-tools/,https://textual.textualize.io/blog/2023/07/17/textual-0300-adds-desktop-style-notifications/,https://textual.textualize.io/blog/2023/07/27/using-rich-inspect-to-interrogate-python-objects/,https://textual.textualize.io/blog/2023/07/29/pull-requests-are-cake-or-puppies/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-2023-09",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/09/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/09/; sitemap=4, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/09/06/what-is-textual-web/,https://textual.textualize.io/blog/2023/09/15/textual-0370-adds-a-command-palette/,https://textual.textualize.io/blog/2023/09/18/things-i-learned-while-building-textuals-textarea/,https://textual.textualize.io/blog/2023/09/21/textual-0380-adds-a-syntax-aware-textarea/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-2023-09",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/2023/09/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/2023/09/; sitemap=4, crawl=0; extra=; missing=https://textual.textualize.io/blog/2023/09/06/what-is-textual-web/,https://textual.textualize.io/blog/2023/09/15/textual-0370-adds-a-command-palette/,https://textual.textualize.io/blog/2023/09/18/things-i-learned-while-building-textuals-textarea/,https://textual.textualize.io/blog/2023/09/21/textual-0380-adds-a-syntax-aware-textarea/"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-archive",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/archive/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/archive/; sitemap=7, crawl=0; extra=; missing=https://textual.textualize.io/blog/archive/2022/,https://textual.textualize.io/blog/archive/2022/page/2/,https://textual.textualize.io/blog/archive/2023/,https://textual.textualize.io/blog/archive/2023/page/2/,https://textual.textualize.io/blog/archive/2023/page/3/,https://textual.textualize.io/blog/archive/2024/,https://textual.textualize.io/blog/archive/2025/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-archive",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/archive/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/archive/; sitemap=7, crawl=0; extra=; missing=https://textual.textualize.io/blog/archive/2022/,https://textual.textualize.io/blog/archive/2022/page/2/,https://textual.textualize.io/blog/archive/2023/,https://textual.textualize.io/blog/archive/2023/page/2/,https://textual.textualize.io/blog/archive/2023/page/3/,https://textual.textualize.io/blog/archive/2024/,https://textual.textualize.io/blog/archive/2025/"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-core-introduction",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/introduction/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/introduction/; sitemap=4, crawl=3; extra=https://docs.greatexpectations.io/docs/core/introduction/gx_overview/,https://docs.greatexpectations.io/docs/core/introduction/try_gx/; missing=https://docs.greatexpectations.io/docs/core/introduction/community_resources,https://docs.greatexpectations.io/docs/core/introduction/gx_overview,https://docs.greatexpectations.io/docs/core/introduction/try_gx"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-core-introduction",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/introduction/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/introduction/; sitemap=4, crawl=3; extra=https://docs.greatexpectations.io/docs/core/introduction/gx_overview/,https://docs.greatexpectations.io/docs/core/introduction/try_gx/; missing=https://docs.greatexpectations.io/docs/core/introduction/community_resources,https://docs.greatexpectations.io/docs/core/introduction/gx_overview,https://docs.greatexpectations.io/docs/core/introduction/try_gx"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-0-18-cloud-connect",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/cloud/connect/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/0.18/cloud/connect/; sitemap=5, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_airflow,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_lp,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_postgresql,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_python,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_snowflake"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-0-18-cloud-connect",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/cloud/connect/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/0.18/cloud/connect/; sitemap=5, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_airflow,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_lp,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_postgresql,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_python,https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_snowflake"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-reference-api-core",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/core/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/core/; sitemap=6, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/core/ExpectationSuiteValidationResult_class,https://docs.greatexpectations.io/docs/reference/api/core/ExpectationValidationResult_class,https://docs.greatexpectations.io/docs/reference/api/core/batch_definition/BatchDefinition_class,https://docs.greatexpectations.io/docs/reference/api/core/factory/CheckpointFactory_class,https://docs.greatexpectations.io/docs/reference/api/core/factory/SuiteFactory_class,https://docs.greatexpectations.io/docs/reference/api/core/factory/ValidationDefinitionFactory_class"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-reference-api-core",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/core/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/core/; sitemap=6, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/core/ExpectationSuiteValidationResult_class,https://docs.greatexpectations.io/docs/reference/api/core/ExpectationValidationResult_class,https://docs.greatexpectations.io/docs/reference/api/core/batch_definition/BatchDefinition_class,https://docs.greatexpectations.io/docs/reference/api/core/factory/CheckpointFactory_class,https://docs.greatexpectations.io/docs/reference/api/core/factory/SuiteFactory_class,https://docs.greatexpectations.io/docs/reference/api/core/factory/ValidationDefinitionFactory_class"
+  },
+  {
+    "id": "map-textual-textualize-io-blog-category",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/category/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/category/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/category/devlog/,https://textual.textualize.io/blog/category/devlog/page/2/,https://textual.textualize.io/blog/category/devlog/page/3/,https://textual.textualize.io/blog/category/news/,https://textual.textualize.io/blog/category/release/,https://textual.textualize.io/blog/category/release/page/2/"
+  },
+  {
+    "id": "crawl-textual-textualize-io-blog-category",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://textual.textualize.io/sitemap.xml",
+      "scope": "https://textual.textualize.io/blog/category/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://textual.textualize.io/blog/category/; sitemap=6, crawl=0; extra=; missing=https://textual.textualize.io/blog/category/devlog/,https://textual.textualize.io/blog/category/devlog/page/2/,https://textual.textualize.io/blog/category/devlog/page/3/,https://textual.textualize.io/blog/category/news/,https://textual.textualize.io/blog/category/release/,https://textual.textualize.io/blog/category/release/page/2/"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-core-run-validations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/run_validations/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/run_validations/; sitemap=4, crawl=4; extra=https://docs.greatexpectations.io/docs/core/run_validations/create_a_validation_definition/,https://docs.greatexpectations.io/docs/core/run_validations/retrieve_all_unexpected_rows/,https://docs.greatexpectations.io/docs/core/run_validations/run_a_validation_definition/; missing=https://docs.greatexpectations.io/docs/core/run_validations/create_a_validation_definition,https://docs.greatexpectations.io/docs/core/run_validations/retrieve_all_unexpected_rows,https://docs.greatexpectations.io/docs/core/run_validations/run_a_validation_definition"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-core-run-validations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/run_validations/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/run_validations/; sitemap=4, crawl=4; extra=https://docs.greatexpectations.io/docs/core/run_validations/create_a_validation_definition/,https://docs.greatexpectations.io/docs/core/run_validations/retrieve_all_unexpected_rows/,https://docs.greatexpectations.io/docs/core/run_validations/run_a_validation_definition/; missing=https://docs.greatexpectations.io/docs/core/run_validations/create_a_validation_definition,https://docs.greatexpectations.io/docs/core/run_validations/retrieve_all_unexpected_rows,https://docs.greatexpectations.io/docs/core/run_validations/run_a_validation_definition"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-0-18-oss-contributing",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/oss/contributing/",
+      "track": "map"
+    },
+    "reason": "Redirect left crawl scope: https://docs.greatexpectations.io/docs/0.18/core/introduction/introduction/"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-0-18-oss-contributing",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/oss/contributing/",
+      "track": "crawl"
+    },
+    "reason": "Redirect left crawl scope: https://docs.greatexpectations.io/docs/0.18/core/introduction/introduction/"
+  },
+  {
+    "id": "map-pydantic-dev-docs-monty-api-rust",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/monty/api/rust/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/monty/api/rust/; sitemap=6, crawl=0; extra=; missing=https://pydantic.dev/docs/monty/api/rust/monty-fs/,https://pydantic.dev/docs/monty/api/rust/monty-pool/,https://pydantic.dev/docs/monty/api/rust/monty-proto/,https://pydantic.dev/docs/monty/api/rust/monty-type-checking/,https://pydantic.dev/docs/monty/api/rust/monty-types/,https://pydantic.dev/docs/monty/api/rust/monty/"
+  },
+  {
+    "id": "crawl-pydantic-dev-docs-monty-api-rust",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/monty/api/rust/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/monty/api/rust/; sitemap=6, crawl=0; extra=; missing=https://pydantic.dev/docs/monty/api/rust/monty-fs/,https://pydantic.dev/docs/monty/api/rust/monty-pool/,https://pydantic.dev/docs/monty/api/rust/monty-proto/,https://pydantic.dev/docs/monty/api/rust/monty-type-checking/,https://pydantic.dev/docs/monty/api/rust/monty-types/,https://pydantic.dev/docs/monty/api/rust/monty/"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-core-define-expectations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/define_expectations/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/define_expectations/; sitemap=5, crawl=5; extra=https://docs.greatexpectations.io/docs/core/define_expectations/create_an_expectation/,https://docs.greatexpectations.io/docs/core/define_expectations/organize_expectation_suites/,https://docs.greatexpectations.io/docs/core/define_expectations/retrieve_a_batch_of_test_data/,https://docs.greatexpectations.io/docs/core/define_expectations/test_an_expectation/; missing=https://docs.greatexpectations.io/docs/core/define_expectations/create_an_expectation,https://docs.greatexpectations.io/docs/core/define_expectations/organize_expectation_suites,https://docs.greatexpectations.io/docs/core/define_expectations/retrieve_a_batch_of_test_data,https://docs.greatexpectations.io/docs/core/define_expectations/test_an_expectation"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-core-define-expectations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/define_expectations/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/define_expectations/; sitemap=5, crawl=5; extra=https://docs.greatexpectations.io/docs/core/define_expectations/create_an_expectation/,https://docs.greatexpectations.io/docs/core/define_expectations/organize_expectation_suites/,https://docs.greatexpectations.io/docs/core/define_expectations/retrieve_a_batch_of_test_data/,https://docs.greatexpectations.io/docs/core/define_expectations/test_an_expectation/; missing=https://docs.greatexpectations.io/docs/core/define_expectations/create_an_expectation,https://docs.greatexpectations.io/docs/core/define_expectations/organize_expectation_suites,https://docs.greatexpectations.io/docs/core/define_expectations/retrieve_a_batch_of_test_data,https://docs.greatexpectations.io/docs/core/define_expectations/test_an_expectation"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-reference-api-checkpoint",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/checkpoint/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/checkpoint/; sitemap=7, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/checkpoint/ActionContext_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/CheckpointResult_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/EmailAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/MicrosoftTeamsNotificationAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/SlackNotificationAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/UpdateDataDocsAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/ValidationAction_class"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-reference-api-checkpoint",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/checkpoint/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/checkpoint/; sitemap=7, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/checkpoint/ActionContext_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/CheckpointResult_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/EmailAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/MicrosoftTeamsNotificationAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/SlackNotificationAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/UpdateDataDocsAction_class,https://docs.greatexpectations.io/docs/reference/api/checkpoint/ValidationAction_class"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-0-18-reference-api-render",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/reference/api/render/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/0.18/reference/api/render/; sitemap=5, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/0.18/reference/api/render/CollapseContent_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/RenderedStringTemplateContent_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/RenderedTableContent_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/renderer/renderer/Renderer_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/util"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-0-18-reference-api-render",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/reference/api/render/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/0.18/reference/api/render/; sitemap=5, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/0.18/reference/api/render/CollapseContent_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/RenderedStringTemplateContent_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/RenderedTableContent_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/renderer/renderer/Renderer_class,https://docs.greatexpectations.io/docs/0.18/reference/api/render/util"
+  },
+  {
+    "id": "map-pydantic-dev-docs-ai-api-realtime",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/api/realtime/",
+      "track": "map"
+    },
+    "reason": "Redirect left crawl scope: https://pydantic.dev/docs/ai/api/pydantic-ai/realtime/"
+  },
+  {
+    "id": "crawl-pydantic-dev-docs-ai-api-realtime",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/api/realtime/",
+      "track": "crawl"
+    },
+    "reason": "Redirect left crawl scope: https://pydantic.dev/docs/ai/api/pydantic-ai/realtime/"
+  },
+  {
+    "id": "map-pydantic-dev-docs-ai-evals-how-to",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/evals/how-to/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/ai/evals/how-to/; sitemap=8, crawl=0; extra=; missing=https://pydantic.dev/docs/ai/evals/how-to/concurrency/,https://pydantic.dev/docs/ai/evals/how-to/dataset-management/,https://pydantic.dev/docs/ai/evals/how-to/dataset-serialization/,https://pydantic.dev/docs/ai/evals/how-to/lifecycle/,https://pydantic.dev/docs/ai/evals/how-to/logfire-integration/,https://pydantic.dev/docs/ai/evals/how-to/metrics-attributes/,https://pydantic.dev/docs/ai/evals/how-to/multi-run/,https://pydantic.dev/docs/ai/evals/how-to/retry-strategies/"
+  },
+  {
+    "id": "crawl-pydantic-dev-docs-ai-evals-how-to",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/ai/evals/how-to/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/ai/evals/how-to/; sitemap=8, crawl=0; extra=; missing=https://pydantic.dev/docs/ai/evals/how-to/concurrency/,https://pydantic.dev/docs/ai/evals/how-to/dataset-management/,https://pydantic.dev/docs/ai/evals/how-to/dataset-serialization/,https://pydantic.dev/docs/ai/evals/how-to/lifecycle/,https://pydantic.dev/docs/ai/evals/how-to/logfire-integration/,https://pydantic.dev/docs/ai/evals/how-to/metrics-attributes/,https://pydantic.dev/docs/ai/evals/how-to/multi-run/,https://pydantic.dev/docs/ai/evals/how-to/retry-strategies/"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-reference-api-data-context",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/data_context/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/data_context/; sitemap=10, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/data_context/AbstractDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/CloudDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/EphemeralDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/FileDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/data_context/context_factory,https://docs.greatexpectations.io/docs/reference/api/data_context/data_context_variables/DataContextVariables_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/base/DataContextConfig_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/base/FilesystemStoreBackendDefaults_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/base/InMemoryStoreBackendDefaults_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/resource_identifiers/ValidationResultIdentifier_class"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-reference-api-data-context",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/data_context/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/data_context/; sitemap=10, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/data_context/AbstractDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/CloudDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/EphemeralDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/FileDataContext_class,https://docs.greatexpectations.io/docs/reference/api/data_context/data_context/context_factory,https://docs.greatexpectations.io/docs/reference/api/data_context/data_context_variables/DataContextVariables_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/base/DataContextConfig_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/base/FilesystemStoreBackendDefaults_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/base/InMemoryStoreBackendDefaults_class,https://docs.greatexpectations.io/docs/reference/api/data_context/types/resource_identifiers/ValidationResultIdentifier_class"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-reference-api-expectations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/expectations/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/expectations/; sitemap=6, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/expectations/Expectation_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/AndCondition_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/Column_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/ComparisonCondition_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/NullityCondition_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/OrCondition_class"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-reference-api-expectations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/api/expectations/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/reference/api/expectations/; sitemap=6, crawl=0; extra=; missing=https://docs.greatexpectations.io/docs/reference/api/expectations/Expectation_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/AndCondition_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/Column_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/ComparisonCondition_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/NullityCondition_class,https://docs.greatexpectations.io/docs/reference/api/expectations/row_conditions/OrCondition_class"
+  },
+  {
+    "id": "map-pydantic-dev-docs-logfire-migrate",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/logfire/migrate/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/logfire/migrate/; sitemap=9, crawl=0; extra=; missing=https://pydantic.dev/docs/logfire/migrate/aws/,https://pydantic.dev/docs/logfire/migrate/datadog/,https://pydantic.dev/docs/logfire/migrate/dynatrace/,https://pydantic.dev/docs/logfire/migrate/elastic/,https://pydantic.dev/docs/logfire/migrate/grafana/,https://pydantic.dev/docs/logfire/migrate/honeycomb/,https://pydantic.dev/docs/logfire/migrate/new-relic/,https://pydantic.dev/docs/logfire/migrate/overview/,https://pydantic.dev/docs/logfire/migrate/splunk/"
+  },
+  {
+    "id": "crawl-pydantic-dev-docs-logfire-migrate",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://pydantic.dev/docs/sitemap.xml",
+      "scope": "https://pydantic.dev/docs/logfire/migrate/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://pydantic.dev/docs/logfire/migrate/; sitemap=9, crawl=0; extra=; missing=https://pydantic.dev/docs/logfire/migrate/aws/,https://pydantic.dev/docs/logfire/migrate/datadog/,https://pydantic.dev/docs/logfire/migrate/dynatrace/,https://pydantic.dev/docs/logfire/migrate/elastic/,https://pydantic.dev/docs/logfire/migrate/grafana/,https://pydantic.dev/docs/logfire/migrate/honeycomb/,https://pydantic.dev/docs/logfire/migrate/new-relic/,https://pydantic.dev/docs/logfire/migrate/overview/,https://pydantic.dev/docs/logfire/migrate/splunk/"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-core-customize-expectations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/customize_expectations/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/customize_expectations/; sitemap=5, crawl=5; extra=https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_custom_expectation_class/,https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_multi_source_expectation/,https://docs.greatexpectations.io/docs/core/customize_expectations/row_conditions/,https://docs.greatexpectations.io/docs/core/customize_expectations/use_sql_to_define_a_custom_expectation/; missing=https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_custom_expectation_class,https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_multi_source_expectation,https://docs.greatexpectations.io/docs/core/customize_expectations/row_conditions,https://docs.greatexpectations.io/docs/core/customize_expectations/use_sql_to_define_a_custom_expectation"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-core-customize-expectations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/customize_expectations/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/customize_expectations/; sitemap=5, crawl=5; extra=https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_custom_expectation_class/,https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_multi_source_expectation/,https://docs.greatexpectations.io/docs/core/customize_expectations/row_conditions/,https://docs.greatexpectations.io/docs/core/customize_expectations/use_sql_to_define_a_custom_expectation/; missing=https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_custom_expectation_class,https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_multi_source_expectation,https://docs.greatexpectations.io/docs/core/customize_expectations/row_conditions,https://docs.greatexpectations.io/docs/core/customize_expectations/use_sql_to_define_a_custom_expectation"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-0-18-oss-deployment-patterns",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/oss/deployment_patterns/",
+      "track": "map"
+    },
+    "reason": "Redirect left crawl scope: https://docs.greatexpectations.io/docs/0.18/core/introduction/introduction/"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-0-18-oss-deployment-patterns",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/0.18/oss/deployment_patterns/",
+      "track": "crawl"
+    },
+    "reason": "Redirect left crawl scope: https://docs.greatexpectations.io/docs/0.18/core/introduction/introduction/"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-core-set-up-a-gx-environment",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/",
+      "track": "map"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/; sitemap=6, crawl=6; extra=https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/create_a_data_context/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_additional_dependencies/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_agent_skills/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_gx/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_python/; missing=https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/create_a_data_context,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_additional_dependencies,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_agent_skills,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_gx,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_python"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-core-set-up-a-gx-environment",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/",
+      "track": "crawl"
+    },
+    "reason": "Sitemap/crawl disagreement: https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/; sitemap=6, crawl=6; extra=https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/create_a_data_context/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_additional_dependencies/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_agent_skills/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_gx/,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_python/; missing=https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/create_a_data_context,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_additional_dependencies,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_agent_skills,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_gx,https://docs.greatexpectations.io/docs/core/set_up_a_gx_environment/install_python"
+  },
+  {
+    "id": "map-docs-greatexpectations-io-docs-reference-learn-integrations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/learn/integrations/",
+      "track": "map"
+    },
+    "reason": "Redirect left crawl scope: https://docs.greatexpectations.io/docs/core/introduction/"
+  },
+  {
+    "id": "crawl-docs-greatexpectations-io-docs-reference-learn-integrations",
+    "recipe": {
+      "kind": "site",
+      "sitemap": "https://docs.greatexpectations.io/sitemap.xml",
+      "scope": "https://docs.greatexpectations.io/docs/reference/learn/integrations/",
+      "track": "crawl"
+    },
+    "reason": "Redirect left crawl scope: https://docs.greatexpectations.io/docs/core/introduction/"
+  },
+  {
+    "id": "scrape-pypi-fastapi",
+    "recipe": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "fastapi",
+      "track": "scrape"
+    },
+    "reason": "Project page does not expose latest version 0.148.0 in its heading: https://pypi.org/project/fastapi/"
+  },
+  {
+    "id": "scrape-pypi-gunicorn",
+    "recipe": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "gunicorn",
+      "track": "scrape"
+    },
+    "reason": "Project page does not expose latest version 26.2.0 in its heading: https://pypi.org/project/gunicorn/"
+  },
+  {
+    "id": "scrape-pypi-polars",
+    "recipe": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "polars",
+      "track": "scrape"
+    },
+    "reason": "Project page does not expose latest version 2.0.0 in its heading: https://pypi.org/project/polars/"
+  },
+  {
+    "id": "scrape-pypi-sqlglot",
+    "recipe": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "sqlglot",
+      "track": "scrape"
+    },
+    "reason": "Project page does not expose latest version 30.23.0 in its heading: https://pypi.org/project/sqlglot/"
+  },
+  {
+    "id": "scrape-pypi-starlette",
+    "recipe": {
+      "kind": "package",
+      "ecosystem": "pypi",
+      "name": "starlette",
+      "track": "scrape"
+    },
+    "reason": "Project page does not expose latest version 1.9.0 in its heading: https://pypi.org/project/starlette/"
+  }
+]

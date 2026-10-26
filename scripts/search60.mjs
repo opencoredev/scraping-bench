@@ -24,7 +24,7 @@ try{
  let config=Object.fromEntries(providers.map(p=>[p,{concurrency:p==='contextdev'?1:2,perSecond:p==='firecrawl'?1/7:1,burst:1,maxUsd:20,apiMaxUsd:Math.max(0,(budget.epochCapsUsd[p]??0)-(spent[p]??0)+(own[p]??0)),maxCallUsd:bounds[p]}]));
  const path=`${root}/${phase}-config.json`;
  try{const frozen=JSON.parse(await readFile(path,'utf8'));for(const p of providers)if(frozen[p].apiMaxUsd>config[p].apiMaxUsd+1e-8)throw Error('Frozen allowance stale');config=frozen;}catch(e){if(e.code!=='ENOENT')throw e;await writeFile(path,JSON.stringify(config,null,2)+'\n');}
- process.env.SCRAPING_BENCH_SMOKE='1';
+ process.env.WEB_BENCH_SMOKE='1';
  console.log(JSON.stringify({runId,phase,tasks:60,providers}));
  console.log(JSON.stringify(await runBenchmark({tasks,providers,lane:'default',mode:phase==='main'?'both':'agent',client:'ms-a2',seed:17018,concurrency:4,runId,providerConfig:config})));
 }finally{await handle.close();await unlink(lock);}

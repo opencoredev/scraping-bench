@@ -1,0 +1,9 @@
+{
+  "contextdev": {
+    "usd": 0.034725000000000006,
+    "apiUsd": 0.0088,
+    "modelUsd": 0.025925000000000004,
+    "maxUsd": 30,
+    "reached": false
+  }
+}

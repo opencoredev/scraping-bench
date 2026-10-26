@@ -1,0 +1,152 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "browserbase",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "browser-infra",
+      "tasks": 30,
+      "na": 0,
+      "successes": 16,
+      "successRate": 0.5333333333333333,
+      "ci95": [
+        0.3076923076923077,
+        0.7333333333333333
+      ],
+      "successfulMedianMs": 14064.4604405,
+      "successfulP90Ms": 18823.058302500023,
+      "totalUsd": 0.58208,
+      "costPerSuccessUsd": 0.03638,
+      "errors": {
+        "other": 5
+      },
+      "families": {
+        "fresh": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "registry-version": {
+          "tasks": 6,
+          "successRate": 0.6666666666666666
+        },
+        "not-found": {
+          "tasks": 3,
+          "successRate": 1
+        },
+        "latest-version": {
+          "tasks": 6,
+          "successRate": 0.8333333333333334
+        },
+        "company-financials": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        },
+        "docs-heading": {
+          "tasks": 6,
+          "successRate": 0.16666666666666666
+        },
+        "entity-facts": {
+          "tasks": 3,
+          "successRate": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "browserbase",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "browser-infra",
+      "tasks": 27,
+      "na": 3,
+      "successes": 7,
+      "successRate": 0.25925925925925924,
+      "ci95": [
+        0.09090909090909091,
+        0.4782608695652174
+      ],
+      "successfulMedianMs": 3637.639945000061,
+      "successfulP90Ms": 4484.255986999977,
+      "totalUsd": 0.15000000000000005,
+      "costPerSuccessUsd": 0.021428571428571436,
+      "errors": {},
+      "families": {
+        "fresh": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "registry-version": {
+          "tasks": 6,
+          "successRate": 0.3333333333333333
+        },
+        "latest-version": {
+          "tasks": 6,
+          "successRate": 0
+        },
+        "company-financials": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "docs-heading": {
+          "tasks": 6,
+          "successRate": 0.8333333333333334
+        },
+        "entity-facts": {
+          "tasks": 3,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "browser-infra",
+      "provider": "browserbase",
+      "reference": "browserbase",
+      "pairedTasks": 30,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "browser-infra",
+      "provider": "browserbase",
+      "reference": "browserbase",
+      "pairedTasks": 27,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "browserbase": {
+      "usd": 0.6370800000000003,
+      "apiUsd": 0.3700000000000002,
+      "modelUsd": 0.2670800000000001,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

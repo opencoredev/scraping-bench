@@ -14,7 +14,7 @@ export type Run = { track: Track; entry: Entry; agent: Score };
 export type Provider = { id: string; slug: string; label: string; cohort: string; runs: [Run, ...Run[]] };
 
 /** URL slugs where the provider id isn't how people write the name. */
-const SLUGS: Record<string, string> = { contextdev: "context-dev" };
+const SLUGS: Record<string, string> = { contextdev: "context-dev", you: "you-com" };
 
 const COHORTS: Record<string, string> = {
   "content-api": "content API",
@@ -96,6 +96,11 @@ const PAIRS: readonly (readonly [string, string])[] = [
   ["linkup", "tinyfish"],
   ["jina", "scrapfly"],
   ["tinyfish", "browserbase"],
+  ["string", "contextdev"],
+  ["string", "firecrawl"],
+  ["string", "spider"],
+  ["string", "scrapfly"],
+  ["string", "linkup"],
 ];
 
 export type Comparison = { slug: string; a: Provider; b: Provider; shared: [Track, ...Track[]] };
@@ -147,7 +152,11 @@ export function standingText(run: Run): string {
     const second = rest[0];
     if (!second) return `${entry.label} was the only provider on this track.`;
     const runnersUp = rest.filter((r) => r.agent.successes === second.agent.successes).map((r) => r.entry.label);
-    return `${entry.label} finished the most ${track.label.toLowerCase()} tasks, but its lead over ${listText(runnersUp)} (${formatPct(second.agent.rate)}) is too small to rule out chance.`;
+    const cleared = runnersUp.filter((label) => detectedGap(track, label));
+    if (cleared.length === runnersUp.length) {
+      return `${entry.label} finished the most ${track.label.toLowerCase()} tasks, and its lead over ${listText(runnersUp)} (${formatPct(second.agent.rate)}) is big enough to rule out chance.`;
+    }
+    return `${entry.label} finished the most ${track.label.toLowerCase()} tasks, but its lead over ${listText(runnersUp.filter((l) => !cleared.includes(l)))} (${formatPct(second.agent.rate)}) is too small to rule out chance.`;
   }
   if (isLeader) return `${entry.label} tied for the most ${track.label.toLowerCase()} tasks with ${listText(top.filter((r) => r.entry.id !== entry.id).map((r) => r.entry.label))}.`;
   const leader = top[0];

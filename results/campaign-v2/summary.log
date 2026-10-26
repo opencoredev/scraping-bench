@@ -1,0 +1,327 @@
+{
+  "runs": [
+    {
+      "runId": "wb-v2-full-search-linkup-v1",
+      "rows": 600,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-search-contextdev-v1",
+      "rows": 600,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-search-firecrawl-v1",
+      "rows": 60,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-search-tinyfish-v1",
+      "rows": 600,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-search-browserbase-v1",
+      "rows": 60,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-search-you-v1",
+      "rows": 600,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-firecrawl-v1",
+      "rows": 80,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-spider-v1",
+      "rows": 80,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-contextdev-v1",
+      "rows": 600,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-tinyfish-v1",
+      "rows": 80,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-linkup-v1",
+      "rows": 600,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-scrapfly-v1",
+      "rows": 80,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-browserbase-v1",
+      "rows": 80,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-you-v1",
+      "rows": 600,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-scrape-jina-v1",
+      "rows": 80,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-map-contextdev-v1",
+      "rows": 120,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-map-firecrawl-v1",
+      "rows": 30,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-crawl-scrapfly-v1",
+      "rows": 24,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-crawl-firecrawl-v1",
+      "rows": 24,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-full-crawl-contextdev-v1",
+      "rows": 80,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-controls-search-none-v1",
+      "rows": 300,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-controls-scrape-oracle-v1",
+      "rows": 300,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-controls-scrape-none-v1",
+      "rows": 300,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-controls-map-none-v1",
+      "rows": 60,
+      "complete": true
+    },
+    {
+      "runId": "wb-v2-controls-crawl-none-v1",
+      "rows": 40,
+      "complete": true
+    }
+  ],
+  "tracks": {
+    "search": {
+      "eligible": true,
+      "full": 300,
+      "core": 30,
+      "fullClusters": 52,
+      "coreClusters": 18,
+      "realWebShare": 1,
+      "jsShare": 0,
+      "families": {
+        "docs-heading": 78,
+        "registry-version": 77,
+        "entity-facts": 28,
+        "latest-version": 55,
+        "company-financials": 28,
+        "fresh": 13,
+        "not-found": 21
+      },
+      "retainedCore": 30,
+      "retainedCoreClusters": 18,
+      "retainedFull": 298,
+      "retainedFullClusters": 52,
+      "eligibleProviders": [
+        "firecrawl",
+        "contextdev",
+        "tinyfish",
+        "linkup",
+        "browserbase",
+        "you",
+        "none"
+      ],
+      "fullProviders": [
+        "contextdev",
+        "tinyfish",
+        "linkup",
+        "you",
+        "none"
+      ]
+    },
+    "scrape": {
+      "eligible": true,
+      "full": 300,
+      "core": 40,
+      "fullClusters": 40,
+      "coreClusters": 37,
+      "realWebShare": 0.9866666666666667,
+      "jsShare": 0.013333333333333334,
+      "families": {
+        "js-rendered-field": 4,
+        "docs-heading": 275,
+        "package-version": 21
+      },
+      "retainedCore": 40,
+      "retainedCoreClusters": 37,
+      "retainedFull": 298,
+      "retainedFullClusters": 40,
+      "eligibleProviders": [
+        "firecrawl",
+        "contextdev",
+        "tinyfish",
+        "spider",
+        "linkup",
+        "scrapfly",
+        "browserbase",
+        "you",
+        "jina",
+        "none",
+        "oracle"
+      ],
+      "fullProviders": [
+        "contextdev",
+        "linkup",
+        "you",
+        "none",
+        "oracle"
+      ]
+    },
+    "map": {
+      "eligible": true,
+      "full": 60,
+      "core": 15,
+      "fullClusters": 15,
+      "coreClusters": 15,
+      "realWebShare": 1,
+      "jsShare": 0,
+      "families": {
+        "docs-url-set": 60
+      },
+      "retainedCore": 15,
+      "retainedCoreClusters": 15,
+      "retainedFull": 60,
+      "retainedFullClusters": 15,
+      "eligibleProviders": [
+        "firecrawl",
+        "contextdev",
+        "none"
+      ],
+      "fullProviders": [
+        "contextdev",
+        "none"
+      ]
+    },
+    "crawl": {
+      "eligible": true,
+      "full": 40,
+      "core": 12,
+      "fullClusters": 15,
+      "coreClusters": 12,
+      "realWebShare": 1,
+      "jsShare": 0,
+      "families": {
+        "docs-page-records": 40
+      },
+      "retainedCore": 12,
+      "retainedCoreClusters": 12,
+      "retainedFull": 40,
+      "retainedFullClusters": 15,
+      "eligibleProviders": [
+        "firecrawl",
+        "contextdev",
+        "scrapfly",
+        "none"
+      ],
+      "fullProviders": [
+        "contextdev",
+        "none"
+      ]
+    }
+  },
+  "spend": {
+    "none": {
+      "apiUsd": 0,
+      "modelUsd": 1.4340859999999997,
+      "physicalCalls": 0,
+      "uncertainSettlements": 0
+    },
+    "oracle": {
+      "apiUsd": 0,
+      "modelUsd": 0.7772129999999988,
+      "physicalCalls": 302,
+      "uncertainSettlements": 0
+    },
+    "contextdev": {
+      "apiUsd": 3.2471999999998853,
+      "modelUsd": 6.641255999999996,
+      "physicalCalls": 1066,
+      "uncertainSettlements": 12
+    },
+    "firecrawl": {
+      "apiUsd": 1.619999999999996,
+      "modelUsd": 1.0660310000000004,
+      "physicalCalls": 143,
+      "uncertainSettlements": 0
+    },
+    "scrapfly": {
+      "apiUsd": 0.030600000000000023,
+      "modelUsd": 0.7130239999999992,
+      "physicalCalls": 62,
+      "uncertainSettlements": 0
+    },
+    "browserbase": {
+      "apiUsd": 0.6480000000000005,
+      "modelUsd": 0.6375819999999998,
+      "physicalCalls": 140,
+      "uncertainSettlements": 0
+    },
+    "jina": {
+      "apiUsd": 0.008037100000000004,
+      "modelUsd": 0.260075,
+      "physicalCalls": 54,
+      "uncertainSettlements": 18
+    },
+    "linkup": {
+      "apiUsd": 2.9819999999999585,
+      "modelUsd": 6.221750999999995,
+      "physicalCalls": 850,
+      "uncertainSettlements": 1
+    },
+    "spider": {
+      "apiUsd": 0.010995683999999995,
+      "modelUsd": 0.26719399999999993,
+      "physicalCalls": 43,
+      "uncertainSettlements": 0
+    },
+    "tinyfish": {
+      "apiUsd": 0,
+      "modelUsd": 2.6568880000000004,
+      "physicalCalls": 678,
+      "uncertainSettlements": 1
+    },
+    "you": {
+      "apiUsd": 3.412999999999949,
+      "modelUsd": 5.623620999999995,
+      "physicalCalls": 933,
+      "uncertainSettlements": 0
+    }
+  },
+  "driftExcluded": 4
+}

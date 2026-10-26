@@ -1,6 +1,6 @@
 import { comparisons, costText, doneText, intervalText, leaders, providers, rankedRuns, standingText, tracks } from "@/lib/catalog";
 import { results } from "@/lib/results";
-import { MODEL, NOT_TESTED, RESULTS_JSON_RAW, SITE_URL, WITHHELD_NOTE, absoluteUrl } from "@/lib/site";
+import { MODEL, RESULTS_JSON_RAW, SITE_URL, absoluteUrl, notTestedText } from "@/lib/site";
 import { PROVIDER_NOTES } from "@/lib/notes";
 
 export const dynamic = "force-static";
@@ -14,8 +14,11 @@ function body(): string {
     "",
     "Most gaps between providers are too small to call. Tasks from the same site are counted as one group, and the 95% intervals come from resampling whole sites, so only gaps whose interval excludes zero are reported as real.",
     "",
-    `Not tested: ${NOT_TESTED}. ${WITHHELD_NOTE}`,
+    notTestedText(results),
     "",
+    ...(results.campaignVersion === 2
+      ? [`These are the v2 results. The earlier, smaller v1 run is at ${absoluteUrl("/v1")}.`, ""]
+      : []),
     "## Results",
     "",
   ];

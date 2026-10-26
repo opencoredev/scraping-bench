@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { taskSchema } from '../src/core/schema.ts';
 import { generateFixtureTasks } from '../src/tasks/fixture-tasks.ts';
 import { random,shuffle } from '../src/run/limits.ts';
+if (process.env.WEB_BENCH_CAMPAIGN_DIR) { await import('./v2-prepare.mjs'); } else {
 const root='results/campaign-20261017';
 const read=async p=>JSON.parse(await readFile(p,'utf8'));
 const save=async(p,v)=>writeFile(p,JSON.stringify(v,null,2)+'\n');
@@ -38,3 +39,5 @@ for(const track of ['search','scrape','map','crawl']){
  console.log(track,selected.length,'tasks',new Set(selected.map(t=>t.site)).size,'site clusters');
 }
 await save(`${root}/sample-provenance.json`,provenance);
+
+}

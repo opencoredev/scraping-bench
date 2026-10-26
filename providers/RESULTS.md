@@ -1,80 +1,53 @@
-# Provider adapter smoke results
+# Corrected provider analysis (post-run, disclosed)
 
-Checked 2026-10-17. All 13 providers have adapters and a registry entry. Native tracks without keys are implemented from official documentation but have not been verified against a live account. “OK” means the endpoint passed the bounded smoke check; it does not establish benchmark quality or validate every tuned option.
+Two harness faults changed the interpretation of campaign v2. Scrape answer keys kept link symbols and invisible characters that the task told the model to omit. Crawl evidence was cut after 48 KB of full page bodies, hiding later URLs and titles from the model. This post-run analysis corrects those faults and keeps the original preregistered scores and rows intact. Search and map headline scores are unchanged.
+
+Scrape was regraded from the same stored model answers. Exactly 25 frozen heading keys changed: nine Scrapy, eight MkDocs and eight Vite, including three core tasks. No pages or model answers were fetched again for scrape. Heading generation now removes permalink elements and Unicode private-use (Co) and format (Cf) characters; text grading removes Co/Cf too. The correct-page control rises from 37/40 to 40/40 core and from 273/298 to 298/298 retained full. All 25 original full-control failures were caused by the answer-key fault.
+
+Crawl was replayed using the same stored provider responses for every task each provider originally ran: Firecrawl 12, Context.dev 40, Scrapfly 12. Every returned URL and native title now comes before bounded page excerpts, within the same 48,000-byte cap, using the same packaging for every provider. We reused each original planning turn and reran only the final answer turn with Claude Haiku 5.5, temperature 0, the same system/user prompt, tools, 4,096 answer-token limit, one crawl tool call, and original cost/time limits. The strict JSON parser is unchanged. This is a disclosed model replay, not a fresh crawl or a repeat of the preregistered experiment. A single replay does not measure model variability, even at temperature zero.
+
+The replay allowed only the existing model-proxy endpoint and refused provider dispatch and redirects. Its ledger records **0 provider calls**, **64 model-proxy calls**, **0 blocked network attempts**, and unchanged original provider ledgers. Model-only list-price estimate: $1.705214. Replay time and model-only cost do not estimate a fresh end-to-end crawl.
+
+[Corrected scores and sensitivity counts](../results/wb-v2-corrected/RESULTS.md) · [Original preregistered scores](../results/wb-v2-final/RESULTS.md).
+
+| Provider | Core stored responses with every expected URL | Core stored responses with every expected URL/title record | Replay exact URL sets | Replay exact URL/title records | Replay whole-task passes |
+|---|---:|---:|---:|---:|---:|
+| Firecrawl | 12/12 | 12/12 | 12/12 | 12/12 | 12/12 |
+| Context.dev | 11/12 | 7/12 | 10/12 | 6/12 | 6/12 |
+| Scrapfly | 12/12 | 12/12 | 12/12 | 11/12 | 11/12 |
+
+Scrape measures heading and structure preservation on documentation pages, not general extraction: 275 of the 300 frozen tasks request a docs heading, 21 request package versions and four request JS fields. Two source errors leave 298 retained tasks. Firecrawl's scrape core contains one task on docs.firecrawl.dev; it failed that task in both the original and corrected analysis.
+
+The Jina result is **Jina Reader under a 5,000-token rejecting budget**, not a general scrape score. Its 5/40 core result is unchanged. Nine failed tasks received HTTP 409 on both attempts; the old harness did not retain their native error bodies. A rejecting token limit is a plausible cause, but the retained evidence cannot establish it. The other 26 failed tasks received content; 17 of those responses have no level-one Markdown heading. Content can omit or demote the requested H1. Future runs retain redacted native error bodies in private stored outcomes, including outside smoke mode.
+
+Context.dev full search had two failed tasks affected by rate limiting. Five retained tasks saw a rate-limit error in some attempt; three recovered, including the one core task affected. These are reported separately from other answer/model failures. All failures remain in the denominators.
+
+Context.dev crawl has genuine title differences, including “Textual - Grid” versus “Grid - Textual”. URL coverage and exact-title fidelity are separate measurements below; the whole-task score still requires both fields. Extra returned pages can be outside the requested scope, so “every expected URL present” measures coverage, whereas the model's exact URL set also requires omitting extras. Native-title fidelity uses the preregistered text normalization, not byte equality.
+
+All intervals use the same 10,000 paired site-clustered bootstrap draws, seed 19019, on identical core IDs. Tasks from the same site stay together. A gap is resolved when its paired 95% interval excludes zero. Comparisons are exploratory and unadjusted and use the observed best core score as reference; selecting that reference increases false-positive risk. Different product types, one model, one server, free plans and documentation-heavy tasks limit generalization. Full-set results describe a different population and do not select the reference. Raw checks are original, not corrected/replayed; open the original analysis for those.
+
+
+## Original preregistered analysis (unchanged below)
+
+<!-- original-preregistered-v2 -->
+# Campaign v2 provider participation
 
 | Provider | Search | Scrape | Map | Crawl |
-| --- | --- | --- | --- | --- |
-| Firecrawl | OK | OK | OK | OK, 5 pages |
-| Context.dev | OK | OK | Failed: no scoped inventory URLs | OK tuned, 5 pages |
-| TinyFish | OK | OK | Unsupported | Unsupported |
-| Exa | No key | No key | Unsupported | Unsupported |
-| Tavily | No key | No key | No key | No key |
-| Jina | OK keyed; keyless 401 | OK keyed; keyless 401 | Unsupported | Unsupported |
-| Spider | OK | Failed: malicious-URL 403 | Failed: root only | Failed: blank/blocked |
-| Linkup | OK | OK | Unsupported | Unsupported |
-| Perplexity | No key | Unsupported | Unsupported | Unsupported |
-| Bright Data | No key/zones | No key/zones | Unsupported | Unsupported |
-| Scrapfly | Unsupported | OK | Unsupported | Recovered OK, 4 pages; full submit-to-results timing unverified |
-| Browserbase | OK | OK | Unsupported | Unsupported |
+|---|---|---|---|---|
+| Context.dev | full complete | full complete | full complete | full complete |
+| Firecrawl | core complete | core complete | core complete | core complete |
+| TinyFish | full complete | core complete | Unsupported product track; not run. | Unsupported product track; not run. |
+| Linkup | full complete | full complete | Unsupported product track; not run. | Unsupported product track; not run. |
+| Jina | No hard per-call token-charge bound; previous search used 618754 tokens. | core complete | Unsupported product track; not run. | Unsupported product track; not run. |
+| Spider | No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape. | core complete | No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape. | No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape. |
+| Scrapfly | Unsupported product track; not run. | core complete | Unsupported product track; not run. | core complete |
+| Browserbase | core complete | core complete | Unsupported product track; not run. | Unsupported product track; not run. |
+| You.com | full complete | full complete | Unsupported product track; not run. | Unsupported product track; not run. |
 
-The product fixture is `/r/adapter-smoke/store/sensors/instrument-1`, with price `319.39 USD` and stock `Out of stock`. Map uses `/r/adapter-smoke/`; discovery must include a child URL. Crawl uses the same scope and `maxPages=5`. Search uses `Node.js official installation latest LTS`, limit 5, and checks that results have HTTP URLs. Search smoke does not grade the answer to a research question.
+All supported, affordable default tracks received a dev pilot before held-out execution. Every ranked provider completed the original identical core without an API-budget stop; retrieval failures still count as attempted tasks. See [v2 findings](../docs/FINDINGS.md) for scores and paired intervals, and [dev audit](../results/campaign-v2/dev-audit.json) for native evidence checks.
 
-## Run the checks
+You.com uses Search API GET /v1/search and Contents API POST /v1/contents. Live dev pilots verified the contract. The owner cancelled further You.com calls after its search and scrape samples completed; collected rows are retained and the final wallet probe was skipped. Search is $0.005/request and Contents $0.001/page; responses without native usage retain list-price estimates. Balance observations, reservations and unresolved reconciliation residuals are reported in [BUDGET.md](BUDGET.md). It has no map/crawl product in this campaign. Official specifications: https://you.com/docs/llms.txt and https://you.com/docs/openapi.json.
 
-Load credentials into your shell without printing them, then select only the providers and tracks you intend to spend on:
+Default rendering is preserved. Native crawl titles are forwarded for all three tested products; Scrapfly retrieves HTML alongside Markdown, with max_api_credit 28. Jina scrape sends X-Token-Budget 5000. Browserbase is its HTTP Fetch/Search API. Exa, Tavily, Perplexity, Bright Data and Parallel have no v2 calls by owner instruction.
 
-```sh
-set -a
-. /home/leo/web-bench/.env
-set +a
-npm run smoke -- --providers firecrawl,contextdev --tracks scrape
-```
-
-The ledger persists the three-attempt cap across default/tuned and keyed/keyless runs. Unsupported tracks and missing credentials are skipped without requests. Re-running all providers would consume more free credits; consult [BUDGET.md](BUDGET.md) first. `--lane tuned`, `--timeout 120000`, and `--jina-auth keyless` select explicit settings. Failed checks exit nonzero. Billing, safe usage headers, lane, auth mode and timing are logged for every attempted endpoint. Private response capture under gitignored `tmp/responses/` is redacted and created as 0600.
-
-Real harness integration was verified with:
-
-```sh
-npm run bench -- --tasks tasks/harness/adapter-smoke.json \
-  --providers firecrawl,contextdev --lane default --mode raw \
-  --client adapter-smoke --sample 1 --concurrency 1 \
-  --run-id harness-adapters-real --provider-config providers/smoke-limits.json
-```
-
-Both provider rows passed both price and stock checks, with one tool call each, API costs $0.005 and $0.0022, and $0 model spend. Reusing this run ID resumes without spending again. Generated output stays gitignored; [smoke.jsonl](smoke.jsonl) records the cost and result. The runner imports `src/adapters/index.ts`; Context.dev concurrency is capped at one. Every real provider still requires an explicit conservative `maxCallUsd`.
-
-## Documentation versus live behavior
-
-- Browserbase has HTTP Fetch and Search APIs. Fetch returns native markdown without a browser session or project ID, but does not render JavaScript. No Playwright or HTML converter is needed.
-- TinyFish Fetch and Search are separate products from Agent. The wallet contract reports zero unit rates for both on this account/date; daily free quotas differ between Fetch and Search.
-- Context.dev map inventories known domain URLs; it did not discover this fixture's paths. Its search API requires at least ten requested results. The initial crawl checker rejected a valid slashless root; the checker now canonicalizes it.
-- Spider search returned an object containing `content`, rather than the older array shape. The fixture scrape returned a malicious-URL 403 inside HTTP 200. Search had no cost fields. Root-only links were initially accepted by an overly weak checker; the correction is appended to the ledger.
-- Scrapfly crawl submission returned `crawler_uuid`; an older example used `uuid`. Two jobs were submitted before this was corrected. Collection of one accepted job returned four markdown pages and reported five credits. Its collection-only latency cannot be used for end-to-end comparisons.
-- Linkup Search is POST. Older local notes claimed GET.
-- Jina Reader/Search both rejected keyless requests here with 401. Keyed calls worked despite the dashboard's zero-token display. Current Reader UI token pricing differs from legacy products still present in the public catalog.
-
-## Contract follow-ups
-
-`src/core/types.ts` is unchanged. Add explicit unknown billing, usage units, and a distinction between reported monetary cost and list conversion of reported units. The adapters currently preserve uncertainty in memory so the harness retains the configured cost bound; a direct caller of the shared `Billing` shape cannot recover that distinction after JSON serialization. Historic zero placeholders must not enter public cost rankings.
-
-Also consider partial-page errors and job IDs/cancellation state on crawl outcomes, cancellation separate from timeout, and an explicit scope on map arguments. Those additions would expose vendor failures and interrupted remote work without discarding usable pages or inferring more than the native API promises.
-
-## Held-out benchmark campaign
-
-The completed 17 October campaign contains 2,605 held-out/control/tuned result rows, plus separate dev pilots. Every provider in a track used identical frozen task IDs: search 60 (six providers), scrape 60, map 15, crawl 10. Results are exploratory, with paired site-clustered 95% intervals.
-
-| Track | Highest observed default agent score |
-| --- | --- |
-| scrape | contextdev: 55/60 (91.7%) |
-| map | contextdev: 7/15 (46.7%) |
-| crawl | scrapfly: 7/10 (70.0%) |
-
-Score order does not establish a general winner. Read the [plain-language findings](../docs/FINDINGS.md), [complete result tables](../results/wb-20261017-final/RESULTS.md), and [summary JSON](../results/wb-20261017-final/summary.json) for paired differences, intervals, median/p90 latency, errors, family rates, raw applicability, tuning and controls. The scrape oracle passed 60/60; no-tool passed 14/60 search and zero on the other tracks.
-
-Spider’s workers.dev malicious-URL filter rejected the fresh fixture domain. The held-out 12/60 includes ten successful PyPI scrapes and two negative null-answer passes despite blocked retrieval. Firecrawl tuned scrape also encountered its native ten-request/minute free quota; this is disclosed as throughput under the frozen schedule. Raw relationship tasks are n/a, including every crawl task.
-
-All costs from superseded or interrupted pilots are retained. [Budget reconciliation](BUDGET.md#benchmark-campaign-reconciliation) separates measured wallets, reported native credits/tokens, uncertain reservations and proxy model estimates. No purchase, upgrade or push occurred.
-
-Exa, Tavily, Perplexity and Bright Data: not tested — no key. Jina is a separate historical seven-task subset only; no new calls were safely affordable under a guaranteed bound. Browserbase means HTTP Fetch/Search here, not a full browser pipeline. The sample uses one client location and only two scrape site clusters; freshness-version and large crawl families were excluded before the held-out run.
-
-The original seven-task search and no-tool runs are superseded for quality, with costs retained. The expanded sample has family counts 14/13/13/13/7 across six clusters because only seven not-found tasks exist in the held-out split. See the separate historical Jina paired comparison in the aggregate report.
+[Earlier adapter smoke results](RESULTS-v1.md) · [You adapter tests](../src/adapters/you.test.ts).

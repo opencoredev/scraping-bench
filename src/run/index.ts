@@ -24,6 +24,7 @@ const providerConfigSchema = z.object({
   maxUsd: z.number().nonnegative().default(10),
   maxCallUsd: z.number().nonnegative().optional(),
   apiMaxUsd: z.number().nonnegative().optional(),
+  maxPhysicalCalls: z.number().int().nonnegative().optional(),
 });
 export type ProviderConfig = z.infer<typeof providerConfigSchema>;
 export type RunOptions = {
@@ -173,12 +174,13 @@ export async function runBenchmark(
     );
     const states = new Map(
       options.providers.map((provider) => {
-        const config = configs.get(provider) ?? PROVIDER_DEFAULTS;
+        const config: ProviderConfig = configs.get(provider) ?? PROVIDER_DEFAULTS;
         return [
           provider,
           {
             spent: 0,
             apiSpent: 0,
+            physicalCalls: 0,
             apiPending: 0,
             apiInFlight: 0,
             reserved: 0,
@@ -239,6 +241,8 @@ export async function runBenchmark(
           "brightdata",
           "scrapfly",
           "browserbase",
+          "you",
+          "string",
           "fake",
           "none",
           "oracle",
@@ -253,7 +257,7 @@ export async function runBenchmark(
         const event = ledgerSchema.parse(value);
         if (event.kind === "provider-reuse") continue;
         for (const [id, state] of states)
-          if (id === event.provider) { state.spent += event.billedUsd; if (event.kind.startsWith("provider")) state.apiSpent += event.billedUsd; }
+          if (id === event.provider) { if (event.kind === "provider-dispatch") state.physicalCalls++; state.spent += event.billedUsd; if (event.kind.startsWith("provider")) state.apiSpent += event.billedUsd; }
         applyLedger(event, event.kind, event.billedUsd, event.ms);
       }
     } catch (error) {
@@ -415,11 +419,14 @@ export async function runBenchmark(
                   // Wait when that temporary reservation alone blocks an affordable call.
                   const settledUsd = state.apiSpent + state.apiPending - state.apiInFlight;
                   if (state.apiInFlight <= 1e-9 || settledUsd + maxCallUsd > apiCap + 1e-9)
-                    throw new Error("Provider call exceeds remaining budget");
+                    throw new Error("Provider API budget exhausted");
                   await delay(10, undefined, { signal: ctx.signal });
                 }
                 if (maxCallUsd > allowance - taskSpent)
                   throw new Error("Provider call exceeds remaining budget");
+                if (state.physicalCalls >= (state.config.maxPhysicalCalls ?? Infinity))
+                  throw new Error("Provider API budget exhausted");
+                state.physicalCalls++;
                 state.apiPending += maxCallUsd;
                 state.apiInFlight += maxCallUsd;
                 let dispatchPending = true;
@@ -649,7 +656,7 @@ export async function runBenchmark(
                 truncations: [],
                 limitReason:
                   error instanceof Error &&
-                  error.message === "Provider call exceeds remaining budget"
+                  (error.message === "Provider call exceeds remaining budget" || error.message === "Provider API budget exhausted")
                     ? "provider-budget-limit"
                     : null,
                 applicability:

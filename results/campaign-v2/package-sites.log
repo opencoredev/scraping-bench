@@ -1,0 +1,30 @@
+ADDED scrape-pypi-alembic
+ADDED scrape-pypi-anyio
+ADDED scrape-pypi-asyncpg
+ADDED scrape-pypi-attrs
+ADDED scrape-pypi-cattrs
+ADDED scrape-pypi-click
+ADDED scrape-pypi-duckdb
+EXCLUDED scrape-pypi-fastapi Project page does not expose latest version 0.148.0 in its heading: https://pypi.org/project/fastapi/
+EXCLUDED scrape-pypi-gunicorn Project page does not expose latest version 26.2.0 in its heading: https://pypi.org/project/gunicorn/
+ADDED scrape-pypi-httpx
+ADDED scrape-pypi-ibis-framework
+ADDED scrape-pypi-loguru
+ADDED scrape-pypi-msgspec
+ADDED scrape-pypi-orjson
+ADDED scrape-pypi-peewee
+EXCLUDED scrape-pypi-polars Project page does not expose latest version 2.0.0 in its heading: https://pypi.org/project/polars/
+ADDED scrape-pypi-pyarrow
+ADDED scrape-pypi-pydantic
+ADDED scrape-pypi-pydantic-settings
+ADDED scrape-pypi-rich
+ADDED scrape-pypi-sqlalchemy
+EXCLUDED scrape-pypi-sqlglot Project page does not expose latest version 30.23.0 in its heading: https://pypi.org/project/sqlglot/
+ADDED scrape-pypi-sqlmodel
+EXCLUDED scrape-pypi-starlette Project page does not expose latest version 1.9.0 in its heading: https://pypi.org/project/starlette/
+ADDED scrape-pypi-structlog
+ADDED scrape-pypi-tenacity
+ADDED scrape-pypi-textual
+ADDED scrape-pypi-trio
+ADDED scrape-pypi-typer
+ADDED scrape-pypi-uvicorn

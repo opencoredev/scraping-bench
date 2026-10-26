@@ -1,0 +1,120 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "spider",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 2,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 7032.363967499994,
+      "successfulP90Ms": 7607.7020742999985,
+      "totalUsd": 0.021695812500000015,
+      "costPerSuccessUsd": 0.010847906250000008,
+      "errors": {
+        "blocked": 1
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "spider",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 2,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 1980.2622845000005,
+      "successfulP90Ms": 2787.887525699998,
+      "totalUsd": 0.0015168125000000147,
+      "costPerSuccessUsd": 0.0007584062500000073,
+      "errors": {
+        "blocked": 1
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 2,
+          "successRate": 1
+        },
+        "js-rendered-field": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "spider",
+      "reference": "spider",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "spider",
+      "reference": "spider",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "spider": {
+      "usd": 0.021695812500000022,
+      "apiUsd": 0.0015168125000000164,
+      "modelUsd": 0.020179000000000006,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "blocked": 1
+  }
+}

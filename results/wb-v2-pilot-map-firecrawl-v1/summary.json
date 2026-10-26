@@ -1,0 +1,108 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "map",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 2,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 10792.496032500001,
+      "successfulP90Ms": 11186.3024409,
+      "totalUsd": 0.031784,
+      "costPerSuccessUsd": 0.015892,
+      "errors": {
+        "other": 1
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "firecrawl",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 1,
+      "successRate": 0.3333333333333333,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 5295.114962,
+      "successfulP90Ms": 5295.114962,
+      "totalUsd": 0.015,
+      "costPerSuccessUsd": 0.015,
+      "errors": {},
+      "families": {
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "firecrawl",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "firecrawl",
+      "reference": "firecrawl",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "firecrawl": {
+      "usd": 0.03178399999999999,
+      "apiUsd": 0.015,
+      "modelUsd": 0.016783999999999993,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

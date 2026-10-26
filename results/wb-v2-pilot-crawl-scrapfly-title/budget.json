@@ -1,0 +1,9 @@
+{
+  "scrapfly": {
+    "usd": 0.048246,
+    "apiUsd": 0.002999999999999999,
+    "modelUsd": 0.045245999999999995,
+    "maxUsd": 30,
+    "reached": false
+  }
+}

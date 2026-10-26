@@ -1,0 +1,9 @@
+{
+  "tinyfish": {
+    "usd": 0.04419899999999999,
+    "apiUsd": 0,
+    "modelUsd": 0.04419899999999999,
+    "maxUsd": 30,
+    "reached": false
+  }
+}

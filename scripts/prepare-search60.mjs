@@ -11,7 +11,7 @@ const read=async p=>JSON.parse(await readFile(p,'utf8'));
 const split=await read('tasks/splits.json'),recipes=(await read('tasks/provenance.json')).recipes;
 const all=z.array(taskSchema).parse(await read('tasks/search.json')).filter(t=>split[t.id]==='test');
 const old=z.array(taskSchema).parse(await read('results/campaign-20261017/test-search.json'));
-const verified=new Set([...((await readFile('/tmp/scraping-bench-search60-verify.log','utf8')).matchAll(/^PASS (.+)$/gm))].map(m=>m[1]));
+const verified=new Set([...((await readFile('/tmp/web-bench-search60-verify.log','utf8')).matchAll(/^PASS (.+)$/gm))].map(m=>m[1]));
 const rejected=[],selected=[],checked=[];
 async function eligible(t){
  try{if(!verified.has(t.id)){const now=await resolve(recipes[t.id]);if(!isDeepStrictEqual(now.expected,t.expected)||!isDeepStrictEqual(now.input,t.input)||now.family!==t.family)throw Error('live answer-key drift');}checked.push({taskId:t.id,checkedAt:new Date().toISOString(),source:verified.has(t.id)?'tasks:verify --refresh':'resolve --refresh'});return true;}

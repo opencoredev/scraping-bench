@@ -1,0 +1,40 @@
+{
+  "derivedFrom": "../frozen-verification-after.json",
+  "failures": [
+    {
+      "id": "search-metacpan-mojolicious",
+      "kind": "confirmed-drift",
+      "reason": "Live authoritative input, answer, family or instruction differs",
+      "live": [
+        {
+          "kind": "version",
+          "name": "version",
+          "value": "9.51"
+        }
+      ]
+    },
+    {
+      "id": "scrape-pypi-loguru",
+      "kind": "source-error",
+      "reason": "Project page does not expose latest version 0.7.3 in its heading: https://pypi.org/project/loguru/"
+    },
+    {
+      "id": "search-metacpan-uri",
+      "kind": "confirmed-drift",
+      "reason": "Second exact frozen tasks:verify scan observed version 5.40 instead of frozen 5.39; see tasks-verify-after.log",
+      "live": [
+        {
+          "kind": "version",
+          "name": "version",
+          "value": "5.40"
+        }
+      ]
+    },
+    {
+      "id": "scrape-pypi-sqlalchemy",
+      "kind": "source-error",
+      "reason": "Retained exact-file scan and targeted recheck: PyPI heading does not expose keyed version 2.1.5; see tasks-verify-retained-after-initial.log and sqlalchemy-recheck.log"
+    }
+  ],
+  "originalFrozenFilesUnchanged": true
+}

@@ -1,0 +1,10 @@
+{
+  "linkup": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 30,
+    "apiMaxUsd": 15.289800000000035,
+    "maxCallUsd": 0.005
+  }
+}

@@ -1,5 +1,6 @@
 import {readFile,writeFile,readdir,mkdir} from 'node:fs/promises';
 import {summarize,markdown,quantile,pairedDifference} from '../src/stats/index.ts';
+if (process.env.WEB_BENCH_CAMPAIGN_DIR) { await import('./v2-summarize.mjs'); } else {
 const root='results/wb-20261017-final';await mkdir(root,{recursive:true});
 const dirs=(await readdir('results')).filter(n=>n.startsWith('wb-20261017-'));
 const extension='results/campaign-20261017-search60';
@@ -59,3 +60,5 @@ for(const g of summary.groups){md+=`\n<details>\n<summary>${g.track} / ${g.provi
 md+='\n## Expanded search and historical Jina subset\n\nSearch uses 60 held-out tasks (families14/13/13/13/7; six clusters). Superseded quality runs: '+supersededRuns.join(', ')+'. Their spend remains included. Firecrawl epoch starts691credits with68 retained.\n\n'+jinaSubset.caveat+' '+jinaSubset.reason+'\n\n'+markdown(jinaSubset);
 md+='\n### Matched seven-task differences versus historical Jina\n\n| Provider | Paired tasks | Difference | 95% CI | Interpretation |\n|---|---:|---:|---|---|\n'+jinaSubset.pairedVsJina.map(x=>`| ${x.provider} | ${x.pairedTasks} | ${x.difference.toFixed(3)} | ${x.ci95.map(v=>v.toFixed(3)).join('–')} | ${x.interpretation} |`).join('\n')+'\n';
 await writeFile(`${root}/RESULTS.md`,md);console.log(JSON.stringify({runs,rows:rows.length,spend},null,2));
+
+}

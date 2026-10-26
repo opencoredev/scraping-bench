@@ -1,0 +1,577 @@
+[
+  {
+    "taskId": "scrape-page-https-vite-dev-blog-announcing-vite3",
+    "site": "vite.dev",
+    "core": true,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Vite 3.0 is out! ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Vite 3.0 is out!"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-about-contributing",
+    "site": "www.mkdocs.org",
+    "core": true,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Contributing to MkDocs"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Contributing to MkDocs"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-news-html",
+    "site": "docs.scrapy.org",
+    "core": true,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Release notes"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Release notes"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-dev-guide",
+    "site": "www.mkdocs.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Developer Guide"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Developer Guide"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-topics-coroutines-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Coroutines"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Coroutines"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-acknowledgements",
+    "site": "vite.dev",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Acknowledgements ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Acknowledgements"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-dev-guide-translations",
+    "site": "www.mkdocs.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Translations"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Translations"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-topics-api-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Core API"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Core API"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-changes-ssr-using-modulerunner",
+    "site": "vite.dev",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "SSR Using ModuleRunner API ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "SSR Using ModuleRunner API"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-topics-asyncio-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "asyncio"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "asyncio"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-user-guide",
+    "site": "www.mkdocs.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "User Guide"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "User Guide"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-changes-hotupdate-hook",
+    "site": "vite.dev",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "HMR hotUpdate Plugin Hook ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "HMR hotUpdate Plugin Hook"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-topics-downloader-middleware-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Downloader Middleware"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Downloader Middleware"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-dev-guide-themes",
+    "site": "www.mkdocs.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Developing Themes"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Developing Themes"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-blog-announcing-vite8-1",
+    "site": "vite.dev",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Vite 8.1 is out! ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Vite 8.1 is out!"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-topics-cookies-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Cookies"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Cookies"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-dev-guide-plugins",
+    "site": "www.mkdocs.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "MkDocs Plugins"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "MkDocs Plugins"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-changes-this-environment-in-hooks",
+    "site": "vite.dev",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "this.environment in Hooks ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "this.environment in Hooks"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-topics-commands-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Command line tool"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Command line tool"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-user-guide-localizing-your-theme",
+    "site": "www.mkdocs.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Localizing Your Theme"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Localizing Your Theme"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-blog-cloudflare-supports-vite",
+    "site": "vite.dev",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Cloudflare supports Vite's mission ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Cloudflare supports Vite's mission"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-topics-benchmarking-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Benchmarking"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Benchmarking"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-user-guide-configuration",
+    "site": "www.mkdocs.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Configuration"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Configuration"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-blog-announcing-vite4",
+    "site": "vite.dev",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Vite 4.0 is out! ​"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Vite 4.0 is out!"
+        ]
+      }
+    ]
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-faq-html",
+    "site": "docs.scrapy.org",
+    "core": false,
+    "original": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Frequently Asked Questions"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Frequently Asked Questions"
+        ]
+      }
+    ]
+  }
+]

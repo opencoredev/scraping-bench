@@ -1,0 +1,2430 @@
+{
+  "phase": "screen",
+  "at": "2026-10-19T17:44:13.556Z",
+  "checked": 700,
+  "checkedIds": [
+    "search-page-https-typer-tiangolo-com-tutorial-arguments-optional",
+    "search-hex-phoenix",
+    "search-founding-Q9396",
+    "search-pypi-pydantic",
+    "search-revenue-0001341439",
+    "search-fresh-neovim-neovim",
+    "search-none-vitest",
+    "search-page-https-uvicorn-dev-contributing",
+    "search-pub-http",
+    "search-crates-bytes",
+    "search-founding-Q39064",
+    "search-revenue-0000078003",
+    "search-fresh-vitejs-vite",
+    "search-none-ky",
+    "search-page-https-pydantic-dev-docs-ai-api-models-groq",
+    "search-homebrew-git",
+    "search-pypi-typer",
+    "search-founding-Q19900",
+    "search-revenue-0000051143",
+    "search-fresh-oven-sh-bun",
+    "search-none-puppeteer",
+    "search-page-https-docs-linkup-so-pages-documentation-endpoints-extract-list",
+    "search-go-go-uber-org-zap",
+    "search-crates-rayon",
+    "search-page-https-docs-firecrawl-dev-advanced-scraping-guide",
+    "search-rubygems-sinatra",
+    "search-pypi-attrs",
+    "search-page-https-fastapi-tiangolo-com-tutorial-header-param-models",
+    "search-metacpan-try-tiny",
+    "search-crates-rusqlite",
+    "search-page-https-vite-dev-blog-cloudflare-supports-vite",
+    "search-none-luxon",
+    "search-metacpan-http-tiny",
+    "search-fresh-encode-starlette",
+    "search-revenue-0000723254",
+    "search-pypi-msgspec",
+    "search-founding-Q49203",
+    "search-page-https-docs-getdbt-com-blog-archive",
+    "search-packagist-symfony-http-foundation",
+    "search-crates-chrono",
+    "search-none-playwright",
+    "search-fresh-vercel-next-js",
+    "search-revenue-0001108524",
+    "search-founding-Q30113",
+    "search-page-https-docs-pola-rs-user-guide-concepts-streaming",
+    "search-pub-shared-preferences",
+    "search-pypi-tenacity",
+    "search-none-ulid",
+    "search-fresh-rust-lang-rust",
+    "search-revenue-0000027419",
+    "search-founding-Q35349",
+    "search-page-https-docs-firecrawl-dev-api-reference-endpoint-browser-delete",
+    "search-go-github-com-labstack-echo-v4",
+    "search-crates-tracing",
+    "search-none-hono",
+    "search-fresh-traefik-traefik",
+    "search-revenue-0000909832",
+    "search-founding-Q35339",
+    "search-page-https-typer-tiangolo-com-tutorial-arguments-other-uses",
+    "search-rubygems-bundler",
+    "search-pypi-uvicorn",
+    "search-none-tsup",
+    "search-fresh-astral-sh-uv",
+    "search-revenue-0000059478",
+    "search-founding-Q49125",
+    "search-page-https-sqlmodel-tiangolo-com-alternatives",
+    "search-hex-decimal",
+    "search-crates-crossbeam",
+    "search-none-unplugin",
+    "search-fresh-pydantic-pydantic",
+    "search-revenue-0001652044",
+    "search-founding-Q11407",
+    "search-page-https-docs-aiohttp-org-en-v3-12-11",
+    "search-homebrew-neovim",
+    "search-pypi-rich",
+    "search-none-zustand",
+    "search-fresh-astral-sh-ty",
+    "search-revenue-0001045609",
+    "search-founding-Q53238",
+    "search-page-https-www-encode-io-httpcore-table-of-contents",
+    "search-nuget-restsharp",
+    "search-crates-reqwest",
+    "search-none-commander",
+    "search-fresh-angular-angular",
+    "search-revenue-0000080424",
+    "search-founding-Q52618",
+    "search-page-https-docs-scrapy-org-en-latest-topics-addons-html",
+    "search-packagist-league-flysystem",
+    "search-pypi-sqlalchemy",
+    "search-none-kysely",
+    "search-fresh-grafana-grafana",
+    "search-revenue-0001141391",
+    "search-founding-Q45568",
+    "search-page-https-www-mkdocs-org-user-guide-deploying-your-docs",
+    "search-pub-logger",
+    "search-crates-uuid",
+    "search-none-fastify",
+    "search-fresh-astral-sh-ruff",
+    "search-revenue-0000310158",
+    "search-founding-Q44504",
+    "search-page-https-docs-linkup-so-pages-changelog-fast-depth",
+    "search-go-github-com-stretchr-testify",
+    "search-pypi-alembic",
+    "search-none-nanoid",
+    "search-revenue-0000796343",
+    "search-founding-Q13977",
+    "search-page-https-www-python-httpx-org-advanced-clients",
+    "search-metacpan-moo",
+    "search-crates-futures",
+    "search-none-drizzle-orm",
+    "search-revenue-0000077476",
+    "search-founding-Q8787",
+    "search-page-https-fastapi-tiangolo-com-tutorial-request-forms",
+    "search-homebrew-fd",
+    "search-pypi-peewee",
+    "search-none-undici",
+    "search-revenue-0000034088",
+    "search-founding-Q380",
+    "search-page-https-squidfunk-github-io-mkdocs-material-blog-2023-10-02-sunsetting-gitter-towards-efficient-community-engagement",
+    "search-rubygems-devise",
+    "search-crates-dashmap",
+    "search-none-immer",
+    "search-revenue-0000320193",
+    "search-founding-Q9401",
+    "search-page-https-docs-astral-sh-uv-concepts-projects-layout",
+    "search-nuget-fluentvalidation",
+    "search-pypi-cattrs",
+    "search-none-esbuild",
+    "search-revenue-0001045810",
+    "search-founding-Q11463",
+    "search-page-https-python-markdown-github-io-extensions-extra",
+    "search-hex-castore",
+    "search-crates-axum",
+    "search-none-yargs",
+    "search-revenue-0001403161",
+    "search-founding-Q35896",
+    "search-page-https-textual-textualize-io-api-compose",
+    "search-packagist-nesbot-carbon",
+    "search-pypi-anyio",
+    "search-none-cheerio",
+    "search-revenue-0000864749",
+    "search-founding-Q29803",
+    "search-page-https-docs-context-dev-api-reference-monitors-create",
+    "search-go-github-com-go-chi-chi-v5",
+    "search-crates-hyper",
+    "search-none-vite",
+    "search-revenue-0000875045",
+    "search-founding-Q2311",
+    "search-page-https-mkdocstrings-github-io-mkdocstrings-changelog",
+    "search-pub-riverpod",
+    "search-pypi-gunicorn",
+    "search-revenue-0000019617",
+    "search-founding-Q4585",
+    "search-page-https-docs-greatexpectations-io-docs-0-18-cloud-connect-connect-airflow",
+    "search-rubygems-minitest",
+    "search-pypi-trio",
+    "search-revenue-0000092380",
+    "search-founding-Q18224",
+    "search-page-https-uvicorn-dev-concepts-event-loop",
+    "search-metacpan-uri",
+    "search-pypi-loguru",
+    "search-revenue-0000100885",
+    "search-founding-Q32277",
+    "search-page-https-pydantic-dev-docs-ai-api-models-cohere",
+    "search-homebrew-ripgrep",
+    "search-pypi-pyarrow",
+    "search-revenue-0001318605",
+    "search-founding-Q14799",
+    "search-page-https-docs-astro-build-ar-basics-astro-pages",
+    "search-nuget-nodatime",
+    "search-pypi-starlette",
+    "search-revenue-0001326801",
+    "search-founding-Q2309",
+    "search-page-https-docs-pytest-org-en-7-3-x",
+    "search-hex-bandit",
+    "search-pypi-asyncpg",
+    "search-revenue-0000764478",
+    "search-founding-Q35594",
+    "search-page-https-docs-docker-com-reference-api-dvp-changelog",
+    "search-packagist-monolog-monolog",
+    "search-pypi-click",
+    "search-revenue-0000093751",
+    "search-founding-Q17957",
+    "search-page-https-docs-marimo-io-api-cell",
+    "search-pub-freezed",
+    "search-pypi-pydantic-settings",
+    "search-page-https-docs-tinyfish-ai-api-reference-list-search-usage",
+    "search-rubygems-rubocop",
+    "search-pypi-textual",
+    "search-page-https-docs-browserbase-com-integrations-evervault-introduction",
+    "search-metacpan-json-maybexs",
+    "search-npm-zod",
+    "search-page-https-starlette-dev-middleware",
+    "search-nuget-xunit",
+    "search-pypi-duckdb",
+    "search-page-https-docs-celeryq-dev-en-v5-3-4",
+    "search-homebrew-yq",
+    "search-npm-winston",
+    "search-page-https-docs-deno-com-api-deno-fetch",
+    "search-hex-tesla",
+    "search-pypi-httpx",
+    "search-page-https-www-attrs-org-en-24-1-0",
+    "search-go-golang-org-x-text",
+    "search-npm-fastify",
+    "search-page-https-facelessuser-github-io-pymdown-extensions-about-releases-8-0",
+    "search-packagist-laravel-framework",
+    "search-npm-kysely",
+    "search-page-https-jinja-palletsprojects-com-en-stable",
+    "search-pub-url-launcher",
+    "search-npm-drizzle-orm",
+    "search-page-https-click-palletsprojects-com-en-stable",
+    "search-rubygems-rails",
+    "search-npm-vite",
+    "search-page-https-werkzeug-palletsprojects-com-en-stable",
+    "search-homebrew-hyperfine",
+    "search-npm-hono",
+    "search-page-https-flask-palletsprojects-com-en-stable",
+    "search-metacpan-dancer2",
+    "search-npm-undici",
+    "search-page-https-docs-ansible-com",
+    "search-go-golang-org-x-net",
+    "search-npm-ky",
+    "search-page-https-typer-tiangolo-com-tutorial-commands-arguments",
+    "search-nuget-microsoft-entityframeworkcore",
+    "search-npm-cheerio",
+    "search-page-https-docs-scrapy-org-en-latest-topics-dynamic-content-html",
+    "search-hex-ecto",
+    "search-npm-execa",
+    "search-page-https-docs-pola-rs-user-guide-expressions-basic-operations",
+    "search-rubygems-activerecord",
+    "search-npm-luxon",
+    "search-page-https-vite-dev-blog-announcing-vite4",
+    "search-pub-path",
+    "search-npm-got",
+    "search-page-https-www-mkdocs-org-user-guide-localizing-your-theme",
+    "search-packagist-symfony-yaml",
+    "search-npm-sharp",
+    "search-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-delete",
+    "search-homebrew-jq",
+    "search-npm-esbuild",
+    "search-page-https-docs-aiohttp-org-en-v3-14-3",
+    "search-metacpan-dbi",
+    "search-npm-ofetch",
+    "search-page-https-fastapi-tiangolo-com-python-types",
+    "search-go-github-com-gin-gonic-gin",
+    "search-npm-yargs",
+    "search-page-https-pydantic-dev-docs",
+    "search-hex-livebook",
+    "search-npm-ulid",
+    "search-page-https-python-markdown-github-io-extensions",
+    "search-nuget-serilog",
+    "search-npm-pino",
+    "search-page-https-docs-context-dev-api-reference-brand-intelligence-search",
+    "search-rubygems-rspec",
+    "search-npm-zustand",
+    "search-page-https-docs-greatexpectations-io-docs-0-18-oss-contributing-contributing",
+    "search-pub-bloc",
+    "search-page-https-docs-astro-build-ar-develop-and-build",
+    "search-packagist-doctrine-orm",
+    "search-page-https-docs-getdbt-com-blog-announcing-materialized-views",
+    "search-homebrew-just",
+    "search-page-https-docs-linkup-so-pages-documentation-endpoints-fetch-for-agents",
+    "search-hex-mint",
+    "search-page-https-squidfunk-github-io-mkdocs-material-blog-2022-09-12-blog-support-just-landed",
+    "search-metacpan-mojolicious",
+    "search-page-https-sqlmodel-tiangolo-com-tutorial-create-db-and-table",
+    "search-rubygems-zeitwerk",
+    "search-page-https-docs-astral-sh-ruff-rules-airflow-xcom-pull-in-template-string",
+    "search-pub-uuid",
+    "search-page-https-docs-browserbase-com-integrations-agentkit-introduction",
+    "search-packagist-twig-twig",
+    "search-page-https-docs-docker-com-get-started-docker-concepts-building-images-using-the-build-cache",
+    "search-metacpan-moose",
+    "search-page-https-docs-pytest-org-en-7-1-x",
+    "search-rubygems-activesupport",
+    "search-page-https-uvicorn-dev-concepts-http-protocols",
+    "search-pub-equatable",
+    "search-page-https-www-python-httpx-org-advanced-authentication",
+    "search-packagist-symfony-routing",
+    "search-page-https-docs-celeryq-dev-en-v5-6-3",
+    "search-rubygems-rack",
+    "search-page-https-mkdocstrings-github-io-mkdocstrings-usage",
+    "search-pub-json-annotation",
+    "search-page-https-textual-textualize-io-getting-started",
+    "search-rubygems-puma",
+    "search-page-https-docs-deno-com-api-node",
+    "search-pub-intl",
+    "search-page-https-docs-marimo-io-recipes",
+    "search-rubygems-capybara",
+    "search-page-https-docs-tinyfish-ai-anti-bot-guide",
+    "search-pub-dio",
+    "search-page-https-www-attrs-org-en-21-2-0",
+    "search-rubygems-thor",
+    "search-page-https-starlette-dev-third-party-packages",
+    "search-rubygems-sidekiq",
+    "search-page-https-facelessuser-github-io-pymdown-extensions-about-changelog",
+    "search-rubygems-sequel",
+    "search-page-https-www-encode-io-httpcore-exceptions",
+    "search-rubygems-faraday",
+    "search-page-https-typer-tiangolo-com-tutorial-commands",
+    "fixture-v2-js-19019-2-scrape-js-rendered-field-102",
+    "fixture-v2-js-19019-3-scrape-js-rendered-field-102",
+    "scrape-page-https-docs-aiohttp-org-en-v3-13-1",
+    "scrape-pypi-click",
+    "scrape-page-https-typer-tiangolo-com-contributing",
+    "scrape-pypi-typer",
+    "scrape-page-https-docs-astro-build-ar-guides-cms-builderio",
+    "scrape-pypi-pydantic-settings",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-first-steps",
+    "scrape-page-https-docs-pytest-org-en-8-2-x",
+    "scrape-page-https-docs-celeryq-dev-en-latest",
+    "scrape-page-https-docs-astral-sh-uv-getting-started",
+    "scrape-page-https-docs-marimo-io-api-diagrams",
+    "scrape-page-https-vite-dev-blog-announcing-vite3",
+    "scrape-page-https-www-attrs-org-en-26-1-0",
+    "scrape-page-https-www-mkdocs-org-about-contributing",
+    "scrape-page-https-python-markdown-github-io-extensions-md-in-html",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-conventions",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-contributing-contributing-maturity",
+    "scrape-page-https-docs-firecrawl-dev-ai-onboarding-agent-auth",
+    "scrape-page-https-docs-scrapy-org-en-latest-news-html",
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-update-data-connections",
+    "scrape-page-https-docs-deno-com-api",
+    "scrape-page-https-starlette-dev-staticfiles",
+    "scrape-page-https-uvicorn-dev-deployment-docker",
+    "scrape-page-https-www-python-httpx-org-environment-variables",
+    "scrape-page-https-docs-context-dev-api-reference-batches-retrieve",
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-time-series-rolling",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-instrumented",
+    "scrape-page-https-docs-tinyfish-ai-api-reference-browser-context-profiles-delete-a-saved-profile-domain",
+    "scrape-page-https-docs-docker-com-get-started-docker-concepts-running-containers-sharing-local-files",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-recipes",
+    "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-research-best-practices",
+    "scrape-page-https-www-encode-io-httpcore-connection-pools",
+    "scrape-page-https-jinja-palletsprojects-com-en-stable",
+    "scrape-page-https-textual-textualize-io-api-compose",
+    "scrape-page-https-docs-browserbase-com-account-enterprise-security",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-releases-9-0",
+    "scrape-page-https-docs-getdbt-com-blog-analysts-make-the-best-aes",
+    "scrape-page-https-click-palletsprojects-com-en-stable",
+    "fixture-v2-js-19019-4-scrape-js-rendered-field-102",
+    "fixture-v2-js-19019-5-scrape-js-rendered-field-102",
+    "scrape-page-https-docs-celeryq-dev-en-v5-2-4",
+    "scrape-pypi-sqlalchemy",
+    "scrape-page-https-typer-tiangolo-com-tutorial-arguments-default",
+    "scrape-pypi-uvicorn",
+    "scrape-page-https-docs-browserbase-com-account-enterprise-byos-setup-guide",
+    "scrape-pypi-rich",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-response-status-code",
+    "scrape-pypi-tenacity",
+    "scrape-page-https-www-encode-io-httpcore-quickstart",
+    "scrape-pypi-pydantic",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog-2023-09-22-using-git-sparse-checkout-for-faster-documentation-builds",
+    "scrape-pypi-loguru",
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-9",
+    "scrape-pypi-trio",
+    "scrape-page-https-docs-astral-sh-uv-getting-started-features",
+    "scrape-pypi-peewee",
+    "scrape-page-https-docs-getdbt-com-blog-authors-brittany-krauth",
+    "scrape-pypi-asyncpg",
+    "scrape-page-https-www-mkdocs-org-dev-guide",
+    "scrape-pypi-alembic",
+    "scrape-page-https-uvicorn-dev-settings",
+    "scrape-pypi-duckdb",
+    "scrape-page-https-sqlmodel-tiangolo-com-release-notes",
+    "scrape-pypi-attrs",
+    "scrape-page-https-starlette-dev-routing",
+    "scrape-pypi-textual",
+    "scrape-page-https-www-python-httpx-org-advanced-authentication",
+    "scrape-pypi-cattrs",
+    "scrape-page-https-textual-textualize-io-linux-console",
+    "scrape-pypi-msgspec",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-usage-handlers",
+    "scrape-pypi-pyarrow",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-ask",
+    "scrape-pypi-anyio",
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-coroutines-html",
+    "scrape-pypi-httpx",
+    "scrape-page-https-www-attrs-org-en-25-4-0",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-snowflake",
+    "scrape-page-https-docs-marimo-io-community",
+    "scrape-page-https-docs-deno-com-api-deno-file-system",
+    "scrape-page-https-docs-pytest-org-en-8-3-x",
+    "scrape-page-https-docs-context-dev-api-reference-brand-intelligence-search",
+    "scrape-page-https-python-markdown-github-io-extensions-fenced-code-blocks",
+    "scrape-page-https-docs-linkup-so-pages-changelog-cli",
+    "scrape-page-https-docs-astro-build-ar-develop-and-build",
+    "scrape-page-https-docs-docker-com-guides-opencode-model-runner",
+    "scrape-page-https-docs-pola-rs-user-guide-expressions-user-defined-python-functions",
+    "scrape-page-https-docs-tinyfish-ai-api-reference-browser-context-profiles-get-a-browser-context-profile",
+    "scrape-page-https-vite-dev-acknowledgements",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-extensions-betterem",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-schedules-manage-schedules",
+    "scrape-page-https-werkzeug-palletsprojects-com-en-stable",
+    "scrape-page-https-flask-palletsprojects-com-en-stable",
+    "scrape-page-https-docs-ansible-com",
+    "scrape-page-https-docs-celeryq-dev-en-v5-3-4",
+    "scrape-page-https-typer-tiangolo-com-tutorial-arguments-optional",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-forms",
+    "scrape-page-https-starlette-dev-threadpool",
+    "scrape-page-https-docs-getdbt-com-blog-announcing-unit-testing",
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-13",
+    "scrape-page-https-docs-astral-sh-uv-concepts-projects-dependencies",
+    "scrape-page-https-www-mkdocs-org-dev-guide-translations",
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-api-html",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-developer-search",
+    "scrape-page-https-textual-textualize-io-api-app",
+    "scrape-page-https-docs-deno-com-api-deno-errors",
+    "scrape-page-https-docs-marimo-io-api-cell",
+    "scrape-page-https-www-attrs-org-en-24-3-0",
+    "scrape-page-https-docs-astro-build-ar-guides-backend-appwrite",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-browser-support",
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-unpivot",
+    "scrape-page-https-docs-pytest-org-en-7-3-x",
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-create-connected-rows",
+    "scrape-page-https-www-encode-io-httpcore-extensions",
+    "scrape-page-https-docs-context-dev-api-reference-batches-webhooks-failed",
+    "scrape-page-https-python-markdown-github-io-cli",
+    "scrape-page-https-uvicorn-dev-concepts-event-loop",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-license",
+    "scrape-page-https-docs-tinyfish-ai-api-reference-attach-to-research-progress",
+    "scrape-page-https-www-python-httpx-org-advanced-timeouts",
+    "scrape-page-https-docs-browserbase-com-integrations-1password-introduction",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-cohere",
+    "scrape-page-https-docs-docker-com-reference-api-hub-latest",
+    "scrape-page-https-vite-dev-changes-ssr-using-modulerunner",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-connect-connect-airflow",
+    "scrape-page-https-docs-linkup-so-pages-changelog-addingimages",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-contributing",
+    "scrape-page-https-typer-tiangolo-com-reference-run-launch",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-files",
+    "scrape-page-https-docs-astral-sh-ruff-settings",
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-asyncio-html",
+    "scrape-page-https-docs-celeryq-dev-en-v5-2-7",
+    "scrape-page-https-docs-aiohttp-org-en-v3-14-1",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog-2025-11-18-goodbye-github-discussions",
+    "scrape-page-https-docs-pola-rs-user-guide-concepts-lazy-api",
+    "scrape-page-https-www-attrs-org-en-25-3-0",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-crawl-get",
+    "scrape-page-https-textual-textualize-io-getting-started",
+    "scrape-page-https-starlette-dev-third-party-packages",
+    "scrape-page-https-docs-astro-build-ar-editor-setup",
+    "scrape-page-https-docs-deno-com-api-deno-ffi",
+    "scrape-page-https-docs-getdbt-com-blog-audit-helper-for-migration",
+    "scrape-page-https-docs-tinyfish-ai-agent-api",
+    "scrape-page-https-docs-context-dev-api-reference-monitors-account-runs",
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-delete",
+    "scrape-page-https-uvicorn-dev",
+    "scrape-page-https-docs-browserbase-com-integrations-google-adk-introduction",
+    "scrape-page-https-docs-pytest-org-en-9-0-x",
+    "scrape-page-https-docs-docker-com-get-started-docker-concepts-building-images-understanding-image-layers",
+    "scrape-page-https-python-markdown-github-io-extensions-wikilinks",
+    "scrape-page-https-www-mkdocs-org-user-guide",
+    "scrape-page-https-www-encode-io-httpcore-table-of-contents",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-contributing-contributing",
+    "scrape-page-https-www-python-httpx-org-exceptions",
+    "scrape-page-https-docs-marimo-io-static-claude",
+    "scrape-page-https-vite-dev-changes-hotupdate-hook",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-openai-decisions",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-usage-theming",
+    "scrape-page-https-docs-linkup-so-pages-changelog-fetch-pro-mode",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-development",
+    "scrape-page-https-fastapi-tiangolo-com-async",
+    "scrape-page-https-docs-astral-sh-ruff-configuration",
+    "scrape-page-https-typer-tiangolo-com-help-typer",
+    "scrape-page-https-docs-celeryq-dev-en-v5-6-3",
+    "scrape-page-https-docs-pola-rs-user-guide-concepts-streaming",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get",
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-8",
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-downloader-middleware-html",
+    "scrape-page-https-docs-astro-build-ar-concepts-islands",
+    "scrape-page-https-starlette-dev-schemas",
+    "scrape-page-https-docs-tinyfish-ai-agent-payments",
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial",
+    "scrape-page-https-docs-context-dev-account-credits",
+    "scrape-page-https-docs-browserbase-com-integrations-evervault-browser-tokens",
+    "scrape-page-https-textual-textualize-io-api-await-complete",
+    "scrape-page-https-docs-deno-com-api-deno-fetch",
+    "scrape-page-https-docs-pytest-org-en-4-6-x",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog-2023-10-02-sunsetting-gitter-towards-efficient-community-engagement",
+    "scrape-page-https-python-markdown-github-io-extensions",
+    "scrape-page-https-www-attrs-org-en-21-4-0-post1",
+    "scrape-page-https-www-mkdocs-org-dev-guide-themes",
+    "scrape-page-https-docs-docker-com-guides-nodejs",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-validations-manage-validations",
+    "scrape-page-https-docs-marimo-io-api-state",
+    "scrape-page-https-uvicorn-dev-concepts-websockets",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-groq",
+    "scrape-page-https-vite-dev-blog-announcing-vite8-1",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-usage",
+    "scrape-page-https-docs-linkup-so-pages-changelog-usd-pricing",
+    "scrape-page-https-www-python-httpx-org-advanced-event-hooks",
+    "scrape-page-https-docs-getdbt-com-blog-authors-andrew-escay",
+    "scrape-page-https-www-encode-io-httpcore-async",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-changelog",
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-cookies-html",
+    "scrape-page-https-docs-celeryq-dev-en-v5-6-0",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-activity",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-form-models",
+    "scrape-page-https-docs-astro-build-ar-guides-build-with-ai",
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-time-series-parsing",
+    "scrape-page-https-docs-astral-sh-ruff-linter",
+    "scrape-page-https-starlette-dev",
+    "scrape-page-https-docs-tinyfish-ai-api-reference-automation-run-browser-automation-synchronously",
+    "scrape-page-https-typer-tiangolo-com-reference-context",
+    "scrape-page-https-textual-textualize-io-help",
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-remove-data-connections",
+    "scrape-page-https-docs-context-dev-api-reference-batches-webhooks-completed",
+    "scrape-page-https-python-markdown-github-io-extensions-abbreviations",
+    "scrape-page-https-docs-deno-com-api-deno-uncategorized",
+    "scrape-page-https-docs-browserbase-com-integrations-hermes-agent-introduction",
+    "scrape-page-https-www-attrs-org-en-25-1-0",
+    "scrape-page-https-docs-docker-com-security-security-announcements",
+    "scrape-page-https-www-mkdocs-org-dev-guide-plugins",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog",
+    "scrape-page-https-docs-pytest-org-en-7-2-x",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-openai",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-changelog",
+    "scrape-page-https-vite-dev-changes-this-environment-in-hooks",
+    "scrape-page-https-uvicorn-dev-concepts-asgi",
+    "scrape-page-https-docs-marimo-io-reading",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-code-of-conduct",
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-11",
+    "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-extract-get",
+    "scrape-page-https-www-python-httpx-org-advanced-text-encodings",
+    "scrape-page-https-www-encode-io-httpcore-exceptions",
+    "scrape-page-https-docs-getdbt-com-blog-authors-bennie-regenold",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-extensions-critic",
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-commands-html",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-crawl-params-preview",
+    "scrape-page-https-docs-astro-build-ar-guides-backend-sentry",
+    "scrape-page-https-docs-celeryq-dev-en-v5-3-1",
+    "scrape-page-https-docs-astral-sh-uv-concepts-build-backend",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-body-multiple-params",
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-concatenation",
+    "scrape-page-https-sqlmodel-tiangolo-com-learn",
+    "scrape-page-https-www-attrs-org-en-25-2-0",
+    "scrape-page-https-docs-tinyfish-ai-api-reference-list-browser-session-usage",
+    "scrape-page-https-textual-textualize-io-api-content",
+    "scrape-page-https-docs-context-dev-api-reference-batches-list",
+    "scrape-page-https-www-mkdocs-org-user-guide-localizing-your-theme",
+    "scrape-page-https-docs-browserbase-com-integrations-anthropic-managed-agents-quickstart",
+    "scrape-page-https-python-markdown-github-io-extensions-definition-lists",
+    "scrape-page-https-starlette-dev-middleware",
+    "scrape-page-https-docs-deno-com-api-deno-bundler",
+    "scrape-page-https-docs-docker-com-get-started-docker-concepts-running-containers-persisting-container-data",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material",
+    "scrape-page-https-typer-tiangolo-com-tutorial-commands-arguments",
+    "scrape-page-https-vite-dev-blog-cloudflare-supports-vite",
+    "scrape-page-https-uvicorn-dev-concepts-http-protocols",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-crusoe",
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-12",
+    "scrape-page-https-docs-linkup-so-pages-changelog-research-endpoint",
+    "scrape-page-https-docs-pytest-org-en-8-0-x",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-contributing",
+    "scrape-page-https-docs-marimo-io-recipes",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-why-gx-cloud",
+    "scrape-page-https-www-python-httpx-org-advanced-extensions",
+    "scrape-page-https-docs-getdbt-com-blog-authors-adedamola-onabanjo",
+    "scrape-page-https-www-encode-io-httpcore",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-releases-8-0",
+    "scrape-page-https-docs-celeryq-dev-en-v5-6-1",
+    "scrape-page-https-docs-pola-rs-user-guide-transformations",
+    "scrape-page-https-docs-astral-sh-uv",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-query-param-models",
+    "scrape-page-https-docs-tinyfish-ai-anti-bot-guide",
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-create-connected-tables",
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-benchmarking-html",
+    "scrape-page-https-docs-context-dev-api-reference-feedback-submit",
+    "scrape-page-https-www-mkdocs-org-user-guide-configuration",
+    "scrape-page-https-starlette-dev-release-notes",
+    "scrape-page-https-docs-browserbase-com-integrations-agentkit-quickstart",
+    "scrape-page-https-docs-astro-build-ar-guides-caching",
+    "scrape-page-https-python-markdown-github-io-extensions-admonition",
+    "scrape-page-https-textual-textualize-io-api-coordinate",
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-creating-your-site",
+    "scrape-page-https-docs-deno-com-api-node",
+    "scrape-page-https-www-attrs-org-en-23-2-0",
+    "scrape-page-https-docs-docker-com-ai-sandboxes-customize-author-kit-sets",
+    "scrape-page-https-typer-tiangolo-com-tutorial-arguments-envvar",
+    "scrape-page-https-vite-dev-blog-announcing-vite4",
+    "scrape-page-https-uvicorn-dev-release-notes",
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-bedrock",
+    "scrape-page-https-docs-pytest-org-en-latest",
+    "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-research-list",
+    "scrape-page-https-docs-marimo-io-api-status",
+    "scrape-page-https-www-python-httpx-org-advanced-transports",
+    "scrape-page-https-docs-getdbt-com-blog-archive",
+    "scrape-page-https-docs-aiohttp-org-en-v3-13-5",
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-category-integrate",
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-troubleshooting",
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-releases-6-0",
+    "scrape-page-https-docs-celeryq-dev-en-v5-3-3",
+    "scrape-page-https-docs-pola-rs-user-guide-expressions-categorical-data-and-enums",
+    "scrape-page-https-docs-astral-sh-uv-concepts-projects-config",
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-browser-delete",
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-forms-and-files",
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-create-db-and-table-with-db-browser",
+    "scrape-page-https-docs-scrapy-org-en-latest-faq-html",
+    "map-typer-tiangolo-com-tutorial-commands",
+    "map-fastapi-tiangolo-com-reference-openapi",
+    "map-docs-deno-com-sandbox",
+    "map-squidfunk-github-io-mkdocs-material-contributing",
+    "map-docs-astral-sh-uv-getting-started",
+    "map-docs-marimo-io-guides-configuration",
+    "map-mkdocstrings-github-io-mkdocstrings-usage",
+    "map-pydantic-dev-docs-logfire-api",
+    "map-docs-astro-build-it-guides-backend",
+    "map-textual-textualize-io-styles-grid",
+    "map-docs-docker-com-dhi-migration",
+    "map-docs-pola-rs-user-guide-transformations",
+    "map-www-mkdocs-org-dev-guide",
+    "map-sqlmodel-tiangolo-com-advanced",
+    "map-vite-dev-changes",
+    "map-docs-marimo-io-getting-started",
+    "map-typer-tiangolo-com-reference",
+    "map-docs-docker-com-dhi-tools",
+    "map-pydantic-dev-docs-ai-overview",
+    "map-docs-astral-sh-uv-pip",
+    "map-docs-astro-build-pl-guides-backend",
+    "map-sqlmodel-tiangolo-com-tutorial-relationship-attributes",
+    "map-fastapi-tiangolo-com-tutorial-security",
+    "map-docs-deno-com-deploy-classic-api",
+    "map-docs-pola-rs-user-guide-lazy",
+    "map-textual-textualize-io-styles-scrollbar-colors",
+    "map-www-mkdocs-org-user-guide",
+    "map-squidfunk-github-io-mkdocs-material-setup-extensions",
+    "map-pydantic-dev-docs-httpx2-guides",
+    "map-docs-docker-com-offload",
+    "map-docs-astro-build-pt-br-guides-media",
+    "map-typer-tiangolo-com-tutorial-options",
+    "map-sqlmodel-tiangolo-com-tutorial-connect",
+    "map-fastapi-tiangolo-com-tutorial-dependencies",
+    "map-docs-marimo-io-guides-package-management",
+    "map-docs-deno-com-runtime-packages",
+    "map-docs-astral-sh-uv-concepts-projects",
+    "map-docs-pola-rs-user-guide-concepts",
+    "map-pydantic-dev-docs-httpx2-api",
+    "map-docs-docker-com-faqs",
+    "map-typer-tiangolo-com-tutorial-arguments",
+    "map-docs-astro-build-ar-guides-backend",
+    "map-docs-marimo-io-guides-integrating-with-marimo",
+    "map-sqlmodel-tiangolo-com-tutorial-many-to-many",
+    "map-docs-deno-com-deploy-kv",
+    "map-pydantic-dev-docs-ai-graph",
+    "map-typer-tiangolo-com-tutorial-parameter-types",
+    "map-docs-astro-build-it-guides-media",
+    "map-docs-docker-com-build-cloud",
+    "map-docs-marimo-io-guides-testing",
+    "map-docs-deno-com-runtime-test",
+    "map-typer-tiangolo-com-tutorial-subcommands",
+    "map-docs-astro-build-zh-tw-guides-media",
+    "map-docs-docker-com-ai-gordon",
+    "map-pydantic-dev-docs-ai-integrations",
+    "map-docs-marimo-io-guides-working-with-data",
+    "map-docs-deno-com-runtime-migrate",
+    "map-docs-astro-build-pl-guides-media",
+    "map-pydantic-dev-docs-monty-concepts",
+    "map-docs-docker-com-engine-daemon",
+    "crawl-typer-tiangolo-com-tutorial-commands",
+    "crawl-fastapi-tiangolo-com-reference-openapi",
+    "crawl-docs-deno-com-sandbox",
+    "crawl-squidfunk-github-io-mkdocs-material-contributing",
+    "crawl-docs-astral-sh-uv-getting-started",
+    "crawl-docs-marimo-io-guides-configuration",
+    "crawl-mkdocstrings-github-io-mkdocstrings-usage",
+    "crawl-pydantic-dev-docs-logfire-api",
+    "crawl-docs-astro-build-it-guides-backend",
+    "crawl-textual-textualize-io-styles-grid",
+    "crawl-docs-docker-com-dhi-migration",
+    "crawl-docs-pola-rs-user-guide-transformations",
+    "crawl-squidfunk-github-io-mkdocs-material-setup-extensions",
+    "crawl-sqlmodel-tiangolo-com-tutorial-relationship-attributes",
+    "crawl-docs-docker-com-dhi-tools",
+    "crawl-pydantic-dev-docs-ai-graph",
+    "crawl-docs-astral-sh-uv-pip",
+    "crawl-docs-marimo-io-guides-integrating-with-marimo",
+    "crawl-docs-astro-build-pl-guides-backend",
+    "crawl-typer-tiangolo-com-tutorial-arguments",
+    "crawl-fastapi-tiangolo-com-tutorial-security",
+    "crawl-docs-deno-com-deploy-classic-api",
+    "crawl-docs-pola-rs-user-guide-lazy",
+    "crawl-www-mkdocs-org-user-guide",
+    "crawl-textual-textualize-io-styles-scrollbar-colors",
+    "crawl-vite-dev-changes",
+    "crawl-pydantic-dev-docs-ai-integrations",
+    "crawl-docs-docker-com-offload",
+    "crawl-sqlmodel-tiangolo-com-tutorial-many-to-many",
+    "crawl-docs-astro-build-pt-br-guides-media",
+    "crawl-typer-tiangolo-com-reference",
+    "crawl-docs-marimo-io-guides-working-with-data",
+    "crawl-fastapi-tiangolo-com-tutorial-dependencies",
+    "crawl-docs-deno-com-runtime-packages",
+    "crawl-docs-astral-sh-uv-concepts-projects",
+    "crawl-www-mkdocs-org-dev-guide",
+    "crawl-docs-pola-rs-user-guide-concepts",
+    "crawl-pydantic-dev-docs-ai-project",
+    "crawl-docs-docker-com-faqs",
+    "crawl-sqlmodel-tiangolo-com-advanced"
+  ],
+  "manifestHash": "bddf0696f18fe50fcd887496134762567236709abf38f3d43cb0ac679ba08219",
+  "failures": [],
+  "artifactHashes": {
+    "candidate-test-search.json": "e87f43480ef06bab0c592d7385b011b0097642872a1a4249d3eef4b799dec035",
+    "candidate-core-search.json": "7b18c002a4084c5590fc6c3f4ac6be6908a63d58ed8e5f70925e09da65dab023",
+    "candidate-test-scrape.json": "35ba31ceaf1667628b933e5a611900fd188de22804354b26d168b0f4d680b617",
+    "candidate-core-scrape.json": "f2ee60b223778f84f9620a6e4b69990a2ba62228537444999ae7a914bdfb8226",
+    "candidate-test-map.json": "58ab8a6ce380dc8e61d0d0a92f19bf832c07568956ed35ea26a163cd7348eccc",
+    "candidate-core-map.json": "952046aa98f6b378f1281fe8847f4487de0a048658b6574ace27ebe2732b0f3f",
+    "candidate-test-crawl.json": "aba231aa70118539fcfcba41ade478fbb5700cc87f8b6006c12a8bdeafc35e08",
+    "candidate-core-crawl.json": "5c89538c3e1d3525421c34f459b4fa53d5b69605a7ef9a03bcacdb4faf9a2af7",
+    "config.json": "b5db9885635d20636268f1a37742529d855b1f5ca3a0fb8c1b15378a3e8320ee",
+    "js-render-verification.json": "18df49224e1ee1bf3cd5f86ce697e43e9da4ed3a8bffd35a9e3d22bd09b6af06",
+    "banks/splits.json": "3ddeaae9f9da384bbd5d7e97bc25c709bf932d85ae8d38b333a4dd70a9d777ab",
+    "banks/provenance.json": "c21751c1a4ff92427c33a610316fbb8be6698010291d167b6f74a0a66f9a0f9e",
+    "banks/search.json": "d96cc5a42ffabf6dc84ce189eafbf627366b80cb59f9a7d6a8702b47451d5fb2",
+    "banks/scrape-web.json": "c244f5131df382ffdf95cab004ff4fb92515f4859d94079467547134ab509e79",
+    "banks/map-web.json": "4d9a7fcf9dc736369a036a9f35c21066e0516a7802a514648d9280a1ee8d9bee",
+    "banks/crawl-web.json": "779eb91242e0d3fe2b679bb202e1df8ba14c6c25c7c4bbcbf5d16146e7ce1713"
+  },
+  "evidence": {
+    "fixture-v2-js-19019-2-scrape-js-rendered-field-102": {
+      "sha256": "a51357c935ab113c6bbab074f828b71c1f18e9345fd99ec6c22acd758e7f6994",
+      "bytes": 272,
+      "source": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-2/resources/js"
+    },
+    "fixture-v2-js-19019-3-scrape-js-rendered-field-102": {
+      "sha256": "6803da693dbe06927e11caa6cbb348a10b118a0eb87d7b75577f5dbb8d536c7a",
+      "bytes": 272,
+      "source": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-3/resources/js"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-13-1": {
+      "sha256": "729d7e305f34bc89ad91a70de7f6f61b81f8c68e5aa896668dfee78c2c5643c5",
+      "bytes": 106,
+      "source": "https://docs.aiohttp.org/en/v3.13.1/"
+    },
+    "scrape-pypi-click": {
+      "sha256": "f5419c4e83a0e928211a77330186850f0c94dd129540fe30c4bb8b3a3b066cf6",
+      "bytes": 61,
+      "source": "https://pypi.org/project/click/"
+    },
+    "scrape-page-https-typer-tiangolo-com-contributing": {
+      "sha256": "9e60e0d6f1ddad216ca3fc6741cdc18bb0fad4939550c8b6410cd646573affe8",
+      "bytes": 97,
+      "source": "https://typer.tiangolo.com/contributing/"
+    },
+    "scrape-pypi-typer": {
+      "sha256": "981f4f0f172cf346e1e5bd522d68fe54170473a4e5004f03e6b9a561176b3087",
+      "bytes": 62,
+      "source": "https://pypi.org/project/typer/"
+    },
+    "scrape-page-https-docs-astro-build-ar-guides-cms-builderio": {
+      "sha256": "3ff64478473a6ed06ad33169ab5f45a2bf42d9b473a18d3deb772dfd83079f64",
+      "bytes": 80,
+      "source": "https://docs.astro.build/ar/guides/cms/builderio/"
+    },
+    "scrape-pypi-pydantic-settings": {
+      "sha256": "392768ffd635e97352a1f3e395b2efde19b3cf6dea1d1320e84e2b3a79aa1d93",
+      "bytes": 86,
+      "source": "https://pypi.org/project/pydantic-settings/"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-first-steps": {
+      "sha256": "02cbdf516b4f98c5e50682d396d65e12834195ff8480de9b8d2d9eb785895fa3",
+      "bytes": 69,
+      "source": "https://fastapi.tiangolo.com/tutorial/first-steps/"
+    },
+    "scrape-page-https-docs-pytest-org-en-8-2-x": {
+      "sha256": "687ba51a0a74f604b0db0650a90e33c97c661f74af0de508de0aa0bce65cc3de",
+      "bytes": 138,
+      "source": "https://docs.pytest.org/en/8.2.x/"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-latest": {
+      "sha256": "6955b59ffae7b5d13c48f7b88944f1c2d313c1ed74d5bf5e23cc3f1eb2f1f6bc",
+      "bytes": 133,
+      "source": "https://docs.celeryq.dev/en/latest/"
+    },
+    "scrape-page-https-docs-astral-sh-uv-getting-started": {
+      "sha256": "e68172fbba190d7db8568437c8236ba33618e14b3b5fa8694dcacbbd20be965e",
+      "bytes": 72,
+      "source": "https://docs.astral.sh/uv/getting-started/"
+    },
+    "scrape-page-https-docs-marimo-io-api-diagrams": {
+      "sha256": "35a446042f38af13002f376d50cbbd0ab599587dfeed4200856ae6ff0e8fa782",
+      "bytes": 62,
+      "source": "https://docs.marimo.io/api/diagrams/"
+    },
+    "scrape-page-https-vite-dev-blog-announcing-vite3": {
+      "sha256": "f186557e2ffa3f07d8ecdf8b556033ccb8dbb7b73c277422d78d2f051cc56fae",
+      "bytes": 80,
+      "source": "https://vite.dev/blog/announcing-vite3"
+    },
+    "scrape-page-https-www-attrs-org-en-26-1-0": {
+      "sha256": "ce121463c2e59649d673bfce0015c23d4a6a7a5afda4d4702f2a9c36b10965f7",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/26.1.0/"
+    },
+    "scrape-page-https-www-mkdocs-org-about-contributing": {
+      "sha256": "126161e6f00bdde508100f6587850ad60dcb5f2fa1b0e10bfe1e091765628468",
+      "bytes": 83,
+      "source": "https://www.mkdocs.org/about/contributing/"
+    },
+    "scrape-page-https-python-markdown-github-io-extensions-md-in-html": {
+      "sha256": "b3adc152224271b4370896e624f6cf1926d07155661a8a0eff22f473e71413aa",
+      "bytes": 99,
+      "source": "https://Python-Markdown.github.io/extensions/md_in_html/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-conventions": {
+      "sha256": "c512890c9751f74c47447527d1ea999476cea6599f9cedeb8b85ade8bb53669f",
+      "bytes": 81,
+      "source": "https://squidfunk.github.io/mkdocs-material/conventions/"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-contributing-contributing-maturity": {
+      "sha256": "336371a572b481224421e8a019c539c241a70d3f2347968a697b4737b964dba5",
+      "bytes": 110,
+      "source": "https://docs.greatexpectations.io/docs/0.18/oss/contributing/contributing_maturity"
+    },
+    "scrape-page-https-docs-firecrawl-dev-ai-onboarding-agent-auth": {
+      "sha256": "a62ae5d3cc2dabbcd8f794336766850dedeb998269c73c4d62e7207c3d27b20f",
+      "bytes": 101,
+      "source": "https://docs.firecrawl.dev/ai-onboarding/agent-auth"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-news-html": {
+      "sha256": "b453735d9f65c790ba95a22f9bfcd6aeeada7f6ac9b0642647b4543f698c5c52",
+      "bytes": 98,
+      "source": "https://docs.scrapy.org/en/latest/news.html"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-update-data-connections": {
+      "sha256": "b48a93802cb5bb3d4395b8af3e1720191851bfa9ca74cfbe2a6321b77ed870c1",
+      "bytes": 94,
+      "source": "https://sqlmodel.tiangolo.com/tutorial/connect/update-data-connections/"
+    },
+    "scrape-page-https-docs-deno-com-api": {
+      "sha256": "b0868e6f835ec508b74537877f85917a380d87cfd0d915dc4ae6c04b2cc2b2f6",
+      "bytes": 75,
+      "source": "https://docs.deno.com/api/"
+    },
+    "scrape-page-https-starlette-dev-staticfiles": {
+      "sha256": "671408e9cf2baaa5baa5d312a65269bf60f23e42f748e2c572a35b1f2f7b244c",
+      "bytes": 73,
+      "source": "https://starlette.dev/staticfiles/"
+    },
+    "scrape-page-https-uvicorn-dev-deployment-docker": {
+      "sha256": "52b270b9519b336bb2295b674c03f48575abaa70e10b9ee1d9583273833d8ae5",
+      "bytes": 67,
+      "source": "https://uvicorn.dev/deployment/docker/"
+    },
+    "scrape-page-https-www-python-httpx-org-environment-variables": {
+      "sha256": "8515191120433ea532bd35a0ffabb858dd5acd5b4b825731af1d3382499da9c3",
+      "bytes": 87,
+      "source": "https://www.python-httpx.org/environment_variables/"
+    },
+    "scrape-page-https-docs-context-dev-api-reference-batches-retrieve": {
+      "sha256": "b1da5fc5baa6e5298158536aca93cf57579f2d2ff1243cb19873a132011abe43",
+      "bytes": 83,
+      "source": "https://docs.context.dev/api-reference/batches/retrieve"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-time-series-rolling": {
+      "sha256": "5e5d76ca492719cbd98c7e1172a3f8ed8d2c831f46dc7bc1f0171f5c4b0f49af",
+      "bytes": 73,
+      "source": "https://docs.pola.rs/user-guide/transformations/time-series/rolling/"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-instrumented": {
+      "sha256": "b422ec5f1e4dd8249017289db36d8a34df2c7cbda5a28f29ae172412cce97259",
+      "bytes": 115,
+      "source": "https://pydantic.dev/docs/ai/api/models/instrumented/"
+    },
+    "scrape-page-https-docs-tinyfish-ai-api-reference-browser-context-profiles-delete-a-saved-profile-domain": {
+      "sha256": "ea1c61995bfbd30db1717003d2ef9f36f0d46269df95dd69403cfd906554fc26",
+      "bytes": 116,
+      "source": "https://docs.tinyfish.ai/api-reference/browser-context-profiles/delete-a-saved-profile-domain"
+    },
+    "scrape-page-https-docs-docker-com-get-started-docker-concepts-running-containers-sharing-local-files": {
+      "sha256": "d3c444e45968b5b042a26fbdf0a9305155fef4dfc53c0ce112e572baf91e8bbc",
+      "bytes": 121,
+      "source": "https://docs.docker.com/get-started/docker-concepts/running-containers/sharing-local-files/"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-recipes": {
+      "sha256": "22507d442be6673dd565102f5428b5fb8bcd6d6ae5d2b7543ebe43b6e9da316d",
+      "bytes": 66,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/recipes/"
+    },
+    "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-research-best-practices": {
+      "sha256": "efba1b5ed33b2b1f4b0e6ba59ed73ff1534ac4ed89617b7b14558410ca38285c",
+      "bytes": 110,
+      "source": "https://docs.linkup.so/pages/documentation/endpoints/research/best-practices"
+    },
+    "scrape-page-https-www-encode-io-httpcore-connection-pools": {
+      "sha256": "e20f243b7f8bd15d093de5dbd2d18e0b6fb3cff6c72b17e6a076b9e6b7a26f82",
+      "bytes": 80,
+      "source": "https://www.encode.io/httpcore/connection-pools/"
+    },
+    "scrape-page-https-jinja-palletsprojects-com-en-stable": {
+      "sha256": "a04bfa0b7993317c8bae0434e20b6140c78bc7c751cc4c600bdaf6c8184062df",
+      "bytes": 79,
+      "source": "https://jinja.palletsprojects.com/en/stable/"
+    },
+    "scrape-page-https-textual-textualize-io-api-compose": {
+      "sha256": "f41d2652507886d6b54504baad425c2f512558f871f65b9e25ca9c00edfdfc0e",
+      "bytes": 77,
+      "source": "https://textual.textualize.io/api/compose/"
+    },
+    "scrape-page-https-docs-browserbase-com-account-enterprise-security": {
+      "sha256": "1f681d4ebb39d05f5947b0be45faeb2c81b09c38c4307cbac394503eccd97f8f",
+      "bytes": 103,
+      "source": "https://docs.browserbase.com/account/enterprise/security"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-releases-9-0": {
+      "sha256": "3652864b7cd07d3a865fb924ab2cb217c93968ea5d6e71dd69bf06fe11ad4ff7",
+      "bytes": 94,
+      "source": "https://facelessuser.github.io/pymdown-extensions/about/releases/9.0/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-analysts-make-the-best-aes": {
+      "sha256": "4be05b516c71b0e377248998ca14b694a3117e54e582eca12069fe9aedf7fc14",
+      "bytes": 142,
+      "source": "https://docs.getdbt.com/blog/analysts-make-the-best-aes"
+    },
+    "scrape-page-https-click-palletsprojects-com-en-stable": {
+      "sha256": "f04a50acd26fa349af1a33040ec83432341a5dddf3381e9dd2a193b916955dc7",
+      "bytes": 101,
+      "source": "https://click.palletsprojects.com/en/stable/"
+    },
+    "fixture-v2-js-19019-4-scrape-js-rendered-field-102": {
+      "sha256": "cf171ae0d38933c79ba75afc20821193b2109e402797e10282821f72cfb773cb",
+      "bytes": 271,
+      "source": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-4/resources/js"
+    },
+    "fixture-v2-js-19019-5-scrape-js-rendered-field-102": {
+      "sha256": "c75b14da825c3925ae9e5c6753b04a1a8cd42f1a48408d15eb64a13d434793ce",
+      "bytes": 271,
+      "source": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-5/resources/js"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-2-4": {
+      "sha256": "67529291b47bc77dbce621b57101074042eea5a81320970c793bc750276b0fca",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.2.4/"
+    },
+    "scrape-pypi-sqlalchemy": {
+      "sha256": "ddfb801882104a68ddb8f58dbbe8046b25e7f76488a2ffeae40703270f9221d5",
+      "bytes": 71,
+      "source": "https://pypi.org/project/sqlalchemy/"
+    },
+    "scrape-page-https-typer-tiangolo-com-tutorial-arguments-default": {
+      "sha256": "5dc3161875aaf4cca9a23f2561dbcfeec6c545e9b3929a3c5909595416f8ddc1",
+      "bytes": 97,
+      "source": "https://typer.tiangolo.com/tutorial/arguments/default/"
+    },
+    "scrape-pypi-uvicorn": {
+      "sha256": "8132e22be2075c491982784b0cdbef3ecd943515cccefc738e6d4defe98bf0b2",
+      "bytes": 66,
+      "source": "https://pypi.org/project/uvicorn/"
+    },
+    "scrape-page-https-docs-browserbase-com-account-enterprise-byos-setup-guide": {
+      "sha256": "67ddc38cd1b7cd72d79137a4b1a10fb8815db60f9d41d5ab704438f7d9d3ad59",
+      "bytes": 123,
+      "source": "https://docs.browserbase.com/account/enterprise/byos-setup-guide"
+    },
+    "scrape-pypi-rich": {
+      "sha256": "395cc61b255eb0928f7401cc971cc240004513c569af7685b3569be8dad32cbb",
+      "bytes": 60,
+      "source": "https://pypi.org/project/rich/"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-response-status-code": {
+      "sha256": "cd2d49b897f4e1c0a76e404ced63cd774a8aff52eb0fb57429dad5d55c58a523",
+      "bytes": 87,
+      "source": "https://fastapi.tiangolo.com/tutorial/response-status-code/"
+    },
+    "scrape-pypi-tenacity": {
+      "sha256": "c27b75148b773b3485e05476aefd2968fbac72d748e23850cc9a0718f584f35b",
+      "bytes": 67,
+      "source": "https://pypi.org/project/tenacity/"
+    },
+    "scrape-page-https-www-encode-io-httpcore-quickstart": {
+      "sha256": "f7abf811966d4980f14b8ddfba647f733f7d98293de67915012daa53b94ed66d",
+      "bytes": 68,
+      "source": "https://www.encode.io/httpcore/quickstart/"
+    },
+    "scrape-pypi-pydantic": {
+      "sha256": "62e28e470445b8d81aa327856f2907a09a0857ec9b2cac25d4eedca697142748",
+      "bytes": 68,
+      "source": "https://pypi.org/project/pydantic/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog-2023-09-22-using-git-sparse-checkout-for-faster-documentation-builds": {
+      "sha256": "8fdd8a4d92fdb3cd73dc74784871380e138ae1a5470113d01fcac6cab6bb8fcb",
+      "bytes": 173,
+      "source": "https://squidfunk.github.io/mkdocs-material/blog/2023/09/22/using-git-sparse-checkout-for-faster-documentation-builds/"
+    },
+    "scrape-pypi-loguru": {
+      "sha256": "8a1a2939848aae101d66f3cf5080874307a8c0c4742e6a64e11d458cc9754202",
+      "bytes": 63,
+      "source": "https://pypi.org/project/loguru/"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-9": {
+      "sha256": "909a3e9be62412fcbaf2b867120e8710ada291ed652f7d4904f98edcc3f14cae",
+      "bytes": 106,
+      "source": "https://docs.aiohttp.org/en/v3.12.9/"
+    },
+    "scrape-pypi-trio": {
+      "sha256": "2375f9adeb964c44105f76915283e04785f34644a3a048716b5b50963d997ffe",
+      "bytes": 60,
+      "source": "https://pypi.org/project/trio/"
+    },
+    "scrape-page-https-docs-astral-sh-uv-getting-started-features": {
+      "sha256": "2e0b8c2c21d9e93db72bc40e7853ef3e25edac37c50a2d28d2c8bbdbbe4a0e54",
+      "bytes": 58,
+      "source": "https://docs.astral.sh/uv/getting-started/features/"
+    },
+    "scrape-pypi-peewee": {
+      "sha256": "2b02cdc14fe52353cbdbd6a60a95fbb51ef371626583e8f4569f04590ab81c4e",
+      "bytes": 63,
+      "source": "https://pypi.org/project/peewee/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-authors-brittany-krauth": {
+      "sha256": "0bf65a328b033c842651a9968ab0ae0d2463ddca05619ff1effe1ed11f6bc572",
+      "bytes": 98,
+      "source": "https://docs.getdbt.com/blog/authors/brittany-krauth"
+    },
+    "scrape-pypi-asyncpg": {
+      "sha256": "61db20b6196ee7b5e34585f3a28c53c4bb698c5e8545e444c0d63204e49dafc9",
+      "bytes": 66,
+      "source": "https://pypi.org/project/asyncpg/"
+    },
+    "scrape-page-https-www-mkdocs-org-dev-guide": {
+      "sha256": "a222aa4530f859a82683373bdbffa2ff9f016d06fe4c3cf6a83ebbacac2e9b87",
+      "bytes": 79,
+      "source": "https://www.mkdocs.org/dev-guide/"
+    },
+    "scrape-pypi-alembic": {
+      "sha256": "1eaa96c6381b84cfdb76d7779f6acc8a7b6f7c0b6aa9b16312a2b5f858e25662",
+      "bytes": 66,
+      "source": "https://pypi.org/project/alembic/"
+    },
+    "scrape-page-https-uvicorn-dev-settings": {
+      "sha256": "28f904d6c0f10846f21e5f2af6c942f53b4bd74a52dd71857f10d3592e9e4efa",
+      "bytes": 63,
+      "source": "https://uvicorn.dev/settings/"
+    },
+    "scrape-pypi-duckdb": {
+      "sha256": "daafe66f8afd5e7f460d4b08739dfddab540927578b5016eba7823433f177157",
+      "bytes": 63,
+      "source": "https://pypi.org/project/duckdb/"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-release-notes": {
+      "sha256": "9d2a22b4c67c7fb3a5c88c8bda15ae44faafa16563c4131973d97097b5423b4f",
+      "bytes": 74,
+      "source": "https://sqlmodel.tiangolo.com/release-notes/"
+    },
+    "scrape-pypi-attrs": {
+      "sha256": "e6cb467f82f0158118b82a4613350f6bfb1c6a0b8baa5b61ecad84dc7ea9025f",
+      "bytes": 62,
+      "source": "https://pypi.org/project/attrs/"
+    },
+    "scrape-page-https-starlette-dev-routing": {
+      "sha256": "a3bdaa40c797d4a267fe8402fd2702631c6a20808b584e644e527cb14d38027b",
+      "bytes": 63,
+      "source": "https://starlette.dev/routing/"
+    },
+    "scrape-pypi-textual": {
+      "sha256": "52c6d05cab4b9f9ea7c3e29503aade7562bf2296eaf52511a8e8dbbfaa79cd37",
+      "bytes": 65,
+      "source": "https://pypi.org/project/textual/"
+    },
+    "scrape-page-https-www-python-httpx-org-advanced-authentication": {
+      "sha256": "89f18a68fa26924b462f58b5c6db29a691c10eb909e1e7ec6742801269eab805",
+      "bytes": 73,
+      "source": "https://www.python-httpx.org/advanced/authentication/"
+    },
+    "scrape-pypi-cattrs": {
+      "sha256": "685ffdaeb9e224ba1f676b1a06d534265ad69127e186c652f1b125c4a3a899fc",
+      "bytes": 64,
+      "source": "https://pypi.org/project/cattrs/"
+    },
+    "scrape-page-https-textual-textualize-io-linux-console": {
+      "sha256": "7c7c1c10622d5dbea26eb055a43a454e9b82bd3e778b352cbee1a5a6c9783a98",
+      "bytes": 73,
+      "source": "https://textual.textualize.io/linux-console/"
+    },
+    "scrape-pypi-msgspec": {
+      "sha256": "b85d032b20c4d991105e7fd56636a2f77d8fd82ef26b1f8c7cfe78dfe981a517",
+      "bytes": 66,
+      "source": "https://pypi.org/project/msgspec/"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-usage-handlers": {
+      "sha256": "41f41153bdfb9e4eb19a7e185f702b964545490650f402f7482c968db7df06df",
+      "bytes": 70,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/usage/handlers/"
+    },
+    "scrape-pypi-pyarrow": {
+      "sha256": "aefbd0d872e4eda61a4c9772bbb1ebb7367208076d6f7b5d27e50c554ee06006",
+      "bytes": 66,
+      "source": "https://pypi.org/project/pyarrow/"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-ask": {
+      "sha256": "8f9f6a25e4e4b41c62b211afe163713e370d0336b493b92b27d19d3a6e1d0739",
+      "bytes": 60,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/ask"
+    },
+    "scrape-pypi-anyio": {
+      "sha256": "224a1d0184bd7360f603f8997c555a7109ce5d93befbbeee5ab52edecff83442",
+      "bytes": 62,
+      "source": "https://pypi.org/project/anyio/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-coroutines-html": {
+      "sha256": "39a585e245e9aa0fdecb0a55113eb2d19e54aa99f974c59a71a48b08d9a25071",
+      "bytes": 92,
+      "source": "https://docs.scrapy.org/en/latest/topics/coroutines.html"
+    },
+    "scrape-pypi-httpx": {
+      "sha256": "4cb58c413dd13daa15e5b0c2956d2e30d3e9c0ce7c87a9d6161a691c8738129d",
+      "bytes": 62,
+      "source": "https://pypi.org/project/httpx/"
+    },
+    "scrape-page-https-www-attrs-org-en-25-4-0": {
+      "sha256": "6414312d24c37822e04907d6883ea69346db22848c4ba66f23b6959a8d0edf3a",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/25.4.0/"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-snowflake": {
+      "sha256": "f258529177bec62d990097b503118750d90453664fa49ac2a8cd248f10f99ac3",
+      "bytes": 109,
+      "source": "https://pydantic.dev/docs/ai/api/models/snowflake/"
+    },
+    "scrape-page-https-docs-marimo-io-community": {
+      "sha256": "92325f98331bbdf1292e266db6366f4c5774f929d3f20a39c3b2695162bc65b1",
+      "bytes": 64,
+      "source": "https://docs.marimo.io/community/"
+    },
+    "scrape-page-https-docs-deno-com-api-deno-file-system": {
+      "sha256": "7b9bcb3bc2c17c69b7bcd8a037487bd224ebe7f97aac5776c6384172f692bd91",
+      "bytes": 92,
+      "source": "https://docs.deno.com/api/deno/file-system/"
+    },
+    "scrape-page-https-docs-pytest-org-en-8-3-x": {
+      "sha256": "894bbdd8c185112a503cd6dae7be2cfecd649ea7ef55efc54c198af3e1986eb8",
+      "bytes": 96,
+      "source": "https://docs.pytest.org/en/8.3.x/"
+    },
+    "scrape-page-https-docs-context-dev-api-reference-brand-intelligence-search": {
+      "sha256": "d8d88581cd723c1613ac35e5b02bebf0188fdff3241fdd1f53e5cfccdc4666af",
+      "bytes": 77,
+      "source": "https://docs.context.dev/api-reference/brand-intelligence/search"
+    },
+    "scrape-page-https-python-markdown-github-io-extensions-fenced-code-blocks": {
+      "sha256": "21f931625388bdb91815bd447823e081f70feb0840896385c2dd178cb1b8117f",
+      "bytes": 103,
+      "source": "https://Python-Markdown.github.io/extensions/fenced_code_blocks/"
+    },
+    "scrape-page-https-docs-linkup-so-pages-changelog-cli": {
+      "sha256": "136b5a548dd4d43ead2c6c6c8b00b5aff7345044f5dde8e8e563d144255f53e2",
+      "bytes": 84,
+      "source": "https://docs.linkup.so/pages/changelog/cli"
+    },
+    "scrape-page-https-docs-astro-build-ar-develop-and-build": {
+      "sha256": "38b1f74db9ba20b24f71f9b677abf83104005c0baafe587803873abe29d05da5",
+      "bytes": 78,
+      "source": "https://docs.astro.build/ar/develop-and-build/"
+    },
+    "scrape-page-https-docs-docker-com-guides-opencode-model-runner": {
+      "sha256": "18fbf314d592dad63a37c782c579f534429fdf26810a0321ca63d0deaf5d47e3",
+      "bytes": 125,
+      "source": "https://docs.docker.com/guides/opencode-model-runner/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-expressions-user-defined-python-functions": {
+      "sha256": "a6956caa5d42d76aa2e4e2cdca38572a441daf1d56fc0cd2fc729d5641bc0bb1",
+      "bytes": 115,
+      "source": "https://docs.pola.rs/user-guide/expressions/user-defined-python-functions/"
+    },
+    "scrape-page-https-docs-tinyfish-ai-api-reference-browser-context-profiles-get-a-browser-context-profile": {
+      "sha256": "4ae2f85dc2d26aee83aab55a18ff3708310c85510a69f6721b8e8222a3052e59",
+      "bytes": 116,
+      "source": "https://docs.tinyfish.ai/api-reference/browser-context-profiles/get-a-browser-context-profile"
+    },
+    "scrape-page-https-vite-dev-acknowledgements": {
+      "sha256": "15cc8a06fe48acca034ca215abd48febb7db07339976e539709a4b48adad7195",
+      "bytes": 80,
+      "source": "https://vite.dev/acknowledgements"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-extensions-betterem": {
+      "sha256": "21c8dda9b59502582056adeb777d0b96a0145ee418cf7e076494fd090b71a929",
+      "bytes": 88,
+      "source": "https://facelessuser.github.io/pymdown-extensions/extensions/betterem/"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-schedules-manage-schedules": {
+      "sha256": "d6adc9554f18db9bc504c17f3c7915eb8a1902f7bba0995491d494c839cf7838",
+      "bytes": 90,
+      "source": "https://docs.greatexpectations.io/docs/0.18/cloud/schedules/manage_schedules"
+    },
+    "scrape-page-https-werkzeug-palletsprojects-com-en-stable": {
+      "sha256": "b7834a352f6e4a509b7b89e3fce68f199c86ba194e71bf7c9c4e7410c27293e8",
+      "bytes": 88,
+      "source": "https://werkzeug.palletsprojects.com/en/stable/"
+    },
+    "scrape-page-https-flask-palletsprojects-com-en-stable": {
+      "sha256": "e87bf7c7691e4e34ea6c970b5a259128b1af60f46aaafb5e66e86aab6dcbbaa0",
+      "bytes": 101,
+      "source": "https://flask.palletsprojects.com/en/stable/"
+    },
+    "scrape-page-https-docs-ansible-com": {
+      "sha256": "c0be58d6b0a248be9de0878c234fff9f3ef394422a194e1b507f76696b8596f4",
+      "bytes": 109,
+      "source": "https://docs.ansible.com/"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-3-4": {
+      "sha256": "140321004006ae66563ca05d109cff6324de6bd246abcac8e19c7b8ce3a2e490",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.3.4/"
+    },
+    "scrape-page-https-typer-tiangolo-com-tutorial-arguments-optional": {
+      "sha256": "fc3139ed53c4a0cf8447850ebb8a541d90310af1681c100c1544af49ff216b6c",
+      "bytes": 89,
+      "source": "https://typer.tiangolo.com/tutorial/arguments/optional/"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-forms": {
+      "sha256": "5cd0b7c34e4e833eaa25a32b2b92940885cad13228c2a956c2441afd2cc13287",
+      "bytes": 65,
+      "source": "https://fastapi.tiangolo.com/tutorial/request-forms/"
+    },
+    "scrape-page-https-starlette-dev-threadpool": {
+      "sha256": "05824530394050a5c63cd3cbe6a9469a4cf559c4fc4a936913ff1b9ae898f113",
+      "bytes": 71,
+      "source": "https://starlette.dev/threadpool/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-announcing-unit-testing": {
+      "sha256": "1649d5b70ec846b61ba92386bf230f800b7a9e3874db8cfa4926a1851ef2c6ee",
+      "bytes": 152,
+      "source": "https://docs.getdbt.com/blog/announcing-unit-testing"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-13": {
+      "sha256": "11eb8996442f21ea5b1a324a688d5758e99205b1d38ec94c3a037d11f745a9fd",
+      "bytes": 107,
+      "source": "https://docs.aiohttp.org/en/v3.12.13/"
+    },
+    "scrape-page-https-docs-astral-sh-uv-concepts-projects-dependencies": {
+      "sha256": "7edc2c9bc17a26f74e732b31b60320e3c8bea9f85c68d87c2d557cd09b52bb31",
+      "bytes": 84,
+      "source": "https://docs.astral.sh/uv/concepts/projects/dependencies/"
+    },
+    "scrape-page-https-www-mkdocs-org-dev-guide-translations": {
+      "sha256": "312b6e151d907ac3d0838213431b7821acdabe22235eda2b1550d65e644ae3ae",
+      "bytes": 73,
+      "source": "https://www.mkdocs.org/dev-guide/translations/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-api-html": {
+      "sha256": "b902429347b529ad536395f63d95605699747730c28f6b95e088d04f3f1c3e84",
+      "bytes": 88,
+      "source": "https://docs.scrapy.org/en/latest/topics/api.html"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-developer-search": {
+      "sha256": "f0e36ed42c0dfa4f4eb2dbbe3b0b6fd71d86eb6327619dc3f43ac7fc7de6899c",
+      "bytes": 106,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/developer-search"
+    },
+    "scrape-page-https-textual-textualize-io-api-app": {
+      "sha256": "99fe497c9f960a91357a665f800c630a7f5cc47605f6c04ef5a8a0e3a0ca7750",
+      "bytes": 69,
+      "source": "https://textual.textualize.io/api/app/"
+    },
+    "scrape-page-https-docs-deno-com-api-deno-errors": {
+      "sha256": "0475def18353ce41e8722ac6e0a65c36daf34cc3ba863309eba5e423ef26858b",
+      "bytes": 82,
+      "source": "https://docs.deno.com/api/deno/errors/"
+    },
+    "scrape-page-https-docs-marimo-io-api-cell": {
+      "sha256": "3f324ba59b9746d26efbe9bb69c41665c9714b2c59d82353a89c090e2bdae1a5",
+      "bytes": 54,
+      "source": "https://docs.marimo.io/api/cell/"
+    },
+    "scrape-page-https-www-attrs-org-en-24-3-0": {
+      "sha256": "62d95900cc28208a8eedde5f5cfec83adc4a94e1a0b8bcccc5927ee98689798e",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/24.3.0/"
+    },
+    "scrape-page-https-docs-astro-build-ar-guides-backend-appwrite": {
+      "sha256": "3f52cf0f183e0e5c84c7f47158cfa7f5d7e8e26e00670ddf4d5ad75e7bc7e602",
+      "bytes": 76,
+      "source": "https://docs.astro.build/ar/guides/backend/appwrite/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-browser-support": {
+      "sha256": "51bc3bc3422e59851887e324500e94c09f97bf3f5a96ff9e9c967e9a6131b5ab",
+      "bytes": 89,
+      "source": "https://squidfunk.github.io/mkdocs-material/browser-support/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-unpivot": {
+      "sha256": "0a8ea35c2d7859bda1def9b2294c8976c85049d2fc81b189c007eb082c1568c9",
+      "bytes": 73,
+      "source": "https://docs.pola.rs/user-guide/transformations/unpivot/"
+    },
+    "scrape-page-https-docs-pytest-org-en-7-3-x": {
+      "sha256": "a3d175e47dc5f88cfe46549c7387aa8251e81716e632c15ddf606e6401206c86",
+      "bytes": 140,
+      "source": "https://docs.pytest.org/en/7.3.x/"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-create-connected-rows": {
+      "sha256": "3f692a95f0f34f46e0229cc59371fce34dc05783fe5a25f9d4a0748d6e53ea37",
+      "bytes": 94,
+      "source": "https://sqlmodel.tiangolo.com/tutorial/connect/create-connected-rows/"
+    },
+    "scrape-page-https-www-encode-io-httpcore-extensions": {
+      "sha256": "09d70ed4728f386ffacc49923705598cfe1e602833f5f314b8baff2c6c63ff0d",
+      "bytes": 68,
+      "source": "https://www.encode.io/httpcore/extensions/"
+    },
+    "scrape-page-https-docs-context-dev-api-reference-batches-webhooks-failed": {
+      "sha256": "ad836b14f201ac2af8a73e4cd29adcc84eddf36162fa5dda7856423faf66603e",
+      "bytes": 105,
+      "source": "https://docs.context.dev/api-reference/batches/webhooks/failed"
+    },
+    "scrape-page-https-python-markdown-github-io-cli": {
+      "sha256": "f563e2ba32670027c6484549fa250637876bc473d80bc2dde8e51c93803b5509",
+      "bytes": 110,
+      "source": "https://Python-Markdown.github.io/cli/"
+    },
+    "scrape-page-https-uvicorn-dev-concepts-event-loop": {
+      "sha256": "bdefab9f6bf068e7e4a82f906687d700fbf1c48d23bfca49ecfe9c6031966ebd",
+      "bytes": 67,
+      "source": "https://uvicorn.dev/concepts/event-loop/"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-license": {
+      "sha256": "2fb019ce5c454dacb5ecb8af568a3b7abd2e7acc11cea58674a0272ee5e60882",
+      "bytes": 68,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/license/"
+    },
+    "scrape-page-https-docs-tinyfish-ai-api-reference-attach-to-research-progress": {
+      "sha256": "2a64f2fc6e66d623487f9f2a057c5f9f30ac65a6db1fe60e40ed2c369ac6b02b",
+      "bytes": 112,
+      "source": "https://docs.tinyfish.ai/api-reference/attach-to-research-progress"
+    },
+    "scrape-page-https-www-python-httpx-org-advanced-timeouts": {
+      "sha256": "ff6a3485574674b9f2fb7b2402519102e1d8db1e0a7f3b7bed8a56f8c809da1c",
+      "bytes": 61,
+      "source": "https://www.python-httpx.org/advanced/timeouts/"
+    },
+    "scrape-page-https-docs-browserbase-com-integrations-1password-introduction": {
+      "sha256": "0c44b207f9b10e5e6f2c017d3feddc0ae52948301e71fd27c8f312015e3837bb",
+      "bytes": 89,
+      "source": "https://docs.browserbase.com/integrations/1password/introduction"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-cohere": {
+      "sha256": "3fb3c4070fd5fbd6ce28b9e3875980cb17e34076c644b8327ad53511748ea364",
+      "bytes": 103,
+      "source": "https://pydantic.dev/docs/ai/api/models/cohere/"
+    },
+    "scrape-page-https-docs-docker-com-reference-api-hub-latest": {
+      "sha256": "d7e963bca0b813b6fff9c9937b1d18ac04af4e21d8214e7794b3f61f9619ff42",
+      "bytes": 86,
+      "source": "https://docs.docker.com/reference/api/hub/latest/"
+    },
+    "scrape-page-https-vite-dev-changes-ssr-using-modulerunner": {
+      "sha256": "a93be5fef056a5e9068bd1c14a1de4481c5b8784e0647b9511f161c7622efc0a",
+      "bytes": 100,
+      "source": "https://vite.dev/changes/ssr-using-modulerunner"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-connect-connect-airflow": {
+      "sha256": "3ca759344d3a70b4e1d0b65cfdb9ec23dfc11535dc915520e57ea5cb2f175656",
+      "bytes": 114,
+      "source": "https://docs.greatexpectations.io/docs/0.18/cloud/connect/connect_airflow"
+    },
+    "scrape-page-https-docs-linkup-so-pages-changelog-addingimages": {
+      "sha256": "1c9624cff44c3e09d7162954dad141ccb65d38a7f61899bd2987f73a8220feb2",
+      "bytes": 90,
+      "source": "https://docs.linkup.so/pages/changelog/addingimages"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-contributing": {
+      "sha256": "0d184dbc2793a78c0ec27312bf348cbb853ab622a4a54a9b484e617a3a53dfa0",
+      "bytes": 116,
+      "source": "https://facelessuser.github.io/pymdown-extensions/about/contributing/"
+    },
+    "scrape-page-https-typer-tiangolo-com-reference-run-launch": {
+      "sha256": "fa1b9b13677b982dfdf2de0d3d672582b89e6531567a1b614633deabe1d77d52",
+      "bytes": 73,
+      "source": "https://typer.tiangolo.com/reference/run_launch/"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-files": {
+      "sha256": "536cc8f6da3f415e9084c218e3ae8658853eb3650f374dc14ea27f9d53b1f3d5",
+      "bytes": 73,
+      "source": "https://fastapi.tiangolo.com/tutorial/request-files/"
+    },
+    "scrape-page-https-docs-astral-sh-ruff-settings": {
+      "sha256": "9f5f607ddb420eb5a1d3ca11cccd074f91c9b116db451421afc1ad1b0e8f725a",
+      "bytes": 60,
+      "source": "https://docs.astral.sh/ruff/settings/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-asyncio-html": {
+      "sha256": "7c2580a3fe22940d1ca886cd0d638795f90bb3e68c197f8cfde912ddc675eb23",
+      "bytes": 86,
+      "source": "https://docs.scrapy.org/en/latest/topics/asyncio.html"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-2-7": {
+      "sha256": "4c602c306f6fd66b8ff773819eb88eed9ab3bbb9a889e4a34640ae9bd385ce6c",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.2.7/"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-14-1": {
+      "sha256": "727ba571490c6fae76a9e52a60bd0cf9e3412d775d87ebf7be6ec9a002cc9ac7",
+      "bytes": 106,
+      "source": "https://docs.aiohttp.org/en/v3.14.1/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog-2025-11-18-goodbye-github-discussions": {
+      "sha256": "69e77202891266e83fd6e0408d47d59ac02dd54bdce7087dd04019f68931251c",
+      "bytes": 113,
+      "source": "https://squidfunk.github.io/mkdocs-material/blog/2025/11/18/goodbye-github-discussions/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-concepts-lazy-api": {
+      "sha256": "3ffcf695c33f9369f428ad1260c37f90c963247bb0c8f32eadb7072d58f30c38",
+      "bytes": 73,
+      "source": "https://docs.pola.rs/user-guide/concepts/lazy-api/"
+    },
+    "scrape-page-https-www-attrs-org-en-25-3-0": {
+      "sha256": "ffa786038f561912b72e3b4cb2ba5ce1691e4cd7afe16dd826e5b30bb2280491",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/25.3.0/"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-crawl-get": {
+      "sha256": "774d0a9897c27ca8b24b42bff74e82b6867209e94fa7b57feb7a4fec2964fc7d",
+      "bytes": 86,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/crawl-get"
+    },
+    "scrape-page-https-textual-textualize-io-getting-started": {
+      "sha256": "d9305eaa0cc9023e51cfe81e07aa1a6e071ca4d50758a6d641e8a4b07ae75132",
+      "bytes": 77,
+      "source": "https://textual.textualize.io/getting_started/"
+    },
+    "scrape-page-https-starlette-dev-third-party-packages": {
+      "sha256": "1791bf9e14385cb66bc9566a8dfb2f0f9adb6f389a8237925a5dee127bd52443",
+      "bytes": 89,
+      "source": "https://starlette.dev/third-party-packages/"
+    },
+    "scrape-page-https-docs-astro-build-ar-editor-setup": {
+      "sha256": "792f0c19184927e47ecbc3256963831363402ce9ceb25fd65de5c74cb82c7df0",
+      "bytes": 124,
+      "source": "https://docs.astro.build/ar/editor-setup/"
+    },
+    "scrape-page-https-docs-deno-com-api-deno-ffi": {
+      "sha256": "25eee9020ad2c3bbfd972575ddefebb4312302583eee6cc69cbf3df8fd942f8c",
+      "bytes": 76,
+      "source": "https://docs.deno.com/api/deno/ffi/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-audit-helper-for-migration": {
+      "sha256": "8f33b3f33b0897aba76b8f71e5f6420f845dbf4772ba5559d7eb52a926bf4fd2",
+      "bytes": 180,
+      "source": "https://docs.getdbt.com/blog/audit-helper-for-migration"
+    },
+    "scrape-page-https-docs-tinyfish-ai-agent-api": {
+      "sha256": "60f5a153daad23e1d2f7c449e7df20f082b01ff27ceed79ad7421e145b45b97f",
+      "bytes": 76,
+      "source": "https://docs.tinyfish.ai/agent-api"
+    },
+    "scrape-page-https-docs-context-dev-api-reference-monitors-account-runs": {
+      "sha256": "6446cd5840ab09dfa17dc468ee1480dfdd421eec7cc5dc36d813066b50c42eb6",
+      "bytes": 103,
+      "source": "https://docs.context.dev/api-reference/monitors/account-runs"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-delete": {
+      "sha256": "12b623f5e26b1fcfd5837381f64a85fd86cec9ac995b8a83a6accdb593ae3817",
+      "bytes": 88,
+      "source": "https://sqlmodel.tiangolo.com/tutorial/delete/"
+    },
+    "scrape-page-https-uvicorn-dev": {
+      "sha256": "ed7b12d082b60103e863c62a4b4992a0b7b3f5eefb6328bbb70f28ca89e466f3",
+      "bytes": 57,
+      "source": "https://uvicorn.dev/"
+    },
+    "scrape-page-https-docs-browserbase-com-integrations-google-adk-introduction": {
+      "sha256": "637377ae139d18bb9b987630fc9e7f44f2ce50b21ff367ed2a6e438d6ebb03cd",
+      "bytes": 109,
+      "source": "https://docs.browserbase.com/integrations/google-adk/introduction"
+    },
+    "scrape-page-https-docs-pytest-org-en-9-0-x": {
+      "sha256": "894bbdd8c185112a503cd6dae7be2cfecd649ea7ef55efc54c198af3e1986eb8",
+      "bytes": 96,
+      "source": "https://docs.pytest.org/en/9.0.x/"
+    },
+    "scrape-page-https-docs-docker-com-get-started-docker-concepts-building-images-understanding-image-layers": {
+      "sha256": "cbbd97d29a273eb1089afb8781d6e3d69dd09129092bb758526d72c43fefbf17",
+      "bytes": 111,
+      "source": "https://docs.docker.com/get-started/docker-concepts/building-images/understanding-image-layers/"
+    },
+    "scrape-page-https-python-markdown-github-io-extensions-wikilinks": {
+      "sha256": "41470c39cffca1ab3037b4b3381311b8f69a5dd49f40625c2965d9b738bfda33",
+      "bytes": 85,
+      "source": "https://Python-Markdown.github.io/extensions/wikilinks/"
+    },
+    "scrape-page-https-www-mkdocs-org-user-guide": {
+      "sha256": "a21c7e77b253801b2ed685601fb7f8a6f346fe8645021c247edb6a0efe488c3d",
+      "bytes": 69,
+      "source": "https://www.mkdocs.org/user-guide/"
+    },
+    "scrape-page-https-www-encode-io-httpcore-table-of-contents": {
+      "sha256": "d8193e7395f3f3c151445417fcf3cb6f6f49d057647013064708ae1d421bde49",
+      "bytes": 74,
+      "source": "https://www.encode.io/httpcore/table-of-contents/"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-contributing-contributing": {
+      "sha256": "5211fa6b091cfe9f80d4668a669a6bd24bcd4c6d6772eb6ba6b2e7b42aa7dbc4",
+      "bytes": 78,
+      "source": "https://docs.greatexpectations.io/docs/0.18/oss/contributing/contributing"
+    },
+    "scrape-page-https-www-python-httpx-org-exceptions": {
+      "sha256": "0357fc80f4fe2396aa7480bfac110f3da61828628d0e6854a944fe9488fac522",
+      "bytes": 65,
+      "source": "https://www.python-httpx.org/exceptions/"
+    },
+    "scrape-page-https-docs-marimo-io-static-claude": {
+      "sha256": "f516a7ad226861461b7458e8eb53c182417e83db860bda26d5e99a53e0fd9444",
+      "bytes": 96,
+      "source": "https://docs.marimo.io/_static/CLAUDE/"
+    },
+    "scrape-page-https-vite-dev-changes-hotupdate-hook": {
+      "sha256": "463fc9850a97fc86e848eb81323f42cdf7a64b0eca2db51ec11e2f78bf62db29",
+      "bytes": 98,
+      "source": "https://vite.dev/changes/hotupdate-hook"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-openai-decisions": {
+      "sha256": "2733424f319267edec1a6ffd51ccb54d800188585610a72386a7e6bcd189a8b7",
+      "bytes": 123,
+      "source": "https://pydantic.dev/docs/ai/api/models/openai_decisions/"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-usage-theming": {
+      "sha256": "7fae393481ee6977bd678bdfeef39b72cb0cbeaaa41f6e94ee99cf01c2d3bb73",
+      "bytes": 67,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/usage/theming/"
+    },
+    "scrape-page-https-docs-linkup-so-pages-changelog-fetch-pro-mode": {
+      "sha256": "89d6bd0e2ca0b90c0f69fc035c377f0e7a6628119372a35d4ce7e3f852ad5adf",
+      "bytes": 92,
+      "source": "https://docs.linkup.so/pages/changelog/fetch-pro-mode"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-development": {
+      "sha256": "8ab330f0caea4d73c5ebca725172189b7d5360e7b94bcb544ef9a71434879c12",
+      "bytes": 94,
+      "source": "https://facelessuser.github.io/pymdown-extensions/about/development/"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-async": {
+      "sha256": "48459aed2e8409d2fc9a759137b4de0fc65d5a45fac4580b1a4b2426d6c32a94",
+      "bytes": 105,
+      "source": "https://fastapi.tiangolo.com/async/"
+    },
+    "scrape-page-https-docs-astral-sh-ruff-configuration": {
+      "sha256": "528ecff0352d6b42c3fc14184aaf75c78fddcbdc4d23a3c8402ace004495ae0a",
+      "bytes": 76,
+      "source": "https://docs.astral.sh/ruff/configuration/"
+    },
+    "scrape-page-https-typer-tiangolo-com-help-typer": {
+      "sha256": "ac645ffe89f4a3694415be61f9677ab7a54b2d8b3044b078f1b57df2fb700796",
+      "bytes": 53,
+      "source": "https://typer.tiangolo.com/help-typer/"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-6-3": {
+      "sha256": "72a59e486e820306f93b99153aea31fe9b38fda5e673d3f782a473cd414a79f8",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.6.3/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-concepts-streaming": {
+      "sha256": "396f6b14c173bdea3bc89e1aff891b7e73feace5e25227ac4eab8662603e8a09",
+      "bytes": 75,
+      "source": "https://docs.pola.rs/user-guide/concepts/streaming/"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get": {
+      "sha256": "9e403ccbb5697728d18c4d0ed3d94089e73c6489ac7b0923182d133817e47550",
+      "bytes": 100,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/batch-scrape-get"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-8": {
+      "sha256": "21d48a49cd8b0cecd51c592f52ca391a15a9e3c291f57b718722e823dd579a48",
+      "bytes": 106,
+      "source": "https://docs.aiohttp.org/en/v3.12.8/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-downloader-middleware-html": {
+      "sha256": "775df0b1f25f66381ef1042f01cd8224e78a404b9ce2176010e2c987941ed1e6",
+      "bytes": 114,
+      "source": "https://docs.scrapy.org/en/latest/topics/downloader-middleware.html"
+    },
+    "scrape-page-https-docs-astro-build-ar-concepts-islands": {
+      "sha256": "b9c8720c7b5baeeeac3d25767b2f2d480c62e51fcff939bae9217a0295b7f316",
+      "bytes": 84,
+      "source": "https://docs.astro.build/ar/concepts/islands/"
+    },
+    "scrape-page-https-starlette-dev-schemas": {
+      "sha256": "c648288ca4d5e7d3750a6348c476dc76b12f83cfba627ffa1cc1b81ca769c160",
+      "bytes": 71,
+      "source": "https://starlette.dev/schemas/"
+    },
+    "scrape-page-https-docs-tinyfish-ai-agent-payments": {
+      "sha256": "d4583adef4c92bb9d4d9af91dad8035972256523a1cfe37ca2224e5ba11e0dc4",
+      "bytes": 86,
+      "source": "https://docs.tinyfish.ai/agent-payments"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial": {
+      "sha256": "176db894c13378ef8f09fb6a2cae37283c8418c7567316598f53e776734bc393",
+      "bytes": 90,
+      "source": "https://sqlmodel.tiangolo.com/tutorial/"
+    },
+    "scrape-page-https-docs-context-dev-account-credits": {
+      "sha256": "fa2f9d50568b0e313e3f0356394446d4ed5981491e544f7350f597003bc70608",
+      "bytes": 89,
+      "source": "https://docs.context.dev/account/credits"
+    },
+    "scrape-page-https-docs-browserbase-com-integrations-evervault-browser-tokens": {
+      "sha256": "39f8ecc6ebac635decfabcd9e3e992187656b8bbfbd7b0da9a3442a31e04c1e6",
+      "bytes": 85,
+      "source": "https://docs.browserbase.com/integrations/evervault/browser-tokens"
+    },
+    "scrape-page-https-textual-textualize-io-api-await-complete": {
+      "sha256": "5e48ca79a94ec6ad05d65ba507c7fa1911786bed86d9b6676157e0f7dd0fac07",
+      "bytes": 91,
+      "source": "https://textual.textualize.io/api/await_complete/"
+    },
+    "scrape-page-https-docs-deno-com-api-deno-fetch": {
+      "sha256": "de86cc018c800f936c44811e443981bddb95a43840ec7faf70bc3fa119fa75ef",
+      "bytes": 80,
+      "source": "https://docs.deno.com/api/deno/fetch/"
+    },
+    "scrape-page-https-docs-pytest-org-en-4-6-x": {
+      "sha256": "a3d175e47dc5f88cfe46549c7387aa8251e81716e632c15ddf606e6401206c86",
+      "bytes": 140,
+      "source": "https://docs.pytest.org/en/4.6.x/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog-2023-10-02-sunsetting-gitter-towards-efficient-community-engagement": {
+      "sha256": "e3b1c06eb5a2a8d8c719d57c4fedb2af4d0fb598f37a2be331163e490320dc71",
+      "bytes": 173,
+      "source": "https://squidfunk.github.io/mkdocs-material/blog/2023/10/02/sunsetting-gitter-towards-efficient-community-engagement/"
+    },
+    "scrape-page-https-python-markdown-github-io-extensions": {
+      "sha256": "a9f83c5ce6b248b1d325308ebaf76efee3de0afc0f8ff425e77dd639333cad81",
+      "bytes": 77,
+      "source": "https://Python-Markdown.github.io/extensions/"
+    },
+    "scrape-page-https-www-attrs-org-en-21-4-0-post1": {
+      "sha256": "02fb7a292075467da52ec9a19ceb51a8b49cab6481a8714cd8875f6624cfa69e",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/21.4.0.post1/"
+    },
+    "scrape-page-https-www-mkdocs-org-dev-guide-themes": {
+      "sha256": "6ddfb26cf41a0e11bf3539e75aa0f3233b1812920e81fe945c833b860b3c37b5",
+      "bytes": 72,
+      "source": "https://www.mkdocs.org/dev-guide/themes/"
+    },
+    "scrape-page-https-docs-docker-com-guides-nodejs": {
+      "sha256": "4587b8c5a2933d10916ef9b60972275613c38e0eaab2216ec17f965f88b715a4",
+      "bytes": 113,
+      "source": "https://docs.docker.com/guides/nodejs/"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-validations-manage-validations": {
+      "sha256": "48b8aa5c576f0b5f7f48957f28f56740eccf242c58fd58f5a411adca0abdb79d",
+      "bytes": 94,
+      "source": "https://docs.greatexpectations.io/docs/0.18/cloud/validations/manage_validations"
+    },
+    "scrape-page-https-docs-marimo-io-api-state": {
+      "sha256": "10aee5cd33f6a26fdb09a2fba8ecdbf302d1c4151899c94663228f01b4a118cc",
+      "bytes": 56,
+      "source": "https://docs.marimo.io/api/state/"
+    },
+    "scrape-page-https-uvicorn-dev-concepts-websockets": {
+      "sha256": "9ed345febdb0ead8675c18eeaf29257ea001a27356989dc87bb244d518efaf59",
+      "bytes": 67,
+      "source": "https://uvicorn.dev/concepts/websockets/"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-groq": {
+      "sha256": "887e582335616863571a4dbcff7c6cc1eb2a7a1f8a2dc6a7be2b4d022705fb61",
+      "bytes": 99,
+      "source": "https://pydantic.dev/docs/ai/api/models/groq/"
+    },
+    "scrape-page-https-vite-dev-blog-announcing-vite8-1": {
+      "sha256": "6fb6f2e92321d02e97d50115404c226b481aef6ed92739dcf5d864c76d1ecd18",
+      "bytes": 80,
+      "source": "https://vite.dev/blog/announcing-vite8-1"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-usage": {
+      "sha256": "5b061208ba37159f62a30bbd85c80a598433768a153a8867a573416d38654efd",
+      "bytes": 64,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/usage/"
+    },
+    "scrape-page-https-docs-linkup-so-pages-changelog-usd-pricing": {
+      "sha256": "88d83ac006c0c6d6484778055347c51f63873e21342bf0b733d7dae3805059cb",
+      "bytes": 86,
+      "source": "https://docs.linkup.so/pages/changelog/usd-pricing"
+    },
+    "scrape-page-https-www-python-httpx-org-advanced-event-hooks": {
+      "sha256": "e34391bb9480b726d6cf8f83e60459482473a7ea37046bd064bde9382b4ffa01",
+      "bytes": 67,
+      "source": "https://www.python-httpx.org/advanced/event-hooks/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-authors-andrew-escay": {
+      "sha256": "e1047cee239a2b60ebb531418b500f472f7df1077238e10a389f20990abced94",
+      "bytes": 92,
+      "source": "https://docs.getdbt.com/blog/authors/andrew-escay"
+    },
+    "scrape-page-https-www-encode-io-httpcore-async": {
+      "sha256": "49bf7494906aae66bc0432f43f7d7ebfa2089c47159c733d1059917119154682",
+      "bytes": 74,
+      "source": "https://www.encode.io/httpcore/async/"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-changelog": {
+      "sha256": "93cfa4b5ad13ebad8933f8090e815d3613c21bec02e277131feb1888e30cf280",
+      "bytes": 90,
+      "source": "https://facelessuser.github.io/pymdown-extensions/about/changelog/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-cookies-html": {
+      "sha256": "3f50ecd280398095f557b06b8b71b2de97053fa6a8a0bcf497a001021a5de083",
+      "bytes": 86,
+      "source": "https://docs.scrapy.org/en/latest/topics/cookies.html"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-6-0": {
+      "sha256": "4d64e51123c4e423463ce5a9b7b23ac846596da4f614ebd5e6d3481e9dcfd4a9",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.6.0/"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-activity": {
+      "sha256": "31fb7d4d2ce8c0df77a70c4d53e6a9c03b9aa4f68f2bc3fc60005eaca55d379c",
+      "bytes": 70,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/activity"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-form-models": {
+      "sha256": "2289f67a76237aac2a0842d96b7f41866aac613f8e072a19d2d396d4402d993f",
+      "bytes": 69,
+      "source": "https://fastapi.tiangolo.com/tutorial/request-form-models/"
+    },
+    "scrape-page-https-docs-astro-build-ar-guides-build-with-ai": {
+      "sha256": "5799abd73e32652265ca4eeef48228d0d144aa68a54754122df2622b40f704ef",
+      "bytes": 112,
+      "source": "https://docs.astro.build/ar/guides/build-with-ai/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-time-series-parsing": {
+      "sha256": "86d245a6406f5dfb9ea98d46c6251c329310df60329600cd649da3be069253e9",
+      "bytes": 71,
+      "source": "https://docs.pola.rs/user-guide/transformations/time-series/parsing/"
+    },
+    "scrape-page-https-docs-astral-sh-ruff-linter": {
+      "sha256": "a907ef79e8b335abee67baace14dd4488baeba50aa3ca0975304ba6ece192bcb",
+      "bytes": 74,
+      "source": "https://docs.astral.sh/ruff/linter/"
+    },
+    "scrape-page-https-starlette-dev": {
+      "sha256": "fc457c8285a93f485d6c9eb6a2d75f71ef697fb99b6403589958cfaa737d5a49",
+      "bytes": 73,
+      "source": "https://starlette.dev/"
+    },
+    "scrape-page-https-docs-tinyfish-ai-api-reference-automation-run-browser-automation-synchronously": {
+      "sha256": "e72e1f6d283a78a864f2d19c8785e4f923de3b12ebc72886590f521611e87bb3",
+      "bytes": 130,
+      "source": "https://docs.tinyfish.ai/api-reference/automation/run-browser-automation-synchronously"
+    },
+    "scrape-page-https-typer-tiangolo-com-reference-context": {
+      "sha256": "6b3b594963e9d5900dba6b13f40ab2c7df73f9eb0b008595aaa0e20b8c7a9261",
+      "bytes": 59,
+      "source": "https://typer.tiangolo.com/reference/context/"
+    },
+    "scrape-page-https-textual-textualize-io-help": {
+      "sha256": "a0dcddf41e02ee473364e2d2617272e1c346201f4dd416b45a758b9bed47b887",
+      "bytes": 55,
+      "source": "https://textual.textualize.io/help/"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-remove-data-connections": {
+      "sha256": "acf7b2691650d45c4f39685cd371ecc1f4da01e68ab9c51edf659675963d4d04",
+      "bytes": 94,
+      "source": "https://sqlmodel.tiangolo.com/tutorial/connect/remove-data-connections/"
+    },
+    "scrape-page-https-docs-context-dev-api-reference-batches-webhooks-completed": {
+      "sha256": "7870058160a277b43b7b8f389847bb1134ec8d106fe83a6c78b9fcdb9bd37175",
+      "bytes": 111,
+      "source": "https://docs.context.dev/api-reference/batches/webhooks/completed"
+    },
+    "scrape-page-https-python-markdown-github-io-extensions-abbreviations": {
+      "sha256": "b088970927ee602440b1ec5444102260c05b30eff8bfc0f8dc8c2582a2914bdf",
+      "bytes": 93,
+      "source": "https://Python-Markdown.github.io/extensions/abbreviations/"
+    },
+    "scrape-page-https-docs-deno-com-api-deno-uncategorized": {
+      "sha256": "ad08bf5fc724232790399b262783399ba619f7d7383efde69983e2b720c9cf4f",
+      "bytes": 96,
+      "source": "https://docs.deno.com/api/deno/uncategorized/"
+    },
+    "scrape-page-https-docs-browserbase-com-integrations-hermes-agent-introduction": {
+      "sha256": "67bc176342497a9cfd51239a039c6ca3856c8eb8f374af4b883c05f4bb2bc6c7",
+      "bytes": 113,
+      "source": "https://docs.browserbase.com/integrations/hermes-agent/introduction"
+    },
+    "scrape-page-https-www-attrs-org-en-25-1-0": {
+      "sha256": "3420ee4c604659461c410c7e4724da84221ab2a1c40a24e2ce888e668ec5fcd8",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/25.1.0/"
+    },
+    "scrape-page-https-docs-docker-com-security-security-announcements": {
+      "sha256": "60de0d7fa6c91147bac8be9c9ac8a3d94d4d41248e95474904de4575bc62d208",
+      "bytes": 109,
+      "source": "https://docs.docker.com/security/security-announcements/"
+    },
+    "scrape-page-https-www-mkdocs-org-dev-guide-plugins": {
+      "sha256": "09ca24a09be3a010b51b93f76f2fe9759d64646db028c6ab0876e916feae119e",
+      "bytes": 70,
+      "source": "https://www.mkdocs.org/dev-guide/plugins/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-blog": {
+      "sha256": "75dab3dba3d6596475ddd56ae18c421dd0dc9e65f9e8f9322511edccf2d9b322",
+      "bytes": 67,
+      "source": "https://squidfunk.github.io/mkdocs-material/blog/"
+    },
+    "scrape-page-https-docs-pytest-org-en-7-2-x": {
+      "sha256": "a3d175e47dc5f88cfe46549c7387aa8251e81716e632c15ddf606e6401206c86",
+      "bytes": 140,
+      "source": "https://docs.pytest.org/en/7.2.x/"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-openai": {
+      "sha256": "65ce6cfd06ada22da7ed5572825acd0ca8a14b68ca7d6312cc0bc3ab108c5ca7",
+      "bytes": 103,
+      "source": "https://pydantic.dev/docs/ai/api/models/openai/"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-changelog": {
+      "sha256": "918af6e921875e9cdcff296b15bff430f700904a351f652b42dae1cfd0f5dba5",
+      "bytes": 76,
+      "source": "https://docs.greatexpectations.io/docs/0.18/oss/changelog"
+    },
+    "scrape-page-https-vite-dev-changes-this-environment-in-hooks": {
+      "sha256": "6e6bf23406e036ca8d184cc208506bc9a1ea14a4d521073600eaf0df03ee34f5",
+      "bytes": 98,
+      "source": "https://vite.dev/changes/this-environment-in-hooks"
+    },
+    "scrape-page-https-uvicorn-dev-concepts-asgi": {
+      "sha256": "52c6c08e4c66d29ffb6b0789f32d4e2b781d6710016c00a925a4fa25350054da",
+      "bytes": 55,
+      "source": "https://uvicorn.dev/concepts/asgi/"
+    },
+    "scrape-page-https-docs-marimo-io-reading": {
+      "sha256": "79a6b1a327a90ee448e595937eacb1d53135914a5986a72f9d49eab7aeb14699",
+      "bytes": 72,
+      "source": "https://docs.marimo.io/reading/"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-code-of-conduct": {
+      "sha256": "4d654685cabb816f56602458bd82fc77b7b14a1213b5d5d68aa98ebb3a93a17a",
+      "bytes": 105,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/code_of_conduct/"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-11": {
+      "sha256": "8f44e98aadd371939da0273792fb51c2c9a4ba4995ea082d8a2a8d7ba1d0c929",
+      "bytes": 107,
+      "source": "https://docs.aiohttp.org/en/v3.12.11/"
+    },
+    "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-extract-get": {
+      "sha256": "8b9bd391322dc1f32c21bf20e210678c5f9a82946775ee27448e31d8c9b5049d",
+      "bytes": 88,
+      "source": "https://docs.linkup.so/pages/documentation/endpoints/extract/get"
+    },
+    "scrape-page-https-www-python-httpx-org-advanced-text-encodings": {
+      "sha256": "5009e357eac209e88f8e322e24a385fd3adf1ef888b574dc7b29c6349e24640e",
+      "bytes": 73,
+      "source": "https://www.python-httpx.org/advanced/text-encodings/"
+    },
+    "scrape-page-https-www-encode-io-httpcore-exceptions": {
+      "sha256": "9956f5765d4173277dec88f9e7703beed21e2d1859ac1c6c1e949d9202e785d4",
+      "bytes": 68,
+      "source": "https://www.encode.io/httpcore/exceptions/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-authors-bennie-regenold": {
+      "sha256": "3ccb316588f7a64b104174fef0c5b5896d3cc7210b9a0d4cf8fbd06aa763ecda",
+      "bytes": 98,
+      "source": "https://docs.getdbt.com/blog/authors/bennie-regenold"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-extensions-critic": {
+      "sha256": "f34c277188f8cd7fa767c3eecdb4b4a71f650991c74a9d46494f99e438a55bb5",
+      "bytes": 84,
+      "source": "https://facelessuser.github.io/pymdown-extensions/extensions/critic/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-commands-html": {
+      "sha256": "1d19e0b9ce9f734b8260e20ab8a1b2c918072f4da9161dd137a9d59a0bdeea67",
+      "bytes": 106,
+      "source": "https://docs.scrapy.org/en/latest/topics/commands.html"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-crawl-params-preview": {
+      "sha256": "55293370e280094233f7ef028f54aae75a45ef1d66806d6512e67ab6008546ea",
+      "bytes": 94,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/crawl-params-preview"
+    },
+    "scrape-page-https-docs-astro-build-ar-guides-backend-sentry": {
+      "sha256": "5ffebddaa6567654411b7beb3a84def74659bd9ae45e32cbe3dc3bfab1ac8f58",
+      "bytes": 114,
+      "source": "https://docs.astro.build/ar/guides/backend/sentry/"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-3-1": {
+      "sha256": "cc4af10e80e5e16d67e2a329235de59bd2306a651a033bdd72b8bdcac086ae42",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.3.1/"
+    },
+    "scrape-page-https-docs-astral-sh-uv-concepts-build-backend": {
+      "sha256": "41e91875d41c95fa0296fcbf940c6949aa6a532f69c08a080a96c4ce532086fd",
+      "bytes": 75,
+      "source": "https://docs.astral.sh/uv/concepts/build-backend/"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-body-multiple-params": {
+      "sha256": "335550c980b9aa35ef281c2d306eb74a41a4787aa3c8b3d6afa99f006adf3d21",
+      "bytes": 99,
+      "source": "https://fastapi.tiangolo.com/tutorial/body-multiple-params/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-transformations-concatenation": {
+      "sha256": "e0714a7ffd0d1d974345e71f9e54fa2a89d9f943b154d478dadad92a36a3eaf8",
+      "bytes": 83,
+      "source": "https://docs.pola.rs/user-guide/transformations/concatenation/"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-learn": {
+      "sha256": "178c4820c47f922ab51e2fc6458e17e101185b6795e70251d8dddb111839e2cf",
+      "bytes": 58,
+      "source": "https://sqlmodel.tiangolo.com/learn/"
+    },
+    "scrape-page-https-www-attrs-org-en-25-2-0": {
+      "sha256": "463195f4546c7d0526ec312ac09e0c575a6904e1ba9cfda2df9eb207a62d388e",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/25.2.0/"
+    },
+    "scrape-page-https-docs-tinyfish-ai-api-reference-list-browser-session-usage": {
+      "sha256": "38fc05c4f6d0624c91954b8f8b264936f01b7e59524af271c47b550a4a69d1b9",
+      "bytes": 110,
+      "source": "https://docs.tinyfish.ai/api-reference/list-browser-session-usage"
+    },
+    "scrape-page-https-textual-textualize-io-api-content": {
+      "sha256": "985088f64e9fde0b1fee875ed1e078db91a4821b6bfe63cd7cea473150e2621c",
+      "bytes": 77,
+      "source": "https://textual.textualize.io/api/content/"
+    },
+    "scrape-page-https-docs-context-dev-api-reference-batches-list": {
+      "sha256": "f32bc13a52d4f8922fcb61689a59b1c29c0c515fdccc8113364c110958ede190",
+      "bytes": 75,
+      "source": "https://docs.context.dev/api-reference/batches/list"
+    },
+    "scrape-page-https-www-mkdocs-org-user-guide-localizing-your-theme": {
+      "sha256": "d679e5357ce7d1215e5d6a8f31017a06a6dee6fe5c66a34b07e9cbfae17d88c1",
+      "bytes": 91,
+      "source": "https://www.mkdocs.org/user-guide/localizing-your-theme/"
+    },
+    "scrape-page-https-docs-browserbase-com-integrations-anthropic-managed-agents-quickstart": {
+      "sha256": "b6a43d67f18fa11e8a3ce4b2f71ab7cd171a35295c32d550026c3f43367735b0",
+      "bytes": 119,
+      "source": "https://docs.browserbase.com/integrations/anthropic/managed-agents/quickstart"
+    },
+    "scrape-page-https-python-markdown-github-io-extensions-definition-lists": {
+      "sha256": "78f4c96ac5ebf975dc57ab66f6a29498bbf5ae5bbd5ff76f60d415d4fd78848b",
+      "bytes": 99,
+      "source": "https://Python-Markdown.github.io/extensions/definition_lists/"
+    },
+    "scrape-page-https-starlette-dev-middleware": {
+      "sha256": "12a985777883cf5544f3207f3dd3f3954324ee9ad0a2d9ea259576083e959ca6",
+      "bytes": 69,
+      "source": "https://starlette.dev/middleware/"
+    },
+    "scrape-page-https-docs-deno-com-api-deno-bundler": {
+      "sha256": "a6c882be44d821516dc6e8d592aa0df32df36909ee9f910db326ef148afab7c9",
+      "bytes": 84,
+      "source": "https://docs.deno.com/api/deno/bundler/"
+    },
+    "scrape-page-https-docs-docker-com-get-started-docker-concepts-running-containers-persisting-container-data": {
+      "sha256": "d59732ddcd4ab31418a8d0a41f815c598585e4df08613266d39b93dd76e656d0",
+      "bytes": 101,
+      "source": "https://docs.docker.com/get-started/docker-concepts/running-containers/persisting-container-data/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material": {
+      "sha256": "2acc2b383987f10e9d7adce645d46c0bbf1d85a57511cb1582391aeca1a2a06b",
+      "bytes": 82,
+      "source": "https://squidfunk.github.io/mkdocs-material/"
+    },
+    "scrape-page-https-typer-tiangolo-com-tutorial-commands-arguments": {
+      "sha256": "0b737a3172e01a5cea3991b0c66655fbf0aa1b74a7b8df8809f5467468512121",
+      "bytes": 87,
+      "source": "https://typer.tiangolo.com/tutorial/commands/arguments/"
+    },
+    "scrape-page-https-vite-dev-blog-cloudflare-supports-vite": {
+      "sha256": "c41be69b3bd3c342438245eb3f2783b3f403f553e3e4fec7bff2591a77e1f066",
+      "bytes": 116,
+      "source": "https://vite.dev/blog/cloudflare-supports-vite"
+    },
+    "scrape-page-https-uvicorn-dev-concepts-http-protocols": {
+      "sha256": "26c98e1d45086ad40baad2b8fa0c7c4a24a22854d17dd3a782c5c4f53468c807",
+      "bytes": 75,
+      "source": "https://uvicorn.dev/concepts/http-protocols/"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-crusoe": {
+      "sha256": "e3b4bb362285ce007a37a815020cc88a6d91d8d830257390a1ffd13207e076d9",
+      "bytes": 103,
+      "source": "https://pydantic.dev/docs/ai/api/models/crusoe/"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-12-12": {
+      "sha256": "6f6556c546f24b882329457c2991cf4361e21fbbef2061ef8569a34fa2c0a5c5",
+      "bytes": 107,
+      "source": "https://docs.aiohttp.org/en/v3.12.12/"
+    },
+    "scrape-page-https-docs-linkup-so-pages-changelog-research-endpoint": {
+      "sha256": "bb491fc81c5bfbeafbd170140daf9b1a8aef21716f0a84cf31a38700bf9f7723",
+      "bytes": 98,
+      "source": "https://docs.linkup.so/pages/changelog/research-endpoint"
+    },
+    "scrape-page-https-docs-pytest-org-en-8-0-x": {
+      "sha256": "a3d175e47dc5f88cfe46549c7387aa8251e81716e632c15ddf606e6401206c86",
+      "bytes": 140,
+      "source": "https://docs.pytest.org/en/8.0.x/"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-contributing": {
+      "sha256": "7f23751986e2d39532b4f4c766ecee50beb73914cf7712007653c2a66b438c3d",
+      "bytes": 78,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/contributing/"
+    },
+    "scrape-page-https-docs-marimo-io-recipes": {
+      "sha256": "c2b123ddad4e409df6b1844ae7aac63250292cafa467d180c2e8751b48374c26",
+      "bytes": 60,
+      "source": "https://docs.marimo.io/recipes/"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-why-gx-cloud": {
+      "sha256": "c83f2233e3f5b8ecdbde55bb730642ec9ffd84c3898bef60d25ba277a926e199",
+      "bytes": 82,
+      "source": "https://docs.greatexpectations.io/docs/0.18/cloud/why_gx_cloud"
+    },
+    "scrape-page-https-www-python-httpx-org-advanced-extensions": {
+      "sha256": "d2d69b82df1ef08c433388f6844279239711c3d6982c66f75b509f020109a3db",
+      "bytes": 65,
+      "source": "https://www.python-httpx.org/advanced/extensions/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-authors-adedamola-onabanjo": {
+      "sha256": "30706de0afd5552afc2d1a6fc2be1e8c0ae964818cc464172087b0919ffad769",
+      "bytes": 104,
+      "source": "https://docs.getdbt.com/blog/authors/adedamola-onabanjo"
+    },
+    "scrape-page-https-www-encode-io-httpcore": {
+      "sha256": "2045dfe4f66d99581c37996bd6c982f858021e932bd47e3e9308a412717c3ffd",
+      "bytes": 53,
+      "source": "https://www.encode.io/httpcore/"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-releases-8-0": {
+      "sha256": "18c515097a2b2bc032180ddeda5573155c30dff8902d9bfc5b7993f8c37e5d05",
+      "bytes": 94,
+      "source": "https://facelessuser.github.io/pymdown-extensions/about/releases/8.0/"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-6-1": {
+      "sha256": "1f2bfda5a01909a0a7660a4a880e87732e7982428933ddda1d4d5c18a5b28e5d",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.6.1/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-transformations": {
+      "sha256": "f1c7b53b2c20e64227cf978bf9f00f4d0211007cbf8b8311e97ce76029d36402",
+      "bytes": 87,
+      "source": "https://docs.pola.rs/user-guide/transformations/"
+    },
+    "scrape-page-https-docs-astral-sh-uv": {
+      "sha256": "568aa05a985ba449b46bf1a35c0a9cb0cccf6fcb7f1bf9f2a120bc0ce28a3b74",
+      "bytes": 41,
+      "source": "https://docs.astral.sh/uv/"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape": {
+      "sha256": "b5cff6148fd284ba327edaa1921dc6eedea6e665d932b6ee70cd0ac150fd76cf",
+      "bytes": 78,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/batch-scrape"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-query-param-models": {
+      "sha256": "4b690014af1f559a035083a314c4392389d388b1aae28f0928b62146445dd0a0",
+      "bytes": 91,
+      "source": "https://fastapi.tiangolo.com/tutorial/query-param-models/"
+    },
+    "scrape-page-https-docs-tinyfish-ai-anti-bot-guide": {
+      "sha256": "859339ad1a26c6aecee12fea12428d580a74acd487e49427ffef9365c9be5141",
+      "bytes": 86,
+      "source": "https://docs.tinyfish.ai/anti-bot-guide"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-connect-create-connected-tables": {
+      "sha256": "f513eb574032e70d087eff639b64d26c5b348a99a7c87adc61b1354f72e530c9",
+      "bytes": 94,
+      "source": "https://sqlmodel.tiangolo.com/tutorial/connect/create-connected-tables/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-topics-benchmarking-html": {
+      "sha256": "b553ca981ca1888d6547fd95d8e0e0497bdf62b4f1775b35261aa5d79c986502",
+      "bytes": 96,
+      "source": "https://docs.scrapy.org/en/latest/topics/benchmarking.html"
+    },
+    "scrape-page-https-docs-context-dev-api-reference-feedback-submit": {
+      "sha256": "fe77ccc26334bebf7f26dc1cbac1db7c0a9483d066c6090a3a34121d0e673364",
+      "bytes": 93,
+      "source": "https://docs.context.dev/api-reference/feedback/submit"
+    },
+    "scrape-page-https-www-mkdocs-org-user-guide-configuration": {
+      "sha256": "4053be22f572a29ea256396773accbc71df7f1f7b9525eec06e45ea2c8978f13",
+      "bytes": 75,
+      "source": "https://www.mkdocs.org/user-guide/configuration/"
+    },
+    "scrape-page-https-starlette-dev-release-notes": {
+      "sha256": "b641283ef571033546af8b0f51e80a6c121047218c6a903ae44aaf5943ac049b",
+      "bytes": 75,
+      "source": "https://starlette.dev/release-notes/"
+    },
+    "scrape-page-https-docs-browserbase-com-integrations-agentkit-quickstart": {
+      "sha256": "5bd95e39d228ab5b77cc0d394421c825363bfe2ed61449c15d9f022d6b817957",
+      "bytes": 103,
+      "source": "https://docs.browserbase.com/integrations/agentkit/quickstart"
+    },
+    "scrape-page-https-docs-astro-build-ar-guides-caching": {
+      "sha256": "73594c6a545534bd5e9b57b81a2a8918814ea6ad00da8f67b941120baa657973",
+      "bytes": 70,
+      "source": "https://docs.astro.build/ar/guides/caching/"
+    },
+    "scrape-page-https-python-markdown-github-io-extensions-admonition": {
+      "sha256": "6c35e85f4c53790b02dafaaf054cddc6aa43a29e3ca346acd3b0be24068d1489",
+      "bytes": 87,
+      "source": "https://Python-Markdown.github.io/extensions/admonition/"
+    },
+    "scrape-page-https-textual-textualize-io-api-coordinate": {
+      "sha256": "8a5e011b29c66d051e95ae53303bfa27d05c40992e5efe02c1bdef61269a0a95",
+      "bytes": 83,
+      "source": "https://textual.textualize.io/api/coordinate/"
+    },
+    "scrape-page-https-squidfunk-github-io-mkdocs-material-creating-your-site": {
+      "sha256": "6332644b3f4eaaccc61e788ba0c654231b6c1b66a47e831f9620e8c3ecf35865",
+      "bytes": 95,
+      "source": "https://squidfunk.github.io/mkdocs-material/creating-your-site/"
+    },
+    "scrape-page-https-docs-deno-com-api-node": {
+      "sha256": "083cc14641a93bb621db429df991481ac37d0e89b487c7e24cbd511af37df5a7",
+      "bytes": 87,
+      "source": "https://docs.deno.com/api/node/"
+    },
+    "scrape-page-https-www-attrs-org-en-23-2-0": {
+      "sha256": "ca9dd65656b41bc4be899cfb5c467696630c37b4a22179b9e81ba17c36cf61c0",
+      "bytes": 97,
+      "source": "https://www.attrs.org/en/23.2.0/"
+    },
+    "scrape-page-https-docs-docker-com-ai-sandboxes-customize-author-kit-sets": {
+      "sha256": "1818ac0dbc1acc11577d20fdbc5eb9d548dcc0961b8ae47e36bfc64ac2122a36",
+      "bytes": 85,
+      "source": "https://docs.docker.com/ai/sandboxes/customize/author/kit-sets/"
+    },
+    "scrape-page-https-typer-tiangolo-com-tutorial-arguments-envvar": {
+      "sha256": "0c99e5c3665b7aae4e1977282c296dd78951d9c3d28180aca52f3303d557007e",
+      "bytes": 125,
+      "source": "https://typer.tiangolo.com/tutorial/arguments/envvar/"
+    },
+    "scrape-page-https-vite-dev-blog-announcing-vite4": {
+      "sha256": "1e1956b4196865bcb94bc44f2f4e04c9df38e8da26db7ccc18af363fbab43203",
+      "bytes": 80,
+      "source": "https://vite.dev/blog/announcing-vite4"
+    },
+    "scrape-page-https-uvicorn-dev-release-notes": {
+      "sha256": "214f7d3c9452c337d2baf8f220f2d8cbb113b424029ca7b62a629f5c0f3700a5",
+      "bytes": 73,
+      "source": "https://uvicorn.dev/release-notes/"
+    },
+    "scrape-page-https-pydantic-dev-docs-ai-api-models-bedrock": {
+      "sha256": "9fb10e161a5bd3ba19596962d58da7a5b02812fa7cfa5e083c7c05b1c29938a7",
+      "bytes": 105,
+      "source": "https://pydantic.dev/docs/ai/api/models/bedrock/"
+    },
+    "scrape-page-https-docs-pytest-org-en-latest": {
+      "sha256": "894bbdd8c185112a503cd6dae7be2cfecd649ea7ef55efc54c198af3e1986eb8",
+      "bytes": 96,
+      "source": "https://docs.pytest.org/en/latest/"
+    },
+    "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-research-list": {
+      "sha256": "dcafa5992a6d5b555d74519c141ae7cb34bbf9db6841da5e8d11665bb310368f",
+      "bytes": 82,
+      "source": "https://docs.linkup.so/pages/documentation/endpoints/research/list"
+    },
+    "scrape-page-https-docs-marimo-io-api-status": {
+      "sha256": "22af9ab56769585c012e46a77c9bc8bf9cb47d109b8508ce6cea7afc285c307b",
+      "bytes": 76,
+      "source": "https://docs.marimo.io/api/status/"
+    },
+    "scrape-page-https-www-python-httpx-org-advanced-transports": {
+      "sha256": "606bc63861bb87af3fd0d09146db3cd9f9213fc1ba2c99b0fa6fae2a32e902a7",
+      "bytes": 65,
+      "source": "https://www.python-httpx.org/advanced/transports/"
+    },
+    "scrape-page-https-docs-getdbt-com-blog-archive": {
+      "sha256": "869d7c1b860d65146f88d977aaa7efbc7fc7c00a3c495c1a7b6d2f6108941ebd",
+      "bytes": 71,
+      "source": "https://docs.getdbt.com/blog/archive"
+    },
+    "scrape-page-https-docs-aiohttp-org-en-v3-13-5": {
+      "sha256": "ad6e8cdd294e019a21a4dc920488450a6801d4036facb3cf89c17ae720cfc502",
+      "bytes": 106,
+      "source": "https://docs.aiohttp.org/en/v3.13.5/"
+    },
+    "scrape-page-https-docs-greatexpectations-io-docs-0-18-category-integrate": {
+      "sha256": "b8646f7b08ab7e9fdf6dac516d8669161486626c944b426e4a525d6dc62fd713",
+      "bytes": 76,
+      "source": "https://docs.greatexpectations.io/docs/0.18/category/integrate"
+    },
+    "scrape-page-https-mkdocstrings-github-io-mkdocstrings-troubleshooting": {
+      "sha256": "b7b806bd9a4bc4d42507a77af16ab4afcfa77d4c7f4153867acb36e62fb853e7",
+      "bytes": 84,
+      "source": "https://mkdocstrings.github.io/mkdocstrings/troubleshooting/"
+    },
+    "scrape-page-https-facelessuser-github-io-pymdown-extensions-about-releases-6-0": {
+      "sha256": "d7329556231b7113cf2abcdb850d79d56dc4f7105447119cee1b503879d598c6",
+      "bytes": 94,
+      "source": "https://facelessuser.github.io/pymdown-extensions/about/releases/6.0/"
+    },
+    "scrape-page-https-docs-celeryq-dev-en-v5-3-3": {
+      "sha256": "235158d03472a67253c96b8301049d16597242fdab57ef0456ae8e8c62141be2",
+      "bytes": 130,
+      "source": "https://docs.celeryq.dev/en/v5.3.3/"
+    },
+    "scrape-page-https-docs-pola-rs-user-guide-expressions-categorical-data-and-enums": {
+      "sha256": "77b9b4e3afb718f8a351de53b4b50a365d69cd09497f4208231ce1e6d6fe1926",
+      "bytes": 109,
+      "source": "https://docs.pola.rs/user-guide/expressions/categorical-data-and-enums/"
+    },
+    "scrape-page-https-docs-astral-sh-uv-concepts-projects-config": {
+      "sha256": "d9dd8394963281eea220a456a724237bca8cd18d0ddcecd675b3b2ab0d7d0b81",
+      "bytes": 82,
+      "source": "https://docs.astral.sh/uv/concepts/projects/config/"
+    },
+    "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-browser-delete": {
+      "sha256": "3ad513dc53d26e7f7cc2514c7f9edcefb7bb16c120667fe96e423f6ea49d654a",
+      "bytes": 100,
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/browser-delete"
+    },
+    "scrape-page-https-fastapi-tiangolo-com-tutorial-request-forms-and-files": {
+      "sha256": "a97b13ab1e4b4b641af9ad96383524b9025f15c12b8c7e53ce7b079bc4ca2d87",
+      "bytes": 93,
+      "source": "https://fastapi.tiangolo.com/tutorial/request-forms-and-files/"
+    },
+    "scrape-page-https-sqlmodel-tiangolo-com-tutorial-create-db-and-table-with-db-browser": {
+      "sha256": "ebd19cbf71f7a4a35a377a2aa588f38e4c19cb2b3629d09ee29c46cf2f5fd172",
+      "bytes": 94,
+      "source": "https://sqlmodel.tiangolo.com/tutorial/create-db-and-table-with-db-browser/"
+    },
+    "scrape-page-https-docs-scrapy-org-en-latest-faq-html": {
+      "sha256": "386df695a0694fa3cb05a7e22422df52c03f733509cf5ae7cdeef9f7848c0257",
+      "bytes": 124,
+      "source": "https://docs.scrapy.org/en/latest/faq.html"
+    },
+    "crawl-typer-tiangolo-com-tutorial-commands": {
+      "sha256": "55d848340eee946079abfda1cfbc770d3df045bd75e9ca28832fab2acfac5047",
+      "bytes": 1098,
+      "kind": "independent-title-package"
+    },
+    "crawl-fastapi-tiangolo-com-reference-openapi": {
+      "sha256": "a832452f92e0bd7f83717a9c54377952e2528f93b9580e92753305154c13dabf",
+      "bytes": 465,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-deno-com-sandbox": {
+      "sha256": "b60fd6bab0a9e77285be89d92f05e2bdd077d5135d04c4af3ab822fb892ad51c",
+      "bytes": 1362,
+      "kind": "independent-title-package"
+    },
+    "crawl-squidfunk-github-io-mkdocs-material-contributing": {
+      "sha256": "b5f785d7b5f9ab8656e6210683e48e1a04842430fdee72dd468f31a802ea89fe",
+      "bytes": 1070,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-astral-sh-uv-getting-started": {
+      "sha256": "aa06ad626fa086ca6c9cc677beef4e9463036b7a72ff7c66a66dd41e481d230e",
+      "bytes": 673,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-marimo-io-guides-configuration": {
+      "sha256": "17efa088d6566596037aa915905d49a6eebe34f91944ddb31adf7020b516c8ac",
+      "bytes": 963,
+      "kind": "independent-title-package"
+    },
+    "crawl-mkdocstrings-github-io-mkdocstrings-usage": {
+      "sha256": "1aa37d38f888519a1b49a91be8a1703af6f7824067eb17bdfd2f8dec17b98b01",
+      "bytes": 481,
+      "kind": "independent-title-package"
+    },
+    "crawl-pydantic-dev-docs-logfire-api": {
+      "sha256": "30c3afda2c81a578e71f86bb7382e115a949c8fa3ff4c89fa652c8b1df327b98",
+      "bytes": 1371,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-astro-build-it-guides-backend": {
+      "sha256": "5f6c2ca1f204cc871b39ee25ba2522a314cf49fffbf3ad135d9696b6a7498f7d",
+      "bytes": 1346,
+      "kind": "independent-title-package"
+    },
+    "crawl-textual-textualize-io-styles-grid": {
+      "sha256": "e73195aec7f16a7673d256313cb59f4f8809303c3bca60c774635ec7ca28ca67",
+      "bytes": 927,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-docker-com-dhi-migration": {
+      "sha256": "43ae0466a503ffa853246d4941da1e91658d0b593c2b14988630a1b0e5df5e2e",
+      "bytes": 1605,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-pola-rs-user-guide-transformations": {
+      "sha256": "f16e7d9d29021217813a3ae90cf3394c047e536b218135dbd3b8750dfd0602f8",
+      "bytes": 1480,
+      "kind": "independent-title-package"
+    },
+    "crawl-squidfunk-github-io-mkdocs-material-setup-extensions": {
+      "sha256": "0f0bc89dda5ad627627f70c4519af33bf3c537d1a7d7c9d0f0caffd7c1ef4e2c",
+      "bytes": 592,
+      "kind": "independent-title-package"
+    },
+    "crawl-sqlmodel-tiangolo-com-tutorial-relationship-attributes": {
+      "sha256": "cd32d5cacc95f87998bcc9aa77c01e3e37edb0c3f37c58546ad84803d7043cbd",
+      "bytes": 1451,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-docker-com-dhi-tools": {
+      "sha256": "1ca9f559f5255c06ce32081676bc3a238e977f58503c72f25cd2af352d56f1c0",
+      "bytes": 802,
+      "kind": "independent-title-package"
+    },
+    "crawl-pydantic-dev-docs-ai-graph": {
+      "sha256": "4d0be0f8886506bfadab38fa355b820b2c745c3c138c94d8208b7beb2fbec3dc",
+      "bytes": 848,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-astral-sh-uv-pip": {
+      "sha256": "cfbe3acac13d534da8521cb0bcfdf3ff6e4cd813ca68dc35f6f5f75fd379dd32",
+      "bytes": 885,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-marimo-io-guides-integrating-with-marimo": {
+      "sha256": "d43e3d4cd8413727cbb10c2c745046eed7b9f57c9516f65c10fd64cfd4ccb378",
+      "bytes": 526,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-astro-build-pl-guides-backend": {
+      "sha256": "141c996bd2f4569bfad37a7074c143c6778b5d6319affc15037abb8e3b5e81fd",
+      "bytes": 1346,
+      "kind": "independent-title-package"
+    },
+    "crawl-typer-tiangolo-com-tutorial-arguments": {
+      "sha256": "cca2a55977d0de0c633eabf63cd15bfcbbfde3cc4b1ede99859a7dcd2cff5d20",
+      "bytes": 885,
+      "kind": "independent-title-package"
+    },
+    "crawl-fastapi-tiangolo-com-tutorial-security": {
+      "sha256": "e0422eb97e550b16008a0560a1bb92a1f28a3f672818d9416943b42611131ef0",
+      "bytes": 822,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-deno-com-deploy-classic-api": {
+      "sha256": "a95f49fbda860135fe0adfa2d6fa67862b53e90afbd87a3c15c4d28b39088db7",
+      "bytes": 1540,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-pola-rs-user-guide-lazy": {
+      "sha256": "4782595a83f1bb26c5932c6f0013d6485b8fa33bbf58d39fee74b67c5c554dac",
+      "bytes": 1357,
+      "kind": "independent-title-package"
+    },
+    "crawl-www-mkdocs-org-user-guide": {
+      "sha256": "63a388d1c072f47d4ad71fe07c7badded31e50e009b9a8d1da52bf6ecccfa7c3",
+      "bytes": 1201,
+      "kind": "independent-title-package"
+    },
+    "crawl-textual-textualize-io-styles-scrollbar-colors": {
+      "sha256": "df19ca7b64074b22038c3c37ed1c93c1af3655157a92ab0ea40c486003914db2",
+      "bytes": 1320,
+      "kind": "independent-title-package"
+    },
+    "crawl-vite-dev-changes": {
+      "sha256": "9772b0993fa8aa5c0290e85cfad2a43f9eb365f705e0a30549ddb8259b5a83e8",
+      "bytes": 834,
+      "kind": "independent-title-package"
+    },
+    "crawl-pydantic-dev-docs-ai-integrations": {
+      "sha256": "611fdccc6ffc5d848c1e8f9c0ced368f1ebcf5f59a2c3f37e5ad8f6f2344e1d8",
+      "bytes": 831,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-docker-com-offload": {
+      "sha256": "1e9f8ce7ce376e0799c4eba9693e7d993e79187cd8ee05a4fff9005021511209",
+      "bytes": 1087,
+      "kind": "independent-title-package"
+    },
+    "crawl-sqlmodel-tiangolo-com-tutorial-many-to-many": {
+      "sha256": "90ed87516021a62c2b0352e19b67f81daf63035e5e581ae70c930fa9e1676e22",
+      "bytes": 916,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-astro-build-pt-br-guides-media": {
+      "sha256": "2c2dcc822b80255e3deec52aee15d5f078920cab15e370c1e2d90f7129548405",
+      "bytes": 602,
+      "kind": "independent-title-package"
+    },
+    "crawl-typer-tiangolo-com-reference": {
+      "sha256": "5418ab64e22c78ee1e7b34e401468e4c725c1d73a792dbac8b2494873f96cfea",
+      "bytes": 769,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-marimo-io-guides-working-with-data": {
+      "sha256": "a67d652263c78ef0e8a4f42df00afdcc672ca54a8741888314e88fe9592502d8",
+      "bytes": 717,
+      "kind": "independent-title-package"
+    },
+    "crawl-fastapi-tiangolo-com-tutorial-dependencies": {
+      "sha256": "498efc994e1addb43488217de5a357af85962406310ac113fe4cc630937c76a6",
+      "bytes": 1014,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-deno-com-runtime-packages": {
+      "sha256": "ed4e8689db1baa7a0f5b1ea7e0d5443f97aac2c3775592e03a473d7561a35934",
+      "bytes": 759,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-astral-sh-uv-concepts-projects": {
+      "sha256": "18135dac90980720470faa2ca7c746c6bbcd41910228e3a96ff081c50e83c36a",
+      "bytes": 1304,
+      "kind": "independent-title-package"
+    },
+    "crawl-www-mkdocs-org-dev-guide": {
+      "sha256": "b6e76e4f92763dcc71916bbb4b2141e8fa638605d990fcc030254bbff7e4f0c8",
+      "bytes": 636,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-pola-rs-user-guide-concepts": {
+      "sha256": "b649169bafb4f7f4114b71a3e9204d29f33a11d353c754c3cc26a1ec10ccb62d",
+      "bytes": 790,
+      "kind": "independent-title-package"
+    },
+    "crawl-pydantic-dev-docs-ai-project": {
+      "sha256": "7ff5bfa0fec0a0f7c977e6338b39641c743f71dc6a551830a81d6e2384a2581f",
+      "bytes": 485,
+      "kind": "independent-title-package"
+    },
+    "crawl-docs-docker-com-faqs": {
+      "sha256": "a2474bd42f01ed3d0406450b1f66bea905f7ab308e54ec726c83bde7ed5259c5",
+      "bytes": 675,
+      "kind": "independent-title-package"
+    },
+    "crawl-sqlmodel-tiangolo-com-advanced": {
+      "sha256": "33473a27622006a9a204c53b4cc6e66b7dc3c94e00044cc722f52588ce3d5c4d",
+      "bytes": 611,
+      "kind": "independent-title-package"
+    }
+  },
+  "oracleFileHash": "23172172ff3a1343964c8f71e8e5b3d366830123fb5fe5f509417d7c3fe28c33"
+}

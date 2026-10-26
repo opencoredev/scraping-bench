@@ -60,6 +60,7 @@ const LABELS: Record<string, string> = {
   linkup: "Linkup",
   scrapfly: "Scrapfly",
   browserbase: "Browserbase",
+  string: "String",
 };
 
 const TRACKS: readonly { id: Track; label: string; what: string }[] = [

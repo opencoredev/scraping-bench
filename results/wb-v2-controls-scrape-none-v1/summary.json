@@ -1,0 +1,59 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "none",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "control",
+      "tasks": 300,
+      "na": 0,
+      "successes": 1,
+      "successRate": 0.0033333333333333335,
+      "ci95": [
+        0,
+        0.010564313442492404
+      ],
+      "successfulMedianMs": 3139.9176759999827,
+      "successfulP90Ms": 3139.9176759999827,
+      "totalUsd": 0.5475490000000001,
+      "costPerSuccessUsd": 0.5475490000000001,
+      "errors": {
+        "other": 13
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 275,
+          "successRate": 0.0036363636363636364
+        },
+        "package-version": {
+          "tasks": 21,
+          "successRate": 0
+        },
+        "js-rendered-field": {
+          "tasks": 4,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [],
+  "providerSpend": {
+    "none": {
+      "usd": 0.5475489999999997,
+      "apiUsd": 0,
+      "modelUsd": 0.5475489999999997,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

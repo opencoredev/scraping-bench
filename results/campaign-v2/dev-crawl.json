@@ -1,0 +1,106 @@
+[
+  {
+    "id": "crawl-fastapi-tiangolo-com-how-to",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://fastapi.tiangolo.com/how-to/",
+      "scope": "/how-to/",
+      "maxPages": 30
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://fastapi.tiangolo.com/how-to/",
+          "https://fastapi.tiangolo.com/how-to/authentication-error-status-code/",
+          "https://fastapi.tiangolo.com/how-to/conditional-openapi/",
+          "https://fastapi.tiangolo.com/how-to/configure-swagger-ui/",
+          "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/",
+          "https://fastapi.tiangolo.com/how-to/custom-request-and-route/",
+          "https://fastapi.tiangolo.com/how-to/extending-openapi/",
+          "https://fastapi.tiangolo.com/how-to/general/",
+          "https://fastapi.tiangolo.com/how-to/graphql/",
+          "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2/",
+          "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas/",
+          "https://fastapi.tiangolo.com/how-to/testing-database/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://fastapi.tiangolo.com/how-to/ | How To - Recipes - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/authentication-error-status-code/ | Use Old 403 Authentication Error Status Codes - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/conditional-openapi/ | Conditional OpenAPI - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/configure-swagger-ui/ | Configure Swagger UI - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/ | Custom Docs UI Static Assets (Self-Hosting) - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/custom-request-and-route/ | Custom Request and APIRoute class - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/extending-openapi/ | Extending OpenAPI - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/general/ | General - How To - Recipes - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/graphql/ | GraphQL - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2/ | Migrate from Pydantic v1 to Pydantic v2 - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/separate-openapi-schemas/ | Separate OpenAPI Schemas for Input and Output or Not - FastAPI",
+          "https://fastapi.tiangolo.com/how-to/testing-database/ | Testing a Database - FastAPI"
+        ]
+      }
+    ],
+    "site": "fastapi.tiangolo.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://fastapi.tiangolo.com/sitemap.xml scope=https://fastapi.tiangolo.com/how-to/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 12 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-19T17:03:33.675Z"
+    }
+  },
+  {
+    "id": "crawl-docs-astral-sh-uv-concepts-authentication",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://docs.astral.sh/uv/concepts/authentication/",
+      "scope": "/uv/concepts/authentication/",
+      "maxPages": 30
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/",
+          "https://docs.astral.sh/uv/concepts/authentication/git/",
+          "https://docs.astral.sh/uv/concepts/authentication/http/",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://docs.astral.sh/uv/concepts/authentication/ | Authentication | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/ | TLS certificates | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/ | The auth CLI | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/git/ | Git credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/http/ | HTTP credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/ | Third-party services | uv"
+        ]
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/concepts/authentication/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 6 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-19T17:03:12.788Z"
+    }
+  }
+]

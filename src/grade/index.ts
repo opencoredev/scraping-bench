@@ -2,6 +2,7 @@ import type { ExpectedField, FieldVerdict } from "../core/types.ts";
 
 export function normalizeText(value: string): string {
   return value
+    .replace(/[\p{Co}\p{Cf}]/gu, "")
     .normalize("NFKC")
     .toLocaleLowerCase("en-US")
     .replace(/[\p{P}\p{S}]/gu, " ")

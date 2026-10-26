@@ -1,0 +1,129 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "jina",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 40,
+      "na": 0,
+      "successes": 5,
+      "successRate": 0.125,
+      "ci95": [
+        0.02631578947368421,
+        0.21957994579945764
+      ],
+      "successfulMedianMs": 5357.262275000103,
+      "successfulP90Ms": 6214.408973399969,
+      "totalUsd": 0.24548309999999995,
+      "costPerSuccessUsd": 0.049096619999999994,
+      "errors": {
+        "http-4xx": 18,
+        "other": 7
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 35,
+          "successRate": 0.11428571428571428
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        },
+        "js-rendered-field": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "jina",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 40,
+      "na": 0,
+      "successes": 18,
+      "successRate": 0.45,
+      "ci95": [
+        0.309478021978022,
+        0.6153846153846154
+      ],
+      "successfulMedianMs": 2030.68763999996,
+      "successfulP90Ms": 4414.150400299965,
+      "totalUsd": 0.0053392000000000005,
+      "costPerSuccessUsd": 0.00029662222222222225,
+      "errors": {
+        "http-4xx": 9
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 35,
+          "successRate": 0.4857142857142857
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        },
+        "js-rendered-field": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "jina",
+      "reference": "jina",
+      "pairedTasks": 40,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "jina",
+      "reference": "jina",
+      "pairedTasks": 40,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "jina": {
+      "usd": 0.24548309999999998,
+      "apiUsd": 0.007616100000000003,
+      "modelUsd": 0.23786699999999997,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "http-4xx": 18
+  }
+}

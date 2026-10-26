@@ -1,0 +1,10 @@
+{
+  "jina": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 30,
+    "apiMaxUsd": 0.041316555000000005,
+    "maxCallUsd": 0.00025
+  }
+}
