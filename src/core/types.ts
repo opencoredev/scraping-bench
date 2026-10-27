@@ -16,7 +16,9 @@ export type ProviderId =
   | "perplexity"
   | "brightdata"
   | "scrapfly"
-  | "browserbase";
+  | "browserbase"
+  | "you"
+  | "string";
 
 /** Which kind of product a provider is, so it is only ranked against its peers. */
 export type Cohort = "content-api" | "search-index" | "scraping-infra" | "browser-infra";
@@ -92,7 +94,7 @@ export type ErrorClass = "timeout" | "http-4xx" | "http-5xx" | "rate-limited" | 
 
 export type ToolOutcome =
   | { readonly kind: "ok"; readonly data: ToolData; readonly ms: number; readonly billing: Billing }
-  | { readonly kind: "error"; readonly error: ErrorClass; readonly message: string; readonly status: number | null; readonly ms: number; readonly billing: Billing };
+  | { readonly kind: "error"; readonly error: ErrorClass; readonly message: string; readonly status: number | null; readonly nativeErrorBody?: string; readonly ms: number; readonly billing: Billing };
 
 /** What the call cost. Credits as reported by the API when available, else estimated from list price. */
 export interface Billing {

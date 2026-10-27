@@ -53,5 +53,45 @@ export function buildSplits(tasks: readonly Task[], recipes: Readonly<Record<str
     const scrape = splits[recipeId({ kind: 'package', ...pkg, track: 'scrape' })];
     if (search ?? scrape) splits[task.id] = search ?? scrape ?? 'test';
   }
+  const pageSplits = new Map<string, 'dev' | 'test'>();
+  for (const task of tasks.filter(task => task.track === 'search')) {
+    const recipe = recipes[task.id];
+    if (recipe?.kind === 'page') pageSplits.set(recipe.url, splits[task.id] ?? 'test');
+  }
+  for (const task of tasks) {
+    const recipe = recipes[task.id];
+    if (recipe?.kind === 'page' && recipe.track === 'scrape') {
+      const paired = pageSplits.get(recipe.url); if (paired) splits[task.id] = paired;
+    }
+  }
+  const scopes = tasks.filter(task => recipes[task.id]?.kind === 'site' && task.track === 'map')
+    .sort((a, b) => a.input.track === 'map' && b.input.track === 'map' ? a.input.site.length - b.input.site.length : 0);
+  for (const parent of scopes) for (const task of tasks) {
+    const a = recipes[parent.id], b = recipes[task.id];
+    if (a?.kind === 'site' && b?.kind === 'site' && b.scope.startsWith(a.scope)) splits[task.id] = splits[parent.id] ?? 'test';
+  }
+  // Documentation headings inside a map/crawl scope reveal the crawl answer.
+  // The scope split owns every page answer within it, across both page tracks.
+  for (const task of tasks) {
+    const recipe = recipes[task.id];
+    if (recipe?.kind !== 'page') continue;
+    const parent = tasks.find(other => {
+      const scope = recipes[other.id];
+      return scope?.kind === 'site' && scope.track === 'map' && recipe.url.startsWith(scope.scope);
+    });
+    if (parent) splits[task.id] = splits[parent.id] ?? 'test';
+  }
+  const registryReleases: Readonly<Record<string, string>> = {
+    'jqlang/jq': 'jq', 'BurntSushi/ripgrep': 'ripgrep', 'sharkdp/fd': 'fd',
+    'sharkdp/bat': 'bat', 'junegunn/fzf': 'fzf', 'neovim/neovim': 'neovim',
+  };
+  for (const task of tasks) {
+    const recipe = recipes[task.id];
+    if (recipe?.kind !== 'release') continue;
+    const name = registryReleases[recipe.repo];
+    if (!name) continue;
+    const paired = splits[recipeId({ kind: 'registry', ecosystem: 'homebrew', name })];
+    if (paired) splits[task.id] = paired;
+  }
   return splits;
 }

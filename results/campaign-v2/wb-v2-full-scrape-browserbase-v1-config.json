@@ -1,0 +1,11 @@
+{
+  "browserbase": {
+    "maxPhysicalCalls": 867,
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 30,
+    "apiMaxUsd": 2.5479999999999996,
+    "maxCallUsd": 0.004
+  }
+}

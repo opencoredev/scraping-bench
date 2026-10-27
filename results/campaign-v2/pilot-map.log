@@ -1,0 +1,4 @@
+{"runId":"wb-v2-pilot-map-firecrawl-v1","provider":"firecrawl","phase":"pilot","track":"map","tasks":3,"allowance":2.02925,"bound":0.005}
+{"directory":"results/wb-v2-pilot-map-firecrawl-v1","completed":6,"skipped":0}
+{"runId":"wb-v2-pilot-map-contextdev-v1","provider":"contextdev","phase":"pilot","track":"map","tasks":3,"allowance":131.95919,"bound":0.0022}
+{"directory":"results/wb-v2-pilot-map-contextdev-v1","completed":6,"skipped":0}

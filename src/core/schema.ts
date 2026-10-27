@@ -118,6 +118,7 @@ export const outcomeSchema: z.ZodType<ToolOutcome> = z.discriminatedUnion(
         "other",
       ]),
       message: z.string(),
+      nativeErrorBody: z.string().optional(),
       status: z.number().nullable(),
       ms: z.number().nonnegative(),
       billing,

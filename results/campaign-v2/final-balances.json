@@ -1,0 +1,105 @@
+[
+  {
+    "provider": "firecrawl",
+    "at": "2026-10-19T20:40:21.403Z",
+    "data": {
+      "data": {
+        "remainingCredits": 139
+      }
+    }
+  },
+  {
+    "provider": "linkup",
+    "at": "2026-10-19T20:40:21.655Z",
+    "data": {
+      "balance": 15.927
+    }
+  },
+  {
+    "provider": "tinyfish",
+    "at": "2026-10-19T20:40:22.085Z",
+    "data": {
+      "available_balance": "10",
+      "rates": {
+        "meters": [
+          {
+            "label": "TinyFish Agent",
+            "unit_amount": "0.016",
+            "per": "step"
+          },
+          {
+            "label": "TinyFish Browser",
+            "unit_amount": "0.002",
+            "per": "minute"
+          },
+          {
+            "label": "TinyFish Fetch",
+            "unit_amount": "0",
+            "per": "url"
+          },
+          {
+            "label": "TinyFish Monitor",
+            "unit_amount": "0.005",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Research",
+            "unit_amount": "0",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Search",
+            "unit_amount": "0",
+            "per": "query"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "provider": "spider",
+    "at": "2026-10-19T20:40:22.328Z",
+    "data": {
+      "data": {
+        "credits": 2316.019534
+      }
+    }
+  },
+  {
+    "provider": "scrapfly",
+    "at": "2026-10-19T20:40:22.786Z",
+    "data": {
+      "subscription": {
+        "usage": {
+          "scrape": {
+            "remaining": 105
+          }
+        }
+      }
+    }
+  },
+  {
+    "provider": "you",
+    "at": "2026-10-19T20:40:22.786Z",
+    "error": "Not measured: owner cancelled further You.com API calls after collected campaign rows; no final probe performed."
+  },
+  {
+    "provider": "contextdev",
+    "at": "2026-10-19T20:40:23.151Z",
+    "data": {
+      "key_metadata": {
+        "credits_consumed": 1,
+        "credits_remaining": 61809
+      }
+    }
+  },
+  {
+    "provider": "jina",
+    "at": "2026-10-19T20:40:23.934Z",
+    "data": {
+      "data": {
+        "balanceLeft": 1424377
+      }
+    }
+  }
+]

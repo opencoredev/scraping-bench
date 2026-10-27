@@ -1,0 +1,6 @@
+{"runId":"wb-v2-pilot-search-you-parallel","provider":"you","phase":"pilot","track":"search","tasks":3,"allowance":94.966,"bound":0.005}
+{"runId":"wb-v2-pilot-search-browserbase-parallel","provider":"browserbase","phase":"pilot","track":"search","tasks":3,"allowance":2.948,"bound":0.005}
+{"runId":"wb-v2-pilot-search-tinyfish-parallel","provider":"tinyfish","phase":"pilot","track":"search","tasks":3,"allowance":0,"bound":0}
+{"directory":"results/wb-v2-pilot-search-you-parallel","completed":6,"skipped":0}
+{"directory":"results/wb-v2-pilot-search-tinyfish-parallel","completed":6,"skipped":0}
+{"directory":"results/wb-v2-pilot-search-browserbase-parallel","completed":6,"skipped":0}

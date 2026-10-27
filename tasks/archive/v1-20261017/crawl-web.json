@@ -1,0 +1,554 @@
+[
+  {
+    "id": "crawl-docs-astral-sh-ruff-editors",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://docs.astral.sh/ruff/editors/",
+      "scope": "/ruff/editors/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/ruff/editors/",
+          "https://docs.astral.sh/ruff/editors/features/",
+          "https://docs.astral.sh/ruff/editors/migration/",
+          "https://docs.astral.sh/ruff/editors/settings/",
+          "https://docs.astral.sh/ruff/editors/setup/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://docs.astral.sh/ruff/editors/ | Editor Integration | Ruff",
+          "https://docs.astral.sh/ruff/editors/features/ | Features | Ruff",
+          "https://docs.astral.sh/ruff/editors/migration/ | Migrating from ruff-lsp | Ruff",
+          "https://docs.astral.sh/ruff/editors/settings/ | Settings | Ruff",
+          "https://docs.astral.sh/ruff/editors/setup/ | Setup | Ruff"
+        ]
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/ruff/sitemap.xml scope=https://docs.astral.sh/ruff/editors/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 5 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:01:10.268Z"
+    }
+  },
+  {
+    "id": "crawl-docs-astral-sh-uv-concepts-authentication",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://docs.astral.sh/uv/concepts/authentication/",
+      "scope": "/uv/concepts/authentication/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/concepts/authentication/",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/",
+          "https://docs.astral.sh/uv/concepts/authentication/git/",
+          "https://docs.astral.sh/uv/concepts/authentication/http/",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://docs.astral.sh/uv/concepts/authentication/ | Authentication | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/certificates/ | TLS certificates | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/cli/ | The auth CLI | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/git/ | Git credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/http/ | HTTP credentials | uv",
+          "https://docs.astral.sh/uv/concepts/authentication/third-party/ | Third-party services | uv"
+        ]
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/concepts/authentication/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 6 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:00:33.953Z"
+    }
+  },
+  {
+    "id": "crawl-docs-astral-sh-uv-concepts-projects",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://docs.astral.sh/uv/concepts/projects/",
+      "scope": "/uv/concepts/projects/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/concepts/projects/",
+          "https://docs.astral.sh/uv/concepts/projects/build/",
+          "https://docs.astral.sh/uv/concepts/projects/config/",
+          "https://docs.astral.sh/uv/concepts/projects/dependencies/",
+          "https://docs.astral.sh/uv/concepts/projects/export/",
+          "https://docs.astral.sh/uv/concepts/projects/init/",
+          "https://docs.astral.sh/uv/concepts/projects/layout/",
+          "https://docs.astral.sh/uv/concepts/projects/run/",
+          "https://docs.astral.sh/uv/concepts/projects/sync/",
+          "https://docs.astral.sh/uv/concepts/projects/workspaces/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://docs.astral.sh/uv/concepts/projects/ | Projects | uv",
+          "https://docs.astral.sh/uv/concepts/projects/build/ | Building distributions | uv",
+          "https://docs.astral.sh/uv/concepts/projects/config/ | Configuring projects | uv",
+          "https://docs.astral.sh/uv/concepts/projects/dependencies/ | Managing dependencies | uv",
+          "https://docs.astral.sh/uv/concepts/projects/export/ | Exporting a lockfile | uv",
+          "https://docs.astral.sh/uv/concepts/projects/init/ | Creating projects | uv",
+          "https://docs.astral.sh/uv/concepts/projects/layout/ | Structure and files | uv",
+          "https://docs.astral.sh/uv/concepts/projects/run/ | Running commands | uv",
+          "https://docs.astral.sh/uv/concepts/projects/sync/ | Locking and syncing | uv",
+          "https://docs.astral.sh/uv/concepts/projects/workspaces/ | Using workspaces | uv"
+        ]
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/concepts/projects/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 10 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:00:44.938Z"
+    }
+  },
+  {
+    "id": "crawl-docs-astral-sh-uv-getting-started",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://docs.astral.sh/uv/getting-started/",
+      "scope": "/uv/getting-started/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/getting-started/",
+          "https://docs.astral.sh/uv/getting-started/features/",
+          "https://docs.astral.sh/uv/getting-started/first-steps/",
+          "https://docs.astral.sh/uv/getting-started/help/",
+          "https://docs.astral.sh/uv/getting-started/installation/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://docs.astral.sh/uv/getting-started/ | Getting started | uv",
+          "https://docs.astral.sh/uv/getting-started/features/ | Features | uv",
+          "https://docs.astral.sh/uv/getting-started/first-steps/ | First steps | uv",
+          "https://docs.astral.sh/uv/getting-started/help/ | Getting help | uv",
+          "https://docs.astral.sh/uv/getting-started/installation/ | Installation | uv"
+        ]
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/getting-started/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 5 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:00:27.340Z"
+    }
+  },
+  {
+    "id": "crawl-docs-astral-sh-uv-guides-integration",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://docs.astral.sh/uv/guides/integration/",
+      "scope": "/uv/guides/integration/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://docs.astral.sh/uv/guides/integration/",
+          "https://docs.astral.sh/uv/guides/integration/aws-lambda/",
+          "https://docs.astral.sh/uv/guides/integration/aws/",
+          "https://docs.astral.sh/uv/guides/integration/azure/",
+          "https://docs.astral.sh/uv/guides/integration/bazel/",
+          "https://docs.astral.sh/uv/guides/integration/coiled/",
+          "https://docs.astral.sh/uv/guides/integration/dependabot/",
+          "https://docs.astral.sh/uv/guides/integration/docker/",
+          "https://docs.astral.sh/uv/guides/integration/fastapi/",
+          "https://docs.astral.sh/uv/guides/integration/github/",
+          "https://docs.astral.sh/uv/guides/integration/gitlab/",
+          "https://docs.astral.sh/uv/guides/integration/google/",
+          "https://docs.astral.sh/uv/guides/integration/jfrog/",
+          "https://docs.astral.sh/uv/guides/integration/jupyter/",
+          "https://docs.astral.sh/uv/guides/integration/marimo/",
+          "https://docs.astral.sh/uv/guides/integration/pre-commit/",
+          "https://docs.astral.sh/uv/guides/integration/pytorch/",
+          "https://docs.astral.sh/uv/guides/integration/renovate/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://docs.astral.sh/uv/guides/integration/ | Integration guides | uv",
+          "https://docs.astral.sh/uv/guides/integration/aws-lambda/ | Using uv with AWS Lambda | uv",
+          "https://docs.astral.sh/uv/guides/integration/aws/ | AWS CodeArtifact | uv",
+          "https://docs.astral.sh/uv/guides/integration/azure/ | Azure Artifacts | uv",
+          "https://docs.astral.sh/uv/guides/integration/bazel/ | Using uv with Bazel | uv",
+          "https://docs.astral.sh/uv/guides/integration/coiled/ | Using uv with Coiled | uv",
+          "https://docs.astral.sh/uv/guides/integration/dependabot/ | Using uv with Dependabot | uv",
+          "https://docs.astral.sh/uv/guides/integration/docker/ | Using uv in Docker | uv",
+          "https://docs.astral.sh/uv/guides/integration/fastapi/ | Using uv with FastAPI | uv",
+          "https://docs.astral.sh/uv/guides/integration/github/ | Using uv in GitHub Actions | uv",
+          "https://docs.astral.sh/uv/guides/integration/gitlab/ | Using uv in GitLab CI/CD | uv",
+          "https://docs.astral.sh/uv/guides/integration/google/ | Google Artifact Registry | uv",
+          "https://docs.astral.sh/uv/guides/integration/jfrog/ | JFrog Artifactory | uv",
+          "https://docs.astral.sh/uv/guides/integration/jupyter/ | Using uv with Jupyter | uv",
+          "https://docs.astral.sh/uv/guides/integration/marimo/ | Using uv with marimo | uv",
+          "https://docs.astral.sh/uv/guides/integration/pre-commit/ | Using uv with pre-commit | uv",
+          "https://docs.astral.sh/uv/guides/integration/pytorch/ | Using uv with PyTorch | uv",
+          "https://docs.astral.sh/uv/guides/integration/renovate/ | Using uv with Renovate | uv"
+        ]
+      }
+    ],
+    "site": "docs.astral.sh",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.astral.sh/uv/sitemap.xml scope=https://docs.astral.sh/uv/guides/integration/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 18 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:01:04.755Z"
+    }
+  },
+  {
+    "id": "crawl-typer-tiangolo-com-reference",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://typer.tiangolo.com/reference/",
+      "scope": "/reference/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://typer.tiangolo.com/reference/",
+          "https://typer.tiangolo.com/reference/context/",
+          "https://typer.tiangolo.com/reference/file_objects/",
+          "https://typer.tiangolo.com/reference/parameters/",
+          "https://typer.tiangolo.com/reference/run_launch/",
+          "https://typer.tiangolo.com/reference/typer/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://typer.tiangolo.com/reference/ | Reference - Typer",
+          "https://typer.tiangolo.com/reference/context/ | Context - Typer",
+          "https://typer.tiangolo.com/reference/file_objects/ | File objects - Typer",
+          "https://typer.tiangolo.com/reference/parameters/ | Parameters - Typer",
+          "https://typer.tiangolo.com/reference/run_launch/ | run and launch - Typer",
+          "https://typer.tiangolo.com/reference/typer/ | Typer class - Typer"
+        ]
+      }
+    ],
+    "site": "typer.tiangolo.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://typer.tiangolo.com/sitemap.xml scope=https://typer.tiangolo.com/reference/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 6 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:06.511Z"
+    }
+  },
+  {
+    "id": "crawl-typer-tiangolo-com-tutorial-arguments",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://typer.tiangolo.com/tutorial/arguments/",
+      "scope": "/tutorial/arguments/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://typer.tiangolo.com/tutorial/arguments/",
+          "https://typer.tiangolo.com/tutorial/arguments/default/",
+          "https://typer.tiangolo.com/tutorial/arguments/envvar/",
+          "https://typer.tiangolo.com/tutorial/arguments/help/",
+          "https://typer.tiangolo.com/tutorial/arguments/optional/",
+          "https://typer.tiangolo.com/tutorial/arguments/other-uses/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://typer.tiangolo.com/tutorial/arguments/ | CLI Arguments - Typer",
+          "https://typer.tiangolo.com/tutorial/arguments/default/ | CLI Arguments with Default - Typer",
+          "https://typer.tiangolo.com/tutorial/arguments/envvar/ | CLI Arguments with Environment Variables - Typer",
+          "https://typer.tiangolo.com/tutorial/arguments/help/ | CLI Arguments with Help - Typer",
+          "https://typer.tiangolo.com/tutorial/arguments/optional/ | Optional CLI Arguments - Typer",
+          "https://typer.tiangolo.com/tutorial/arguments/other-uses/ | Other uses - Typer"
+        ]
+      }
+    ],
+    "site": "typer.tiangolo.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://typer.tiangolo.com/sitemap.xml scope=https://typer.tiangolo.com/tutorial/arguments/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 6 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:21.883Z"
+    }
+  },
+  {
+    "id": "crawl-typer-tiangolo-com-tutorial-commands",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://typer.tiangolo.com/tutorial/commands/",
+      "scope": "/tutorial/commands/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://typer.tiangolo.com/tutorial/commands/",
+          "https://typer.tiangolo.com/tutorial/commands/arguments/",
+          "https://typer.tiangolo.com/tutorial/commands/callback/",
+          "https://typer.tiangolo.com/tutorial/commands/context/",
+          "https://typer.tiangolo.com/tutorial/commands/help/",
+          "https://typer.tiangolo.com/tutorial/commands/name/",
+          "https://typer.tiangolo.com/tutorial/commands/one-or-multiple/",
+          "https://typer.tiangolo.com/tutorial/commands/options/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://typer.tiangolo.com/tutorial/commands/ | Commands - Typer",
+          "https://typer.tiangolo.com/tutorial/commands/arguments/ | Command CLI Arguments - Typer",
+          "https://typer.tiangolo.com/tutorial/commands/callback/ | Typer Callback - Typer",
+          "https://typer.tiangolo.com/tutorial/commands/context/ | Using the Context - Typer",
+          "https://typer.tiangolo.com/tutorial/commands/help/ | Command Help - Typer",
+          "https://typer.tiangolo.com/tutorial/commands/name/ | Custom Command Name - Typer",
+          "https://typer.tiangolo.com/tutorial/commands/one-or-multiple/ | One or Multiple Commands - Typer",
+          "https://typer.tiangolo.com/tutorial/commands/options/ | Command CLI Options - Typer"
+        ]
+      }
+    ],
+    "site": "typer.tiangolo.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://typer.tiangolo.com/sitemap.xml scope=https://typer.tiangolo.com/tutorial/commands/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 8 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:15.290Z"
+    }
+  },
+  {
+    "id": "crawl-www-mkdocs-org",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://www.mkdocs.org/",
+      "scope": "/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://www.mkdocs.org/",
+          "https://www.mkdocs.org/about/contributing/",
+          "https://www.mkdocs.org/about/license/",
+          "https://www.mkdocs.org/about/release-notes/",
+          "https://www.mkdocs.org/dev-guide/",
+          "https://www.mkdocs.org/dev-guide/api/",
+          "https://www.mkdocs.org/dev-guide/plugins/",
+          "https://www.mkdocs.org/dev-guide/themes/",
+          "https://www.mkdocs.org/dev-guide/translations/",
+          "https://www.mkdocs.org/getting-started/",
+          "https://www.mkdocs.org/user-guide/",
+          "https://www.mkdocs.org/user-guide/choosing-your-theme/",
+          "https://www.mkdocs.org/user-guide/cli/",
+          "https://www.mkdocs.org/user-guide/configuration/",
+          "https://www.mkdocs.org/user-guide/customizing-your-theme/",
+          "https://www.mkdocs.org/user-guide/deploying-your-docs/",
+          "https://www.mkdocs.org/user-guide/installation/",
+          "https://www.mkdocs.org/user-guide/localizing-your-theme/",
+          "https://www.mkdocs.org/user-guide/writing-your-docs/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://www.mkdocs.org/ | MkDocs",
+          "https://www.mkdocs.org/about/contributing/ | Contributing - MkDocs",
+          "https://www.mkdocs.org/about/license/ | License - MkDocs",
+          "https://www.mkdocs.org/about/release-notes/ | Release Notes - MkDocs",
+          "https://www.mkdocs.org/dev-guide/ | Developer Guide - MkDocs",
+          "https://www.mkdocs.org/dev-guide/api/ | API Reference - MkDocs",
+          "https://www.mkdocs.org/dev-guide/plugins/ | Plugins - MkDocs",
+          "https://www.mkdocs.org/dev-guide/themes/ | Themes - MkDocs",
+          "https://www.mkdocs.org/dev-guide/translations/ | Translations - MkDocs",
+          "https://www.mkdocs.org/getting-started/ | Getting Started - MkDocs",
+          "https://www.mkdocs.org/user-guide/ | User Guide - MkDocs",
+          "https://www.mkdocs.org/user-guide/choosing-your-theme/ | Choosing Your Theme - MkDocs",
+          "https://www.mkdocs.org/user-guide/cli/ | Command Line Interface - MkDocs",
+          "https://www.mkdocs.org/user-guide/configuration/ | Configuration - MkDocs",
+          "https://www.mkdocs.org/user-guide/customizing-your-theme/ | Customizing Your Theme - MkDocs",
+          "https://www.mkdocs.org/user-guide/deploying-your-docs/ | Deploying Your Docs - MkDocs",
+          "https://www.mkdocs.org/user-guide/installation/ | Installation - MkDocs",
+          "https://www.mkdocs.org/user-guide/localizing-your-theme/ | Localizing Your Theme - MkDocs",
+          "https://www.mkdocs.org/user-guide/writing-your-docs/ | Writing Your Docs - MkDocs"
+        ]
+      }
+    ],
+    "site": "www.mkdocs.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://www.mkdocs.org/sitemap.xml scope=https://www.mkdocs.org/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 19 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:02:00.940Z"
+    }
+  },
+  {
+    "id": "crawl-www-python-httpx-org",
+    "track": "crawl",
+    "family": "docs-page-records",
+    "instruction": "Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields \"urls\" (absolute canonical URL array) and \"records\" (array of strings formatted exactly \"URL | HTML document title\"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.",
+    "input": {
+      "track": "crawl",
+      "site": "https://www.python-httpx.org/",
+      "scope": "/",
+      "maxPages": 60
+    },
+    "expected": [
+      {
+        "kind": "url-set",
+        "name": "urls",
+        "urls": [
+          "https://www.python-httpx.org/",
+          "https://www.python-httpx.org/advanced/authentication/",
+          "https://www.python-httpx.org/advanced/clients/",
+          "https://www.python-httpx.org/advanced/event-hooks/",
+          "https://www.python-httpx.org/advanced/extensions/",
+          "https://www.python-httpx.org/advanced/proxies/",
+          "https://www.python-httpx.org/advanced/resource-limits/",
+          "https://www.python-httpx.org/advanced/ssl/",
+          "https://www.python-httpx.org/advanced/text-encodings/",
+          "https://www.python-httpx.org/advanced/timeouts/",
+          "https://www.python-httpx.org/advanced/transports/",
+          "https://www.python-httpx.org/api/",
+          "https://www.python-httpx.org/async/",
+          "https://www.python-httpx.org/code_of_conduct/",
+          "https://www.python-httpx.org/compatibility/",
+          "https://www.python-httpx.org/contributing/",
+          "https://www.python-httpx.org/environment_variables/",
+          "https://www.python-httpx.org/exceptions/",
+          "https://www.python-httpx.org/http2/",
+          "https://www.python-httpx.org/logging/",
+          "https://www.python-httpx.org/quickstart/",
+          "https://www.python-httpx.org/third_party_packages/",
+          "https://www.python-httpx.org/troubleshooting/"
+        ],
+        "minRecall": 0.9,
+        "minPrecision": 0.9
+      },
+      {
+        "kind": "text-set",
+        "name": "records",
+        "items": [
+          "https://www.python-httpx.org/ | HTTPX",
+          "https://www.python-httpx.org/advanced/authentication/ | Authentication - HTTPX",
+          "https://www.python-httpx.org/advanced/clients/ | Clients - HTTPX",
+          "https://www.python-httpx.org/advanced/event-hooks/ | Event Hooks - HTTPX",
+          "https://www.python-httpx.org/advanced/extensions/ | Extensions - HTTPX",
+          "https://www.python-httpx.org/advanced/proxies/ | Proxies - HTTPX",
+          "https://www.python-httpx.org/advanced/resource-limits/ | Resource Limits - HTTPX",
+          "https://www.python-httpx.org/advanced/ssl/ | SSL - HTTPX",
+          "https://www.python-httpx.org/advanced/text-encodings/ | Text Encodings - HTTPX",
+          "https://www.python-httpx.org/advanced/timeouts/ | Timeouts - HTTPX",
+          "https://www.python-httpx.org/advanced/transports/ | Transports - HTTPX",
+          "https://www.python-httpx.org/api/ | Developer Interface - HTTPX",
+          "https://www.python-httpx.org/async/ | Async Support - HTTPX",
+          "https://www.python-httpx.org/code_of_conduct/ | Code of Conduct - HTTPX",
+          "https://www.python-httpx.org/compatibility/ | Requests Compatibility - HTTPX",
+          "https://www.python-httpx.org/contributing/ | Contributing - HTTPX",
+          "https://www.python-httpx.org/environment_variables/ | Environment Variables - HTTPX",
+          "https://www.python-httpx.org/exceptions/ | Exceptions - HTTPX",
+          "https://www.python-httpx.org/http2/ | HTTP/2 Support - HTTPX",
+          "https://www.python-httpx.org/logging/ | Logging - HTTPX",
+          "https://www.python-httpx.org/quickstart/ | QuickStart - HTTPX",
+          "https://www.python-httpx.org/third_party_packages/ | Third Party Packages - HTTPX",
+          "https://www.python-httpx.org/troubleshooting/ | Troubleshooting - HTTPX"
+        ]
+      }
+    ],
+    "site": "www.python-httpx.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://www.python-httpx.org/sitemap.xml scope=https://www.python-httpx.org/; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); 23 pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error",
+      "checkedAt": "2026-10-17T04:01:38.909Z"
+    }
+  }
+]

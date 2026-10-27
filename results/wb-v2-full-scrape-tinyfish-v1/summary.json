@@ -1,0 +1,124 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "tinyfish",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 40,
+      "na": 0,
+      "successes": 28,
+      "successRate": 0.7,
+      "ci95": [
+        0.5348837209302325,
+        0.8648648648648649
+      ],
+      "successfulMedianMs": 3769.7267919999977,
+      "successfulP90Ms": 5274.046463900002,
+      "totalUsd": 0.212305,
+      "costPerSuccessUsd": 0.007582321428571429,
+      "errors": {
+        "other": 2
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 35,
+          "successRate": 0.8
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "js-rendered-field": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "tinyfish",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 40,
+      "na": 0,
+      "successes": 30,
+      "successRate": 0.75,
+      "ci95": [
+        0.5813953488372093,
+        0.918918918918919
+      ],
+      "successfulMedianMs": 750.8129910000025,
+      "successfulP90Ms": 1986.935607400003,
+      "totalUsd": 0,
+      "costPerSuccessUsd": 0,
+      "errors": {},
+      "families": {
+        "docs-heading": {
+          "tasks": 35,
+          "successRate": 0.8571428571428571
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0
+        },
+        "js-rendered-field": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "tinyfish",
+      "reference": "tinyfish",
+      "pairedTasks": 40,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "tinyfish",
+      "reference": "tinyfish",
+      "pairedTasks": 40,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "tinyfish": {
+      "usd": 0.212305,
+      "apiUsd": 0,
+      "modelUsd": 0.212305,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

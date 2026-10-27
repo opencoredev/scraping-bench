@@ -1,0 +1,275 @@
+{
+  "at": "2026-10-24T23:08:34.311Z",
+  "keysFrozen": "2026-10-19",
+  "checked": 20,
+  "drifted": 4,
+  "errors": 1,
+  "tasks": [
+    {
+      "taskId": "fixture-v2-js-19019-2-scrape-js-rendered-field-102",
+      "track": "scrape",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "fixture-v2-js-19019-3-scrape-js-rendered-field-102",
+      "track": "scrape",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "scrape-page-https-typer-tiangolo-com-contributing",
+      "track": "scrape",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": true,
+      "drifted": false
+    },
+    {
+      "taskId": "scrape-pypi-pydantic-settings",
+      "track": "scrape",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": true,
+      "drifted": true,
+      "frozen": [
+        {
+          "kind": "version",
+          "name": "version",
+          "value": "2.16.0"
+        }
+      ],
+      "live": [
+        {
+          "kind": "version",
+          "name": "version",
+          "value": "2.16.1"
+        }
+      ],
+      "agentPassLive": true,
+      "retrievalPassLive": true
+    },
+    {
+      "taskId": "scrape-page-https-docs-context-dev-api-reference-batches-retrieve",
+      "track": "scrape",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": true,
+      "drifted": false
+    },
+    {
+      "taskId": "search-pypi-pydantic",
+      "track": "search",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "search-fresh-neovim-neovim",
+      "track": "search",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "error": "No stable release in last 14 days: neovim/neovim"
+    },
+    {
+      "taskId": "search-crates-bytes",
+      "track": "search",
+      "core": true,
+      "agentPass": true,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "search-revenue-0000078003",
+      "track": "search",
+      "core": true,
+      "agentPass": true,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "search-fresh-vitejs-vite",
+      "track": "search",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": true,
+      "frozen": [
+        {
+          "kind": "text",
+          "name": "tag",
+          "accept": [
+            "create-vite@9.3.0"
+          ]
+        },
+        {
+          "kind": "date",
+          "name": "publishedDate",
+          "value": "2026-10-19"
+        }
+      ],
+      "live": [
+        {
+          "kind": "text",
+          "name": "tag",
+          "accept": [
+            "v8.3.5"
+          ]
+        },
+        {
+          "kind": "date",
+          "name": "publishedDate",
+          "value": "2026-10-21"
+        }
+      ],
+      "agentPassLive": false,
+      "retrievalPassLive": false
+    },
+    {
+      "taskId": "search-pypi-typer",
+      "track": "search",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "search-fresh-oven-sh-bun",
+      "track": "search",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": true,
+      "frozen": [
+        {
+          "kind": "text",
+          "name": "tag",
+          "accept": [
+            "bun-v1.4.3"
+          ]
+        },
+        {
+          "kind": "date",
+          "name": "publishedDate",
+          "value": "2026-10-10"
+        }
+      ],
+      "live": [
+        {
+          "kind": "text",
+          "name": "tag",
+          "accept": [
+            "bun-v1.4.4"
+          ]
+        },
+        {
+          "kind": "date",
+          "name": "publishedDate",
+          "value": "2026-10-22"
+        }
+      ],
+      "agentPassLive": true,
+      "retrievalPassLive": true
+    },
+    {
+      "taskId": "search-page-https-docs-linkup-so-pages-documentation-endpoints-extract-list",
+      "track": "search",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": true,
+      "drifted": false
+    },
+    {
+      "taskId": "search-crates-rusqlite",
+      "track": "search",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": true,
+      "frozen": [
+        {
+          "kind": "version",
+          "name": "version",
+          "value": "0.40.2"
+        },
+        {
+          "kind": "text",
+          "name": "installCommand",
+          "accept": [
+            "cargo add rusqlite"
+          ]
+        }
+      ],
+      "live": [
+        {
+          "kind": "version",
+          "name": "version",
+          "value": "0.41.0"
+        },
+        {
+          "kind": "text",
+          "name": "installCommand",
+          "accept": [
+            "cargo add rusqlite"
+          ]
+        }
+      ],
+      "agentPassLive": false,
+      "retrievalPassLive": false
+    },
+    {
+      "taskId": "map-docs-pola-rs-user-guide-transformations",
+      "track": "map",
+      "core": true,
+      "agentPass": false,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "map-pydantic-dev-docs-httpx2-guides",
+      "track": "map",
+      "core": false,
+      "agentPass": null,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "map-pydantic-dev-docs-httpx2-api",
+      "track": "map",
+      "core": false,
+      "agentPass": null,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "map-pydantic-dev-docs-ai-graph",
+      "track": "map",
+      "core": false,
+      "agentPass": null,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "map-pydantic-dev-docs-ai-integrations",
+      "track": "map",
+      "core": false,
+      "agentPass": null,
+      "retrievalPass": false,
+      "drifted": false
+    },
+    {
+      "taskId": "map-pydantic-dev-docs-monty-concepts",
+      "track": "map",
+      "core": false,
+      "agentPass": null,
+      "retrievalPass": false,
+      "drifted": false
+    }
+  ]
+}

@@ -33,12 +33,6 @@ function Card({ id, title, footer, children }: { id: string; title: string; foot
   );
 }
 
-function gapLine(track: Track) {
-  const d = track.detected;
-  if (d.length === 0) return `No gap here is big enough to rule out chance on ${track.tasks} tasks.`;
-  return `${d.map((g) => `${g.reference} finished ${Math.round(-g.difference * 100)} points more than ${g.provider}`).join("; ")}, the only gap that rules out chance.`;
-}
-
 /** Every provider against every track: the one-image summary of the whole run. */
 function Overview() {
   const tracks = results.tracks;
@@ -68,10 +62,10 @@ function Overview() {
   return (
     <Card
       id="overview"
-      title={`${ids.length} web data APIs, ${tracks.length} jobs, ${total} tasks`}
+      title={`${ids.length} web data APIs, ${tracks.length} jobs, ${total} core tasks`}
       footer="One agent, one model, one tool. Only the API behind it changes. A script checks every answer. Bold is the top score per job; the small figure is cost per finished task. — means not run."
     >
-      <div className="grid grid-cols-[150px_repeat(4,1fr)] items-center gap-x-6 gap-y-[9px] py-4">
+      <div className="grid grid-cols-[150px_repeat(4,1fr)] items-center gap-x-6 gap-y-[6px] py-2">
         <span />
         {tracks.map((t) => (
           <span key={t.id} className="text-sm text-muted-foreground">
@@ -79,7 +73,7 @@ function Overview() {
           </span>
         ))}
         {ids.map((id) => (
-          <div key={id} className="col-span-5 grid grid-cols-subgrid items-center border-t border-foreground/[0.07] pt-[9px]">
+          <div key={id} className="col-span-5 grid grid-cols-subgrid items-center border-t border-foreground/[0.07] pt-[6px]">
             <span className="text-[17px] font-medium" style={{ color: colorOf(id) }}>{labelOf(id)}</span>
             {tracks.map((t) => {
               const s = scoreOf(id, t);
@@ -87,7 +81,7 @@ function Overview() {
             })}
           </div>
         ))}
-        <div className="col-span-5 grid grid-cols-subgrid items-center border-t border-foreground/[0.07] pt-[9px]">
+        <div className="col-span-5 grid grid-cols-subgrid items-center border-t border-foreground/[0.07] pt-[6px]">
           <span className="text-[17px] font-medium text-muted-foreground">
             Model alone <span className="text-xs font-normal">control</span>
           </span>
@@ -98,18 +92,26 @@ function Overview() {
   );
 }
 
+/** The confident gaps in one short line, so a share card's footer never overflows. */
+const cardGaps = (t: Track): string => {
+  const [first] = t.detected;
+  if (!first) return "No gap between providers clears chance on these tasks.";
+  const list = t.detected.map((d) => d.provider).join(", ");
+  return `Clearly behind ${first.reference}: ${list}. Every other gap could be chance.`;
+};
+
 export default function Export() {
   return (
     <div className="flex flex-col items-start gap-10 p-10">
       <Overview />
       {results.tracks.map((t) => (
-        <Card key={t.id} id={`export-${t.id}`} title={`How a ${t.label.toLowerCase()} task runs`} footer="Same model, same prompt, same limits for every provider. Only the API behind the tool changes.">
+        <Card key={t.id} id={`export-${t.id}`} title={`How a ${t.label.toLowerCase()} task runs`} footer="Illustrative task shape. Same model, prompt and limits. Headline results use identical core tasks.">
           <TaskDiagram track={t} layout="wide" className="w-full" linked={false} />
         </Card>
       ))}
       {results.tracks.map((t) => (
-        <Card key={t.id} id={`results-${t.id}`} title={`${t.label}: tasks done, out of ${t.tasks}`} footer={`Every answer checked by script. Cost is all API and model spend per finished task. ${gapLine(t)}`}>
-          <div className="flex flex-1 flex-col justify-center py-6 text-lg">
+        <Card key={t.id} id={`results-${t.id}`} title={`${t.label}: tasks done, out of ${t.tasks} core tasks`} footer={`Every answer checked by script. Cost is all API and model spend per finished task. ${cardGaps(t)}`}>
+          <div className="flex flex-1 flex-col justify-center py-2 text-lg">
             <Bars rows={trackRows(t).success} empty="No results." scaleMax={1} />
           </div>
         </Card>

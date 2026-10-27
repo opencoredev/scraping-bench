@@ -1,0 +1,17 @@
+{
+  "originalTimeLimitsSatisfied": true,
+  "maxCombinedTaskMs": 106475.812298,
+  "completed": 64,
+  "expected": 64,
+  "providerDispatches": 0,
+  "blockedNetworkDispatches": 0,
+  "modelProxyNetworkDispatches": 64,
+  "modelDispatches": 64,
+  "originalProviderLedgersUnchanged": true,
+  "sourceProviderDispatches": {
+    "wb-v2-full-crawl-firecrawl-v1": 12,
+    "wb-v2-full-crawl-contextdev-v1": 40,
+    "wb-v2-full-crawl-scrapfly-v1": 12
+  },
+  "modelUsd": 1.7052140000000002
+}

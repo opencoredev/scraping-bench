@@ -69,7 +69,7 @@ for (const reuse of [true, false]) test(`pipeline with actual local HTTP model p
   await once(server, "listening");
   const address = server.address();
   if (!address || typeof address === "string") throw new Error("No address");
-  const root = await mkdtemp(join(tmpdir(), "scraping-bench-test-"));
+  const root = await mkdtemp(join(tmpdir(), "web-bench-test-"));
   const options = {
     tasks: [first],
     providers: ["fake"],
@@ -258,7 +258,7 @@ test("tool output cap is identical and valid Unicode; deterministic shuffle", ()
   );
 });
 test("provider budget stops calls and n/a is excluded from statistics", async () => {
-  const root = await mkdtemp(join(tmpdir(), "scraping-bench-budget-"));
+  const root = await mkdtemp(join(tmpdir(), "web-bench-budget-"));
   try {
     const result = await runBenchmark({
       tasks: [first],
@@ -295,7 +295,7 @@ test("provider budget stops calls and n/a is excluded from statistics", async ()
   }
 });
 test("paired site bootstrap retains pairs and shared site outcomes", async () => {
-  const root = await mkdtemp(join(tmpdir(), "scraping-bench-stats-"));
+  const root = await mkdtemp(join(tmpdir(), "web-bench-stats-"));
   try {
     const result = await runBenchmark({
       tasks,
@@ -379,7 +379,7 @@ test("strict answer JSON rejects extra fields and empty paired samples are unres
   }
 });
 test("preflight cost reservation prevents a second provider call and raw n/a is provider-independent", async () => {
-  const root = await mkdtemp(join(tmpdir(), "scraping-bench-cost-"));
+  const root = await mkdtemp(join(tmpdir(), "web-bench-cost-"));
   let calls = 0;
   const adapter = {
     ...fakeAdapter,
@@ -602,7 +602,7 @@ test("plain-fetch oracle retrieves local evidence and stale PID lock resumes", a
   await once(server, "listening");
   const a = server.address();
   if (!a || typeof a === "string") throw new Error("address");
-  const root = await mkdtemp(join(tmpdir(), "scraping-bench-lock-"));
+  const root = await mkdtemp(join(tmpdir(), "web-bench-lock-"));
   try {
     const outcome = await invoke(
       oracleAdapter(null),
@@ -667,7 +667,7 @@ test("malformed successful proxy JSON terminates without a retry", async () => {
   }
 });
 test("resume includes prior tuple spend in task dispatch cap", async () => {
-  const root = await mkdtemp(join(tmpdir(), "scraping-bench-task-cap-"));
+  const root = await mkdtemp(join(tmpdir(), "web-bench-task-cap-"));
   let calls = 0;
   const adapter = {
     ...fakeAdapter,
@@ -730,7 +730,7 @@ test("resume includes prior tuple spend in task dispatch cap", async () => {
 });
 
 test('concurrent provider dispatches preserve a native API credit reserve independently of model budget', async () => {
-  const root = await mkdtemp(join(tmpdir(), 'scraping-bench-api-reserve-'));
+  const root = await mkdtemp(join(tmpdir(), 'web-bench-api-reserve-'));
   let dispatched = 0;
   const search = fakeAdapter.search;
   if (!search) throw new Error('Missing fake search');
@@ -749,7 +749,7 @@ test('concurrent provider dispatches preserve a native API credit reserve indepe
   } finally { await rm(root, { recursive: true, force: true }); }
 });
 test('concurrent calls wait for unsettled native reservations before declaring budget exhaustion', async () => {
-  const root = await mkdtemp(join(tmpdir(), 'scraping-bench-api-settlement-'));
+  const root = await mkdtemp(join(tmpdir(), 'web-bench-api-settlement-'));
   let dispatched = 0;
   const search = fakeAdapter.search;
   if (!search) throw new Error('Missing fake search');
@@ -766,5 +766,34 @@ test('concurrent calls wait for unsettled native reservations before declaring b
     assert.equal(rows.filter(r => r.limitReason === 'provider-budget-limit').length, 0);
     const budget = JSON.parse(await readFile(join(root, 'settlement/budget.json'), 'utf8'));
     assert.ok(Math.abs(budget.exa.apiUsd - .003) < 1e-9);
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
+
+test('native API budget stops remain distinct from task cost limits', async () => {
+  const server = createServer((_req, res) => {
+    res.writeHead(200);
+    res.end(JSON.stringify({ choices: [{ message: { role: 'assistant', content: null, tool_calls: [{ id: 'one', type: 'function', function: { name: 'search', arguments: '{"query":"x","limit":1}' } }] } }], usage: { prompt_tokens: 1, completion_tokens: 1 } }));
+  });
+  server.listen(0, '127.0.0.1'); await once(server, 'listening');
+  const address = server.address(); if (!address || typeof address === 'string') throw Error('No address');
+  try {
+    const result = await runAgent({ task: first, adapter: fakeAdapter, lane: 'default', client: new ModelClient({ baseUrl: `http://127.0.0.1:${address.port}`, token: 'test' }), signal: AbortSignal.timeout(2000), callTool: async () => { throw Error('Provider API budget exhausted'); } });
+    assert.equal(result.limitReason, 'provider-budget-limit');
+    assert.equal(result.success, false);
+  } finally { server.closeAllConnections(); await new Promise<void>(resolve => server.close(() => resolve())); }
+});
+
+test('zero-price physical request quota includes dispatches on resume', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'web-bench-quota-'));
+  const options = { tasks: [first, { ...first, id: 'quota-second' }], providers: ['exa'], adapterList: [fakeAdapter], lane: 'default', mode: 'raw', client: 'test', seed: 1, concurrency: 1, runId: 'quota', root, providerConfig: { exa: { concurrency: 1, perSecond: 1000, burst: 1, maxUsd: 10, maxCallUsd: 0, maxPhysicalCalls: 1 } } } satisfies Parameters<typeof runBenchmark>[0];
+  try {
+    await runBenchmark(options);
+    const rows = (await readFile(join(root, 'quota/results.jsonl'), 'utf8')).trim().split('\n').map(line => resultSchema.parse(JSON.parse(line)));
+    assert.equal(rows.filter(row => row.limitReason === 'provider-budget-limit').length, 1);
+    // Simulate lost result rows after an interruption; dispatch reservations still survive.
+    await writeFile(join(root, 'quota/results.jsonl'), '');
+    await runBenchmark(options);
+    const calls = (await readFile(join(root, 'quota/calls.jsonl'), 'utf8')).trim().split('\n').map(line => JSON.parse(line));
+    assert.equal(calls.filter(event => event.kind === 'provider-dispatch').length, 1);
   } finally { await rm(root, { recursive: true, force: true }); }
 });

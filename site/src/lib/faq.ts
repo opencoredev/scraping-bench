@@ -1,7 +1,10 @@
 import { cheapest, comparisons, costText, listText, pairVerdict, rankedRuns, runOn, trackById } from "@/lib/catalog";
 import type { Run, TrackId } from "@/lib/catalog";
 import { formatPct, results } from "@/lib/results";
-import { MODEL, NOT_TESTED, REPO } from "@/lib/site";
+import { MODEL, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
+
+/** Some answers describe the v1 run only (Spider and workers.dev, free plans, cold test sites). See lib/notes.ts. */
+const V1 = results.campaignVersion === 1;
 
 /**
  * Questions people ask, answered from results.json. Answers are plain text so the page and its FAQPage
@@ -24,9 +27,11 @@ function scoresText(runs: readonly Run[]): string {
 function gapsText(trackId: TrackId): string {
   const track = trackById(trackId);
   if (!track) return "";
-  return track.detected.length === 0
-    ? "None of these gaps is big enough to rule out chance, so the data doesn't name one best provider."
-    : `The only gap big enough to rule out chance: ${track.detected.map((d) => `${d.provider} finished ${Math.round(-d.difference * 100)} points fewer tasks than ${d.reference}`).join("; ")}. The rest can't be told apart yet.`;
+  if (track.detected.length === 0) return "None of these gaps is big enough to rule out chance, so the data doesn't name one best provider.";
+  const gaps = track.detected.map((d) => `${d.provider} finished ${Math.round(-d.difference * 100)} points fewer tasks than ${d.reference}`).join("; ");
+  const compared = rankedRuns(track).length - 1;
+  const lead = track.detected.length === 1 ? "The only gap big enough to rule out chance" : "Gaps big enough to rule out chance";
+  return `${lead}: ${gaps}.${track.detected.length < compared ? " The rest can't be told apart yet." : ""}`;
 }
 
 function bestOn(trackId: TrackId, question: string, extra: (runs: Run[]) => string[] = () => []): Faq[] {
@@ -46,6 +51,7 @@ function bestOn(trackId: TrackId, question: string, extra: (runs: Run[]) => stri
 }
 
 const spiderNote = (runs: Run[]) => {
+  if (!V1) return [];
   const spider = runs.find((r) => r.entry.id === "spider");
   return [
     ...(spider ? [`Spider's ${formatPct(spider.agent.rate)} is because it refused our test site's workers.dev domain; it scraped all 10 PyPI pages correctly.`] : []),
@@ -71,7 +77,7 @@ function cheapestFaq(): Faq {
   });
   return {
     question: "Which web data API is cheapest per finished task?",
-    answer: `Cost per finished task counts all API and model spend, failures included, divided by tasks done. The cheapest on each track: ${parts.join("; ")}. Everything ran on free plans, so these are list-price equivalents, not invoices.`,
+    answer: `Cost per finished task counts all API and model spend, failures included, divided by tasks done. The cheapest on each track: ${parts.join("; ")}.${V1 ? " Everything ran on free plans, so these are list-price equivalents, not invoices." : ""}`,
     links: [{ href: "/providers", label: "Every provider's cost" }],
   };
 }
@@ -82,23 +88,27 @@ export const faqs: readonly Faq[] = [
   ...bestOn("scrape", "What is the best web scraping API for AI agents?", spiderNote),
   ...bestOn("search", "What is the best search API for AI agents?", () => [`Exa, Tavily and Perplexity, which also sell search APIs, were not tested.`]),
   ...bestOn("crawl", "Which API is best for crawling a website?", (runs) => [`Crawl has only ${runs[0]?.agent.tasks ?? 0} tasks, so its intervals are wide.`]),
-  ...bestOn("map", "Which API is best for listing every URL on a site?", () => ["Map tasks ran mostly on a site built fresh for this run, so they test cold sites that no provider had indexed."]),
+  ...bestOn("map", "Which API is best for listing every URL on a site?", () => (V1 ? ["Map tasks ran mostly on a site built fresh for this run, so they test cold sites that no provider had indexed."] : [])),
   cheapestFaq(),
   ...headToHead(),
+  ...(V1
+    ? [
   {
-    question: "Why did Spider score so low?",
-    answer:
-      "Spider's malicious-URL filter flags the workers.dev domain our test site runs on, so it refused those pages. It scraped all 10 PyPI pages correctly. The score is a domain compatibility finding, not a measure of how well it scrapes sites it accepts.",
-    links: [{ href: "/providers/spider", label: "Spider's results" }],
-  },
+        question: "Why did Spider score so low?",
+        answer:
+          "Spider's malicious-URL filter flags the workers.dev domain our test site runs on, so it refused those pages. It scraped all 10 PyPI pages correctly. The score is a domain compatibility finding, not a measure of how well it scrapes sites it accepts.",
+        links: [{ href: "/providers/spider", label: "Spider's results" }],
+      },
+      ]
+    : []),
   {
     question: `Were ${NOT_TESTED} tested?`,
-    answer: `No. There were no keys for ${NOT_TESTED}, so this benchmark has no numbers for them.`,
+    answer: `No. This benchmark has no numbers for ${NOT_TESTED}.`,
     links: [],
   },
   {
     question: "Why isn't Parallel in the results?",
-    answer: "Parallel was tested on search, but its customer terms require written consent to publish benchmark results, so its results are left out of the site and the repo.",
+    answer: parallelNote(results),
     links: [],
   },
   {
@@ -119,7 +129,7 @@ export const faqs: readonly Faq[] = [
   },
   {
     question: "When was this run, and can I reuse the data?",
-    answer: `The results are from run ${results.runId} on ${ranOn}, all from one server on free plans. Tasks, grader, harness and every result row are MIT licensed on GitHub at ${REPO}.`,
+    answer: `The results are from run ${results.runId} on ${ranOn}, all from one server${V1 ? " on free plans" : ""}. Tasks, grader, harness and every result row are MIT licensed on GitHub at ${REPO}.`,
     links: [{ href: REPO, label: "GitHub" }],
   },
 ];

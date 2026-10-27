@@ -1,0 +1,4 @@
+[main 4173d62] Record passing frozen-file verification before held-out calls
+ 2 files changed, 768 insertions(+)
+ create mode 100644 results/campaign-v2/frozen-integrity-before.log
+ create mode 100644 results/campaign-v2/tasks-verify-before.log

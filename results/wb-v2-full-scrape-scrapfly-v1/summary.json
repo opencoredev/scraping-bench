@@ -1,0 +1,129 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "scrape",
+      "provider": "scrapfly",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "tasks": 40,
+      "na": 0,
+      "successes": 31,
+      "successRate": 0.775,
+      "ci95": [
+        0.6341463414634146,
+        0.9000609756097558
+      ],
+      "successfulMedianMs": 5674.33408499998,
+      "successfulP90Ms": 7085.765496000007,
+      "totalUsd": 0.30375300000000005,
+      "costPerSuccessUsd": 0.009798483870967744,
+      "errors": {
+        "rate-limited": 2,
+        "other": 3
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 35,
+          "successRate": 0.8285714285714286
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0.6666666666666666
+        },
+        "js-rendered-field": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    },
+    {
+      "track": "scrape",
+      "provider": "scrapfly",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "tasks": 40,
+      "na": 0,
+      "successes": 34,
+      "successRate": 0.85,
+      "ci95": [
+        0.7272727272727273,
+        0.9517633487145652
+      ],
+      "successfulMedianMs": 2262.5275320000073,
+      "successfulP90Ms": 2992.6953206000153,
+      "totalUsd": 0.005849999999999999,
+      "costPerSuccessUsd": 0.00017205882352941174,
+      "errors": {
+        "rate-limited": 1
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 35,
+          "successRate": 0.9142857142857143
+        },
+        "package-version": {
+          "tasks": 3,
+          "successRate": 0.6666666666666666
+        },
+        "js-rendered-field": {
+          "tasks": 2,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 40,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "scrape",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "scraping-infra",
+      "provider": "scrapfly",
+      "reference": "scrapfly",
+      "pairedTasks": 40,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "scrapfly": {
+      "usd": 0.3037530000000001,
+      "apiUsd": 0.0061500000000000166,
+      "modelUsd": 0.29760300000000006,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "rate-limited": 2
+  }
+}

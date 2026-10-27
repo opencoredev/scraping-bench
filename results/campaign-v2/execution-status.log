@@ -1,0 +1,10 @@
+2026-10-19T18:33:47Z phase=full track=search attempt=1 exit=124
+2026-10-19T18:55:34Z phase=full track=search attempt=2 exit=0
+2026-10-19T19:21:04Z phase=full track=scrape attempt=1 exit=0
+2026-10-19T19:32:18Z phase=full track=map attempt=1 exit=0
+2026-10-19T19:47:25Z phase=full track=crawl attempt=1 exit=0
+2026-10-19T20:01:28Z phase=controls track=search attempt=1 exit=0
+2026-10-19T20:15:29Z phase=controls track=scrape attempt=1 exit=0
+2026-10-19T20:17:56Z phase=controls track=map attempt=1 exit=0
+2026-10-19T20:19:27Z phase=controls track=crawl attempt=1 exit=0
+2026-10-19T20:19:27Z heldout-and-controls-complete

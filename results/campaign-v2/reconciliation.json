@@ -1,0 +1,186 @@
+{
+  "at": "2026-10-19T20:52:44.588Z",
+  "rows": [
+    {
+      "provider": "firecrawl",
+      "unit": "credits",
+      "starting": 463,
+      "ledgerNative": 323.9999999999992,
+      "ledgerUsd": 1.619999999999996,
+      "measuredRemaining": 139,
+      "floor": 23.150000000000002,
+      "signedWithinCap": true,
+      "walletPass": true,
+      "walletStatus": "PASS",
+      "quota": {},
+      "quotaPass": true,
+      "residualLedgerMinusWallet": -7.958078640513122e-13,
+      "note": "Positive residuals can reflect conservative uncertain reservations; original signed events remain intact."
+    },
+    {
+      "provider": "contextdev",
+      "unit": "credits",
+      "starting": 63171,
+      "ledgerNative": 1475.9999999999477,
+      "ledgerUsd": 3.2471999999998853,
+      "measuredRemaining": 61809,
+      "floor": 3158.55,
+      "signedWithinCap": true,
+      "walletPass": true,
+      "walletStatus": "PASS",
+      "quota": {},
+      "quotaPass": true,
+      "residualLedgerMinusWallet": 114.9999999999477,
+      "note": "Final measurement costs one credit, added as measurement overhead. Starting basis follows the initial one-credit measurement."
+    },
+    {
+      "provider": "scrapfly",
+      "unit": "credits",
+      "starting": 309,
+      "ledgerNative": 204.00000000000017,
+      "ledgerUsd": 0.030600000000000023,
+      "measuredRemaining": 105,
+      "floor": 15.450000000000001,
+      "signedWithinCap": true,
+      "walletPass": true,
+      "walletStatus": "PASS",
+      "quota": {},
+      "quotaPass": true,
+      "residualLedgerMinusWallet": 1.7053025658242404e-13,
+      "note": "Positive residuals can reflect conservative uncertain reservations; original signed events remain intact."
+    },
+    {
+      "provider": "spider",
+      "unit": "credits",
+      "starting": 2428.905325,
+      "ledgerNative": 109.95683999999994,
+      "ledgerUsd": 0.010995683999999995,
+      "measuredRemaining": 2316.019534,
+      "floor": 121.44526625000002,
+      "signedWithinCap": true,
+      "walletPass": true,
+      "walletStatus": "PASS",
+      "quota": {},
+      "quotaPass": true,
+      "residualLedgerMinusWallet": -2.928951000000211,
+      "note": "Positive residuals can reflect conservative uncertain reservations; original signed events remain intact."
+    },
+    {
+      "provider": "jina",
+      "unit": "tokens",
+      "starting": 1495119,
+      "ledgerNative": 160742.0000000001,
+      "ledgerUsd": 0.008037100000000004,
+      "measuredRemaining": 1424377,
+      "floor": 74755.95,
+      "signedWithinCap": true,
+      "walletPass": null,
+      "walletStatus": "NOT CHECKED (cached balance)",
+      "quota": {},
+      "quotaPass": true,
+      "residualLedgerMinusWallet": null,
+      "note": "Observed root can be cached; signed safe allowance 834751.1 tokens governs, not an inferred wallet delta."
+    },
+    {
+      "provider": "you",
+      "unit": "USD",
+      "starting": 100,
+      "ledgerNative": 3.412999999999949,
+      "ledgerUsd": 3.412999999999949,
+      "measuredRemaining": null,
+      "floor": 5,
+      "signedWithinCap": true,
+      "walletPass": null,
+      "walletStatus": "NOT CHECKED (measurement unavailable)",
+      "quota": {},
+      "quotaPass": true,
+      "residualLedgerMinusWallet": null,
+      "note": "Owner cancelled further You.com calls after completed samples; collected rows retained, final wallet probe skipped."
+    },
+    {
+      "provider": "linkup",
+      "unit": "USD",
+      "starting": 18.904,
+      "ledgerNative": 2.9819999999999585,
+      "ledgerUsd": 2.9819999999999585,
+      "measuredRemaining": 15.927,
+      "floor": 0.9452,
+      "signedWithinCap": true,
+      "walletPass": true,
+      "walletStatus": "PASS",
+      "quota": {},
+      "quotaPass": true,
+      "residualLedgerMinusWallet": 0.004999999999958149,
+      "note": "Positive residuals can reflect conservative uncertain reservations; original signed events remain intact."
+    },
+    {
+      "provider": "tinyfish",
+      "unit": "USD",
+      "starting": 10,
+      "ledgerNative": 0,
+      "ledgerUsd": 0,
+      "measuredRemaining": 10,
+      "floor": 0.5,
+      "signedWithinCap": true,
+      "walletPass": true,
+      "walletStatus": "PASS",
+      "quota": {
+        "search": {
+          "used": 791,
+          "retainedLimit": 11400
+        },
+        "scrape": {
+          "used": 118,
+          "retainedLimit": 950
+        }
+      },
+      "quotaPass": true,
+      "residualLedgerMinusWallet": 0,
+      "note": "Wallet contract rates are zero; all historical requests counted, stricter than daily resets."
+    },
+    {
+      "provider": "browserbase",
+      "unit": "list USD",
+      "starting": null,
+      "ledgerNative": 0.6480000000000005,
+      "ledgerUsd": 0.6480000000000005,
+      "measuredRemaining": null,
+      "floor": null,
+      "signedWithinCap": true,
+      "walletPass": null,
+      "walletStatus": "NOT CHECKED (quota guard only)",
+      "quota": {
+        "search": {
+          "used": 289,
+          "retainedLimit": 950
+        },
+        "scrape": {
+          "used": 131,
+          "retainedLimit": 950
+        }
+      },
+      "quotaPass": true,
+      "residualLedgerMinusWallet": null,
+      "note": "No remaining quota endpoint; all historical physical requests plus smoke attempts counted per product. Frozen dispatch guards conservatively count all smoke rows, a stricter limit than this attempt-only reconciliation. Dollar cost is a list equivalent."
+    }
+  ],
+  "unresolvedResiduals": [
+    {
+      "provider": "contextdev",
+      "unit": "credits",
+      "residual": 114.9999999999477
+    },
+    {
+      "provider": "spider",
+      "unit": "credits",
+      "residual": -2.928951000000211
+    },
+    {
+      "provider": "linkup",
+      "unit": "USD",
+      "residual": 0.004999999999958149
+    }
+  ],
+  "exactReconciliation": "NOT CHECKED: residuals not attributed",
+  "failures": []
+}

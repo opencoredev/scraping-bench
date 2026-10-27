@@ -1,0 +1,6 @@
+
+> web-bench@0.1.0 tasks:verify
+> node --experimental-strip-types src/tasks/verify.ts --refresh --frozen-dir=results/campaign-v2/retained --task=scrape-pypi-sqlalchemy
+
+FAIL scrape-pypi-sqlalchemy: Project page does not expose latest version 2.1.5 in its heading: https://pypi.org/project/sqlalchemy/
+Verified 0/1; drift/errors=1

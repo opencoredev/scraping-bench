@@ -6,14 +6,21 @@ import { json } from './io.ts';
 import { resolve } from './resolve.ts';
 import { buildSplits } from './splits.ts';
 
+const taskRoot = process.env.WEB_BENCH_TASK_DIR ?? 'tasks';
 if (!process.argv.includes('--refresh')) throw new Error('Verification must use --refresh to bypass disk cache');
-const provenance = provenanceSchema.parse(json(await readFile('tasks/provenance.json', 'utf8')));
-const tasks = (await Promise.all(['search', 'scrape-web', 'map-web', 'crawl-web'].map(async file => z.array(taskSchema).parse(json(await readFile(`tasks/${file}.json`, 'utf8')))))).flat();
-const splits = z.record(z.string(), z.enum(['dev', 'test'])).parse(json(await readFile('tasks/splits.json', 'utf8')));
+const provenance = provenanceSchema.parse(json(await readFile(`${taskRoot}/provenance.json`, 'utf8')));
+const tasks = (await Promise.all(['search', 'scrape-web', 'map-web', 'crawl-web'].map(async file => z.array(taskSchema).parse(json(await readFile(`${taskRoot}/${file}.json`, 'utf8')))))).flat();
+const splits = z.record(z.string(), z.enum(['dev', 'test'])).parse(json(await readFile(`${taskRoot}/splits.json`, 'utf8')));
 const ids = new Set(tasks.map(task => task.id));
 if (ids.size !== tasks.length || Object.keys(provenance.recipes).length !== tasks.length || Object.keys(splits).length !== tasks.length || Object.keys(splits).some(id => !ids.has(id))) throw new Error('Duplicate IDs or mismatched provenance/splits');
 const selected = process.argv.find(arg => arg.startsWith('--task='))?.slice('--task='.length);
-const targets = selected ? tasks.filter(task => task.id === selected) : tasks;
+const frozenDir = process.argv.find(arg => arg.startsWith('--frozen-dir='))?.slice('--frozen-dir='.length);
+const frozen = frozenDir ? (await Promise.all(['search','scrape','map','crawl'].map(async track => {
+  try { return z.array(taskSchema).parse(json(await readFile(`${frozenDir}/test-${track}.json`, 'utf8'))); }
+  catch (error) { if (error instanceof Error && 'code' in error && error.code === 'ENOENT') return []; throw error; }
+}))).flat() : tasks;
+if (frozen.some(task => !isDeepStrictEqual(task, tasks.find(candidate => candidate.id === task.id)))) throw new Error('Frozen tasks differ from verified banks');
+const targets = selected ? frozen.filter(task => task.id === selected) : frozen;
 if (targets.length === 0) throw new Error(`Unknown task: ${selected}`);
 const expectedSplits = buildSplits(tasks, provenance.recipes);
 if (Object.entries(splits).some(([id, split]) => expectedSplits[id] !== split)) throw new Error('Split assignments violate deterministic answer-group isolation');

@@ -1,0 +1,9 @@
+{
+  "browserbase": {
+    "usd": 0.05774,
+    "apiUsd": 0.030000000000000002,
+    "modelUsd": 0.027739999999999997,
+    "maxUsd": 30,
+    "reached": false
+  }
+}

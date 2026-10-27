@@ -1,0 +1,20 @@
+{"provider":"contextdev","track":"crawl","successes":0,"tasks":2,"errors":[],"truncated":2}
+{"provider":"contextdev","track":"map","successes":2,"tasks":3,"errors":[{"error":"empty","status":200,"message":"Provider returned blank content"},{"error":"empty","status":200,"message":"Provider returned blank content"}],"truncated":0}
+{"provider":"contextdev","track":"scrape","successes":2,"tasks":3,"errors":[],"truncated":2}
+{"provider":"contextdev","track":"search","successes":2,"tasks":3,"errors":[],"truncated":0}
+{"provider":"firecrawl","track":"crawl","successes":1,"tasks":2,"errors":[],"truncated":1}
+{"provider":"firecrawl","track":"map","successes":2,"tasks":3,"errors":[],"truncated":0}
+{"provider":"firecrawl","track":"scrape","successes":1,"tasks":3,"errors":[],"truncated":1}
+{"provider":"firecrawl","track":"search","successes":2,"tasks":3,"errors":[],"truncated":1}
+{"provider":"scrapfly","track":"crawl","successes":2,"tasks":4,"errors":[],"truncated":2}
+{"provider":"scrapfly","track":"scrape","successes":2,"tasks":3,"errors":[],"truncated":2}
+{"provider":"browserbase","track":"scrape","successes":2,"tasks":3,"errors":[],"truncated":2}
+{"provider":"browserbase","track":"search","successes":0,"tasks":5,"errors":[],"truncated":0}
+{"provider":"jina","track":"scrape","successes":2,"tasks":3,"errors":[],"truncated":2}
+{"provider":"linkup","track":"scrape","successes":1,"tasks":3,"errors":[],"truncated":2}
+{"provider":"linkup","track":"search","successes":2,"tasks":3,"errors":[],"truncated":3}
+{"provider":"spider","track":"scrape","successes":2,"tasks":3,"errors":[{"error":"blocked","status":403,"message":"URL Error: Malicious URL not allowed. [Caution] You will get banned for attempting to crawl bad websites. If you think this is an error, please reach out."}],"truncated":0}
+{"provider":"tinyfish","track":"scrape","successes":1,"tasks":3,"errors":[],"truncated":0}
+{"provider":"tinyfish","track":"search","successes":4,"tasks":6,"errors":[],"truncated":0}
+{"provider":"you","track":"scrape","successes":2,"tasks":3,"errors":[],"truncated":1}
+{"provider":"you","track":"search","successes":3,"tasks":6,"errors":[],"truncated":3}

@@ -1,0 +1,4 @@
+{"runId":"wb-v2-controls-scrape-oracle-v1","provider":"oracle","phase":"controls","track":"scrape","tasks":300,"allowance":0,"bound":0}
+{"runId":"wb-v2-controls-scrape-none-v1","provider":"none","phase":"controls","track":"scrape","tasks":300,"allowance":0,"bound":0}
+{"directory":"results/wb-v2-controls-scrape-none-v1","completed":300,"skipped":0}
+{"directory":"results/wb-v2-controls-scrape-oracle-v1","completed":300,"skipped":0}

@@ -1,0 +1,6 @@
+{"runId":"wb-v2-full-crawl-scrapfly-v1","provider":"scrapfly","phase":"full","track":"crawl","tasks":12,"allowance":0.03143249999999999,"bound":0.0042}
+{"runId":"wb-v2-full-crawl-firecrawl-v1","provider":"firecrawl","phase":"full","track":"crawl","tasks":12,"allowance":1.1642499999999998,"bound":0.15}
+{"runId":"wb-v2-full-crawl-contextdev-v1","provider":"contextdev","phase":"full","track":"crawl","tasks":40,"allowance":129.47759000000005,"bound":0.066}
+{"directory":"results/wb-v2-full-crawl-scrapfly-v1","completed":24,"skipped":0}
+{"directory":"results/wb-v2-full-crawl-firecrawl-v1","completed":24,"skipped":0}
+{"directory":"results/wb-v2-full-crawl-contextdev-v1","completed":80,"skipped":0}

@@ -18,7 +18,7 @@ function bill(s: Session, tokens: number | undefined): void {
 export const jina: Adapter = {
   id: 'jina', displayName: 'Jina Reader/Search', cohort: 'content-api', apiVersion: 'Reader/Search HTTP; docs 2026-10-17',
   scrape: ({ url }, ctx) => operation(ctx, async s => {
-    const d = await s.json(`https://r.jina.ai/${url}`, z.object({ code: z.number(), data: page }), { headers: headers(ctx.lane) });
+    const d = await s.json(`https://r.jina.ai/${url}`, z.object({ code: z.number(), data: page }), { headers: { ...headers(ctx.lane), 'X-Token-Budget': '5000' } });
     bill(s, d.data.usage?.tokens);
     if (d.code !== 200) throw new ApiError(classify('', d.code), 'Reader failed', d.code);
     return { track: 'scrape', markdown: d.data.content, finalUrl: d.data.url };

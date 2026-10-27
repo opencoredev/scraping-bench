@@ -1,0 +1,9 @@
+{
+  "oracle": {
+    "usd": 0.7772129999999988,
+    "apiUsd": 0,
+    "modelUsd": 0.7772129999999988,
+    "maxUsd": 30,
+    "reached": false
+  }
+}

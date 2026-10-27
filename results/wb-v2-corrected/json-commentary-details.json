@@ -1,0 +1,1199 @@
+[
+  {
+    "taskId": "search-npm-kysely",
+    "provider": "linkup",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-pola-rs-user-guide-concepts-streaming",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-tinyfish-ai-api-reference-list-search-usage",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-docs-astral-sh-ruff-rules-airflow-xcom-pull-in-template-string",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-linkup-so-pages-documentation-endpoints-fetch-for-agents",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-revenue-0000909832",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-docs-deno-com-api-node",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-fresh-traefik-traefik",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-aiohttp-org-en-v3-14-3",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-squidfunk-github-io-mkdocs-material-blog-2023-10-02-sunsetting-gitter-towards-efficient-community-engagement",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-revenue-0001403161",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-marimo-io-recipes",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-revenue-0000051143",
+    "provider": "contextdev",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-docker-com-get-started-docker-concepts-building-images-using-the-build-cache",
+    "provider": "contextdev",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-flask-palletsprojects-com-en-stable",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-textual-textualize-io-api-compose",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-fastapi-tiangolo-com-tutorial-request-forms",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-greatexpectations-io-docs-0-18-oss-contributing-contributing",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-www-python-httpx-org-advanced-authentication",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-fresh-encode-starlette",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-revenue-0001045609",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-linkup-so-pages-documentation-endpoints-extract-list",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-werkzeug-palletsprojects-com-en-stable",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-docs-pytest-org-en-7-1-x",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-linkup-so-pages-changelog-fast-depth",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-revenue-0000093751",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-uvicorn-dev-concepts-event-loop",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-textual-textualize-io-getting-started",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-homebrew-just",
+    "provider": "tinyfish",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-homebrew-git",
+    "provider": "browserbase",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-crates-rayon",
+    "provider": "browserbase",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-firecrawl-dev-advanced-scraping-guide",
+    "provider": "browserbase",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-firecrawl-dev-api-reference-endpoint-browser-delete",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-textual-textualize-io-api-compose",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-none-commander",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-fastapi-tiangolo-com-tutorial-request-forms",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-python-markdown-github-io-extensions-extra",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-pydantic-dev-docs-ai-api-models-groq",
+    "provider": "you",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-docs-greatexpectations-io-docs-0-18-cloud-connect-connect-airflow",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-revenue-0000092380",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-uvicorn-dev-contributing",
+    "provider": "you",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-sqlmodel-tiangolo-com-tutorial-create-db-and-table",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-docs-pytest-org-en-7-3-x",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-fresh-pydantic-pydantic",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-vite-dev-blog-announcing-vite4",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-typer-tiangolo-com-tutorial-commands-arguments",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-none-playwright",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-packagist-symfony-yaml",
+    "provider": "you",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-research-best-practices",
+    "provider": "firecrawl",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "fixture-v2-js-19019-2-scrape-js-rendered-field-102",
+    "provider": "firecrawl",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-astro-build-ar-guides-backend-sentry",
+    "provider": "contextdev",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-astro-build-ar-guides-caching",
+    "provider": "contextdev",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-marimo-io-recipes",
+    "provider": "contextdev",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-pydantic-dev-docs-ai-api-models-bedrock",
+    "provider": "contextdev",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-textual-textualize-io-getting-started",
+    "provider": "contextdev",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-firecrawl-dev-ai-onboarding-agent-auth",
+    "provider": "tinyfish",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-linkup-so-pages-documentation-endpoints-research-best-practices",
+    "provider": "tinyfish",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-astro-build-ar-guides-cms-builderio",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-fastapi-tiangolo-com-tutorial-request-forms-and-files",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-docs-marimo-io-static-claude",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-context-dev-account-credits",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-astral-sh-ruff-settings",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-docs-browserbase-com-integrations-hermes-agent-introduction",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-textual-textualize-io-api-await-complete",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-fastapi-tiangolo-com-async",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-docs-getdbt-com-blog-authors-bennie-regenold",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-fastapi-tiangolo-com-tutorial-request-form-models",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-contributing-contributing",
+    "provider": "linkup",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-jinja-palletsprojects-com-en-stable",
+    "provider": "scrapfly",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-scrapy-org-en-latest-news-html",
+    "provider": "scrapfly",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-textual-textualize-io-api-compose",
+    "provider": "scrapfly",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-pydantic-dev-docs-ai-api-models-instrumented",
+    "provider": "browserbase",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-click-palletsprojects-com-en-stable",
+    "provider": "browserbase",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-celeryq-dev-en-latest",
+    "provider": "browserbase",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-pypi-textual",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-browserbase-com-integrations-google-adk-introduction",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-getdbt-com-blog-authors-brittany-krauth",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-linkup-so-pages-changelog-fetch-pro-mode",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-tinyfish-ai-agent-payments",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "fixture-v2-js-19019-5-scrape-js-rendered-field-102",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-flask-palletsprojects-com-en-stable",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-why-gx-cloud",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "fixture-v2-js-19019-2-scrape-js-rendered-field-102",
+    "provider": "you",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-browserbase-com-integrations-hermes-agent-introduction",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-docker-com-reference-api-hub-latest",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "fixture-v2-js-19019-4-scrape-js-rendered-field-102",
+    "provider": "you",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-marimo-io-api-diagrams",
+    "provider": "jina",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-www-mkdocs-org-about-contributing",
+    "provider": "jina",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-python-markdown-github-io-extensions-md-in-html",
+    "provider": "jina",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-pydantic-dev-docs-ai-api-models-instrumented",
+    "provider": "jina",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-context-dev-api-reference-batches-retrieve",
+    "provider": "jina",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-www-encode-io-httpcore-connection-pools",
+    "provider": "jina",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-celeryq-dev-en-latest",
+    "provider": "jina",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "map-docs-pola-rs-user-guide-lazy",
+    "provider": "contextdev",
+    "track": "map",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "crawl-docs-astro-build-it-guides-backend",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-tutorial-commands",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-squidfunk-github-io-mkdocs-material-contributing",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-deno-com-sandbox",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-configuration",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-logfire-api",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-transformations",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-reference-openapi",
+    "provider": "scrapfly",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-logfire-api",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-astro-build-it-guides-backend",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-squidfunk-github-io-mkdocs-material-contributing",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-deno-com-sandbox",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-configuration",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-tutorial-commands",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-reference-openapi",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-docker-com-dhi-migration",
+    "provider": "firecrawl",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-docker-com-offload",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-logfire-api",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-tutorial-dependencies",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-ai-project",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-docker-com-faqs",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-textual-textualize-io-styles-grid",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-www-mkdocs-org-dev-guide",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-www-mkdocs-org-user-guide",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-sqlmodel-tiangolo-com-tutorial-many-to-many",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-tutorial-arguments",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-astral-sh-uv-pip",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-deno-com-runtime-packages",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-ai-graph",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-working-with-data",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-deno-com-deploy-classic-api",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-sqlmodel-tiangolo-com-advanced",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-pydantic-dev-docs-ai-integrations",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-deno-com-sandbox",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-astro-build-it-guides-backend",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-sqlmodel-tiangolo-com-tutorial-relationship-attributes",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-tutorial-security",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-astro-build-pt-br-guides-media",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-marimo-io-guides-configuration",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-fastapi-tiangolo-com-reference-openapi",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-squidfunk-github-io-mkdocs-material-contributing",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-astro-build-pl-guides-backend",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-docker-com-dhi-migration",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-textual-textualize-io-styles-scrollbar-colors",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-lazy",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-typer-tiangolo-com-reference",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-transformations",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-pola-rs-user-guide-concepts",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "crawl-docs-docker-com-dhi-tools",
+    "provider": "contextdev",
+    "track": "crawl",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-docs-astral-sh-uv-concepts-projects-layout",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-revenue-0000092380",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-page-https-fastapi-tiangolo-com-python-types",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-fastapi-tiangolo-com-tutorial-header-param-models",
+    "provider": "none",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-none-hono",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-none-zustand",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-pypi-loguru",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-revenue-0000320193",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-none-puppeteer",
+    "provider": "none",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-scrapy-org-en-latest-topics-dynamic-content-html",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-revenue-0001341439",
+    "provider": "none",
+    "track": "search",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-npm-ofetch",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "search-revenue-0001403161",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "search-page-https-docs-celeryq-dev-en-v5-6-3",
+    "provider": "none",
+    "track": "search",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-greatexpectations-io-docs-0-18-oss-changelog",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-astro-build-ar-concepts-islands",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-python-markdown-github-io-extensions-abbreviations",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-vite-dev-blog-announcing-vite3",
+    "provider": "none",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-fastapi-tiangolo-com-tutorial-first-steps",
+    "provider": "none",
+    "track": "scrape",
+    "core": true,
+    "wouldPassCorrectedFields": true
+  },
+  {
+    "taskId": "scrape-page-https-docs-tinyfish-ai-agent-payments",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-browserbase-com-account-enterprise-byos-setup-guide",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-linkup-so-pages-changelog-addingimages",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-pytest-org-en-4-6-x",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-starlette-dev",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-activity",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-docs-greatexpectations-io-docs-0-18-cloud-validations-manage-validations",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  },
+  {
+    "taskId": "scrape-page-https-starlette-dev-release-notes",
+    "provider": "none",
+    "track": "scrape",
+    "core": false,
+    "wouldPassCorrectedFields": false
+  }
+]

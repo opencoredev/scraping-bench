@@ -1,0 +1,9 @@
+{
+  "linkup": {
+    "usd": 0.03048600000000001,
+    "apiUsd": 0.004,
+    "modelUsd": 0.02648600000000001,
+    "maxUsd": 30,
+    "reached": false
+  }
+}

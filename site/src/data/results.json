@@ -1,191 +1,123 @@
 {
-  "runId": "wb-20261017-final",
-  "generatedAt": "2026-10-17T18:45:56.899Z",
+  "runId": "wb-v2",
+  "generatedAt": "2026-10-19T21:19:36.767Z",
+  "campaignVersion": 2,
   "tracks": [
-    {
-      "id": "search",
-      "label": "Search",
-      "what": "Find a fact on the live web: a package's latest version, a filing figure, a release date.",
-      "tasks": 60,
-      "limits": {
-        "seconds": 60,
-        "usd": 0.1,
-        "calls": 3
-      },
-      "providers": [
-        {
-          "id": "contextdev",
-          "label": "Context.dev",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.75,
-            "ci": [
-              0.5166666666666667,
-              0.9629629629629629
-            ],
-            "successes": 45,
-            "tasks": 60,
-            "medianMs": 5207.56214100006,
-            "costPerSuccessUsd": 0.018178666666666662
-          },
-          "raw": {
-            "rate": 0.5471698113207547,
-            "ci": [
-              0.23076923076923078,
-              0.8378378378378378
-            ],
-            "successes": 29,
-            "tasks": 53,
-            "medianMs": 790.069067000004,
-            "costPerSuccessUsd": 0.004551724137931033
-          },
-          "tuned": null
-        },
-        {
-          "id": "firecrawl",
-          "label": "Firecrawl",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.85,
-            "ci": [
-              0.6896551724137931,
-              1
-            ],
-            "successes": 51,
-            "tasks": 60,
-            "medianMs": 10980.079451999976,
-            "costPerSuccessUsd": 0.030411666666666677
-          },
-          "raw": {
-            "rate": 0.4716981132075472,
-            "ci": [
-              0.19672131147540983,
-              0.8169014084507042
-            ],
-            "successes": 25,
-            "tasks": 53,
-            "medianMs": 900.9658620000118,
-            "costPerSuccessUsd": 0.02400000000000001
-          },
-          "tuned": null
-        },
-        {
-          "id": "tinyfish",
-          "label": "TinyFish",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.7333333333333333,
-            "ci": [
-              0.47058823529411764,
-              0.96
-            ],
-            "successes": 44,
-            "tasks": 60,
-            "medianMs": 5329.966954500007,
-            "costPerSuccessUsd": 0.013118613636363637
-          },
-          "raw": {
-            "rate": 0.4716981132075472,
-            "ci": [
-              0.18302932348187492,
-              0.86
-            ],
-            "successes": 25,
-            "tasks": 53,
-            "medianMs": 1128.6130670000566,
-            "costPerSuccessUsd": 0
-          },
-          "tuned": null
-        },
-        {
-          "id": "browserbase",
-          "label": "Browserbase",
-          "cohort": "browser-infra",
-          "agent": {
-            "rate": 0.38333333333333336,
-            "ci": [
-              0.20967741935483872,
-              0.5882352941176471
-            ],
-            "successes": 23,
-            "tasks": 60,
-            "medianMs": 11819.754083000007,
-            "costPerSuccessUsd": 0.05970521739130429
-          },
-          "raw": {
-            "rate": 0.018867924528301886,
-            "ci": [
-              0,
-              0.05
-            ],
-            "successes": 1,
-            "tasks": 53,
-            "medianMs": 4543.309635000012,
-            "costPerSuccessUsd": 0.30000000000000016
-          },
-          "tuned": null
-        },
-        {
-          "id": "linkup",
-          "label": "Linkup",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.8333333333333334,
-            "ci": [
-              0.6538461538461539,
-              0.9714285714285714
-            ],
-            "successes": 50,
-            "tasks": 60,
-            "medianMs": 5268.983600500011,
-            "costPerSuccessUsd": 0.02551535999999999
-          },
-          "raw": {
-            "rate": 0.6792452830188679,
-            "ci": [
-              0.27906976744186046,
-              0.9672131147540983
-            ],
-            "successes": 36,
-            "tasks": 53,
-            "medianMs": 1235.9031949999917,
-            "costPerSuccessUsd": 0.008333333333333338
-          },
-          "tuned": null
-        }
-      ],
-      "controls": {
-        "none": {
-          "rate": 0.23333333333333334,
-          "ci": [
-            0,
-            0.5
-          ],
-          "successes": 14,
-          "tasks": 60,
-          "medianMs": 2239.6460270000016,
-          "costPerSuccessUsd": 0.010735357142857144
-        },
-        "oracle": null
-      },
-      "detected": [
-        {
-          "provider": "Browserbase",
-          "reference": "Firecrawl",
-          "difference": -0.4666666666666667,
-          "ci": [
-            -0.6296296296296297,
-            -0.31666666666666665
-          ],
-          "pairedTasks": 60
-        }
-      ]
-    },
     {
       "id": "scrape",
       "label": "Scrape",
-      "what": "Read one page and pull out exact fields: prices, versions, install commands.",
-      "tasks": 60,
+      "what": "Test heading and structure preservation on documentation pages, plus package versions and JS fields.",
+      "tasks": 40,
+      "population": {
+        "fullTasks": 298,
+        "fullClusters": 40,
+        "coreClusters": 37,
+        "sources": "Independent documentation sites, page-checked PyPI projects and four browser-verified JS fixture pages in the full set.",
+        "notes": "Re-measured from the stored v2 responses; no provider was called again. The agent could read every byte of each response, 32 KB at a time. Page coverage compares each response with a copy of the page fetched once on 2026-10-20; pages that changed since the run are left out. Every provider ran on its default settings. Jina Reader ran under a 5,000-token rejecting budget. Most core tasks ask for a docs heading.",
+        "exclusions": [],
+        "fullScores": [],
+        "comparisons": [
+          {
+            "provider": "Spider",
+            "reference": "Context.dev",
+            "difference": -0.025,
+            "ci": [
+              -0.07900071123755328,
+              0
+            ],
+            "pairedTasks": 40,
+            "resolved": false
+          },
+          {
+            "provider": "Scrapfly",
+            "reference": "Context.dev",
+            "difference": -0.05,
+            "ci": [
+              -0.11904761904761904,
+              0
+            ],
+            "pairedTasks": 40,
+            "resolved": false
+          },
+          {
+            "provider": "String",
+            "reference": "Context.dev",
+            "difference": -0.075,
+            "ci": [
+              -0.15789473684210525,
+              0
+            ],
+            "pairedTasks": 40,
+            "resolved": false
+          },
+          {
+            "provider": "Linkup",
+            "reference": "Context.dev",
+            "difference": -0.1,
+            "ci": [
+              -0.20512820512820512,
+              -0.023255813953488372
+            ],
+            "pairedTasks": 40,
+            "resolved": true
+          },
+          {
+            "provider": "Firecrawl",
+            "reference": "Context.dev",
+            "difference": -0.15,
+            "ci": [
+              -0.2702702702702703,
+              -0.04878048780487805
+            ],
+            "pairedTasks": 40,
+            "resolved": true
+          },
+          {
+            "provider": "TinyFish",
+            "reference": "Context.dev",
+            "difference": -0.175,
+            "ci": [
+              -0.3333333333333333,
+              -0.047619047619047616
+            ],
+            "pairedTasks": 40,
+            "resolved": true
+          },
+          {
+            "provider": "Browserbase",
+            "reference": "Context.dev",
+            "difference": -0.2,
+            "ci": [
+              -0.34146341463414637,
+              -0.07894736842105263
+            ],
+            "pairedTasks": 40,
+            "resolved": true
+          },
+          {
+            "provider": "You.com",
+            "reference": "Context.dev",
+            "difference": -0.225,
+            "ci": [
+              -0.3829787234042553,
+              -0.07894736842105263
+            ],
+            "pairedTasks": 40,
+            "resolved": true
+          },
+          {
+            "provider": "Jina Reader",
+            "reference": "Context.dev",
+            "difference": -0.8,
+            "ci": [
+              -0.9230769230769231,
+              -0.6666666666666666
+            ],
+            "pairedTasks": 40,
+            "resolved": true
+          }
+        ]
+      },
       "limits": {
         "seconds": 60,
         "usd": 0.1,
@@ -193,278 +125,414 @@
       },
       "providers": [
         {
-          "id": "browserbase",
-          "label": "Browserbase",
-          "cohort": "browser-infra",
-          "agent": {
-            "rate": 0.8166666666666667,
-            "ci": [
-              0.78,
-              1
-            ],
-            "successes": 49,
-            "tasks": 60,
-            "medianMs": 3268.019280999957,
-            "costPerSuccessUsd": 0.011197938775510207
-          },
-          "raw": {
-            "rate": 0.6727272727272727,
-            "ci": [
-              0.6,
-              1
-            ],
-            "successes": 37,
-            "tasks": 55,
-            "medianMs": 530.4833929999731,
-            "costPerSuccessUsd": 0.006486486486486491
-          },
-          "tuned": null
-        },
-        {
-          "id": "linkup",
-          "label": "Linkup",
+          "id": "firecrawl",
+          "label": "Firecrawl",
           "cohort": "content-api",
           "agent": {
-            "rate": 0.9,
+            "rate": 0.8,
             "ci": [
-              0.9,
-              0.9
+              0.6578947368421053,
+              0.9230769230769231
             ],
-            "successes": 54,
-            "tasks": 60,
-            "medianMs": 3391.3508770000044,
-            "costPerSuccessUsd": 0.00596003703703704
+            "successes": 32,
+            "tasks": 40,
+            "medianMs": 4767.971307000011,
+            "costPerSuccessUsd": 0.016719156250000002
           },
           "raw": {
-            "rate": 0.9090909090909091,
-            "ci": [
-              0.9,
-              0.9111111111111111
-            ],
-            "successes": 50,
-            "tasks": 55,
-            "medianMs": 532.2697520000038,
-            "costPerSuccessUsd": 0.001200000000000001
-          },
-          "tuned": {
             "rate": 0.9,
             "ci": [
-              0.9,
-              0.9
+              0.7777777777777778,
+              1
             ],
-            "successes": 54,
-            "tasks": 60,
-            "medianMs": 3484.2660974999962,
-            "costPerSuccessUsd": 0.010392555555555563
-          }
+            "successes": 36,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9779411764705882,
+            "ci": [
+              0.9522058823529411,
+              0.9963235294117647
+            ]
+          },
+          "medianBytes": 9325,
+          "medianNoise": 1.5416731543354434,
+          "answerPast12k": 0,
+          "titles": null
         },
         {
           "id": "contextdev",
           "label": "Context.dev",
           "cohort": "content-api",
           "agent": {
-            "rate": 0.9166666666666666,
+            "rate": 0.95,
             "ci": [
-              0.9,
+              0.85,
               1
             ],
-            "successes": 55,
-            "tasks": 60,
-            "medianMs": 3748.5406289999955,
-            "costPerSuccessUsd": 0.007233145454545448
+            "successes": 38,
+            "tasks": 40,
+            "medianMs": 4589.786993000032,
+            "costPerSuccessUsd": 0.013628736842105254
           },
           "raw": {
-            "rate": 0.9272727272727272,
+            "rate": 0.95,
             "ci": [
-              0.9111111111111111,
+              0.85,
               1
             ],
-            "successes": 51,
-            "tasks": 55,
-            "medianMs": 1168.3325520000071,
-            "costPerSuccessUsd": 0.0025882352941176447
+            "successes": 38,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
           },
-          "tuned": {
-            "rate": 0.9166666666666666,
+          "tuned": null,
+          "tier": "top",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9852941176470589,
             "ci": [
-              0.9,
+              0.9595588235294118,
               1
-            ],
-            "successes": 55,
-            "tasks": 60,
-            "medianMs": 3523.7049189999816,
-            "costPerSuccessUsd": 0.006874490909090902
-          }
-        },
-        {
-          "id": "firecrawl",
-          "label": "Firecrawl",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.9,
-            "ci": [
-              0.9,
-              0.9
-            ],
-            "successes": 54,
-            "tasks": 60,
-            "medianMs": 3254.0725804999965,
-            "costPerSuccessUsd": 0.012154962962962966
+            ]
           },
-          "raw": {
-            "rate": 0.9272727272727272,
-            "ci": [
-              0.9,
-              0.9333333333333333
-            ],
-            "successes": 51,
-            "tasks": 55,
-            "medianMs": 643.3585789999925,
-            "costPerSuccessUsd": 0.008039215686274514
-          },
-          "tuned": {
-            "rate": 0.8166666666666667,
-            "ci": [
-              0.8,
-              0.9
-            ],
-            "successes": 49,
-            "tasks": 60,
-            "medianMs": 3555.816853999997,
-            "costPerSuccessUsd": 0.02239730612244895
-          }
-        },
-        {
-          "id": "scrapfly",
-          "label": "Scrapfly",
-          "cohort": "scraping-infra",
-          "agent": {
-            "rate": 0.8833333333333333,
-            "ci": [
-              0.8,
-              0.9
-            ],
-            "successes": 53,
-            "tasks": 60,
-            "medianMs": 4983.281059000001,
-            "costPerSuccessUsd": 0.0060683396226415085
-          },
-          "raw": {
-            "rate": 0.7818181818181819,
-            "ci": [
-              0.7,
-              0.8
-            ],
-            "successes": 43,
-            "tasks": 55,
-            "medianMs": 2070.551214999985,
-            "costPerSuccessUsd": 0.00020930232558139544
-          },
-          "tuned": {
-            "rate": 0.9166666666666666,
-            "ci": [
-              0.9,
-              1
-            ],
-            "successes": 55,
-            "tasks": 60,
-            "medianMs": 8726.472016,
-            "costPerSuccessUsd": 0.006205963636363641
-          }
-        },
-        {
-          "id": "jina",
-          "label": "Jina",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.8666666666666667,
-            "ci": [
-              0.6,
-              0.92
-            ],
-            "successes": 52,
-            "tasks": 60,
-            "medianMs": 3823.9309265000047,
-            "costPerSuccessUsd": 0.005697351923076923
-          },
-          "raw": {
-            "rate": 0.9272727272727272,
-            "ci": [
-              0.9,
-              0.9333333333333333
-            ],
-            "successes": 51,
-            "tasks": 55,
-            "medianMs": 1052.7763979999872,
-            "costPerSuccessUsd": 0.00011678333333333336
-          },
-          "tuned": {
-            "rate": 0.8666666666666667,
-            "ci": [
-              0.6,
-              0.92
-            ],
-            "successes": 52,
-            "tasks": 60,
-            "medianMs": 3882.248972500005,
-            "costPerSuccessUsd": 0.005862594230769232
-          }
-        },
-        {
-          "id": "spider",
-          "label": "Spider",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.2,
-            "ci": [
-              0.04,
-              1
-            ],
-            "successes": 12,
-            "tasks": 60,
-            "medianMs": 4554.847225000005,
-            "costPerSuccessUsd": 0.024751607249999998
-          },
-          "raw": {
-            "rate": 0.18181818181818182,
-            "ci": [
-              0,
-              1
-            ],
-            "successes": 10,
-            "tasks": 55,
-            "medianMs": 1427.5692124999987,
-            "costPerSuccessUsd": 0.00042042869999999767
-          },
-          "tuned": null
+          "medianBytes": 14788,
+          "medianNoise": 2.6402183827269017,
+          "answerPast12k": 2,
+          "titles": null
         },
         {
           "id": "tinyfish",
           "label": "TinyFish",
           "cohort": "content-api",
           "agent": {
-            "rate": 0.9,
+            "rate": 0.775,
             "ci": [
-              0.8,
-              0.92
+              0.6097560975609756,
+              0.9210526315789473
             ],
-            "successes": 54,
-            "tasks": 60,
-            "medianMs": 3540.4633119999853,
-            "costPerSuccessUsd": 0.004336574074074076
+            "successes": 31,
+            "tasks": 40,
+            "medianMs": 4555.958526000002,
+            "costPerSuccessUsd": 0.007050290322580644
           },
           "raw": {
-            "rate": 0.9090909090909091,
+            "rate": 0.775,
             "ci": [
-              0.8,
-              0.9333333333333333
+              0.6097560975609756,
+              0.9210526315789473
             ],
-            "successes": 50,
-            "tasks": 55,
-            "medianMs": 717.3520470000076,
-            "costPerSuccessUsd": 0
+            "successes": 31,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
           },
-          "tuned": null
+          "tuned": null,
+          "tier": "below",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9227941176470589,
+            "ci": [
+              0.8345588235294118,
+              0.9889705882352942
+            ]
+          },
+          "medianBytes": 5773.5,
+          "medianNoise": 1.0714315215815233,
+          "answerPast12k": 0,
+          "titles": null
+        },
+        {
+          "id": "spider",
+          "label": "Spider",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.925,
+            "ci": [
+              0.8095238095238095,
+              1
+            ],
+            "successes": 37,
+            "tasks": 40,
+            "medianMs": 5691.646605000007,
+            "costPerSuccessUsd": 0.008771942472972973
+          },
+          "raw": {
+            "rate": 0.95,
+            "ci": [
+              0.85,
+              1
+            ],
+            "successes": 38,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9926470588235294,
+            "ci": [
+              0.9816176470588235,
+              1
+            ]
+          },
+          "medianBytes": 6780,
+          "medianNoise": 1.3856327938980588,
+          "answerPast12k": 0,
+          "titles": null
+        },
+        {
+          "id": "linkup",
+          "label": "Linkup",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.85,
+            "ci": [
+              0.7142857142857143,
+              0.9565217391304348
+            ],
+            "successes": 34,
+            "tasks": 40,
+            "medianMs": 4037.11042850008,
+            "costPerSuccessUsd": 0.012295764705882353
+          },
+          "raw": {
+            "rate": 0.925,
+            "ci": [
+              0.8095238095238095,
+              1
+            ],
+            "successes": 37,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9963235294117647,
+            "ci": [
+              0.9889705882352942,
+              1
+            ]
+          },
+          "medianBytes": 11517,
+          "medianNoise": 2.138617589201566,
+          "answerPast12k": 2,
+          "titles": null
+        },
+        {
+          "id": "scrapfly",
+          "label": "Scrapfly",
+          "cohort": "scraping-infra",
+          "agent": {
+            "rate": 0.9,
+            "ci": [
+              0.7857142857142857,
+              1
+            ],
+            "successes": 36,
+            "tasks": 40,
+            "medianMs": 5959.125729500015,
+            "costPerSuccessUsd": 0.011658833333333328
+          },
+          "raw": {
+            "rate": 0.9,
+            "ci": [
+              0.7857142857142857,
+              1
+            ],
+            "successes": 36,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9338235294117647,
+            "ci": [
+              0.8455882352941176,
+              0.9963235294117647
+            ]
+          },
+          "medianBytes": 14354,
+          "medianNoise": 2.5925915387878113,
+          "answerPast12k": 0,
+          "titles": null
+        },
+        {
+          "id": "browserbase",
+          "label": "Browserbase",
+          "cohort": "browser-infra",
+          "agent": {
+            "rate": 0.75,
+            "ci": [
+              0.5952380952380952,
+              0.8918918918918919
+            ],
+            "successes": 30,
+            "tasks": 40,
+            "medianMs": 3633.9626214999953,
+            "costPerSuccessUsd": 0.019349233333333334
+          },
+          "raw": {
+            "rate": 0.75,
+            "ci": [
+              0.5952380952380952,
+              0.8918918918918919
+            ],
+            "successes": 30,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.8198529411764706,
+            "ci": [
+              0.6764705882352942,
+              0.9375
+            ]
+          },
+          "medianBytes": 13536.5,
+          "medianNoise": 2.4701489123211235,
+          "answerPast12k": 2,
+          "titles": null
+        },
+        {
+          "id": "you",
+          "label": "You.com",
+          "cohort": "search-index",
+          "agent": {
+            "rate": 0.725,
+            "ci": [
+              0.5609756097560976,
+              0.8918918918918919
+            ],
+            "successes": 29,
+            "tasks": 40,
+            "medianMs": 3638.0127809998385,
+            "costPerSuccessUsd": 0.010043275862068969
+          },
+          "raw": {
+            "rate": 0.775,
+            "ci": [
+              0.6097560975609756,
+              0.9459459459459459
+            ],
+            "successes": 31,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.8492647058823529,
+            "ci": [
+              0.7536764705882353,
+              0.9301470588235294
+            ]
+          },
+          "medianBytes": 6598,
+          "medianNoise": 1.1355347006884418,
+          "answerPast12k": 0,
+          "titles": null
+        },
+        {
+          "id": "jina",
+          "label": "Jina Reader",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.15,
+            "ci": [
+              0.05128205128205128,
+              0.2564102564102564
+            ],
+            "successes": 6,
+            "tasks": 40,
+            "medianMs": 5414.674339000059,
+            "costPerSuccessUsd": 0.04256553333333333
+          },
+          "raw": {
+            "rate": 0.45,
+            "ci": [
+              0.3076923076923077,
+              0.6052631578947368
+            ],
+            "successes": 18,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.7279411764705882,
+            "ci": [
+              0.5808823529411765,
+              0.8639705882352942
+            ]
+          },
+          "medianBytes": 5133.5,
+          "medianNoise": 1.2357008281979824,
+          "answerPast12k": 0,
+          "titles": null
+        },
+        {
+          "id": "string",
+          "label": "String",
+          "cohort": "scraping-infra",
+          "agent": {
+            "rate": 0.875,
+            "ci": [
+              0.7560975609756098,
+              0.9743589743589743
+            ],
+            "successes": 35,
+            "tasks": 40,
+            "medianMs": 3869.694328000005,
+            "costPerSuccessUsd": 0.013287000000000009
+          },
+          "raw": {
+            "rate": 0.95,
+            "ci": [
+              0.85,
+              1
+            ],
+            "successes": 38,
+            "tasks": 40,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9816176470588235,
+            "ci": [
+              0.9485294117647058,
+              1
+            ]
+          },
+          "medianBytes": 14314.5,
+          "medianNoise": 2.4193949232489382,
+          "answerPast12k": 1,
+          "titles": null
         }
       ],
       "controls": {
@@ -475,7 +543,7 @@
             0
           ],
           "successes": 0,
-          "tasks": 60,
+          "tasks": 40,
           "medianMs": null,
           "costPerSuccessUsd": null
         },
@@ -485,19 +553,610 @@
             1,
             1
           ],
-          "successes": 60,
-          "tasks": 60,
-          "medianMs": 2783.0426414999984,
-          "costPerSuccessUsd": 0.0038428333333333344
+          "successes": 38,
+          "tasks": 38,
+          "medianMs": null,
+          "costPerSuccessUsd": null
         }
       },
-      "detected": []
+      "detected": [
+        {
+          "provider": "Linkup",
+          "reference": "Context.dev",
+          "difference": -0.1,
+          "ci": [
+            -0.20512820512820512,
+            -0.023255813953488372
+          ],
+          "pairedTasks": 40
+        },
+        {
+          "provider": "Firecrawl",
+          "reference": "Context.dev",
+          "difference": -0.15,
+          "ci": [
+            -0.2702702702702703,
+            -0.04878048780487805
+          ],
+          "pairedTasks": 40
+        },
+        {
+          "provider": "TinyFish",
+          "reference": "Context.dev",
+          "difference": -0.175,
+          "ci": [
+            -0.3333333333333333,
+            -0.047619047619047616
+          ],
+          "pairedTasks": 40
+        },
+        {
+          "provider": "Browserbase",
+          "reference": "Context.dev",
+          "difference": -0.2,
+          "ci": [
+            -0.34146341463414637,
+            -0.07894736842105263
+          ],
+          "pairedTasks": 40
+        },
+        {
+          "provider": "You.com",
+          "reference": "Context.dev",
+          "difference": -0.225,
+          "ci": [
+            -0.3829787234042553,
+            -0.07894736842105263
+          ],
+          "pairedTasks": 40
+        },
+        {
+          "provider": "Jina Reader",
+          "reference": "Context.dev",
+          "difference": -0.8,
+          "ci": [
+            -0.9230769230769231,
+            -0.6666666666666666
+          ],
+          "pairedTasks": 40
+        }
+      ],
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 294,
+            "tasks": 298,
+            "rate": 0.9865771812080537,
+            "ci": [
+              0.9560439560439561,
+              1
+            ]
+          },
+          "coverage": {
+            "pages": 260,
+            "mean": 0.9913461538461539
+          },
+          "label": "Context.dev"
+        },
+        {
+          "provider": "linkup",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 284,
+            "tasks": 298,
+            "rate": 0.9530201342281879,
+            "ci": [
+              0.907893614154841,
+              0.9875786012345441
+            ]
+          },
+          "coverage": {
+            "pages": 260,
+            "mean": 0.9884615384615385
+          },
+          "label": "Linkup"
+        },
+        {
+          "provider": "you",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 258,
+            "tasks": 298,
+            "rate": 0.8657718120805369,
+            "ci": [
+              0.7624097058050959,
+              0.9509443211246763
+            ]
+          },
+          "coverage": {
+            "pages": 260,
+            "mean": 0.9019826007326007
+          },
+          "label": "You.com"
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "label": "Search",
+      "what": "Find facts, registry versions and documentation headings on the live web.",
+      "tasks": 30,
+      "population": {
+        "fullTasks": 298,
+        "fullClusters": 52,
+        "coreClusters": 18,
+        "sources": "Official registry APIs, SEC XBRL, Wikidata, GitHub releases, documentation HTML and verified absent npm releases.",
+        "notes": "Re-measured from the stored v2 responses; no provider was called again. The agent replay serves the searches the original agent made, in order, and can read every result. Retrieval checks everything the provider returned in the task; install commands and figures reported in millions can pass with the agent and not in retrieval, because the model writes them from what it read.",
+        "exclusions": [
+          "Jina Reader: No hard per-call token-charge bound; previous search used 618754 tokens.",
+          "Spider: No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape."
+        ],
+        "fullScores": [],
+        "comparisons": [
+          {
+            "provider": "TinyFish",
+            "reference": "Linkup",
+            "difference": -0.06666666666666667,
+            "ci": [
+              -0.20833333333333334,
+              0.058823529411764705
+            ],
+            "pairedTasks": 30,
+            "resolved": false
+          },
+          {
+            "provider": "Firecrawl",
+            "reference": "Linkup",
+            "difference": -0.06666666666666667,
+            "ci": [
+              -0.22727272727272727,
+              0.05555555555555555
+            ],
+            "pairedTasks": 30,
+            "resolved": false
+          },
+          {
+            "provider": "Context.dev",
+            "reference": "Linkup",
+            "difference": -0.1,
+            "ci": [
+              -0.2692307692307692,
+              0.041666666666666664
+            ],
+            "pairedTasks": 30,
+            "resolved": false
+          },
+          {
+            "provider": "String",
+            "reference": "Linkup",
+            "difference": -0.16666666666666666,
+            "ci": [
+              -0.3125,
+              -0.03571428571428571
+            ],
+            "pairedTasks": 30,
+            "resolved": true
+          },
+          {
+            "provider": "You.com",
+            "reference": "Linkup",
+            "difference": -0.23333333333333334,
+            "ci": [
+              -0.4583333333333333,
+              -0.058823529411764705
+            ],
+            "pairedTasks": 30,
+            "resolved": true
+          },
+          {
+            "provider": "Browserbase",
+            "reference": "Linkup",
+            "difference": -0.23333333333333334,
+            "ci": [
+              -0.42857142857142855,
+              -0.05555555555555555
+            ],
+            "pairedTasks": 30,
+            "resolved": true
+          }
+        ]
+      },
+      "limits": {
+        "seconds": 60,
+        "usd": 0.1,
+        "calls": 3
+      },
+      "providers": [
+        {
+          "id": "firecrawl",
+          "label": "Firecrawl",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.7142857142857143,
+              0.9705882352941176
+            ],
+            "successes": 26,
+            "tasks": 30,
+            "medianMs": 6886.984511999995,
+            "costPerSuccessUsd": 0.029136153846153853
+          },
+          "raw": {
+            "rate": 0.8148148148148148,
+            "ci": [
+              0.6486486486486487,
+              1
+            ],
+            "successes": 22,
+            "tasks": 27,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 3376,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "contextdev",
+          "label": "Context.dev",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.8333333333333334,
+            "ci": [
+              0.625,
+              1
+            ],
+            "successes": 25,
+            "tasks": 30,
+            "medianMs": 8388.86558400016,
+            "costPerSuccessUsd": 0.013889519999999997
+          },
+          "raw": {
+            "rate": 0.8518518518518519,
+            "ci": [
+              0.6774193548387096,
+              1
+            ],
+            "successes": 23,
+            "tasks": 27,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 2363.5,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "tinyfish",
+          "label": "TinyFish",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.7,
+              1
+            ],
+            "successes": 26,
+            "tasks": 30,
+            "medianMs": 8236.798344999828,
+            "costPerSuccessUsd": 0.00965830769230769
+          },
+          "raw": {
+            "rate": 0.9259259259259259,
+            "ci": [
+              0.8387096774193549,
+              1
+            ],
+            "successes": 25,
+            "tasks": 27,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 2347.5,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "linkup",
+          "label": "Linkup",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.9333333333333333,
+            "ci": [
+              0.8529411764705882,
+              1
+            ],
+            "successes": 28,
+            "tasks": 30,
+            "medianMs": 6217.209079000022,
+            "costPerSuccessUsd": 0.021929035714285717
+          },
+          "raw": {
+            "rate": 0.8518518518518519,
+            "ci": [
+              0.6774193548387096,
+              1
+            ],
+            "successes": 23,
+            "tasks": 27,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 14479,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "browserbase",
+          "label": "Browserbase",
+          "cohort": "browser-infra",
+          "agent": {
+            "rate": 0.7,
+            "ci": [
+              0.5,
+              0.8666666666666667
+            ],
+            "successes": 21,
+            "tasks": 30,
+            "medianMs": 15384.751073999942,
+            "costPerSuccessUsd": 0.027852380952380955
+          },
+          "raw": {
+            "rate": 0.4074074074074074,
+            "ci": [
+              0.22857142857142856,
+              0.6666666666666666
+            ],
+            "successes": 11,
+            "tasks": 27,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": null,
+          "medianBytes": 826.5,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "you",
+          "label": "You.com",
+          "cohort": "search-index",
+          "agent": {
+            "rate": 0.7,
+            "ci": [
+              0.5,
+              0.8666666666666667
+            ],
+            "successes": 21,
+            "tasks": 30,
+            "medianMs": 4838.107566000108,
+            "costPerSuccessUsd": 0.026413523809523814
+          },
+          "raw": {
+            "rate": 0.5925925925925926,
+            "ci": [
+              0.36363636363636365,
+              0.8421052631578947
+            ],
+            "successes": 16,
+            "tasks": 27,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": null,
+          "medianBytes": 8755,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "string",
+          "label": "String",
+          "cohort": "scraping-infra",
+          "agent": {
+            "rate": 0.7666666666666667,
+            "ci": [
+              0.5588235294117647,
+              0.9615384615384616
+            ],
+            "successes": 23,
+            "tasks": 30,
+            "medianMs": 6844.130190999978,
+            "costPerSuccessUsd": 0.01318930434782609
+          },
+          "raw": {
+            "rate": 0.7037037037037037,
+            "ci": [
+              0.5142857142857142,
+              0.92
+            ],
+            "successes": 19,
+            "tasks": 27,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "below",
+          "coverage": null,
+          "medianBytes": 2064,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        }
+      ],
+      "controls": {
+        "none": {
+          "rate": 0.16666666666666666,
+          "ci": [
+            0,
+            0.375
+          ],
+          "successes": 5,
+          "tasks": 30,
+          "medianMs": null,
+          "costPerSuccessUsd": null
+        },
+        "oracle": null
+      },
+      "detected": [
+        {
+          "provider": "String",
+          "reference": "Linkup",
+          "difference": -0.16666666666666666,
+          "ci": [
+            -0.3125,
+            -0.03571428571428571
+          ],
+          "pairedTasks": 30
+        },
+        {
+          "provider": "You.com",
+          "reference": "Linkup",
+          "difference": -0.23333333333333334,
+          "ci": [
+            -0.4583333333333333,
+            -0.058823529411764705
+          ],
+          "pairedTasks": 30
+        },
+        {
+          "provider": "Browserbase",
+          "reference": "Linkup",
+          "difference": -0.23333333333333334,
+          "ci": [
+            -0.42857142857142855,
+            -0.05555555555555555
+          ],
+          "pairedTasks": 30
+        }
+      ],
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 235,
+            "tasks": 277,
+            "rate": 0.8483754512635379,
+            "ci": [
+              0.7822870789191763,
+              0.912906732117812
+            ]
+          },
+          "coverage": null,
+          "label": "Context.dev"
+        },
+        {
+          "provider": "tinyfish",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 225,
+            "tasks": 277,
+            "rate": 0.8122743682310469,
+            "ci": [
+              0.7521729840208101,
+              0.875
+            ]
+          },
+          "coverage": null,
+          "label": "TinyFish"
+        },
+        {
+          "provider": "linkup",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 248,
+            "tasks": 277,
+            "rate": 0.8953068592057761,
+            "ci": [
+              0.8278382213812677,
+              0.9511278195488722
+            ]
+          },
+          "coverage": null,
+          "label": "Linkup"
+        },
+        {
+          "provider": "you",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 216,
+            "tasks": 277,
+            "rate": 0.779783393501805,
+            "ci": [
+              0.6975794006371964,
+              0.8578204860143109
+            ]
+          },
+          "coverage": null,
+          "label": "You.com"
+        }
+      ]
     },
     {
       "id": "map",
       "label": "Map",
-      "what": "List every URL in a section of a site nobody has indexed yet.",
+      "what": "Discover canonical URLs within a verified documentation scope.",
       "tasks": 15,
+      "population": {
+        "fullTasks": 60,
+        "fullClusters": 15,
+        "coreClusters": 15,
+        "sources": "Independent documentation sites; each scope has exact sitemap agreement with a breadth-first HTML crawl.",
+        "notes": "Re-measured from the stored v2 responses; no provider was called again. URLs outside the requested section, query-string variants and non-HTML files don't count; the section's own URL always counts, since it was the tool's input.",
+        "exclusions": [
+          "Spider: No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape."
+        ],
+        "fullScores": [],
+        "comparisons": [
+          {
+            "provider": "Firecrawl",
+            "reference": "String",
+            "difference": -0.06666666666666667,
+            "ci": [
+              -0.26666666666666666,
+              0.13333333333333333
+            ],
+            "pairedTasks": 15,
+            "resolved": false
+          },
+          {
+            "provider": "Context.dev",
+            "reference": "String",
+            "difference": -0.13333333333333333,
+            "ci": [
+              -0.4,
+              0.13333333333333333
+            ],
+            "pairedTasks": 15,
+            "resolved": false
+          }
+        ]
+      },
       "limits": {
         "seconds": 120,
         "usd": 0.25,
@@ -505,60 +1164,106 @@
       },
       "providers": [
         {
-          "id": "contextdev",
-          "label": "Context.dev",
-          "cohort": "content-api",
-          "agent": {
-            "rate": 0.4666666666666667,
-            "ci": [
-              0.1111111111111111,
-              1
-            ],
-            "successes": 7,
-            "tasks": 15,
-            "medianMs": 6050.7148959999995,
-            "costPerSuccessUsd": 0.018417428571428567
-          },
-          "raw": {
-            "rate": 0.2,
-            "ci": [
-              0.03571428571428571,
-              0.8333333333333334
-            ],
-            "successes": 3,
-            "tasks": 15,
-            "medianMs": 1550.3851510000004,
-            "costPerSuccessUsd": 0.011000000000000001
-          },
-          "tuned": null
-        },
-        {
           "id": "firecrawl",
           "label": "Firecrawl",
           "cohort": "content-api",
           "agent": {
-            "rate": 0.4,
+            "rate": 0.8666666666666667,
             "ci": [
-              0.10714285714285714,
+              0.6666666666666666,
               1
             ],
-            "successes": 6,
+            "successes": 13,
             "tasks": 15,
-            "medianMs": 10922.552734999997,
-            "costPerSuccessUsd": 0.033462166666666675
+            "medianMs": 11285.130854000032,
+            "costPerSuccessUsd": 0.013207769230769235
           },
           "raw": {
-            "rate": 0.2,
+            "rate": 0.8666666666666667,
             "ci": [
-              0.03571428571428571,
-              0.8333333333333334
+              0.6666666666666666,
+              1
             ],
-            "successes": 3,
+            "successes": 13,
             "tasks": 15,
-            "medianMs": 7519.943307000001,
-            "costPerSuccessUsd": 0.024999999999999998
+            "medianMs": null,
+            "costPerSuccessUsd": null
           },
-          "tuned": null
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 375,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "contextdev",
+          "label": "Context.dev",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.8,
+            "ci": [
+              0.6,
+              1
+            ],
+            "successes": 12,
+            "tasks": 15,
+            "medianMs": 6364.941557000013,
+            "costPerSuccessUsd": 0.00979383333333333
+          },
+          "raw": {
+            "rate": 0.8,
+            "ci": [
+              0.6,
+              1
+            ],
+            "successes": 12,
+            "tasks": 15,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 206,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
+        },
+        {
+          "id": "string",
+          "label": "String",
+          "cohort": "scraping-infra",
+          "agent": {
+            "rate": 0.9333333333333333,
+            "ci": [
+              0.8,
+              1
+            ],
+            "successes": 14,
+            "tasks": 15,
+            "medianMs": 8371.415198499986,
+            "costPerSuccessUsd": 0.009836499999999998
+          },
+          "raw": {
+            "rate": 0.9333333333333333,
+            "ci": [
+              0.8,
+              1
+            ],
+            "successes": 14,
+            "tasks": 15,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 463,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": null
         }
       ],
       "controls": {
@@ -575,13 +1280,80 @@
         },
         "oracle": null
       },
-      "detected": []
+      "detected": [],
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 60,
+          "retrieval": {
+            "successes": 43,
+            "tasks": 60,
+            "rate": 0.7166666666666667,
+            "ci": [
+              0.4603174603174603,
+              0.9491525423728814
+            ]
+          },
+          "coverage": null,
+          "label": "Context.dev"
+        },
+        {
+          "provider": "string",
+          "tasks": 60,
+          "retrieval": {
+            "successes": 54,
+            "tasks": 60,
+            "rate": 0.9,
+            "ci": [
+              0.7301587301587301,
+              1
+            ]
+          },
+          "coverage": null,
+          "label": "String"
+        }
+      ]
     },
     {
       "id": "crawl",
       "label": "Crawl",
-      "what": "Read a whole section of a site and return every record in it.",
-      "tasks": 10,
+      "what": "Return every scoped documentation URL and its HTML title.",
+      "tasks": 12,
+      "population": {
+        "fullTasks": 40,
+        "fullClusters": 15,
+        "coreClusters": 12,
+        "sources": "Independent documentation sites; each scope has exact sitemap agreement with a breadth-first HTML crawl.",
+        "notes": "Re-measured from the stored v2 responses; no provider was called again. A crawl task is done when the agent returns the right pages. Exact page titles are reported separately and don't decide the score.",
+        "exclusions": [
+          "Spider: No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape."
+        ],
+        "fullScores": [],
+        "comparisons": [
+          {
+            "provider": "Firecrawl",
+            "reference": "Scrapfly",
+            "difference": 0,
+            "ci": [
+              0,
+              0
+            ],
+            "pairedTasks": 12,
+            "resolved": false
+          },
+          {
+            "provider": "Context.dev",
+            "reference": "Scrapfly",
+            "difference": -0.08333333333333333,
+            "ci": [
+              -0.25,
+              0
+            ],
+            "pairedTasks": 12,
+            "resolved": false
+          }
+        ]
+      },
       "limits": {
         "seconds": 600,
         "usd": 2,
@@ -589,58 +1361,124 @@
       },
       "providers": [
         {
-          "id": "scrapfly",
-          "label": "Scrapfly",
-          "cohort": "scraping-infra",
-          "agent": {
-            "rate": 0.7,
-            "ci": [
-              0,
-              0.9545454545454546
-            ],
-            "successes": 7,
-            "tasks": 10,
-            "medianMs": 14468.681247,
-            "costPerSuccessUsd": 0.028825142857142855
-          },
-          "raw": null,
-          "tuned": null
-        },
-        {
           "id": "firecrawl",
           "label": "Firecrawl",
           "cohort": "content-api",
           "agent": {
-            "rate": 0.5,
+            "rate": 1,
             "ci": [
-              0,
-              0.6818181818181818
+              1,
+              1
             ],
-            "successes": 5,
-            "tasks": 10,
-            "medianMs": 60400.72814899997,
-            "costPerSuccessUsd": 0.1421524
+            "successes": 12,
+            "tasks": 12,
+            "medianMs": 27101.208119999923,
+            "costPerSuccessUsd": 0.08293708333333334
           },
-          "raw": null,
-          "tuned": null
+          "raw": {
+            "rate": 1,
+            "ci": [
+              1,
+              1
+            ],
+            "successes": 12,
+            "tasks": 12,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 93839.5,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": {
+            "expected": 91,
+            "returnedWithTitle": 91,
+            "returnedNoTitle": 0,
+            "exact": 91,
+            "loose": 91
+          }
         },
         {
           "id": "contextdev",
           "label": "Context.dev",
           "cohort": "content-api",
           "agent": {
-            "rate": 0.6,
+            "rate": 0.9166666666666666,
             "ci": [
-              0,
-              0.8181818181818182
+              0.75,
+              1
             ],
-            "successes": 6,
-            "tasks": 10,
-            "medianMs": 18317.32935949999,
-            "costPerSuccessUsd": 0.07584266666666667
+            "successes": 11,
+            "tasks": 12,
+            "medianMs": 22589.535693000013,
+            "costPerSuccessUsd": 0.05857054545454545
           },
-          "raw": null,
-          "tuned": null
+          "raw": {
+            "rate": 0.9166666666666666,
+            "ci": [
+              0.75,
+              1
+            ],
+            "successes": 11,
+            "tasks": 12,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 215015.5,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": {
+            "expected": 91,
+            "returnedWithTitle": 90,
+            "returnedNoTitle": 0,
+            "exact": 42,
+            "loose": 90
+          }
+        },
+        {
+          "id": "scrapfly",
+          "label": "Scrapfly",
+          "cohort": "scraping-infra",
+          "agent": {
+            "rate": 1,
+            "ci": [
+              1,
+              1
+            ],
+            "successes": 12,
+            "tasks": 12,
+            "medianMs": 15188.308131999982,
+            "costPerSuccessUsd": 0.03494608333333333
+          },
+          "raw": {
+            "rate": 1,
+            "ci": [
+              1,
+              1
+            ],
+            "successes": 12,
+            "tasks": 12,
+            "medianMs": null,
+            "costPerSuccessUsd": null
+          },
+          "tuned": null,
+          "tier": "top",
+          "coverage": null,
+          "medianBytes": 81333.5,
+          "medianNoise": null,
+          "answerPast12k": null,
+          "titles": {
+            "expected": 91,
+            "returnedWithTitle": 91,
+            "returnedNoTitle": 0,
+            "exact": 91,
+            "loose": 91
+          }
         }
       ],
       "controls": {
@@ -651,13 +1489,30 @@
             0
           ],
           "successes": 0,
-          "tasks": 10,
+          "tasks": 12,
           "medianMs": null,
           "costPerSuccessUsd": null
         },
         "oracle": null
       },
-      "detected": []
+      "detected": [],
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 40,
+          "retrieval": {
+            "successes": 36,
+            "tasks": 40,
+            "rate": 0.9,
+            "ci": [
+              0.7,
+              1
+            ]
+          },
+          "coverage": null,
+          "label": "Context.dev"
+        }
+      ]
     }
   ]
 }

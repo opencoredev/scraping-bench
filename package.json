@@ -1,17 +1,18 @@
 {
-  "name": "scraping-bench",
+  "name": "web-bench",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "description": "Search, scrape, map and crawl APIs for AI agents, graded by whether the job got done.",
   "scripts": {
     "typecheck": "tsc -p .",
-    "test": "node --experimental-strip-types --test --test-concurrency=4 src/**/*.test.ts",
+    "test": "node --experimental-strip-types --test --test-concurrency=4 src/**/*.test.ts measure/*.test.ts",
     "tasks:generate": "node --experimental-strip-types src/tasks/search/generate.ts",
     "tasks:verify": "node --experimental-strip-types src/tasks/verify.ts --refresh",
     "fixtures:tasks": "node --experimental-strip-types src/tasks/fixture-cli.ts",
     "smoke": "node --experimental-strip-types src/adapters/smoke.ts",
-    "bench": "node --experimental-strip-types src/run/cli.ts"
+    "bench": "node --experimental-strip-types src/run/cli.ts",
+    "measure": "node --experimental-strip-types measure/cli.ts"
   },
   "engines": {
     "node": ">=24"

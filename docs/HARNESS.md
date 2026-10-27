@@ -71,10 +71,36 @@ The shared types remain unchanged. Follow-up contract changes should add control
 
 ## October 2026 campaign
 
-Run `node --experimental-strip-types scripts/campaign.mjs <pilot|full|controls|tuned> <search|scrape|map|crawl>` inside a shell with provider credentials and model-proxy authentication. Wrap each invocation in a timeout. The campaign uses frozen task/config files, a campaign lock and an API-only allowance separate from model cost. `SCRAPING_BENCH_ONLY` selects providers; `SCRAPING_BENCH_REV` identifies a disclosed correction run. See [the preregistration](PREREGISTRATION-20261017.md) for scope, budgets and exclusions.
+Run `node --experimental-strip-types scripts/campaign.mjs <pilot|full|controls|tuned> <search|scrape|map|crawl>` inside a shell with provider credentials and model-proxy authentication. Wrap each invocation in a timeout. The campaign uses frozen task/config files, a campaign lock and an API-only allowance separate from model cost. `WEB_BENCH_ONLY` selects providers; `WEB_BENCH_REV` identifies a disclosed correction run. See [the preregistration](PREREGISTRATION-20261017.md) for scope, budgets and exclusions.
 
 In `both` mode raw waits for the agent, reusing only its first dispatched call when normalized arguments match. A mismatch triggers a separately budgeted request. Persisted outcomes are hash-checked, and interrupted first calls cannot be replaced by later calls on resume. `provider-reuse` has zero incremental physical charge, while the raw result retains standalone attribution. Sum signed dispatch/settlement events for campaign spend, rather than adding agent and raw row costs.
 
 Native API reservations distinguish settled spend from calls still in flight. A call waits when an outstanding upper-bound reservation temporarily blocks it; it stops when settled spend cannot fit the next bound. Waiting respects the task deadline. This avoids premature budget stops for low-balance concurrent crawls while retaining the 5% floor.
 
 Crawl Markdown retains native HTML document titles when supplied by Firecrawl or Context.dev. The exact-title task checker can therefore use metadata that previously disappeared at the adapter boundary. This changes crawl evidence only; scrape and map representations remain the same.
+
+## Campaign v2
+
+Set `WEB_BENCH_CAMPAIGN_DIR=results/campaign-v2` to select the isolated v2 orchestrator. The campaign directory contains banks, frozen full/core task files, configurations, selected run IDs and verification reports. `WEB_BENCH_RUN_PREFIX` must start with `wb-v2-`; all v2 prefixes still share the signed cross-track ledger. Never use a new prefix to evade earlier spend.
+
+```sh
+WEB_BENCH_CAMPAIGN_DIR=results/campaign-v2 timeout 1800 \
+  node --experimental-strip-types scripts/campaign.mjs full search
+WEB_BENCH_CAMPAIGN_DIR=results/campaign-v2 timeout 1800 \
+  node --experimental-strip-types scripts/campaign.mjs controls search
+```
+
+Repeat for scrape, map and crawl. A timed-out invocation resumes using the same run ID and saved configuration. `WEB_BENCH_ONLY` filters providers; `WEB_BENCH_REV` selects a disclosed revision. Selected run IDs prevent combining partial revisions. At most four providers run concurrently, each with one worker and its own endpoint pacing. A campaign lock prevents overlapping tracks. Saved caps must still fit the remaining cross-track native allowance and physical quota.
+
+Before test execution, the preregistration and budget worksheet must match committed files. `v2-prepare.mjs --preview` generates candidates; `v2-verify.mjs screen --refresh` independently checks them. Final `v2-prepare.mjs` accepts only successful screening of identical bytes and implementation hashes. It freezes samples and binds the before report, including oracle evidence hashes. Generation refuses to replace frozen banks or samples.
+
+```sh
+WEB_BENCH_TASK_DIR=results/campaign-v2/banks timeout 1800 \
+  npm run tasks:verify -- --frozen-dir=results/campaign-v2
+WEB_BENCH_CAMPAIGN_DIR=results/campaign-v2 timeout 1800 \
+  node --experimental-strip-types scripts/v2-verify.mjs after --refresh
+WEB_BENCH_CAMPAIGN_DIR=results/campaign-v2 timeout 300 \
+  node --experimental-strip-types scripts/v2-summarize.mjs
+```
+
+Run frozen-file verification before and after the campaign. Post-run source errors and confirmed drift are separate categories, excluded symmetrically without editing original tasks or rows. `v2-summarize.mjs` rejects changed implementation or selected-run identity, ranks only complete identical cores, and reports complete full sets separately. Native API budget stops disqualify a provider's unfinished core. See [the v2 preregistration](PREREGISTRATION-v2.md).

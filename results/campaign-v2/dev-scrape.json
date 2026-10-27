@@ -1,0 +1,76 @@
+[
+  {
+    "id": "scrape-page-https-docs-firecrawl-dev-api-reference-endpoint-batch-scrape-get-errors",
+    "track": "scrape",
+    "family": "docs-heading",
+    "instruction": "Read the documentation at https://docs.firecrawl.dev/api-reference/endpoint/batch-scrape-get-errors. Return JSON with string field \"heading\", the first level-one heading on that page. Omit the heading's permalink marker.",
+    "input": {
+      "track": "scrape",
+      "url": "https://docs.firecrawl.dev/api-reference/endpoint/batch-scrape-get-errors"
+    },
+    "expected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "Get Batch Scrape Errors"
+        ]
+      }
+    ],
+    "site": "docs.firecrawl.dev",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.firecrawl.dev/api-reference/endpoint/batch-scrape-get-errors HTML h1; document-title=Get Batch Scrape Errors - Firecrawl Docs",
+      "checkedAt": "2026-10-19T17:05:06.969Z"
+    }
+  },
+  {
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "track": "scrape",
+    "family": "js-rendered-field",
+    "instruction": "Wait for calibration information to load, then return JSON with reference.",
+    "input": {
+      "track": "scrape",
+      "url": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-1/resources/js"
+    },
+    "expected": [
+      {
+        "kind": "text",
+        "name": "reference",
+        "accept": [
+          "Calibration-60726223"
+        ]
+      }
+    ],
+    "site": "northstar-instruments.leoisadev.workers.dev",
+    "source": {
+      "kind": "fixture",
+      "page": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-1/resources/js"
+    }
+  },
+  {
+    "id": "scrape-page-https-docs-context-dev-api-reference-browser-profiles-list",
+    "track": "scrape",
+    "family": "docs-heading",
+    "instruction": "Read the documentation at https://docs.context.dev/api-reference/browser-profiles/list. Return JSON with string field \"heading\", the first level-one heading on that page. Omit the heading's permalink marker.",
+    "input": {
+      "track": "scrape",
+      "url": "https://docs.context.dev/api-reference/browser-profiles/list"
+    },
+    "expected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "List browser profiles"
+        ]
+      }
+    ],
+    "site": "docs.context.dev",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.context.dev/api-reference/browser-profiles/list HTML h1; document-title=List browser profiles - Context.dev",
+      "checkedAt": "2026-10-19T17:06:34.117Z"
+    }
+  }
+]

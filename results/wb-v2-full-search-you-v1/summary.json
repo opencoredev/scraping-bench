@@ -1,0 +1,152 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "you",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "search-index",
+      "tasks": 300,
+      "na": 0,
+      "successes": 193,
+      "successRate": 0.6433333333333333,
+      "ci95": [
+        0.4933097439699917,
+        0.7359034475682331
+      ],
+      "successfulMedianMs": 5264.468884000089,
+      "successfulP90Ms": 8760.320839599894,
+      "totalUsd": 6.170164999999962,
+      "costPerSuccessUsd": 0.03196976683937804,
+      "errors": {
+        "other": 21
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 78,
+          "successRate": 0.34615384615384615
+        },
+        "latest-version": {
+          "tasks": 55,
+          "successRate": 0.8727272727272727
+        },
+        "entity-facts": {
+          "tasks": 28,
+          "successRate": 0.8571428571428571
+        },
+        "not-found": {
+          "tasks": 21,
+          "successRate": 0.9047619047619048
+        },
+        "fresh": {
+          "tasks": 13,
+          "successRate": 0.46153846153846156
+        },
+        "registry-version": {
+          "tasks": 77,
+          "successRate": 0.5844155844155844
+        },
+        "company-financials": {
+          "tasks": 28,
+          "successRate": 0.8571428571428571
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "you",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "search-index",
+      "tasks": 279,
+      "na": 21,
+      "successes": 178,
+      "successRate": 0.6379928315412187,
+      "ci95": [
+        0.5196753695261777,
+        0.7440707639811931
+      ],
+      "successfulMedianMs": 534.2926294999779,
+      "successfulP90Ms": 679.1611539000063,
+      "totalUsd": 1.50499999999999,
+      "costPerSuccessUsd": 0.008455056179775225,
+      "errors": {},
+      "families": {
+        "docs-heading": {
+          "tasks": 78,
+          "successRate": 0.8205128205128205
+        },
+        "latest-version": {
+          "tasks": 55,
+          "successRate": 0.6363636363636364
+        },
+        "entity-facts": {
+          "tasks": 28,
+          "successRate": 0.9285714285714286
+        },
+        "fresh": {
+          "tasks": 13,
+          "successRate": 0.15384615384615385
+        },
+        "registry-version": {
+          "tasks": 77,
+          "successRate": 0.44155844155844154
+        },
+        "company-financials": {
+          "tasks": 28,
+          "successRate": 0.6071428571428571
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "search-index",
+      "provider": "you",
+      "reference": "you",
+      "pairedTasks": 300,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "search-index",
+      "provider": "you",
+      "reference": "you",
+      "pairedTasks": 279,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "you": {
+      "usd": 6.810164999999944,
+      "apiUsd": 3.0399999999999574,
+      "modelUsd": 3.770164999999986,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

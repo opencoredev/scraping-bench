@@ -15,6 +15,8 @@ export const providerIdSchema = z.enum([
   "brightdata",
   "scrapfly",
   "browserbase",
+  "you",
+  "string",
 ]);
 export const runProviderSchema = z.union([
   providerIdSchema,

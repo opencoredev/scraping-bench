@@ -83,7 +83,10 @@ function referenceSentences(p: Provider): { text: string[]; comparison: Comparis
   });
   if (pairs.length === 0) return { text: [], comparison: undefined };
   const figures = pairs.map(
-    ({ own, other }) => `${lower(own.track)} ${formatPct(own.agent.rate)} vs ${formatPct(other.agent.rate)} of tasks done, at ${costText(own.agent)} vs ${costText(other.agent)} per finished task`,
+    ({ own, other }) =>
+      `${lower(own.track)} ${formatPct(own.agent.rate)} vs ${formatPct(other.agent.rate)} of tasks done${
+        own.agent.costPerSuccessUsd !== null && other.agent.costPerSuccessUsd !== null ? `, at ${costText(own.agent)} vs ${costText(other.agent)} per finished task` : ""
+      }`,
   );
   const gaps = pairs.map(({ own, other }) => ({ track: lower(own.track), gap: pairGap(own.track, own, other) }));
   const real = gaps.flatMap((g) => (g.gap.kind === "tested" && g.gap.real ? [g.track] : []));

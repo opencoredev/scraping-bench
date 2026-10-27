@@ -4,8 +4,8 @@ import { Breadcrumbs, PageIntro, PageShell, Section, TextLink } from "@/componen
 import { cohortLabel, costText, leaders, providers, runOn, tracks } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
 import { fillStyle } from "@/lib/dither";
-import { formatPct } from "@/lib/results";
-import { NOT_TESTED, WITHHELD_NOTE, pageMetadata } from "@/lib/site";
+import { formatPct, results } from "@/lib/results";
+import { NOT_TESTED, pageMetadata, parallelNote } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
   title: "Web data API providers for AI agents, compared",
@@ -19,8 +19,8 @@ export default function ProvidersPage() {
       <Breadcrumbs trail={[{ name: "Providers", path: "/providers" }]} />
       <PageIntro title={`${providers.length} web data APIs, every track they ran`}>
         <p>
-          Each cell is tasks done with the provider as the agent&apos;s only tool, and the cost of each finished task. Bold marks the most tasks done on a track, which on most tracks is not a gap big enough
-          to rule out chance. A dash means the provider didn&apos;t run that track.
+          Each cell is tasks done with the provider as the agent&apos;s only tool, and the cost of each finished task. Bold marks the most tasks done on a track; each track&apos;s page says which gaps are big
+          enough to rule out chance. A dash means the provider didn&apos;t run that track.
         </p>
       </PageIntro>
 
@@ -82,7 +82,7 @@ export default function ProvidersPage() {
 
       <Section title="Not in this table">
         <p className="max-w-prose text-sm text-pretty text-muted-foreground">
-          {NOT_TESTED} were not tested, so there are no numbers for them here. {WITHHELD_NOTE} Want a head-to-head? See the <TextLink href="/compare">comparisons</TextLink>.
+          {NOT_TESTED} were not tested, so there are no numbers for them here. {parallelNote(results)} Want a head-to-head? See the <TextLink href="/compare">comparisons</TextLink>.
         </p>
       </Section>
     </PageShell>

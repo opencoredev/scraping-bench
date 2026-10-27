@@ -1,0 +1,10 @@
+{
+  "spider": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 30,
+    "apiMaxUsd": 0.230746005875,
+    "maxCallUsd": 0.02
+  }
+}

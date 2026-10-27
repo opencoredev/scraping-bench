@@ -1,0 +1,112 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "map",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 2,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 10260.312413000003,
+      "successfulP90Ms": 12342.405865800007,
+      "totalUsd": 0.023829000000000006,
+      "costPerSuccessUsd": 0.011914500000000003,
+      "errors": {
+        "empty": 2
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "track": "map",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 1,
+      "successRate": 0.3333333333333333,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 1431.3961900000068,
+      "successfulP90Ms": 1431.3961900000068,
+      "totalUsd": 0.0066,
+      "costPerSuccessUsd": 0.0066,
+      "errors": {
+        "empty": 1
+      },
+      "families": {
+        "docs-url-set": {
+          "tasks": 3,
+          "successRate": 0.3333333333333333
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "map",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "contextdev": {
+      "usd": 0.02382900000000001,
+      "apiUsd": 0.0088,
+      "modelUsd": 0.01502900000000001,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "empty": 2
+  }
+}

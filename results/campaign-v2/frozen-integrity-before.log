@@ -1,0 +1,63 @@
+{
+  "frozenHashes": "PASS",
+  "beforeReport": "PASS",
+  "pilotSplitViolations": [],
+  "tracks": {
+    "search": {
+      "eligible": true,
+      "full": 300,
+      "core": 30,
+      "fullClusters": 52,
+      "coreClusters": 18,
+      "realWebShare": 1,
+      "jsShare": 0,
+      "families": {
+        "docs-heading": 78,
+        "registry-version": 77,
+        "entity-facts": 28,
+        "latest-version": 55,
+        "company-financials": 28,
+        "fresh": 13,
+        "not-found": 21
+      }
+    },
+    "scrape": {
+      "eligible": true,
+      "full": 300,
+      "core": 40,
+      "fullClusters": 40,
+      "coreClusters": 37,
+      "realWebShare": 0.9866666666666667,
+      "jsShare": 0.013333333333333334,
+      "families": {
+        "js-rendered-field": 4,
+        "docs-heading": 275,
+        "package-version": 21
+      }
+    },
+    "map": {
+      "eligible": true,
+      "full": 60,
+      "core": 15,
+      "fullClusters": 15,
+      "coreClusters": 15,
+      "realWebShare": 1,
+      "jsShare": 0,
+      "families": {
+        "docs-url-set": 60
+      }
+    },
+    "crawl": {
+      "eligible": true,
+      "full": 40,
+      "core": 12,
+      "fullClusters": 15,
+      "coreClusters": 12,
+      "realWebShare": 1,
+      "jsShare": 0,
+      "families": {
+        "docs-page-records": 40
+      }
+    }
+  }
+}

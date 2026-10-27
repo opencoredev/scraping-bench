@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import { Breadcrumbs, PageIntro, PageShell, Section } from "@/components/site/chrome";
 import { tracks } from "@/lib/catalog";
 import { results } from "@/lib/results";
-import { MODEL, NOT_TESTED, REPO, RESULTS_JSON, WITHHELD_NOTE, pageMetadata } from "@/lib/site";
+import { MODEL, REPO, RESULTS_JSON, notTestedText, pageMetadata } from "@/lib/site";
 
-/** The site's copy of docs/METHODOLOGY.md. Keep the two in step; limits and task counts come from results.json. */
+/**
+ * The grading method, shared by every edition. Sections marked v1 describe the v1 run (wb-20261017-final) and only
+ * render when the headline data is v1; for v2 the page links to docs/MEASURE-v2.md, the rules every v2 number is measured by.
+ * Limits, task counts, sources and gaps come from results.json.
+ */
+const V1 = results.campaignVersion === 1;
 
 export const metadata: Metadata = pageMetadata({
   title: "How scraping-bench grades web data APIs",
@@ -27,7 +32,7 @@ const MATCH_RULES: readonly (readonly [string, string])[] = [
   ["Date", "Oct 17, 2026 equals 2026-10-17"],
   ["Missing answer", "Some pages leave the answer out on purpose; the right reply is null or empty"],
   ["URL list (map)", "URLs are normalised (www., trailing slash, tracking parameters). Our test site needs every page and nothing extra; real docs sites need 90% recall and 90% precision"],
-  ["Records (crawl)", "Every record present, nothing extra"],
+  V1 ? ["Records (crawl)", "Every record present, nothing extra"] : ["Pages (crawl)", "The right page URLs, with 90% recall and 90% precision. Page titles are reported separately"],
 ];
 
 const Ext = ({ href, children }: { href: string; children: React.ReactNode }) => (
@@ -39,7 +44,7 @@ const Ext = ({ href, children }: { href: string; children: React.ReactNode }) =>
 const prose = "max-w-prose space-y-3 text-sm text-pretty text-muted-foreground";
 
 export default function MethodologyPage() {
-  const searchGap = tracks.find((t) => t.id === "search")?.detected[0];
+  const gapCount = tracks.reduce((n, t) => n + t.detected.length, 0);
   return (
     <PageShell>
       <Breadcrumbs trail={[{ name: "Methodology", path: "/methodology" }]} />
@@ -59,6 +64,7 @@ export default function MethodologyPage() {
             , and the provider behind it is the only thing that changes.
           </li>
           <li>It may call the tool a fixed number of times, within a time and dollar limit per task: {tracks.map((t) => `${t.label.toLowerCase()} ${limitText(t)}`).join("; ")}.</li>
+          {V1 ? null : <li>Long responses arrive in pages of 32 KB, and the model can read every page, so a long response costs more tokens but never hides the answer.</li>}
           <li>It answers in JSON with the named fields the task asks for.</li>
           <li>A script compares each field with the answer key. The task passes only if every field matches, the run stayed inside its limits and nothing errored.</li>
         </ol>
@@ -88,20 +94,34 @@ export default function MethodologyPage() {
         </p>
       </Section>
 
+      {V1 ? (
       <Section title="Where the answer keys come from">
-        <div className={prose}>
-          <p>
-            <span className="text-foreground">Our test site.</span> Most scrape, map and crawl tasks run on a site generated for this run, at a fresh path nobody could have indexed. The key is the data the
-            site was built from. Before the run a script fetched every scrape page and confirmed each answer is on it, that answers meant to need JavaScript are absent from the plain HTML, and that pages
-            meant to have no answer have none. See <Ext href={`${REPO}/blob/main/docs/FIXTURES.md`}>FIXTURES.md</Ext>.
-          </p>
-          <p>
-            <span className="text-foreground">The real web.</span> Search keys come from PyPI, npm, crates.io, GitHub releases, Wikidata and SEC filings. Real docs scopes come from each site&apos;s own sitemap
-            and pages. Every key records its source and fetch time. See <Ext href={`${REPO}/blob/main/docs/TASKS.md`}>TASKS.md</Ext>.
-          </p>
-        </div>
-      </Section>
+          <div className={prose}>
+            <p>
+              <span className="text-foreground">Our test site.</span> Most scrape, map and crawl tasks run on a site generated for this run, at a fresh path nobody could have indexed. The key is the data the
+              site was built from. Before the run a script fetched every scrape page and confirmed each answer is on it, that answers meant to need JavaScript are absent from the plain HTML, and that pages
+              meant to have no answer have none. See <Ext href={`${REPO}/blob/main/docs/FIXTURES.md`}>FIXTURES.md</Ext>.
+            </p>
+            <p>
+              <span className="text-foreground">The real web.</span> Search keys come from PyPI, npm, crates.io, GitHub releases, Wikidata and SEC filings. Real docs scopes come from each site&apos;s own sitemap
+              and pages. Every key records its source and fetch time. See <Ext href={`${REPO}/blob/main/docs/TASKS.md`}>TASKS.md</Ext>.
+            </p>
+          </div>
+        </Section>
+      ) : (
+        <Section title="Where the answer keys come from">
+          <ul className={`${prose} list-disc pl-5 marker:text-muted-foreground/50`}>
+            {tracks.map((t) => (t.population ? (
+              <li key={t.id}>
+                <span className="text-foreground">{t.label}.</span> {t.population.sources}
+              </li>
+            ) : null))}
+          </ul>
+        </Section>
+      )}
 
+      {V1 ? (
+        <>
       <Section title="How we know the keys are right">
         <ul className={`${prose} list-disc pl-5 marker:text-muted-foreground/50`}>
           <li>Before the run, every real-web key was fetched again and compared exactly: 287 of 288 matched, and the one that drifted was dropped.</li>
@@ -114,6 +134,8 @@ export default function MethodologyPage() {
           midnight UTC, which providers gave as the US date. They stay as frozen. Dropping them, or accepting both answers, moves Firecrawl from 85% to 92% at most and changes no provider&apos;s place.
         </p>
       </Section>
+        </>
+      ) : null}
 
       <Section title="Controls">
         <ul className={`${prose} list-disc pl-5 marker:text-muted-foreground/50`}>
@@ -138,8 +160,13 @@ export default function MethodologyPage() {
             <span className="text-foreground">Time</span>: the median over tasks that passed.
           </li>
           <li>
-            <span className="text-foreground">Raw output</span>: no model. Does the API&apos;s own output contain every answer?
+            <span className="text-foreground">{V1 ? "Raw output" : "Answer in the provider's response"}</span>: no model. Does the API&apos;s own output contain every answer?
           </li>
+          {V1 ? null : (
+            <li>
+              <span className="text-foreground">Page coverage</span>: for scrape, the share of 8 sentences sampled from each page&apos;s own text that appear in the provider&apos;s response.
+            </li>
+          )}
         </ul>
       </Section>
 
@@ -147,22 +174,24 @@ export default function MethodologyPage() {
         <p className={prose}>
           Tasks from the same site are not independent, so each provider is compared with its track&apos;s leader on the same tasks, with a 95% interval from a bootstrap that resamples whole sites 10,000
           times. A gap counts only when its interval excludes zero.{" "}
-          {searchGap
-            ? `One does: on search, ${searchGap.provider} finished ${Math.round(-searchGap.difference * 100)} points fewer tasks than ${searchGap.reference}. Everything else could be chance on this many sites.`
-            : "Everything else could be chance on this many sites."}
+          {gapCount === 0
+            ? "None does on this run."
+            : `${gapCount} ${gapCount === 1 ? "gap does" : "gaps do"} on this run; each track's page lists them.`}
         </p>
       </Section>
 
       <Section title="What was left out">
         <p className={prose}>
-          {NOT_TESTED} were not tested. {WITHHELD_NOTE}
+          {notTestedText(results)}
         </p>
       </Section>
 
       <Section title="Limits">
         <p className={prose}>
-          One client location. Free plans, so rate limits show up in time and errors. Scrape has only two site clusters. The model and its settings are part of what is measured, so these are not pure
-          vendor scores. The full list is in <Ext href={`${REPO}/blob/main/docs/FINDINGS.md`}>FINDINGS.md</Ext>. Every number on this site comes from <Ext href={RESULTS_JSON}>results.json</Ext>, run {results.runId}.
+          One client location.{V1 ? " Free plans, so rate limits show up in time and errors. Scrape has only two site clusters." : ""} The model and its settings are part of what is measured, so these are not pure
+          vendor scores.{V1 ? "" : " The rules every v2 number is measured by are in "}
+          {V1 ? null : <Ext href={`${REPO}/blob/main/docs/MEASURE-v2.md`}>MEASURE-v2.md</Ext>}
+          {V1 ? "" : "."} The full list is in <Ext href={`${REPO}/blob/main/docs/FINDINGS.md`}>FINDINGS.md</Ext>. Every number on this site comes from <Ext href={RESULTS_JSON}>results.json</Ext>, run {results.runId}.
         </p>
       </Section>
     </PageShell>

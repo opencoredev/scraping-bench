@@ -48,10 +48,22 @@ export function trackRows(track: Track) {
     "higher",
   );
 
+  const coverage = ranked(
+    track.providers.flatMap((p) => {
+      const c = p.coverage;
+      if (!c || c.mean === null) return [];
+      const [lo, hi] = c.ci;
+      const range = lo !== null && hi !== null ? `, 95% interval ${formatPct(lo)}–${formatPct(hi)}` : "";
+      const size = p.medianBytes != null ? `${(p.medianBytes / 1000).toFixed(1)} KB` : "";
+      return [{ id: p.id, label: p.label, sub: "", value: c.mean, text: formatPct(c.mean), extra: size, detail: `${p.label}: ${formatPct(c.mean)} of sampled page text came through, over ${c.pages} pages${range}${size ? `; median response ${size}` : ""}` }];
+    }),
+    "higher",
+  );
+
   const tuned = ranked(
     track.providers.flatMap((p) => (p.tuned ? [successRow(p.id, p.label, p.tuned, p.agent ? `default ${formatPct(p.agent.rate)}` : "")] : [])),
     "higher",
   );
 
-  return { success, cost, time, raw, tuned };
+  return { success, cost, time, raw, coverage, tuned };
 }

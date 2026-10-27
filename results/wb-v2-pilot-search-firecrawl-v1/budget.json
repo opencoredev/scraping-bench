@@ -1,0 +1,9 @@
+{
+  "firecrawl": {
+    "usd": 0.099462,
+    "apiUsd": 0.060000000000000005,
+    "modelUsd": 0.03946199999999999,
+    "maxUsd": 30,
+    "reached": false
+  }
+}

@@ -1,3 +1,5 @@
+import { generateFixtureTasks } from './fixture-tasks.ts';
+import { resolveExpanded } from './expanded.ts';
 import { z } from 'zod';
 import { parse, type DefaultTreeAdapterTypes } from 'parse5';
 import type { Task, ExpectedField } from '../core/types.ts';
@@ -16,6 +18,9 @@ export const sparqlUrl = (query: string): string => `https://query.wikidata.org/
 const slug = (value: string): string => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 export function recipeId(recipe: Recipe): string {
   switch (recipe.kind) {
+    case 'fixture': return recipe.id;
+    case 'page': return `${recipe.track}-page-${slug(recipe.url)}`;
+    case 'registry': return `search-${recipe.ecosystem}-${slug(recipe.name)}`;
     case 'package': return `${recipe.track}-${recipe.ecosystem}-${slug(recipe.name)}`;
     case 'finance': return `search-revenue-${recipe.cik}`;
     case 'entity': return `search-founding-${recipe.qid}`;
@@ -32,6 +37,12 @@ function make(recipe: Recipe, family: string, input: Task['input'], instruction:
 }
 export async function resolve(recipe: Recipe): Promise<Task> {
   switch (recipe.kind) {
+    case 'fixture': {
+      const task = generateFixtureTasks({ seed: recipe.seed, baseUrl: 'https://northstar-instruments.leoisadev.workers.dev' }).find(task => task.id === recipe.id);
+      if (!task || task.track !== 'scrape' || task.family !== 'js-rendered-field') throw new Error('Unsupported fixture recipe');
+      return { ...task, site: new URL(task.input.track === 'scrape' ? task.input.url : '').hostname };
+    }
+    case 'page': case 'registry': return resolveExpanded(recipe);
     case 'package': {
       const url = recipe.ecosystem === 'npm' ? `https://registry.npmjs.org/${encodeURIComponent(recipe.name)}/latest` : recipe.ecosystem === 'pypi' ? `https://pypi.org/pypi/${recipe.name}/json` : `https://crates.io/api/v1/crates/${recipe.name}`;
       const response = await getJson(url);
@@ -123,7 +134,7 @@ async function discover(recipe: Extract<Recipe, { kind: 'site' }>): Promise<{ ur
   const response = await get(recipe.sitemap);
   if (!response.body.includes('<urlset')) throw new Error('Expected a URL sitemap, not an index');
   const urls = [...new Set([...response.body.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/g)].map(m => unescape(m[1] ?? '').trim()).filter(url => url.startsWith(recipe.scope)))].sort();
-  if (urls.length < 3 || urls.length > 60 || !urls.includes(recipe.scope)) throw new Error(`Unsuitable scope (${urls.length} pages): ${recipe.scope}`);
+  if (urls.length < 3 || urls.length > 30) throw new Error(`Unsuitable scope (${urls.length} pages): ${recipe.scope}`);
   // Start at the scope root; the sitemap is NOT the crawl queue.
   const queue = [recipe.scope];
   const visited = new Set<string>();
@@ -148,7 +159,7 @@ async function discover(recipe: Extract<Recipe, { kind: 'site' }>): Promise<{ ur
       if (/[{}]/.test(href)) continue; // Unexpanded template examples are not published routes.
       const next = new URL(href, canonical);
       next.hash = ''; next.search = '';
-      if (next.href.startsWith(recipe.scope) && !attempted.has(next.href) && !/\.[a-z0-9]+$/i.test(next.pathname)) queue.push(next.href);
+      if (next.href.startsWith(recipe.scope) && !attempted.has(next.href) && (!/\.[a-z0-9]+$/i.test(next.pathname) || /\.html?$/i.test(next.pathname))) queue.push(next.href);
     }
   }
   const discovered = [...visited].sort();
@@ -162,5 +173,5 @@ async function resolveSite(recipe: Extract<Recipe, { kind: 'site' }>): Promise<T
   const source = `${recipe.sitemap} scope=${recipe.scope}; exact sitemap equality with independent breadth-first HTML-link crawl from scope root (404 links and unexpanded templates excluded); ${urls.length} pages; <=1-request/second/hostname; HTML titles checked on each page; thresholds allow at most 10% set error`;
   const field: ExpectedField = { kind: 'url-set', name: 'urls', urls, minRecall: 0.9, minPrecision: 0.9 };
   if (recipe.track === 'map') return make(recipe, 'docs-url-set', { track: 'map', site: recipe.scope, scope: new URL(recipe.scope).pathname }, 'Discover every canonical HTML documentation URL at or below this scope, including the scope root. Return JSON with "urls" as an array of absolute URLs. Exclude assets, query strings, fragments, translations outside the scope, and external links.', [field], source, checkedAt);
-  return make(recipe, 'docs-page-records', { track: 'crawl', site: recipe.scope, scope: new URL(recipe.scope).pathname, maxPages: 60 }, 'Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields "urls" (absolute canonical URL array) and "records" (array of strings formatted exactly "URL | HTML document title"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.', [field, { kind: 'text-set', name: 'records', items: records }], source, checkedAt);
+  return make(recipe, 'docs-page-records', { track: 'crawl', site: recipe.scope, scope: new URL(recipe.scope).pathname, maxPages: 30 }, 'Crawl every HTML documentation page at or below this scope, including the scope root. Return JSON fields "urls" (absolute canonical URL array) and "records" (array of strings formatted exactly "URL | HTML document title"). Use the <title> text with HTML entities decoded and whitespace collapsed. Exclude assets, query strings, fragments and external links.', [field, { kind: 'text-set', name: 'records', items: records }], source, checkedAt);
 }

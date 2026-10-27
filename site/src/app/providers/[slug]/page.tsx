@@ -82,8 +82,8 @@ function TrackResult({ run }: { run: Run }) {
         </p>
         {entry.raw ? (
           <p>
-            Raw output, no model: the API&apos;s own response held every answer on {entry.raw.successes} of {entry.raw.tasks} applicable tasks ({formatPct(entry.raw.rate)}),{" "}
-            {entry.raw.costPerSuccessUsd === 0 ? "with no API charge recorded" : `at ${costText(entry.raw)} of API spend per finished task`}.
+            Answer in the provider&apos;s response, no model: what the API returned held every answer on {entry.raw.successes} of {entry.raw.tasks} applicable tasks ({formatPct(entry.raw.rate)})
+            {entry.raw.costPerSuccessUsd === null ? "" : entry.raw.costPerSuccessUsd === 0 ? ", with no API charge recorded" : `, at ${costText(entry.raw)} of API spend per finished task`}.
           </p>
         ) : null}
         {entry.tuned ? (

@@ -1,0 +1,1658 @@
+{
+  "version": 3,
+  "source": "wb-v2 stored responses, re-measured under docs/MEASURE-v2.md",
+  "model": "claude-haiku-5-5",
+  "gates": [
+    {
+      "name": "Correct-page control at least 97% on core scrape",
+      "pass": true,
+      "detail": "38/38 (2 pages without usable reference text)"
+    },
+    {
+      "name": "Every core scrape key is in its own correct-page text",
+      "pass": true,
+      "detail": "38 checked"
+    },
+    {
+      "name": "No provider or other non-proxy network attempt",
+      "pass": true,
+      "detail": "0 blocked, 73 model-proxy calls"
+    }
+  ],
+  "referencePages": {
+    "usable": 294,
+    "changed": 4,
+    "unavailable": 0,
+    "withProbes": 260
+  },
+  "sourceHashes": {
+    "campaign-v2/selected-runs.json": "73b8909001ee1220da75486e31ca91bf999ebb67786c0da61172e524b8a540e5",
+    "wb-v2-final/summary.json": "2c9283ef96fd07d77d8112173dbdcab499e963d2be05b0443785a55c6c88f653",
+    "wb-v2-full-search-linkup-v1/calls.jsonl": "41dd56e51df9d0b245883c55dd9a131254d0c2809589d7899ea66b825707966d",
+    "wb-v2-full-search-contextdev-v1/calls.jsonl": "443f4e269d3e7d1bf6b7a03768cc6d313d79f8ff317e6d674251a30a2a4e132c",
+    "wb-v2-full-search-firecrawl-v1/calls.jsonl": "c5ce93a1d3964750eb482831ed6b28154f49edbceb451ee524938c07282283de",
+    "wb-v2-full-search-tinyfish-v1/calls.jsonl": "ac10bc2164174c0232b680802b89afd37ccaef5dd5982af9f28427a557d604eb",
+    "wb-v2-full-search-browserbase-v1/calls.jsonl": "80ea5b7264fcedbd67399bdc66ed195a03fc7bf8906bcd96ae9c70e6f5525a9f",
+    "wb-v2-full-search-you-v1/calls.jsonl": "2b16826853c83d6e3bdf7f9d52ac9af071753481a5f241793c4600c2f8d01569",
+    "wb-v2-full-scrape-firecrawl-v1/calls.jsonl": "eb83d1536a9b4211abe822aca1d4f4f71dd6baa0cfc970b562832cb51f07896b",
+    "wb-v2-full-scrape-spider-v1/calls.jsonl": "c0c3eee8da3dbd3fe36f2fd54b6daec53c3358faff02cce53cca174c8b2d9ff0",
+    "wb-v2-full-scrape-contextdev-v1/calls.jsonl": "dc1664afef2677d058905a1dd8ee06c6f4ed04c10163ed54f4c542360228abf9",
+    "wb-v2-full-scrape-tinyfish-v1/calls.jsonl": "27face4877ed11f1097186e0f68562abdcf0f330f39ac8ed124e1327571e12b2",
+    "wb-v2-full-scrape-linkup-v1/calls.jsonl": "c06a890d4e9c23ae80ba3a7f7e0ef2b9833203b51dba716e85634f2b56714bb7",
+    "wb-v2-full-scrape-scrapfly-v1/calls.jsonl": "4ec7e77b3ac66e0c5ec8517777a78c67a25619e370a3aa4bb84371f52b10ae2f",
+    "wb-v2-full-scrape-browserbase-v1/calls.jsonl": "a6f0371e08121fb26d8102f197d161b114d8eb6d1d20bea67d66aa6978029f12",
+    "wb-v2-full-scrape-you-v1/calls.jsonl": "39693c32173007abcd0dbb80d50d490b379d3e4110c7f635da675c4281f63845",
+    "wb-v2-full-scrape-jina-v1/calls.jsonl": "fe085cf8a98e22ff54b9472d173c2ad4317148ad7d9d72c3d27bf335871f61c5",
+    "wb-v2-full-map-contextdev-v1/calls.jsonl": "03fcc754347759d043a92b7b554199e9476c4b66f9e7a2a60db10ec700d4ba81",
+    "wb-v2-full-map-firecrawl-v1/calls.jsonl": "d7a78cd5690594ba7bceb699aaed39468e972cc2f2b5938870d2bc5c1b01cadd",
+    "wb-v2-full-crawl-scrapfly-v1/calls.jsonl": "88a4e6b9b9226268c2ec0791801e43611b3dbeae788215114965e3f571d920cc",
+    "wb-v2-full-crawl-firecrawl-v1/calls.jsonl": "009373b4a60e12e4ac924fa2419ae1787fb1a886c02461a652fa5cf03cf05911",
+    "wb-v2-full-crawl-contextdev-v1/calls.jsonl": "308935d6e2f4a89e94a6499918df59f3924340d38d380a5bbb1993527c31c0ed",
+    "wb-v2-controls-search-none-v1/calls.jsonl": "2138a2d4089f2830fad882c5848ad1bbfb272b35acb8f93f9969880b88de14e9",
+    "wb-v2-controls-scrape-oracle-v1/calls.jsonl": "43dab1b615bbf3e65c4f551acfa8cc1cd674fe98d5e106f8a90d7f93b5ecbd64",
+    "wb-v2-controls-scrape-none-v1/calls.jsonl": "3f58b7ccad72e14b9a8d19610f99e37a114f2775aa7c998b0a26097378a52367",
+    "wb-v2-controls-map-none-v1/calls.jsonl": "3b720e37c752f25ba54474a30bece1190b49b62c079f29df17a0b270f48648e7",
+    "wb-v2-controls-crawl-none-v1/calls.jsonl": "2b9b9a7073a3233fcd2213954cd80ba8efd0c3ffe596dbafe3e4ba0af3587dc9",
+    "wb-v2-full-scrape-string-v1/calls.jsonl": "0721c81826c726c95ce98159acf4a168b440b51fa89b5de5f8bd4fa9ce23204e",
+    "wb-v2-core-search-string-v1/calls.jsonl": "889ead93723c1c7df2104f94a9f4af5bde3371f11e349a85d9b24974e7fb37cd",
+    "wb-v2-full-map-string-v1/calls.jsonl": "027946617897c2f7beb9179fec28a56495fcf97c28a9f07719a023b1e6094d56",
+    "wb-v2-corrected/tasks/scrape.json": "b2db5830dfaa8a5cee18dfe060a67cdf1de3c20eb89c9c60c288d5b6df45161a",
+    "campaign-v2/core-scrape.json": "f2ee60b223778f84f9620a6e4b69990a2ba62228537444999ae7a914bdfb8226",
+    "wb-v2-corrected/tasks/search.json": "b6a894acdd40fc5d2b7f72a6829af47dbb842ed79357a7a9295908de1a7e4ef3",
+    "campaign-v2/core-search.json": "7b18c002a4084c5590fc6c3f4ac6be6908a63d58ed8e5f70925e09da65dab023",
+    "wb-v2-corrected/tasks/map.json": "58ab8a6ce380dc8e61d0d0a92f19bf832c07568956ed35ea26a163cd7348eccc",
+    "campaign-v2/core-map.json": "952046aa98f6b378f1281fe8847f4487de0a048658b6574ace27ebe2732b0f3f",
+    "wb-v2-corrected/tasks/crawl.json": "aba231aa70118539fcfcba41ade478fbb5700cc87f8b6006c12a8bdeafc35e08",
+    "campaign-v2/core-crawl.json": "5c89538c3e1d3525421c34f459b4fa53d5b69605a7ef9a03bcacdb4faf9a2af7"
+  },
+  "tracks": [
+    {
+      "track": "scrape",
+      "coreTasks": 40,
+      "coreSites": 37,
+      "fullTasks": 298,
+      "leader": "contextdev",
+      "providers": [
+        {
+          "provider": "firecrawl",
+          "agent": {
+            "successes": 32,
+            "tasks": 40,
+            "rate": 0.8,
+            "ci": [
+              0.6578947368421053,
+              0.9230769230769231
+            ]
+          },
+          "retrieval": {
+            "successes": 36,
+            "tasks": 40,
+            "rate": 0.9,
+            "ci": [
+              0.7777777777777778,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.016719156250000002,
+          "medianMs": 4767.971307000011,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9779411764705882,
+            "ci": [
+              0.9522058823529411,
+              0.9963235294117647
+            ]
+          },
+          "medianNoise": 1.5416731543354434,
+          "medianBytes": 9325,
+          "answerFound": 36,
+          "answerPast12k": 0,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 2,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 41,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 291573,
+            "output": 8688,
+            "modelUsd": 0.3350129999999999
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "contextdev",
+          "agent": {
+            "successes": 38,
+            "tasks": 40,
+            "rate": 0.95,
+            "ci": [
+              0.85,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 38,
+            "tasks": 40,
+            "rate": 0.95,
+            "ci": [
+              0.85,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.013628736842105254,
+          "medianMs": 4589.786993000032,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9852941176470589,
+            "ci": [
+              0.9595588235294118,
+              1
+            ]
+          },
+          "medianNoise": 2.6402183827269017,
+          "medianBytes": 14788,
+          "answerFound": 38,
+          "answerPast12k": 2,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 2,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 41,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 391482,
+            "output": 7682,
+            "modelUsd": 0.42989199999999994
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "tinyfish",
+          "agent": {
+            "successes": 31,
+            "tasks": 40,
+            "rate": 0.775,
+            "ci": [
+              0.6097560975609756,
+              0.9210526315789473
+            ]
+          },
+          "retrieval": {
+            "successes": 31,
+            "tasks": 40,
+            "rate": 0.775,
+            "ci": [
+              0.6097560975609756,
+              0.9210526315789473
+            ]
+          },
+          "costPerSuccessUsd": 0.007050290322580644,
+          "medianMs": 4555.958526000002,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9227941176470589,
+            "ci": [
+              0.8345588235294118,
+              0.9889705882352942
+            ]
+          },
+          "medianNoise": 1.0714315215815233,
+          "medianBytes": 5773.5,
+          "answerFound": 33,
+          "answerPast12k": 0,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 1,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 40,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 181764,
+            "output": 7359,
+            "modelUsd": 0.21855899999999998
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "spider",
+          "agent": {
+            "successes": 37,
+            "tasks": 40,
+            "rate": 0.925,
+            "ci": [
+              0.8095238095238095,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 38,
+            "tasks": 40,
+            "rate": 0.95,
+            "ci": [
+              0.85,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.008771942472972973,
+          "medianMs": 5691.646605000007,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9926470588235294,
+            "ci": [
+              0.9816176470588235,
+              1
+            ]
+          },
+          "medianNoise": 1.3856327938980588,
+          "medianBytes": 6780,
+          "answerFound": 38,
+          "answerPast12k": 0,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 42,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 272773,
+            "output": 8462,
+            "modelUsd": 0.31508299999999995
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "linkup",
+          "agent": {
+            "successes": 34,
+            "tasks": 40,
+            "rate": 0.85,
+            "ci": [
+              0.7142857142857143,
+              0.9565217391304348
+            ]
+          },
+          "retrieval": {
+            "successes": 37,
+            "tasks": 40,
+            "rate": 0.925,
+            "ci": [
+              0.8095238095238095,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.012295764705882353,
+          "medianMs": 4037.11042850008,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9963235294117647,
+            "ci": [
+              0.9889705882352942,
+              1
+            ]
+          },
+          "medianNoise": 2.138617589201566,
+          "medianBytes": 11517,
+          "answerFound": 37,
+          "answerPast12k": 2,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 40,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 332551,
+            "output": 9101,
+            "modelUsd": 0.37805599999999995
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "scrapfly",
+          "agent": {
+            "successes": 36,
+            "tasks": 40,
+            "rate": 0.9,
+            "ci": [
+              0.7857142857142857,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 36,
+            "tasks": 40,
+            "rate": 0.9,
+            "ci": [
+              0.7857142857142857,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.011658833333333328,
+          "medianMs": 5959.125729500015,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9338235294117647,
+            "ci": [
+              0.8455882352941176,
+              0.9963235294117647
+            ]
+          },
+          "medianNoise": 2.5925915387878113,
+          "medianBytes": 14354,
+          "answerFound": 36,
+          "answerPast12k": 0,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 1,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 42,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 371908,
+            "output": 8392,
+            "modelUsd": 0.413868
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "browserbase",
+          "agent": {
+            "successes": 30,
+            "tasks": 40,
+            "rate": 0.75,
+            "ci": [
+              0.5952380952380952,
+              0.8918918918918919
+            ]
+          },
+          "retrieval": {
+            "successes": 30,
+            "tasks": 40,
+            "rate": 0.75,
+            "ci": [
+              0.5952380952380952,
+              0.8918918918918919
+            ]
+          },
+          "costPerSuccessUsd": 0.019349233333333334,
+          "medianMs": 3633.9626214999953,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.8198529411764706,
+            "ci": [
+              0.6764705882352942,
+              0.9375
+            ]
+          },
+          "medianNoise": 2.4701489123211235,
+          "medianBytes": 13536.5,
+          "answerFound": 30,
+          "answerPast12k": 2,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 1,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 47,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 343582,
+            "output": 9779,
+            "modelUsd": 0.3924769999999999
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "you",
+          "agent": {
+            "successes": 29,
+            "tasks": 40,
+            "rate": 0.725,
+            "ci": [
+              0.5609756097560976,
+              0.8918918918918919
+            ]
+          },
+          "retrieval": {
+            "successes": 31,
+            "tasks": 40,
+            "rate": 0.775,
+            "ci": [
+              0.6097560975609756,
+              0.9459459459459459
+            ]
+          },
+          "costPerSuccessUsd": 0.010043275862068969,
+          "medianMs": 3638.0127809998385,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.8492647058823529,
+            "ci": [
+              0.7536764705882353,
+              0.9301470588235294
+            ]
+          },
+          "medianNoise": 1.1355347006884418,
+          "medianBytes": 6598,
+          "answerFound": 33,
+          "answerPast12k": 0,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 41,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 212215,
+            "output": 7808,
+            "modelUsd": 0.251255
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "jina",
+          "agent": {
+            "successes": 6,
+            "tasks": 40,
+            "rate": 0.15,
+            "ci": [
+              0.05128205128205128,
+              0.2564102564102564
+            ]
+          },
+          "retrieval": {
+            "successes": 18,
+            "tasks": 40,
+            "rate": 0.45,
+            "ci": [
+              0.3076923076923077,
+              0.6052631578947368
+            ]
+          },
+          "costPerSuccessUsd": 0.04256553333333333,
+          "medianMs": 5414.674339000059,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.7279411764705882,
+            "ci": [
+              0.5808823529411765,
+              0.8639705882352942
+            ]
+          },
+          "medianNoise": 1.2357008281979824,
+          "medianBytes": 5133.5,
+          "answerFound": 20,
+          "answerPast12k": 0,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 7,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 49,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 185444,
+            "output": 12472,
+            "modelUsd": 0.24780400000000008
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "string",
+          "agent": {
+            "successes": 35,
+            "tasks": 40,
+            "rate": 0.875,
+            "ci": [
+              0.7560975609756098,
+              0.9743589743589743
+            ]
+          },
+          "retrieval": {
+            "successes": 38,
+            "tasks": 40,
+            "rate": 0.95,
+            "ci": [
+              0.85,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.013287000000000009,
+          "medianMs": 3869.694328000005,
+          "coverage": {
+            "pages": 34,
+            "mean": 0.9816176470588235,
+            "ci": [
+              0.9485294117647058,
+              1
+            ]
+          },
+          "medianNoise": 2.4193949232489382,
+          "medianBytes": 14314.5,
+          "answerFound": 38,
+          "answerPast12k": 1,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 1,
+            "pagesRead": 43,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 390785,
+            "output": 12452,
+            "modelUsd": 0.453045
+          },
+          "tier": "top"
+        }
+      ],
+      "gaps": [
+        {
+          "provider": "spider",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.025,
+          "ci": [
+            -0.07900071123755328,
+            0
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "scrapfly",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.05,
+          "ci": [
+            -0.11904761904761904,
+            0
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "string",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.075,
+          "ci": [
+            -0.15789473684210525,
+            0
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "linkup",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.1,
+          "ci": [
+            -0.20512820512820512,
+            -0.023255813953488372
+          ],
+          "resolved": true
+        },
+        {
+          "provider": "firecrawl",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.15,
+          "ci": [
+            -0.2702702702702703,
+            -0.04878048780487805
+          ],
+          "resolved": true
+        },
+        {
+          "provider": "tinyfish",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.175,
+          "ci": [
+            -0.3333333333333333,
+            -0.047619047619047616
+          ],
+          "resolved": true
+        },
+        {
+          "provider": "browserbase",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.2,
+          "ci": [
+            -0.34146341463414637,
+            -0.07894736842105263
+          ],
+          "resolved": true
+        },
+        {
+          "provider": "you",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.225,
+          "ci": [
+            -0.3829787234042553,
+            -0.07894736842105263
+          ],
+          "resolved": true
+        },
+        {
+          "provider": "jina",
+          "reference": "contextdev",
+          "pairedTasks": 40,
+          "difference": -0.8,
+          "ci": [
+            -0.9230769230769231,
+            -0.6666666666666666
+          ],
+          "resolved": true
+        }
+      ],
+      "controls": {
+        "none": {
+          "successes": 0,
+          "tasks": 40,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        "correctPage": {
+          "successes": 38,
+          "tasks": 38,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        }
+      },
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 294,
+            "tasks": 298,
+            "rate": 0.9865771812080537,
+            "ci": [
+              0.9560439560439561,
+              1
+            ]
+          },
+          "coverage": {
+            "pages": 260,
+            "mean": 0.9913461538461539,
+            "ci": [
+              0.9841895720738888,
+              0.9971804511278195
+            ]
+          }
+        },
+        {
+          "provider": "linkup",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 284,
+            "tasks": 298,
+            "rate": 0.9530201342281879,
+            "ci": [
+              0.907893614154841,
+              0.9875786012345441
+            ]
+          },
+          "coverage": {
+            "pages": 260,
+            "mean": 0.9884615384615385,
+            "ci": [
+              0.976292890486575,
+              0.9980314960629921
+            ]
+          }
+        },
+        {
+          "provider": "you",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 258,
+            "tasks": 298,
+            "rate": 0.8657718120805369,
+            "ci": [
+              0.7624097058050959,
+              0.9509443211246763
+            ]
+          },
+          "coverage": {
+            "pages": 260,
+            "mean": 0.9019826007326007,
+            "ci": [
+              0.8624034837982064,
+              0.9361415087352561
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "track": "search",
+      "coreTasks": 30,
+      "coreSites": 18,
+      "fullTasks": 298,
+      "leader": "linkup",
+      "providers": [
+        {
+          "provider": "firecrawl",
+          "agent": {
+            "successes": 26,
+            "tasks": 30,
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.7142857142857143,
+              0.9705882352941176
+            ]
+          },
+          "retrieval": {
+            "successes": 22,
+            "tasks": 27,
+            "rate": 0.8148148148148148,
+            "ci": [
+              0.6486486486486487,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.029136153846153853,
+          "medianMs": 6886.984511999995,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 3376,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 26,
+            "pagesRead": 46,
+            "agentPassRetrievalFail": [
+              "search-fresh-neovim-neovim",
+              "search-revenue-0000078003",
+              "search-revenue-0000051143",
+              "search-crates-rusqlite"
+            ]
+          },
+          "tokens": {
+            "input": 273400,
+            "output": 12828,
+            "modelUsd": 0.33753999999999995
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "contextdev",
+          "agent": {
+            "successes": 25,
+            "tasks": 30,
+            "rate": 0.8333333333333334,
+            "ci": [
+              0.625,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 23,
+            "tasks": 27,
+            "rate": 0.8518518518518519,
+            "ci": [
+              0.6774193548387096,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.013889519999999997,
+          "medianMs": 8388.86558400016,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 2363.5,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 2,
+            "readLimitHits": 0,
+            "argMismatches": 26,
+            "pagesRead": 48,
+            "agentPassRetrievalFail": [
+              "search-crates-rusqlite"
+            ]
+          },
+          "tokens": {
+            "input": 160248,
+            "output": 17598,
+            "modelUsd": 0.24823800000000004
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "tinyfish",
+          "agent": {
+            "successes": 26,
+            "tasks": 30,
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.7,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 25,
+            "tasks": 27,
+            "rate": 0.9259259259259259,
+            "ci": [
+              0.8387096774193549,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.00965830769230769,
+          "medianMs": 8236.798344999828,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 2347.5,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 1,
+            "readLimitHits": 0,
+            "argMismatches": 30,
+            "pagesRead": 51,
+            "agentPassRetrievalFail": [
+              "search-crates-rusqlite"
+            ]
+          },
+          "tokens": {
+            "input": 166926,
+            "output": 16838,
+            "modelUsd": 0.25111599999999995
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "linkup",
+          "agent": {
+            "successes": 28,
+            "tasks": 30,
+            "rate": 0.9333333333333333,
+            "ci": [
+              0.8529411764705882,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 23,
+            "tasks": 27,
+            "rate": 0.8518518518518519,
+            "ci": [
+              0.6774193548387096,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.021929035714285717,
+          "medianMs": 6217.209079000022,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 14479,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 21,
+            "pagesRead": 38,
+            "agentPassRetrievalFail": [
+              "search-fresh-oven-sh-bun",
+              "search-crates-rayon",
+              "search-crates-rusqlite"
+            ]
+          },
+          "tokens": {
+            "input": 356478,
+            "output": 14507,
+            "modelUsd": 0.429013
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "browserbase",
+          "agent": {
+            "successes": 21,
+            "tasks": 30,
+            "rate": 0.7,
+            "ci": [
+              0.5,
+              0.8666666666666667
+            ]
+          },
+          "retrieval": {
+            "successes": 11,
+            "tasks": 27,
+            "rate": 0.4074074074074074,
+            "ci": [
+              0.22857142857142856,
+              0.6666666666666666
+            ]
+          },
+          "costPerSuccessUsd": 0.027852380952380955,
+          "medianMs": 15384.751073999942,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 826.5,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 4,
+            "readLimitHits": 0,
+            "argMismatches": 44,
+            "pagesRead": 64,
+            "agentPassRetrievalFail": [
+              "search-founding-Q9396",
+              "search-pypi-pydantic",
+              "search-crates-bytes",
+              "search-pypi-typer",
+              "search-fresh-oven-sh-bun",
+              "search-go-go-uber-org-zap",
+              "search-crates-rayon",
+              "search-pypi-attrs",
+              "search-crates-rusqlite"
+            ]
+          },
+          "tokens": {
+            "input": 161280,
+            "output": 24724,
+            "modelUsd": 0.28489999999999993
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "you",
+          "agent": {
+            "successes": 21,
+            "tasks": 30,
+            "rate": 0.7,
+            "ci": [
+              0.5,
+              0.8666666666666667
+            ]
+          },
+          "retrieval": {
+            "successes": 16,
+            "tasks": 27,
+            "rate": 0.5925925925925926,
+            "ci": [
+              0.36363636363636365,
+              0.8421052631578947
+            ]
+          },
+          "costPerSuccessUsd": 0.026413523809523814,
+          "medianMs": 4838.107566000108,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 8755,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 1,
+            "readLimitHits": 0,
+            "argMismatches": 28,
+            "pagesRead": 42,
+            "agentPassRetrievalFail": [
+              "search-revenue-0001341439",
+              "search-fresh-neovim-neovim",
+              "search-revenue-0000078003",
+              "search-pypi-typer",
+              "search-crates-rayon",
+              "search-crates-rusqlite"
+            ]
+          },
+          "tokens": {
+            "input": 264379,
+            "output": 16061,
+            "modelUsd": 0.344684
+          },
+          "tier": "below"
+        },
+        {
+          "provider": "string",
+          "agent": {
+            "successes": 23,
+            "tasks": 30,
+            "rate": 0.7666666666666667,
+            "ci": [
+              0.5588235294117647,
+              0.9615384615384616
+            ]
+          },
+          "retrieval": {
+            "successes": 19,
+            "tasks": 27,
+            "rate": 0.7037037037037037,
+            "ci": [
+              0.5142857142857142,
+              0.92
+            ]
+          },
+          "costPerSuccessUsd": 0.01318930434782609,
+          "medianMs": 6844.130190999978,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 2064,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 2,
+            "readLimitHits": 0,
+            "argMismatches": 23,
+            "pagesRead": 45,
+            "agentPassRetrievalFail": [
+              "search-crates-bytes",
+              "search-revenue-0000078003"
+            ]
+          },
+          "tokens": {
+            "input": 148019,
+            "output": 17867,
+            "modelUsd": 0.23735399999999998
+          },
+          "tier": "below"
+        }
+      ],
+      "gaps": [
+        {
+          "provider": "tinyfish",
+          "reference": "linkup",
+          "pairedTasks": 30,
+          "difference": -0.06666666666666667,
+          "ci": [
+            -0.20833333333333334,
+            0.058823529411764705
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "firecrawl",
+          "reference": "linkup",
+          "pairedTasks": 30,
+          "difference": -0.06666666666666667,
+          "ci": [
+            -0.22727272727272727,
+            0.05555555555555555
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "contextdev",
+          "reference": "linkup",
+          "pairedTasks": 30,
+          "difference": -0.1,
+          "ci": [
+            -0.2692307692307692,
+            0.041666666666666664
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "string",
+          "reference": "linkup",
+          "pairedTasks": 30,
+          "difference": -0.16666666666666666,
+          "ci": [
+            -0.3125,
+            -0.03571428571428571
+          ],
+          "resolved": true
+        },
+        {
+          "provider": "you",
+          "reference": "linkup",
+          "pairedTasks": 30,
+          "difference": -0.23333333333333334,
+          "ci": [
+            -0.4583333333333333,
+            -0.058823529411764705
+          ],
+          "resolved": true
+        },
+        {
+          "provider": "browserbase",
+          "reference": "linkup",
+          "pairedTasks": 30,
+          "difference": -0.23333333333333334,
+          "ci": [
+            -0.42857142857142855,
+            -0.05555555555555555
+          ],
+          "resolved": true
+        }
+      ],
+      "controls": {
+        "none": {
+          "successes": 5,
+          "tasks": 30,
+          "rate": 0.16666666666666666,
+          "ci": [
+            0,
+            0.375
+          ]
+        },
+        "correctPage": null
+      },
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 235,
+            "tasks": 277,
+            "rate": 0.8483754512635379,
+            "ci": [
+              0.7822870789191763,
+              0.912906732117812
+            ]
+          },
+          "coverage": null
+        },
+        {
+          "provider": "tinyfish",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 225,
+            "tasks": 277,
+            "rate": 0.8122743682310469,
+            "ci": [
+              0.7521729840208101,
+              0.875
+            ]
+          },
+          "coverage": null
+        },
+        {
+          "provider": "linkup",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 248,
+            "tasks": 277,
+            "rate": 0.8953068592057761,
+            "ci": [
+              0.8278382213812677,
+              0.9511278195488722
+            ]
+          },
+          "coverage": null
+        },
+        {
+          "provider": "you",
+          "tasks": 298,
+          "retrieval": {
+            "successes": 216,
+            "tasks": 277,
+            "rate": 0.779783393501805,
+            "ci": [
+              0.6975794006371964,
+              0.8578204860143109
+            ]
+          },
+          "coverage": null
+        }
+      ]
+    },
+    {
+      "track": "map",
+      "coreTasks": 15,
+      "coreSites": 15,
+      "fullTasks": 60,
+      "leader": "string",
+      "providers": [
+        {
+          "provider": "firecrawl",
+          "agent": {
+            "successes": 13,
+            "tasks": 15,
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.6666666666666666,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 13,
+            "tasks": 15,
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.6666666666666666,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.013207769230769235,
+          "medianMs": 11285.130854000032,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 375,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 0,
+            "pagesRead": 19,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 43951,
+            "output": 10550,
+            "modelUsd": 0.09670100000000001
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "contextdev",
+          "agent": {
+            "successes": 12,
+            "tasks": 15,
+            "rate": 0.8,
+            "ci": [
+              0.6,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 12,
+            "tasks": 15,
+            "rate": 0.8,
+            "ci": [
+              0.6,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.00979383333333333,
+          "medianMs": 6364.941557000013,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 206,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 0,
+            "pagesRead": 20,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 36506,
+            "output": 8284,
+            "modelUsd": 0.07792600000000001
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "string",
+          "agent": {
+            "successes": 14,
+            "tasks": 15,
+            "rate": 0.9333333333333333,
+            "ci": [
+              0.8,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 14,
+            "tasks": 15,
+            "rate": 0.9333333333333333,
+            "ci": [
+              0.8,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.009836499999999998,
+          "medianMs": 8371.415198499986,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 463,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": null,
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 1,
+            "readLimitHits": 0,
+            "argMismatches": 0,
+            "pagesRead": 18,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 36256,
+            "output": 11051,
+            "modelUsd": 0.09151100000000001
+          },
+          "tier": "top"
+        }
+      ],
+      "gaps": [
+        {
+          "provider": "firecrawl",
+          "reference": "string",
+          "pairedTasks": 15,
+          "difference": -0.06666666666666667,
+          "ci": [
+            -0.26666666666666666,
+            0.13333333333333333
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "contextdev",
+          "reference": "string",
+          "pairedTasks": 15,
+          "difference": -0.13333333333333333,
+          "ci": [
+            -0.4,
+            0.13333333333333333
+          ],
+          "resolved": false
+        }
+      ],
+      "controls": {
+        "none": {
+          "successes": 0,
+          "tasks": 15,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        "correctPage": null
+      },
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 60,
+          "retrieval": {
+            "successes": 43,
+            "tasks": 60,
+            "rate": 0.7166666666666667,
+            "ci": [
+              0.4603174603174603,
+              0.9491525423728814
+            ]
+          },
+          "coverage": null
+        },
+        {
+          "provider": "string",
+          "tasks": 60,
+          "retrieval": {
+            "successes": 54,
+            "tasks": 60,
+            "rate": 0.9,
+            "ci": [
+              0.7301587301587301,
+              1
+            ]
+          },
+          "coverage": null
+        }
+      ]
+    },
+    {
+      "track": "crawl",
+      "coreTasks": 12,
+      "coreSites": 12,
+      "fullTasks": 40,
+      "leader": "scrapfly",
+      "providers": [
+        {
+          "provider": "firecrawl",
+          "agent": {
+            "successes": 12,
+            "tasks": 12,
+            "rate": 1,
+            "ci": [
+              1,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 12,
+            "tasks": 12,
+            "rate": 1,
+            "ci": [
+              1,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.08293708333333334,
+          "medianMs": 27101.208119999923,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 93839.5,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": {
+            "expected": 91,
+            "returnedWithTitle": 91,
+            "returnedNoTitle": 0,
+            "exact": 91,
+            "loose": 91
+          },
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 1,
+            "readLimitHits": 0,
+            "argMismatches": 0,
+            "pagesRead": 16,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 326730,
+            "output": 16703,
+            "modelUsd": 0.410245
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "contextdev",
+          "agent": {
+            "successes": 11,
+            "tasks": 12,
+            "rate": 0.9166666666666666,
+            "ci": [
+              0.75,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 11,
+            "tasks": 12,
+            "rate": 0.9166666666666666,
+            "ci": [
+              0.75,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.05857054545454545,
+          "medianMs": 22589.535693000013,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 215015.5,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": {
+            "expected": 91,
+            "returnedWithTitle": 90,
+            "returnedNoTitle": 0,
+            "exact": 42,
+            "loose": 90
+          },
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 2,
+            "readLimitHits": 0,
+            "argMismatches": 0,
+            "pagesRead": 15,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 291851,
+            "output": 19445,
+            "modelUsd": 0.389076
+          },
+          "tier": "top"
+        },
+        {
+          "provider": "scrapfly",
+          "agent": {
+            "successes": 12,
+            "tasks": 12,
+            "rate": 1,
+            "ci": [
+              1,
+              1
+            ]
+          },
+          "retrieval": {
+            "successes": 12,
+            "tasks": 12,
+            "rate": 1,
+            "ci": [
+              1,
+              1
+            ]
+          },
+          "costPerSuccessUsd": 0.03494608333333333,
+          "medianMs": 15188.308131999982,
+          "coverage": null,
+          "medianNoise": null,
+          "medianBytes": 81333.5,
+          "answerFound": null,
+          "answerPast12k": null,
+          "titles": {
+            "expected": 91,
+            "returnedWithTitle": 91,
+            "returnedNoTitle": 0,
+            "exact": 91,
+            "loose": 91
+          },
+          "diagnostics": {
+            "parseFailures": 0,
+            "strictParseFailures": 0,
+            "readLimitHits": 0,
+            "argMismatches": 0,
+            "pagesRead": 18,
+            "agentPassRetrievalFail": []
+          },
+          "tokens": {
+            "input": 325413,
+            "output": 15188,
+            "modelUsd": 0.40135300000000007
+          },
+          "tier": "top"
+        }
+      ],
+      "gaps": [
+        {
+          "provider": "firecrawl",
+          "reference": "scrapfly",
+          "pairedTasks": 12,
+          "difference": 0,
+          "ci": [
+            0,
+            0
+          ],
+          "resolved": false
+        },
+        {
+          "provider": "contextdev",
+          "reference": "scrapfly",
+          "pairedTasks": 12,
+          "difference": -0.08333333333333333,
+          "ci": [
+            -0.25,
+            0
+          ],
+          "resolved": false
+        }
+      ],
+      "controls": {
+        "none": {
+          "successes": 0,
+          "tasks": 12,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        "correctPage": null
+      },
+      "full": [
+        {
+          "provider": "contextdev",
+          "tasks": 40,
+          "retrieval": {
+            "successes": 36,
+            "tasks": 40,
+            "rate": 0.9,
+            "ci": [
+              0.7,
+              1
+            ]
+          },
+          "coverage": null
+        }
+      ]
+    }
+  ]
+}

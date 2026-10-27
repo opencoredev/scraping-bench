@@ -1,0 +1,10 @@
+{
+  "contextdev": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 30,
+    "apiMaxUsd": 132.00759,
+    "maxCallUsd": 0.0022
+  }
+}

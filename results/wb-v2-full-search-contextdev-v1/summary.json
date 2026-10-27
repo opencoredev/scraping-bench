@@ -1,0 +1,157 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 300,
+      "na": 0,
+      "successes": 215,
+      "successRate": 0.7166666666666667,
+      "ci95": [
+        0.597588677547873,
+        0.7908362913227558
+      ],
+      "successfulMedianMs": 7175.997518000018,
+      "successfulP90Ms": 14263.033592000002,
+      "totalUsd": 3.7401210000000082,
+      "costPerSuccessUsd": 0.017395911627907015,
+      "errors": {
+        "other": 14,
+        "rate-limited": 11
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 78,
+          "successRate": 0.38461538461538464
+        },
+        "latest-version": {
+          "tasks": 55,
+          "successRate": 0.8727272727272727
+        },
+        "not-found": {
+          "tasks": 21,
+          "successRate": 1
+        },
+        "fresh": {
+          "tasks": 13,
+          "successRate": 0.3076923076923077
+        },
+        "registry-version": {
+          "tasks": 77,
+          "successRate": 0.8571428571428571
+        },
+        "entity-facts": {
+          "tasks": 28,
+          "successRate": 0.8214285714285714
+        },
+        "company-financials": {
+          "tasks": 28,
+          "successRate": 0.8214285714285714
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 279,
+      "na": 21,
+      "successes": 180,
+      "successRate": 0.6451612903225806,
+      "ci95": [
+        0.5282224084813338,
+        0.7622041708430782
+      ],
+      "successfulMedianMs": 2461.2309644999914,
+      "successfulP90Ms": 4347.43218710007,
+      "totalUsd": 0.7589999999999969,
+      "costPerSuccessUsd": 0.00421666666666665,
+      "errors": {
+        "rate-limited": 5
+      },
+      "families": {
+        "docs-heading": {
+          "tasks": 78,
+          "successRate": 0.7564102564102564
+        },
+        "latest-version": {
+          "tasks": 55,
+          "successRate": 0.6181818181818182
+        },
+        "fresh": {
+          "tasks": 13,
+          "successRate": 0.15384615384615385
+        },
+        "registry-version": {
+          "tasks": 77,
+          "successRate": 0.6623376623376623
+        },
+        "entity-facts": {
+          "tasks": 28,
+          "successRate": 0.9285714285714286
+        },
+        "company-financials": {
+          "tasks": 28,
+          "successRate": 0.2857142857142857
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 300,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 279,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "contextdev": {
+      "usd": 4.028320999999924,
+      "apiUsd": 1.6081999999999959,
+      "modelUsd": 2.420120999999928,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {
+    "rate-limited": 12
+  }
+}

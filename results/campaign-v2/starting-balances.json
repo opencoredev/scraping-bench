@@ -1,0 +1,104 @@
+[
+  {
+    "provider": "firecrawl",
+    "at": "2026-10-19T16:53:37.426Z",
+    "data": {
+      "data": {
+        "remainingCredits": 463
+      }
+    }
+  },
+  {
+    "provider": "linkup",
+    "at": "2026-10-19T16:53:37.673Z",
+    "data": {
+      "balance": 18.904
+    }
+  },
+  {
+    "provider": "tinyfish",
+    "at": "2026-10-19T16:53:38.829Z",
+    "data": {
+      "available_balance": "10",
+      "rates": {
+        "meters": [
+          {
+            "label": "TinyFish Agent",
+            "unit_amount": "0.016",
+            "per": "step"
+          },
+          {
+            "label": "TinyFish Browser",
+            "unit_amount": "0.002",
+            "per": "minute"
+          },
+          {
+            "label": "TinyFish Fetch",
+            "unit_amount": "0",
+            "per": "url"
+          },
+          {
+            "label": "TinyFish Monitor",
+            "unit_amount": "0.005",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Research",
+            "unit_amount": "0",
+            "per": "run"
+          },
+          {
+            "label": "TinyFish Search",
+            "unit_amount": "0",
+            "per": "query"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "provider": "spider",
+    "at": "2026-10-19T16:53:39.064Z",
+    "data": {
+      "data": {
+        "credits": 2428.905325
+      }
+    }
+  },
+  {
+    "provider": "scrapfly",
+    "at": "2026-10-19T16:53:39.604Z",
+    "data": {
+      "subscription": {
+        "usage": {
+          "scrape": {
+            "remaining": 309
+          }
+        }
+      }
+    }
+  },
+  {
+    "provider": "you",
+    "at": "2026-10-19T16:53:40.194Z",
+    "data": {
+      "data": {
+        "attributes": {
+          "balance": 10000
+        }
+      }
+    }
+  },
+  {
+    "provider": "contextdev",
+    "at": "2026-10-19T16:53:40.365Z",
+    "status": 404,
+    "error": "Balance unavailable"
+  },
+  {
+    "provider": "jina",
+    "at": "2026-10-19T16:53:41.022Z",
+    "status": 200,
+    "error": "Balance unavailable"
+  }
+]

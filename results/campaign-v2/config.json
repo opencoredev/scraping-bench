@@ -1,0 +1,133 @@
+{
+  "runPrefix": "wb-v2-",
+  "seed": 19019,
+  "concurrency": 4,
+  "providerSets": {
+    "search": [
+      "firecrawl",
+      "contextdev",
+      "tinyfish",
+      "linkup",
+      "browserbase",
+      "you"
+    ],
+    "scrape": [
+      "firecrawl",
+      "contextdev",
+      "tinyfish",
+      "spider",
+      "linkup",
+      "scrapfly",
+      "browserbase",
+      "you",
+      "jina"
+    ],
+    "map": [
+      "firecrawl",
+      "contextdev"
+    ],
+    "crawl": [
+      "firecrawl",
+      "contextdev",
+      "scrapfly"
+    ]
+  },
+  "fullProviders": [
+    "contextdev",
+    "linkup",
+    "you"
+  ],
+  "caps": {
+    "firecrawl": 2.19925,
+    "contextdev": 132.02739,
+    "tinyfish": 0,
+    "spider": 0.230746005875,
+    "linkup": 17.9588,
+    "scrapfly": 0.0440325,
+    "browserbase": 3,
+    "you": 95,
+    "none": 0,
+    "oracle": 0,
+    "jina": 0.041737555
+  },
+  "bounds": {
+    "search": {
+      "firecrawl": 0.01,
+      "contextdev": 0.022,
+      "tinyfish": 0,
+      "linkup": 0.005,
+      "browserbase": 0.005,
+      "you": 0.005
+    },
+    "scrape": {
+      "firecrawl": 0.06,
+      "contextdev": 0.0022,
+      "tinyfish": 0,
+      "spider": 0.02,
+      "linkup": 0.005,
+      "scrapfly": 0.005,
+      "browserbase": 0.004,
+      "you": 0.001,
+      "jina": 0.00025
+    },
+    "map": {
+      "firecrawl": 0.005,
+      "contextdev": 0.0022
+    },
+    "crawl": {
+      "firecrawl": 0.15,
+      "contextdev": 0.066,
+      "scrapfly": 0.0042
+    }
+  },
+  "pacing": {
+    "firecrawl": {
+      "search": 7,
+      "scrape": 7,
+      "map": 7,
+      "crawl": 65
+    }
+  },
+  "excluded": [
+    {
+      "provider": "jina",
+      "track": "search",
+      "reason": "No hard per-call token-charge bound; previous search used 618754 tokens."
+    },
+    {
+      "provider": "exa",
+      "reason": "Excluded from v2 by owner."
+    },
+    {
+      "provider": "tavily",
+      "reason": "Excluded from v2 by owner."
+    },
+    {
+      "provider": "perplexity",
+      "reason": "Excluded from v2 by owner."
+    },
+    {
+      "provider": "brightdata",
+      "reason": "Excluded from v2 by owner."
+    },
+    {
+      "provider": "parallel",
+      "reason": "Excluded from v2 by owner."
+    },
+    {
+      "provider": "spider",
+      "track": "search",
+      "reason": "No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape."
+    },
+    {
+      "provider": "spider",
+      "track": "map",
+      "reason": "No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape."
+    },
+    {
+      "provider": "spider",
+      "track": "crawl",
+      "reason": "No defensible metered multi-page/search bound within the remaining free wallet; restricted to single-page scrape."
+    }
+  ]
+}

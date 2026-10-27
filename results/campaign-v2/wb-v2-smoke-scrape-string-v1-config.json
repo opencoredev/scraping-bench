@@ -1,0 +1,10 @@
+{
+  "string": {
+    "concurrency": 1,
+    "perSecond": 1,
+    "burst": 1,
+    "maxUsd": 30,
+    "apiMaxUsd": 0.05,
+    "maxCallUsd": 0.006
+  }
+}

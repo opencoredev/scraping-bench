@@ -1,0 +1,122 @@
+{
+  "methodology": {
+    "bootstrap": "paired site-clustered percentile bootstrap; resample sites with replacement, retaining all tasks per site",
+    "samples": 2000,
+    "seed": 19019,
+    "multiplicity": "Exploratory unadjusted 95% intervals. Multiple comparisons and selecting the best on these same data increase false-positive risk; unresolved is not a tie.",
+    "cost": "Total API and estimated model spend, including failures, divided by successful tasks. n/a excluded from success denominator.",
+    "pricing": "Model list-price estimates; verify frozen prices before publishing."
+  },
+  "groups": [
+    {
+      "track": "search",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 2,
+      "successRate": 0.6666666666666666,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 12271.896959999998,
+      "successfulP90Ms": 12460.320336800001,
+      "totalUsd": 0.060311,
+      "costPerSuccessUsd": 0.0301555,
+      "errors": {},
+      "families": {
+        "company-financials": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "docs-heading": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "registry-version": {
+          "tasks": 1,
+          "successRate": 1
+        }
+      }
+    },
+    {
+      "track": "search",
+      "provider": "contextdev",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "tasks": 3,
+      "na": 0,
+      "successes": 1,
+      "successRate": 0.3333333333333333,
+      "ci95": [
+        0,
+        1
+      ],
+      "successfulMedianMs": 1330.9393559999953,
+      "successfulP90Ms": 1330.9393559999953,
+      "totalUsd": 0.006600000000000002,
+      "costPerSuccessUsd": 0.006600000000000002,
+      "errors": {},
+      "families": {
+        "company-financials": {
+          "tasks": 1,
+          "successRate": 0
+        },
+        "docs-heading": {
+          "tasks": 1,
+          "successRate": 1
+        },
+        "registry-version": {
+          "tasks": 1,
+          "successRate": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "agent",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    },
+    {
+      "track": "search",
+      "lane": "default",
+      "mode": "raw",
+      "cohort": "content-api",
+      "provider": "contextdev",
+      "reference": "contextdev",
+      "pairedTasks": 3,
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "interpretation": "unresolved"
+    }
+  ],
+  "providerSpend": {
+    "contextdev": {
+      "usd": 0.062511,
+      "apiUsd": 0.019800000000000005,
+      "modelUsd": 0.04271099999999999,
+      "maxUsd": 30,
+      "reached": false
+    }
+  },
+  "callErrors": {}
+}

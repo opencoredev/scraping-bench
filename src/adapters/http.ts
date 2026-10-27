@@ -62,14 +62,17 @@ function errorMessage(raw: string): string {
 export function redact(message: string): string {
   let result = message;
   for (const [name, value] of Object.entries(process.env)) {
-    if (/KEY|TOKEN|SECRET|PASSWORD/.test(name) && value && value.length > 3) result = result.split(value).join('[REDACTED]');
+    if (/KEY|TOKEN|SECRET|PASSWORD/.test(name) && value && value.length > 3) {
+      result = result.split(JSON.stringify(value).slice(1, -1)).join('[REDACTED]').split(value).join('[REDACTED]');
+    }
   }
-  return result.replace(/Bearer\s+\S+/gi, 'Bearer [REDACTED]');
+  return result.replace(/Bearer\s+[^\s"'<>\\]+/gi, 'Bearer [REDACTED]');
 }
-export type ResponseEvent = { readonly origin: string; readonly path: string; readonly status: number; readonly headers: Readonly<Record<string, string>> };
-// Used only by smoke tooling; never includes request headers, query strings, or bodies.
+export type ResponseEvent = { readonly origin: string; readonly path: string; readonly status: number; readonly headers: Readonly<Record<string, string>>; readonly errorBody?: string };
+// Used only by smoke tooling; native error bodies are redacted before retention.
+// Never includes request headers, query strings, or request bodies.
 export const responseEvents: ResponseEvent[] = [];
-const safeHeaders = ['x-credits-used', 'x-credits-remaining', 'x-scrapfly-api-cost', 'x-scrapfly-remaining-api-credit', 'x-request-cost', 'x-usage-tokens', 'x-ratelimit-remaining', 'x-ratelimit-remaining-requests', 'x-free-requests-remaining', 'x-free-allowance-remaining'];
+const safeHeaders = ['x-credits-used', 'x-credits-remaining', 'x-scrapfly-api-cost', 'x-scrapfly-remaining-api-credit', 'x-billed-request-type', 'x-request-cost', 'x-usage-tokens', 'x-ratelimit-remaining', 'x-ratelimit-remaining-requests', 'x-free-requests-remaining', 'x-free-allowance-remaining'];
 
 // The shared Billing contract cannot represent unknown cost. Keep the distinction
 // in memory so the runner retains its configured reservation instead of refunding it.
@@ -83,6 +86,7 @@ export function reserveUnknownBilling(billing: Billing, upperUsd: number): Billi
 export class Session {
   billing: Billing = reserveUnknownBilling({ usd: 0, basis: 'list-price', credits: null }, 0);
   status: number | null = null;
+  errorBody: string | undefined;
   headers = new Headers();
   readonly signal: AbortSignal;
   constructor(signal: AbortSignal) { this.signal = signal; }
@@ -101,13 +105,18 @@ export class Session {
     this.headers = response.headers;
     const headers: Record<string, string> = {};
     for (const name of safeHeaders) { const value = response.headers.get(name); if (value !== null) headers[name] = value; }
-    if (process.env.SCRAPING_BENCH_SMOKE === '1') { const u = new URL(url); responseEvents.push({ origin: u.origin, path: u.pathname, status: response.status, headers }); }
     const used = response.headers.get('x-credits-used');
     if (new URL(url).origin === 'https://api.context.dev' && used !== null && Number.isFinite(Number(used))) this.reported(Number(used), pricing.contextdev.credit);
     const scrapfly = response.headers.get('x-scrapfly-api-cost');
     if (new URL(url).origin === 'https://api.scrapfly.io' && scrapfly !== null && Number.isFinite(Number(scrapfly))) this.reported(Number(scrapfly), pricing.scrapfly.credit);
+    const errorBody = response.ok ? undefined : redact(await response.text());
+    this.errorBody = errorBody;
+    if (process.env.WEB_BENCH_SMOKE === '1') {
+      const u = new URL(url);
+      responseEvents.push({ origin: u.origin, path: u.pathname, status: response.status, headers, ...(errorBody === undefined ? {} : { errorBody }) });
+    }
     if (!response.ok) {
-      const message = errorMessage(await response.text());
+      const message = errorMessage(errorBody ?? '');
       throw new ApiError(classify(message, response.status), redact(message), response.status);
     }
     return response;
@@ -115,7 +124,7 @@ export class Session {
   async json<T>(url: string, schema: z.ZodType<T>, options: Parameters<Session['response']>[1] = {}): Promise<T> {
     const response = await this.response(url, options);
     const raw: unknown = await response.json();
-    if (process.env.SCRAPING_BENCH_SMOKE === '1') {
+    if (process.env.WEB_BENCH_SMOKE === '1') {
       await mkdir(new URL('../../tmp/responses/', import.meta.url), { recursive: true });
       const name = `${Date.now()}-${new URL(url).hostname}-${new URL(url).pathname.replace(/[^a-zA-Z0-9]/g, '_')}.json`;
       await writeFile(new URL(`../../tmp/responses/${name}`, import.meta.url), redact(JSON.stringify(raw)), { mode: 0o600 });
@@ -155,7 +164,7 @@ export async function operation(ctx: CallContext, work: (session: Session) => Pr
     if (signal.aborted) session.billing = reserveUnknownBilling(session.billing, 0);
     const category = signal.aborted ? 'timeout' : error instanceof ApiError ? error.category : error instanceof TypeError ? 'network' : 'other';
     const message = signal.aborted ? (ctx.signal.aborted ? 'Caller cancelled' : 'Deadline exceeded') : error instanceof Error ? redact(error.message).slice(0, 400) : 'Unknown provider failure';
-    return { kind: 'error', error: category, message, status: error instanceof ApiError ? error.status ?? session.status : session.status, ms: performance.now() - start, billing: session.billing };
+    return { kind: 'error', error: category, message, status: error instanceof ApiError ? error.status ?? session.status : session.status, ...(session.errorBody === undefined ? {} : { nativeErrorBody: session.errorBody }), ms: performance.now() - start, billing: session.billing };
   } finally { clearTimeout(timer); }
 }
 export const nullableText = z.string().nullish().transform(value => value ?? null);

@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // A static site: every number comes from src/data/results.json at build time.
   output: "export",
+  experimental: { cpus: 4 },
   turbopack: {
     rules: {
       "*.css": {

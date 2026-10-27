@@ -1,0 +1,32 @@
+[
+  {
+    "id": "search-fresh-fastapi-fastapi",
+    "kind": "confirmed-drift",
+    "reason": "Live key changed during pre-freeze screening; see screen-verification-pre-oracle-fix.log"
+  },
+  {
+    "id": "search-pypi-fastapi",
+    "kind": "confirmed-drift",
+    "reason": "Live key changed during pre-freeze screening; see screen-verification-pre-oracle-fix.log"
+  },
+  {
+    "id": "search-page-https-rich-readthedocs-io-en-latest",
+    "kind": "source-error",
+    "reason": "Rich documentation host repeatedly failed independent source fetches during screening; excluded before freeze."
+  },
+  {
+    "id": "search-page-https-rich-readthedocs-io-en-stable",
+    "kind": "source-error",
+    "reason": "Rich documentation host repeatedly failed independent source fetches during screening; excluded before freeze."
+  },
+  {
+    "id": "scrape-page-https-rich-readthedocs-io-en-latest",
+    "kind": "source-error",
+    "reason": "Rich documentation host repeatedly failed independent source fetches during screening; excluded before freeze."
+  },
+  {
+    "id": "scrape-page-https-rich-readthedocs-io-en-stable",
+    "kind": "source-error",
+    "reason": "Rich documentation host repeatedly failed independent source fetches during screening; excluded before freeze."
+  }
+]

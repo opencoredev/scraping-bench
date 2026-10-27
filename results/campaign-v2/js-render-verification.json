@@ -1,0 +1,56 @@
+[
+  {
+    "id": "fixture-v2-js-19019-0-scrape-js-rendered-field-102",
+    "url": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-0/resources/js",
+    "at": "2026-10-19T17:15:33.238Z",
+    "renderedSnapshotHash": "f2df0a035674206cc3d8c59764002d30707b3a3737b59d20b758e9c5ffc35e2e",
+    "plainHash": "9e4850ad1d1b7415f65c07a5ecaf97181578d160f58f1c00e296344e88388022",
+    "answerVisible": true,
+    "answerAbsentFromPlain": true
+  },
+  {
+    "id": "fixture-v2-js-19019-1-scrape-js-rendered-field-102",
+    "url": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-1/resources/js",
+    "at": "2026-10-19T17:15:35.156Z",
+    "renderedSnapshotHash": "11c2dc74ad6cb450d80d1badb7cc25d7d8be9848a29d6fa7e5dc657f1e7dfaef",
+    "plainHash": "7addb44f6a760477c26c457699d5ea42ad67e7f2d31c46a29387f5db8b68126e",
+    "answerVisible": true,
+    "answerAbsentFromPlain": true
+  },
+  {
+    "id": "fixture-v2-js-19019-2-scrape-js-rendered-field-102",
+    "url": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-2/resources/js",
+    "at": "2026-10-19T17:15:37.078Z",
+    "renderedSnapshotHash": "d9be3d0f02c2608d202eb0c476f30d0b48023a24b376d24221c6d01d853414dc",
+    "plainHash": "50dcd30f87bd6a397619bacd816c88349d9fef760ba7d85a0d3c0e1ef9e0a469",
+    "answerVisible": true,
+    "answerAbsentFromPlain": true
+  },
+  {
+    "id": "fixture-v2-js-19019-3-scrape-js-rendered-field-102",
+    "url": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-3/resources/js",
+    "at": "2026-10-19T17:15:39.000Z",
+    "renderedSnapshotHash": "9c145009c32da406c4972a6c0f3e9c9c19664a19bb43c564062b01fdd8f9c737",
+    "plainHash": "e5d34d60cdd80cdf33b8a8f30cb3d7494ab6038e2a3260f903ab1752c895651b",
+    "answerVisible": true,
+    "answerAbsentFromPlain": true
+  },
+  {
+    "id": "fixture-v2-js-19019-4-scrape-js-rendered-field-102",
+    "url": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-4/resources/js",
+    "at": "2026-10-19T17:15:40.931Z",
+    "renderedSnapshotHash": "594555b934e61e8bbb0ee1983b9be3b64e031d33700926acb728ef794040f931",
+    "plainHash": "3e3e2c1befae4104e86286e2a356a8609562c4d3bd098f04dcfdb69d6369cf4a",
+    "answerVisible": true,
+    "answerAbsentFromPlain": true
+  },
+  {
+    "id": "fixture-v2-js-19019-5-scrape-js-rendered-field-102",
+    "url": "https://northstar-instruments.leoisadev.workers.dev/r/v2-js-19019-5/resources/js",
+    "at": "2026-10-19T17:15:42.819Z",
+    "renderedSnapshotHash": "b74abdc4cbae9e65a0c32d7b0067354446e1b49aa19630fa9bc97a02adc7f1b9",
+    "plainHash": "4adc80a6cc4c115e8d90ec8d0941ad404b30f85827005967157774b7259ffb9e",
+    "answerVisible": true,
+    "answerAbsentFromPlain": true
+  }
+]

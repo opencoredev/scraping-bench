@@ -1,0 +1,663 @@
+{
+  "runId": "wb-20261017-final",
+  "generatedAt": "2026-10-26T14:07:01.077Z",
+  "tracks": [
+    {
+      "id": "search",
+      "label": "Search",
+      "what": "Find a fact on the live web: a package's latest version, a filing figure, a release date.",
+      "tasks": 60,
+      "limits": {
+        "seconds": 60,
+        "usd": 0.1,
+        "calls": 3
+      },
+      "providers": [
+        {
+          "id": "contextdev",
+          "label": "Context.dev",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.75,
+            "ci": [
+              0.5166666666666667,
+              0.9629629629629629
+            ],
+            "successes": 45,
+            "tasks": 60,
+            "medianMs": 5207.56214100006,
+            "costPerSuccessUsd": 0.018178666666666662
+          },
+          "raw": {
+            "rate": 0.5471698113207547,
+            "ci": [
+              0.23076923076923078,
+              0.8378378378378378
+            ],
+            "successes": 29,
+            "tasks": 53,
+            "medianMs": 790.069067000004,
+            "costPerSuccessUsd": 0.004551724137931033
+          },
+          "tuned": null
+        },
+        {
+          "id": "firecrawl",
+          "label": "Firecrawl",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.85,
+            "ci": [
+              0.6896551724137931,
+              1
+            ],
+            "successes": 51,
+            "tasks": 60,
+            "medianMs": 10980.079451999976,
+            "costPerSuccessUsd": 0.030411666666666677
+          },
+          "raw": {
+            "rate": 0.4716981132075472,
+            "ci": [
+              0.19672131147540983,
+              0.8169014084507042
+            ],
+            "successes": 25,
+            "tasks": 53,
+            "medianMs": 900.9658620000118,
+            "costPerSuccessUsd": 0.02400000000000001
+          },
+          "tuned": null
+        },
+        {
+          "id": "tinyfish",
+          "label": "TinyFish",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.7333333333333333,
+            "ci": [
+              0.47058823529411764,
+              0.96
+            ],
+            "successes": 44,
+            "tasks": 60,
+            "medianMs": 5329.966954500007,
+            "costPerSuccessUsd": 0.013118613636363637
+          },
+          "raw": {
+            "rate": 0.4716981132075472,
+            "ci": [
+              0.18302932348187492,
+              0.86
+            ],
+            "successes": 25,
+            "tasks": 53,
+            "medianMs": 1128.6130670000566,
+            "costPerSuccessUsd": 0
+          },
+          "tuned": null
+        },
+        {
+          "id": "browserbase",
+          "label": "Browserbase",
+          "cohort": "browser-infra",
+          "agent": {
+            "rate": 0.38333333333333336,
+            "ci": [
+              0.20967741935483872,
+              0.5882352941176471
+            ],
+            "successes": 23,
+            "tasks": 60,
+            "medianMs": 11819.754083000007,
+            "costPerSuccessUsd": 0.05970521739130429
+          },
+          "raw": {
+            "rate": 0.018867924528301886,
+            "ci": [
+              0,
+              0.05
+            ],
+            "successes": 1,
+            "tasks": 53,
+            "medianMs": 4543.309635000012,
+            "costPerSuccessUsd": 0.30000000000000016
+          },
+          "tuned": null
+        },
+        {
+          "id": "linkup",
+          "label": "Linkup",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.8333333333333334,
+            "ci": [
+              0.6538461538461539,
+              0.9714285714285714
+            ],
+            "successes": 50,
+            "tasks": 60,
+            "medianMs": 5268.983600500011,
+            "costPerSuccessUsd": 0.02551535999999999
+          },
+          "raw": {
+            "rate": 0.6792452830188679,
+            "ci": [
+              0.27906976744186046,
+              0.9672131147540983
+            ],
+            "successes": 36,
+            "tasks": 53,
+            "medianMs": 1235.9031949999917,
+            "costPerSuccessUsd": 0.008333333333333338
+          },
+          "tuned": null
+        }
+      ],
+      "controls": {
+        "none": {
+          "rate": 0.23333333333333334,
+          "ci": [
+            0,
+            0.5
+          ],
+          "successes": 14,
+          "tasks": 60,
+          "medianMs": 2239.6460270000016,
+          "costPerSuccessUsd": 0.010735357142857144
+        },
+        "oracle": null
+      },
+      "detected": [
+        {
+          "provider": "Browserbase",
+          "reference": "Firecrawl",
+          "difference": -0.4666666666666667,
+          "ci": [
+            -0.6296296296296297,
+            -0.31666666666666665
+          ],
+          "pairedTasks": 60
+        }
+      ]
+    },
+    {
+      "id": "scrape",
+      "label": "Scrape",
+      "what": "Read one page and pull out exact fields: prices, versions, install commands.",
+      "tasks": 60,
+      "limits": {
+        "seconds": 60,
+        "usd": 0.1,
+        "calls": 2
+      },
+      "providers": [
+        {
+          "id": "browserbase",
+          "label": "Browserbase",
+          "cohort": "browser-infra",
+          "agent": {
+            "rate": 0.8166666666666667,
+            "ci": [
+              0.78,
+              1
+            ],
+            "successes": 49,
+            "tasks": 60,
+            "medianMs": 3268.019280999957,
+            "costPerSuccessUsd": 0.011197938775510207
+          },
+          "raw": {
+            "rate": 0.6727272727272727,
+            "ci": [
+              0.6,
+              1
+            ],
+            "successes": 37,
+            "tasks": 55,
+            "medianMs": 530.4833929999731,
+            "costPerSuccessUsd": 0.006486486486486491
+          },
+          "tuned": null
+        },
+        {
+          "id": "linkup",
+          "label": "Linkup",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.9,
+            "ci": [
+              0.9,
+              0.9
+            ],
+            "successes": 54,
+            "tasks": 60,
+            "medianMs": 3391.3508770000044,
+            "costPerSuccessUsd": 0.00596003703703704
+          },
+          "raw": {
+            "rate": 0.9090909090909091,
+            "ci": [
+              0.9,
+              0.9111111111111111
+            ],
+            "successes": 50,
+            "tasks": 55,
+            "medianMs": 532.2697520000038,
+            "costPerSuccessUsd": 0.001200000000000001
+          },
+          "tuned": {
+            "rate": 0.9,
+            "ci": [
+              0.9,
+              0.9
+            ],
+            "successes": 54,
+            "tasks": 60,
+            "medianMs": 3484.2660974999962,
+            "costPerSuccessUsd": 0.010392555555555563
+          }
+        },
+        {
+          "id": "contextdev",
+          "label": "Context.dev",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.9166666666666666,
+            "ci": [
+              0.9,
+              1
+            ],
+            "successes": 55,
+            "tasks": 60,
+            "medianMs": 3748.5406289999955,
+            "costPerSuccessUsd": 0.007233145454545448
+          },
+          "raw": {
+            "rate": 0.9272727272727272,
+            "ci": [
+              0.9111111111111111,
+              1
+            ],
+            "successes": 51,
+            "tasks": 55,
+            "medianMs": 1168.3325520000071,
+            "costPerSuccessUsd": 0.0025882352941176447
+          },
+          "tuned": {
+            "rate": 0.9166666666666666,
+            "ci": [
+              0.9,
+              1
+            ],
+            "successes": 55,
+            "tasks": 60,
+            "medianMs": 3523.7049189999816,
+            "costPerSuccessUsd": 0.006874490909090902
+          }
+        },
+        {
+          "id": "firecrawl",
+          "label": "Firecrawl",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.9,
+            "ci": [
+              0.9,
+              0.9
+            ],
+            "successes": 54,
+            "tasks": 60,
+            "medianMs": 3254.0725804999965,
+            "costPerSuccessUsd": 0.012154962962962966
+          },
+          "raw": {
+            "rate": 0.9272727272727272,
+            "ci": [
+              0.9,
+              0.9333333333333333
+            ],
+            "successes": 51,
+            "tasks": 55,
+            "medianMs": 643.3585789999925,
+            "costPerSuccessUsd": 0.008039215686274514
+          },
+          "tuned": {
+            "rate": 0.8166666666666667,
+            "ci": [
+              0.8,
+              0.9
+            ],
+            "successes": 49,
+            "tasks": 60,
+            "medianMs": 3555.816853999997,
+            "costPerSuccessUsd": 0.02239730612244895
+          }
+        },
+        {
+          "id": "scrapfly",
+          "label": "Scrapfly",
+          "cohort": "scraping-infra",
+          "agent": {
+            "rate": 0.8833333333333333,
+            "ci": [
+              0.8,
+              0.9
+            ],
+            "successes": 53,
+            "tasks": 60,
+            "medianMs": 4983.281059000001,
+            "costPerSuccessUsd": 0.0060683396226415085
+          },
+          "raw": {
+            "rate": 0.7818181818181819,
+            "ci": [
+              0.7,
+              0.8
+            ],
+            "successes": 43,
+            "tasks": 55,
+            "medianMs": 2070.551214999985,
+            "costPerSuccessUsd": 0.00020930232558139544
+          },
+          "tuned": {
+            "rate": 0.9166666666666666,
+            "ci": [
+              0.9,
+              1
+            ],
+            "successes": 55,
+            "tasks": 60,
+            "medianMs": 8726.472016,
+            "costPerSuccessUsd": 0.006205963636363641
+          }
+        },
+        {
+          "id": "jina",
+          "label": "Jina",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.6,
+              0.92
+            ],
+            "successes": 52,
+            "tasks": 60,
+            "medianMs": 3823.9309265000047,
+            "costPerSuccessUsd": 0.005697351923076923
+          },
+          "raw": {
+            "rate": 0.9272727272727272,
+            "ci": [
+              0.9,
+              0.9333333333333333
+            ],
+            "successes": 51,
+            "tasks": 55,
+            "medianMs": 1052.7763979999872,
+            "costPerSuccessUsd": 0.00011678333333333336
+          },
+          "tuned": {
+            "rate": 0.8666666666666667,
+            "ci": [
+              0.6,
+              0.92
+            ],
+            "successes": 52,
+            "tasks": 60,
+            "medianMs": 3882.248972500005,
+            "costPerSuccessUsd": 0.005862594230769232
+          }
+        },
+        {
+          "id": "spider",
+          "label": "Spider",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.2,
+            "ci": [
+              0.04,
+              1
+            ],
+            "successes": 12,
+            "tasks": 60,
+            "medianMs": 4554.847225000005,
+            "costPerSuccessUsd": 0.024751607249999998
+          },
+          "raw": {
+            "rate": 0.18181818181818182,
+            "ci": [
+              0,
+              1
+            ],
+            "successes": 10,
+            "tasks": 55,
+            "medianMs": 1427.5692124999987,
+            "costPerSuccessUsd": 0.00042042869999999767
+          },
+          "tuned": null
+        },
+        {
+          "id": "tinyfish",
+          "label": "TinyFish",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.9,
+            "ci": [
+              0.8,
+              0.92
+            ],
+            "successes": 54,
+            "tasks": 60,
+            "medianMs": 3540.4633119999853,
+            "costPerSuccessUsd": 0.004336574074074076
+          },
+          "raw": {
+            "rate": 0.9090909090909091,
+            "ci": [
+              0.8,
+              0.9333333333333333
+            ],
+            "successes": 50,
+            "tasks": 55,
+            "medianMs": 717.3520470000076,
+            "costPerSuccessUsd": 0
+          },
+          "tuned": null
+        }
+      ],
+      "controls": {
+        "none": {
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ],
+          "successes": 0,
+          "tasks": 60,
+          "medianMs": null,
+          "costPerSuccessUsd": null
+        },
+        "oracle": {
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ],
+          "successes": 60,
+          "tasks": 60,
+          "medianMs": 2783.0426414999984,
+          "costPerSuccessUsd": 0.0038428333333333344
+        }
+      },
+      "detected": []
+    },
+    {
+      "id": "map",
+      "label": "Map",
+      "what": "List every URL in a section of a site nobody has indexed yet.",
+      "tasks": 15,
+      "limits": {
+        "seconds": 120,
+        "usd": 0.25,
+        "calls": 2
+      },
+      "providers": [
+        {
+          "id": "contextdev",
+          "label": "Context.dev",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.4666666666666667,
+            "ci": [
+              0.1111111111111111,
+              1
+            ],
+            "successes": 7,
+            "tasks": 15,
+            "medianMs": 6050.7148959999995,
+            "costPerSuccessUsd": 0.018417428571428567
+          },
+          "raw": {
+            "rate": 0.2,
+            "ci": [
+              0.03571428571428571,
+              0.8333333333333334
+            ],
+            "successes": 3,
+            "tasks": 15,
+            "medianMs": 1550.3851510000004,
+            "costPerSuccessUsd": 0.011000000000000001
+          },
+          "tuned": null
+        },
+        {
+          "id": "firecrawl",
+          "label": "Firecrawl",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.4,
+            "ci": [
+              0.10714285714285714,
+              1
+            ],
+            "successes": 6,
+            "tasks": 15,
+            "medianMs": 10922.552734999997,
+            "costPerSuccessUsd": 0.033462166666666675
+          },
+          "raw": {
+            "rate": 0.2,
+            "ci": [
+              0.03571428571428571,
+              0.8333333333333334
+            ],
+            "successes": 3,
+            "tasks": 15,
+            "medianMs": 7519.943307000001,
+            "costPerSuccessUsd": 0.024999999999999998
+          },
+          "tuned": null
+        }
+      ],
+      "controls": {
+        "none": {
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ],
+          "successes": 0,
+          "tasks": 15,
+          "medianMs": null,
+          "costPerSuccessUsd": null
+        },
+        "oracle": null
+      },
+      "detected": []
+    },
+    {
+      "id": "crawl",
+      "label": "Crawl",
+      "what": "Read a whole section of a site and return every record in it.",
+      "tasks": 10,
+      "limits": {
+        "seconds": 600,
+        "usd": 2,
+        "calls": 1
+      },
+      "providers": [
+        {
+          "id": "scrapfly",
+          "label": "Scrapfly",
+          "cohort": "scraping-infra",
+          "agent": {
+            "rate": 0.7,
+            "ci": [
+              0,
+              0.9545454545454546
+            ],
+            "successes": 7,
+            "tasks": 10,
+            "medianMs": 14468.681247,
+            "costPerSuccessUsd": 0.028825142857142855
+          },
+          "raw": null,
+          "tuned": null
+        },
+        {
+          "id": "firecrawl",
+          "label": "Firecrawl",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.5,
+            "ci": [
+              0,
+              0.6818181818181818
+            ],
+            "successes": 5,
+            "tasks": 10,
+            "medianMs": 60400.72814899997,
+            "costPerSuccessUsd": 0.1421524
+          },
+          "raw": null,
+          "tuned": null
+        },
+        {
+          "id": "contextdev",
+          "label": "Context.dev",
+          "cohort": "content-api",
+          "agent": {
+            "rate": 0.6,
+            "ci": [
+              0,
+              0.8181818181818182
+            ],
+            "successes": 6,
+            "tasks": 10,
+            "medianMs": 18317.32935949999,
+            "costPerSuccessUsd": 0.07584266666666667
+          },
+          "raw": null,
+          "tuned": null
+        }
+      ],
+      "controls": {
+        "none": {
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ],
+          "successes": 0,
+          "tasks": 10,
+          "medianMs": null,
+          "costPerSuccessUsd": null
+        },
+        "oracle": null
+      },
+      "detected": []
+    }
+  ]
+}

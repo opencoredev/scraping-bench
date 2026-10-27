@@ -1,0 +1,10 @@
+{
+  "src/agent/evidence.ts": "52cb9c564c575c758bcd9759f53ea9111ce9b8ebf8f58197f310eeb0848fbd49",
+  "src/agent/index.ts": "2650ab0d2813383469805c960be56ab2503737ac8103953a83be44c11f3aa2f7",
+  "src/agent/tools.ts": "be73788df8aa28a400d8130d757231afd2ed8fd05efdb1f3a59e1b0700ce8a50",
+  "src/run/replay.ts": "b2a6f08e4d2fd16715f1dae344c906a44aa2f61105c0c04b8149d91720079735",
+  "src/tasks/expanded.ts": "4688beab832069a0b3f8584e337c2b3155253fa6b2a8cdd07844bc902b3a2de2",
+  "src/grade/index.ts": "99b9b5fcbe18449bcf3d5626e048ea0c469be1413181ef5f8e6239a6554e57be",
+  "scripts/replay-crawl-v2.mjs": "15994a95f165b4549876370fbb881186f80e8e62baf0ea33872a579585bd7884",
+  "scripts/analyze-corrections-v2.mjs": "b872b78a10c001883f6cf678db31f54b0da25eea9459c16ff8d39eff36615440"
+}

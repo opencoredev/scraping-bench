@@ -2,7 +2,7 @@ import Link from "next/link";
 import { comparisons, providers, tracks } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
 import { results } from "@/lib/results";
-import { NOT_TESTED, REPO, RESULTS_JSON, SITE_URL } from "@/lib/site";
+import { REPO, RESULTS_JSON, SITE_URL, notTestedText } from "@/lib/site";
 
 /** Header, footer, breadcrumbs and JSON-LD shared by every page. Server components: no client JS. */
 
@@ -60,7 +60,8 @@ const FooterLink = ({ href, children }: { href: string; children: React.ReactNod
   </li>
 );
 
-export function SiteFooter() {
+/** `runLine` is off on pages whose BenchPage already names its own run. */
+export function SiteFooter({ runLine = true }: { runLine?: boolean }) {
   return (
     <footer className="border-t border-border pt-10 pb-8 text-xs text-muted-foreground">
       <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
@@ -104,12 +105,14 @@ export function SiteFooter() {
           </li>
         </FooterColumn>
       </div>
-      <div className="mt-10 flex flex-wrap justify-between gap-2 border-t border-border pt-6">
-        <span>
-          Run {results.runId}, {ranOn}, all from one server
-        </span>
-        <span>Not tested: {NOT_TESTED}. Parallel was tested, but its terms need written consent to publish results.</span>
-      </div>
+      {runLine ? (
+        <div className="mt-10 flex flex-wrap justify-between gap-2 border-t border-border pt-6">
+          <span>
+            Run {results.runId}, {ranOn}, all from one server
+          </span>
+          <span>{notTestedText(results)}</span>
+        </div>
+      ) : null}
     </footer>
   );
 }

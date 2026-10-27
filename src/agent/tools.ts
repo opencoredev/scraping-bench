@@ -62,6 +62,7 @@ export async function invoke(
   ctx: CallContext,
   maxCallUsd = 0,
 ): Promise<ToolOutcome> {
+  if (process.env.WEB_BENCH_REPLAY_ONLY === "1") throw new Error("Provider dispatch forbidden in replay");
   const start = performance.now();
   try {
     let result: ToolOutcome | undefined;

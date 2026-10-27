@@ -1,0 +1,79 @@
+[
+  {
+    "id": "search-page-https-docs-getdbt-com-blog-ai-eval-in-dbt",
+    "track": "search",
+    "family": "docs-heading",
+    "instruction": "Read the documentation at https://docs.getdbt.com/blog/ai-eval-in-dbt. Return JSON with string field \"heading\", the first level-one heading on that page. Omit the heading's permalink marker.",
+    "input": {
+      "track": "search",
+      "query": "https://docs.getdbt.com/blog/ai-eval-in-dbt AI Evaluation in dbt | dbt Developer Blog first main heading"
+    },
+    "expected": [
+      {
+        "kind": "text",
+        "name": "heading",
+        "accept": [
+          "AI Evaluation in dbt"
+        ]
+      }
+    ],
+    "site": "docs.getdbt.com",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://docs.getdbt.com/blog/ai-eval-in-dbt HTML h1; document-title=AI Evaluation in dbt | dbt Developer Blog",
+      "checkedAt": "2026-10-19T17:10:04.712Z"
+    }
+  },
+  {
+    "id": "search-packagist-guzzlehttp-guzzle",
+    "track": "search",
+    "family": "registry-version",
+    "instruction": "Find the latest stable release of guzzlehttp/guzzle in packagist. Return JSON with string field \"version\", without a leading v. Exclude prereleases.",
+    "input": {
+      "track": "search",
+      "query": "guzzlehttp/guzzle packagist latest stable version"
+    },
+    "expected": [
+      {
+        "kind": "version",
+        "name": "version",
+        "value": "8.3.0"
+      }
+    ],
+    "site": "repo.packagist.org",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://repo.packagist.org/p2/guzzlehttp/guzzle.json",
+      "checkedAt": "2026-10-19T17:02:02.084Z"
+    }
+  },
+  {
+    "id": "search-revenue-0000882095",
+    "track": "search",
+    "family": "company-financials",
+    "instruction": "Find Gilead Sciences's latest reported full fiscal-year revenue in its SEC 10-K. Return JSON fields \"revenueUSD\" as a number in US dollars and \"fiscalYearEnd\" as YYYY-MM-DD. Use consolidated revenue, not quarterly revenue.",
+    "input": {
+      "track": "search",
+      "query": "Gilead Sciences latest reported fiscal year total revenue annual 10-K"
+    },
+    "expected": [
+      {
+        "kind": "number",
+        "name": "revenueUSD",
+        "value": 29443000000,
+        "tolerance": 294430000
+      },
+      {
+        "kind": "date",
+        "name": "fiscalYearEnd",
+        "value": "2025-12-31"
+      }
+    ],
+    "site": "data.sec.gov",
+    "source": {
+      "kind": "authoritative",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000882095.json issuer=GILEAD SCIENCES, INC.; XBRL us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; period 2025-01-01/2025-12-31; accession 0000882095-26-000006; filed 2026-02-24",
+      "checkedAt": "2026-10-19T17:00:10.648Z"
+    }
+  }
+]
