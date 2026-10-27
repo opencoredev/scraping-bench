@@ -40,9 +40,9 @@ function Overview() {
   const labelOf = (id: string) => tracks.flatMap((t) => t.providers).find((p) => p.id === id)?.label ?? id;
   const scoreOf = (id: string, t: Track) => t.providers.find((p) => p.id === id)?.agent ?? null;
   const best = (t: Track) => Math.max(...t.providers.flatMap((p) => (p.agent ? [p.agent.rate] : [])));
-  const offered = (id: string) => tracks.filter((t) => scoreOf(id, t)).length;
+  const scrapeRate = (id: string) => (tracks[0] ? (scoreOf(id, tracks[0])?.rate ?? -1) : -1);
   const mean = (id: string) => tracks.reduce((a, t) => a + (scoreOf(id, t)?.rate ?? 0), 0);
-  ids.sort((a, b) => offered(b) - offered(a) || mean(b) - mean(a));
+  ids.sort((a, b) => scrapeRate(b) - scrapeRate(a) || mean(b) - mean(a));
   const total = tracks.reduce((a, t) => a + t.tasks, 0);
 
   const Cell = ({ s, color, lead }: { s: Score | null; color: string; lead: boolean }) =>
@@ -63,7 +63,7 @@ function Overview() {
     <Card
       id="overview"
       title={`${ids.length} web data APIs, ${tracks.length} jobs, ${total} core tasks`}
-      footer="One agent, one model, one tool. Only the API behind it changes. A script checks every answer. Bold is the top score per job; the small figure is cost per finished task. — means not run."
+      footer=""
     >
       <div className="grid grid-cols-[150px_repeat(4,1fr)] items-center gap-x-6 gap-y-[6px] py-2">
         <span />
