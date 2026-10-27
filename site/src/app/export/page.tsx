@@ -4,6 +4,7 @@ import { TaskDiagram } from "@/components/bench/diagram";
 import { results } from "@/lib/results";
 import type { Track } from "@/lib/results";
 import { trackRows } from "@/lib/rows";
+import { providers } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
 import { fillStyle } from "@/lib/dither";
 import { formatCents, formatPct } from "@/lib/results";
@@ -36,13 +37,10 @@ function Card({ id, title, footer, children }: { id: string; title: string; foot
 /** Every provider against every track: the one-image summary of the whole run. */
 function Overview() {
   const tracks = results.tracks;
-  const ids = [...new Set(tracks.flatMap((t) => t.providers.filter((p) => p.agent).map((p) => p.id)))];
+  const ids = providers.map((p) => p.id);
   const labelOf = (id: string) => tracks.flatMap((t) => t.providers).find((p) => p.id === id)?.label ?? id;
   const scoreOf = (id: string, t: Track) => t.providers.find((p) => p.id === id)?.agent ?? null;
   const best = (t: Track) => Math.max(...t.providers.flatMap((p) => (p.agent ? [p.agent.rate] : [])));
-  const scrapeRate = (id: string) => (tracks[0] ? (scoreOf(id, tracks[0])?.rate ?? -1) : -1);
-  const mean = (id: string) => tracks.reduce((a, t) => a + (scoreOf(id, t)?.rate ?? 0), 0);
-  ids.sort((a, b) => scrapeRate(b) - scrapeRate(a) || mean(b) - mean(a));
   const total = tracks.reduce((a, t) => a + t.tasks, 0);
 
   const Cell = ({ s, color, lead }: { s: Score | null; color: string; lead: boolean }) =>

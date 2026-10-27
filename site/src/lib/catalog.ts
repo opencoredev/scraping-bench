@@ -28,13 +28,27 @@ export const trackById = (id: string): Track | undefined => tracks.find((t) => t
 
 const runsOf = (id: string): Run[] => tracks.flatMap((track) => track.providers.flatMap((entry) => (entry.id === id && entry.agent ? [{ track, entry, agent: entry.agent }] : [])));
 
+/** Providers that run three or more jobs share the top tier, so a fourth job doesn't outrank a better score. */
+const tierOf = (runs: readonly Run[]): number => Math.min(runs.length, 3);
+/** Tasks finished across every job the provider ran, over the tasks it was given. */
+const overallRate = (runs: readonly Run[]): number =>
+  runs.reduce((a, r) => a + r.agent.successes, 0) / runs.reduce((a, r) => a + r.agent.tasks, 0);
+const meanRate = (runs: readonly Run[]): number => runs.reduce((a, r) => a + r.agent.rate, 0) / runs.length;
+
+/** Ranked by jobs run (capped at three), then overall rate, then mean rate per job. */
 export const providers: Provider[] = [...new Set(tracks.flatMap((t) => t.providers.map((p) => p.id)))]
   .flatMap((id): Provider[] => {
     const [first, ...rest] = runsOf(id);
     if (!first) return [];
     return [{ id, slug: SLUGS[id] ?? id, label: first.entry.label, cohort: first.entry.cohort, runs: [first, ...rest] }];
   })
-  .sort((a, b) => b.runs.length - a.runs.length || a.label.localeCompare(b.label));
+  .sort(
+    (a, b) =>
+      tierOf(b.runs) - tierOf(a.runs) ||
+      overallRate(b.runs) - overallRate(a.runs) ||
+      meanRate(b.runs) - meanRate(a.runs) ||
+      a.label.localeCompare(b.label),
+  );
 
 export const providerBySlug = (slug: string): Provider | undefined => providers.find((p) => p.slug === slug);
 export const providerById = (id: string): Provider | undefined => providers.find((p) => p.id === id);
