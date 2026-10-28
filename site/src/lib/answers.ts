@@ -11,7 +11,7 @@ import type { Track } from "@/lib/results";
 const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish"]);
 
 /** The provider most searches compare against ("<provider> vs firecrawl"). */
-const REFERENCE_ID = "firecrawl";
+export const REFERENCE_ID = "firecrawl";
 
 /** Title overrides that match how people search for a provider. Others use the default provider title. */
 export const PROVIDER_TITLES: Partial<Record<string, string>> = {
@@ -63,9 +63,9 @@ function costSentences(p: Provider, subject: string): string[] {
  * The benchmark only tests each provider's gap to its track's sole leader. A pair is tested when one of the two led alone;
  * the gap is real when the other's gap to it cleared chance.
  */
-type PairGap = { kind: "tied" } | { kind: "untested" } | { kind: "tested"; real: boolean };
+export type PairGap = { kind: "tied" } | { kind: "untested" } | { kind: "tested"; real: boolean };
 
-function pairGap(track: Track, a: Run, b: Run): PairGap {
+export function pairGap(track: Track, a: Run, b: Run): PairGap {
   if (a.agent.successes === b.agent.successes && a.agent.tasks === b.agent.tasks) return { kind: "tied" };
   const top = leaders(track);
   const leaderId = top.length === 1 ? top[0]?.entry.id : undefined;

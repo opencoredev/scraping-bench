@@ -2,6 +2,7 @@ import { comparisons, costText, doneText, intervalText, leaders, providers, rank
 import { results } from "@/lib/results";
 import { MODEL, RESULTS_JSON_RAW, SITE_URL, absoluteUrl, notTestedText } from "@/lib/site";
 import { PROVIDER_NOTES } from "@/lib/notes";
+import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 
 export const dynamic = "force-static";
 
@@ -38,6 +39,7 @@ function body(): string {
     ...tracks.map((t) => `- [${t.label}](${absoluteUrl(`/${t.id}`)}): ${t.what}`),
     ...providers.map((p) => `- [${p.label}](${absoluteUrl(`/providers/${p.slug}`)}): ${p.label}'s results on ${p.runs.map((r) => r.track.label.toLowerCase()).join(", ")}`),
     ...comparisons.map((c) => `- [${c.a.label} vs ${c.b.label}](${absoluteUrl(`/compare/${c.slug}`)})`),
+    `- [Firecrawl alternatives](${absoluteUrl(ALTERNATIVES_PATH)}): every tested provider against Firecrawl, track by track`,
     `- [Methodology](${absoluteUrl("/methodology")}): how tasks are graded and when a gap counts`,
     `- [FAQ](${absoluteUrl("/faq")})`,
     "",

@@ -84,6 +84,12 @@ function cheapestFaq(): Faq {
 
 const ranOn = new Date(results.generatedAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
+export const notTestedFaq: Faq = {
+  question: `Were ${NOT_TESTED} tested?`,
+  answer: `No. This benchmark has no numbers for ${NOT_TESTED}.`,
+  links: [],
+};
+
 export const faqs: readonly Faq[] = [
   ...bestOn("scrape", "What is the best web scraping API for AI agents?", spiderNote),
   ...bestOn("search", "What is the best search API for AI agents?", () => [`Exa, Tavily and Perplexity, which also sell search APIs, were not tested.`]),
@@ -101,11 +107,7 @@ export const faqs: readonly Faq[] = [
       },
       ]
     : []),
-  {
-    question: `Were ${NOT_TESTED} tested?`,
-    answer: `No. This benchmark has no numbers for ${NOT_TESTED}.`,
-    links: [],
-  },
+  notTestedFaq,
   {
     question: "Why isn't Parallel in the results?",
     answer: parallelNote(results),
