@@ -63,3 +63,14 @@ export const TRACK_TOPIC: Record<TrackId, string> = {
   map: "site map API",
   crawl: "web crawling API",
 };
+
+/**
+ * Titles and headings that match how a track is searched, where the default wording misses it.
+ * `title` gets the provider count; `heading` is the page's H1. Others use the default track title.
+ */
+export const TRACK_SEO: Partial<Record<TrackId, { title: (providers: number) => string; heading: string }>> = {
+  search: {
+    title: (n) => `AI search API benchmark: ${n} web search APIs for LLM agents`,
+    heading: "Web search API benchmark: which AI search API gets an LLM agent the right answer",
+  },
+};

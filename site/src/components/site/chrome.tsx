@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { comparisons, providers, tracks } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
 import { results } from "@/lib/results";
@@ -89,6 +90,7 @@ export function SiteFooter({ runLine = true }: { runLine?: boolean }) {
             </FooterLink>
           ))}
           <FooterLink href="/compare">All {comparisons.length} comparisons</FooterLink>
+          <FooterLink href={ALTERNATIVES_PATH}>Firecrawl alternatives</FooterLink>
         </FooterColumn>
         <FooterColumn title="About">
           <FooterLink href="/methodology">How it was graded</FooterLink>

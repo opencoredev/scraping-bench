@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Breadcrumbs, PageIntro, PageShell } from "@/components/site/chrome";
+import { Breadcrumbs, PageIntro, PageShell, TextLink } from "@/components/site/chrome";
+import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { comparisons, listText, runOn } from "@/lib/catalog";
 import { formatPct } from "@/lib/results";
 import { pageMetadata } from "@/lib/site";
@@ -17,6 +18,9 @@ export default function CompareIndex() {
       <Breadcrumbs trail={[{ name: "Compare", path: "/compare" }]} />
       <PageIntro title="Head-to-head comparisons">
         <p>Pairs that ran at least one track together. Each page puts both on the same tasks and says whether the gap between them is one the data supports.</p>
+        <p>
+          Looking for a Firecrawl replacement? <TextLink href={ALTERNATIVES_PATH}>Firecrawl alternatives</TextLink> sets every tested provider against Firecrawl, track by track.
+        </p>
       </PageIntro>
       <ul className="border-t border-border">
         {comparisons.map((c) => (
