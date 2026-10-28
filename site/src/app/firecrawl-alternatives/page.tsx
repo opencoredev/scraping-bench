@@ -42,10 +42,10 @@ function TrackTable({ t }: { t: TrackAlternatives }) {
         <caption className="sr-only">{`${t.track.label}: ${name} and every alternative on the same tasks`}</caption>
         <thead className="text-xs text-muted-foreground">
           <tr className="border-b border-border">
-            <th scope="col" className="w-[18%] py-2 pr-4 font-normal">Provider</th>
-            <th scope="col" className="w-[16%] py-2 pr-4 font-normal">Tasks done</th>
-            <th scope="col" className="w-[16%] py-2 pr-4 font-normal">95% interval</th>
-            <th scope="col" className="w-[14%] py-2 pr-4 font-normal">Cost per task</th>
+            <th scope="col" className="w-[17%] py-2 pr-4 font-normal">Provider</th>
+            <th scope="col" className="w-[15%] py-2 pr-4 font-normal">Tasks done</th>
+            <th scope="col" className="w-[15%] py-2 pr-4 font-normal">95% interval</th>
+            <th scope="col" className="w-[17%] py-2 pr-4 font-normal">Cost per finished task</th>
             <th scope="col" className="py-2 font-normal">Against {name}</th>
           </tr>
         </thead>
@@ -119,6 +119,7 @@ export default function FirecrawlAlternativesPage() {
           <TrackTable t={t} />
           <div className="mt-5 max-w-prose space-y-3 text-sm text-pretty text-muted-foreground">
             <p>{t.standing}</p>
+            {t.track.population?.notes ? <p>{t.track.population.notes}</p> : null}
             {cheaperText(t) ? <p>{cheaperText(t)}</p> : null}
             <p>
               <TextLink href={`/${t.track.id}`}>All {t.track.label.toLowerCase()} results and charts</TextLink>
