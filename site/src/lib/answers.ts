@@ -1,5 +1,5 @@
-import { cheapest, comparisonsWith, costText, detectedGap, leaders, listText, providerById, rankedRuns, runOn } from "@/lib/catalog";
-import type { Comparison, Provider, Run } from "@/lib/catalog";
+import { cheapest, comparisonsWith, costText, detectedGap, leaders, listText, pairVerdict, providerById, rankedRuns, runOn } from "@/lib/catalog";
+import type { Comparison, Provider, Run, TrackId } from "@/lib/catalog";
 import { formatPct } from "@/lib/results";
 import type { Track } from "@/lib/results";
 
@@ -117,4 +117,98 @@ export function providerAnswer(p: Provider): ProviderAnswer | null {
   const [first, ...rest] = [lead, ...costSentences(p, lead ? "It" : p.label)].filter((s): s is string => s !== null);
   const ref = referenceSentences(p);
   return first ? { summary: [first, ...rest], versus: ref.text, comparison: ref.comparison } : null;
+}
+
+/**
+ * Compare pages that open with a short answer, and the track each leads with: the one the page is searched for, or the
+ * one whose gap is real. Added one at a time, like ANSWER_FIRST, so each change can be evaluated on its own.
+ */
+const PAIR_LEADS: Partial<Record<string, TrackId>> = {
+  "firecrawl-vs-context-dev": "scrape",
+  "context-dev-vs-scrapfly": "crawl",
+};
+
+/** The pair's shared tracks, lead track first when the page has one. Others keep results order. */
+export function pairTracks(c: Comparison): Track[] {
+  const lead = PAIR_LEADS[c.slug];
+  return [...c.shared].sort((x, y) => Number(y.id === lead) - Number(x.id === lead));
+}
+
+/** True when neither run's gap to its track's leader cleared chance, so nothing can be said about the gap between them. */
+const neitherDetected = (track: Track, a: Run, b: Run): boolean => !detectedGap(track, a.entry.label) && !detectedGap(track, b.entry.label);
+
+/**
+ * What the benchmark can say about this pair's gap on one track, never more than it tested. An untested pair can still
+ * sit in a track's comparison table when one of the two tied for the lead, so the copy only says what holds either way.
+ */
+function gapSentence(track: Track, a: Run, b: Run): string | null {
+  const gap = pairGap(track, a, b);
+  switch (gap.kind) {
+    case "tied":
+      return null;
+    case "untested":
+      return neitherDetected(track, a, b)
+        ? `Neither one's gap to the ${lower(track)} leader cleared chance, so this ${Math.round(Math.abs(a.agent.rate - b.agent.rate) * 100)}-point gap isn't a result either can claim.`
+        : pairVerdict(track, a, b);
+    case "tested":
+      return gap.real ? "That gap is big enough to rule out chance." : "That gap is too small to rule out chance.";
+    default: {
+      const _exhaustive: never = gap;
+      return _exhaustive;
+    }
+  }
+}
+
+function leadSentences(track: Track, a: Run, b: Run): string {
+  const [hi, lo] = b.agent.rate > a.agent.rate ? [b, a] : [a, b];
+  const of = (r: Run) => `${r.agent.successes} of ${r.agent.tasks}`;
+  const done =
+    hi.agent.successes === lo.agent.successes
+      ? `On ${lower(track)}, ${a.entry.label} and ${b.entry.label} both finished ${of(a)} tasks (${formatPct(a.agent.rate)}).`
+      : `On ${lower(track)}, ${hi.entry.label} finished ${of(hi)} tasks (${formatPct(hi.agent.rate)}) and ${lo.entry.label} ${of(lo)} (${formatPct(lo.agent.rate)}).`;
+  const priced = [a, b].filter((r) => r.agent.costPerSuccessUsd !== null).sort((x, y) => (x.agent.costPerSuccessUsd ?? 0) - (y.agent.costPerSuccessUsd ?? 0));
+  const [cheap, dear] = priced;
+  const cost =
+    cheap && dear && cheap.agent.costPerSuccessUsd !== dear.agent.costPerSuccessUsd
+      ? `${cheap.entry.label} cost less per finished task, ${costText(cheap.agent)} against ${costText(dear.agent)}.`
+      : null;
+  return [done, gapSentence(track, a, b), cost].filter((s): s is string => s !== null).join(" ");
+}
+
+function restSentences(pairs: readonly { track: Track; a: Run; b: Run }[]): string {
+  const figures = pairs.map(({ track, a, b }) => `${lower(track)}, ${a.entry.label} ${formatPct(a.agent.rate)} and ${b.entry.label} ${formatPct(b.agent.rate)}`);
+  const gaps = pairs.map(({ track, a, b }) => ({ track: lower(track), gap: pairGap(track, a, b) }));
+  const real = gaps.flatMap((g) => (g.gap.kind === "tested" && g.gap.real ? [g.track] : []));
+  const noise = gaps.flatMap((g) => (g.gap.kind === "tested" && !g.gap.real ? [g.track] : []));
+  const tied = gaps.flatMap((g) => (g.gap.kind === "tied" ? [g.track] : []));
+  const untested = pairs.flatMap(({ track, a, b }) => (pairGap(track, a, b).kind === "untested" && neitherDetected(track, a, b) ? [lower(track)] : []));
+  const elsewhere = pairs.flatMap(({ track, a, b }) => (pairGap(track, a, b).kind === "untested" && !neitherDetected(track, a, b) ? [`On ${lower(track)}: ${pairVerdict(track, a, b)}`] : []));
+  return [
+    `On the other ${pairs.length === 1 ? "track" : "tracks"} both ran, tasks done were: ${figures.join("; ")}.`,
+    tied.length > 0 ? `They finished the same number of ${listText(tied)} tasks.` : null,
+    real.length > 0 ? `The ${listText(real)} ${real.length === 1 ? "gap clears" : "gaps clear"} chance.` : null,
+    noise.length > 0 ? `The ${listText(noise)} ${noise.length === 1 ? "gap is" : "gaps are"} too small to rule out chance.` : null,
+    untested.length > 0
+      ? `On ${listText(untested)}, neither one's gap to the track's leader cleared chance, so ${untested.length === 1 ? "that gap isn't a result" : "those gaps aren't results"} either can claim.`
+      : null,
+    ...elsewhere,
+  ]
+    .filter((s): s is string => s !== null)
+    .join(" ");
+}
+
+/** `lead` is the short answer on the lead track; `rest` sums up the other shared tracks, when there are any. */
+export type PairAnswer = { lead: string; rest: string | null };
+
+/** The opening answer for a compare page, or null for pages that keep the default intro. */
+export function pairAnswer(c: Comparison): PairAnswer | null {
+  if (PAIR_LEADS[c.slug] === undefined) return null;
+  const pairs = pairTracks(c).flatMap((track) => {
+    const a = runOn(c.a, track.id);
+    const b = runOn(c.b, track.id);
+    return a && b ? [{ track, a, b }] : [];
+  });
+  const [first, ...rest] = pairs;
+  if (!first) return null;
+  return { lead: leadSentences(first.track, first.a, first.b), rest: rest.length > 0 ? restSentences(rest) : null };
 }

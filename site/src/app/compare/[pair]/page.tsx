@@ -6,6 +6,7 @@ import { Breadcrumbs, PageIntro, PageShell, Section, TextLink } from "@/componen
 import { ScoreTable } from "@/components/site/score-table";
 import { comparisonBySlug, comparisons, comparisonsWith, costText, listText, pairVerdict, runOn, tracks } from "@/lib/catalog";
 import type { Comparison, Provider, Run } from "@/lib/catalog";
+import { pairAnswer, pairTracks } from "@/lib/answers";
 import { colorOf } from "@/lib/colors";
 import { PROVIDER_NOTES, TESTED_AS, searchedName } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
@@ -36,12 +37,12 @@ function bothOn(c: Comparison, track: Track): [Run, Run] | null {
 
 export async function generateMetadata({ params }: PageProps<"/compare/[pair]">): Promise<Metadata> {
   const c = await comparisonOf(params);
-  const figures = c.shared.flatMap((t) => {
+  const figures = pairTracks(c).flatMap((t) => {
     const runs = bothOn(c, t);
     return runs ? [`${t.label.toLowerCase()} ${formatPct(runs[0].agent.rate)} vs ${formatPct(runs[1].agent.rate)}`] : [];
   });
   return pageMetadata({
-    title: `${searchedName(c.a)} vs ${searchedName(c.b)} for AI agents`,
+    title: pairAnswer(c) ? `${searchedName(c.a)} vs ${searchedName(c.b)}: which is better for AI agents?` : `${searchedName(c.a)} vs ${searchedName(c.b)} for AI agents`,
     description: `${searchedName(c.a)} and ${searchedName(c.b)} on the same ${sharedNames(c)} tasks, same model and limits: ${figures.join(", ")}. Cost per task, time, intervals, and whether the gap is real.`,
     path: `/compare/${c.slug}`,
     image: c.shared.length === 1 ? c.shared[0].id : "overview",
@@ -95,12 +96,19 @@ export default async function ComparePage({ params }: PageProps<"/compare/[pair]
     const relevant = (PROVIDER_NOTES[p.id] ?? []).filter((n) => n.track === undefined || c.shared.some((t) => t.id === n.track)).map((n) => n.text);
     return tested ? [tested, ...relevant] : relevant;
   });
+  const answer = pairAnswer(c);
   const related = [...new Map([...comparisonsWith(c.a), ...comparisonsWith(c.b)].filter((o) => o.slug !== c.slug).map((o) => [o.slug, o])).values()];
 
   return (
     <PageShell>
       <Breadcrumbs trail={[{ name: "Compare", path: "/compare" }, { name: `${searchedName(c.a)} vs ${searchedName(c.b)}`, path: `/compare/${c.slug}` }]} />
       <PageIntro title={`${searchedName(c.a)} vs ${searchedName(c.b)} for AI agents`}>
+        {answer ? (
+          <>
+            <p className="text-foreground">{answer.lead}</p>
+            {answer.rest ? <p>{answer.rest}</p> : null}
+          </>
+        ) : null}
         <p>
           <ProviderName p={c.a} /> and <ProviderName p={c.b} /> both ran {sharedNames(c)}, with the same tasks, the same model ({MODEL}), the same prompt and the same limits. A task counts only when a
           script confirms every answer.{onlyOne.length > 0 ? ` Beyond that, ${listText(onlyOne)}.` : ""}
@@ -111,7 +119,7 @@ export default async function ComparePage({ params }: PageProps<"/compare/[pair]
         </p>
       </PageIntro>
 
-      {c.shared.map((t) => (
+      {pairTracks(c).map((t) => (
         <PairTrack key={t.id} c={c} track={t} />
       ))}
 

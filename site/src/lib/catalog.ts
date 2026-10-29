@@ -201,6 +201,11 @@ export function pairVerdict(track: Track, a: Run, b: Run): string {
     return `${listText(named)} finished clearly fewer tasks than ${leader}, the leader${rest.length ? `, and ${listText(rest)} did not` : ""}. The two weren't tested against each other directly, so this page doesn't call a winner between them.`;
   }
   if (a.agent.successes === b.agent.successes) return `They finished the same number of tasks.`;
+  // When the leaders tie, the published comparisons use one of them as the reference, so this pair may have been compared directly.
+  const direct = track.population?.comparisons.find((x) => (x.provider === a.entry.label && x.reference === b.entry.label) || (x.provider === b.entry.label && x.reference === a.entry.label));
+  if (direct) {
+    return `The benchmark compared ${direct.provider} with ${direct.reference}, which tied for the lead, on the same ${direct.pairedTasks} tasks, and this ${Math.round(Math.abs(a.agent.rate - b.agent.rate) * 100)}-point gap is too small to rule out chance.`;
+  }
   const wide = [a, b].filter((r) => {
     const [lo, hi] = r.agent.ci;
     return lo !== null && hi !== null && hi - lo >= 0.5;
