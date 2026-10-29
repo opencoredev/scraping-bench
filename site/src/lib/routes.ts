@@ -20,6 +20,9 @@ export const indexablePaths: readonly string[] = [
  * The sitemap uses the later of this and the run date, so lastmod tracks real content changes.
  */
 export const COPY_CHANGED: Partial<Record<string, string>> = {
+  "/": "2026-10-29",
+  "/map": "2026-10-29",
+  "/v1": "2026-10-29",
   "/search": "2026-10-28",
   [ALTERNATIVES_PATH]: "2026-10-28",
   "/crawl": "2026-10-29",

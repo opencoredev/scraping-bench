@@ -285,7 +285,7 @@ export function BenchPage({ results, summary, about }: { results: Results; summa
       </div>
 
       <h1 className="pt-8 pb-3 text-2xl font-medium tracking-[-0.02em] text-balance md:text-3xl">
-        {providerCount} web data APIs for agents, graded on whether the job got done
+        {providerCount} scraping and web data APIs for AI agents, graded on whether the job got done
       </h1>
       <p className="max-w-prose pb-3 text-sm text-pretty text-muted-foreground">{edition.kind === "v2" ? "Same agent, same limits for every provider. A script checks every answer." : copy.population}</p>
       {copy.intro ? <p className="max-w-prose pb-6 text-sm text-pretty text-muted-foreground">{copy.intro}</p> : <div className="pb-3" />}
