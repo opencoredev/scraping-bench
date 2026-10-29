@@ -7,7 +7,7 @@ import type { HomeLink } from "@/lib/home";
 import { results } from "@/lib/results";
 import { AUTHOR, HOME_TITLE, MODEL, NOT_TESTED, REPO, RESULTS_JSON, RESULTS_JSON_RAW, SITE_NAME, SITE_URL, pageMetadata, parallelNote } from "@/lib/site";
 
-const description = `${providers.length} web data APIs graded on whether an agent got the right answer: task success, cost per finished task and time, with confidence intervals.`;
+const description = `${providers.length} web scraping and web data APIs graded on whether an AI agent got the right answer: task success, cost per finished task and time, with confidence intervals.`;
 
 export const metadata: Metadata = pageMetadata({ title: HOME_TITLE, description, path: "/", absoluteTitle: true });
 

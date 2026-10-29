@@ -73,6 +73,10 @@ export const TRACK_SEO: Partial<Record<TrackId, { title: (providers: number) => 
     title: (n) => `AI search API benchmark: ${n} web search APIs for LLM agents`,
     heading: "Web search API benchmark: which AI search API gets an LLM agent the right answer",
   },
+  map: {
+    title: (n) => `URL map API benchmark: ${n} APIs that list a website's URLs for AI agents`,
+    heading: "Site map API benchmark: which API gets an agent every URL in a website's docs section",
+  },
   crawl: {
     title: (n) => `Website crawler API benchmark: ${n} web crawler APIs for AI agents`,
     heading: "Web crawler API benchmark: which website crawler API returns every page an agent asks for",

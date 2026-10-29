@@ -23,7 +23,7 @@ export const notTestedText = (r: Results): string =>
 /** The Parallel sentence for prose, matching `notTestedText`. */
 export const parallelNote = (r: Results): string => (r.campaignVersion === 2 ? "Parallel was not tested in v2." : WITHHELD_NOTE);
 
-export const HOME_TITLE = "Web data API benchmark for agents: scrape, search, map and crawl";
+export const HOME_TITLE = "Scraping API benchmark for AI agents: scrape, search, map and crawl";
 
 export type OgImage = "overview" | "scrape" | "search" | "map" | "crawl";
 
