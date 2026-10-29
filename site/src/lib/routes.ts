@@ -22,4 +22,7 @@ export const indexablePaths: readonly string[] = [
 export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/search": "2026-10-28",
   [ALTERNATIVES_PATH]: "2026-10-28",
+  "/crawl": "2026-10-29",
+  "/compare/firecrawl-vs-context-dev": "2026-10-29",
+  "/compare/context-dev-vs-scrapfly": "2026-10-29",
 };
