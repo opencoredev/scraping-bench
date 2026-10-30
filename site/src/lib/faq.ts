@@ -1,4 +1,4 @@
-import { cheapest, comparisons, costText, listText, pairVerdict, rankedRuns, runOn, trackById } from "@/lib/catalog";
+import { cheapest, comparisons, costText, detectedGap, listText, pairVerdict, rankedRuns, runOn, trackById } from "@/lib/catalog";
 import type { Run, TrackId } from "@/lib/catalog";
 import { formatPct, results } from "@/lib/results";
 import { MODEL, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
@@ -82,6 +82,19 @@ function cheapestFaq(): Faq {
   };
 }
 
+/** Every task ran with one agent model, so "which API works best with that model" is the whole result, per track. */
+function agentModelFaq(): Faq {
+  const parts = results.tracks.flatMap((t) => {
+    const top = rankedRuns(t).filter((r) => !detectedGap(t, r.entry.label));
+    return top.length > 0 ? [`${t.label.toLowerCase()}: ${listText(top.map((r) => r.entry.label))}`] : [];
+  });
+  return {
+    question: `Which web data API works best with ${MODEL} as the agent model?`,
+    answer: `Every task in this benchmark ran with ${MODEL} as the agent, so all of these results are ${MODEL} results. The providers that finished the most tasks with it, with gaps between them too small to rule out chance, were: ${parts.join("; ")}. No other agent model was tested, so the order may differ with another model.`,
+    links: [{ href: "/", label: "Results by track" }],
+  };
+}
+
 const ranOn = new Date(results.generatedAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
 export const notTestedFaq: Faq = {
@@ -96,6 +109,7 @@ export const faqs: readonly Faq[] = [
   ...bestOn("crawl", "Which API is best for crawling a website?", (runs) => [`Crawl has only ${runs[0]?.agent.tasks ?? 0} tasks, so its intervals are wide.`]),
   ...bestOn("map", "Which API is best for listing every URL on a site?", () => (V1 ? ["Map tasks ran mostly on a site built fresh for this run, so they test cold sites that no provider had indexed."] : [])),
   cheapestFaq(),
+  agentModelFaq(),
   ...headToHead(),
   ...(V1
     ? [

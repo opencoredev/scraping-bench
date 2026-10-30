@@ -6,6 +6,8 @@ This is campaign v2: four tracks (scrape, search, map and crawl) on the real web
 
 [Results site](https://www.scrapingbench.com) · [Full report](results/measure-v2-string/REPORT.md) · [How it's measured](docs/MEASURE-v2.md) · [Every row](results/measure-v2-string/rows.jsonl)
 
+On the site: [scrape](https://www.scrapingbench.com/scrape) · [search](https://www.scrapingbench.com/search) · [map](https://www.scrapingbench.com/map) · [crawl](https://www.scrapingbench.com/crawl) · [every provider](https://www.scrapingbench.com/providers) · [head-to-head comparisons](https://www.scrapingbench.com/compare) · [Firecrawl alternatives](https://www.scrapingbench.com/firecrawl-alternatives) · [FAQ](https://www.scrapingbench.com/faq)
+
 ## Results
 
 The agent score is the headline: the share of core tasks where every answer field was right. Intervals are 95% from 10,000 paired bootstrap draws that resample whole sites. A provider is in the top tier when its gap to the leader could be chance. "Answer in response" checks the provider's own output with no model involved, so it's an upper bound. Cost per finished task is all provider and model spend divided by tasks passed.

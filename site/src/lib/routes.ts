@@ -32,4 +32,5 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/providers/linkup": "2026-10-30",
   "/compare/firecrawl-vs-browserbase": "2026-10-30",
   "/compare/tinyfish-vs-browserbase": "2026-10-30",
+  "/faq": "2026-10-30",
 };
