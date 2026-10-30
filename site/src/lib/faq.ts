@@ -90,7 +90,7 @@ function agentModelFaq(): Faq {
   });
   return {
     question: `Which web data API works best with ${MODEL} as the agent model?`,
-    answer: `Every task in this benchmark ran with ${MODEL} as the agent, so all of these results are ${MODEL} results. The providers that finished the most tasks with it, with gaps between them too small to rule out chance, were: ${parts.join("; ")}. No other agent model was tested, so the order may differ with another model.`,
+    answer: `Every task in this benchmark ran with ${MODEL} as the agent, so all of these results are ${MODEL} results. Each track's top tier with it (the leader, plus every provider whose gap to the leader was too small to rule out chance) was: ${parts.join("; ")}. No other agent model was tested, so the order may differ with another model.`,
     links: [{ href: "/", label: "Results by track" }],
   };
 }
