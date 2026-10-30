@@ -52,8 +52,17 @@ const V1_TRACK_NOTES: Partial<Record<TrackId, string>> = {
 };
 
 
-export const TESTED_AS: Partial<Record<string, string>> = V1 ? V1_TESTED_AS : {};
-export const PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = V1 ? V1_PROVIDER_NOTES : {};
+/** v2 caveats, each checked against docs/FINDINGS.md for the v2 run ("Browserbase means HTTP Fetch/Search, not a browser-session agent"). */
+const V2_TESTED_AS: Partial<Record<string, string>> = {
+  browserbase: "Browserbase here means its HTTP Fetch and Search APIs, not its browser sessions.",
+};
+
+const V2_PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
+  browserbase: [{ text: "Its Search API returns URLs and titles without excerpts, so the model had less to answer from on search.", track: "search" }],
+};
+
+export const TESTED_AS: Partial<Record<string, string>> = V1 ? V1_TESTED_AS : V2_TESTED_AS;
+export const PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = V1 ? V1_PROVIDER_NOTES : V2_PROVIDER_NOTES;
 export const TRACK_NOTES: Partial<Record<TrackId, string>> = V1 ? V1_TRACK_NOTES : {};
 
 /** The phrase people search for, used in titles and headings. */

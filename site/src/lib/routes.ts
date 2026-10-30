@@ -28,4 +28,8 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/crawl": "2026-10-29",
   "/compare/firecrawl-vs-context-dev": "2026-10-29",
   "/compare/context-dev-vs-scrapfly": "2026-10-29",
+  "/providers/browserbase": "2026-10-30",
+  "/providers/linkup": "2026-10-30",
+  "/compare/firecrawl-vs-browserbase": "2026-10-30",
+  "/compare/tinyfish-vs-browserbase": "2026-10-30",
 };
