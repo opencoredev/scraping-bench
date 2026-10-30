@@ -1,4 +1,4 @@
-import { cheapest, comparisonsWith, costText, detectedGap, leaders, listText, pairVerdict, providerById, rankedRuns, runOn } from "@/lib/catalog";
+import { cheapest, comparisonsWith, costText, detectedGap, leaders, listText, pairVerdict, providerById, rankedRuns, runOn, standingText } from "@/lib/catalog";
 import type { Comparison, Provider, Run, TrackId } from "@/lib/catalog";
 import { formatPct } from "@/lib/results";
 import type { Track } from "@/lib/results";
@@ -8,7 +8,7 @@ import type { Track } from "@/lib/results";
  * Pages are added one at a time so each change can be evaluated on its own in Search Console.
  */
 
-const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish"]);
+const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish", "browserbase", "linkup"]);
 
 /** The provider most searches compare against ("<provider> vs firecrawl"). */
 export const REFERENCE_ID = "firecrawl";
@@ -17,6 +17,8 @@ export const REFERENCE_ID = "firecrawl";
 export const PROVIDER_TITLES: Partial<Record<string, string>> = {
   contextdev: "Context.dev review: benchmark results for AI agents",
   tinyfish: "TinyFish API benchmark: results and cost for AI agents",
+  browserbase: "Browserbase Fetch and Search API benchmark for AI agents",
+  linkup: "Linkup API benchmark: search and scrape results for AI agents",
 };
 
 const lower = (t: Track) => t.label.toLowerCase();
@@ -47,6 +49,29 @@ function leadSentence(p: Provider): string | null {
             : "but none of those leads is big enough to rule out chance"
         : `but only the ${listText(real.map((r) => lower(r.track)))} lead is big enough to rule out chance`;
   return `${p.label} finished ${listText(parts)}, ${caveat}.`;
+}
+
+/**
+ * Pages that also name the runners-up a partial lead cleared chance against. Added one at a time; Context.dev's page can
+ * join after its 2026-11-05 evaluation.
+ */
+const NAMED_CLEARED: ReadonlySet<string> = new Set(["linkup"]);
+
+/** For a sole lead that isn't real against everyone: who it did clear chance against, on each track. */
+function clearedSentences(p: Provider): string[] {
+  if (!NAMED_CLEARED.has(p.id)) return [];
+  return p.runs.flatMap((r) => {
+    const top = leaders(r.track);
+    if (top.length !== 1 || top[0]?.entry.id !== p.id || leadIsReal(r)) return [];
+    const cleared = rankedRuns(r.track).filter((o) => o.entry.id !== p.id && detectedGap(r.track, o.entry.label)).map((o) => o.entry.label);
+    return cleared.length > 0 ? [`Against ${listText(cleared)}, though, its ${lower(r.track)} lead is big enough to rule out chance.`] : [];
+  });
+}
+
+/** For a provider that led no track and was cheapest on none: what it finished, and where it stands against each leader. */
+function standingSentences(p: Provider): string[] {
+  const done = `${p.label} finished ${listText(p.runs.map((r) => `${r.agent.successes} of ${r.agent.tasks} ${lower(r.track)} tasks (${formatPct(r.agent.rate)})`))}.`;
+  return [done, ...p.runs.map((r) => `On ${lower(r.track)}: ${standingText(r)}`)];
 }
 
 function costSentences(p: Provider, subject: string): string[] {
@@ -114,7 +139,8 @@ export type ProviderAnswer = { summary: [string, ...string[]]; versus: string[];
 export function providerAnswer(p: Provider): ProviderAnswer | null {
   if (!ANSWER_FIRST.has(p.id)) return null;
   const lead = leadSentence(p);
-  const [first, ...rest] = [lead, ...costSentences(p, lead ? "It" : p.label)].filter((s): s is string => s !== null);
+  const found = [lead, ...clearedSentences(p), ...costSentences(p, lead ? "It" : p.label)].filter((s): s is string => s !== null);
+  const [first, ...rest] = found.length > 0 ? found : standingSentences(p);
   const ref = referenceSentences(p);
   return first ? { summary: [first, ...rest], versus: ref.text, comparison: ref.comparison } : null;
 }
@@ -126,6 +152,7 @@ export function providerAnswer(p: Provider): ProviderAnswer | null {
 const PAIR_LEADS: Partial<Record<string, TrackId>> = {
   "firecrawl-vs-context-dev": "scrape",
   "context-dev-vs-scrapfly": "crawl",
+  "firecrawl-vs-browserbase": "scrape",
 };
 
 /** The pair's shared tracks, lead track first when the page has one. Others keep results order. */
