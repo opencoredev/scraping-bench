@@ -18,6 +18,15 @@ export const indexablePaths: readonly string[] = [
 ];
 
 /**
+ * The day each run's numbers went live on the site (YYYY-MM-DD), keyed by runId. A run is generated days before
+ * it is published, and the pages only show its numbers from the publish date, so that is when their content changed.
+ * wb-v2 was generated 2026-10-19 and published 2026-10-26 (commit 93367d3). A run missing here falls back to its generatedAt.
+ */
+export const RUN_PUBLISHED: Partial<Record<string, string>> = {
+  "wb-v2": "2026-10-26",
+};
+
+/**
  * Pages whose copy changed after the run they show, with the date of that change (YYYY-MM-DD).
  * The sitemap uses the later of this and the run date, so lastmod tracks real content changes.
  */
