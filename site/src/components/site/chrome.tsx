@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { comparisons, providers, tracks } from "@/lib/catalog";
+import { COST_PATH } from "@/lib/cost";
 import { colorOf } from "@/lib/colors";
 import { results } from "@/lib/results";
 import { REPO, RESULTS_JSON, SITE_URL, notTestedText } from "@/lib/site";
@@ -94,6 +95,7 @@ export function SiteFooter({ runLine = true }: { runLine?: boolean }) {
         </FooterColumn>
         <FooterColumn title="About">
           <FooterLink href="/methodology">How it was graded</FooterLink>
+          <FooterLink href={COST_PATH}>Cost per finished task</FooterLink>
           <FooterLink href="/faq">FAQ</FooterLink>
           <li>
             <a href={RESULTS_JSON} className="hover:text-foreground">

@@ -3,6 +3,7 @@ import { results } from "@/lib/results";
 import { MODEL, RESULTS_JSON_RAW, SITE_URL, absoluteUrl, notTestedText } from "@/lib/site";
 import { PROVIDER_NOTES } from "@/lib/notes";
 import { ALTERNATIVES_PATH } from "@/lib/alternatives";
+import { COST_PATH } from "@/lib/cost";
 
 export const dynamic = "force-static";
 
@@ -41,6 +42,7 @@ function body(): string {
     ...comparisons.map((c) => `- [${c.a.label} vs ${c.b.label}](${absoluteUrl(`/compare/${c.slug}`)})`),
     `- [Firecrawl alternatives](${absoluteUrl(ALTERNATIVES_PATH)}): every tested provider against Firecrawl, track by track`,
     `- [Methodology](${absoluteUrl("/methodology")}): how tasks are graded and when a gap counts`,
+    `- [Cost per finished task](${absoluteUrl(COST_PATH)}): what the cost figure means and the cheapest provider on each track`,
     `- [FAQ](${absoluteUrl("/faq")})`,
     "",
     "## Data",
