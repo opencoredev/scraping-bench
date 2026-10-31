@@ -8,7 +8,7 @@ import type { Track } from "@/lib/results";
  * Pages are added one at a time so each change can be evaluated on its own in Search Console.
  */
 
-const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish", "browserbase", "linkup"]);
+const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish", "browserbase", "linkup", "spider"]);
 
 /** The provider most searches compare against ("<provider> vs firecrawl"). */
 export const REFERENCE_ID = "firecrawl";
@@ -19,6 +19,7 @@ export const PROVIDER_TITLES: Partial<Record<string, string>> = {
   tinyfish: "TinyFish API benchmark: results and cost for AI agents",
   browserbase: "Browserbase Fetch and Search API benchmark for AI agents",
   linkup: "Linkup API benchmark: search and scrape results for AI agents",
+  spider: "Spider (spider.cloud) scraping API benchmark for AI agents",
 };
 
 const lower = (t: Track) => t.label.toLowerCase();

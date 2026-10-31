@@ -23,6 +23,9 @@ export const notTestedText = (r: Results): string =>
 /** The Parallel sentence for prose, matching `notTestedText`. */
 export const parallelNote = (r: Results): string => (r.campaignVersion === 2 ? "Parallel was not tested in v2." : WITHHELD_NOTE);
 
+/** The explainer for the cost metric. Here, not in lib/cost, so lib/faq can link to it without an import cycle. */
+export const COST_PATH = "/cost-per-finished-task";
+
 export const HOME_TITLE = "Scraping API benchmark for AI agents: scrape, search, map and crawl";
 
 export type OgImage = "overview" | "scrape" | "search" | "map" | "crawl";

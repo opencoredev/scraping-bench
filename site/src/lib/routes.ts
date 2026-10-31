@@ -1,5 +1,6 @@
 import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { comparisons, providers, tracks } from "@/lib/catalog";
+import { COST_PATH } from "@/lib/cost";
 
 /** Every indexable path, for the sitemap, llms.txt and IndexNow. /export is left out on purpose. */
 export const indexablePaths: readonly string[] = [
@@ -12,6 +13,7 @@ export const indexablePaths: readonly string[] = [
   ...comparisons.map((c) => `/compare/${c.slug}`),
   ALTERNATIVES_PATH,
   "/methodology",
+  COST_PATH,
   "/faq",
 ];
 
@@ -33,4 +35,6 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/compare/firecrawl-vs-browserbase": "2026-10-30",
   "/compare/tinyfish-vs-browserbase": "2026-10-30",
   "/faq": "2026-10-30",
+  [COST_PATH]: "2026-10-31",
+  "/providers/spider": "2026-10-31",
 };

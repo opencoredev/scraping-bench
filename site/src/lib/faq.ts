@@ -1,7 +1,7 @@
 import { cheapest, comparisons, costText, detectedGap, listText, pairVerdict, rankedRuns, runOn, trackById } from "@/lib/catalog";
 import type { Run, TrackId } from "@/lib/catalog";
 import { formatPct, results } from "@/lib/results";
-import { MODEL, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
+import { COST_PATH, MODEL, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
 
 /** Some answers describe the v1 run only (Spider and workers.dev, free plans, cold test sites). See lib/notes.ts. */
 const V1 = results.campaignVersion === 1;
@@ -70,7 +70,7 @@ function headToHead(): Faq[] {
   return [{ question: `Is ${c.a.label} or ${c.b.label} better for AI agents?`, answer: verdicts.join(" "), links: [{ href: `/compare/${c.slug}`, label: `${c.a.label} vs ${c.b.label}` }] }];
 }
 
-function cheapestFaq(): Faq {
+export function cheapestFaq(): Faq {
   const parts = results.tracks.flatMap((t) => {
     const c = cheapest(t);
     return c ? [`${t.label.toLowerCase()}: ${c.entry.label} at ${costText(c.agent)}`] : [];
@@ -78,7 +78,10 @@ function cheapestFaq(): Faq {
   return {
     question: "Which web data API is cheapest per finished task?",
     answer: `Cost per finished task counts all API and model spend, failures included, divided by tasks done. The cheapest on each track: ${parts.join("; ")}.${V1 ? " Everything ran on free plans, so these are list-price equivalents, not invoices." : ""}`,
-    links: [{ href: "/providers", label: "Every provider's cost" }],
+    links: [
+      { href: "/providers", label: "Every provider's cost" },
+      { href: COST_PATH, label: "What cost per finished task means" },
+    ],
   };
 }
 

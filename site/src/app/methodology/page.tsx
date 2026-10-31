@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Breadcrumbs, PageIntro, PageShell, Section } from "@/components/site/chrome";
+import { Breadcrumbs, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
 import { tracks } from "@/lib/catalog";
 import { results } from "@/lib/results";
-import { MODEL, REPO, RESULTS_JSON, notTestedText, pageMetadata } from "@/lib/site";
+import { COST_PATH, MODEL, REPO, RESULTS_JSON, notTestedText, pageMetadata } from "@/lib/site";
 
 /**
  * The grading method, shared by every edition. Sections marked v1 describe the v1 run (wb-20261017-final) and only
@@ -154,7 +154,7 @@ export default function MethodologyPage() {
             <span className="text-foreground">Tasks done</span>: the share of tasks that passed.
           </li>
           <li>
-            <span className="text-foreground">Cost per finished task</span>: all API and model spend, failures included, divided by tasks done. Model cost is a list-price estimate.
+            <span className="text-foreground">Cost per finished task</span>: all API and model spend, failures included, divided by tasks done. Model cost is a list-price estimate. <TextLink href={COST_PATH}>What it shows on each track</TextLink>.
           </li>
           <li>
             <span className="text-foreground">Time</span>: the median over tasks that passed.
