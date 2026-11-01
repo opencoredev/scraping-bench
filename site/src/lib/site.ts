@@ -26,6 +26,9 @@ export const parallelNote = (r: Results): string => (r.campaignVersion === 2 ? "
 /** The explainer for the cost metric. Here, not in lib/cost, so lib/faq can link to it without an import cycle. */
 export const COST_PATH = "/cost-per-finished-task";
 
+/** The explainer for which gaps clear chance. Here for the same reason as COST_PATH. */
+export const NOISE_PATH = "/why-most-gaps-are-noise";
+
 export const HOME_TITLE = "Scraping API benchmark for AI agents: scrape, search, map and crawl";
 
 export type OgImage = "overview" | "scrape" | "search" | "map" | "crawl";

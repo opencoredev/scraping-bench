@@ -4,6 +4,7 @@ import { MODEL, RESULTS_JSON_RAW, SITE_URL, absoluteUrl, notTestedText } from "@
 import { PROVIDER_NOTES } from "@/lib/notes";
 import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH } from "@/lib/cost";
+import { NOISE_PATH, NOISE_SUMMARY } from "@/lib/noise";
 
 export const dynamic = "force-static";
 
@@ -45,6 +46,7 @@ function body(): string {
     `- [Firecrawl alternatives](${absoluteUrl(ALTERNATIVES_PATH)}): every tested provider against Firecrawl, track by track`,
     `- [Methodology](${absoluteUrl("/methodology")}): how tasks are graded and when a gap counts`,
     `- [Cost per finished task](${absoluteUrl(COST_PATH)}): what the cost figure means and the cheapest provider on each track`,
+    `- [Why most gaps are noise](${absoluteUrl(NOISE_PATH)}): ${NOISE_SUMMARY}`,
     `- [FAQ](${absoluteUrl("/faq")})`,
     "",
     "## Data",

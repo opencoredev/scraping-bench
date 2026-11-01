@@ -1,7 +1,7 @@
 import { cheapest, comparisons, costText, detectedGap, listText, pairVerdict, rankedRuns, runOn, trackById } from "@/lib/catalog";
 import type { Run, TrackId } from "@/lib/catalog";
 import { formatPct, results } from "@/lib/results";
-import { COST_PATH, MODEL, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
+import { COST_PATH, MODEL, NOISE_PATH, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
 
 /** Some answers describe the v1 run only (Spider and workers.dev, free plans, cold test sites). See lib/notes.ts. */
 const V1 = results.campaignVersion === 1;
@@ -139,7 +139,10 @@ export const faqs: readonly Faq[] = [
     question: "What do the 95% intervals mean?",
     answer:
       "Tasks from the same site aren't independent, so the intervals come from a bootstrap that resamples whole sites 10,000 times. Each provider is compared with its track's leader on the same tasks, and a gap counts only when its interval excludes zero.",
-    links: [{ href: "/methodology", label: "When a gap counts" }],
+    links: [
+      { href: "/methodology", label: "When a gap counts" },
+      { href: NOISE_PATH, label: "Why most gaps are noise" },
+    ],
   },
   {
     question: "Which model ran the tasks?",

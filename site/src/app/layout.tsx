@@ -17,8 +17,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 // Excalidraw's own fonts, for the hand-drawn diagrams: Excalifont (Latin subset) and Cascadia Code. Both OFL-1.1.
-const excalifont = localFont({ src: "./fonts/Excalifont-Latin.woff2", variable: "--font-excalifont", display: "block" });
-const cascadia = localFont({ src: "./fonts/CascadiaCode-Regular.woff2", variable: "--font-cascadia", display: "block" });
+// Not preloaded: only the diagrams use them, so other pages never download them and the home page fetches them when a diagram renders.
+const excalifont = localFont({ src: "./fonts/Excalifont-Latin.woff2", variable: "--font-excalifont", display: "block", preload: false });
+const cascadia = localFont({ src: "./fonts/CascadiaCode-Regular.woff2", variable: "--font-cascadia", display: "block", preload: false });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

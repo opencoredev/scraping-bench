@@ -4,7 +4,7 @@ import { comparisons, providers, tracks } from "@/lib/catalog";
 import { COST_PATH } from "@/lib/cost";
 import { colorOf } from "@/lib/colors";
 import { results } from "@/lib/results";
-import { REPO, RESULTS_JSON, SITE_URL, notTestedText } from "@/lib/site";
+import { NOISE_PATH, REPO, RESULTS_JSON, SITE_URL, notTestedText } from "@/lib/site";
 
 /** Header, footer, breadcrumbs and JSON-LD shared by every page. Server components: no client JS. */
 
@@ -96,6 +96,7 @@ export function SiteFooter({ runLine = true }: { runLine?: boolean }) {
         <FooterColumn title="About">
           <FooterLink href="/methodology">How it was graded</FooterLink>
           <FooterLink href={COST_PATH}>Cost per finished task</FooterLink>
+          <FooterLink href={NOISE_PATH}>Why most gaps are noise</FooterLink>
           <FooterLink href="/faq">FAQ</FooterLink>
           <li>
             <a href={RESULTS_JSON} className="hover:text-foreground">
