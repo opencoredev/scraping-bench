@@ -154,6 +154,7 @@ const PAIR_LEADS: Partial<Record<string, TrackId>> = {
   "firecrawl-vs-context-dev": "scrape",
   "context-dev-vs-scrapfly": "crawl",
   "firecrawl-vs-browserbase": "scrape",
+  "firecrawl-vs-tinyfish": "scrape",
 };
 
 /** The pair's shared tracks, lead track first when the page has one. Others keep results order. */
