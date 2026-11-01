@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Breadcrumbs, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
 import { tracks } from "@/lib/catalog";
 import { results } from "@/lib/results";
-import { COST_PATH, MODEL, REPO, RESULTS_JSON, notTestedText, pageMetadata } from "@/lib/site";
+import { COST_PATH, MODEL, NOISE_PATH, REPO, RESULTS_JSON, notTestedText, pageMetadata } from "@/lib/site";
 
 /**
  * The grading method, shared by every edition. Sections marked v1 describe the v1 run (wb-20261017-final) and only
@@ -176,7 +176,8 @@ export default function MethodologyPage() {
           times. A gap counts only when its interval excludes zero.{" "}
           {gapCount === 0
             ? "None does on this run."
-            : `${gapCount} ${gapCount === 1 ? "gap does" : "gaps do"} on this run; each track's page lists them.`}
+            : `${gapCount} ${gapCount === 1 ? "gap does" : "gaps do"} on this run; each track's page lists them.`}{" "}
+          <TextLink href={NOISE_PATH}>Every comparison with its interval, and why most gaps are noise</TextLink>.
         </p>
       </Section>
 
