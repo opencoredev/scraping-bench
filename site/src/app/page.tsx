@@ -5,13 +5,13 @@ import { providers, tracks } from "@/lib/catalog";
 import { baselineText, costSummary, coverageText, picks, runCaveats, trackSummaries } from "@/lib/home";
 import type { HomeLink } from "@/lib/home";
 import { results } from "@/lib/results";
-import { AUTHOR, HOME_TITLE, MODEL, NOT_TESTED, REPO, RESULTS_JSON, RESULTS_JSON_RAW, SITE_NAME, SITE_URL, pageMetadata, parallelNote } from "@/lib/site";
+import { AUTHOR_PERSON, HOME_TITLE, MODEL, NOT_TESTED, REPO, RESULTS_JSON, RESULTS_JSON_RAW, SITE_NAME, SITE_URL, pageMetadata, parallelNote } from "@/lib/site";
 
 const description = `${providers.length} web scraping and web data APIs graded on whether an AI agent got the right answer: task success, cost per finished task and time, with confidence intervals.`;
 
 export const metadata: Metadata = pageMetadata({ title: HOME_TITLE, description, path: "/", absoluteTitle: true });
 
-const organization = { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL, sameAs: [REPO, AUTHOR.url] };
+const organization = { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL, sameAs: [REPO], founder: AUTHOR_PERSON };
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -29,7 +29,7 @@ const structuredData = {
       dateModified: results.generatedAt,
       license: "https://opensource.org/licenses/MIT",
       isAccessibleForFree: true,
-      creator: { "@type": "Person", name: AUTHOR.name, url: AUTHOR.url },
+      creator: AUTHOR_PERSON,
       publisher: { "@id": organization["@id"] },
       keywords: ["web scraping API", "web search API", "AI agents", "benchmark", "crawl", "site map", ...providers.map((p) => p.label)],
       measurementTechnique: "Each task is pass or fail, decided by a script that compares every answer field with a verified key",

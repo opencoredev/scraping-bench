@@ -8,7 +8,20 @@ export const SITE_NAME = "scrapingbench";
 export const REPO = "https://github.com/opencoredev/scraping-bench";
 export const RESULTS_JSON = `${REPO}/blob/main/site/src/data/results.json`;
 export const RESULTS_JSON_RAW = "https://raw.githubusercontent.com/opencoredev/scraping-bench/main/site/src/data/results.json";
-export const AUTHOR = { name: "Leo", url: "https://x.com/leodev", handle: "@leodev" } as const;
+export const AUTHOR = {
+  name: "Leo",
+  url: "https://leodev.cv",
+  handle: "@leodev",
+  sameAs: ["https://x.com/leodev", "https://github.com/leoisadev1"],
+} as const;
+/** The author as a schema.org Person, for JSON-LD. */
+export const AUTHOR_PERSON = {
+  "@type": "Person",
+  name: AUTHOR.name,
+  alternateName: AUTHOR.handle,
+  url: AUTHOR.url,
+  sameAs: [...AUTHOR.sameAs],
+};
 export const MODEL = "Claude Haiku 5.5";
 
 export const NOT_TESTED = "Exa, Tavily, Bright Data and Perplexity";

@@ -8,7 +8,7 @@ import { COST_DEFINITION, COST_PATH, costFaqs, limitText, trackCostText, trackCo
 import type { TrackCost } from "@/lib/cost";
 import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COPY_CHANGED } from "@/lib/routes";
-import { AUTHOR, SITE_NAME, SITE_URL, pageMetadata } from "@/lib/site";
+import { AUTHOR_PERSON, SITE_NAME, SITE_URL, pageMetadata } from "@/lib/site";
 
 const TITLE = "Cost per finished task: what a scraping API really costs an AI agent";
 const PUBLISHED = COPY_CHANGED[COST_PATH] ?? "2026-10-31";
@@ -76,7 +76,7 @@ export default function CostPerFinishedTaskPage() {
           mainEntityOfPage: `${SITE_URL}${COST_PATH}`,
           datePublished: PUBLISHED,
           dateModified: PUBLISHED,
-          author: { "@type": "Person", name: AUTHOR.name, url: AUTHOR.url },
+          author: AUTHOR_PERSON,
           publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
           image: `${SITE_URL}/og/overview.png`,
         }}

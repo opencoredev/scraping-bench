@@ -4,7 +4,7 @@ import { comparisons, providers, tracks } from "@/lib/catalog";
 import { COST_PATH } from "@/lib/cost";
 import { colorOf } from "@/lib/colors";
 import { results } from "@/lib/results";
-import { NOISE_PATH, REPO, RESULTS_JSON, SITE_URL, notTestedText } from "@/lib/site";
+import { AUTHOR, NOISE_PATH, REPO, RESULTS_JSON, SITE_URL, notTestedText } from "@/lib/site";
 
 /** Header, footer, breadcrumbs and JSON-LD shared by every page. Server components: no client JS. */
 
@@ -106,6 +106,11 @@ export function SiteFooter({ runLine = true }: { runLine?: boolean }) {
           <li>
             <a href={REPO} className="hover:text-foreground">
               Source on GitHub
+            </a>
+          </li>
+          <li>
+            <a href={AUTHOR.url} className="hover:text-foreground">
+              By Leo ({AUTHOR.handle})
             </a>
           </li>
         </FooterColumn>

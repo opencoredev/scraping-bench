@@ -7,7 +7,7 @@ import { COST_PATH } from "@/lib/cost";
 import { METHOD_TEXT, NOISE_PATH, VERDICT_LABEL, clearedCount, gapCount, intervalPointsText, noiseFaqs, pointsText, shortAnswer, trackGaps, trackNote, trackVerdictText } from "@/lib/noise";
 import type { Gap, TrackGaps } from "@/lib/noise";
 import { COPY_CHANGED } from "@/lib/routes";
-import { AUTHOR, SITE_NAME, SITE_URL, pageMetadata } from "@/lib/site";
+import { AUTHOR_PERSON, SITE_NAME, SITE_URL, pageMetadata } from "@/lib/site";
 
 const TITLE = "Why most gaps between scraping APIs are noise: benchmark confidence intervals explained";
 const PUBLISHED = COPY_CHANGED[NOISE_PATH] ?? "2026-11-01";
@@ -76,7 +76,7 @@ export default function WhyMostGapsAreNoisePage() {
           mainEntityOfPage: `${SITE_URL}${NOISE_PATH}`,
           datePublished: PUBLISHED,
           dateModified: PUBLISHED,
-          author: { "@type": "Person", name: AUTHOR.name, url: AUTHOR.url },
+          author: AUTHOR_PERSON,
           publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
           image: `${SITE_URL}/og/overview.png`,
         }}
