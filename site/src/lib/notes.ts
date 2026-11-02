@@ -52,18 +52,27 @@ const V1_TRACK_NOTES: Partial<Record<TrackId, string>> = {
 };
 
 
+/**
+ * Jina Reader's per-call token budget, read from the scrape track's population notes in results.json
+ * ("Jina Reader ran under a 5,000-token rejecting budget."), so copy never states a number the data doesn't. Null when absent.
+ */
+export const JINA_TOKEN_BUDGET: string | null =
+  results.tracks.find((t) => t.id === "scrape")?.population?.notes.match(/Jina Reader ran under a ([\d,]+)-token rejecting budget/)?.[1] ?? null;
+
 /** v2 caveats, each checked against docs/FINDINGS.md for the v2 run ("Browserbase means HTTP Fetch/Search, not a browser-session agent"). */
 const V2_TESTED_AS: Partial<Record<string, string>> = {
   browserbase: "Browserbase here means its HTTP Fetch and Search APIs, not its browser sessions.",
-  jina: "Jina here means the Jina Reader API (r.jina.ai) on scrape only, called with a 5,000-token budget that makes it reject longer pages. Jina's search was left out: it has no hard cap on tokens per call.",
+  jina: `Jina here means the Jina Reader API (r.jina.ai) on scrape only${JINA_TOKEN_BUDGET ? `, called with a ${JINA_TOKEN_BUDGET}-token budget that makes it reject longer pages` : ""}. Jina's search was left out: it has no hard cap on tokens per call.`,
 };
 
 const V2_PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
   browserbase: [{ text: "Its Search API returns URLs and titles without excerpts, so the model had less to answer from on search.", track: "search" }],
-  jina: [
-    { text: "The 5,000-token budget kept the run inside Jina's free allowance. It is part of the result, so this is not a general score for Jina Reader on long pages.", track: "scrape" },
-    { text: "Some calls were rejected outright; the token budget is a plausible cause, but the stored evidence can't prove it. Many pages that did come back lacked the top-level heading most tasks asked for.", track: "scrape" },
-  ],
+  jina: JINA_TOKEN_BUDGET
+    ? [
+        { text: `The ${JINA_TOKEN_BUDGET}-token budget kept the run inside Jina's free allowance. It is part of the result, so this is not a general score for Jina Reader on long pages.`, track: "scrape" },
+        { text: "Some calls were rejected outright; the token budget is a plausible cause, but the stored evidence can't prove it. Many pages that did come back lacked the top-level heading most tasks asked for.", track: "scrape" },
+      ]
+    : [],
 };
 
 export const TESTED_AS: Partial<Record<string, string>> = V1 ? V1_TESTED_AS : V2_TESTED_AS;

@@ -1,6 +1,7 @@
 import { costText, rankedRuns, runOn } from "@/lib/catalog";
 import type { Provider, Run } from "@/lib/catalog";
 import type { Faq } from "@/lib/faq";
+import { JINA_TOKEN_BUDGET } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
 import { COST_PATH, MODEL, NOISE_PATH } from "@/lib/site";
 
@@ -33,7 +34,8 @@ function extreme({ run, value }: { run: Run; value: (r: Run) => number | null })
 
 function jinaDepth(p: Provider): ProviderDepth | null {
   const run = runOn(p, "scrape");
-  if (!run) return null;
+  const budget = JINA_TOKEN_BUDGET;
+  if (!run || !budget) return null;
   const { agent, entry } = run;
   const raw = entry.raw;
   const coverage = entry.coverage;
@@ -50,7 +52,7 @@ function jinaDepth(p: Provider): ProviderDepth | null {
     question: "How was the Jina Reader API called in this benchmark?",
     answer: [
       "Each scrape call was one GET request to r.jina.ai followed by the page URL, with an API key, asking for JSON, at Jina's default settings.",
-      "Every call carried a 5,000-token budget (the X-Token-Budget header), which makes Reader reject a page longer than that instead of returning it. The budget kept the run inside Jina's free allowance.",
+      `Every call carried a ${budget}-token budget (the X-Token-Budget header), which makes Reader reject a page longer than that instead of returning it. The budget kept the run inside Jina's free allowance.`,
       `The agent, ${MODEL}, got the same ${run.track.tasks} scrape tasks, prompt and limits as every other provider: ${limitsText(run)}.`,
       "Jina's search API wasn't run, because it has no hard cap on tokens per call.",
     ].join(" "),
@@ -67,7 +69,7 @@ function jinaDepth(p: Provider): ProviderDepth | null {
         ? `On the ${coverage.pages} scrape pages checked against a saved copy, Jina Reader's Markdown held ${formatPct(coverageMean)} of the sentences sampled from each page's own text${covered}.`
         : null,
       raw ? `The answer a task asked for was in its response on ${raw.successes} of ${raw.tasks} tasks (${formatPct(raw.rate)}).` : null,
-      `With the 5,000-token budget, the agent finished ${agent.successes} of ${agent.tasks} scrape tasks (${formatPct(agent.rate)})${done}, at ${costText(agent)} per finished task${cost}.`,
+      `With the ${budget}-token budget, the agent finished ${agent.successes} of ${agent.tasks} scrape tasks (${formatPct(agent.rate)})${done}, at ${costText(agent)} per finished task${cost}.`,
       "Some calls were rejected outright; the token budget is a plausible cause, but the stored evidence can't prove it. Many pages that did come back lacked the top-level heading most tasks asked for.",
       "If your pages are short, or you can allow a larger budget, test Reader on your own pages before you rule it out.",
     ]
@@ -80,7 +82,7 @@ function jinaDepth(p: Provider): ProviderDepth | null {
   };
 
   return {
-    description: `How the Jina Reader API (r.jina.ai) did as an AI agent's scrape tool: ${agent.successes} of ${agent.tasks} tasks (${formatPct(agent.rate)}) at ${costText(agent)} per finished task, under a 5,000-token budget. Intervals and caveats.`,
+    description: `How the Jina Reader API (r.jina.ai) did as an AI agent's scrape tool: ${agent.successes} of ${agent.tasks} tasks (${formatPct(agent.rate)}) at ${costText(agent)} per finished task, under a ${budget}-token budget. Intervals and caveats.`,
     faqs: [called, markdown],
   };
 }
