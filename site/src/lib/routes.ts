@@ -50,4 +50,8 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/providers/spider": "2026-10-31",
   [NOISE_PATH]: "2026-11-01",
   "/compare/firecrawl-vs-tinyfish": "2026-11-01",
+  "/providers/jina": "2026-11-02",
+  "/compare/firecrawl-vs-jina": "2026-11-02",
+  "/compare/context-dev-vs-jina": "2026-11-02",
+  "/compare/jina-vs-scrapfly": "2026-11-02",
 };

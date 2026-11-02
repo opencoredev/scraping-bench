@@ -55,10 +55,15 @@ const V1_TRACK_NOTES: Partial<Record<TrackId, string>> = {
 /** v2 caveats, each checked against docs/FINDINGS.md for the v2 run ("Browserbase means HTTP Fetch/Search, not a browser-session agent"). */
 const V2_TESTED_AS: Partial<Record<string, string>> = {
   browserbase: "Browserbase here means its HTTP Fetch and Search APIs, not its browser sessions.",
+  jina: "Jina here means the Jina Reader API (r.jina.ai) on scrape only, called with a 5,000-token budget that makes it reject longer pages. Jina's search was left out: it has no hard cap on tokens per call.",
 };
 
 const V2_PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
   browserbase: [{ text: "Its Search API returns URLs and titles without excerpts, so the model had less to answer from on search.", track: "search" }],
+  jina: [
+    { text: "The 5,000-token budget kept the run inside Jina's free allowance. It is part of the result, so this is not a general score for Jina Reader on long pages.", track: "scrape" },
+    { text: "Some calls were rejected outright; the token budget is a plausible cause, but the stored evidence can't prove it. Many pages that did come back lacked the top-level heading most tasks asked for.", track: "scrape" },
+  ],
 };
 
 export const TESTED_AS: Partial<Record<string, string>> = V1 ? V1_TESTED_AS : V2_TESTED_AS;

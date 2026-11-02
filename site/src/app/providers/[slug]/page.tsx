@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Breadcrumbs, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
+import { Breadcrumbs, JsonLd, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
 import { ScoreTable } from "@/components/site/score-table";
 import {
   cohortLabel,
@@ -25,8 +25,9 @@ import { linkOf } from "@/lib/links";
 import { PROVIDER_NOTES, TESTED_AS, searchedName } from "@/lib/notes";
 import { PROVIDER_TITLES, REFERENCE_ID, providerAnswer } from "@/lib/answers";
 import { ALTERNATIVES_PATH } from "@/lib/alternatives";
+import { providerDepth } from "@/lib/depth";
 import { formatPct } from "@/lib/results";
-import { MODEL, pageMetadata } from "@/lib/site";
+import { MODEL, SITE_URL, pageMetadata } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -45,9 +46,12 @@ const trackNames = (p: Provider) => listText(p.runs.map((r) => r.track.label.toL
 export async function generateMetadata({ params }: PageProps<"/providers/[slug]">): Promise<Metadata> {
   const p = await providerOf(params);
   const answer = providerAnswer(p);
+  const depth = providerDepth(p);
   return pageMetadata({
     title: PROVIDER_TITLES[p.id] ?? `${searchedName(p)} benchmark results for AI agents`,
-    description: answer
+    description: depth
+      ? depth.description
+      : answer
       ? `${answer.summary[0]} Intervals, cost and caveats.`
       : `How ${searchedName(p)} did as an AI agent's ${trackNames(p)} tool: ${p.runs
       .map((r) => `${formatPct(r.agent.rate)} of ${r.track.tasks} ${r.track.label.toLowerCase()} tasks at ${costText(r.agent)} each`)
@@ -109,10 +113,21 @@ export default async function ProviderPage({ params }: PageProps<"/providers/[sl
   const pairs = comparisonsWith(p);
   const untested = tracks.filter((t) => !p.runs.some((r) => r.track.id === t.id));
   const answer = providerAnswer(p);
+  const questions = providerDepth(p)?.faqs ?? [];
 
   return (
     <PageShell>
       <Breadcrumbs trail={[{ name: "Providers", path: "/providers" }, { name: searchedName(p), path: `/providers/${p.slug}` }]} />
+      {questions.length > 0 ? (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            url: `${SITE_URL}/providers/${p.slug}`,
+            mainEntity: questions.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+          }}
+        />
+      ) : null}
       <PageIntro title={`${searchedName(p)} for AI agents: benchmark results`}>
         {answer ? <p className="text-foreground">{answer.summary.join(" ")}</p> : null}
         {answer && answer.versus.length > 0 ? (
@@ -157,6 +172,29 @@ export default async function ProviderPage({ params }: PageProps<"/providers/[sl
               <li key={n.text}>{n.text}</li>
             ))}
           </ul>
+        </Section>
+      ) : null}
+
+      {questions.length > 0 ? (
+        <Section title="Questions">
+          <div className="border-t border-border/60">
+            {questions.map((f) => (
+              <section key={f.question} className="border-b border-border/60 py-6">
+                <h3 className="max-w-prose text-sm font-medium text-pretty">{f.question}</h3>
+                <p className="mt-2 max-w-prose text-sm text-pretty text-muted-foreground">{f.answer}</p>
+                <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm">
+                  {f.links.map((l) => (
+                    <TextLink key={l.href} href={l.href}>
+                      {l.label}
+                    </TextLink>
+                  ))}
+                </p>
+              </section>
+            ))}
+          </div>
+          <p className="mt-6 text-sm">
+            <TextLink href="/faq">More questions, answered from the data</TextLink>
+          </p>
         </Section>
       ) : null}
 
