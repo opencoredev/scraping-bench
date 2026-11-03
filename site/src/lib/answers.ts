@@ -21,6 +21,7 @@ export const PROVIDER_TITLES: Partial<Record<string, string>> = {
   linkup: "Linkup API benchmark: search and scrape results for AI agents",
   spider: "Spider (spider.cloud) scraping API benchmark for AI agents",
   jina: "Jina Reader API benchmark: r.jina.ai results for AI agents",
+  firecrawl: "Firecrawl API benchmark: cost per finished task for AI agents",
 };
 
 const lower = (t: Track) => t.label.toLowerCase();
@@ -156,6 +157,7 @@ const PAIR_LEADS: Partial<Record<string, TrackId>> = {
   "context-dev-vs-scrapfly": "crawl",
   "firecrawl-vs-browserbase": "scrape",
   "firecrawl-vs-tinyfish": "scrape",
+  "firecrawl-vs-linkup": "search",
 };
 
 /** The pair's shared tracks, lead track first when the page has one. Others keep results order. */

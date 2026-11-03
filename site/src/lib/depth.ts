@@ -1,14 +1,15 @@
-import { costText, rankedRuns, runOn } from "@/lib/catalog";
+import { costText, doneText, listText, ordinal, rankedRuns, runOn, standingText } from "@/lib/catalog";
 import type { Provider, Run } from "@/lib/catalog";
 import type { Faq } from "@/lib/faq";
 import { JINA_TOKEN_BUDGET } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
+import { ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH, MODEL, NOISE_PATH } from "@/lib/site";
 
 /**
  * Extra depth for provider pages people search for by API name ("jina reader api"): a description and questions
  * answered from results.json. The hand-written parts (how the API was called, the token budget) come from
- * src/adapters/jina.ts, providers/jina.config.md and docs/METHODOLOGY.md. Added one provider at a time.
+ * src/adapters/jina.ts, providers/jina.config.md, providers/firecrawl.config.md and docs/METHODOLOGY.md. Added one provider at a time.
  */
 
 export type ProviderDepth = { description: string; faqs: [Faq, ...Faq[]] };
@@ -87,8 +88,76 @@ function jinaDepth(p: Provider): ProviderDepth | null {
   };
 }
 
+/** Where a run's cost per finished task sits among every priced run on its track, cheapest first. Rounded-equal costs count as a tie. */
+function costPlace(run: Run): { place: number; tied: boolean; of: number } | null {
+  const own = run.agent.costPerSuccessUsd;
+  if (own === null) return null;
+  const priced = rankedRuns(run.track).filter((r) => r.agent.costPerSuccessUsd !== null);
+  const shown = costText(run.agent);
+  const cheaper = priced.filter((r) => costText(r.agent) !== shown && (r.agent.costPerSuccessUsd ?? 0) < own).length;
+  const tied = priced.some((r) => r.entry.id !== run.entry.id && costText(r.agent) === shown);
+  return { place: cheaper + 1, tied, of: priced.length };
+}
+
+const costPlaceText = (run: Run): string => {
+  const at = costPlace(run);
+  if (!at) return `${run.track.label.toLowerCase()}, cost not measured`;
+  const where = at.place === 1 ? "lowest" : at.place === at.of ? "highest" : `${ordinal(at.place)} lowest`;
+  return `${run.track.label.toLowerCase()} ${costText(run.agent)} (${at.tied ? "tied for " : ""}${where} of ${at.of})`;
+};
+
+function firecrawlDepth(p: Provider): ProviderDepth | null {
+  const [first, ...others] = p.runs;
+  const costs = [first, ...others].map(costPlaceText);
+  const search = runOn(p, "search");
+
+  const cost: Faq = {
+    question: "What does the Firecrawl API cost per finished task?",
+    answer: [
+      "Firecrawl's plan prices are on its own pricing page. This benchmark measured something a plan price can't tell you: what it cost an AI agent to get a task done.",
+      `Per finished task, Firecrawl cost ${listText(costs)}, ranked among the providers priced on each track.`,
+      "That counts every API and model dollar spent on a track, failed tasks included, divided by the tasks the agent finished.",
+      `Firecrawl reports credits, which were converted to dollars at its documented list rate. Model cost is a list-price estimate for ${MODEL}. Every provider ran on a free plan.`,
+    ].join(" "),
+    links: [
+      { href: COST_PATH, label: "What cost per finished task means" },
+      { href: ALTERNATIVES_PATH, label: "Firecrawl alternatives, cost included" },
+    ],
+  };
+
+  const called: Faq = {
+    question: "How was the Firecrawl API called in this benchmark?",
+    answer: [
+      "Through Firecrawl's v2 API at its default settings, with no SDK and no client retries.",
+      "Scrape and crawl asked for Markdown. Search returned web results without scraping each result page. Map used the documented defaults. A crawl was submitted once and polled every 2 seconds.",
+      `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
+    ].join(" "),
+    links: [
+      { href: "/methodology", label: "How the benchmark works" },
+      { href: NOISE_PATH, label: "Which gaps rule out chance" },
+    ],
+  };
+
+  const searched: Faq | null = search
+    ? {
+        question: "How did Firecrawl's search API do for an AI agent?",
+        answer: `With Firecrawl's search, the agent finished ${doneText(search.agent)} search tasks, at ${costText(search.agent)} per finished task. ${standingText(search)}`,
+        links: [
+          { href: "/search", label: "All search results" },
+          { href: "/compare/firecrawl-vs-linkup", label: "Firecrawl vs Linkup on search" },
+        ],
+      }
+    : null;
+
+  return {
+    description: `What the Firecrawl API cost an AI agent per finished task: ${listText([first, ...others].map((r) => `${r.track.label.toLowerCase()} ${costText(r.agent)}`))}. Tasks done, intervals and how it was called.`,
+    faqs: searched ? [cost, called, searched] : [cost, called],
+  };
+}
+
 const DEPTH: Partial<Record<string, (p: Provider) => ProviderDepth | null>> = {
   jina: jinaDepth,
+  firecrawl: firecrawlDepth,
 };
 
 export const providerDepth = (p: Provider): ProviderDepth | null => DEPTH[p.id]?.(p) ?? null;
