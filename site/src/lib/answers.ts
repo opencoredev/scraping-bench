@@ -8,7 +8,7 @@ import type { Track } from "@/lib/results";
  * Pages are added one at a time so each change can be evaluated on its own in Search Console.
  */
 
-const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish", "browserbase", "linkup", "spider", "jina"]);
+const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish", "browserbase", "linkup", "spider", "jina", "string", "scrapfly"]);
 
 /** The provider most searches compare against ("<provider> vs firecrawl"). */
 export const REFERENCE_ID = "firecrawl";
@@ -22,6 +22,8 @@ export const PROVIDER_TITLES: Partial<Record<string, string>> = {
   spider: "Spider (spider.cloud) scraping API benchmark for AI agents",
   jina: "Jina Reader API benchmark: r.jina.ai results for AI agents",
   firecrawl: "Firecrawl API benchmark: cost per finished task for AI agents",
+  string: "String (usestring.ai) web data API benchmark for AI agents",
+  scrapfly: "Scrapfly API benchmark: scrape and crawl results for AI agents",
 };
 
 const lower = (t: Track) => t.label.toLowerCase();
@@ -158,6 +160,7 @@ const PAIR_LEADS: Partial<Record<string, TrackId>> = {
   "firecrawl-vs-browserbase": "scrape",
   "firecrawl-vs-tinyfish": "scrape",
   "firecrawl-vs-linkup": "search",
+  "string-vs-firecrawl": "scrape",
 };
 
 /** The pair's shared tracks, lead track first when the page has one. Others keep results order. */

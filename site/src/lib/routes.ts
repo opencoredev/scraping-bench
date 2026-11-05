@@ -56,4 +56,7 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/compare/jina-vs-scrapfly": "2026-11-02",
   "/providers/firecrawl": "2026-11-03",
   "/compare/firecrawl-vs-linkup": "2026-11-03",
+  "/providers/string": "2026-11-05",
+  "/providers/scrapfly": "2026-11-05",
+  "/compare/string-vs-firecrawl": "2026-11-05",
 };
