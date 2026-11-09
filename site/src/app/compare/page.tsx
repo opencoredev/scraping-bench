@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, PageIntro, PageShell, TextLink } from "@/components/site/chrome";
-import { ALTERNATIVES_PATH } from "@/lib/alternatives";
+import { ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { comparisons, listText, runOn } from "@/lib/catalog";
 import { formatPct } from "@/lib/results";
 import { pageMetadata } from "@/lib/site";
@@ -19,7 +19,8 @@ export default function CompareIndex() {
       <PageIntro title="Head-to-head comparisons">
         <p>Pairs that ran at least one track together. Each page puts both on the same tasks and says whether the gap between them is one the data supports.</p>
         <p>
-          Looking for a Firecrawl replacement? <TextLink href={ALTERNATIVES_PATH}>Firecrawl alternatives</TextLink> sets every tested provider against Firecrawl, track by track.
+          Looking for a Firecrawl replacement? <TextLink href={ALTERNATIVES_PATH}>Firecrawl alternatives</TextLink> sets every tested provider against Firecrawl, track by track, and{" "}
+          <TextLink href={JINA_ALTERNATIVES_PATH}>Jina Reader alternatives</TextLink> does the same for the Jina Reader API on scrape.
         </p>
       </PageIntro>
       <ul className="border-t border-border">

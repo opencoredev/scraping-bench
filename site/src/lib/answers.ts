@@ -8,7 +8,7 @@ import type { Track } from "@/lib/results";
  * Pages are added one at a time so each change can be evaluated on its own in Search Console.
  */
 
-const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish", "browserbase", "linkup", "spider", "jina", "string", "scrapfly"]);
+const ANSWER_FIRST: ReadonlySet<string> = new Set(["contextdev", "tinyfish", "browserbase", "linkup", "spider", "jina", "string", "scrapfly", "you"]);
 
 /** The provider most searches compare against ("<provider> vs firecrawl"). */
 export const REFERENCE_ID = "firecrawl";
@@ -24,6 +24,7 @@ export const PROVIDER_TITLES: Partial<Record<string, string>> = {
   firecrawl: "Firecrawl API benchmark: cost per finished task for AI agents",
   string: "String (usestring.ai) web data API benchmark for AI agents",
   scrapfly: "Scrapfly API benchmark: scrape and crawl results for AI agents",
+  you: "You.com Search API and Contents API benchmark for AI agents",
 };
 
 const lower = (t: Track) => t.label.toLowerCase();

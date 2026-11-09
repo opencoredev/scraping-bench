@@ -24,7 +24,7 @@ import { colorOf } from "@/lib/colors";
 import { linkOf } from "@/lib/links";
 import { PROVIDER_NOTES, TESTED_AS, searchedName } from "@/lib/notes";
 import { PROVIDER_TITLES, REFERENCE_ID, providerAnswer } from "@/lib/answers";
-import { ALTERNATIVES_PATH } from "@/lib/alternatives";
+import { ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { providerDepth } from "@/lib/depth";
 import { formatPct } from "@/lib/results";
 import { MODEL, SITE_URL, pageMetadata } from "@/lib/site";
@@ -200,9 +200,10 @@ export default async function ProviderPage({ params }: PageProps<"/providers/[sl
 
       {pairs.length > 0 ? (
         <Section title={`${p.label} compared`}>
-          {p.id === REFERENCE_ID ? (
+          {p.id === REFERENCE_ID || p.id === "jina" ? (
             <p className="mb-5 max-w-prose text-sm text-pretty text-muted-foreground">
-              Every tested provider against {p.label} on one page: <TextLink href={ALTERNATIVES_PATH}>{p.label} alternatives</TextLink>.
+              Every tested provider against {p.label} on one page:{" "}
+              <TextLink href={p.id === REFERENCE_ID ? ALTERNATIVES_PATH : JINA_ALTERNATIVES_PATH}>{p.label} alternatives</TextLink>.
             </p>
           ) : null}
           <ul className="grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
