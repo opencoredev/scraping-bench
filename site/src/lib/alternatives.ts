@@ -103,7 +103,7 @@ export function trailingText(t: TrackAlternatives): string | null {
       ? `The benchmark tested only the gap to ${leader.entry.label}, the leader, and that one rules out chance; the other gaps weren't tested head to head.`
       : leader
         ? `The benchmark tested only the gap to ${leader.entry.label}, the leader, and it is too small to rule out chance; the other gaps weren't tested head to head.`
-        : "No provider led this track alone, so none of these gaps was tested head to head.";
+        : "No provider led this track alone, so this page doesn't call these gaps.";
   return `Every other provider on ${t.track.label.toLowerCase()} finished more tasks than ${name}'s ${formatPct(t.reference.agent.rate)}. ${tested}`;
 }
 
@@ -123,7 +123,9 @@ function pickText(t: TrackAlternatives): string {
     ? null
     : lowest.entry.id === leader?.entry.id
       ? `${lowest.entry.label} also cost the least per finished task (${costText(lowest.agent)}).`
-      : `${lowest.entry.label} cost the least per finished task (${costText(lowest.agent)}, against ${costText(t.reference.agent)}), but its gap to ${name} wasn't tested head to head.`;
+      : `${lowest.entry.label} cost the least per finished task (${costText(lowest.agent)}, against ${costText(t.reference.agent)})${
+          leader ? `, but its gap to ${name} wasn't tested head to head` : ""
+        }.`;
   return [most, cheap].filter((s): s is string => s !== null).join(" ");
 }
 
