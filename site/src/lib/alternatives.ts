@@ -15,8 +15,10 @@ import { NOT_TESTED } from "@/lib/site";
 
 export const ALTERNATIVES_PATH = "/firecrawl-alternatives";
 export const JINA_ALTERNATIVES_PATH = "/jina-reader-alternatives";
+export const CONTEXT_DEV_ALTERNATIVES_PATH = "/context-dev-alternatives";
 
 const JINA_ID = "jina";
+const CONTEXT_DEV_ID = "contextdev";
 
 /** Names that show up in "alternatives" listicles but were never part of this benchmark. No numbers exist for them. */
 const NEVER_BENCHMARKED = "Apify, Crawl4AI and ZenRows";
@@ -49,6 +51,36 @@ export function gapText({ run, gap }: AlternativeRow, reference: Run): string {
   }
 }
 
+/** The published comparison between two runs, if the benchmark ran one. When leaders tie, it compares everyone with one co-leader. */
+function directComparison(track: Track, a: Run, b: Run) {
+  return track.population?.comparisons.find(
+    (x) => (x.provider === a.entry.label && x.reference === b.entry.label) || (x.provider === b.entry.label && x.reference === a.entry.label),
+  );
+}
+
+/** `pairGap`, plus the pairs a tied lead hides from it: a direct comparison with the co-leader the benchmark used as its reference. */
+function rowGap(track: Track, run: Run, own: Run): PairGap {
+  const gap = pairGap(track, run, own);
+  if (gap.kind !== "untested") return gap;
+  const direct = directComparison(track, run, own);
+  return direct ? { kind: "tested", real: direct.resolved } : gap;
+}
+
+/**
+ * `standingText`, except when the lead is tied and the reference trails it: `standingText` then names the first co-leader,
+ * which may not be the one the benchmark compared it with. Name the tie and the co-leader that was tested instead.
+ */
+function standingFor(track: Track, own: Run): string {
+  const top = leaders(track);
+  if (top.length < 2 || top.some((r) => r.entry.id === own.entry.id)) return standingText(own);
+  const direct = top.flatMap((r) => directComparison(track, r, own) ?? [])[0];
+  if (!direct) return standingText(own);
+  const gap = Math.round(Math.abs((top[0]?.agent.rate ?? own.agent.rate) - own.agent.rate) * 100);
+  return `${own.entry.label} is behind ${listText(top.map((r) => r.entry.label))} (${formatPct(top[0]?.agent.rate ?? 0)}), which tied for the lead. The benchmark tested its ${gap}-point gap to ${direct.reference}, and it is ${
+    direct.resolved ? "big enough to rule out chance" : "too small to rule out chance"
+  }.`;
+}
+
 function onTrack(reference: Provider, track: Track): TrackAlternatives | null {
   const own = runOn(reference, track.id);
   if (!own) return null;
@@ -56,12 +88,12 @@ function onTrack(reference: Provider, track: Track): TrackAlternatives | null {
     .filter((r) => r.entry.id !== reference.id)
     .map((run) => ({
       run,
-      gap: pairGap(track, run, own),
+      gap: rowGap(track, run, own),
       comparison: comparisonsWith(reference).find((c) => c.a.id === run.entry.id || c.b.id === run.entry.id),
     }));
   const ownCost = own.agent.costPerSuccessUsd;
   const cheaper = ownCost === null ? [] : rows.map((r) => r.run).filter((r) => r.agent.costPerSuccessUsd !== null && r.agent.costPerSuccessUsd < ownCost);
-  return { track, reference: own, rows, standing: standingText(own), cheaper };
+  return { track, reference: own, rows, standing: standingFor(track, own), cheaper };
 }
 
 function alternativesFor(id: string, path: string): Alternatives | null {
@@ -79,6 +111,15 @@ function alternativesFor(id: string, path: string): Alternatives | null {
 export const firecrawlAlternatives = (): Alternatives | null => alternativesFor(REFERENCE_ID, ALTERNATIVES_PATH);
 
 export const jinaAlternatives = (): Alternatives | null => alternativesFor(JINA_ID, JINA_ALTERNATIVES_PATH);
+
+export const contextDevAlternatives = (): Alternatives | null => alternativesFor(CONTEXT_DEV_ID, CONTEXT_DEV_ALTERNATIVES_PATH);
+
+/** Provider id to its alternatives page, for the "compared" section on provider pages. */
+export const ALTERNATIVES_PAGES: Partial<Record<string, string>> = {
+  [REFERENCE_ID]: ALTERNATIVES_PATH,
+  [JINA_ID]: JINA_ALTERNATIVES_PATH,
+  [CONTEXT_DEV_ID]: CONTEXT_DEV_ALTERNATIVES_PATH,
+};
 
 /** "cost less per finished task than Firecrawl's 1.67¢: Spider (0.88¢), …", or null when none did. */
 export function cheaperText(t: TrackAlternatives): string | null {
@@ -98,12 +139,17 @@ export function trailingText(t: TrackAlternatives): string | null {
   const top = leaders(t.track);
   const leader = top.length === 1 ? top[0] : undefined;
   const gap = detectedGap(t.track, name);
+  const coLeader = leader ? undefined : top.flatMap((r) => directComparison(t.track, r, t.reference) ?? [])[0];
   const tested =
     leader && gap
       ? `The benchmark tested only the gap to ${leader.entry.label}, the leader, and that one rules out chance; the other gaps weren't tested head to head.`
       : leader
         ? `The benchmark tested only the gap to ${leader.entry.label}, the leader, and it is too small to rule out chance; the other gaps weren't tested head to head.`
-        : "No provider led this track alone, so this page doesn't call these gaps.";
+        : coLeader
+          ? `${listText(top.map((r) => r.entry.label))} tied for the lead. The benchmark tested only the gap to ${coLeader.reference}, and it is ${
+              coLeader.resolved ? "big enough to rule out chance" : "too small to rule out chance"
+            }; the other gaps weren't tested head to head.`
+          : "No provider led this track alone, so this page doesn't call these gaps.";
   return `Every other provider on ${t.track.label.toLowerCase()} finished more tasks than ${name}'s ${formatPct(t.reference.agent.rate)}. ${tested}`;
 }
 
