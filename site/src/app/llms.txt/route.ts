@@ -2,7 +2,7 @@ import { comparisons, costText, doneText, intervalText, leaders, providers, rank
 import { results } from "@/lib/results";
 import { MODEL, RESULTS_JSON_RAW, SITE_URL, absoluteUrl, notTestedText } from "@/lib/site";
 import { PROVIDER_NOTES } from "@/lib/notes";
-import { ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
+import { ALTERNATIVES_PATH, CONTEXT_DEV_ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH } from "@/lib/cost";
 import { NOISE_PATH, NOISE_SUMMARY } from "@/lib/noise";
 
@@ -45,6 +45,7 @@ function body(): string {
     ...comparisons.map((c) => `- [${c.a.label} vs ${c.b.label}](${absoluteUrl(`/compare/${c.slug}`)})`),
     `- [Firecrawl alternatives](${absoluteUrl(ALTERNATIVES_PATH)}): every tested provider against Firecrawl, track by track`,
     `- [Jina Reader alternatives](${absoluteUrl(JINA_ALTERNATIVES_PATH)}): every scrape provider against the Jina Reader API`,
+    `- [Context.dev alternatives](${absoluteUrl(CONTEXT_DEV_ALTERNATIVES_PATH)}): every tested provider against Context.dev, track by track`,
     `- [Methodology](${absoluteUrl("/methodology")}): how tasks are graded and when a gap counts`,
     `- [Cost per finished task](${absoluteUrl(COST_PATH)}): what the cost figure means and the cheapest provider on each track`,
     `- [Why most gaps are noise](${absoluteUrl(NOISE_PATH)}): ${NOISE_SUMMARY}`,
