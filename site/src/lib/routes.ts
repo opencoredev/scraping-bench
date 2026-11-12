@@ -65,5 +65,5 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/compare": "2026-11-11",
   "/providers/you-com": "2026-11-09",
   [CONTEXT_DEV_ALTERNATIVES_PATH]: "2026-11-11",
-  "/providers/context-dev": "2026-11-11",
+  "/providers/context-dev": "2026-11-12",
 };
