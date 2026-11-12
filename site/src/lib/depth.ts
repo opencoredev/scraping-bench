@@ -3,7 +3,7 @@ import type { Provider, Run } from "@/lib/catalog";
 import type { Faq } from "@/lib/faq";
 import { JINA_TOKEN_BUDGET } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
-import { ALTERNATIVES_PATH } from "@/lib/alternatives";
+import { ALTERNATIVES_PATH, CONTEXT_DEV_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH, MODEL, NOISE_PATH } from "@/lib/site";
 
 /**
@@ -155,9 +155,48 @@ function firecrawlDepth(p: Provider): ProviderDepth | null {
   };
 }
 
+/** Context.dev, for "context.dev pricing": cost per finished task and how the v1 API was called (providers/contextdev.config.md, src/adapters/contextdev.ts). */
+function contextDevDepth(p: Provider): ProviderDepth | null {
+  const [first, ...others] = p.runs;
+  const runs = [first, ...others];
+
+  const cost: Faq = {
+    question: "What does the Context.dev API cost per finished task?",
+    answer: [
+      "Context.dev's plan prices are on its own pricing page. This benchmark measured what it cost an AI agent to get a task done.",
+      `Per finished task, Context.dev cost ${listText(runs.map(costPlaceText))}, ranked among the providers priced on each track.`,
+      "That counts every API and model dollar spent on a track, failed tasks included, divided by the tasks the agent finished.",
+      `Context.dev reports the credits each call used, which were converted to dollars at its documented list rate. Model cost is a list-price estimate for ${MODEL}. Every provider ran on a free plan.`,
+    ].join(" "),
+    links: [
+      { href: COST_PATH, label: "What cost per finished task means" },
+      { href: CONTEXT_DEV_ALTERNATIVES_PATH, label: "Context.dev alternatives, cost included" },
+    ],
+  };
+
+  const called: Faq = {
+    question: "How was the Context.dev API called in this benchmark?",
+    answer: [
+      "Through Context.dev's v1 web API at its default settings, with no SDK and no client retries, one request at a time on the free plan.",
+      "Scrape asked for Markdown. Search asked for at least 10 results, the API's minimum, and the agent got the number the task asked for. Map listed the URLs Context.dev already knows for the domain, filtered to the task's section of the site. Crawl was one synchronous request with a page limit and the same scope.",
+      `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
+    ].join(" "),
+    links: [
+      { href: "/methodology", label: "How the benchmark works" },
+      { href: NOISE_PATH, label: "Which gaps rule out chance" },
+    ],
+  };
+
+  return {
+    description: `What the Context.dev API cost an AI agent per finished task: ${listText(runs.map((r) => `${r.track.label.toLowerCase()} ${costText(r.agent)}`))}. Tasks done, intervals and how it was called.`,
+    faqs: [cost, called],
+  };
+}
+
 const DEPTH: Partial<Record<string, (p: Provider) => ProviderDepth | null>> = {
   jina: jinaDepth,
   firecrawl: firecrawlDepth,
+  contextdev: contextDevDepth,
 };
 
 export const providerDepth = (p: Provider): ProviderDepth | null => DEPTH[p.id]?.(p) ?? null;

@@ -15,7 +15,7 @@ export const REFERENCE_ID = "firecrawl";
 
 /** Title overrides that match how people search for a provider. Others use the default provider title. */
 export const PROVIDER_TITLES: Partial<Record<string, string>> = {
-  contextdev: "Context.dev review: benchmark results for AI agents",
+  contextdev: "Context.dev API review: cost per finished task for AI agents",
   tinyfish: "TinyFish API benchmark: results and cost for AI agents",
   browserbase: "Browserbase Fetch and Search API benchmark for AI agents",
   linkup: "Linkup API benchmark: search and scrape results for AI agents",
