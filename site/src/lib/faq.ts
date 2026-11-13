@@ -114,7 +114,7 @@ function firecrawlFreePlanFaq(): Faq[] {
         "Firecrawl has a free plan, and every Firecrawl result here ran on it, as every other provider's did on its own free plan.",
         `On it, Firecrawl finished these tasks: ${listText(done)}.`,
         "Its requests went out one at a time with a fixed gap between them, set before the run, and time spent waiting counted against each task's deadline.",
-        "The run counts rate-limit errors apart from retrieval errors, and its machine-readable report shows no rate-limit failures for Firecrawl on any track, so these scores aren't the result of throttling.",
+        "The run counts rate-limit errors apart from retrieval errors, and its machine-readable report classifies none of Firecrawl's failures, on any track, as rate-limit errors. The pacing waits still counted against task deadlines, so an effect from the free plan can't be ruled out.",
         "In the earlier v1 run, Firecrawl's tuned scrape lane did hit the free plan's per-minute quota and got HTTP 429 errors; those rows measured free-plan throughput, not retrieval quality.",
         "Free plans, one server and one agent model limit how far any of these results generalize, including to Firecrawl's paid plans.",
       ].join(" "),
