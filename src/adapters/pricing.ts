@@ -16,5 +16,6 @@ export const pricing = {
   scrapfly: { credit: 0.00015, source: 'https://scrapfly.io/pricing' },
   string: { request_standard: 0.0003, request_premium: 0.003, browser_standard: 0.0015, browser_premium: 0.006, search: 0.0015, source: 'https://portal.usestring.ai/docs/get-started/pricing', checkedAt: '2026-10-24', note: 'Starter plan USD per request, by the x-billed-request-type String returns. The account ran on free credits, which the usage page prices at Starter rates.' },
   browserbase: { scrape: 0.004, search: 0.005, source: 'https://docs.browserbase.com/account/billing/plans', searchSource: 'https://docs.browserbase.com/platform/search/overview' },
+  valyu: { contents: 0.00125, webResult: 0.000625, source: 'https://docs.valyu.ai/pricing', checkedAt: '2026-11-06', note: '1,600 credits per $10; contents 0.2 credits/URL, web search 0.1 credits/result; proprietary sources cost more. Billing uses the reported total_cost_dollars / total_deduction_dollars.' },
 } satisfies Record<string, object>;
 export const pricingCheckedAt = '2026-10-17';

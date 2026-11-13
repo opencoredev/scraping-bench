@@ -18,7 +18,8 @@ export type ProviderId =
   | "scrapfly"
   | "browserbase"
   | "you"
-  | "string";
+  | "string"
+  | "valyu";
 
 /** Which kind of product a provider is, so it is only ranked against its peers. */
 export type Cohort = "content-api" | "search-index" | "scraping-infra" | "browser-infra";
