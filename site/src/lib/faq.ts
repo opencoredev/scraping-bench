@@ -1,4 +1,4 @@
-import { cheapest, comparisons, costText, detectedGap, listText, pairVerdict, rankedRuns, runOn, trackById } from "@/lib/catalog";
+import { cheapest, comparisons, costText, detectedGap, doneText, listText, pairVerdict, providerById, rankedRuns, runOn, trackById } from "@/lib/catalog";
 import type { Run, TrackId } from "@/lib/catalog";
 import { formatPct, results } from "@/lib/results";
 import { COST_PATH, MODEL, NOISE_PATH, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
@@ -98,7 +98,36 @@ function agentModelFaq(): Faq {
   };
 }
 
-const ranOn = new Date(results.generatedAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+/**
+ * "Is Firecrawl free" and "does its rate limit skew the results". The pacing and the zero rate-limit failures come from
+ * docs/PREREGISTRATION-v2.md and results/wb-v2-final/summary.json (rateLimitFailures), which results.json doesn't carry,
+ * so the answer states them without numbers and only for v2. Firecrawl's per-track figures come from results.json.
+ */
+function firecrawlFreePlanFaq(): Faq[] {
+  const firecrawl = providerById("firecrawl");
+  if (V1 || !firecrawl) return [];
+  const done = firecrawl.runs.map((r) => `${r.track.label.toLowerCase()} ${doneText(r.agent)}`);
+  return [
+    {
+      question: "Is Firecrawl free, and did its free plan's rate limit affect these results?",
+      answer: [
+        "Firecrawl has a free plan, and every Firecrawl result here ran on it, as every other provider's did on its own free plan.",
+        `On it, Firecrawl finished these tasks: ${listText(done)}.`,
+        "Its requests went out one at a time with a fixed gap between them, set before the run, and time spent waiting counted against each task's deadline.",
+        "The run counts rate-limit errors apart from retrieval errors, and its machine-readable report classifies none of Firecrawl's failures, on any track, as rate-limit errors. The pacing waits still counted against task deadlines, so an effect from the free plan can't be ruled out.",
+        "In the earlier v1 run, Firecrawl's tuned scrape lane did hit the free plan's per-minute quota and got HTTP 429 errors; those rows measured free-plan throughput, not retrieval quality.",
+        "Free plans, one server and one agent model limit how far any of these results generalize, including to Firecrawl's paid plans.",
+      ].join(" "),
+      links: [
+        { href: "/providers/firecrawl", label: "Firecrawl's results" },
+        { href: "/methodology", label: "Methodology" },
+        { href: `${REPO}/blob/main/results/wb-v2-final/summary.json`, label: "Machine-readable report" },
+      ],
+    },
+  ];
+}
+
+const ranOn =new Date(results.generatedAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
 export const notTestedFaq: Faq = {
   question: `Were ${NOT_TESTED} tested?`,
@@ -114,6 +143,7 @@ export const faqs: readonly Faq[] = [
   cheapestFaq(),
   agentModelFaq(),
   ...headToHead(),
+  ...firecrawlFreePlanFaq(),
   ...(V1
     ? [
   {
