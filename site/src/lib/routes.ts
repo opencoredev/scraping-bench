@@ -46,7 +46,7 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/providers/browserbase": "2026-10-30",
   "/providers/linkup": "2026-10-30",
   "/compare/firecrawl-vs-browserbase": "2026-10-30",
-  "/compare/tinyfish-vs-browserbase": "2026-10-30",
+  "/compare/tinyfish-vs-browserbase": "2026-11-14",
   "/faq": "2026-11-13",
   [COST_PATH]: "2026-10-31",
   "/providers/spider": "2026-10-31",
@@ -67,4 +67,6 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   [CONTEXT_DEV_ALTERNATIVES_PATH]: "2026-11-11",
   "/providers/context-dev": "2026-11-12",
   "/compare/string-vs-spider": "2026-11-13",
+  "/compare/firecrawl-vs-spider": "2026-11-14",
+  "/compare/context-dev-vs-tinyfish": "2026-11-14",
 };
