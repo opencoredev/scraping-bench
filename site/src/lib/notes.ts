@@ -66,6 +66,12 @@ const V2_TESTED_AS: Partial<Record<string, string>> = {
 };
 
 const V2_PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
+  // results/campaign-v2/budget-worksheet.md ("Fetch/Search contract zero") and reconciliation.md (TinyFish API spend $0).
+  tinyfish: [
+    {
+      text: "The test account's TinyFish contract priced Fetch and Search calls at $0, so its cost per finished task is model spend only. Another account may be charged for those calls.",
+    },
+  ],
   browserbase: [{ text: "Its Search API returns URLs and titles without excerpts, so the model had less to answer from on search.", track: "search" }],
   jina: JINA_TOKEN_BUDGET
     ? [
