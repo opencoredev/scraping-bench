@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Bars } from "@/components/bench/charts";
+import { ALTERNATIVES_PAGES } from "@/lib/alternatives";
 import { Breadcrumbs, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
 import { ScoreTable } from "@/components/site/score-table";
 import { comparisonBySlug, comparisons, comparisonsWith, costText, listText, pairVerdict, runOn, tracks } from "@/lib/catalog";
@@ -97,6 +98,10 @@ export default async function ComparePage({ params }: PageProps<"/compare/[pair]
     return tested ? [tested, ...relevant] : relevant;
   });
   const answer = pairAnswer(c);
+  const alternatives = [c.a, c.b].flatMap((p) => {
+    const path = ALTERNATIVES_PAGES[p.id];
+    return path ? [{ p, path }] : [];
+  });
   const related = [...new Map([...comparisonsWith(c.a), ...comparisonsWith(c.b)].filter((o) => o.slug !== c.slug).map((o) => [o.slug, o])).values()];
 
   return (
@@ -142,6 +147,19 @@ export default async function ComparePage({ params }: PageProps<"/compare/[pair]
             </span>
           ))}
           . How a gap is tested: <TextLink href="/methodology">methodology</TextLink>.
+          {alternatives.length > 0 ? (
+            <>
+              {" "}
+              {alternatives.length === 1 ? `Every tested provider against ${searchedName(alternatives[0].p)} on one page:` : "Every tested provider against each of them:"}{" "}
+              {alternatives.map(({ p, path }, i) => (
+                <span key={path}>
+                  {i > 0 ? " and " : ""}
+                  <TextLink href={path}>{searchedName(p)} alternatives</TextLink>
+                </span>
+              ))}
+              .
+            </>
+          ) : null}
         </p>
         {related.length > 0 ? (
           <ul className="mt-5 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
