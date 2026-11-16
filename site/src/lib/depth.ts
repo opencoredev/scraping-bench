@@ -193,10 +193,80 @@ function contextDevDepth(p: Provider): ProviderDepth | null {
   };
 }
 
+/**
+ * The cost question for a provider whose adapter estimates API spend from a documented price per call
+ * (src/adapters/pricing.ts) because the response carries no usage: Linkup and Browserbase.
+ */
+function perCallCostFaq({ name, question, runs }: { name: string; question: string; runs: readonly [Run, ...Run[]] }): Faq {
+  return {
+    question,
+    answer: [
+      `${name}'s plan prices are on its own pricing page. This benchmark measured what it cost an AI agent to get a task done.`,
+      `Per finished task, ${name} cost ${listText(runs.map(costPlaceText))}, ranked among the providers priced on each track.`,
+      "That counts every API and model dollar spent on a track, failed tasks included, divided by the tasks the agent finished.",
+      `The API share is an estimate: each call was priced at ${name}'s documented list price per call. Model cost is a list-price estimate for ${MODEL}. Every provider ran on a free plan.`,
+    ].join(" "),
+    links: [
+      { href: COST_PATH, label: "What cost per finished task means" },
+      { href: NOISE_PATH, label: "Which gaps rule out chance" },
+    ],
+  };
+}
+
+/** Linkup, for "linkup api": cost per finished task and how its v1 search and fetch endpoints were called (providers/linkup.config.md, src/adapters/linkup.ts). */
+function linkupDepth(p: Provider): ProviderDepth | null {
+  const runs = p.runs;
+
+  const called: Faq = {
+    question: "How was the Linkup API called in this benchmark?",
+    answer: [
+      "Through Linkup's v1 API at its default settings, with no SDK and no client retries.",
+      "Search was one POST to /v1/search with standard depth, the searchResults output type and maxResults set to the number of results the agent asked for (the benchmark capped that at 10), so the agent got a list of results, each with a text excerpt, and no written answer.",
+      "Scrape was one POST to /v1/fetch with only the page URL, so pages weren't rendered with JavaScript, and the agent read the Markdown it returned.",
+      `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
+    ].join(" "),
+    links: [
+      { href: "/methodology", label: "How the benchmark works" },
+      { href: "/compare/firecrawl-vs-linkup", label: "Firecrawl vs Linkup, track by track" },
+    ],
+  };
+
+  return {
+    description: `What the Linkup API did as an AI agent's search and scrape tool: ${listText(runs.map((r) => `${r.track.label.toLowerCase()} ${doneText(r.agent)} at ${costText(r.agent)} per finished task`))}. How it was called, intervals and caveats.`,
+    faqs: [perCallCostFaq({ name: "Linkup", question: "What does the Linkup API cost per finished task?", runs }), called],
+  };
+}
+
+/** Browserbase, for "browserbase fetch api": cost per finished task and how its Fetch and Search APIs were called (providers/browserbase.config.md, src/adapters/browserbase.ts). */
+function browserbaseDepth(p: Provider): ProviderDepth | null {
+  const runs = p.runs;
+
+  const called: Faq = {
+    question: "How were Browserbase's Fetch and Search APIs called in this benchmark?",
+    answer: [
+      "Through Browserbase's v1 HTTP APIs at their default settings, with no browser session, no SDK and no client retries.",
+      "Scrape was one POST to /v1/fetch asking for Markdown. Fetch doesn't render JavaScript, and a page that came back with an error status counted as a failed call.",
+      "Search was one POST to /v1/search for the number of results the agent asked for, which the benchmark capped at 10.",
+      `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
+    ].join(" "),
+    links: [
+      { href: "/methodology", label: "How the benchmark works" },
+      { href: "/compare/firecrawl-vs-browserbase", label: "Firecrawl vs Browserbase, track by track" },
+    ],
+  };
+
+  return {
+    description: `What Browserbase's Fetch and Search APIs did for an AI agent: ${listText(runs.map((r) => `${r.track.label.toLowerCase()} ${doneText(r.agent)} at ${costText(r.agent)} per finished task`))}. How they were called, intervals and caveats.`,
+    faqs: [perCallCostFaq({ name: "Browserbase", question: "What do Browserbase's Fetch and Search APIs cost per finished task?", runs }), called],
+  };
+}
+
 const DEPTH: Partial<Record<string, (p: Provider) => ProviderDepth | null>> = {
   jina: jinaDepth,
   firecrawl: firecrawlDepth,
   contextdev: contextDevDepth,
+  linkup: linkupDepth,
+  browserbase: browserbaseDepth,
 };
 
 export const providerDepth = (p: Provider): ProviderDepth | null => DEPTH[p.id]?.(p) ?? null;
