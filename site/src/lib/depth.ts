@@ -221,7 +221,7 @@ function linkupDepth(p: Provider): ProviderDepth | null {
     question: "How was the Linkup API called in this benchmark?",
     answer: [
       "Through Linkup's v1 API at its default settings, with no SDK and no client retries.",
-      "Search was one POST to /v1/search with standard depth, the searchResults output type and maxResults set to the number of results the task asked for, so the agent got a list of results, each with a text excerpt, and no written answer.",
+      "Search was one POST to /v1/search with standard depth, the searchResults output type and maxResults set to the number of results the agent asked for (the benchmark capped that at 10), so the agent got a list of results, each with a text excerpt, and no written answer.",
       "Scrape was one POST to /v1/fetch with only the page URL, so pages weren't rendered with JavaScript, and the agent read the Markdown it returned.",
       `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
     ].join(" "),
@@ -246,7 +246,7 @@ function browserbaseDepth(p: Provider): ProviderDepth | null {
     answer: [
       "Through Browserbase's v1 HTTP APIs at their default settings, with no browser session, no SDK and no client retries.",
       "Scrape was one POST to /v1/fetch asking for Markdown. Fetch doesn't render JavaScript, and a page that came back with an error status counted as a failed call.",
-      "Search was one POST to /v1/search for the number of results the task asked for, up to 25. It returns URLs and titles without excerpts, so the agent had less text to answer from than with search APIs that return excerpts.",
+      "Search was one POST to /v1/search for the number of results the agent asked for, which the benchmark capped at 10.",
       `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
     ].join(" "),
     links: [
