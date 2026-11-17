@@ -278,6 +278,7 @@ function tinyfishDepth(p: Provider): ProviderDepth | null {
     answer: [
       `TinyFish offers web APIs built for AI agents. This benchmark tested two of them, the way an agent would use them as its only tool: its Fetch API, which returns a page as Markdown, on scrape, and its Search API, which returns web results, on search. TinyFish finished ${listText(runs.map((r) => `${doneText(r.agent)} ${r.track.label.toLowerCase()} tasks`))}.`,
       ...versus,
+      ...(versus.length > 0 ? contract : []),
     ].join(" "),
     links: [
       { href: "/compare/firecrawl-vs-tinyfish", label: "Firecrawl vs TinyFish, track by track" },
@@ -315,7 +316,7 @@ function tinyfishDepth(p: Provider): ProviderDepth | null {
   };
 
   return {
-    description: `What TinyFish's Fetch and Search APIs did for an AI agent: ${listText(runs.map((r) => `${r.track.label.toLowerCase()} ${doneText(r.agent)} at ${costText(r.agent)}`))} per finished task. How they were called, vs Firecrawl, caveats.`,
+    description: `What TinyFish's Fetch and Search APIs did for an AI agent: ${listText(runs.map((r) => `${r.track.label.toLowerCase()} ${doneText(r.agent)}`))} tasks done. How they were called, vs Firecrawl, and cost on a $0 API contract.`,
     faqs: [what, called, cost],
   };
 }
