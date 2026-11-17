@@ -1,7 +1,8 @@
 import { costText, doneText, listText, ordinal, rankedRuns, runOn, standingText } from "@/lib/catalog";
 import type { Provider, Run } from "@/lib/catalog";
 import type { Faq } from "@/lib/faq";
-import { JINA_TOKEN_BUDGET } from "@/lib/notes";
+import { providerAnswer } from "@/lib/answers";
+import { JINA_TOKEN_BUDGET, PROVIDER_NOTES } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
 import { ALTERNATIVES_PATH, CONTEXT_DEV_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH, MODEL, NOISE_PATH } from "@/lib/site";
@@ -178,7 +179,7 @@ function contextDevDepth(p: Provider): ProviderDepth | null {
     question: "How was the Context.dev API called in this benchmark?",
     answer: [
       "Through Context.dev's v1 web API at its default settings, with no SDK and no client retries, one request at a time on the free plan.",
-      "Scrape asked for Markdown. Search asked for at least 10 results, the API's minimum, and the agent got the number the task asked for. Map listed the URLs Context.dev already knows for the domain, filtered to the task's section of the site. Crawl was one synchronous request with a page limit and the same scope.",
+      "Scrape asked for Markdown. Search asked for at least 10 results, the API's minimum, and the agent got the first results up to the number it asked for, which the benchmark capped at 10. Map listed the URLs Context.dev already knows for the domain, filtered to the task's section of the site. Crawl was one synchronous request with a page limit and the same scope.",
       `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
     ].join(" "),
     links: [
@@ -261,7 +262,67 @@ function browserbaseDepth(p: Provider): ProviderDepth | null {
   };
 }
 
+/**
+ * TinyFish, for "tinyfish api" and "what is TinyFish and how does it compare to Firecrawl": what was tested, how its
+ * Fetch and Search APIs were called (providers/tinyfish.config.md, src/adapters/tinyfish.ts) and cost per finished task
+ * with the account's $0 contract caveat, read from PROVIDER_NOTES so the two never disagree.
+ */
+function tinyfishDepth(p: Provider): ProviderDepth | null {
+  const runs = p.runs;
+  const versus = providerAnswer(p)?.versus ?? [];
+  const contract = (PROVIDER_NOTES[p.id] ?? []).filter((n) => !n.track).map((n) => n.text);
+  if (contract.length === 0) return null;
+
+  const what: Faq = {
+    question: "What is TinyFish, and how does it compare to Firecrawl?",
+    answer: [
+      `TinyFish offers web APIs built for AI agents. This benchmark tested two of them, the way an agent would use them as its only tool: its Fetch API, which returns a page as Markdown, on scrape, and its Search API, which returns web results, on search. TinyFish finished ${listText(runs.map((r) => `${doneText(r.agent)} ${r.track.label.toLowerCase()} tasks`))}.`,
+      ...versus,
+      ...(versus.length > 0 ? contract : []),
+    ].join(" "),
+    links: [
+      { href: "/compare/firecrawl-vs-tinyfish", label: "Firecrawl vs TinyFish, track by track" },
+      { href: ALTERNATIVES_PATH, label: "Every Firecrawl alternative tested" },
+    ],
+  };
+
+  const called: Faq = {
+    question: "How were TinyFish's Fetch and Search APIs called in this benchmark?",
+    answer: [
+      "Through TinyFish's Fetch and Search HTTP APIs at their default settings, with no SDK and no client retries.",
+      "Scrape was one POST to the Fetch API with the page URL and Markdown as the format; if TinyFish returned an error for the page, the call counted as failed.",
+      "Search was one GET to the Search API with only the query, and the agent got the first results up to the number it asked for, which the benchmark capped at 10, each with a title and snippet but no page text.",
+      "Map and crawl weren't run, because these two APIs don't cover them.",
+      `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
+    ].join(" "),
+    links: [
+      { href: "/methodology", label: "How the benchmark works" },
+      { href: "/search", label: "All search results" },
+    ],
+  };
+
+  const cost: Faq = {
+    question: "What does the TinyFish API cost per finished task?",
+    answer: [
+      `Per finished task, TinyFish cost ${listText(runs.map(costPlaceText))}, ranked among the providers priced on each track.`,
+      "That counts every API and model dollar spent on a track, failed tasks included, divided by the tasks the agent finished.",
+      ...contract,
+      `Model cost is a list-price estimate for ${MODEL}. Every provider ran on a free plan, and TinyFish's own pricing page has its current plan prices.`,
+    ].join(" "),
+    links: [
+      { href: COST_PATH, label: "What cost per finished task means" },
+      { href: NOISE_PATH, label: "Which gaps rule out chance" },
+    ],
+  };
+
+  return {
+    description: `What TinyFish's Fetch and Search APIs did for an AI agent: ${listText(runs.map((r) => `${r.track.label.toLowerCase()} ${doneText(r.agent)}`))} tasks done. How they were called, vs Firecrawl, and cost on a $0 API contract.`,
+    faqs: [what, called, cost],
+  };
+}
+
 const DEPTH: Partial<Record<string, (p: Provider) => ProviderDepth | null>> = {
+  tinyfish: tinyfishDepth,
   jina: jinaDepth,
   firecrawl: firecrawlDepth,
   contextdev: contextDevDepth,

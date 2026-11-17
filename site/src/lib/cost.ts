@@ -1,6 +1,6 @@
 import { costText, doneText, leaders, listText, rankedRuns, tracks } from "@/lib/catalog";
 import type { Run } from "@/lib/catalog";
-import { cheapestFaq } from "@/lib/faq";
+import { cheapestFaq, zeroApiCaveat } from "@/lib/faq";
 import type { Faq } from "@/lib/faq";
 import type { Track } from "@/lib/results";
 import { MODEL } from "@/lib/site";
@@ -71,7 +71,7 @@ export function trackCostText(c: TrackCost): string {
         : lowest.length === 1 && top.length === 1
           ? "No provider finished more tasks on this track."
           : `${topText(lowestTop)} also finished the most tasks, ${doneOfTop}.`;
-  return [cheapSentence, topSentence, spread ? `The highest cost per finished task, ${c.dearest.entry.label}'s ${costText(c.dearest.agent)}, is ${spread} times the lowest.` : null]
+  return [cheapSentence, zeroApiCaveat(lowest) || null, topSentence, spread ? `The highest cost per finished task, ${c.dearest.entry.label}'s ${costText(c.dearest.agent)}, is ${spread} times the lowest.` : null]
     .filter((s): s is string => s !== null)
     .join(" ");
 }

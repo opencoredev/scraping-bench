@@ -2,6 +2,7 @@ import { REFERENCE_ID, pairGap } from "@/lib/answers";
 import type { PairGap } from "@/lib/answers";
 import { comparisonsWith, costText, detectedGap, leaders, listText, providerById, rankedRuns, runOn, standingText, tracks } from "@/lib/catalog";
 import type { Comparison, Provider, Run } from "@/lib/catalog";
+import { zeroApiCaveat } from "@/lib/faq";
 import type { Faq } from "@/lib/faq";
 import { PROVIDER_NOTES, TESTED_AS } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
@@ -125,7 +126,8 @@ export const ALTERNATIVES_PAGES: Partial<Record<string, string>> = {
 export function cheaperText(t: TrackAlternatives): string | null {
   if (t.cheaper.length === 0) return null;
   const names = listText([...t.cheaper].sort((a, b) => (a.agent.costPerSuccessUsd ?? 0) - (b.agent.costPerSuccessUsd ?? 0)).map((r) => `${r.entry.label} (${costText(r.agent)})`));
-  return `${names} cost less per finished ${t.track.label.toLowerCase()} task than ${t.reference.entry.label}'s ${costText(t.reference.agent)}, counting API and model spend, failures included.`;
+  const caveat = zeroApiCaveat(t.cheaper);
+  return `${names} cost less per finished ${t.track.label.toLowerCase()} task than ${t.reference.entry.label}'s ${costText(t.reference.agent)}, counting API and model spend, failures included.${caveat ? ` ${caveat}` : ""}`;
 }
 
 /**
@@ -172,7 +174,7 @@ function pickText(t: TrackAlternatives): string {
       : `${lowest.entry.label} cost the least per finished task (${costText(lowest.agent)}, against ${costText(t.reference.agent)})${
           leader ? `, but its gap to ${name} wasn't tested head to head` : ""
         }.`;
-  return [most, cheap].filter((s): s is string => s !== null).join(" ");
+  return [most, cheap, lowest ? zeroApiCaveat([lowest]) || null : null].filter((s): s is string => s !== null).join(" ");
 }
 
 /** Short answers for the page and its FAQPage JSON-LD, so both say exactly the same thing. */
@@ -185,10 +187,12 @@ export function alternativesFaqs(a: Alternatives): Faq[] {
   const opener = allTrailing
     ? `Every provider tested alongside ${name} finished more ${listText(a.byTrack.map((t) => t.track.label.toLowerCase()))} tasks.`
     : `It depends on the job, and on most tracks the data can't separate ${name} from the providers around it.`;
-  const cheap = a.byTrack.flatMap((t) => {
+  const lowestRuns = a.byTrack.flatMap((t) => {
     const lowest = [...t.cheaper].sort((x, y) => (x.agent.costPerSuccessUsd ?? 0) - (y.agent.costPerSuccessUsd ?? 0))[0];
-    return lowest ? [`${t.track.label.toLowerCase()}: ${lowest.entry.label} at ${costText(lowest.agent)}, against ${name}'s ${costText(t.reference.agent)}`] : [];
+    return lowest ? [{ t, lowest }] : [];
   });
+  const cheap = lowestRuns.map(({ t, lowest }) => `${t.track.label.toLowerCase()}: ${lowest.entry.label} at ${costText(lowest.agent)}, against ${name}'s ${costText(t.reference.agent)}`);
+  const cheapCaveat = zeroApiCaveat(lowestRuns.map(({ lowest }) => lowest));
   const noCheaper = a.byTrack.filter((t) => t.cheaper.length === 0).map((t) => t.track.label.toLowerCase());
   return [
     {
@@ -200,7 +204,7 @@ export function alternativesFaqs(a: Alternatives): Faq[] {
       question: `Which ${name} alternative costs the least per finished task?`,
       answer: `Cost per finished task counts all API and model spend, failures included, divided by tasks done. The cheapest alternative on each track: ${cheap.join("; ")}.${
         noCheaper.length > 0 ? ` On ${listText(noCheaper)}, no alternative cost less than ${name}.` : ""
-      }`,
+      }${cheapCaveat ? ` ${cheapCaveat}` : ""}`,
       links: [{ href: "/providers", label: "Every provider's cost" }],
     },
     {
