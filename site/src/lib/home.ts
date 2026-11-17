@@ -2,6 +2,7 @@ import { cheapest, comparisonsOn, costText, detectedGap, doneText, leaders, list
 import type { Run, TrackId } from "@/lib/catalog";
 import { formatPct, results } from "@/lib/results";
 import type { Track } from "@/lib/results";
+import { zeroApiCaveat } from "@/lib/faq";
 import { MODEL } from "@/lib/site";
 
 /**
@@ -51,11 +52,11 @@ export function costSummary(): string {
     return c ? [{ track: t, run: c }] : [];
   });
   const unpriced = tracks.filter((t) => !cheapest(t));
-  const free = priced.filter(({ run }) => run.entry.raw?.costPerSuccessUsd === 0);
+  const caveat = zeroApiCaveat(priced.map(({ run }) => run));
   return [
     "Cost per finished task counts all API and model spend, failures included, divided by tasks done.",
     priced.length ? `The lowest on each track was ${listText(priced.map(({ track, run }) => `${run.entry.label} on ${lower(track)} (${costText(run.agent)})`))}.` : "",
-    ...free.map(({ track, run }) => `No API charge was recorded for ${run.entry.label}'s ${lower(track)} calls on the free account, so its figure is mostly the model's spend.`),
+    caveat,
     ...unpriced.map((t) => `${t.label} has no cost figure because ${noCostReason(t)}.`),
   ]
     .filter(Boolean)

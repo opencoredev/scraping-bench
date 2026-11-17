@@ -1,6 +1,7 @@
 import { cheapest, comparisons, costText, detectedGap, doneText, listText, pairVerdict, providerById, rankedRuns, runOn, trackById } from "@/lib/catalog";
 import type { Run, TrackId } from "@/lib/catalog";
 import { formatPct, results } from "@/lib/results";
+import { ZERO_API_CHARGE } from "@/lib/notes";
 import { COST_PATH, MODEL, NOISE_PATH, NOT_TESTED, REPO, parallelNote } from "@/lib/site";
 
 /** Some answers describe the v1 run only (Spider and workers.dev, free plans, cold test sites). See lib/notes.ts. */
@@ -24,6 +25,25 @@ function scoresText(runs: readonly Run[]): string {
   return groups.map((g) => `${listText(g.map((r) => r.entry.label))} ${formatPct(g[0]?.agent.rate ?? 0)}`).join("; ");
 }
 
+/**
+ * The caveat every lowest-cost claim needs when no API charge was recorded for a run (TinyFish's $0 contract in v2),
+ * one sentence per provider: ZERO_API_CHARGE for v2, raw.costPerSuccessUsd === 0 for v1. Empty when no run qualifies.
+ */
+export function zeroApiCaveat(runs: readonly Run[]): string {
+  const byProvider = new Map<string, Run[]>();
+  for (const r of runs) {
+    if (r.entry.raw?.costPerSuccessUsd !== 0 && !ZERO_API_CHARGE.has(r.entry.id)) continue;
+    byProvider.set(r.entry.label, [...(byProvider.get(r.entry.label) ?? []), r]);
+  }
+  return [...byProvider]
+    .map(([label, rs]) => {
+      const trackNames = [...new Set(rs.map((r) => r.track.label.toLowerCase()))];
+      const figures = trackNames.length === 1 ? "its figure is" : "its figures are";
+      return `No API charge was recorded for ${label}'s ${listText(trackNames)} calls on the test account, so ${figures} the model's spend alone; another account may be charged for those calls.`;
+    })
+    .join(" ");
+}
+
 function gapsText(trackId: TrackId): string {
   const track = trackById(trackId);
   if (!track) return "";
@@ -44,6 +64,7 @@ function bestOn(trackId: TrackId, question: string, extra: (runs: Run[]) => stri
     gapsText(trackId),
     ...extra(runs),
     cheap ? `${cheap.entry.label} cost the least per finished task, ${costText(cheap.agent)}.` : "",
+    cheap ? zeroApiCaveat([cheap]) : "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -71,13 +92,15 @@ function headToHead(): Faq[] {
 }
 
 export function cheapestFaq(): Faq {
-  const parts = results.tracks.flatMap((t) => {
+  const cheap = results.tracks.flatMap((t) => {
     const c = cheapest(t);
-    return c ? [`${t.label.toLowerCase()}: ${c.entry.label} at ${costText(c.agent)}`] : [];
+    return c ? [c] : [];
   });
+  const parts = cheap.map((c) => `${c.track.label.toLowerCase()}: ${c.entry.label} at ${costText(c.agent)}`);
+  const caveat = zeroApiCaveat(cheap);
   return {
     question: "Which web data API is cheapest per finished task?",
-    answer: `Cost per finished task counts all API and model spend, failures included, divided by tasks done. The cheapest on each track: ${parts.join("; ")}.${V1 ? " Everything ran on free plans, so these are list-price equivalents, not invoices." : ""}`,
+    answer: `Cost per finished task counts all API and model spend, failures included, divided by tasks done. The cheapest on each track: ${parts.join("; ")}.${caveat ? ` ${caveat}` : ""}${V1 ? " Everything ran on free plans, so these are list-price equivalents, not invoices." : ""}`,
     links: [
       { href: "/providers", label: "Every provider's cost" },
       { href: COST_PATH, label: "What cost per finished task means" },
@@ -126,6 +149,43 @@ function firecrawlFreePlanFaq(): Faq[] {
     },
   ];
 }
+
+/**
+ * "web search api free" (320/mo, DataForSEO 2026-11-17): every v2 provider ran on its free plan (docs/FINDINGS.md,
+ * docs/METHODOLOGY.md), so the search results are free-plan results. Plan allowances weren't measured, so none are stated.
+ */
+function freeSearchFaq(): Faq[] {
+  const track = trackById("search");
+  if (V1 || !track) return [];
+  const runs = rankedRuns(track);
+  const most = Math.max(...runs.map((r) => r.agent.successes));
+  const top = runs.filter((r) => r.agent.successes === most);
+  const close = runs.filter((r) => r.agent.successes < most && !detectedGap(track, r.entry.label));
+  const lead = top[0];
+  if (!lead) return [];
+  return [
+    {
+      question: "Is there a free web search API that works for an AI agent?",
+      answer: [
+        `Every search API in this benchmark ran on its free plan, so these are free-plan results. On ${track.tasks} search tasks with ${MODEL} as the agent, ${listText(top.map((r) => r.entry.label))} finished the most, ${doneText(lead.agent)}.`,
+        close.length > 0
+          ? `${listText(close.map((r) => r.entry.label))} finished fewer, but by too little to rule out chance.`
+          : `Every other search API finished fewer, by a gap big enough to rule out chance.`,
+        "Free allowances, rate limits and sign-up terms differ by provider and change often, and the benchmark didn't compare them, so check each provider's pricing page before relying on a free plan.",
+        "Exa, Tavily and Perplexity, which also sell search APIs, were not tested.",
+      ].join(" "),
+      links: [
+        { href: "/methodology", label: "How the benchmark works" },
+        { href: COST_PATH, label: "What cost per finished task means" },
+      ],
+    },
+  ];
+}
+
+/** Answers shown only on one track's page (and its FAQPage), not on /faq. */
+export const TRACK_ONLY_FAQS: Partial<Record<TrackId, readonly Faq[]>> = {
+  search: freeSearchFaq(),
+};
 
 const ranOn =new Date(results.generatedAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 

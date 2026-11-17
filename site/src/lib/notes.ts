@@ -81,6 +81,12 @@ const V2_PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = {
     : [],
 };
 
+/**
+ * Providers whose API calls cost the test account nothing, so their cost per finished task is the model's spend alone.
+ * v2: TinyFish's $0 Fetch/Search contract (the note above). v1 flags the same thing through raw.costPerSuccessUsd === 0.
+ */
+export const ZERO_API_CHARGE: ReadonlySet<string> = new Set(V1 ? [] : ["tinyfish"]);
+
 export const TESTED_AS: Partial<Record<string, string>> = V1 ? V1_TESTED_AS : V2_TESTED_AS;
 export const PROVIDER_NOTES: Partial<Record<string, readonly Note[]>> = V1 ? V1_PROVIDER_NOTES : V2_PROVIDER_NOTES;
 export const TRACK_NOTES: Partial<Record<TrackId, string>> = V1 ? V1_TRACK_NOTES : {};

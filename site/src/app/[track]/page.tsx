@@ -6,7 +6,7 @@ import { Breadcrumbs, JsonLd, PageIntro, PageShell, Section, TextLink } from "@/
 import { ScoreTable } from "@/components/site/score-table";
 import { cheapest, comparisonsOn, costText, fastest, leaders, listText, rankedRuns, timeText, standingText, trackById, tracks } from "@/lib/catalog";
 import type { TrackId } from "@/lib/catalog";
-import { faqs, notTestedFaq } from "@/lib/faq";
+import { TRACK_ONLY_FAQS, faqs, notTestedFaq, zeroApiCaveat } from "@/lib/faq";
 import { TRACK_NOTES, TRACK_SEO, TRACK_TOPIC } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
 import type { Track } from "@/lib/results";
@@ -18,8 +18,11 @@ export function generateStaticParams(): { track: TrackId }[] {
   return tracks.map((t) => ({ track: t.id }));
 }
 
-/** FAQ answers that link to this track, plus the untested-providers one. Shown on the page and in its FAQPage JSON-LD. */
-const trackFaqs = (track: Track) => (TRACK_SEO[track.id] ? faqs.filter((f) => f === notTestedFaq || f.links.some((l) => l.href === `/${track.id}`)) : []);
+/** FAQ answers that link to this track, this track's own answers, then the untested-providers one. Shown on the page and in its FAQPage JSON-LD. */
+const trackFaqs = (track: Track) =>
+  TRACK_SEO[track.id]
+    ? [...faqs.filter((f) => f !== notTestedFaq && f.links.some((l) => l.href === `/${track.id}`)), ...(TRACK_ONLY_FAQS[track.id] ?? []), notTestedFaq]
+    : [];
 
 const trackOf = async (params: Promise<{ track: string }>): Promise<Track> => {
   const track = trackById((await params).track);
@@ -73,6 +76,7 @@ export default async function TrackPage({ params }: PageProps<"/[track]">) {
         <p>
           {lead ? standingText(lead) : null}
           {cheap ? ` ${cheap.entry.label} cost the least per finished task, ${costText(cheap.agent)}.` : null}
+          {cheap && zeroApiCaveat([cheap]) ? ` ${zeroApiCaveat([cheap])}` : null}
           {noTool ? ` With no tool at all, the model alone passed ${noTool.successes === 0 ? "none" : formatPct(noTool.rate)}.` : null}
         </p>
         {seo ? <p>{NOT_TESTED} weren&apos;t tested, so there are no numbers for them here.</p> : null}
