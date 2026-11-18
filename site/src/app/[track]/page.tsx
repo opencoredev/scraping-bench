@@ -11,6 +11,7 @@ import { TRACK_NOTES, TRACK_SEO, TRACK_TOPIC } from "@/lib/notes";
 import { formatPct } from "@/lib/results";
 import type { Track } from "@/lib/results";
 import { NOT_TESTED, SITE_URL, pageMetadata } from "@/lib/site";
+import { postsFor } from "@/lib/blog";
 
 export const dynamicParams = false;
 
@@ -134,6 +135,16 @@ export default async function TrackPage({ params }: PageProps<"/[track]">) {
         </ul>
         <p className="mt-4 max-w-prose text-sm text-pretty text-muted-foreground">
           How every task is graded, and when a gap counts, is on the <TextLink href="/methodology">methodology</TextLink> page.
+        </p>
+        <p className="mt-3 max-w-prose text-sm text-pretty text-muted-foreground">
+          Guides that use these results:{" "}
+          {postsFor(track.id).map((p, i) => (
+            <span key={p.slug}>
+              {i > 0 ? " and " : ""}
+              <TextLink href={p.path}>{p.title}</TextLink>
+            </span>
+          ))}
+          .
         </p>
       </Section>
     </PageShell>

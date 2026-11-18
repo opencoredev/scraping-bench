@@ -1,5 +1,6 @@
 import { ALTERNATIVES_PATH, CONTEXT_DEV_ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { comparisons, providers, tracks } from "@/lib/catalog";
+import { BLOG_PATH, posts } from "@/lib/blog";
 import { COST_PATH } from "@/lib/cost";
 import { NOISE_PATH } from "@/lib/site";
 
@@ -19,6 +20,8 @@ export const indexablePaths: readonly string[] = [
   COST_PATH,
   NOISE_PATH,
   "/faq",
+  BLOG_PATH,
+  ...posts.map((p) => p.path),
 ];
 
 /**
@@ -36,10 +39,10 @@ export const RUN_PUBLISHED: Partial<Record<string, string>> = {
  */
 export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/": "2026-11-17",
-  "/map": "2026-10-29",
+  "/map": "2026-11-18",
   "/v1": "2026-10-29",
-  "/search": "2026-11-17",
-  "/scrape": "2026-11-17",
+  "/search": "2026-11-18",
+  "/scrape": "2026-11-18",
   [ALTERNATIVES_PATH]: "2026-11-17",
   "/crawl": "2026-11-18",
   "/providers/browserbase": "2026-11-16",
@@ -75,4 +78,7 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/compare/jina-vs-scrapfly": "2026-11-15",
   "/compare/string-vs-context-dev": "2026-11-15",
   "/compare/string-vs-firecrawl": "2026-11-15",
+  "/providers": "2026-11-18",
+  [BLOG_PATH]: "2026-11-18",
+  ...Object.fromEntries(posts.map((p) => [p.path, p.modified])),
 };
