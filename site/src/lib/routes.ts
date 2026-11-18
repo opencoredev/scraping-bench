@@ -41,7 +41,7 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/search": "2026-11-17",
   "/scrape": "2026-11-17",
   [ALTERNATIVES_PATH]: "2026-11-17",
-  "/crawl": "2026-10-29",
+  "/crawl": "2026-11-18",
   "/providers/browserbase": "2026-11-16",
   "/providers/linkup": "2026-11-16",
   "/compare/tinyfish-vs-browserbase": "2026-11-14",
