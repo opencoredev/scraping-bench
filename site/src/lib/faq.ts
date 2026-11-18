@@ -182,9 +182,52 @@ function freeSearchFaq(): Faq[] {
   ];
 }
 
+/**
+ * GEO prompt #7 ("crawl a whole docs site into JSON"): every crawl task is one documentation section returned as JSON
+ * URLs and titles, so the crawl track answers it directly. Scores, title matches and the population note come from
+ * results.json. No cost figures: the v2 crawl was replayed on stored responses, which doesn't measure end-to-end crawl
+ * cost (docs/METHODOLOGY.md). "web crawling api" 90/mo, "crawl api" 30/mo (DataForSEO 2026-11-18).
+ */
+function crawlDocsFaq(): Faq[] {
+  const track = trackById("crawl");
+  if (V1 || !track) return [];
+  const runs = rankedRuns(track);
+  const titled = runs.flatMap((r) => (r.entry.titles ? [{ label: r.entry.label, ...r.entry.titles }] : []));
+  const allExact = titled.filter((t) => t.exact === t.expected);
+  const partial = titled.filter((t) => t.exact !== t.expected);
+  const titleText =
+    titled.length > 0
+      ? [
+          allExact.length > 0 ? `${listText(allExact.map((t) => t.label))} returned the exact HTML title for every expected page ${allExact.length === 1 ? "it" : "they"} found${allExact[0] ? ` (${allExact[0].exact} of ${allExact[0].expected})` : ""}.` : "",
+          ...partial.map((t) => `${t.label} returned the exact title for ${t.exact} of ${t.expected}, and a title containing the page name for ${t.loose} of ${t.expected}.`),
+        ]
+      : [];
+  return [
+    {
+      question: "Which crawl API is best for turning a whole docs site into JSON for an AI agent?",
+      answer: [
+        `Each of the ${track.tasks} crawl tasks asked ${MODEL} to use one crawl call and return, as JSON, every page URL in one documentation section with each page's HTML title. Each section's sitemap matches a breadth-first crawl of the site, so the answer key lists every page in it.`,
+        `Tasks done: ${scoresText(runs)}.`,
+        gapsText("crawl"),
+        ...titleText,
+        `Only ${listText(runs.map((r) => r.entry.label))} ran crawl, on ${track.tasks} tasks, so the intervals are wide. Crawl4AI and Apify weren't tested.`,
+        // Only the replay sentence: the note's grading sentences differ from docs/METHODOLOGY.md on whether titles count.
+        track.population?.notes.split(/(?<=\.)\s/)[0] ?? "",
+      ]
+        .filter(Boolean)
+        .join(" "),
+      links: [
+        { href: "/compare/firecrawl-vs-scrapfly", label: "Firecrawl vs Scrapfly" },
+        { href: "/methodology", label: "How crawl tasks are graded" },
+      ],
+    },
+  ];
+}
+
 /** Answers shown only on one track's page (and its FAQPage), not on /faq. */
 export const TRACK_ONLY_FAQS: Partial<Record<TrackId, readonly Faq[]>> = {
   search: freeSearchFaq(),
+  crawl: crawlDocsFaq(),
 };
 
 const ranOn =new Date(results.generatedAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
