@@ -5,6 +5,7 @@ import { PROVIDER_NOTES } from "@/lib/notes";
 import { ALTERNATIVES_PATH, CONTEXT_DEV_ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH } from "@/lib/cost";
 import { NOISE_PATH, NOISE_SUMMARY } from "@/lib/noise";
+import { BLOG_PATH, posts } from "@/lib/blog";
 
 export const dynamic = "force-static";
 
@@ -50,6 +51,8 @@ function body(): string {
     `- [Cost per finished task](${absoluteUrl(COST_PATH)}): what the cost figure means and the cheapest provider on each track`,
     `- [Why most gaps are noise](${absoluteUrl(NOISE_PATH)}): ${NOISE_SUMMARY}`,
     `- [FAQ](${absoluteUrl("/faq")})`,
+    `- [Blog](${absoluteUrl(BLOG_PATH)}): guides built on these results`,
+    ...posts.map((p) => `- [${p.title}](${absoluteUrl(p.path)}): ${p.description}`),
     "",
     "## Data",
     "",

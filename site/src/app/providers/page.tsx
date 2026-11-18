@@ -6,6 +6,7 @@ import { colorOf } from "@/lib/colors";
 import { fillStyle } from "@/lib/dither";
 import { formatPct, results } from "@/lib/results";
 import { NOT_TESTED, pageMetadata, parallelNote } from "@/lib/site";
+import { SCRAPING_APIS_POST, WEB_DATA_APIS_POST } from "@/lib/blog";
 
 export const metadata: Metadata = pageMetadata({
   title: "Web data API providers for AI agents, compared",
@@ -82,7 +83,9 @@ export default function ProvidersPage() {
 
       <Section title="Not in this table">
         <p className="max-w-prose text-sm text-pretty text-muted-foreground">
-          {NOT_TESTED} were not tested, so there are no numbers for them here. {parallelNote(results)} Want a head-to-head? See the <TextLink href="/compare">comparisons</TextLink>.
+          {NOT_TESTED} were not tested, so there are no numbers for them here. {parallelNote(results)} Want a head-to-head? See the <TextLink href="/compare">comparisons</TextLink>. Choosing one for a
+          specific job? See the <TextLink href={WEB_DATA_APIS_POST.path}>top 10 web data APIs by job</TextLink> and{" "}
+          <TextLink href={SCRAPING_APIS_POST.path}>the 7 best web scraping APIs</TextLink>.
         </p>
       </Section>
     </PageShell>
