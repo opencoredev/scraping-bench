@@ -64,7 +64,7 @@ export const VENDORS: Record<string, VendorFacts> = {
     fetchPrice: "1 credit for a basic request on datacenter proxies, +5 credits with JavaScript rendering, 25 credits on residential proxies; Discovery plan $30 a month for 200,000 credits",
     perThousand: "$0.15 on Discovery ($0.90 with JS rendering)",
     otherPrices: ["Unblocker (formerly ASP): no fixed price; it can upgrade the proxy pool, capped per call with cost_budget", "Captcha solving: +5 to 20 credits"],
-    billing: "Failed scrapes with 403, 429 or 5xx aren't billed, unless 30% or more of your scrapes over 24 hours are blocked without the Unblocker.",
+    billing: "Failed scrapes with 403, 429 or 5xx aren't billed, unless 30% or more of your scrapes over 24 hours, on at least 1,000 scrapes, are blocked without the Unblocker.",
     sources: [
       { label: "Scrapfly pricing", url: "https://scrapfly.io/pricing" },
       { label: "Scrapfly Scrape API billing", url: "https://scrapfly.io/docs/scrape-api/billing" },
@@ -432,6 +432,7 @@ export const topGroupIds: ReadonlySet<string> = new Set(results.tracks.flatMap((
     ["The scrape top group is Context.dev, Spider, Scrapfly and String", scrapeTopGroup.map((r) => r.entry.id).join() === "contextdev,spider,scrapfly,string"],
     ["Browserbase is the first scrape API below the cut", scrapingCut?.entry.id === "browserbase"],
     ["String has no crawl run", runFor("string", "crawl") === undefined],
+    ["Jina Reader ran scrape only", providerById("jina")?.runs.map((r) => r.track.id).join() === "scrape"],
     ["Spider ran scrape only", providerById("spider")?.runs.map((r) => r.track.id).join() === "scrape"],
     ["Browserbase's Fetch and Search are below the top group", (["scrape", "search"] as const).every((t) => { const r = runFor("browserbase", t); return !!r && belowTop(r); })],
     ["You.com is below the top group on search", (() => { const r = runFor("you", "search"); return !!r && belowTop(r); })()],
@@ -452,4 +453,3 @@ export function groupSummary(p: Provider): string {
   const below = p.runs.filter((r) => belowTop(r)).map((r) => r.track.label.toLowerCase());
   return [top.length ? `top group on ${listText(top)}` : null, below.length ? `below it on ${listText(below)}` : null].filter(Boolean).join("; ");
 }
-
