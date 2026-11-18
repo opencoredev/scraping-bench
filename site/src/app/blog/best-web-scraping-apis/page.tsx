@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, JsonLd, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
-import { Byline, FaqJsonLd, FaqList, KindKey, KindLabel, OtherPosts, Prose, SourceList } from "@/components/site/post";
+import { Byline, FaqJsonLd, FaqList, KindKey, KindLabel, OtherPosts, Prose, ScrollHint, SourceList } from "@/components/site/post";
 import { BLOG_PATH, SCRAPING_APIS_POST as POST, WEB_DATA_APIS_POST, blogPostingJsonLd, numberWord } from "@/lib/blog";
 import { cheapest, costText, doneText, intervalText, listText, providerById } from "@/lib/catalog";
 import type { Run } from "@/lib/catalog";
@@ -92,7 +92,9 @@ function PickName({ run }: { run: Run }) {
 
 function GlanceTable() {
   return (
-    <div className="relative -mx-5 overflow-x-auto px-5 md:mx-0 md:px-0">
+    <>
+      <ScrollHint />
+      <div className="relative -mx-5 overflow-x-auto px-5 md:mx-0 md:px-0">
       <table className="w-full min-w-[760px] text-left text-sm tabular-nums">
         <caption className="sr-only">The seven web scraping APIs: measured scrape results and list price per 1,000 plain fetches</caption>
         <thead className="text-xs text-muted-foreground">
@@ -127,7 +129,8 @@ function GlanceTable() {
           ))}
         </tbody>
       </table>
-    </div>
+      </div>
+    </>
   );
 }
 
@@ -233,8 +236,8 @@ export default function BestWebScrapingApisPage() {
           </p>
           <p>
             <KindLabel kind="editorial" />
-            <strong>Free, for a prototype.</strong> TinyFish&apos;s Fetch API costs nothing up to 1,000 URLs a day. Context.dev, Firecrawl and Scrapfly each give 1,000 credits a month, and Linkup tops a
-            work-email account back up to $20 each month.
+            <strong>Free, for a prototype.</strong> TinyFish&apos;s Fetch API costs nothing up to 1,000 URLs a day. Context.dev, Firecrawl and Scrapfly each give 1,000 credits a month, and Linkup gives $20
+            of credit to a work-email account and tops eligible accounts back up each month.
           </p>
           <p>
             <KindLabel kind="editorial" />

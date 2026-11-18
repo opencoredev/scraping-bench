@@ -1,4 +1,5 @@
 import { AUTHOR, SITE_NAME, SITE_URL } from "@/lib/site";
+import { trackById } from "@/lib/catalog";
 import type { TrackId } from "@/lib/catalog";
 
 /**
@@ -23,13 +24,16 @@ export type Post = {
   tracks: readonly TrackId[];
 };
 
+/** The scrape track's task count, from results.json, for the scraping post's title and description. */
+const scrapeTasks = trackById("scrape")?.tasks;
+if (scrapeTasks === undefined) throw new Error("blog: results.json has no scrape track");
+
 export const SCRAPING_APIS_POST: Post = {
   slug: "best-web-scraping-apis",
   path: `${BLOG_PATH}/best-web-scraping-apis`,
-  title: "The 7 best web scraping APIs in 2026, tested on 40 agent tasks",
+  title: `The 7 best web scraping APIs in 2026, tested on ${scrapeTasks} agent tasks`,
   metaTitle: "The 7 best web scraping APIs in 2026, tested",
-  description:
-    "Seven web scraping APIs picked from measured results on 40 agent tasks: tasks done, 95% intervals, cost per finished task, list prices checked November 18, 2026, and what the test doesn't cover.",
+  description: `Seven scraping APIs picked from measured results on ${scrapeTasks} agent tasks, with 95% intervals, cost per finished task and list prices checked November 18, 2026.`,
   published: "2026-11-18",
   modified: "2026-11-18",
   tracks: ["scrape"],
@@ -40,8 +44,7 @@ export const WEB_DATA_APIS_POST: Post = {
   path: `${BLOG_PATH}/top-web-data-apis`,
   title: "Top 10 web data APIs in 2026, and the job each one fits",
   metaTitle: "Top 10 web data APIs in 2026, sorted by job",
-  description:
-    "Ten web data APIs for AI agents, grouped by job: scrape, search, map, crawl, browser sessions, protected sites and ready-made scrapers. Measured results where we have them, untested ones marked.",
+  description: "Ten web data APIs for AI agents, grouped by job: scrape, search, map, crawl, browser sessions, protected sites and ready-made scrapers. Untested ones marked.",
   published: "2026-11-18",
   modified: "2026-11-18",
   tracks: ["scrape", "search", "map", "crawl"],

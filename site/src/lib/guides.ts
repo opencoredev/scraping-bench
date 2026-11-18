@@ -77,16 +77,16 @@ export const VENDORS: Record<string, VendorFacts> = {
     fetchPrice: "Starter plan ($19 a month, paid as usage credit): $0.25 per 1,000 standard fetches, $1.20 per 1,000 browser-rendered fetches",
     perThousand: "$0.25 on Starter",
     otherPrices: ["Search: $1.20 per 1,000 on Starter", "Premium-proxy fetch: $2.40 per 1,000 on Starter", "No separate map price on the pricing page"],
-    billing: "Blocked requests and String's own errors aren't charged; site responses such as 404s are. Unused credit rolls over.",
+    billing: "Blocked requests and String's own errors aren't charged, except blocked requests sent with custom headers and requests to sites with invalid certificates. Site responses such as 404s are charged. Unused credit rolls over.",
     sources: [{ label: "String pricing", url: "https://www.usestring.ai/pricing" }],
   },
   linkup: {
     name: "Linkup",
     site: "https://www.linkup.so",
-    free: "$20 of credit with a work email, topped back up to $20 each month",
-    fetchPrice: "Fetch: $0.001 per call without JavaScript rendering, $0.005 with it",
+    free: "$20 of credit with a work email; Linkup tops eligible accounts back up to $20 each month",
+    fetchPrice: "Fetch in standard mode: $0.001 per call without JavaScript rendering, $0.005 with it",
     perThousand: "$1.00 ($5.00 with JS rendering)",
-    otherPrices: ["Standard search: $0.005 per call", "Deep search: $0.05 per call"],
+    otherPrices: ["Standard search returning raw results: $0.005 per call", "Deep search returning raw results: $0.05 per call"],
     billing: "Failed calls are free. Pay as you go, no plan.",
     sources: [
       { label: "Linkup pricing docs", url: "https://docs.linkup.so/pages/documentation/development/pricing" },
@@ -234,7 +234,7 @@ export const SCRAPING_COPY: Record<(typeof SCRAPING_PICK_IDS)[number], PickCopy>
     what: "Linkup is mainly a search API (it finished the most search tasks). Its Fetch endpoint turns a URL into Markdown, with JavaScript rendering as an option. The benchmark called Fetch without rendering.",
     judgment: [
       "It kept the most page text of any API here, yet finished fewer tasks than the top group. This test rewards keeping headings and structure, not text alone, so pick it for the search-plus-fetch pairing rather than as a pure scraper.",
-      "Failed calls are free, and the $20 monthly top-up covers about 20,000 fetches without rendering.",
+      "Failed calls are free, and the $20 of free credit covers about 20,000 standard fetches without rendering.",
     ],
     pickIf: "your agent already searches with Linkup and you want page fetches on the same key and bill.",
   },
@@ -270,7 +270,7 @@ export const SCRAPE_NOT_PICKED: Record<string, string> = {
   browserbase:
     "This is Browserbase's HTTP Fetch API, not its browser sessions. It is the first API below the cut, and that cut is our call: the benchmark doesn't test the gap between it and TinyFish.",
   you: "You.com's Contents API. Its main product is search, and on search it also finished clearly fewer tasks than the leader.",
-  jina: `Jina Reader (r.jina.ai) ran under a ${JINA_TOKEN_BUDGET ?? "small"}-token budget that made it reject longer pages, so this is not a general score for Jina Reader.`,
+  jina: `Jina Reader (r.jina.ai) ran under a ${JINA_TOKEN_BUDGET ?? "small"}-token budget that rejects pages over it. That budget is a plausible cause of its rejected calls, though the stored evidence can't prove it, so this is not a general score for Jina Reader.`,
 };
 {
   const missing = scrapingRest.filter((r) => !SCRAPE_NOT_PICKED[r.entry.id]).map((r) => r.entry.id);
@@ -429,6 +429,8 @@ export const topGroupIds: ReadonlySet<string> = new Set(results.tracks.flatMap((
     })()],
     ["TinyFish is in the top search group", (() => { const r = runFor("tinyfish", "search"); return !!r && !belowTop(r); })()],
     ["The scraping post's title and description match the scrape task count", SCRAPING_APIS_POST.title.includes(`${scrapeTrack.tasks} agent tasks`) && SCRAPING_APIS_POST.description.includes(`${scrapeTrack.tasks} agent tasks`)],
+    ["The scrape top group is Context.dev, Spider, Scrapfly and String", scrapeTopGroup.map((r) => r.entry.id).join() === "contextdev,spider,scrapfly,string"],
+    ["Browserbase is the first scrape API below the cut", scrapingCut?.entry.id === "browserbase"],
     ["String has no crawl run", runFor("string", "crawl") === undefined],
     ["Spider ran scrape only", providerById("spider")?.runs.map((r) => r.track.id).join() === "scrape"],
     ["Browserbase's Fetch and Search are below the top group", (["scrape", "search"] as const).every((t) => { const r = runFor("browserbase", t); return !!r && belowTop(r); })],

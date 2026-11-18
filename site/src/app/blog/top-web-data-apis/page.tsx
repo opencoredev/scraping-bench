@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, JsonLd, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
-import { Byline, FaqJsonLd, FaqList, KindKey, KindLabel, OtherPosts, Prose, SourceList } from "@/components/site/post";
+import { Byline, FaqJsonLd, FaqList, KindKey, KindLabel, OtherPosts, Prose, ScrollHint, SourceList } from "@/components/site/post";
 import { BLOG_PATH, SCRAPING_APIS_POST, WEB_DATA_APIS_POST as POST, blogPostingJsonLd, numberWord } from "@/lib/blog";
 import { leaders, listText, providerById, rankedRuns, trackById, tracks } from "@/lib/catalog";
 import type { Provider } from "@/lib/catalog";
@@ -167,6 +167,7 @@ export default function TopWebDataApisPage() {
       </div>
 
       <Section title="Seven jobs a web data API can do">
+        <ScrollHint />
         <div className="relative -mx-5 overflow-x-auto px-5 md:mx-0 md:px-0">
           <table className="w-full min-w-[720px] text-left text-sm">
             <caption className="sr-only">Kinds of web data API: what you send, what you get, when to use it and whether scrapingbench measures it</caption>
@@ -196,13 +197,14 @@ export default function TopWebDataApisPage() {
           <Prose>
             <p>
               Most agents need two of these: search to find pages and scrape to read them. Map and crawl matter when the agent works through a whole site, such as answering from a product&apos;s docs. The
-              last three jobs are for pages that fight back or need a person&apos;s clicks, and they cost more per page.
+              last three jobs are for pages that fight back or need a person&apos;s clicks, and they&apos;re priced differently: by browser hour, by successful request through a proxy network, or per result.
             </p>
           </Prose>
         </div>
       </Section>
 
       <Section title="The ten at a glance" note="numbered for reference, not ranked">
+        <ScrollHint />
         <div className="relative -mx-5 overflow-x-auto px-5 md:mx-0 md:px-0">
           <table className="w-full min-w-[720px] text-left text-sm">
             <caption className="sr-only">Ten web data APIs: the jobs each fits, whether it was tested and its free allowance</caption>
@@ -312,13 +314,13 @@ export default function TopWebDataApisPage() {
         <Prose>
           <p>
             <KindLabel kind="measured" />
-            You.com and Jina Reader were tested. You.com finished below the top group on both search and scrape. Jina Reader ran scrape only, under a {JINA_TOKEN_BUDGET ?? "small"}-token budget that made it reject longer pages,
-            so its score isn&apos;t a general one.
+            You.com and Jina Reader were tested. You.com finished below the top group on both search and scrape. Jina Reader ran scrape only, under a {JINA_TOKEN_BUDGET ?? "small"}-token budget that rejects pages over it, which
+            may explain its rejected calls, so its score isn&apos;t a general one.
           </p>
           <p>
             <KindLabel kind="vendor" />
-            Exa and Tavily sell search APIs built for agents, and both were left out of the benchmark, so they can&apos;t make a measured search slot. On their pricing pages, Exa charges $7 per 1,000
-            searches (up to 10 results) and $1 per 1,000 pages of contents, with $10 of free credit a month; Tavily gives 1,000 free credits a month and charges $0.008 a credit after that.
+            Exa and Tavily sell search APIs built for agents, and both were left out of the benchmark, so they can&apos;t make a measured search slot. On their pricing pages, Exa charges $7 per 1,000 Auto
+            searches (up to 10 results; Lite is $4 and Deep $12) and $1 per 1,000 pages for each content type, with $10 of free credit a month; Tavily gives 1,000 free credits a month and charges $0.008 a credit after that.
           </p>
           <p>
             <KindLabel kind="editorial" />
@@ -331,7 +333,7 @@ export default function TopWebDataApisPage() {
         <Prose>
           <p>
             Every measured number comes from {MODEL} using one API as its only tool, on frozen tasks with answer keys from official sources, graded by a script. The tasks are mostly documentation sites,
-            every provider ran on its default settings from one server, and{" "}
+            every provider ran on its default settings and a free plan from one server, and{" "}
             <TextLink href={NOISE_PATH}>most gaps between providers are too small to call</TextLink>. The full rules are on the <TextLink href="/methodology">methodology page</TextLink>.
           </p>
           <p>

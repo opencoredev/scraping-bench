@@ -127,6 +127,11 @@ export function OtherPosts({ current }: { current: Post }) {
   );
 }
 
+/** Wide tables scroll sideways on phones; say so, since the overflow isn't visible. */
+export function ScrollHint() {
+  return <p className="pb-2 text-xs text-muted-foreground md:hidden">Scroll the table sideways to see every column.</p>;
+}
+
 /** Body copy: the same measure and rhythm as the explainer pages. */
 export function Prose({ children }: { children: React.ReactNode }) {
   return <div className="max-w-prose space-y-3 text-sm text-pretty text-muted-foreground [&_strong]:font-medium [&_strong]:text-foreground">{children}</div>;
