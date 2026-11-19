@@ -83,9 +83,24 @@ function jinaDepth(p: Provider): ProviderDepth | null {
     ],
   };
 
+  // Jina's own rate limits, read from https://jina.ai/reader/ on 2026-11-19. Re-check them before 2027-02-19.
+  const free: Faq = {
+    question: "Is the Jina Reader API free, and what did it cost per finished task?",
+    answer: [
+      "Jina's Reader page says the Reader API is free to use, with rate limits. On November 19, 2026 it listed 20 requests a minute to r.jina.ai without an API key and 500 with a free key, and it counts the tokens in each response.",
+      "In this benchmark's smoke test, keyless calls returned HTTP 401, so every scored call used an API key.",
+      `The ${budget}-token budget on each call kept the whole run inside Jina's free allowance. Under it, the agent finished ${agent.successes} of ${agent.tasks} scrape tasks (${formatPct(agent.rate)}).`,
+      `Even so, its cost per finished task (${costText(agent)}${cost}) prices Reader's tokens at Jina's list rate and adds the agent model's spend, so it doesn't assume the free allowance. Model cost is a list-price estimate for ${MODEL}.`,
+    ].join(" "),
+    links: [
+      { href: "https://jina.ai/reader/", label: "Jina's Reader page and rate limits" },
+      { href: COST_PATH, label: "What cost per finished task means" },
+    ],
+  };
+
   return {
-    description: `How the Jina Reader API (r.jina.ai) did as an AI agent's scrape tool: ${agent.successes} of ${agent.tasks} tasks (${formatPct(agent.rate)}) at ${costText(agent)} per finished task, under a ${budget}-token budget. Intervals and caveats.`,
-    faqs: [called, markdown],
+    description: `Is the Jina Reader API (r.jina.ai) free, and how did it do as an AI agent's scrape tool? ${agent.successes} of ${agent.tasks} tasks (${formatPct(agent.rate)}) at ${costText(agent)} per finished task, under a ${budget}-token budget.`,
+    faqs: [called, free, markdown],
   };
 }
 
