@@ -9,6 +9,9 @@ import type { TrackId } from "@/lib/catalog";
 
 export const BLOG_PATH = "/blog";
 
+/** The blog's RSS feed. Linked from /blog and llms.txt; a machine file, so it stays out of sitemap.xml. */
+export const BLOG_FEED_PATH = `${BLOG_PATH}/rss.xml`;
+
 export type Post = {
   slug: string;
   path: string;

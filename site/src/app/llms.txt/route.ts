@@ -5,7 +5,7 @@ import { PROVIDER_NOTES } from "@/lib/notes";
 import { ALTERNATIVES_PATH, CONTEXT_DEV_ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH } from "@/lib/cost";
 import { NOISE_PATH, NOISE_SUMMARY } from "@/lib/noise";
-import { BLOG_PATH, posts } from "@/lib/blog";
+import { BLOG_FEED_PATH, BLOG_PATH, posts } from "@/lib/blog";
 
 export const dynamic = "force-static";
 
@@ -52,6 +52,7 @@ function body(): string {
     `- [Why most gaps are noise](${absoluteUrl(NOISE_PATH)}): ${NOISE_SUMMARY}`,
     `- [FAQ](${absoluteUrl("/faq")})`,
     `- [Blog](${absoluteUrl(BLOG_PATH)}): guides built on these results`,
+    `- [Blog RSS feed](${absoluteUrl(BLOG_FEED_PATH)}): new guides as they are published`,
     ...posts.map((p) => `- [${p.title}](${absoluteUrl(p.path)}): ${p.description}`),
     "",
     "## Data",
