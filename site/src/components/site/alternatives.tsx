@@ -190,7 +190,7 @@ export function AlternativesPage({ data }: { data: Alternatives }) {
             <p>{textKeptText(data.textKept)}</p>
             <p>
               Page text kept is the share of 8 sentences sampled from each page&apos;s own text, fetched once from the public page, that appear in the provider&apos;s response. Answer in the response is
-              checked by script on everything the provider returned, with no model. The median response is how much text the agent had to read; bigger is not better on its own.
+              checked by script on everything the provider returned, with no model. The median response is how much text the provider returned; bigger is not better on its own.
             </p>
             <p>
               <TextLink href="/methodology">How these are measured</TextLink>
