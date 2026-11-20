@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { TrackView } from "@/components/bench/bench-page";
 import { Breadcrumbs, JsonLd, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
 import { ScoreTable } from "@/components/site/score-table";
-import { cheapest, comparisonsOn, costText, fastest, leaders, listText, rankedRuns, timeText, standingText, trackById, tracks } from "@/lib/catalog";
+import { cheapest, comparisonsOn, costText, fastest, leaders, listText, providerById, rankedRuns, runOn, timeText, standingText, trackById, tracks } from "@/lib/catalog";
+import { ALTERNATIVES_PAGES } from "@/lib/alternatives";
 import type { TrackId } from "@/lib/catalog";
 import { TRACK_ONLY_FAQS, faqs, notTestedFaq, zeroApiCaveat } from "@/lib/faq";
 import { TRACK_NOTES, TRACK_SEO, TRACK_TOPIC } from "@/lib/notes";
@@ -56,6 +57,10 @@ export default async function TrackPage({ params }: PageProps<"/[track]">) {
   const noTool = track.controls.none;
   const seo = TRACK_SEO[track.id];
   const questions = trackFaqs(track);
+  const alternatives = Object.entries(ALTERNATIVES_PAGES).flatMap(([id, path]) => {
+    const p = providerById(id);
+    return p && path && runOn(p, track.id) ? [{ path, label: p.label }] : [];
+  });
 
   return (
     <PageShell>
@@ -120,6 +125,18 @@ export default async function TrackPage({ params }: PageProps<"/[track]">) {
               </li>
             ))}
           </ul>
+          {alternatives.length > 0 ? (
+            <p className="mt-4 max-w-prose text-sm text-pretty text-muted-foreground">
+              Every tested provider against one provider, on every track they share:{" "}
+              {alternatives.map((a, i) => (
+                <span key={a.path}>
+                  {i === 0 ? "" : i === alternatives.length - 1 ? " and " : ", "}
+                  <TextLink href={a.path}>{a.label} alternatives</TextLink>
+                </span>
+              ))}
+              .
+            </p>
+          ) : null}
         </Section>
       ) : null}
 
