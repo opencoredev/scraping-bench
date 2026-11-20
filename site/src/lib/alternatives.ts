@@ -1,6 +1,6 @@
 import { REFERENCE_ID, pairGap } from "@/lib/answers";
 import type { PairGap } from "@/lib/answers";
-import { comparisonsWith, costText, detectedGap, leaders, listText, providerById, rankedRuns, runOn, standingText, tracks } from "@/lib/catalog";
+import { comparisonsWith, costText, detectedGap, doneText, leaders, listText, providerById, rankedRuns, runOn, standingText, trackById, tracks } from "@/lib/catalog";
 import type { Comparison, Provider, Run } from "@/lib/catalog";
 import { zeroApiCaveat } from "@/lib/faq";
 import type { Faq } from "@/lib/faq";
@@ -30,8 +30,17 @@ export type AlternativeRow = { run: Run; gap: PairGap; comparison: Comparison | 
 
 export type TrackAlternatives = { track: Track; reference: Run; rows: AlternativeRow[]; standing: string; cheaper: Run[] };
 
-/** `caveats` are the reference provider's own notes (what was tested, budgets), which change how every row should be read. */
-export type Alternatives = { reference: Provider; path: string; tested: Provider[]; byTrack: TrackAlternatives[]; caveats: string[] };
+/** One scrape run's page coverage: the share of sentences sampled from each page's own text that reached the agent. */
+export type TextKeptRow = { run: Run; mean: number; low: number | null; high: number | null; pages: number };
+
+/** Page coverage on scrape for the reference and every alternative, most text kept first. */
+export type TextKept = { reference: TextKeptRow; rows: [TextKeptRow, ...TextKeptRow[]] };
+
+/**
+ * `caveats` are the reference provider's own notes (what was tested, budgets), which change how every row should be read.
+ * `textKept` is only set where the reference is mainly used to turn a URL into text for a model (Jina Reader).
+ */
+export type Alternatives = { reference: Provider; path: string; tested: Provider[]; byTrack: TrackAlternatives[]; caveats: string[]; textKept: TextKept | null };
 
 /** How one alternative stands against the reference on one track, never claiming more than the benchmark tested. */
 export function gapText({ run, gap }: AlternativeRow, reference: Run): string {
@@ -97,7 +106,61 @@ function onTrack(reference: Provider, track: Track): TrackAlternatives | null {
   return { track, reference: own, rows, standing: standingFor(track, own), cheaper };
 }
 
-function alternativesFor(id: string, path: string): Alternatives | null {
+/** Page coverage for every scrape run that has it, the reference's first in `reference`, null when the reference has none. */
+function textKeptFor(reference: Provider): TextKept | null {
+  const track = trackById("scrape");
+  if (!track) return null;
+  const all = rankedRuns(track)
+    .flatMap((run): TextKeptRow[] => {
+      const c = run.entry.coverage;
+      return c && c.mean !== null ? [{ run, mean: c.mean, low: c.ci[0], high: c.ci[1], pages: c.pages }] : [];
+    })
+    .sort((a, b) => b.mean - a.mean);
+  const own = all.find((r) => r.run.entry.id === reference.id);
+  const [first, ...rest] = all;
+  if (!own || !first || rest.length === 0) return null;
+  return { reference: own, rows: [first, ...rest] };
+}
+
+/** Labels of the runs that share the shown (rounded) value, so ties are named together. */
+const sharing = (rows: TextKeptRow[], shown: string, value: (r: TextKeptRow) => string): string => listText(rows.filter((r) => value(r) === shown).map((r) => r.run.entry.label));
+
+/**
+ * What reached the agent from each response, read as text kept and answers present, never as a ranking of gaps:
+ * these measures have intervals but no head-to-head tests, so no difference is called.
+ */
+export function textKeptText(k: TextKept): string {
+  const own = k.reference;
+  const name = own.run.entry.label;
+  const others = k.rows.filter((r) => r.run.entry.id !== own.run.entry.id);
+  const pct = (r: TextKeptRow) => formatPct(r.mean);
+  const lowest = others.every((r) => r.mean > own.mean);
+  const top = others[0];
+  const bottom = others[others.length - 1];
+  const range =
+    top && bottom
+      ? lowest
+        ? ` Every alternative's response held more, from ${sharing(others, pct(bottom), pct)} (${pct(bottom)}) to ${sharing(others, pct(top), pct)} (${pct(top)}).`
+        : ` The alternatives held from ${sharing(others, pct(bottom), pct)} (${pct(bottom)}) to ${sharing(others, pct(top), pct)} (${pct(top)}).`
+      : "";
+  const coverage = `On the ${own.pages} scrape pages checked against a saved copy, ${name}'s response held ${pct(own)} of the sentences sampled from each page's own text${
+    lowest ? `, the lowest of the ${k.rows.length} providers measured` : ""
+  }.${range}`;
+
+  const withRaw = others.flatMap((r) => (r.run.entry.raw ? [{ label: r.run.entry.label, raw: r.run.entry.raw }] : []));
+  const ownRaw = own.run.entry.raw;
+  const rawRates = withRaw.map((r) => r.raw.rate);
+  const most = Math.max(...rawRates);
+  const least = Math.min(...rawRates);
+  const named = (rate: number) => listText(withRaw.filter((r) => r.raw.rate === rate).map((r) => r.label));
+  const answer =
+    ownRaw && withRaw.length > 0
+      ? ` Before any model read it, the answer a task asked for was in ${name}'s response on ${doneText(ownRaw)} tasks; for the alternatives it ranged from ${formatPct(least)} (${named(least)}) to ${formatPct(most)} (${named(most)}).`
+      : "";
+  return `${coverage}${answer} These measures have intervals but no head-to-head tests, so this page doesn't say which of these differences rule out chance.`;
+}
+
+function alternativesFor(id: string, path: string, opts: { textKept: boolean } = { textKept: false }): Alternatives | null {
   const reference = providerById(id);
   if (!reference) return null;
   const byTrack = tracks.flatMap((t) => onTrack(reference, t) ?? []);
@@ -106,12 +169,12 @@ function alternativesFor(id: string, path: string): Alternatives | null {
   const tested = [...ids].flatMap((pid) => providerById(pid) ?? []);
   const testedAs = TESTED_AS[id];
   const caveats = [...(testedAs ? [testedAs] : []), ...(PROVIDER_NOTES[id] ?? []).map((n) => n.text)];
-  return { reference, path, tested, byTrack, caveats };
+  return { reference, path, tested, byTrack, caveats, textKept: opts.textKept ? textKeptFor(reference) : null };
 }
 
 export const firecrawlAlternatives = (): Alternatives | null => alternativesFor(REFERENCE_ID, ALTERNATIVES_PATH);
 
-export const jinaAlternatives = (): Alternatives | null => alternativesFor(JINA_ID, JINA_ALTERNATIVES_PATH);
+export const jinaAlternatives = (): Alternatives | null => alternativesFor(JINA_ID, JINA_ALTERNATIVES_PATH, { textKept: true });
 
 export const contextDevAlternatives = (): Alternatives | null => alternativesFor(CONTEXT_DEV_ID, CONTEXT_DEV_ALTERNATIVES_PATH);
 
@@ -194,12 +257,22 @@ export function alternativesFaqs(a: Alternatives): Faq[] {
   const cheap = lowestRuns.map(({ t, lowest }) => `${t.track.label.toLowerCase()}: ${lowest.entry.label} at ${costText(lowest.agent)}, against ${name}'s ${costText(t.reference.agent)}`);
   const cheapCaveat = zeroApiCaveat(lowestRuns.map(({ lowest }) => lowest));
   const noCheaper = a.byTrack.filter((t) => t.cheaper.length === 0).map((t) => t.track.label.toLowerCase());
+  const kept: Faq[] = a.textKept
+    ? [
+        {
+          question: `Which ${name} alternative keeps the most of a page's text?`,
+          answer: textKeptText(a.textKept),
+          links: [{ href: "/methodology", label: "How page coverage is measured" }],
+        },
+      ]
+    : [];
   return [
     {
       question: `What is the best ${name} alternative for AI agents?`,
       answer: `${opener} ${best}`,
       links: a.byTrack.map((t) => ({ href: `/${t.track.id}`, label: `${t.track.label} results` })),
     },
+    ...kept,
     {
       question: `Which ${name} alternative costs the least per finished task?`,
       answer: `Cost per finished task counts all API and model spend, failures included, divided by tasks done. The cheapest alternative on each track: ${cheap.join("; ")}.${

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, JsonLd, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
-import { alternativesFaqs, cheaperText, gapText, notTestedAlternatives, trailingText } from "@/lib/alternatives";
-import type { Alternatives, TrackAlternatives } from "@/lib/alternatives";
+import { alternativesFaqs, cheaperText, gapText, notTestedAlternatives, textKeptText, trailingText } from "@/lib/alternatives";
+import type { Alternatives, TextKept, TextKeptRow, TrackAlternatives } from "@/lib/alternatives";
 import { costText, doneText, intervalText, listText, providerById } from "@/lib/catalog";
 import type { Run } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
@@ -17,7 +17,11 @@ export function alternativesMetadata(data: Alternatives): Metadata {
     title: `${name} alternatives: ${data.tested.length} APIs benchmarked for AI agents`,
     description: `${data.tested.length} ${name} alternatives on the same ${trackList} tasks, same model and limits: ${data.byTrack
       .map((t) => `${t.track.label.toLowerCase()} ${name} ${formatPct(t.reference.agent.rate)}, best ${formatPct(Math.max(t.reference.agent.rate, ...t.rows.map((r) => r.run.agent.rate)))}`)
-      .join("; ")}. Intervals, cost per finished task, and which gaps are real.`,
+      .join("; ")}. ${
+      data.textKept
+        ? `Page text kept: ${name} ${formatPct(data.textKept.reference.mean)}, alternatives up to ${formatPct(data.textKept.rows[0].mean)}. Intervals and cost per finished task.`
+        : "Intervals, cost per finished task, and which gaps are real."
+    }`,
     path: data.path,
   });
 }
@@ -84,6 +88,47 @@ function TrackTable({ t }: { t: TrackAlternatives }) {
   );
 }
 
+const rangeText = (r: TextKeptRow): string => (r.low !== null && r.high !== null ? `${formatPct(r.low)}–${formatPct(r.high)}` : "not measured");
+
+const sizeText = (r: TextKeptRow): string => (r.run.entry.medianBytes != null ? `${(r.run.entry.medianBytes / 1000).toFixed(1)} KB` : "not measured");
+
+/** Page coverage, answer in the response and response size on scrape, the reference's row marked. */
+function TextKeptTable({ k }: { k: TextKept }) {
+  const name = k.reference.run.entry.label;
+  return (
+    <div className="relative -mx-5 overflow-x-auto px-5 md:mx-0 md:px-0">
+      <table className="w-full min-w-[640px] table-fixed text-left text-sm tabular-nums">
+        <caption className="sr-only">{`Scrape: how much of each page's text reached the agent, for ${name} and every alternative`}</caption>
+        <thead className="text-xs text-muted-foreground">
+          <tr className="border-b border-border">
+            <th scope="col" className="w-[20%] py-2 pr-4 font-normal">Provider</th>
+            <th scope="col" className="w-[18%] py-2 pr-4 font-normal">Page text kept</th>
+            <th scope="col" className="w-[18%] py-2 pr-4 font-normal">95% interval</th>
+            <th scope="col" className="w-[24%] py-2 pr-4 font-normal">Answer in the response</th>
+            <th scope="col" className="py-2 font-normal">Median response</th>
+          </tr>
+        </thead>
+        <tbody>
+          {k.rows.map((row) => {
+            const own = row.run.entry.id === k.reference.run.entry.id;
+            return (
+              <tr key={row.run.entry.id} className={own ? "border-b border-border/60 bg-muted/40" : "border-b border-border/60"}>
+                <th scope="row" className="py-2.5 pr-4 font-medium">
+                  <ProviderCell run={row.run} />
+                </th>
+                <td className="py-2.5 pr-4">{formatPct(row.mean)}</td>
+                <td className="py-2.5 pr-4">{rangeText(row)}</td>
+                <td className="py-2.5 pr-4">{row.run.entry.raw ? doneText(row.run.entry.raw) : "not measured"}</td>
+                <td className="py-2.5">{sizeText(row)}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 /** The whole page for one provider's alternatives: answer first, one table per shared track, then short answers. */
 export function AlternativesPage({ data }: { data: Alternatives }) {
   const name = data.reference.label;
@@ -114,6 +159,12 @@ export function AlternativesPage({ data }: { data: Alternatives }) {
           only when a script confirms every field of the answer. The benchmark tests each provider&apos;s gap to its track&apos;s leader, so this page says when a gap to {name} is real, when it&apos;s too
           small, and when the two weren&apos;t tested head to head.
         </p>
+        {data.textKept ? (
+          <p>
+            If you use {name} to turn a URL into text for a model, the <TextLink href="#page-text">page text table</TextLink> shows how much of each page reached the agent:{" "}
+            {`${name} ${formatPct(data.textKept.reference.mean)}, the alternatives up to ${formatPct(data.textKept.rows[0].mean)}.`}
+          </p>
+        ) : null}
         {data.caveats.length > 0 ? <p>{data.caveats.join(" ")}</p> : null}
         <p>{notTestedAlternatives}</p>
       </PageIntro>
@@ -131,6 +182,22 @@ export function AlternativesPage({ data }: { data: Alternatives }) {
           </div>
         </Section>
       ))}
+
+      {data.textKept ? (
+        <Section id="page-text" title="Page text kept" note={`${data.textKept.reference.pages} scrape pages · what reached the agent, before any model read it`}>
+          <TextKeptTable k={data.textKept} />
+          <div className="mt-5 max-w-prose space-y-3 text-sm text-pretty text-muted-foreground">
+            <p>{textKeptText(data.textKept)}</p>
+            <p>
+              Page text kept is the share of 8 sentences sampled from each page&apos;s own text, fetched once from the public page, that appear in the provider&apos;s response. Answer in the response is
+              checked by script on everything the provider returned, with no model. The median response is how much text the provider returned; bigger is not better on its own.
+            </p>
+            <p>
+              <TextLink href="/methodology">How these are measured</TextLink>
+            </p>
+          </div>
+        </Section>
+      ) : null}
 
       <Section title="Short answers">
         <div className="border-t border-border/60">
