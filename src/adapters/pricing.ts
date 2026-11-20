@@ -16,5 +16,6 @@ export const pricing = {
   scrapfly: { credit: 0.00015, source: 'https://scrapfly.io/pricing' },
   string: { request_standard: 0.0003, request_premium: 0.003, browser_standard: 0.0015, browser_premium: 0.006, search: 0.0015, source: 'https://portal.usestring.ai/docs/get-started/pricing', checkedAt: '2026-10-24', note: 'Starter plan USD per request, by the x-billed-request-type String returns. The account ran on free credits, which the usage page prices at Starter rates.' },
   browserbase: { scrape: 0.004, search: 0.005, source: 'https://docs.browserbase.com/account/billing/plans', searchSource: 'https://docs.browserbase.com/platform/search/overview' },
+  hydrafetch: { credit: 0.0012667, source: 'https://hydrafetch.com/pricing', checkedAt: '2026-11-02', note: 'Build plan, the smallest paid plan: $19 a month for 15,000 credits. One credit per scrape, per map call and per crawled page; failed calls are not charged.' },
 } satisfies Record<string, object>;
 export const pricingCheckedAt = '2026-10-17';

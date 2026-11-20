@@ -243,6 +243,7 @@ export async function runBenchmark(
           "browserbase",
           "you",
           "string",
+          "hydrafetch",
           "fake",
           "none",
           "oracle",
