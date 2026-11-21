@@ -36,11 +36,26 @@ export type TextKeptRow = { run: Run; mean: number; low: number | null; high: nu
 /** Page coverage on scrape for the reference and every alternative, most text kept first. */
 export type TextKept = { reference: TextKeptRow; rows: [TextKeptRow, ...TextKeptRow[]] };
 
+/** Jobs: one provider's run on each of the reference's tracks, null where it wasn't in that track. */
+export type JobsRow = { provider: Provider; cells: { track: Track; run: Run | null }[] };
+
+/** Which tracks the reference and each alternative ran, the reference's row first, most tracks first. */
+export type Jobs = { reference: JobsRow; rows: JobsRow[] };
+
 /**
  * `caveats` are the reference provider's own notes (what was tested, budgets), which change how every row should be read.
  * `textKept` is only set where the reference is mainly used to turn a URL into text for a model (Jina Reader).
+ * `jobs` is only set where the reference is used for every job (Firecrawl: scrape, search, map and crawl).
  */
-export type Alternatives = { reference: Provider; path: string; tested: Provider[]; byTrack: TrackAlternatives[]; caveats: string[]; textKept: TextKept | null };
+export type Alternatives = {
+  reference: Provider;
+  path: string;
+  tested: Provider[];
+  byTrack: TrackAlternatives[];
+  caveats: string[];
+  textKept: TextKept | null;
+  jobs: Jobs | null;
+};
 
 /** How one alternative stands against the reference on one track, never claiming more than the benchmark tested. */
 export function gapText({ run, gap }: AlternativeRow, reference: Run): string {
@@ -160,7 +175,92 @@ export function textKeptText(k: TextKept): string {
   return `${coverage}${answer} These measures have intervals but no head-to-head tests, so this page doesn't say which of these differences rule out chance.`;
 }
 
-function alternativesFor(id: string, path: string, opts: { textKept: boolean } = { textKept: false }): Alternatives | null {
+/** The reference's tracks for one provider, from the runs already set against the reference. */
+function jobsRow(provider: Provider, byTrack: TrackAlternatives[]): JobsRow {
+  return {
+    provider,
+    cells: byTrack.map((t) => ({
+      track: t.track,
+      run: t.reference.entry.id === provider.id ? t.reference : (t.rows.find((r) => r.run.entry.id === provider.id)?.run ?? null),
+    })),
+  };
+}
+
+const ranCount = (r: JobsRow): number => r.cells.filter((c) => c.run !== null).length;
+
+function jobsFor(reference: Provider, tested: Provider[], byTrack: TrackAlternatives[]): Jobs {
+  const rows = tested.map((p) => jobsRow(p, byTrack));
+  return { reference: jobsRow(reference, byTrack), rows: [...rows].sort((a, b) => ranCount(b) - ranCount(a)) };
+}
+
+/** Alternatives that ran every one of the reference's tracks. */
+const fullRows = (j: Jobs): JobsRow[] => j.rows.filter((r) => ranCount(r) === ranCount(j.reference));
+
+const COUNT_WORDS = ["no", "one", "two", "three", "four", "five", "six"];
+const countWord = (n: number): string => COUNT_WORDS[n] ?? String(n);
+
+const ranTracks = (r: JobsRow): string[] => r.cells.flatMap((c) => (c.run ? [c.track.label.toLowerCase()] : []));
+
+/**
+ * Who ran every one of the reference's tracks, and which part of it each other alternative ran, grouped by the same set of tracks.
+ * Not running a track here means the provider wasn't in that part of the benchmark, not that it lacks the feature.
+ */
+export function jobsText(c: Jobs): string {
+  const name = c.reference.provider.label;
+  const all = ranTracks(c.reference);
+  const n = all.length;
+  const full = fullRows(c);
+  const fullText =
+    full.length === 0
+      ? `No alternative ran all ${countWord(n)} alongside it.`
+      : full.length === 1
+        ? `${full[0]?.provider.label} is the only alternative that ran all ${countWord(n)} alongside it.`
+        : `${listText(full.map((r) => r.provider.label))} ran all ${countWord(n)} alongside it.`;
+  const groups = new Map<string, JobsRow[]>();
+  for (const r of c.rows.filter((x) => ranCount(x) < n)) {
+    const key = ranTracks(r).join(",");
+    groups.set(key, [...(groups.get(key) ?? []), r]);
+  }
+  const parts = [...groups.values()].flatMap((rows) => {
+    const first = rows[0];
+    if (!first) return [];
+    const ran = ranTracks(first);
+    const verb = rows.length === 1 ? "ran" : "each ran";
+    return [`${listText(rows.map((r) => r.provider.label))} ${verb} ${ran.length === 1 ? `${ran[0]} only` : listText(ran)}`];
+  });
+  const rest = parts.length > 0 ? ` ${parts.join("; ")}.` : "";
+  const ranText = n === tracks.length ? `all ${countWord(n)} jobs here: ${listText(all)}` : listText(all);
+  return `${name} ran ${ranText}. ${fullText}${rest} A provider missing from a track wasn't part of that track in this benchmark; that doesn't mean it has no such API.`;
+}
+
+/**
+ * Crawl was replayed from stored responses, and the replay doesn't measure end-to-end cost (docs/METHODOLOGY.md, v2 corrections),
+ * so these summaries quote crawl tasks done without a crawl cost.
+ */
+const NO_COST_SUMMARY: ReadonlySet<string> = new Set(["crawl"]);
+
+const resultText = (track: Track, run: Run): string => (NO_COST_SUMMARY.has(track.id) ? doneText(run.agent) : `${doneText(run.agent)} at ${costText(run.agent)}`);
+
+/** Tasks done (and cost per finished task, except on crawl) for each alternative that ran every track, beside the reference's own. */
+export function jobsResultsText(c: Jobs): string | null {
+  const name = c.reference.provider.label;
+  const full = fullRows(c);
+  if (full.length === 0) return null;
+  const lines = full.map((r) => {
+    const cells = r.cells.flatMap((cell) => {
+      const own = c.reference.cells.find((x) => x.track.id === cell.track.id)?.run;
+      return cell.run && own ? [`${cell.track.label.toLowerCase()} ${resultText(cell.track, cell.run)}, against ${name}'s ${resultText(cell.track, own)}`] : [];
+    });
+    return `${r.provider.label}: ${cells.join("; ")}.`;
+  });
+  const runs = full.flatMap((r) => r.cells.flatMap((cell) => (cell.run && !NO_COST_SUMMARY.has(cell.track.id) ? [cell.run] : [])));
+  const caveat = zeroApiCaveat(runs);
+  return `${lines.join(" ")} Each track's table on this page says which of those gaps rule out chance.${caveat ? ` ${caveat}` : ""}`;
+}
+
+type AlternativesOptions = { textKept: boolean; jobs: boolean };
+
+function alternativesFor(id: string, path: string, opts: AlternativesOptions = { textKept: false, jobs: false }): Alternatives | null {
   const reference = providerById(id);
   if (!reference) return null;
   const byTrack = tracks.flatMap((t) => onTrack(reference, t) ?? []);
@@ -169,12 +269,20 @@ function alternativesFor(id: string, path: string, opts: { textKept: boolean } =
   const tested = [...ids].flatMap((pid) => providerById(pid) ?? []);
   const testedAs = TESTED_AS[id];
   const caveats = [...(testedAs ? [testedAs] : []), ...(PROVIDER_NOTES[id] ?? []).map((n) => n.text)];
-  return { reference, path, tested, byTrack, caveats, textKept: opts.textKept ? textKeptFor(reference) : null };
+  return {
+    reference,
+    path,
+    tested,
+    byTrack,
+    caveats,
+    textKept: opts.textKept ? textKeptFor(reference) : null,
+    jobs: opts.jobs ? jobsFor(reference, tested, byTrack) : null,
+  };
 }
 
-export const firecrawlAlternatives = (): Alternatives | null => alternativesFor(REFERENCE_ID, ALTERNATIVES_PATH);
+export const firecrawlAlternatives = (): Alternatives | null => alternativesFor(REFERENCE_ID, ALTERNATIVES_PATH, { textKept: false, jobs: true });
 
-export const jinaAlternatives = (): Alternatives | null => alternativesFor(JINA_ID, JINA_ALTERNATIVES_PATH, { textKept: true });
+export const jinaAlternatives = (): Alternatives | null => alternativesFor(JINA_ID, JINA_ALTERNATIVES_PATH, { textKept: true, jobs: false });
 
 export const contextDevAlternatives = (): Alternatives | null => alternativesFor(CONTEXT_DEV_ID, CONTEXT_DEV_ALTERNATIVES_PATH);
 
@@ -266,12 +374,26 @@ export function alternativesFaqs(a: Alternatives): Faq[] {
         },
       ]
     : [];
+  const jobs = a.jobs;
+  const allJobs: Faq[] = jobs
+    ? [
+        {
+          question: `Which ${name} alternative was tested on ${listText(ranTracks(jobs.reference))}?`,
+          answer: [jobsText(jobs), jobsResultsText(jobs)].filter((s): s is string => s !== null).join(" "),
+          links: fullRows(jobs).flatMap((r) => {
+            const c = comparisonsWith(a.reference).find((x) => x.a.id === r.provider.id || x.b.id === r.provider.id);
+            return c ? [{ href: `/compare/${c.slug}`, label: `${name} vs ${r.provider.label}` }] : [];
+          }),
+        },
+      ]
+    : [];
   return [
     {
       question: `What is the best ${name} alternative for AI agents?`,
       answer: `${opener} ${best}`,
       links: a.byTrack.map((t) => ({ href: `/${t.track.id}`, label: `${t.track.label} results` })),
     },
+    ...allJobs,
     ...kept,
     {
       question: `Which ${name} alternative costs the least per finished task?`,
