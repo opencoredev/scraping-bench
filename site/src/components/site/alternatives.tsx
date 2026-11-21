@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, JsonLd, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
-import { alternativesFaqs, cheaperText, gapText, notTestedAlternatives, textKeptText, trailingText } from "@/lib/alternatives";
-import type { Alternatives, TextKept, TextKeptRow, TrackAlternatives } from "@/lib/alternatives";
+import { alternativesFaqs, cheaperText, gapText, jobsText, notTestedAlternatives, textKeptText, trailingText } from "@/lib/alternatives";
+import type { Alternatives, Jobs, JobsRow, TextKept, TextKeptRow, TrackAlternatives } from "@/lib/alternatives";
 import { costText, doneText, intervalText, listText, providerById } from "@/lib/catalog";
 import type { Run } from "@/lib/catalog";
 import { colorOf } from "@/lib/colors";
@@ -129,6 +129,54 @@ function TextKeptTable({ k }: { k: TextKept }) {
   );
 }
 
+function JobsCells({ row }: { row: JobsRow }) {
+  return (
+    <>
+      {row.cells.map((c) => (
+        <td key={c.track.id} className={c.run ? "py-2.5 pr-4" : "py-2.5 pr-4 text-muted-foreground"}>
+          {c.run ? doneText(c.run.agent) : "Not in this track"}
+        </td>
+      ))}
+    </>
+  );
+}
+
+/** Which of the reference's tracks each provider ran, with tasks done where it ran, the reference's row marked. */
+function JobsTable({ j }: { j: Jobs }) {
+  const name = j.reference.provider.label;
+  return (
+    <div className="relative -mx-5 overflow-x-auto px-5 md:mx-0 md:px-0">
+      <table className="w-full min-w-[720px] table-fixed text-left text-sm tabular-nums">
+        <caption className="sr-only">{`Which tracks ${name} and every alternative ran, with tasks done on each`}</caption>
+        <thead className="text-xs text-muted-foreground">
+          <tr className="border-b border-border">
+            <th scope="col" className="w-[16%] py-2 pr-4 font-normal">Provider</th>
+            {j.reference.cells.map((c) => (
+              <th key={c.track.id} scope="col" className="py-2 pr-4 font-normal">
+                <Link href={`#${c.track.id}`} className="hover:underline">
+                  {c.track.label}
+                </Link>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {[j.reference, ...j.rows].map((row) => (
+            <tr key={row.provider.id} className={row === j.reference ? "border-b border-border/60 bg-muted/40" : "border-b border-border/60"}>
+              <th scope="row" className="py-2.5 pr-4 font-medium">
+                <Link href={`/providers/${row.provider.slug}`} className="hover:underline" style={{ color: colorOf(row.provider.id) }}>
+                  {row.provider.label}
+                </Link>
+              </th>
+              <JobsCells row={row} />
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 /** The whole page for one provider's alternatives: answer first, one table per shared track, then short answers. */
 export function AlternativesPage({ data }: { data: Alternatives }) {
   const name = data.reference.label;
@@ -159,6 +207,11 @@ export function AlternativesPage({ data }: { data: Alternatives }) {
           only when a script confirms every field of the answer. The benchmark tests each provider&apos;s gap to its track&apos;s leader, so this page says when a gap to {name} is real, when it&apos;s too
           small, and when the two weren&apos;t tested head to head.
         </p>
+        {data.jobs ? (
+          <p>
+            If you want one API for every job you use {name} for, the <TextLink href="#jobs">jobs table</TextLink> shows which tracks each alternative ran. {jobsText(data.jobs)}
+          </p>
+        ) : null}
         {data.textKept ? (
           <p>
             If you use {name} to turn a URL into text for a model, the <TextLink href="#page-text">page text table</TextLink> shows how much of each page reached the agent:{" "}
@@ -168,6 +221,15 @@ export function AlternativesPage({ data }: { data: Alternatives }) {
         {data.caveats.length > 0 ? <p>{data.caveats.join(" ")}</p> : null}
         <p>{notTestedAlternatives}</p>
       </PageIntro>
+
+      {data.jobs ? (
+        <Section id="jobs" title="Which jobs each alternative ran" note="which tracks each provider ran, and tasks done on each">
+          <JobsTable j={data.jobs} />
+          <p className="mt-5 max-w-prose text-sm text-pretty text-muted-foreground">
+            Each cell is tasks done on that track, with the same tasks, model and limits for every provider. Which gaps to {name} rule out chance is in each track&apos;s table below.
+          </p>
+        </Section>
+      ) : null}
 
       {data.byTrack.map((t) => (
         <Section key={t.track.id} id={t.track.id} title={`${t.track.label}`} note={`${t.track.tasks} tasks · ${t.track.what}`}>
