@@ -1,7 +1,7 @@
 import { comparisons, costText, doneText, intervalText, leaders, providers, rankedRuns, standingText, tracks } from "@/lib/catalog";
 import { results } from "@/lib/results";
-import { MODEL, RESULTS_JSON_RAW, SITE_URL, absoluteUrl, notTestedText } from "@/lib/site";
-import { PROVIDER_NOTES } from "@/lib/notes";
+import { MODEL, REPO, RESULTS_JSON_RAW, SITE_URL, absoluteUrl, notTestedText } from "@/lib/site";
+import { PROVIDER_NOTES, RUN_BY } from "@/lib/notes";
 import { ALTERNATIVES_PATH, CONTEXT_DEV_ALTERNATIVES_PATH, JINA_ALTERNATIVES_PATH } from "@/lib/alternatives";
 import { COST_PATH } from "@/lib/cost";
 import { NOISE_PATH, NOISE_SUMMARY } from "@/lib/noise";
@@ -17,6 +17,8 @@ function body(): string {
     `> A benchmark of ${providers.length} web data APIs for AI agents (${providers.map((p) => p.label).join(", ")}) on four tracks: scrape, search, map and crawl. Every provider gets the same tasks, the same model (${MODEL}), the same prompt and the same limits. A task counts only when a script confirms every field of the answer. Run ${results.runId}.`,
     "",
     "Most gaps between providers are too small to call. Tasks from the same site are counted as one group, and the 95% intervals come from resampling whole sites, so only gaps whose interval excludes zero are reported as real.",
+    "",
+    `${RUN_BY} Code and data: ${REPO}`,
     "",
     notTestedText(results),
     "",

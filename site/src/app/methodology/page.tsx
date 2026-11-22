@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Breadcrumbs, PageIntro, PageShell, Section, TextLink } from "@/components/site/chrome";
 import { tracks } from "@/lib/catalog";
 import { results } from "@/lib/results";
-import { COST_PATH, MODEL, NOISE_PATH, REPO, RESULTS_JSON, notTestedText, pageMetadata } from "@/lib/site";
+import { AUTHOR, COST_PATH, MODEL, NOISE_PATH, REPO, RESULTS_JSON, notTestedText, pageMetadata } from "@/lib/site";
+import { RUN_BY } from "@/lib/notes";
 
 /**
  * The grading method, shared by every edition. Sections marked v1 describe the v1 run (wb-20261017-final) and only
@@ -178,6 +179,13 @@ export default function MethodologyPage() {
             ? "None does on this run."
             : `${gapCount} ${gapCount === 1 ? "gap does" : "gaps do"} on this run; each track's page lists them.`}{" "}
           <TextLink href={NOISE_PATH}>Every comparison with its interval, and why most gaps are noise</TextLink>.
+        </p>
+      </Section>
+
+      <Section title="Who runs it">
+        <p className={prose}>
+          {RUN_BY} Leo is on X as <Ext href={AUTHOR.sameAs[0]}>{AUTHOR.handle}</Ext>, and the tasks, grader, harness and every result row are MIT licensed on{" "}
+          <Ext href={REPO}>GitHub</Ext>, so anyone can check or rerun them.
         </p>
       </Section>
 

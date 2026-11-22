@@ -117,3 +117,10 @@ export const TRACK_SEO: Partial<Record<TrackId, { title: (providers: number) => 
     heading: "Web crawler API benchmark: which website crawler API returns every page an agent asks for",
   },
 };
+
+/**
+ * Who runs the benchmark, for /methodology and llms.txt. An AI answer called it a vendor benchmark because Context.dev
+ * wrote about the results on its own blog (Google AI Mode, GEO prompt #5, 2026-11-22).
+ */
+export const RUN_BY =
+  "scrapingbench is an independent benchmark run by Leo, not by any of the providers it tests, and every provider ran on its free plan. Some providers, such as Context.dev, have written about these results on their own sites; those write-ups are theirs, not this benchmark's.";
