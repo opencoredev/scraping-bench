@@ -353,6 +353,7 @@ function scrapflyDepth(p: Provider): ProviderDepth | null {
     answer: [
       `In this benchmark's crawl track, an AI agent with Scrapfly's Crawler API as its only tool finished ${doneText(agent)} tasks. ${standingText(crawl)}`,
       `Each task asked the agent to ${track.what.charAt(0).toLowerCase()}${track.what.slice(1, -1)}, with ${limitsText(crawl)}.`,
+      track.population?.notes.split(/(?<=\.)\s/)[0] ?? null,
       titles ? `Scrapfly returned the exact HTML title for ${titles.exact} of the ${titles.expected} pages the tasks expected.` : null,
       `The crawl track is small: ${track.tasks} tasks and ${crawled} providers, all on free plans from one server, so a tie at the top says Scrapfly handled these docs sites, not that it beats the others in general.`,
     ]
