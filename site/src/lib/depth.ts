@@ -336,7 +336,56 @@ function tinyfishDepth(p: Provider): ProviderDepth | null {
   };
 }
 
+/**
+ * Scrapfly, for "is Scrapfly good for crawling with AI agents" (GEO #17) and "scrapfly api": what a crawl task asked,
+ * how Scrapfly did on it, and how its Scrape and Crawler APIs were called (providers/scrapfly.config.md, src/adapters/scrapfly.ts).
+ * No crawl cost or time here: issue #29 hasn't settled which crawl cost and time figures are valid.
+ */
+function scrapflyDepth(p: Provider): ProviderDepth | null {
+  const crawl = runOn(p, "crawl");
+  if (!crawl) return null;
+  const { track, entry, agent } = crawl;
+  const titles = entry.titles;
+  const crawled = rankedRuns(track).length;
+
+  const good: Faq = {
+    question: "Is Scrapfly good for crawling with AI agents?",
+    answer: [
+      `In this benchmark's crawl track, an AI agent with Scrapfly's Crawler API as its only tool finished ${doneText(agent)} tasks. ${standingText(crawl)}`,
+      `Each task asked the agent to ${track.what.charAt(0).toLowerCase()}${track.what.slice(1, -1)}, with ${limitsText(crawl)}.`,
+      titles ? `Scrapfly returned the exact HTML title for ${titles.exact} of the ${titles.expected} pages the tasks expected.` : null,
+      `The crawl track is small: ${track.tasks} tasks and ${crawled} providers, all on free plans from one server, so a tie at the top says Scrapfly handled these docs sites, not that it beats the others in general.`,
+    ]
+      .filter((s): s is string => s !== null)
+      .join(" "),
+    links: [
+      { href: "/crawl", label: "All crawl results" },
+      { href: NOISE_PATH, label: "Which gaps rule out chance" },
+    ],
+  };
+
+  const called: Faq = {
+    question: "How was the Scrapfly API called in this benchmark?",
+    answer: [
+      "Through Scrapfly's Scrape and Crawler HTTP APIs at their default settings, with no SDK and no client retries.",
+      "Scrape was one GET to /scrape asking for Markdown with Scrapfly's own retries turned off and no JavaScript rendering.",
+      "Crawl was one POST to /crawl with a page limit, the task's section of the site as the only path to include, and Markdown and HTML as the content formats. The job was polled every 2 seconds, then its pages were read back. Scrapfly's server-side per-page retries can't be turned off with a documented setting.",
+      `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
+    ].join(" "),
+    links: [
+      { href: "/methodology", label: "How the benchmark works" },
+      { href: "/compare/firecrawl-vs-scrapfly", label: "Firecrawl vs Scrapfly, track by track" },
+    ],
+  };
+
+  return {
+    description: `Is Scrapfly good for crawling with AI agents? Its Crawler API finished ${doneText(agent)} crawl tasks, ${titles ? `with exact titles on ${titles.exact} of ${titles.expected} pages` : ""}. How its Scrape and Crawler APIs were called, intervals and caveats.`,
+    faqs: [good, called],
+  };
+}
+
 const DEPTH: Partial<Record<string, (p: Provider) => ProviderDepth | null>> = {
+  scrapfly: scrapflyDepth,
   tinyfish: tinyfishDepth,
   jina: jinaDepth,
   firecrawl: firecrawlDepth,
