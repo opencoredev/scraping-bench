@@ -41,6 +41,7 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/": "2026-11-17",
   "/map": "2026-11-20",
   "/v1": "2026-10-29",
+  "/methodology": "2026-11-22",
   "/search": "2026-11-20",
   "/scrape": "2026-11-20",
   [ALTERNATIVES_PATH]: "2026-11-21",
