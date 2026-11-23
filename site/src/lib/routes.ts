@@ -79,7 +79,7 @@ export const COPY_CHANGED: Partial<Record<string, string>> = {
   "/compare/jina-vs-scrapfly": "2026-11-15",
   "/compare/string-vs-context-dev": "2026-11-15",
   "/compare/string-vs-firecrawl": "2026-11-15",
-  "/providers": "2026-11-18",
+  "/providers": "2026-11-23",
   [BLOG_PATH]: "2026-11-19",
   ...Object.fromEntries(posts.map((p) => [p.path, p.modified])),
 };

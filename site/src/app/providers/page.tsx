@@ -9,8 +9,8 @@ import { NOT_TESTED, pageMetadata, parallelNote } from "@/lib/site";
 import { SCRAPING_APIS_POST, WEB_DATA_APIS_POST } from "@/lib/blog";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Web data API providers for AI agents, compared",
-  description: `${providers.length} web data APIs tested on scrape, search, map and crawl: ${providers.map((p) => p.label).join(", ")}. Tasks done and cost per finished task for each.`,
+  title: `${providers.length} AI scraping and web data APIs, compared`,
+  description: `${providers.length} AI scraping and web data APIs, each tested by an AI agent on scrape, search, map or crawl: ${providers.map((p) => p.label).join(", ")}. Tasks done and cost per finished task for each.`,
   path: "/providers",
 });
 
@@ -18,7 +18,7 @@ export default function ProvidersPage() {
   return (
     <PageShell>
       <Breadcrumbs trail={[{ name: "Providers", path: "/providers" }]} />
-      <PageIntro title={`${providers.length} web data APIs, every track they ran`}>
+      <PageIntro title={`${providers.length} AI scraping and web data APIs, every track they ran`}>
         <p>
           Each cell is tasks done with the provider as the agent&apos;s only tool, and the cost of each finished task. Bold marks the most tasks done on a track; each track&apos;s page says which gaps are big
           enough to rule out chance. A dash means the provider didn&apos;t run that track.
