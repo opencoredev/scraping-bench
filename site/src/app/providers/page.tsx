@@ -9,8 +9,8 @@ import { NOT_TESTED, pageMetadata, parallelNote } from "@/lib/site";
 import { SCRAPING_APIS_POST, WEB_DATA_APIS_POST } from "@/lib/blog";
 
 export const metadata: Metadata = pageMetadata({
-  title: `${providers.length} AI scraping and web data APIs for agents, compared`,
-  description: `${providers.length} AI scraping and web data APIs, each tested as an AI agent's only tool on scrape, search, map and crawl: ${providers.map((p) => p.label).join(", ")}. Tasks done and cost per finished task for each.`,
+  title: `${providers.length} AI scraping and web data APIs, compared`,
+  description: `${providers.length} AI scraping and web data APIs, each tested by an AI agent on scrape, search, map or crawl: ${providers.map((p) => p.label).join(", ")}. Tasks done and cost per finished task for each.`,
   path: "/providers",
 });
 
