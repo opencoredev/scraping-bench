@@ -53,8 +53,19 @@ export const WEB_DATA_APIS_POST: Post = {
   tracks: ["scrape", "search", "map", "crawl"],
 };
 
+export const BENCHMARK_GUIDE_POST: Post = {
+  slug: "how-to-benchmark-web-scraping-apis",
+  path: `${BLOG_PATH}/how-to-benchmark-web-scraping-apis`,
+  title: "How to benchmark web scraping APIs for your AI agent",
+  metaTitle: "How to benchmark web scraping APIs for an AI agent",
+  description: "Seven steps for testing scraping, search, map and crawl APIs on your agent's own tasks: script grading, controls, fixed limits, cost per finished task and paired intervals.",
+  published: "2026-11-25",
+  modified: "2026-11-25",
+  tracks: ["scrape", "search", "map", "crawl"],
+};
+
 /** Newest first. */
-export const posts: readonly Post[] = [WEB_DATA_APIS_POST, SCRAPING_APIS_POST];
+export const posts: readonly Post[] = [BENCHMARK_GUIDE_POST, WEB_DATA_APIS_POST, SCRAPING_APIS_POST];
 
 export const postsFor = (track: TrackId): Post[] => posts.filter((p) => p.tracks.includes(track));
 

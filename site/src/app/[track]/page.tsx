@@ -155,9 +155,9 @@ export default async function TrackPage({ params }: PageProps<"/[track]">) {
         </p>
         <p className="mt-3 max-w-prose text-sm text-pretty text-muted-foreground">
           Guides that use these results:{" "}
-          {postsFor(track.id).map((p, i) => (
+          {postsFor(track.id).map((p, i, all) => (
             <span key={p.slug}>
-              {i > 0 ? " and " : ""}
+              {i === 0 ? "" : i === all.length - 1 ? (all.length > 2 ? "; and " : " and ") : "; "}
               <TextLink href={p.path}>{p.title}</TextLink>
             </span>
           ))}
