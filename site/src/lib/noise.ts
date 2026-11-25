@@ -1,3 +1,4 @@
+import { BENCHMARK_GUIDE_POST } from "@/lib/blog";
 import { listText, rankedRuns, tracks } from "@/lib/catalog";
 import type { Faq } from "@/lib/faq";
 import { formatPct } from "@/lib/results";
@@ -150,10 +151,11 @@ export const noiseFaqs: readonly Faq[] = [
     links: [{ href: "/providers", label: "All providers" }],
   },
   {
-    question: "How should I benchmark scraping APIs for my own agent?",
+    question: "How do I read a paired interval when I compare two scraping APIs myself?",
     answer:
-      "Use tasks from the sites your agent will really visit, give every provider the same tasks, model and limits, and grade the final answer with a script rather than a model. Count the spend on failed tasks too, so cost means cost per finished task. Spread tasks over many sites, since tasks from one site count as one cluster, and compare providers on the same tasks with an interval before you call a winner.",
+      "Run both APIs on the same tasks, take the gap in percentage points, then resample the observed sites with replacement many times and recompute it. If the middle 95% of those differences includes zero, the gap is too small to call on your sample. If it excludes zero, that is evidence about your tasks; the more pairs you screen, the likelier one clears by luck. The full procedure, from writing a task to publishing the rows, is in our guide to benchmarking scraping APIs.",
     links: [
+      { href: BENCHMARK_GUIDE_POST.path, label: "How to benchmark web scraping APIs" },
       { href: COST_PATH, label: "Cost per finished task" },
       { href: `${REPO}/blob/main/docs/METHODOLOGY.md`, label: "METHODOLOGY.md" },
     ],

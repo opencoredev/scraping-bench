@@ -11,7 +11,8 @@ import { AUTHOR, SITE_URL } from "@/lib/site";
 
 /** Pieces shared by blog posts: byline, the measured/vendor/editorial key, FAQ, sources and related posts. */
 
-export function Byline({ post }: { post: Post }) {
+/** prices off for posts that quote no vendor prices, so the byline doesn't claim a price check. */
+export function Byline({ post, prices = true }: { post: Post; prices?: boolean }) {
   const run = RUN_PUBLISHED[results.runId];
   return (
     <p className="pb-1 text-xs text-muted-foreground">
@@ -26,7 +27,8 @@ export function Byline({ post }: { post: Post }) {
           · Updated <time dateTime={post.modified}>{dateText(post.modified)}</time>
         </>
       ) : null}{" "}
-      · {`Benchmark run ${results.runId}${run ? `, published ${dateText(run)}` : ""}`} · Prices checked {dateText(PRICES_CHECKED)}
+      · {`Benchmark run ${results.runId}${run ? `, published ${dateText(run)}` : ""}`}
+      {prices ? ` · Prices checked ${dateText(PRICES_CHECKED)}` : null}
     </p>
   );
 }
@@ -44,10 +46,10 @@ export function KindLabel({ kind }: { kind: Kind }) {
   return <span className="mr-1.5 inline-block rounded-sm border border-border px-1 py-px align-[1px] text-[10px] font-medium tracking-wide text-muted-foreground uppercase">{KINDS[kind].label}</span>;
 }
 
-export function KindKey() {
+export function KindKey({ kinds = KIND_ORDER }: { kinds?: readonly Kind[] }) {
   return (
     <ul className="space-y-1.5 text-xs text-muted-foreground">
-      {KIND_ORDER.map((k) => (
+      {kinds.map((k) => (
         <li key={k}>
           <KindLabel kind={k} />
           {KINDS[k].text}
