@@ -17,6 +17,7 @@ export const providerIdSchema = z.enum([
   "browserbase",
   "you",
   "string",
+  "valyu",
 ]);
 export const runProviderSchema = z.union([
   providerIdSchema,
