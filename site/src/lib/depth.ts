@@ -170,12 +170,13 @@ function firecrawlDepth(p: Provider): ProviderDepth | null {
     ? {
         question: "How did Firecrawl's map API do at listing a site's URLs?",
         answer: [
-          "Firecrawl's map endpoint takes a site URL and returns a list of the links it finds there: URLs only, with no page content. Each map task asked the agent for the canonical URLs inside one section of a documentation site.",
-          `With Firecrawl's map at its documented defaults, the agent finished ${doneText(map.agent)} map tasks, at ${costText(map.agent)} per finished task. ${standingText(map)}`,
+          "Firecrawl's map endpoint takes a site URL and returns a list of the links it finds there, without fetching each page's content. The benchmark kept only the URLs from each response.",
+          "Each map task asked the agent for every canonical URL inside one section of a documentation site. A task passed when at least 90% of the returned URLs were in that section and at least 90% of the section's URLs were returned, so a pass isn't always a complete list.",
+          `With Firecrawl's map at a 1,000-URL limit and otherwise default settings, the agent finished ${doneText(map.agent)} map tasks, at ${costText(map.agent)} per finished task. ${standingText(map)}`,
         ].join(" "),
         links: [
           { href: "/map", label: "All map results" },
-          { href: "/compare/string-vs-firecrawl", label: "String vs Firecrawl on map" },
+          { href: "/compare/string-vs-firecrawl#map", label: "String vs Firecrawl on map" },
         ],
       }
     : null;
