@@ -126,6 +126,7 @@ function firecrawlDepth(p: Provider): ProviderDepth | null {
   const [first, ...others] = p.runs;
   const costs = [first, ...others].map(costPlaceText);
   const search = runOn(p, "search");
+  const map = runOn(p, "map");
 
   const cost: Faq = {
     question: "What does the Firecrawl API cost per finished task?",
@@ -145,7 +146,7 @@ function firecrawlDepth(p: Provider): ProviderDepth | null {
     question: "How was the Firecrawl API called in this benchmark?",
     answer: [
       "Through Firecrawl's v2 API at its default settings, with no SDK and no client retries.",
-      "Scrape and crawl asked for Markdown. Search returned web results without scraping each result page. Map used the documented defaults. A crawl was submitted once and polled every 2 seconds.",
+      "Scrape and crawl asked for Markdown. Search returned web results without scraping each result page. Map asked for up to 1,000 URLs and otherwise used the documented defaults. A crawl was submitted once and polled every 2 seconds.",
       `The agent, ${MODEL}, got the same tasks, prompt and limits as every other provider on each track.`,
     ].join(" "),
     links: [
@@ -165,9 +166,24 @@ function firecrawlDepth(p: Provider): ProviderDepth | null {
       }
     : null;
 
+  const mapped: Faq | null = map
+    ? {
+        question: "How did Firecrawl's map API do at listing a site's URLs?",
+        answer: [
+          "Firecrawl's map endpoint takes a site URL and returns a list of the links it finds there rather than page content. The benchmark kept only the URLs from each response.",
+          "Each map task asked the agent for every canonical URL inside one section of a documentation site. To pass, the agent had to list at least 90% of the verified URLs, and at least 90% of the URLs it listed had to match that verified set, so a pass isn't always a complete list.",
+          `With Firecrawl's map, the agent finished ${doneText(map.agent)} map tasks, at ${costText(map.agent)} per finished task. ${standingText(map)}`,
+        ].join(" "),
+        links: [
+          { href: "/map", label: "All map results" },
+          { href: "/compare/string-vs-firecrawl#map", label: "String vs Firecrawl on map" },
+        ],
+      }
+    : null;
+
   return {
     description: `What the Firecrawl API cost an AI agent per finished task: ${listText([first, ...others].map((r) => `${r.track.label.toLowerCase()} ${costText(r.agent)}`))}. Tasks done, intervals and how it was called.`,
-    faqs: searched ? [cost, called, searched] : [cost, called],
+    faqs: [cost, called, ...[searched, mapped].filter((f): f is Faq => f !== null)],
   };
 }
 
